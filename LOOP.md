@@ -19,8 +19,12 @@ Each iteration is one pass of:
    `confidence: verified`.
 4. **Integrate** — fix cross-links, refresh `wiki/HOME.md` + `llms.txt`,
    append to the loop log, push new leads onto the queue.
-5. **Commit** — single commit `loop(N): <summary>` on `master`.
-6. **Sleep** — self-paced wake-up (see pacing), then go to 1.
+5. **Publish** — regenerate the HTML console dashboard (single self-contained
+   file, Chinese chrome: status chips, page pipeline, log, queue) and redeploy
+   it to the SAME Artifact URL recorded under State below (pass it as the
+   `url` param; keep favicon 🤖 stable). The user reads loop output here.
+6. **Commit** — single commit `loop(N): <summary>` on `master`.
+7. **Sleep** — self-paced wake-up (see pacing), then go to 1.
 
 ## Pacing policy (self-paced)
 
@@ -45,3 +49,5 @@ Each iteration is one pass of:
 - **Iteration counter + narrative log:** `wiki/_meta/loop-log.md`
 - **Backlog:** `wiki/_meta/queue.md`
 - **Per-page freshness:** `updated:` frontmatter on each page
+- **HTML dashboard (redeploy to this exact URL every iteration):**
+  https://claude.ai/code/artifact/821047d4-fdd2-44a8-b26e-0034119ae56f

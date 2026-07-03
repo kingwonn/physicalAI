@@ -11,7 +11,8 @@ This repo is maintained by an autonomous research loop (see [LOOP.md](LOOP.md)):
 
 ```
 Orient → Research (multi-agent web fan-out) → Verify (adversarial fact-check)
-       → Integrate (write/refresh wiki pages) → Commit → Sleep → repeat
+       → Integrate (write/refresh wiki pages) → Publish (HTML dashboard)
+       → Commit → Sleep → repeat
 ```
 
 Every change is a git commit (`loop(N): ...`), so `git log` **is** the audit
@@ -19,6 +20,8 @@ trail of what the wiki learned and when.
 
 ## Reading the wiki
 
+- **Live HTML console** (refreshed every loop iteration):
+  https://claude.ai/code/artifact/821047d4-fdd2-44a8-b26e-0034119ae56f
 - Start at [wiki/HOME.md](wiki/HOME.md) — annotated index and reading order.
 - [llms.txt](llms.txt) — machine-readable index (llms.txt convention).
 - Every page carries frontmatter with `updated:` (last research pass) and a
