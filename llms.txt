@@ -1,8 +1,38 @@
 # physicalAI wiki
 
-> Git-versioned, LLM-maintained knowledge base on Physical AI worldwide: history, SOTA, tech tree, key people/orgs, regional landscapes, hardware, data, investment, open problems.
+> Git-versioned, LLM-maintained knowledge base on Physical AI worldwide: history, SOTA, tech tree, key people/orgs, regional landscapes, hardware, data, investment, open problems. 18 topic pages, each adversarially fact-checked (`confidence: verified`), last full build 2026-07-03. Maintained by an autonomous research loop (LOOP.md); every change is a git commit.
 
-(Skeleton — populated by loop(1) initial build.)
+## Start here
+- [HOME](wiki/HOME.md): annotated index, field overview, reading order
 
-## Wiki
-- [HOME](wiki/HOME.md): annotated index and reading order
+## Core
+- [History of Physical AI](wiki/history.md): Unimate/Shakey → deep-RL/sim2real → the 2022-26 robot-foundation-model turn and humanoid mass-production wave
+- [State of the Art (2026-07)](wiki/state-of-the-art.md): hub snapshot — leading VLAs, first commercial humanoid fleets, shipment shares, record capital
+- [Physical AI Tech Tree](wiki/tech-tree.md): layered dependency map with per-branch bottlenecks (data, dexterity, reliability)
+
+## Technology
+- [Vision-Language-Action Models](wiki/vla-models.md): RT-1/RT-2 → π0.x, GR00T, Gemini Robotics, Helix — architectures, data, benchmarks, open-vs-closed
+- [World Models for Robotics](wiki/world-models.md): Cosmos, Genie 3, 1X, V-JEPA 2, Tesla — learned simulators, planners, evaluators, data engines
+- [Dexterous Manipulation](wiki/manipulation.md): grippers vs hands, tactile sensing, ALOHA/Diffusion-Policy/UMI lineage, capability frontier
+- [Legged Locomotion](wiki/locomotion.md): ZMP/MPC → massively-parallel sim-to-real RL, parkour milestones, field robustness
+- [Simulation & Sim2Real](wiki/simulation.md): GPU-parallel sims, domain randomization, synthetic-data pipelines
+- [Hardware Substrate](wiki/hardware.md): actuators, hands, sensing, compute, batteries, BOM curves, supply chain
+- [The Robot Data Problem](wiki/data.md): teleop, human video, sim data, open datasets, data factories, scaling-law evidence
+
+## People & organizations
+- [Key People](wiki/key-people.md): researchers, founder-executives, China founders; 2024-26 moves
+- [Organizations: Global Who's-Who](wiki/organizations.md): companies, big-tech divisions, labs, national programs
+
+## Regional landscapes
+- [Landscape: USA & Canada](wiki/landscape-usa.md): humanoid makers, robot-brain labs, NVIDIA platform, big tech, funding climate
+- [Landscape: China](wiki/landscape-china.md): ~90% of humanoid volume, supply chain, policy, price disruption, IPO wave
+- [Landscape: Europe, Japan, Korea & RoW](wiki/landscape-row.md): 1X/NEURA/PAL, Japan's incumbents + sovereign JV, Korea's chaebols, Israel/India/Gulf
+
+## Capital & frontier
+- [Investment & Market](wiki/investment.md): as-of-dated mega-round/valuation/IPO ledger with bubble-watch skepticism
+- [Open Problems & Debates](wiki/open-problems.md): data scarcity, sim2real, dexterity gap, reliability, safety certification, evaluation crisis, form-factor and timeline debates
+
+## Meta
+- [LOOP.md](LOOP.md): loop engineering — how the wiki maintains itself
+- [Loop log](wiki/_meta/loop-log.md): append-only iteration history
+- [Research queue](wiki/_meta/queue.md): backlog for future iterations
