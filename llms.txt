@@ -1,0 +1,8 @@
+# physicalAI wiki
+
+> Git-versioned, LLM-maintained knowledge base on Physical AI worldwide: history, SOTA, tech tree, key people/orgs, regional landscapes, hardware, data, investment, open problems.
+
+(Skeleton — populated by loop(1) initial build.)
+
+## Wiki
+- [HOME](wiki/HOME.md): annotated index and reading order
