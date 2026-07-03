@@ -21,7 +21,7 @@ confidence: verified
 |---|---|---|---|---|---|
 | Unitree | Hangzhou | H1, G1, R1 humanoids; Go/B quadrupeds | R1 ~$5,900; G1 ~$16k; H1 ~$90k | 5,500 humanoids sold; RMB 1.71B revenue | STAR IPO registration approved 2026-07 |
 | AgiBot (Zhiyuan) | Shanghai | Yuanzheng A2, Lingxi X2; GO-1/GO-2 models | n/a (B2B) | 5,168 humanoids shipped (Omdia: 39% share) | 15,000th unit 2026-06; HK IPO planned (unverified) |
-| UBTech | Shenzhen (HK-listed 9880) | Walker S2 (industrial) | six figures USD (B2B) | 1,079 full-size humanoids delivered; RMB 2.0B revenue | Mass production since 2025-11 |
+| UBTech | Shenzhen (HK-listed 9880) | Walker S2 (industrial); UWORLD U1 (consumer, 2026-06) | Walker: six figures USD (B2B); U1 from RMB 119,800 (~$16,700) | 1,079 full-size humanoids delivered; RMB 2.0B revenue | Walker mass production since 2025-11; U1 deliveries from ~2026-09 |
 | Galbot | Beijing | G1 semi-humanoid (wheeled) | ~$87k (unverified) | Stores/pharmacies in 30+ cities | $3B valuation 2025-12; HK IPO prep |
 | Fourier | Shanghai | GR-3 "care-bot" | ~$27.5k B2B | Healthcare/eldercare pilots | GR-3 launched 2025-08 |
 | EngineAI | Shenzhen | PM01, SE01, T800 | PM01 ~RMB 88k (~$12k) | First humanoid front flip (2025-02) | HK IPO filed confidentially 2026-06 |
@@ -36,7 +36,7 @@ confidence: verified
 - **Financials** (IPO prospectus, as of 2026-03): revenue RMB 392M in 2024 → RMB 1.71B (~$250M) in 2025; adjusted net profit ~RMB 600M (~$90M) in 2025, up 674% YoY — rare profitability in this sector. 480 employees, 175 in R&D.
 - **Volumes**: 5,500 humanoids sold in 2025; >30,000 quadrupeds shipped 2022–2025-09. Prospectus claims 32.4% of global 2025 humanoid unit shipments (see share-count caveat below). Plans capacity of 75,000 humanoids + 115,000 quadrupeds/yr within five years.
 - **Price trajectory**: average humanoid selling price fell from ~RMB 593,400 (~$85k) in 2023 to ~RMB 167,600 (~$25k) in 2025, a ~72% drop, while gross margin rose to ~60%. R1 launched 2025-07-25 at RMB 39,900 (~$5,900): 1.21 m, 25 kg, 26 DoF, hot-swappable battery, onboard multimodal model (UnifoLM).
-- **Capital markets**: June 2025 Series C at RMB 12.7B (~$1.7B) post-money (Alibaba, Tencent, China Mobile, Ant Group, Geely). Filed for Shanghai STAR Market IPO 2026-03-20 seeking RMB 4.2B (~$610–620M); listing committee approved 2026-06-01 in a record 73 days — first "embodied AI" company cleared for A-shares; CSRC registration approved 2026-07 ($618M raise); target post-IPO valuation ~RMB 42B (~$6–6.2B).
+- **Capital markets**: June 2025 Series C at RMB 12.7B (~$1.7B) post-money (Alibaba, Tencent, China Mobile, Ant Group, Geely). Filed for Shanghai STAR Market IPO 2026-03-20 seeking RMB 4.2B (~$610–620M); listing committee approved 2026-06-01 in a record 73 days — first "embodied AI" company cleared for A-shares; CSRC registration approved 2026-07-02 (reported 2026-07-03; $618M raise); target post-IPO valuation ~RMB 42B (~$6–6.2B). Underwriting, pricing, and share subscription are the remaining steps; press reports suggest a STAR Market debut as early as late July 2026 (unverified).
 - Dominated the first World Humanoid Robot Games (2025-08): 11 medals incl. 4 golds (400 m, 1,500 m, 100 m hurdles, 4×100 m relay); its H1 hit 4.78 m/s in competition. See [Locomotion](locomotion.md).
 
 ## AgiBot / Zhiyuan Robotics
@@ -52,6 +52,7 @@ confidence: verified
 - **2025 results** (reported 2026-03-31): revenue RMB 2.001B (+53.3% YoY); full-size humanoid segment RMB 820M, up 2,203.7% YoY, on 1,079 units delivered — first company to exceed 1,000 full-size humanoid deliveries in a year. Gross margin 37.7%; net loss narrowed ~32% to RMB 790M (still loss-making).
 - **Walker S2** (industrial humanoid, autonomous hot-swap battery): mass production and first several-hundred-unit batch delivery began 2025-11; cumulative Walker-series orders >RMB 800M (~$112M) since early 2025, incl. a RMB 250M order (2025-09) and RMB 159M for a data-collection center in Zigong. Capacity plan: 5,000 units/yr by 2026, 10,000 by 2027.
 - Customers/pilots: BYD, Foxconn, Geely, FAW-Volkswagen Qingdao, Audi FAW, BAIC New Energy, Dongfeng Liuzhou, SF Express — mostly automotive final-assembly, logistics, and data-collection roles.
+- **UWORLD U1 consumer line** (unveiled 2026-06-30 at UBTech's Shenzhen global launch event): "ultra-bionic" companion humanoids with lifelike silicone skin, marketed for companionship, eldercare, reception, and premium domestic service. Three models — U1 Lite (semi-torso), U1 Pro, U1 Ultra — priced from RMB 119,800 (~$16,700); UBTech claimed 13,361 cumulative orders at launch (company-reported; TechNode cites ~11,000+ secured), first deliveries from mid-September 2026 (as of 2026-07). A consumer-market pivot alongside the industrial Walker line.
 
 ## Galbot
 
@@ -167,3 +168,6 @@ confidence: verified
 - https://www.mckinsey.com/industries/industrials/our-insights/turning-humanoid-supply-chain-constraints-into-billion-dollar-wins — humanoid supply-chain concentration and actuator cost share.
 - https://www.humanoidsdaily.com/news/goldman-sachs-chinese-suppliers-aggressively-building-humanoid-robot-capacity-ahead-of-orders — Chinese supplier capacity build-out ahead of orders.
 - https://blog.robozaps.com/b/economics-of-humanoid-robot-production — Optimus-without-China BOM estimate ($46k→$131k) (unverified aggregator).
+- https://www.prnewswire.com/news-releases/ubtech-launches-uworld-u1-the-worlds-first-full-size-mass-produced-ultra-bionic-humanoid-robot-302815272.html — UBTech UWORLD U1 launch (2026-06-30): three models, RMB 119,800 base price, 13,361 orders claimed, mid-Sept deliveries (company press release).
+- https://technode.com/2026/07/01/ubtech-unveils-consumer-humanoid-robot-u1-says-orders-secure-11000-ahead-of-first-deliveries/ — independent report on U1 consumer launch and order tally (~11,000+).
+- https://news.futunn.com/en/post/75500836/robotics-sector-surges-unitree-technology-s-star-market-ipo-registration — Unitree IPO registration effective; pricing/subscription next, possible late-July 2026 debut (press report).

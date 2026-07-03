@@ -49,14 +49,14 @@ Full detail in [Humanoid robots](humanoid-robots.md); company profiles in [Organ
 | Company | Robot | Status (as of 2026-07) |
 |---|---|---|
 | Figure | Figure 03 (Helix 02) | Figure 03s started complex logistics sequencing at BMW Spartanburg — project announced by BMW 2026-06-25, Figure announced deployment 2026-06-30 — after Figure 02's completed pilot (30,000+ X3s supported over ~10 months, ~1,250 hrs); reported initial 40-unit fleet contract (single aggregator source, unverified); Catalyst Brands logistics agreement (2026-05-26, Reno, NV DC); billing reportedly ~$25/robot-hour (unverified). Note: BMW's Leipzig pilot (summer 2026) uses Hexagon Robotics' AEON, not Figure |
-| Tesla | Optimus V3 | Production start at Fremont ~late July/Aug 2026 on converted Model S/X line, "very slow" initial volume; Gen-3 hands: ~25 actuators per forearm/hand side (22 DoF per hand, tendon-driven, 50 actuators across both hands); high volume targeted 2027; consumer sales targeted "end of 2027" (Musk, Davos, 2026-01) |
+| Tesla | Optimus V3 | Production start at Fremont ~late July/Aug 2026 on converted Model S/X line, "very slow" initial volume; first Optimus line delivered to Fremont with installation begun (per Tesla VP Lars Moravy); Musk posted a photo walking the line 2026-07-01; Gen-3 hands: ~25 actuators per forearm/hand side (22 DoF per hand, tendon-driven, 50 actuators across both hands); high volume targeted 2027; consumer sales targeted "end of 2027" (Musk, Davos, 2026-01) |
 | Boston Dynamics | Electric Atlas | Production version unveiled CES 2026-01-05; 56 DoF, 2.3 m reach, 50 kg certified lift; 2026 fleet allocations fully committed (Hyundai RMAC, Google DeepMind partnership); Hyundai building a 30,000-robots/yr US factory; reported 25,000-unit internal commitment (unverified) |
 | 1X | NEO | $20,000 (or $499/mo) consumer home humanoid; ~10,000 pre-orders in first 5 days (Oct 2025, company-reported); full-scale production at Hayward, CA since 2026-04-30 (10k/yr capacity claimed); first home deliveries promised before end of 2026 |
 | Agility Robotics | Digit | GXO logistics: 100,000+ totes moved at Flowery Branch (as of late 2025); 7-unit RaaS contract for Toyota's RAV4 plant (Woodstock, Ontario; signed 2026-02) with rollout during 2026 |
-| Unitree | G1 / R1 / H2 | ~5,500 humanoids shipped 2025 (most of any maker); G1 at ~$16k (listed on Amazon at $17,990); R1 at ~$5,900; Shanghai STAR IPO cleared exchange listing review 2026-06-01 and won CSRC registration approval 2026-07-03 (~¥4.2B / ~$618M raise); 2025 revenue ¥1.70B, net profit (excl. non-recurring) ~¥590M |
+| Unitree | G1 / R1 / H2 | ~5,500 humanoids shipped 2025 (most of any maker); G1 at ~$16k (listed on Amazon at $17,990); R1 at ~$5,900; Shanghai STAR IPO cleared exchange listing review 2026-06-01 and won CSRC registration approval 2026-07-02 (reported 2026-07-03; ~¥4.2B / ~$618M raise); 2025 revenue ¥1.70B, net profit (excl. non-recurring) ~¥590M |
 | AgiBot (Zhiyuan) | Expedition A3 etc. | 10,000th general-purpose robot rolled out late March 2026 (~5,168 shipped in 2025); pursuing backdoor listing |
-| UBTech | Walker S2 | Claims 1,000+ industrial humanoids deployed in auto/electronics/logistics plants (company-reported, unverified) |
-| Apptronik | Apollo | $935M total Series A (+$520M extension 2026-02-11) at ~$5.3B reported post-money valuation; Mercedes-Benz, Google, John Deere among backers |
+| UBTech | Walker S2 | Claims 1,000+ industrial humanoids deployed in auto/electronics/logistics plants (company-reported, unverified); launched UWORLD U1 consumer companion line 2026-06-30, from ~RMB 119,800, 13k+ orders claimed (company-reported), deliveries from ~2026-09 |
+| Apptronik | Apollo / Apollo 2 | $935M total Series A (+$520M extension 2026-02-11) at ~$5.3B reported post-money valuation; Mercedes-Benz, Google, John Deere among backers; unveiled Apollo 2 + 90,000 sq ft "Robot Park" training campus (Austin, 2026-06-30) with Google DeepMind |
 
 - Market scale: TrendForce forecasts global humanoid shipments >50,000 units in 2026 (~700% YoY); China projected +94% output YoY with Unitree + AgiBot capturing ~80% of Chinese shipments (as of 2026-04 forecast).
 - Regional split: ~85–90% of 2025 humanoid unit shipments were Chinese ([Landscape: China](landscape-china.md)), while the highest-value deployments and frontier models remain US-led ([Landscape: USA](landscape-usa.md)); Europe/Korea/Japan positions covered in [Landscape: rest of world](landscape-row.md).
@@ -103,7 +103,7 @@ Details and history in [Investment](investment.md).
 | Skild AI | $1.4B Series C (2026-01-14, SoftBank-led; Nvidia, Bezos) | >$14B |
 | Physical Intelligence | ~$1B round in progress (reported 2026-03) | >$11B target (unverified until closed) |
 | Apptronik | $520M Series A extension (2026-02-11) | ~$5.3B reported post-money |
-| Unitree | Shanghai STAR IPO: listing review passed 2026-06-01, CSRC registration approved 2026-07-03 (~$618M raise) | ~$6.2B target (per Caixin) |
+| Unitree | Shanghai STAR IPO: listing review passed 2026-06-01, CSRC registration approved 2026-07-02 (~$618M raise); pricing/subscription next, debut possibly late July 2026 (press reports, unverified) | ~$6.2B target (per Caixin) |
 
 - Physical-AI startups raised >$6.4B across 27 deals in Q1 2026 alone (single tracker, unverified); full-year dedicated humanoid investment projected >$20B if H1 pace holds (projection, unverified).
 
@@ -133,7 +133,7 @@ Cross-reference: [Open problems](open-problems.md).
 - https://techcrunch.com/2026/04/16/physical-intelligence-a-hot-robotics-startup-says-its-new-robot-brain-can-figure-out-tasks-it-was-never-taught/ — independent confirmation of π0.7 release and claims (2026-04-16)
 - https://www.bloomberg.com/news/articles/2026-03-27/ex-deepmind-staffers-robotics-startup-in-talks-for-11-billion-valuation — Physical Intelligence in talks for ~$1B at >$11B valuation (2026-03-27)
 - https://techcrunch.com/2026/01/14/robotic-software-maker-skild-ai-hits-14b-valuation/ — Skild AI $1.4B Series C at >$14B, SoftBank-led (2026-01-14)
-- https://www.caixinglobal.com/2026-07-03/unitree-robotics-wins-approval-for-618-million-star-market-ipo-102460136.html — Unitree CSRC registration approval (2026-07-03), ~$618M raise, 2025 financials
+- https://www.caixinglobal.com/2026-07-03/unitree-robotics-wins-approval-for-618-million-star-market-ipo-102460136.html — Unitree CSRC registration approval (approved Thursday 2026-07-02, reported 2026-07-03), ~$618M raise, 2025 financials
 - https://www.scmp.com/tech/tech-trends/article/3340446/chinas-unitree-ships-more-5500-humanoid-robots-2025-surpassing-us-peers — Unitree 5,500+ / AgiBot 5,168 2025 shipments (Omdia)
 - https://www.prnewswire.com/news-releases/kung-fu-meets-spring--unitree-spring-festival-gala-robots-present-cyber-real-kung-fu-in-the-year-of-the-horse-302689291.html — Unitree autonomous kung-fu at Spring Festival Gala (2026-02-16)
 - https://www.eweek.com/news/tesla-optimus-robot-2027-sale/ — Musk: Optimus consumer sales targeted end of 2027 (Davos, 2026-01)
@@ -154,3 +154,7 @@ Cross-reference: [Open problems](open-problems.md).
 - https://www.therobotreport.com/rlwrld-releases-rldx-1-a-dexterity-first-foundation-model-for-robot-hands/ — RLDX-1 dexterity foundation model
 - https://deepmind.google/blog/genie-3-a-new-frontier-for-world-models/ — Genie 3 capabilities (720p/24fps real-time interactive worlds)
 - https://arxiv.org/pdf/2510.13626 — LIBERO-Plus robustness analysis (benchmark saturation evidence)
+- https://www.benzinga.com/markets/tech/26/07/60209589/elon-musk-says-teslas-model-s-model-x-line-is-now-building-optimus-robots — Musk photo post from first Fremont Optimus line (2026-07-01); Moravy: line landed, installation begun
+- https://www.prnewswire.com/news-releases/ubtech-launches-uworld-u1-the-worlds-first-full-size-mass-produced-ultra-bionic-humanoid-robot-302815272.html — UBTech UWORLD U1 consumer launch (2026-06-30), pricing, order claims
+- https://apptronik.com/news-collection/welcome-to-robot-park-where-apptroniks-apollo-goes-to-work — Apptronik Apollo 2 + Robot Park unveiling (2026-06-30)
+- https://news.futunn.com/en/post/75500836/robotics-sector-surges-unitree-technology-s-star-market-ipo-registration — Unitree IPO registration effective; possible late-July 2026 debut (press report)

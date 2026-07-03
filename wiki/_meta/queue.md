@@ -5,17 +5,19 @@ Distilled from loop(1)'s 54 research leads (2026-07-03) plus the original backlo
 
 ## New pages (candidates)
 
-- [ ] Safety & regulation deep page: ISO 25785-1 (CD ballot initiated 2026-05-12), ISO 10218/TS 15066 revisions, EU AI Act applicability, China HEIS vs Western SDO race — the certification gate for fenceless/home deployment (1X NEO home deliveries late 2026).
+- [x] ~~Safety & regulation deep page~~ — done loop(2): [safety-regulation.md](../safety-regulation.md)
+- [x] ~~Glossary page~~ — done loop(2): [glossary.md](../glossary.md); append candidates for later: affordance, VLM-vs-VLA distinction, RECAP/RLHF-for-robotics, end-effector taxonomy (parallel-jaw vs suction)
 - [ ] Tactile sensing & dexterous hands deep page — repeatedly surfaced as the weakest hardware branch (Sharpa Wave, GelSight/Digit 360 class, F-TAC Hand, graphene skins, DAIMON-Infinity; China hand vendors Inspire/LinkerBot/DexRobot economics).
 - [ ] Evaluation crisis / benchmarks page: RoboArena, MolmoSpaces, GM-100, DROID, LIBERO-Plus saturation; track whether VLA-REPLICA, RoboChallenge, or EIbench becomes the shared standard; self-reported-benchmark credibility problem.
 - [ ] Per-company deep pages for top players (Figure, Physical Intelligence, Unitree, NVIDIA robotics stack, Tesla Optimus) — landscape pages now stable.
 - [ ] Data-foundry economics page/section: Scale Physical AI Data Engine, Generalist GEN-1 + "data foundry partners", teleop-hour pricing, proprietary-vs-open data gap.
 - [ ] Academic lab map (Stanford IRIS/REAL, Berkeley RAIL/BAIR, CMU, Tsinghua, KAIST...).
-- [ ] Glossary page (VLA, world model, sim2real, teleop, QDD actuator...).
 
 ## Watch items (news-sweep targets)
 
-- [ ] IPO wave: Unitree STAR-market listing pricing/pop (CSRC registration approved 2026-07-03), AgiBot HK backdoor listing (HK$40-50B target), Galbot/EngineAI filings, Agility-Churchill Capital XI SPAC outcome.
+- [ ] IPO wave: Unitree STAR-market listing pricing/pop (CSRC registration approved 2026-07-02; debut possibly late July, unverified), AgiBot HK backdoor listing (HK$40-50B target), Galbot/EngineAI filings, Agility-Churchill Capital XI SPAC outcome.
+- [ ] UBTech UWORLD U1 consumer humanoid: deliveries from mid-Sept 2026; verify order book (company claims 13,361 at launch vs TechNode ~11,000+).
+- [ ] Standards track: ISO 25785-1 CD → DIS progression (expected late 2026/2027), possible Part 2 work item; EU delegated acts folding AI requirements into Machinery Regulation Annex III (due 2028-08-02); what certification 1X actually obtains for NEO before home deliveries (UL 3300 listing or none).
 - [ ] World-model-as-policy convergence: DreamZero/GR00T N2, π0.7 visual-subgoal world model; Cosmos 3 technical report details; SIMA 2 + Genie 3 transfer-to-physical evidence.
 - [ ] Tesla: Optimus V3 Fremont production start (slated late-July/Aug 2026), official V3 actuator/DoF specs, AI5 robot silicon (mass production mid-2027) vs Jetson Thor.
 - [ ] Meta Assured Robot Intelligence acquisition (2026-05) / Meta Robotics Studio; OpenAI robotics division (verify Aditya Ramesh VP-of-Robotics from primary sources).

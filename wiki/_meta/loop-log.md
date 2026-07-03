@@ -18,3 +18,17 @@ vla-models/state-of-the-art/world-models/simulation. Wrote HOME.md, refreshed
 llms.txt + README + LOOP.md (added Publish step + console URL), distilled 54
 research leads into the queue. Published HTML console v2 (build-complete state).
 Next: loop(2) light pass — news sweep + 1-3 queue picks.
+
+## loop(2) — 2026-07-03
+Light pass (6 agents, ~0.4M tokens, ~20 min): global news sweep + 2 queue
+pages. New pages safety-regulation (9 verify corrections) and glossary (5),
+both verified. News sweep patched 5 spots across landscape-china,
+landscape-usa, humanoid-robots, state-of-the-art: UBTech UWORLD U1 consumer
+launch (2026-06-30, from ~$16.7k), Unitree CSRC approval (2026-07-02, not
+07-03 as first reported), Apptronik Apollo 2 + Robot Park, Tesla Fremont
+Optimus line delivered/installing. News verify pass corrected 4 details
+(photo-not-video walkthrough, line delivered-not-installed, approval date).
+Six watch items checked, no news (PI round close, AgiBot HK, Agility SPAC,
+policy, frontier models, EU/JP/KR). HOME/llms.txt now list 20 pages; queue
+pruned + 3 new watch items. Next: loop(3) light pass — news sweep + queue
+picks (tactile/dexterous-hands page or evaluation-crisis page).
