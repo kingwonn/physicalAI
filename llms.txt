@@ -1,6 +1,6 @@
 # physicalAI wiki
 
-> Git-versioned, LLM-maintained knowledge base on Physical AI worldwide: history, SOTA, tech tree, key people/orgs, regional landscapes, hardware, data, investment, open problems, safety/regulation. 20 topic pages, each adversarially fact-checked (`confidence: verified`), last updated 2026-07-03. Maintained by an autonomous research loop (LOOP.md); every change is a git commit.
+> Git-versioned, LLM-maintained knowledge base on Physical AI worldwide: history, SOTA, tech tree, key people/orgs, regional landscapes, hardware, data, investment, open problems, safety/regulation, evaluation. 22 topic pages, each adversarially fact-checked (`confidence: verified`), last updated 2026-07-03. Maintained by an autonomous research loop (LOOP.md); every change is a git commit.
 
 ## Start here
 - [HOME](wiki/HOME.md): annotated index, field overview, reading order
@@ -18,6 +18,8 @@
 - [Simulation & Sim2Real](wiki/simulation.md): GPU-parallel sims, domain randomization, synthetic-data pipelines
 - [Hardware Substrate](wiki/hardware.md): actuators, hands, sensing, compute, batteries, BOM curves, supply chain
 - [The Robot Data Problem](wiki/data.md): teleop, human video, sim data, open datasets, data factories, scaling-law evidence
+- [Tactile Sensing & Dexterous Hands](wiki/tactile-hands.md): hand landscape with prices, tactile sensing tech, datasets, China hand economics, the dexterity gap
+- [Evaluation & Benchmarks](wiki/evaluation.md): sim-suite saturation, real-robot arenas, embodied-reasoning exams, industry metrics, benchmark credibility
 
 ## People & organizations
 - [Key People](wiki/key-people.md): researchers, founder-executives, China founders; 2024-26 moves

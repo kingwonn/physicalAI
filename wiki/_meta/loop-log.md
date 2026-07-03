@@ -32,3 +32,15 @@ Six watch items checked, no news (PI round close, AgiBot HK, Agility SPAC,
 policy, frontier models, EU/JP/KR). HOME/llms.txt now list 20 pages; queue
 pruned + 3 new watch items. Next: loop(3) light pass — news sweep + queue
 picks (tactile/dexterous-hands page or evaluation-crisis page).
+
+## loop(3) — 2026-07-03
+Light pass (5 agents, ~0.4M tokens, ~18 min): 2 queue pages + narrow news
+check. New pages tactile-hands (10 verify corrections — notably Unitree
+Dex5-1 price refuted from ~$7-8k to $25-27k reseller pricing; silicone-skin
+durability claim reattributed to the ORCA study) and evaluation (7
+corrections), both verified. News check: ZERO changes needed — all watch
+items (Unitree IPO details, Tesla Fremont line, Hyundai-SoftBank BD stake,
+Figure BotQ ramp, NVIDIA stack) already on the pages; wiki is current with
+the news cycle. HOME/llms.txt at 22 pages; queue: 2 done, 2 watch items
+added. Next: loop(4) — news sweep + queue picks (per-company deep pages or
+data-foundry economics or academic lab map).

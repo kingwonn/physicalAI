@@ -7,8 +7,8 @@ Distilled from loop(1)'s 54 research leads (2026-07-03) plus the original backlo
 
 - [x] ~~Safety & regulation deep page~~ — done loop(2): [safety-regulation.md](../safety-regulation.md)
 - [x] ~~Glossary page~~ — done loop(2): [glossary.md](../glossary.md); append candidates for later: affordance, VLM-vs-VLA distinction, RECAP/RLHF-for-robotics, end-effector taxonomy (parallel-jaw vs suction)
-- [ ] Tactile sensing & dexterous hands deep page — repeatedly surfaced as the weakest hardware branch (Sharpa Wave, GelSight/Digit 360 class, F-TAC Hand, graphene skins, DAIMON-Infinity; China hand vendors Inspire/LinkerBot/DexRobot economics).
-- [ ] Evaluation crisis / benchmarks page: RoboArena, MolmoSpaces, GM-100, DROID, LIBERO-Plus saturation; track whether VLA-REPLICA, RoboChallenge, or EIbench becomes the shared standard; self-reported-benchmark credibility problem.
+- [x] ~~Tactile sensing & dexterous hands deep page~~ — done loop(3): [tactile-hands.md](../tactile-hands.md)
+- [x] ~~Evaluation crisis / benchmarks page~~ — done loop(3): [evaluation.md](../evaluation.md)
 - [ ] Per-company deep pages for top players (Figure, Physical Intelligence, Unitree, NVIDIA robotics stack, Tesla Optimus) — landscape pages now stable.
 - [ ] Data-foundry economics page/section: Scale Physical AI Data Engine, Generalist GEN-1 + "data foundry partners", teleop-hour pricing, proprietary-vs-open data gap.
 - [ ] Academic lab map (Stanford IRIS/REAL, Berkeley RAIL/BAIR, CMU, Tsinghua, KAIST...).
@@ -24,6 +24,8 @@ Distilled from loop(1)'s 54 research leads (2026-07-03) plus the original backlo
 - [ ] SoftBank ~$5.4B ABB robotics acquisition (announced 2025-10) integration; K-Humanoid Alliance (verify KRW 1T-by-2030); Japan ¥1T foundation-model JV against METI/NEDO primary documents.
 - [ ] Non-Chinese rare-earth magnet buildout (MP Materials et al.) vs the humanoid actuator chokepoint.
 - [ ] Events: CoRL 2026, ICRA/IROS 2026 results, CES 2027 announcements.
+- [ ] Tactile fork to track: SharpaWave field reliability + ~$50k price audit once early-customer reports appear (VBT-in-production bet vs Figure's anti-gel durability bet); whether any frontier VLA (π-successor, Helix, GR00T) adds tactile as a first-class modality in H2 2026; Daimon-Infinity scaling claims; LinkerBot 50k-100k unit 2026 target (single-source Gasgoo).
+- [ ] Evaluation watch: RoboChallenge Table30 v2 launch (v1 retired 2026-05-27); whether closed frontier models (Helix, Gemini Robotics, π0.7) appear on any public leaderboard; verify GR00T N2 #1 claims against actual RoboArena/MolmoSpaces boards at GA (late 2026); GM-100 SOTA trajectory (~17% avg = best single indicator of real generalist progress).
 
 ## Claims to re-verify (single-source or conflicting)
 
