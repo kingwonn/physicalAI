@@ -13,6 +13,14 @@ Each iteration is one pass of:
    pull items off the queue, and always do a news sweep.
 2. **Research** — fan out web-research agents (one per topic/page). Agents
    search, read primary sources, and write/update the page directly.
+   *Community signals:* news-sweep agents may additionally run the
+   `last30days` engine (`python3 ~/.claude/skills/last30days/scripts/last30days.py
+   <topic> --quick --search reddit,hackernews,polymarket --emit compact`) to
+   surface Reddit/HN/Polymarket discussion from the last 30 days. Treat
+   community content as *leads and sentiment*, never as verifiable facts —
+   anything promoted to a page still needs a primary source. (X/YouTube/TikTok
+   in that engine need API keys we don't have; 小红书/微信公号/知乎 are not
+   supported by it at all and remain a known blind spot.)
 3. **Verify** — adversarial fact-check agents re-derive the highest-stakes
    claims (dates, dollar amounts, model names, SOTA assertions) from
    independent sources and fix errors in place. Pages that pass get
