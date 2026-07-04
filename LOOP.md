@@ -48,6 +48,23 @@ Each iteration is one pass of:
 - If two consecutive iterations produce no meaningful change, lengthen the
   interval; shorten it again when a sweep finds real news.
 
+## Unknowns discipline (added 2026-07-04 after a self-review)
+
+Lessons from loops 0-12, framed per "map vs territory":
+- **Interview first.** Before any major new build, ask the user 2-3 questions
+  whose answers change the architecture (output language, delivery format,
+  cost tier). Every mid-project pivot so far (HTML views, source audit,
+  Sonnet tiering, Chinese edition) was an *unknown known* — obvious to the
+  user, never asked by the loop.
+- **Blind-spot pass.** When entering a new domain/page area, spend one agent
+  on "what are the unknown unknowns here" before fanning out researchers.
+- **Aggregators are systematically unreliable** (fabricated counts, currency
+  misreads, misattributions). The verify layer exists because of this; never
+  weaken it. Secondary sources are leads; only primaries are facts.
+- **Territory lessons already encoded**: inline workflow params (args can
+  fail), resumeFromRunId + fallback heartbeats (processes die), one-file-only
+  agent scoping (agents drift), disjoint page ownership (edit races).
+
 ## Invariants
 
 - The repo is always in a committed, self-consistent state at the end of an
