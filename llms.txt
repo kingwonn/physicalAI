@@ -47,6 +47,9 @@
 ## Reference
 - [Glossary](wiki/glossary.md): ~35 core Physical AI terms, each cross-linked to its covering page
 
+## 中文版 (Chinese mirror)
+- [wiki-zh/](wiki-zh/): full Simplified-Chinese translation of all pages, same slugs, `lang: zh` frontmatter, synced from wiki/ (built 2026-07-04)
+
 ## Meta
 - [LOOP.md](LOOP.md): loop engineering — how the wiki maintains itself
 - [Loop log](wiki/_meta/loop-log.md): append-only iteration history

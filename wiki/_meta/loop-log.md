@@ -212,3 +212,16 @@ fixed for internal consistency). IPO: zero movement (Saturday); Monday
 07-06 window armed. Queue: New Yorker item closed (done loops 9-10); State
 Grid tender-watch added. Next: loop(13) — Sunday quiet cycle expected;
 Monday brings the IPO window + Chinese trading week.
+
+## zh-mirror — 2026-07-04 (loop paused)
+User paused the loop after loop(12) and requested a full Chinese edition.
+Built wiki-zh/: all 30 pages translated to Simplified Chinese (same slugs,
+lang: zh + source: frontmatter, cross-links preserved, source URLs intact,
+"(unverified)" → "(未证实)" etc. mappings). Pipeline: per-page translate →
+per-page QC; first 21 pages translated on Fable-5-low, then switched to
+Sonnet-5 per user request (remaining 9 translate + all 30 QC on Sonnet).
+QC fixed 5 issues (tool-call artifact leak in glossary, "headline"
+leftovers, a translator's bracketed self-note in company-unitree corrected
+to ~$300M). Published the Chinese reader artifact (see LOOP.md State) and
+recorded the zh sync rule + PAUSED status in LOOP.md. Loop resumes only on
+user request; hot watch item remains Unitree IPO pricing (week of 07-06).

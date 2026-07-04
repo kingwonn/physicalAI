@@ -56,6 +56,21 @@ Each iteration is one pass of:
 - Iteration numbering is monotonic; the counter lives in the loop log.
 - The loop never deletes history — corrections supersede, git remembers.
 
+## Chinese mirror (wiki-zh/)
+
+- Full Simplified-Chinese translation of every wiki page lives in `wiki-zh/`
+  (same slugs; frontmatter adds `lang: zh` + `source:`). Built 2026-07-04 by a
+  30-page translate+QC workflow (translation on Sonnet-class agents).
+- **Sync rule:** when a loop iteration changes English pages, the Publish step
+  should re-translate the *changed pages only* into `wiki-zh/` (Sonnet-class
+  agents) and redeploy the Chinese reader below.
+
+## Loop status
+
+- **PAUSED by user 2026-07-04 after loop(12)** (commit 678e0fe). Do not start
+  new iterations until the user asks to resume. Watch items remain queued in
+  `wiki/_meta/queue.md` (hot: Unitree IPO pricing, week of 2026-07-06).
+
 ## State
 
 - **Iteration counter + narrative log:** `wiki/_meta/loop-log.md`
@@ -63,3 +78,7 @@ Each iteration is one pass of:
 - **Per-page freshness:** `updated:` frontmatter on each page
 - **HTML dashboard (redeploy to this exact URL every iteration):**
   https://claude.ai/code/artifact/821047d4-fdd2-44a8-b26e-0034119ae56f
+- **English full-text reader:**
+  https://claude.ai/code/artifact/68ac0327-eba9-4992-b59e-f0a842129433
+- **Chinese full-text reader (wiki-zh/):**
+  https://claude.ai/code/artifact/4fe05af7-9241-4177-b7b5-296486977015
