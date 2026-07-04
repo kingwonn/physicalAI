@@ -77,3 +77,21 @@ Figure YouTube RSS resolved into feeds.md. Cross-page fix: landscape-usa
 espresso demo 13h → ~18h per PI blog. Unitree IPO pricing STILL pending.
 HOME/llms.txt at 26 pages. Next: loop(6) — IPO watch + Tesla Optimus page
 and/or academic lab map; consider lengthening interval if news stays dry.
+
+## loop(6) — 2026-07-04
+Company series finale + academia (6 agents, ~0.53M tokens, ~24 min). New
+pages company-optimus (7 verify corrections — V3 reveal guided "mid-2026"
+not late-July; hand-patent mechanism abandoned per Musk; Tesla Diner
+teleop softened to "reported") and academic-labs (2 — Spirit AI and Sunday
+Robotics founding years corrected to 2024), both verified. News sweep:
+MIIT+SASAC "2026 real-scene training special action" (launched 2026-06-09;
+primary-sourced official notice 工信厅联科函〔2026〕256号: ten provinces +
+central SOEs, 100+ scenarios, 10,000-unit-scale deployment capacity by
+end-2026) added to landscape-china policy timeline; verify pass upgraded
+deadlines to primary-sourced and completed the province list. NVIDIA blog
+RSS resolved into feeds.md; JAL×GMO Haneda humanoid trial queued with JAL
+primary source. Unitree IPO pricing STILL pending (US July-4 holiday, quiet
+cycle). HOME/llms.txt at 28 pages. Company deep-page series COMPLETE
+(Figure, Unitree, PI, NVIDIA, Optimus). Next: loop(7) — IPO watch +
+data-foundry economics page or JAL/landscape-row refresh; consider
+lengthening interval through the US holiday weekend.

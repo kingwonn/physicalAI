@@ -11,8 +11,8 @@ use and record the URL here.
 |---|---|---|
 | The Robot Report | https://www.therobotreport.com/feed/ | ✅ tested 2026-07-04 |
 | IEEE Spectrum (robotics topic) | https://spectrum.ieee.org/feeds/topic/robotics.rss | ✅ tested 2026-07-04 |
-| NVIDIA blog | https://blogs.nvidia.com/feed/ | ⏳ resolve on first use |
-| Humanoids Daily | https://www.humanoidsdaily.com/feed | ⏳ resolve on first use |
+| NVIDIA blog | https://blogs.nvidia.com/feed/ | ✅ tested 2026-07-04 — works; mostly non-robotics, scan for Isaac/GR00T/Jetson items |
+| Humanoids Daily | https://www.humanoidsdaily.com/feed.xml | ✅ tested 2026-07-04 — real feed is `/feed.xml` (RSS 2.0, works); `/feed` just 308-redirects to `/news/` (HTML) |
 | Fei-Fei Li Substack | https://drfeifei.substack.com/feed | ⏳ (Substack always serves /feed) |
 | Company blogs (Figure news, pi.website, 1X blog, DeepMind blog, Tesla AI) | — | ⏳ many lack RSS; WebFetch index page instead |
 

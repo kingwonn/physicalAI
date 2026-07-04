@@ -4,7 +4,7 @@ slug: HOME
 updated: 2026-07-03
 confidence: verified
 ---
-> Annotated index of the physicalAI wiki: 26 topic pages on Physical AI worldwide,
+> Annotated index of the physicalAI wiki: 28 topic pages on Physical AI worldwide,
 > each researched by a web-research agent and passed through an adversarial
 > fact-check (`confidence: verified`). Start with the three core pages, then go
 > deep by technology, people/orgs, region, or capital.
@@ -49,6 +49,7 @@ disputes are catalogued in [Open problems](open-problems.md).
 |---|---|
 | [Key People](key-people.md) | Researchers, US/Europe founder-executives, China's humanoid founders; 2024-26 moves and talent flows |
 | [Organizations: Global Who's-Who](organizations.md) | Reference table of companies, big-tech divisions, academic labs, national programs — funding, flagship results, scale |
+| [Academic Lab Map](academic-labs.md) | Global lab map with PIs, signature datasets/benchmarks, lab→startup pipelines, and the Google-diaspora talent flows |
 
 ## Regional landscapes
 
@@ -74,6 +75,7 @@ disputes are catalogued in [Open problems](open-problems.md).
 | [Unitree](company-unitree.md) | XDog-to-IPO arc, full price ladder, prospectus financials, STAR IPO status, vertical integration, viral milestones, safety incidents, US scrutiny |
 | [Physical Intelligence](company-pi.md) | Google-diaspora founding, ~$1.07B raised, π0→π0.7 model arc, openpi ecosystem, pre-revenue posture, skeptic case |
 | [NVIDIA Robotics Stack](company-nvidia.md) | Three-computer thesis, Isaac/GR00T/Cosmos/Jetson/Halos, partnership graph, ~1%-of-revenue reality vs $40T TAM rhetoric, platform-bet challengers |
+| [Tesla Optimus](company-optimus.md) | Generation timeline, Musk claims-vs-delivery ledger, Fremont line status, AI5 silicon, supply-chain choke points, demo skepticism record |
 
 ## Reference
 
