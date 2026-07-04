@@ -26,7 +26,7 @@ confidence: verified
 
 ### NEURA Robotics (Germany)
 - Founded 2019 (David Reger); "cognitive robotics" full-stack: 4NE1 humanoid, MAiRA cognitive cobot arm, MiPA household/mobile manipulator, plus the **Neuraverse** shared robot-learning ecosystem and "NEURA Gyms" data-collection facilities.
-- **Series C of up to $1.4B announced 2026-06-10** — the largest round ever for a European robotics company. Lead: Tether; participants include Qualcomm, Amazon, NVIDIA, Bosch, Schaeffler, imec.xpand, Lingotto, InterAlpen and the European Investment Bank. Reported valuation ~$7B (Bloomberg/CNBC reports; not company-confirmed). Round is milestone-tranched — $1.4B is a ceiling, not an upfront sum. Prior round: €120M Series B, 2025-01, led by Lingotto.
+- **Series C of up to $1.4B announced 2026-06-10** — the largest round ever for a European robotics company. Lead: Tether; participants include Qualcomm, Amazon, NVIDIA, Bosch, Schaeffler, imec.xpand, Lingotto, InterAlpen and the European Investment Bank. Reported valuation ~$7B (Bloomberg/CNBC reports; not company-confirmed). Round is milestone-contingent — the full "up to $1.4B" depends on **undisclosed performance milestones**; it is a ceiling, not cash banked. Prior round: €120M Series B, 2025-01, led by Lingotto.
 - Orderbook and deployment pipeline stated at **>$1B (as of 2026-06)**; large-scale 4NE1 shipments targeted from late 2026; stated goal of scaling manufacturing across **Germany and India** toward "millions of robots by 2030" (company claims).
 
 ### Wandercraft (France)
@@ -46,6 +46,7 @@ confidence: verified
 ### Europe — reading the region
 - Europe's strength is industrial demand-side pull (automotive OEMs like Renault, Bosch/Schaeffler as strategic investors) and EU/state co-investment (EIB, France 2030), not consumer robots — 1X is the exception and it relocated manufacturing to California.
 - No European company yet trains frontier-scale [VLA models](vla-models.md) in-house at US/China scale; NEURA's Neuraverse is the most explicit attempt at a European data/skill ecosystem. See [Investment](investment.md) for round-size comparisons.
+- Europe's largest **closed** physical-AI rounds of 2026 are not humanoid makers: **Wayve** (London, autonomous driving / embodied AI) closed a $1.2B Series D at $8.6B post-money on 2026-02-25 (plus $300M milestone-based Uber capital, $1.5B total secured), and **AMI Labs** (Paris, Yann LeCun's world-model lab) closed a $1.03B seed at $3.5B pre-money on 2026-03-09 — the largest European seed round on record. Contrast with NEURA's milestone-contingent "up to $1.4B". See [Investment](investment.md) and [World models](world-models.md).
 
 ## Japan
 
@@ -146,6 +147,8 @@ confidence: verified
 - https://www.therobotreport.com/neura-robotics-raise-up-1-4b-in-series-c-funding-physical-ai/ — NEURA Series C size, investors, orderbook, Neuraverse
 - https://www.cnbc.com/2026/06/10/neura-robotics-funding-ai-humanoid-robots.html — NEURA round date, Amazon/Nvidia backing, valuation reports
 - https://www.bloomberg.com/news/articles/2026-06-10/tether-backs-german-robotics-startup-neura-in-1-4-billion-round — independent confirmation of Tether lead and ~$7B valuation
+- https://wayve.ai/press/series-d/ — Wayve Series D close (primary, 2026-02-25): $1.2B at $8.6B post-money; +$300M milestone-based Uber capital
+- https://techcrunch.com/2026/03/09/yann-lecuns-ami-labs-raises-1-03-billion-to-build-world-models/ — AMI Labs $1.03B seed closed at $3.5B pre-money (2026-03-09)
 - https://www.wandercraft.eu/articles/wandercraft-announces-series-d-round-bringing-75m-in-total-funding-secured-for-global-acceleration-of-ai-powered-robotics — Series D, Renault, Eve/Atalante/Calvin roadmap
 - https://www.renaultgroup.com/en/magazine/technology/calvin-a-new-generation-robot-is-born/ — Calvin-40 development and Renault deployment
 - https://www.humanoidsdaily.com/news/renault-to-deploy-350-wandercraft-calvin-humanoids-in-industrial-speed-run — 10 by 2026 / 350 by 2027 plan

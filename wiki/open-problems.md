@@ -1,7 +1,7 @@
 ---
 title: Open Problems & Debates
 slug: open-problems
-updated: 2026-07-03
+updated: 2026-07-04
 confidence: verified
 ---
 > Physical AI's core disputes as of 2026-07: whether robot learning can close a
@@ -54,6 +54,18 @@ confidence: verified
   foundation models; simulation is "a re-packaging of conventional model-based
   approaches" whose fidelity always eventually diverges from reality
   (CoRL 2024 talk, position maintained through 2025–26).
+- **Field reporting corroborates the gap (as of 2026-07).** Stephen Witt's
+  New Yorker piece ("Are Humanoid Robots Ready to Be Deployed?", 2026-07-06
+  issue): there is no repository — "legal or otherwise — of motion
+  trajectories for joints," and even planet-scale motion capture would take
+  decades to match ChatGPT-scale training data. Data-collection bets it
+  documents: Neura (Germany) has put 1,000+ industrial workers in mocap suits
+  (CEO David Reger: "We're getting, like, a lot of data"); 1X retains paid
+  tele-operators partly *as* a data channel ("It's also useful data for us" —
+  CEO Bernt Børnich), with Børnich touting fleet-level learning ("Whatever one
+  robot learns, the others all learn at the same time"; "There is definitely a
+  data flywheel there") — a network effect Witt infers "may account for" 1X's
+  eagerness to ship home robots early.
 
 ## 2. Sim2real limits
 
@@ -97,6 +109,12 @@ confidence: verified
   *the* requirement for general-purpose humanoids to pencil out; without it
   they are expensive mobile platforms doing box-moving that wheeled robots do
   more cheaply.
+- **Mainstream framing (as of 2026-07).** Witt (New Yorker, 2026-07-06 issue)
+  suggests the hand may be the humanoid's "missing link": the human hand performs 27
+  independent motions, and "we are years away from a robot that can both tie
+  its shoes and shuffle a deck of cards" — mechanical engineering (e.g. 1X's
+  tendon-driven fingers, durability-tested through 2.86M cycles) is "far
+  ahead of the A.I." that must drive it.
 
 ## 4. Reliability — the "nines" problem
 
@@ -122,6 +140,34 @@ confidence: verified
   and non-locally; there is no accepted engineering discipline (FMEA-style)
   for certifying a learned policy's failure envelope — connects directly to
   §5 and §6.
+- **Demo-vs-reality, firsthand (New Yorker, as of 2026-07).** Stephen Witt's
+  reported piece ("Are Humanoid Robots Ready to Be Deployed?", 2026-07-06
+  issue): 1X's fluid Neo kitchen demo turned out to be driven by a
+  VR-headset tele-operator ("the robot I was seeing was a marionette"); 1X
+  declined to demonstrate Neo's autonomous AI at all; 1X product head Dar
+  Sleeper on falls: "To say it doesn't fall is, like, a total stretch."
+  CEO Bernt Børnich is explicitly testing consumer tolerance for "robotics
+  slop" (clumsily executed tasks) — 10,000+ deposits at a $20k list price
+  against a 2026 home-delivery promise. The day after VC Modar Alaoui told
+  Witt "locomotion is solved," an Xpeng Iron seized and fell at a Shenzhen
+  mall demo and took three handlers to drag away; Unitree's Lunar New Year
+  kung-fu display was a preprogrammed script (most likely mocap-derived, per
+  Witt).
+- **Named positions on readiness (same piece):** Aaron Ames (Caltech) —
+  reliable AI for autonomous robots is years away no matter how sophisticated
+  the engineering. Carolina Parada (Google DeepMind robotics head) — home
+  deployment is gated on safety, not interest or capability: "The same robot
+  that can land a backflip might not be able to walk up a flight of stairs."
+  Deepu Talla (NVIDIA robotics) — "The world still doesn't have a ChatGPT
+  equivalent for a robot" (notably more guarded than Huang's imminence
+  rhetoric, §8).
+- **Tele-operation as the hidden intervention layer.** The piece documents
+  teleop propping up "autonomous" systems industry-wide: Waymo's professional
+  remote "pilots" in the Philippines, VR tele-stocking in Japanese 7-Elevens,
+  and 1X's plan to seat operators next to its AI team (Neo's earpiece rings
+  change color to disclose remote control). 1X previously marketed
+  tele-operation, then re-branded around AI after customer pushback — without
+  abandoning teleop.
 
 ## 5. Safety & certification
 
@@ -157,6 +203,16 @@ confidence: verified
 - **Brooks's practical rule:** stay ~3 m from a walking full-size humanoid;
   fall energy scales badly (double the size → 8× the mass) and ZMP-style
   balance actively pumps kinetic energy into the system.
+- **Practitioner caution from the New Yorker piece (as of 2026-07):**
+  Apptronik CEO Jeff Cardenas — "Around small pets, around small children,
+  there's still work to be done"; Apptronik's Apollo units at Mercedes-Benz
+  factories remain fenced off from human workers. Aaron Ames (Caltech) on 1X
+  shipping Neo to homes in 2026: "I would worry about the legal ramifications
+  when one of those robots falls on a person." The piece also relays security
+  researchers Andreas Makris & Kevin Finisterre's Unitree G1 Bluetooth
+  vulnerability (a self-spreading "robot botnet," 2025) and a G1 kicking a
+  small child at a Chinese amusement park — attack surface and
+  fall/strike risk as first-class deployment blockers.
 
 ## 6. The evaluation crisis
 
@@ -206,6 +262,17 @@ confidence: verified
 - The debate was the explicit backdrop of the 2025-12 Silicon Valley Humanoid
   Summit, where Brooks's essay was repeatedly invoked despite his absence
   (per AP coverage).
+- **New "against" voices (New Yorker, as of 2026-07):** Mike Haley (Autodesk
+  senior researcher, career in factory robotics) has "never seen a humanoid
+  do anything useful in an industrial setting" — task-shaped machines
+  (detached paint arms, autonomous forklifts) win on cost, moving parts, and
+  maintenance: "we look back at this humanoid thing and go, 'Boy, that was
+  bloody stupid.'" Skild AI co-founder Deepak Pathak (CMU) refuses to keep a
+  humanoid in his own home and argues the form factor itself misleads:
+  "People are using appearance as a way to misguide the public. If you make a
+  robot humanlike, you expect it to have humanlike capabilities. But
+  technology is far behind that." (Skild's own bet — one cross-embodiment
+  brain in any body, humanoid or not — is a hedge against the form factor.)
 
 ## 8. Timeline discourse — who argues what
 
@@ -217,6 +284,8 @@ confidence: verified
 | Rodney Brooks (MIT/iRobot) | Human-level manual skill in decades is "pure fantasy"; ≥10 years to first profitable humanoid deployment *with minimal dexterity*; predicts funding collapse and definitional goal-post shifting (2025-09). |
 | Ken Goldberg (UC Berkeley) | No robot surgeons/butlers in "2, 5, or even 10 years"; 100,000-year data gap; bootstrap via engineering + deployment data (2025-08). |
 | Sergey Levine (Physical Intelligence) | Optimistic on robotic foundation models but via real-world cross-embodiment data at scale, not sim or video alone; timeline contingent on data flywheel spinning up. |
+| Bernt Børnich (1X) | Humanoids can "do almost anything"; Neo home deliveries in 2026 — "a promise we've gotta keep" (per product head Dar Sleeper); bets consumers will accept "robotics slop" plus disclosed teleop while fleet learning improves autonomy (New Yorker, 2026-07). |
+| Aaron Ames (Caltech) | Reliable AI for autonomous robots is years away regardless of engineering sophistication; "I don't know how 1X is actually going to get away with it" — flags legal exposure of home-humanoid falls (New Yorker, 2026-07). |
 | IEEE/ASTM standards community | ~2027 earliest for safe volume deployment of humanoids around humans; 18–36 months to first ratified standards (2025-09). |
 | Expert surveys | Median AGI estimate moved from 50–100 years (c. 2010) to ~5–15 years by 2026 (unverified aggregation). |
 
@@ -266,3 +335,4 @@ confidence: verified
 - https://finance.yahoo.com/markets/stocks/articles/why-teslas-optimus-story-more-153200371.html — Optimus missed-targets accounting (secondary).
 - https://www.bloomberg.com/news/videos/2026-05-15/figure-ceo-says-humanoid-robot-test-had-no-outside-aid-video — Adcock denies teleoperation in Figure home tests.
 - https://247wallst.com/investing/2026/05/31/jensen-huang-just-called-humanoid-robots-a-40-trillion-market-heres-why-wall-street-is-loading-up-on-physical-ai-stocks/ — Huang $40T market claim (2026-05, secondary).
+- https://www.newyorker.com/magazine/2026/07/06/are-humanoid-robots-ready-to-be-deployed — Stephen Witt, "Are Humanoid Robots Ready to Be Deployed?" (2026-07-06 issue): 1X Neo teleop demo & "robotics slop", Ames/Parada/Talla/Cardenas/Pathak/Haley positions, Xpeng Iron fall, Neura mocap program, teleop economy (paywalled; read in full via Wayback snapshot 2026-07-03).

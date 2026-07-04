@@ -134,3 +134,24 @@ state-of-the-art. Orchestrator applied 5 cross-page propagation edits
 shipment attribution on history/humanoid-robots); remaining propagation
 queued. Next: loop(9) — IPO watch + propagation batch + New Yorker piece
 (2026-07-06 issue) if published.
+
+## loop(9) — 2026-07-04
+Three-track pass (5 agents, ~0.47M tokens, ~20 min), disjoint page
+ownership. NEWS/IPO: no pricing yet (confirmed via SSE trail + Chinese
+searches ~15:30 CST); enriched company-unitree + investment with verified
+post-registration mechanics (SSE 5-working-day window → offering could
+launch week of 2026-07-06; retail eligibility rules) and flagged a
+2025-profit-measure conflict (GAAP ~RMB 278-300M vs adjusted ~RMB 591-600M)
+for resolution from the offering prospectus. PROPAGATION: all 9 items
+landed (world-model funding-wave section on world-models.md; Neura
+milestone-contingency; Unitree 5,500-attribution on locomotion/tech-tree;
+AgiBot World verified paper figures on data.md; AgiBot backdoor-listing
+denial on organizations.md; GR-3 disambiguation; glossary CoT datapoints;
+Black Panther II 13.17s televised 100m + company-video-only 13.4 m/s peak).
+NEW YORKER: full Witt text retrieved; verified surgical additions to
+open-problems (field-reported data-gap color, hand-as-missing-link hedge)
+and evaluation ("crisis gone mainstream" bullet); verify pass fixed 2
+attribution overstatements; 7 rich leads queued (1X Neo data, NVIDIA
+ubiquity quote, Neura mocap program, G1 BT botnet → safety page, etc.).
+Next: loop(10) — IPO watch (inquiry announcement could land w/o 07-06),
+Witt-leads batch, ByteDance GR-3 into vla-models.

@@ -23,12 +23,12 @@ confidence: verified
 | 1X Technologies | Norway/USA | Startup | Home humanoid (NEO) | NEO home-robot deliveries to early adopters at $20K (2026) | OpenAI-backed; first at-scale home humanoid bet |
 | Ai2 (Allen Institute) | USA (Seattle) | Nonprofit lab | Fully open robot FMs | MolmoAct 2 — open weights + 720h bimanual data (2026-05) | Claims wins over π0.5 on manipulation benchmarks |
 | Unitree Robotics | China (Hangzhou) | Startup → public | Low-cost humanoids/quadrupeds | G1 (~$16K) volume leader; STAR Market IPO cleared 2026-06, registration approved 2026-07-03 | ~$5.9–6.2B IPO valuation target, ~$618M (¥4.2B) raise |
-| AgiBot / Zhiyuan | China (Shanghai) | Startup | Humanoids + GO-1 FM + open datasets | 10,000th unit produced (2026-03); AgiBot World dataset | Backdoor A-share listing in progress |
+| AgiBot / Zhiyuan | China (Shanghai) | Startup | Humanoids + GO-1 FM + open datasets | 10,000th unit produced (2026-03); AgiBot World dataset | Acquired ~63.6% control of A-share-listed Swancor (2025-07); AgiBot denies a backdoor listing; HK IPO planned |
 | UBTech | China (Shenzhen) | Public company | Walker S industrial humanoids | Walker S2 with hot-swap battery; >1,000 units shipped 2025 | HK-listed; auto-factory orders (BYD, Foxconn et al.) |
 | Galbot | China (Beijing) | Startup | Wheeled dual-arm retail robots | G1 running unmanned retail stores | ~$3B valuation after ¥2.5B round (2026-03) (unverified) |
 | X-Humanoid (Beijing HRIC) | China (Beijing) | State-backed center | Open humanoid platform | Tien Kung robot; open "Hui Si Kai Wu" embodied stack | Founded 2023-11 by Jingcheng + Xiaomi Robotics + UBTech |
 | Neura Robotics | Germany | Startup | Cognitive robots + 4NE-1 humanoid | Series C up to $1.4B, Tether-led (2026-06) — Europe's largest | ~$7B valuation; claims >$1B order book (unverified) |
-| Fourier | China (Shanghai) | Startup | GR-series humanoids (rehab origin) | GR-3 care-oriented humanoid | Among top-5 China humanoid shippers (as of 2025) |
+| Fourier | China (Shanghai) | Startup | GR-series humanoids (rehab origin) | GR-3 care-oriented humanoid (a robot — distinct from ByteDance Seed's GR-3 VLA model of the same name) | Among top-5 China humanoid shippers (as of 2025) |
 | Sanctuary AI | Canada (Vancouver) | Startup | Dexterous hands + Phoenix | Hydraulic high-DoF hands | New round closed 2026-05 (amount undisclosed) |
 | K-Humanoid Alliance | South Korea | National program | Shared "robot brain" + platform | ~$770M state investment pledged to 2030 | ~40 companies/labs incl. Samsung–Rainbow Robotics |
 
@@ -57,10 +57,10 @@ China ships the large majority of global humanoid units — TrendForce forecasts
 | Org | Note |
 |---|---|
 | Unitree | Price-war leader (G1 ~$16K, R1 entry model ~$6K at 2025 launch); first "embodied AI" company cleared for a STAR Market IPO — listing committee passed 2026-06-01, CSRC registration approved 2026-07-03; ~¥40B (~$5.9–6.2B) target valuation |
-| AgiBot (Zhiyuan) | Founded by ex-Huawei "Genius Youth" Peng Zhihui; 10,000 cumulative units (2026-03); GO-1 foundation model; open AgiBot World dataset; listing via reverse takeover |
+| AgiBot (Zhiyuan) | Founded by ex-Huawei "Genius Youth" Peng Zhihui; 10,000 cumulative units (2026-03); GO-1 foundation model; open AgiBot World dataset; acquired ~63.6% control of A-share-listed Swancor Advanced Materials (2025-07) — AgiBot publicly denies the "backdoor listing" characterization (see [Landscape: China](landscape-china.md)) |
 | UBTech | Walker S series in auto plants; >1,000 units shipped in 2025; HK-listed |
 | Galbot | PKU spin-off (Wang He); wheeled dual-arm G1 in unmanned retail; ¥2.5B round (2026-03) |
-| Fourier | Shanghai; GR-3 humanoid, rehab-robotics origin |
+| Fourier | Shanghai; GR-3 care humanoid (name collides with ByteDance Seed's GR-3 VLA model — unrelated), rehab-robotics origin |
 | X-Humanoid (Beijing HRIC) | State-backed innovation center (Jingcheng + Xiaomi + UBTech, 2023-11); Tien Kung robot won 2025 Beijing robot half-marathon |
 | Shanghai Embodied AI Innovation Center | "National and local co-built" center expanded at WAIC 2025; open OpenLoong/Qinglong humanoid platform |
 | New entrants | Consumer-electronics giants entering: Xiaomi (CyberOne lineage), Honor — the smartphone maker's "Lightning" robot ("Flash" in some translations) won the 2026 Beijing half-marathon in 50:26 running autonomously, beating the ratified human world record (57:20) — independently confirmed (Scientific American, CBS, NPR), though the winner fell late in the race after clipping a barricade and was set upright by handlers (2026-04) |
@@ -129,6 +129,7 @@ The dominant 2024–2026 pattern: professor-founded startups (Skild, PI, Galbot)
 - https://bostondynamics.com/blog/large-behavior-models-atlas-find-new-footing/ — BD/TRI LBM Atlas, 450M-param diffusion policy (2025-08)
 - https://pressroom.toyota.com/ai-powered-robot-by-boston-dynamics-and-toyota-research-institute-takes-a-key-step-towards-general-purpose-humanoids/ — BD–TRI partnership framing
 - https://www.techtimes.com/articles/317632/20260602/unitree-ipo-cleared-agibot-hits-10000-units-china-humanoid-robot-duopoly-takes-shape.htm — Unitree IPO clearance (2026-06-01), AgiBot 10,000 units
+- https://technode.com/2025/07/10/agibot-denies-backdoor-listing-via-swancor-advanced-materials-acquisition/ — AgiBot's ~RMB 2.1B acquisition of ~63.6% of Swancor Advanced Materials; company denies backdoor listing
 - https://kraneshares.com/a-complete-guide-to-unitree-robotics-2026-ipo-why-it-matters-for-star-market-etf-kstr-humanoid-robotics-etf-koid/ — Unitree IPO valuation/raise figures
 - https://www.caixinglobal.com/2026-07-03/unitree-robotics-wins-approval-for-618-million-star-market-ipo-102460136.html — CSRC approved Unitree IPO registration (2026-07-03); ¥4.2B/$618M raise, ~¥40B ($5.9B) valuation
 - https://www.trendforce.com/presscenter/news/20260409-13007.html — China 2026 humanoid output +94%, Unitree+AgiBot ~80% share

@@ -1,7 +1,7 @@
 ---
 title: The Robot Data Problem
 slug: data
-updated: 2026-07-03
+updated: 2026-07-04
 confidence: verified
 ---
 > Robotics has no internet-scale corpus: LLMs train on trillions of web tokens, but robot actions must be manufactured — via teleoperation, handheld capture rigs, egocentric human video, or simulation. As of 2026-07 the field's largest open real-robot datasets sit at ~1–2M episodes (Open X-Embodiment, AgiBot World) while the largest disclosed proprietary corpus is Generalist AI's 270,000+ hours (growing ~10k h/week as of 2025-11). 2025–2026 produced the first credible scaling-law evidence for robot data — power laws in environment/object diversity (ICLR 2025), in raw pretraining hours (GEN-0), and in egocentric human video (NVIDIA EgoScale) — which triggered a capital race to build "data factories": Figure×Brookfield, Apptronik's Robot Park, Scale AI's Physical AI Data Engine, and 40+ state-backed collection centers in China.
@@ -54,7 +54,7 @@ confidence: verified
 |---|---|---|---|
 | **Open X-Embodiment (OXE)** (2023, growing) | 1M+ real trajectories, 500+ skills, 160k+ task variants | 22 robot types | Pooled from 60 prior datasets by a 21-institution collaboration; RLDS format; the default VLA pretraining corpus but quality/format is highly heterogeneous |
 | **DROID** (2024) | 76k teleop trajectories, 350 h, 564 scenes, 86 tasks | Franka Panda (single standardized rig) | 13 institutions, 50 collectors, 12 months; calibrated stereo, 1,417 viewpoints; diversity-per-episode benchmark |
-| **AgiBot World** (2024-12 α, 2025 β) | 1M+ trajectories, ~3,000 h, 217 tasks, 3,000+ objects | ~100 homogeneous AgiBot G1 humanoids | Collected in a purpose-built facility; paper reports policies pretrained on it beat OXE-pretrained by ~30% in- and out-of-distribution; basis of GO-1 latent-action model; IROS 2025 Best Paper finalist |
+| **AgiBot World** (2024-12 α, 2025 β) | >1M trajectories, 2,976.4 h, 217 tasks, 3,000+ objects | 100 homogeneous dual-arm AgiBot G1 humanoid robots | Collected at AgiBot's ~4,000 m² Lingang (Shanghai) facility (figures per arXiv:2503.06669 + Hugging Face dataset card); paper reports policies pretrained on it beat OXE-pretrained by ~30% in- and out-of-distribution; basis of GO-1 latent-action model; IROS 2025 Best Paper finalist |
 | **RoboMIND** (2024-12) | 107k trajectories, 479 tasks, 96 object classes | 4 embodiments incl. Tien Kung humanoid | Beijing X-Humanoid center; unified platform, includes failure trajectories |
 | **RoboMIND 2.0** (2025-12) | 310k dual-arm trajectories, 1,000+ h, 12k tactile-enriched, 20k mobile-manipulation | 6 heterogeneous embodiments | Adds tactile and mobile-manipulation modalities (paper claim) |
 | **EgoDex** (Apple, 2025-05) | 829 h egocentric video + 3D hand tracking, 194 tasks | Human hands (Vision Pro) | Largest dexterous human-manipulation set at release |
@@ -105,7 +105,8 @@ confidence: verified
 - https://umi-gripper.github.io/ — UMI: handheld gripper, ~30 s/demo (~111 demos/h vs 35/h teleop), cross-platform zero-shot deployment.
 - https://proceedings.mlr.press/v270/fu25b — Mobile ALOHA: whole-body teleop rig, co-training gains up to 90 pts.
 - https://droid-dataset.github.io/ — DROID: 76k trajectories, 350 h, 564 scenes, 86 tasks, 13 institutions, Franka Panda + Quest 2.
-- https://arxiv.org/html/2503.06669v4 — AgiBot World Colosseo: 1M+ trajectories/~3,000 h Beta, 217 tasks, +30% vs OXE pretraining, GO-1.
+- https://arxiv.org/html/2503.06669v4 — AgiBot World Colosseo: >1M trajectories, 217 tasks, 100 dual-arm humanoid robots, ~4,000 m² Lingang facility, +30% vs OXE pretraining, GO-1.
+- https://huggingface.co/datasets/agibot-world/AgiBotWorld-Beta — AgiBot World Beta dataset card: 2,976.4 hours, >1M trajectories.
 - https://arxiv.org/abs/2412.13877 — RoboMIND: 107k trajectories, 479 tasks, 96 object classes, multi-embodiment teleop benchmark.
 - https://arxiv.org/abs/2512.24653 — RoboMIND 2.0: 310k dual-arm trajectories, 6 embodiments, 1,000+ h, tactile + mobile manipulation.
 - https://machinelearning.apple.com/research/egodex-learning-dexterous-manipulation — EgoDex: 829 h Vision Pro egocentric video, 194 tasks.

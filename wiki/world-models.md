@@ -1,7 +1,7 @@
 ---
 title: World Models for Robotics
 slug: world-models
-updated: 2026-07-03
+updated: 2026-07-04
 confidence: verified
 ---
 > World models are neural networks that predict how an environment evolves — in pixels, latents, or full interactive 3D — given actions, text, or prior frames. Between early 2025 and mid-2026 they moved from research curiosity to core infrastructure for Physical AI: NVIDIA's Cosmos line (culminating in the omnimodal Cosmos 3, June 2026) serves as an open synthetic-data and policy backbone; Google DeepMind's Genie 3 (Aug 2025) generates real-time interactive worlds that now train SIMA 2 agents and underpin the Waymo World Model; 1X uses an action-conditioned video model to evaluate and teach its NEO humanoid; Meta's V-JEPA 2 plans in latent space with zero-shot robot manipulation; and Tesla runs a "neural world simulator" trained on fleet video to close the loop on both FSD and Optimus. World models now fill four roles in robot training — learned simulator, planner, policy evaluator, and data engine — but hallucination, compounding rollout error, weak action-conditioning fidelity, and compute cost remain the binding constraints.
@@ -28,6 +28,14 @@ confidence: verified
 | Neural world simulator | Tesla | Shown ICCV Oct 2025 | Pixel video, fleet-video-trained, closed-loop | Yes (responds to driving/robot actions) | Closed-loop eval, adversarial scenario synthesis, large-scale RL for FSD + Optimus |
 | Waymo World Model | Waymo (on Genie 3) | Feb 2026 | Generative driving sim, camera + lidar output | Yes (driving inputs, language, scene layout) | Long-tail AV scenario simulation |
 | Marble | World Labs | Nov 2025 | 3D scene generation (Gaussian splats/meshes) from text/image/video | No (static scenes) | Simulation asset/environment creation |
+
+## The 2026 world-model funding wave
+
+- Capital validated the category in early 2026: three ~$1B+ world-model rounds **closed** within three weeks of each other (round-by-round sourced rows live in [Investment](investment.md)):
+  - **World Labs** (Fei-Fei Li, spatial intelligence / Marble): **$1B growth round closed 2026-02-18**, led by Autodesk ($200M), with AMD, Nvidia, Fidelity, Emerson Collective and Sea; total raised $1.23B. The widely quoted **~$5.4B post-money valuation is per Forbes and was never company-confirmed** (Bloomberg had reported ~$5B during talks).
+  - **Wayve** (UK, driving world models / embodied AI): **$1.2B Series D closed 2026-02-25 at $8.6B post-money**, plus **$300M in milestone-based capital from Uber** ($1.5B total secured); Eclipse, Balderton and SoftBank Vision Fund 2 co-led.
+  - **AMI Labs** (Paris, Yann LeCun's post-Meta world-model lab): **$1.03B seed closed 2026-03-09 at a $3.5B pre-money valuation** — the largest European seed round on record; Nvidia, Samsung, Temasek and Toyota Ventures among backers.
+- Read-through: world models are now a funded category independent of robot hardware — spanning spatial intelligence (World Labs), autonomous driving (Wayve), and LeCun's anti-generative JEPA research program (AMI Labs; see the V-JEPA section below). Combined, these rounds (~$3.2B) drove much of H1 2026's record physical-AI funding totals.
 
 ## NVIDIA Cosmos: the open world-model platform
 
@@ -120,3 +128,7 @@ confidence: verified
 - https://arxiv.org/pdf/2605.29360 — MiraBench: action-conditioned reliability, hallucination artifacts in robotic world models
 - https://arxiv.org/pdf/2511.09515 — WMPO: world-model-based policy optimization for VLA models
 - https://techcrunch.com/2025/11/12/fei-fei-lis-world-labs-speeds-up-the-world-model-race-with-marble-its-first-commercial-product/ — World Labs Marble launch (Nov 2025)
+- https://finance.yahoo.com/news/ai-pioneer-fei-fei-lis-192214332.html — World Labs $1B round closed 2026-02-18 (Reuters): Autodesk $200M lead; AMD, Nvidia, Emerson Collective, Fidelity, Sea; company declined to confirm valuation
+- https://www.forbes.com/sites/josipamajic/2026/06/30/world-model-startups-raise-3-billion-vcs-bet-beyond-llms/ — World Labs ~$5.4B post-money (Forbes figure, not company-confirmed), $1.23B total raised; >$3B into world-model startups in H1 2026
+- https://wayve.ai/press/series-d/ — Wayve Series D close (primary, 2026-02-25): $1.2B at $8.6B post-money; +$300M milestone-based Uber capital = $1.5B total secured
+- https://techcrunch.com/2026/03/09/yann-lecuns-ami-labs-raises-1-03-billion-to-build-world-models/ — AMI Labs $1.03B seed closed at $3.5B pre-money (2026-03-09); investor syndicate

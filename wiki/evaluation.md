@@ -1,7 +1,7 @@
 ---
 title: Evaluation & Benchmarks
 slug: evaluation
-updated: 2026-07-03
+updated: 2026-07-04
 confidence: verified
 ---
 > Physical AI has no ImageNet: as of 2026-07 the field's headline results are mostly self-reported success rates on self-chosen tasks, run on different robots with 10–20 trials and no statistical testing, which makes [VLA models](vla-models.md) essentially incomparable across papers. The dominant sim benchmarks (LIBERO, CALVIN, SimplerEnv) are saturated — top models cluster at 97–99% while robustness probes like LIBERO-Plus show the same models collapsing below 30% under modest camera or pose perturbations. The 2025–26 response is a wave of shared real-robot evaluation infrastructure (RoboArena on DROID, RoboChallenge Table30, GM-100, AutoEval, VLA-REPLICA), harder sim suites (BEHAVIOR-1K, RoboCasa365, MolmoSpaces-Bench), embodied-reasoning exams (ERQA), and a state-backed Chinese benchmark (EIbench) — but no single standard has won, and industry meanwhile scores robots on throughput, intervention rate, and "nines" rather than benchmark success rates.
@@ -14,6 +14,7 @@ confidence: verified
 - **Scores hide broken behavior.** LIBERO-Plus (2025-10) showed SOTA VLAs dropping from ~95% to below 30% under modest perturbations, with strongest sensitivity to camera viewpoint and robot initial state — and found many models **ignore the language instruction entirely**, succeeding by trajectory memorization.
 - **Even harnesses disagree.** The vla-eval audit (2026-03) found well-documented benchmarks leave critical details implicit — overloaded termination flags, hidden action-normalization statistics — each a source of silent score distortion between reimplementations (single paper).
 - **Sim-vs-real correlation is partial.** SimplerEnv established (~1,500 eval episodes each in sim and real) that carefully "visually matched" sim scores correlate strongly with real performance on Google Robot and WidowX setups — but only for those setups; real-to-sim generalization benchmarks (RobotArena ∞, REALM) are trying to extend this.
+- **The crisis has gone mainstream (as of 2026-07).** Stephen Witt's New Yorker piece ("Are Humanoid Robots Ready to Be Deployed?", 2026-07-06 issue) relays that industrial roboticists see "no standardized benchmarks for progress" and that videos of remarkable feats are "often culled from hundreds of takes." Witt's firsthand demos match: 1X's fluid Neo kitchen demo was VR-tele-operated ("a marionette"), 1X declined to show autonomous operation at all, and a Skild-driven Unitree that handled an upright cup flailed when the cup was laid on its side — success rates measured on demonstrator-chosen configurations say little about the perturbed case.
 
 ## Major benchmarks compared
 
@@ -64,6 +65,7 @@ Deployed-robot operators mostly ignore academic success rates and track:
 - **Intervention rate / autonomy**: interventions per hour (or per task) times human cost is the ROI killer — e.g. at a 5% intervention rate with 30 s per fix, a $30/h supervisor adds ~$1.50/h per robot before maintenance (analyst arithmetic, unverified). Physical Intelligence's π*0.6 evals leaned on this framing: multi-hour uninterrupted runs (espresso service 5:30am–11:30pm, ~18 h) with throughput and success tracked over wall-clock time rather than trial batches (company-reported).
 - **Reliability "nines"**: lab benchmarks stop at 95–99%; customers price 99% as failure — unattended operation implicitly requires 99.9%+ (see [Open problems](open-problems.md) §4). No humanoid vendor publishes MTBF, uptime, or intervention-rate data as of 2026-06; uptime disclosures are limited to charging ratios (Digit ~2:1 operate:charge, target 4:1+).
 - The gap between these operational metrics and academic benchmarks is itself part of the crisis: no public benchmark yet scores long-duration autonomy, interventions, or degradation over hours — the dimensions purchasers actually buy (RoboChallenge's long-horizon tasks and PI's marathon runs are the nearest approximations).
+- **Tele-operation is the undisclosed intervention channel (as of 2026-07).** Witt's New Yorker reporting documents remote humans behind nominally autonomous systems across the industry — Waymo's professional "pilots" in the Philippines, VR tele-stocking in Japanese 7-Elevens, 1X seating tele-operators beside its AI team (Neo's earpiece rings change color to disclose remote control; 1X de-emphasized teleop in marketing after customer pushback without abandoning it). Jim Fan (NVIDIA, late 2025, quoted in the piece): "Babysitting these robots demands an entire operation team. Mistakes are irreversible and unforgiving." No vendor reports teleop hours per autonomous hour — a disclosure gap sitting on top of the missing MTBF/intervention-rate data above.
 
 ## Who runs what (as of 2026-07)
 
@@ -126,3 +128,4 @@ Deployed-robot operators mostly ignore academic success rates and track:
 - https://blog.robozaps.com/b/roi-of-humanoid-robots — intervention-rate cost arithmetic, throughput-vs-human estimates (analyst, unverified)
 - https://www.pi.website/blog/pistar06 — π*0.6 marathon-run evaluation style (multi-hour throughput/success tracking)
 - https://www.globenewswire.com/news-release/2026/05/13/3293715/0/en/Global-Showdown-526-Teams-from-27-Countries-Compete-in-the-AGIBOT-WORLD-CHALLENGE-ICRA-2026-Online-Round.html — AGIBOT World Challenge scale; real-robot final scoring shift
+- https://www.newyorker.com/magazine/2026/07/06/are-humanoid-robots-ready-to-be-deployed — Stephen Witt (2026-07-06 issue): "no standardized benchmarks" / hundreds-of-takes demo videos, tele-operated 1X Neo demo, teleop-behind-autonomy pattern, Jim Fan babysitting quote (paywalled; read in full via Wayback snapshot 2026-07-03)

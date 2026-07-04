@@ -1,7 +1,7 @@
 ---
 title: Glossary
 slug: glossary
-updated: 2026-07-03
+updated: 2026-07-04
 confidence: verified
 ---
 > Definitional glossary of ~35 core Physical AI terms — models and architectures (VLA, world model, dual-system), learning methods (imitation vs RL, diffusion policy, flow matching), data machinery (teleoperation, UMI, data flywheel, Open X-Embodiment), hardware (QDD, harmonic drive, roller screw, tactile sensing), control theory (ZMP, MPC, whole-body control), and business shorthand (RaaS, BOM). Each entry is 1–3 sentences with a cross-link to the wiki page that covers it in depth. Alphabetical; letter-range sections.
@@ -12,7 +12,7 @@ confidence: verified
 - **Action tokenization** — Converting continuous robot actions into discrete tokens so a language-model backbone can emit them like text. Ranges from naive per-dimension binning (RT-2) to compression-based tokenizers such as Physical Intelligence's FAST, which applies a discrete cosine transform to action chunks and quantizes the coefficients, yielding far shorter sequences (~5× faster training, company-reported). See [VLA models](vla-models.md).
 - **ALOHA** — "A Low-cost Open-source Hardware" bimanual teleoperation rig (~$20k, leader–follower arms; Zhao et al., 2023) that made high-quality two-handed demonstration collection affordable; successors include ALOHA 2 and Mobile ALOHA. The de facto academic standard teleop platform — see [manipulation](manipulation.md) and [data](data.md).
 - **BOM (bill of materials)** — The summed cost of every component in a robot; the key input for arguing humanoid price floors and margins. Actuators (see QDD, harmonic drive, planetary roller screw below) and dexterous hands dominate humanoid BOMs; Chinese supply chains are the main force pushing them down — see [hardware](hardware.md) and [investment](investment.md).
-- **Cost of transport (CoT)** — Dimensionless locomotion-efficiency metric: CoT = P / (m·g·v) (power over weight times speed); lower is better, and it lets robots be compared directly to animals and vehicles. Human walking is ≈0.2 — the canonical robotics reference value (Collins et al., Science 2005), with gross-metabolic estimates running closer to ≈0.3 — while ASIMO-era powered humanoids measured ≈3.2, an order of magnitude worse. See [locomotion](locomotion.md).
+- **Cost of transport (CoT)** — Dimensionless locomotion-efficiency metric: CoT = P / (m·g·v) (power over weight times speed); lower is better, and it lets robots be compared directly to animals and vehicles. Human walking is ≈0.2 — the canonical robotics reference value (Collins et al., Science 2005), with gross-metabolic estimates running closer to ≈0.3 — while ASIMO-era powered humanoids measured ≈3.2, an order of magnitude worse. Learned gaits have since undercut model-based control on efficiency: Hwangbo et al. (Science Robotics 2019) reported an RL-trained ANYmal policy using less mechanical power (78.1 vs 97.3 W) and 23–36% less torque than the model-based baseline at matched speeds, and a 2025 FITEE study reports a learned multigait quadruped policy averaging CoT ≈0.43 across feasible velocity commands — see [locomotion](locomotion.md) for details and the caveats on inconsistent CoT reporting.
 - **Cross-embodiment** — Training a single policy on data from many different robot bodies (arms, bimanual rigs, quadrupeds, humanoids), and/or transferring skills across bodies. Landmark evidence: Open X-Embodiment's RT-1-X outperformed the per-robot specialist models on their own data by ~50% on average in smaller-data domains, and RT-2-X tripled RT-2's success on emergent-skill evaluations. See [VLA models](vla-models.md) and [data](data.md).
 
 ## D–F
@@ -76,6 +76,8 @@ confidence: verified
 - https://en.wikipedia.org/wiki/Zero_moment_point — ZMP definition and Vukobratović attribution
 - https://en.wikipedia.org/wiki/Cost_of_transport — dimensionless CoT formula P/(m·g·v); gives gross human-walking CoT ≈0.3
 - https://www.science.org/doi/10.1126/science.1107799 — Collins et al. 2005: human walking CoT ≈0.2 reference value, ASIMO ≈3.2
+- https://arxiv.org/abs/1901.08652 — Hwangbo et al. (Science Robotics 2019): learned ANYmal policy beats model-based baseline on power (78.1 vs 97.3 W) and torque
+- https://doi.org/10.1631/FITEE.2401070 — Wang et al., FITEE 2025 26(9):1679–1691: learned multigait policy, average CoT 0.4306
 - https://pmc.ncbi.nlm.nih.gov/articles/PMC5751610/ — GelSight vision-based tactile sensing mechanism
 - https://www.fastcompany.com/91314612/this-tiny-screw-is-powering-the-humanoid-robot-revolution — planetary roller screws vs ball screws in humanoids
 - https://www.kggfa.com/news/humanoid-robot-dexterous-hand-structure-to-high-load-bearing-development-the-number-of-roller-screws-may-be-doubled/ — Optimus's 14 inverted planetary roller screws (2 elbow, 4 wrist, 8 leg)

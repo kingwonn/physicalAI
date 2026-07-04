@@ -1,7 +1,7 @@
 ---
 title: Physical AI Tech Tree
 slug: tech-tree
-updated: 2026-07-03
+updated: 2026-07-04
 confidence: verified
 ---
 > Physical AI progresses as a layered dependency stack: **hardware** (actuators, hands, sensors, compute, batteries) enables **perception**, which feeds **control** (locomotion, whole-body, manipulation primitives), which is increasingly subsumed by **learning** (imitation + RL + sim-to-real), which at scale produces **foundation models** (VLAs, world models, embodied reasoners), which finally gate **deployment** (factories, logistics, eventually homes). As of mid-2026 the stack is unevenly mature: locomotion is largely solved via sim-to-real RL, VLA architectures are converging, and 50,000+ humanoid shipments are forecast this year (TrendForce) — but the binding constraints have shifted to (1) real-world manipulation data at scale, (2) dexterous hands with human-grade tactile sensing, (3) reliability/uptime economics (batteries, MTBF, safety standards), and (4) evaluation, where saturated sim benchmarks mask a large open-world generalization gap between closed frontier models and open-weight ones.
@@ -19,7 +19,7 @@ confidence: verified
 - **Tactile sensing**: 2026 lab results (Cambridge graphene/liquid-metal skin, ~200 µm pyramid taxels, detects sand-grain-scale contact, normal + shear force + slip) improve sensitivity/size roughly 10x over prior flexible sensors (as of 2026-03, single-source, unverified). Commercial offerings (XELA, GelSight-style optical) exist but are fragile and expensive; almost no fleet robot ships with dense skin today.
 - **Compute (edge)**: NVIDIA Jetson AGX Thor T5000 — Blackwell GPU, 2,070 FP4 TFLOPS, 128 GB unified memory, 40–130 W, 7.5x Jetson Orin compute — is the de-facto onboard inference standard for 2026 humanoids, enough to run multi-billion-parameter VLAs locally. GA 2025-08-25, dev kit from $3,499; adopters at launch included Agility Robotics, Amazon Robotics, Boston Dynamics, Figure, Hexagon, and Meta, with 1X, OpenAI, and Physical Intelligence evaluating (as of 2025-08).
 - **Energy**: Li-ion packs at ~250–350 Wh/kg give 1–4 h of active humanoid runtime (many units realistically 30–90 min between charges); reference points: Unitree H1 carries a 0.864 kWh pack, Tesla Optimus Gen 2 ~2.3 kWh (high-nickel NMC) for roughly 2 h of dynamic operation (TrendForce/CnEVPost, 2026-01). Industrial customers expect 95–99% uptime, so hot-swap batteries (Agility Digit, Apptronik Apollo) and charging choreography are stopgaps. Solid-state cells are the awaited unlock for full-shift (8 h) operation; TrendForce projects 74 GWh of humanoid solid-state demand by 2035 (as of 2026-01).
-- **Platforms/cost**: Unitree sells humanoids at roughly an order of magnitude below US competitors (entry models from ~$4,290–$16k class, as of 2026) and shipped 5,500+ humanoids in 2025; commodity hardware is arriving faster than the intelligence to use it.
+- **Platforms/cost**: Unitree sells humanoids at roughly an order of magnitude below US competitors (entry models from ~$4,290–$16k class, as of 2026) and self-reports 5,500+ humanoids shipped in 2025 (Unitree prospectus figure; Omdia independently counts ~4,200); commodity hardware is arriving faster than the intelligence to use it.
 - **Unlocks**: everything above. Cheap reliable platforms (Layer 0) are precisely what turned learning research (Layer 3) from simulation-only into fleet-scale.
 
 ## Layer 1 — Perception
@@ -126,6 +126,7 @@ confidence: verified
 - https://restofworld.org/2026/unitree-china-humanoid-robot-shanghai-ipo/ — Unitree IPO filing 2026-03-20, ¥4.2B (~$610M) raise
 - https://www.caixinglobal.com/2026-05-26/unitree-fast-tracks-shanghai-ipo-with-target-valuation-of-62-billion-102447449.html — Unitree fast-track approval, ~$6.2B target valuation, 5,500 humanoids shipped 2025, 2025 financials
 - https://kraneshares.com/a-complete-guide-to-unitree-robotics-2026-ipo-why-it-matters-for-star-market-etf-kstr-humanoid-robotics-etf-koid/ — Unitree 5,500+ humanoids shipped 2025, valuation targets, China unit dominance
+- https://autonews.gasgoo.com/articles/market-industry/annual-champion-changes-hands-unitree-announces-over-5500-humanoid-robot-shipments-2014711162140991489 — Unitree prospectus 5,500+ "pure humanoids" vs Omdia's ~4,200 count (AgiBot ~5,100); classification/methodology dispute
 - https://www.forbes.com/sites/johnkoetsier/2026/06/24/first-humanoid-robot-maker-goes-public-in-us-25-billion-deal-new-robot-300-million-in-pre-orders/ — Agility Robotics $2.5B SPAC, $300M pre-orders (2026-06)
 - https://techcrunch.com/2026/06/24/agility-robotics-plans-to-go-public-via-spac-in-a-2-5b-deal/ — Agility SPAC corroboration: Churchill Capital Corp XI, ~$620M proceeds, ticker AGLT
 - https://theresarobotforthat.com/blog/humanoid-robot-safety-standards-2026/ — ISO 10218:2025, ANSI/A3 R15.06-2025, ISO 25785-1 in development for dynamically stable robots
