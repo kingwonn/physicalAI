@@ -1,7 +1,7 @@
 ---
 title: Landscape: China
 slug: landscape-china
-updated: 2026-07-03
+updated: 2026-07-04
 confidence: verified
 ---
 > China is the volume center of the humanoid-robot industry: roughly 12,800 of the world's humanoid units were produced there in 2025 (~90% of global output, per Merics), led by Unitree (5,500 humanoids sold in 2025; STAR Market IPO registration approved July 2026 at a ~$6–6.2B target valuation) and AgiBot/Zhiyuan (5,168 shipped in 2025 per Omdia; 15,000th cumulative unit by June 2026). The ecosystem combines a 60–70% share of the global component supply chain, aggressive price disruption (Unitree's R1 at ~$5,900), state policy that made embodied intelligence a named priority of the 15th Five-Year Plan (2026–30), and high-visibility public milestones — a robot half-marathon whose 2026 winner beat the human world record, and the first World Humanoid Robot Games (Beijing, Aug 2025). Contrast with [Landscape: USA](landscape-usa.md); see [Humanoid robots](humanoid-robots.md) for hardware detail and [Investment](investment.md) for capital flows.
@@ -73,6 +73,13 @@ confidence: verified
 - **Milestone**: world's first humanoid robot front flip (PM01, 2025-02) — part of a wave of Chinese acrobatic-locomotion demos.
 - **Price disruption**: PM01 commercial version at RMB 88,000 (~$12k); 1.38 m, ~40 kg, 23–24 DoF.
 - **Capital**: ~RMB 1B (~$139M) raised across pre-A++ (Rocket Capital, XPeng) and A1 (JD.com, CATL Capital, Yintai, Tsinghua Holdings) rounds announced 2025-07; A1+/A2 rounds completed by 2025-12 alongside launch of full-size T800 (factory claims one T800 every 15 minutes (unverified)). Filed confidentially for a Hong Kong IPO 2026-06 (Bloomberg).
+
+## X Square Robot and AI² Robotics (Shenzhen model-first pair)
+
+- Two Shenzhen embodied-AI startups announced ~RMB 20B (~$2.8B) valuations on the same day (2026-06-29) — a marker of how fast capital is compounding behind Chinese "model-first" robotics companies (both founded 2023).
+- **X Square Robot**: closed four consecutive rounds ending in a Series C (IDG participated in the C; HongShan and Xiaomi backed multiple rounds) at a >$2.8B (RMB 20B) valuation; claims to be the only Chinese embodied-AI company with lead-round backing at different stages from all four of Alibaba, ByteDance, Meituan, and Xiaomi (company release, as of 2026-06). Builds the wheeled **Quanta** humanoid series (flagship X2) and the **WALL** model family (WALL-OSS open weights, WALL-B unified foundation model — see [VLA models](vla-models.md)); deployments include AI cleaning services with 58.com in Shenzhen and Beijing and month-long in-home trials ("X Family Member Program").
+- **AI² Robotics** (智平方): raised ~RMB 5B (~$735M) in new financing at a RMB 20B+ valuation (2026-06-29), on top of a Series B earlier in 2026 at a ~RMB 10B (~$1.4B) valuation. Builds the **AlphaBot** wheeled-humanoid series (34+ DoF) on its "Alpha Brain" foundation model for industrial, biotech, public-service and retail settings; targets scaling output from ~1,000 units (2025) to ~10,000 in 2026 (company claim).
+- Chinese trade press reported the two publicly disputing which was the *first Greater Bay Area* embodied-AI company to hit the RMB 20B valuation mark — both claimed the title the same day (Gasgoo) — itself a sign of valuation-led positioning in the sector.
 
 ## Xiaomi and XPeng (consumer-electronics / EV entrants)
 
@@ -152,6 +159,10 @@ confidence: verified
 - https://www.bloomberg.com/news/articles/2025-12-12/humanoid-robot-maker-galbot-said-to-pick-banks-for-2026-hk-ipo — Galbot 2026 HK IPO preparation.
 - https://www.therobotreport.com/galbot-picks-up-153m-commercialize-g1-semi-humanoid/ — Galbot RMB 1.1B CATL-led round; G1 store/pharmacy deployments.
 - https://technode.com/2025/08/07/fourier-intelligence-unveils-the-care-bot-gr-3-its-first-full-sized-companion-humanoid-robot/ — Fourier GR-3 specs, care positioning, ~$27.5k price.
+- https://www.prnewswire.com/apac/news-releases/x-square-robot-secures-four-consecutive-financing-rounds-surpasses-us2-8-billion-valuation-in-push-for-physical-ai-foundation-models-302813098.html — X Square Robot company release (2026-06-29): four rounds through Series C, >$2.8B/RMB 20B valuation, IDG/HongShan/Xiaomi, WALL models, 58.com + X Family Member deployments.
+- https://siliconangle.com/2026/06/29/chinese-robotics-outfits-ai2-robotics-x-square-robots-secure-funding-2-8b-valuation/ — both companies at ~$2.8B (2026-06-29); AI² ~$735M round; AlphaBot/"Alpha Brain"; Quanta X2.
+- https://autonews.gasgoo.com/articles/icv/seeds-ai-robotics-secures-nearly-5-billion-yuan-in-new-financing-2071594874301100032 — AI² Robotics ~RMB 5B new financing at RMB 20B+ (2026-06-29); investor mix; Feb 2026 Series B.
+- https://www.therobotreport.com/ai2-robotics-raises-series-b-funding-advance-alphabot-embodied-ai/ — AI² Robotics Series B (~RMB 1.2B at RMB 10B/$1.4B valuation, 2026-02); AlphaBot wheeled humanoid; production scaling from 1,000 units/yr (2025) to 10,000 in 2026.
 - https://www.therobotreport.com/engineai-releases-pm01-humanoid-robot-for-commercial-educational-use/ — EngineAI PM01 specs and RMB 88k price.
 - https://theaiinsider.tech/2025/07/21/chinas-engineai-raises-139-million-in-fresh-funding-for-humanoid-robots/ — EngineAI ~RMB 1B ($139M) rounds; XPeng/JD/CATL investors.
 - https://www.bloomberg.com/news/articles/2026-06-12/humanoid-robot-manufacturer-engineai-is-said-to-file-for-hong-kong-ipo — EngineAI confidential HK IPO filing (June 2026).

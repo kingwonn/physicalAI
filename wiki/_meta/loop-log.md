@@ -44,3 +44,21 @@ Figure BotQ ramp, NVIDIA stack) already on the pages; wiki is current with
 the news cycle. HOME/llms.txt at 22 pages; queue: 2 done, 2 watch items
 added. Next: loop(4) — news sweep + queue picks (per-company deep pages or
 data-foundry economics or academic lab map).
+
+## loop(4) — 2026-07-04
+Company deep pages + first full-stack news sweep (6 agents, ~0.5M tokens,
+~23 min). New pages company-figure (6 verify corrections — BMW pilot
+provenance precision, Hark upgraded to multi-source verified) and
+company-unitree (5 — GUARD Act date 2026-06-04, overseas revenue >55%
+2022-24), both verified. News sweep NOW USES community+media signals
+(last30days engine: Reddit/HN/Polymarket; RSS watchlist: Robot Report, IEEE
+Spectrum, BD/Unitree YouTube, Lex Fridman): patched the same-day 2026-06-29
+Shenzhen "model-first" funding pair (X Square Robot >$2.8B, AI² Robotics
+~$735M at ~RMB 20B) into landscape-china/vla-models/investment; verify pass
+corrected 4 details (IDG participated-not-led etc.). Resolved Unitree YouTube
+channel RSS into feeds.md. Fixed cross-page contradiction: Unitree was
+already profitable in 2024 (humanoid-robots.md said "first profitable year"
+2025). Community signals logged as leads only (New Yorker deployment-
+readiness feature queued). Unitree IPO pricing: still pending, watch is hot.
+HOME/llms.txt at 24 pages. Next: loop(5) — news sweep (IPO watch) + queue
+picks (PI / NVIDIA-stack / Optimus company pages, or academic lab map).

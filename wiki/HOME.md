@@ -4,7 +4,7 @@ slug: HOME
 updated: 2026-07-03
 confidence: verified
 ---
-> Annotated index of the physicalAI wiki: 22 topic pages on Physical AI worldwide,
+> Annotated index of the physicalAI wiki: 24 topic pages on Physical AI worldwide,
 > each researched by a web-research agent and passed through an adversarial
 > fact-check (`confidence: verified`). Start with the three core pages, then go
 > deep by technology, people/orgs, region, or capital.
@@ -65,6 +65,13 @@ disputes are catalogued in [Open problems](open-problems.md).
 | [Investment & Market](investment.md) | As-of-dated ledger of mega-rounds, valuations, IPOs, state funds, market forecasts — with bubble-watch skepticism |
 | [Open Problems & Debates](open-problems.md) | Data scarcity, sim2real limits, dexterity gap, reliability, safety certification, evaluation crisis, form-factor and timeline debates |
 | [Safety & Regulation](safety-regulation.md) | ISO 25785-1 / 10218:2025 / UL 3300, EU Machinery Regulation + AI Act, China's HEIS, certification gates for factory and home deployment, incidents and insurance |
+
+## Company deep dives
+
+| Page | What it covers |
+|---|---|
+| [Figure AI](company-figure.md) | Founding, $2.6B→$39B funding arc, Helix architecture, BotQ manufacturing, BMW engagement (confirmed vs aggregator claims), OpenAI split, skeptic case |
+| [Unitree](company-unitree.md) | XDog-to-IPO arc, full price ladder, prospectus financials, STAR IPO status, vertical integration, viral milestones, safety incidents, US scrutiny |
 
 ## Reference
 

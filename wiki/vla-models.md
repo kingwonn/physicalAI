@@ -1,7 +1,7 @@
 ---
 title: Vision-Language-Action Models
 slug: vla-models
-updated: 2026-07-03
+updated: 2026-07-04
 confidence: verified
 ---
 > Vision-language-action (VLA) models are multimodal neural networks that take camera images and a natural-language instruction and directly output low-level robot actions, making them the leading candidate architecture for a "general-purpose robot brain." The lineage runs from Google's RT-1 (2022) and RT-2 (2023, which coined the term) through open academic models (Octo, OpenVLA, 2024) to production-grade systems: Physical Intelligence's π0/π0.5/π*0.6/π0.7, NVIDIA's Isaac GR00T N series, Google DeepMind's Gemini Robotics family, and Figure's Helix/Helix 02. As of mid-2026 the field has converged on a common recipe — a pretrained vision-language model backbone plus a fast action-decoding head (flow matching, diffusion, or compressed action tokens) — while frontier work shifts toward reinforcement learning from deployment experience (π*0.6/RECAP), agentic "thinking" VLAs (Gemini Robotics 1.5, GR00T N1.7), and world-action models (GR00T N2/DreamZero).
@@ -96,7 +96,7 @@ confidence: verified
 
 ## China's VLA ecosystem (brief)
 
-- Chinese labs shipped a dense wave of VLAs in 2025–26, skewing heavily toward open weights as a distribution strategy: ByteDance Seed **GR-3** (2025-07); AgiBot **GO-1** plus the AgiBot World Colosseo data platform; Unitree's open-sourced **UnifoLM-VLA-0** (weights + code released 2026-01-29) driving G1 household tasks; X Square Robot's **WALL-OSS** open 4B model (2025-09; the company raised $140M for embodied foundation models, as of 2025-11), with the WALL-OSS-0.5 technical report (2026) adding single-stage training on a 90M-sample multimodal corpus.
+- Chinese labs shipped a dense wave of VLAs in 2025–26, skewing heavily toward open weights as a distribution strategy: ByteDance Seed **GR-3** (2025-07); AgiBot **GO-1** plus the AgiBot World Colosseo data platform; Unitree's open-sourced **UnifoLM-VLA-0** (weights + code released 2026-01-29) driving G1 household tasks; X Square Robot's **WALL-OSS** open 4B model (2025-09), with the WALL-OSS-0.5 technical report (2026) adding single-stage training on a 90M-sample multimodal corpus, and **WALL-B** (2026-04), a unified foundation model spanning perception, language, action, and physical prediction — the company closed four consecutive rounds ending in a Series C at a >$2.8B (RMB 20B) valuation, claiming lead-round backing at different stages from Alibaba, ByteDance, Meituan, and Xiaomi (company release, as of 2026-06).
 - **LingBot-VLA** (Ant Group / Robbyant; paper, weights and codebase released 2026-01-27): Ant's first open embodied-AI model; trained on ~20,000 hours of teleoperated bimanual data across 9 dual-arm embodiments (AgileX, Galaxea R1Pro, AgiBot G1...); on GM-100 scores 17.30% average success / 35.41% progress with depth input — above π0.5, GR00T N1.6 and WALL-OSS under the same post-training protocol (self-reported).
 - A ResearchInChina report counts 100+ VLA models in development across Chinese robotics and automotive (XPeng, Li Auto use VLA-style driving stacks) (unverified). Details in [Landscape: China](landscape-china.md).
 
@@ -151,4 +151,5 @@ confidence: verified
 - https://mbreuss.github.io/blog_post_iclr_26_vla.html — ICLR 2026 VLA research survey (community trends, benchmark critique)
 - https://en.wikipedia.org/wiki/Vision-language-action_model — VLA definition, RT-2 origin of the term
 - https://www.therobotreport.com/x-square-robot-secures-140m-in-funding-for-ai-foundation-models/ — X Square Robot WALL-OSS and $140M raise
+- https://www.prnewswire.com/apac/news-releases/x-square-robot-secures-four-consecutive-financing-rounds-surpasses-us2-8-billion-valuation-in-push-for-physical-ai-foundation-models-302813098.html — X Square Robot company release (2026-06-29): four rounds through Series C, >$2.8B valuation, WALL-B/WALL-OSS-0.5/WALL-WM models
 - https://techcrunch.com/2026/01/05/nvidia-wants-to-be-the-android-of-generalist-robotics/ — NVIDIA's open-model strategy framing at CES 2026

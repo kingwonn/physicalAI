@@ -1,7 +1,7 @@
 ---
 title: Investment & Market
 slug: investment
-updated: 2026-07-03
+updated: 2026-07-04
 confidence: verified
 ---
 > Capital is flooding into Physical AI at a record pace: venture funding for robotics startups hit ~$15B in 2025 (roughly +70% vs 2024) and had already reached ~$18.8B by mid-2026 per Crunchbase. Marquee deals define the cycle — Figure's $1B+ Series C at a $39B post-money valuation (2025-09), Skild AI's $1.4B at >$14B (2026-01), Physical Intelligence's $600M at $5.6B (2025-11) with a reported follow-on at $11B+ in talks (2026-03) — while China channels state capital (a ~¥1T NDRC robotics/AI fund, >$26B in city-level funds) and opens the IPO exit route (Unitree's STAR Market IPO registration approved 2026-07-02 at a ~$5.9B valuation). The gulf between valuations and actual revenue (Unitree, the segment's largest discloser, booked only ~¥1.69B ≈ $235M in 2025) fuels credible bubble warnings, including from China's own NDRC and from robotics pioneer Rodney Brooks.
@@ -44,6 +44,8 @@ Context rows: Saronic (maritime autonomy/defense) raised a $1.75B Series D in 20
 | AgiBot / Zhiyuan | Control of STAR-listed Shangwei New Materials | ~¥2.1B (~$290M) | — | 2025-07 | Widely read as a backdoor listing; AgiBot denies that characterization |
 | AgiBot / Zhiyuan | Private valuation | — | ~¥15B (~$2.1B) | as of 2025-08 | Backers: Tencent, HongShan, BYD, Hillhouse, LG, JD; reported HK IPO ambitions at HK$40–50B (~$5.1–6.4B) (unverified) |
 | Galbot | Growth round | >$300M | $3B | 2025-12 | Total raised ~$800M; investors from China, Singapore, Middle East |
+| X Square Robot (Shenzhen) | Series C (4th of four consecutive rounds) | n/d | >$2.8B (RMB 20B) | 2026-06-29 | IDG participated in the C; HongShan/Xiaomi in multiple rounds; claims lead-round backing across stages from Alibaba, ByteDance, Meituan, Xiaomi (company release) |
+| AI² Robotics (Shenzhen) | New financing | ~¥5B (~$735M) | RMB 20B+ (~$2.8B) | 2026-06-29 | Follows a Series B at ~RMB 10B (~$1.4B) valuation earlier in 2026; AlphaBot wheeled humanoids |
 | Shihang Intelligent (Beijing) | Series A | $1B | n/d | 2026-06 | (unverified, single source — Crunchbase) |
 
 - Chinese humanoid valuations run far below US peers despite comparable or better shipping volumes — Unitree IPOs at ~$5.9B **with** ~$235M revenue while Figure is privately marked at $39B with no disclosed revenue (as of 2026-07).
@@ -114,6 +116,9 @@ Context rows: Saronic (maritime autonomy/defense) raised a $1.75B Series D in 20
 - https://eu.36kr.com/en/p/3371292992477316 — Zhiyuan/AgiBot ~¥2.1B acquisition of the listed company; ¥15B private valuation.
 - https://en.tmtpost.com/post/7623296 — AgiBot denies HK IPO rumors; deal structure details.
 - https://www.prnewswire.com/news-releases/galbot-secures-over-300-million-in-new-funding-breaking-records-with-3-billion-valuation-in-chinas-humanoid-robot-sector-302647204.html — Galbot >$300M at $3B, ~$800M total (2025-12, primary PR).
+- https://www.prnewswire.com/apac/news-releases/x-square-robot-secures-four-consecutive-financing-rounds-surpasses-us2-8-billion-valuation-in-push-for-physical-ai-foundation-models-302813098.html — X Square Robot four rounds through Series C, >$2.8B/RMB 20B (2026-06-29, primary PR).
+- https://siliconangle.com/2026/06/29/chinese-robotics-outfits-ai2-robotics-x-square-robots-secure-funding-2-8b-valuation/ — AI² Robotics ~$735M at ~$2.8B and X Square at $2.8B, same day (2026-06-29).
+- https://autonews.gasgoo.com/articles/icv/seeds-ai-robotics-secures-nearly-5-billion-yuan-in-new-financing-2071594874301100032 — AI² Robotics ~RMB 5B new financing (2026-06).
 - https://news.crunchbase.com/robotics/startup-venture-funding-surges-2026-data/ — sector totals: $15B (2025), $18.8B (2026 YTD), $14.1B 2021 peak, largest 2026 rounds (Saronic $1.75B at $9.25B, Neura, Skild, Shihang, Apptronik, Mind Robotics).
 - https://www.cnbc.com/2026/06/10/neura-robotics-funding-ai-humanoid-robots.html — Neura Series C up to $1.4B (2026-06-10); ~$7B reported valuation; Tether, Nvidia, Amazon, Qualcomm, Bosch, Schaeffler, EIB.
 - https://news.crunchbase.com/robotics/startup-funding-rises-h1-2025-ai-apptronik-data/ — 2025 vs 2024 ($8.2B) robotics funding comparison.
