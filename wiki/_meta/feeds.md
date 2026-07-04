@@ -22,7 +22,8 @@ use and record the URL here.
 |---|---|---|
 | Boston Dynamics | UC7vVhkEfw4nOGp8TyDk7RcQ | ✅ tested 2026-07-04 |
 | Unitree | UCsMbp4V8oxzHCMdOUP-3oWw | ✅ tested 2026-07-04 (resolved from `"channelId"` in @unitreerobotics/about HTML; feed works) |
-| Figure, Tesla, NVIDIA, 1X, Agility, UBTech | — | ⏳ resolve channel_id from channel page `<meta itemprop="channelId">` on first use |
+| Figure | UCYlq-KmwPjc1DtsGmthFqSQ | ✅ tested 2026-07-04 (resolved from @figureai/about HTML; feed works — F.03 livestream series visible) |
+| Tesla, NVIDIA, 1X, Agility, UBTech | — | ⏳ resolve channel_id from channel page `<meta itemprop="channelId">` on first use |
 
 Notes: channel RSS gives titles/dates/links only (enough for lead detection).
 For transcripts, `yt-dlp` is not installed; treat video claims as

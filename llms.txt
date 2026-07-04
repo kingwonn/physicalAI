@@ -1,6 +1,6 @@
 # physicalAI wiki
 
-> Git-versioned, LLM-maintained knowledge base on Physical AI worldwide: history, SOTA, tech tree, key people/orgs, regional landscapes, company deep dives, hardware, data, investment, open problems, safety/regulation, evaluation. 24 topic pages, each adversarially fact-checked (`confidence: verified`), last updated 2026-07-04. Maintained by an autonomous research loop (LOOP.md); every change is a git commit.
+> Git-versioned, LLM-maintained knowledge base on Physical AI worldwide: history, SOTA, tech tree, key people/orgs, regional landscapes, company deep dives, hardware, data, investment, open problems, safety/regulation, evaluation. 26 topic pages, each adversarially fact-checked (`confidence: verified`), last updated 2026-07-04. Maintained by an autonomous research loop (LOOP.md); every change is a git commit.
 
 ## Start here
 - [HOME](wiki/HOME.md): annotated index, field overview, reading order
@@ -38,6 +38,8 @@
 ## Company deep dives
 - [Figure AI](wiki/company-figure.md): founding, funding arc to $39B, Helix, BotQ, BMW engagement, OpenAI split, skeptic case
 - [Unitree](wiki/company-unitree.md): XDog-to-IPO arc, price ladder, prospectus financials, STAR IPO, viral milestones, US scrutiny
+- [Physical Intelligence](wiki/company-pi.md): founding team, ~$1.07B raised, π0→π0.7 arc, openpi ecosystem, pre-revenue posture
+- [NVIDIA Robotics Stack](wiki/company-nvidia.md): three-computer thesis, Isaac/GR00T/Cosmos/Jetson/Halos, ~1%-of-revenue reality vs $40T TAM
 
 ## Reference
 - [Glossary](wiki/glossary.md): ~35 core Physical AI terms, each cross-linked to its covering page

@@ -4,7 +4,7 @@ slug: HOME
 updated: 2026-07-03
 confidence: verified
 ---
-> Annotated index of the physicalAI wiki: 24 topic pages on Physical AI worldwide,
+> Annotated index of the physicalAI wiki: 26 topic pages on Physical AI worldwide,
 > each researched by a web-research agent and passed through an adversarial
 > fact-check (`confidence: verified`). Start with the three core pages, then go
 > deep by technology, people/orgs, region, or capital.
@@ -72,6 +72,8 @@ disputes are catalogued in [Open problems](open-problems.md).
 |---|---|
 | [Figure AI](company-figure.md) | Founding, $2.6B→$39B funding arc, Helix architecture, BotQ manufacturing, BMW engagement (confirmed vs aggregator claims), OpenAI split, skeptic case |
 | [Unitree](company-unitree.md) | XDog-to-IPO arc, full price ladder, prospectus financials, STAR IPO status, vertical integration, viral milestones, safety incidents, US scrutiny |
+| [Physical Intelligence](company-pi.md) | Google-diaspora founding, ~$1.07B raised, π0→π0.7 model arc, openpi ecosystem, pre-revenue posture, skeptic case |
+| [NVIDIA Robotics Stack](company-nvidia.md) | Three-computer thesis, Isaac/GR00T/Cosmos/Jetson/Halos, partnership graph, ~1%-of-revenue reality vs $40T TAM rhetoric, platform-bet challengers |
 
 ## Reference
 

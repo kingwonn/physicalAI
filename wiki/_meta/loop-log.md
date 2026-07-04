@@ -62,3 +62,18 @@ already profitable in 2024 (humanoid-robots.md said "first profitable year"
 readiness feature queued). Unitree IPO pricing: still pending, watch is hot.
 HOME/llms.txt at 24 pages. Next: loop(5) — news sweep (IPO watch) + queue
 picks (PI / NVIDIA-stack / Optimus company pages, or academic lab map).
+
+## loop(5) — 2026-07-04
+Company deep pages round 2 (6 agents, ~0.56M tokens, ~22 min). New pages
+company-pi (6 verify corrections — "Jasmine Hsu" co-founder claim killed,
+pre-revenue framing precisioned) and company-nvidia (6 — GR00T reference
+humanoid date 2026-05-31, CoRL vs CES release URL misattribution fixed),
+both verified. News sweep (full stack): Unitree GD01 manned mecha
+(2026-05-12, ~$574K) + WVLA 2.0 demo added to company-unitree; Figure
+200-hour livestreamed endurance run (~249,560 packages, 2026-05-13→22)
+added to company-figure; news-verify tightened 7 details (San Jose vs
+Sunnyvale conflict flagged, "zero crashes" precisioned to system-halting).
+Figure YouTube RSS resolved into feeds.md. Cross-page fix: landscape-usa
+espresso demo 13h → ~18h per PI blog. Unitree IPO pricing STILL pending.
+HOME/llms.txt at 26 pages. Next: loop(6) — IPO watch + Tesla Optimus page
+and/or academic lab map; consider lengthening interval if news stays dry.

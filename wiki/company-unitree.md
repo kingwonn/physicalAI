@@ -16,7 +16,7 @@ confidence: verified
 | 2025 revenue | ~RMB 1.70B (~$235M; Caixin cites RMB 1.69B, SCMP RMB 1.71B), +335% YoY |
 | 2025 profitability | Adjusted (non-GAAP) net profit ~RMB 600M (~$84M), +674% YoY; ~60% gross margin |
 | 2025 volumes | >5,500 humanoids (prospectus; Omdia counts 4,200 — methodology conflict); >30,000 quadrupeds cumulative 2022–2025-09 |
-| Product lines | Go/A/B quadruped series; G1, H1/H1-2, H2, R1 humanoids; Dex3/Dex5 hands; LiDAR; components |
+| Product lines | Go/A/B quadruped series; G1, H1/H1-2, H2, R1 humanoids; GD01 manned mecha; Dex3/Dex5 hands; LiDAR; components |
 | IPO status | CSRC registration approved 2026-07-02; ~RMB 4.2B raise; pricing not yet set (as of 2026-07-04); debut expected late 2026-07 to early 2026-08 |
 | Implied valuation | ~RMB 42B (~$5.9–6.2B) at ≥10% float |
 
@@ -54,6 +54,7 @@ confidence: verified
 | H2 | 2025-10 | reported from $29.9K (China base config; intl. pricing n/d, sources conflict to $40.9K — unverified) | ~1.8 m / ~70 kg, 31 DoF (3-DoF waist, 2-DoF neck); 360 N·m peak leg torque; bionic-face option; hands sold separately (Dex3-1/Dex5-1) |
 
 - Optional **Dex5-1** 20-DoF dexterous hand (94-point tactile array @1 kHz) and the NVIDIA/Unitree **H2 Plus reference design** with Sharpa visuo-tactile hands (2026-06) — see [Tactile & hands](tactile-hands.md) and [Hardware](hardware.md).
+- **GD01 manned mecha (unveiled 2026-05-12)**: a ~500 kg (with pilot) rideable "transformable civilian vehicle" that walks on two legs and can lean back into a quadruped crawl mode; Wang Xingxing piloted it in the launch video (which also showed it smashing through a brick wall with its arms). Priced from RMB 3.9M (~$574K; Unitree's international listing says "from $650,000"). Marketed as the world's first mass-produced manned mecha (company claim); minimal technical detail published beyond the ~1-minute demo — a halo/brand product rather than a volume line (as of 2026-07).
 - 2026 shipment target: up to **20,000 humanoids** — Wang's stated range was 10,000–20,000 units in a post-Gala 36Kr interview (2026-02), reiterated in press through 2026-04; 5-year capacity plan: 75,000 humanoids + 115,000 quadrupeds per year (prospectus).
 
 ## Price-disruption strategy
@@ -141,6 +142,7 @@ confidence: verified
 - **De-facto research standard**: G1/Go2 are the default embodiments in academic RL/VLA papers and in NVIDIA's GR00T demos; sub-$20K pricing made them the "Raspberry Pi of humanoids." See [State of the art](state-of-the-art.md).
 - **Open-source stack** (github.com/unitreerobotics): `unitree_ros`, `unitree_rl_gym` (Isaac Gym sim2sim/sim2real workflows for Go2/H1/H1-2/G1), `unitree_rl_lab` (IsaacLab), `unitree_rl_mjlab` (MuJoCo) — lowering the barrier for labs to train and deploy policies. See [Simulation](simulation.md).
 - **Models**: open-sourced **UnifoLM-WMA-0** (world-model–action architecture doubling as a synthetic-data engine — see [World models](world-models.md)) and **UnifoLM-VLA-0** (manipulation VLA — see [VLA models](vla-models.md)). The strategy: win the body, commoditize the ecosystem, and use IPO proceeds (~$300M for model training) to close the software gap with US model-first labs.
+- **WVLA 2.0 demo (video 2026-05-25)**: Unitree showed a G1 running its "WVLA 2.0" model — described as coupling world-model (WMA) prediction with VLA action generation — autonomously completing six consecutive tidy-up tasks in a deliberately disturbed conference room with no teleoperation; reported perception stack fuses a RealSense depth camera, Livox MID360 LiDAR, and two lateral cameras (company demo + Chinese media coverage, unverified). Positions Unitree's in-house autonomy against the "labs awaiting real autonomy" critique above.
 - Roughly half of IPO proceeds going to AI-model R&D signals Unitree knows hardware alone won't hold the moat — its own prospectus shows 74% of humanoid revenue still comes from research/education buyers awaiting real autonomy.
 
 ## What to watch (as of 2026-07-04)
@@ -200,3 +202,8 @@ confidence: verified
 - https://github.com/unitreerobotics — open-source org: unitree_ros, unitree_rl_gym, unitree_rl_lab, unitree_rl_mjlab
 - https://github.com/unitreerobotics/unifolm-world-model-action — UnifoLM-WMA-0 open world-model–action architecture
 - https://roboticsandautomationnews.com/2026/06/09/sharpa-brings-dexterous-robot-hands-to-nvidia-and-unitree-humanoid-reference-design/102424/ — NVIDIA/Unitree H2 Plus reference design with Sharpa hands (2026-06)
+- https://cnevpost.com/2026/05/12/unitree-unveils-manned-mecha-gd01/ — GD01 unveiling 2026-05-12: RMB 3.9M/~$574K, ~500 kg with pilot, biped↔quadruped transform, Wang piloted, "transformable civilian vehicle"
+- https://english.news.cn/20260512/715d3be8a90e4bc29ea081a2954bf9b0/c.html — Xinhua: "world's first manned transformable robotic vehicle" (state media)
+- https://www.scmp.com/tech/tech-trends/article/3353262/real-life-transformers-chinas-unitree-debuts-mecha-robot-shifts-2-legs-4 — SCMP independent coverage: GD01 biped-to-quadruped transform, launch details
+- https://www.youtube.com/watch?v=oWOyUMJWptc — Unitree official GD01 video, "from $650,000" international pricing
+- https://www.youtube.com/watch?v=zqqIpVsMYkE — WVLA 2.0 conference-room cleanup demo (company video, 2026-05-25)
