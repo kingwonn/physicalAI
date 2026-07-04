@@ -42,15 +42,14 @@ Distilled from loop(1)'s 54 research leads (2026-07-03) plus the original backlo
 
 ## Claims to re-verify (single-source or conflicting)
 
+Most of this list was resolved by the loop(8) re-verification batch (2026-07-04):
+H2 price tiering, MirrorMe Bolt (real, multi-source), Honor Flash (independently
+confirmed incl. Scientific American/CBS/NPR), GR-3/GO-1/"100+ VLAs" (attributed
+to ResearchInChina), shipment + funding-total methodology notes written, Figure
+03 height (official 1.73 m), robots-outnumber-employees (primary post found,
+headcount trajectory corrected), Meituan 9.65% combined / A2 2025-08 / UniPwn
+confirmed, CoT numbers added to locomotion. Remaining:
+
 - [ ] Figure-BMW commercial terms (~$25/robot-hour, 40-unit fleet claim) — 40-unit claim traces to one aggregator; Leipzig pilot is Hexagon AEON, not Figure.
-- [ ] Mega-rounds not confirmed closed as of 2026-07: Physical Intelligence ~$1B @ ~$11B; 1X ~$1B @ ~$10B; Neura $1.4B tranche conditions; Shihang Intelligent $1B Series A; world-model wave (World Labs $1B @ $5.4B, AMI Labs $1.03B @ $3.5B, Wayve $1.2B @ $8.6B).
-- [ ] Unitree H2 price conflict ($29.9K vs $40.9K across sources).
-- [ ] MirrorMe "Bolt" 10 m/s humanoid sprint (early 2026) — single source; verify company exists + footage.
-- [ ] Honor "Flash" 50:26 autonomous half-marathon (2026-04) — only state media so far.
-- [ ] ByteDance Seed GR-3, AgiBot GO-1/Colosseo, and the "100+ Chinese VLAs" count.
-- [ ] 2025 global humanoid shipment methodologies (Omdia ~13-20k range vs Xinhua ~18k vs Unitree prospectus vs Morgan Stanley) — reconcile for state-of-the-art.
-- [ ] 2025 robotics funding totals conflict across trackers (Dealroom $26.5B vs PitchBook $27.6B vs Crunchbase $9.4-14B) — reconcile methodologies for investment.md.
-- [ ] Energy efficiency / cost-of-transport of learned vs model-based gaits — rarely reported.
-- [ ] Figure 03 height conflict: wiki says 1.68 m, several 2026 secondary sources say 1.73 m — settle from official Figure 03 spec sheet, then correct humanoid-robots.md if needed.
-- [ ] Figure "robots outnumber employees" claim (>750 fleet vs ~200-250 staff, Adcock X post 2026-06-20) — traces to aggregators; fetch original post.
-- [ ] Unitree weakly-sourced items: Meituan ~8% outside shareholder, A2 quadruped launch date/pricing, "UniPwn" BLE vulnerability naming/date (2025-09).
+- [ ] Still-open round watch: PI ~$1B @ >$11B and 1X ~$1B @ ~$10B — both NOT closed as of 2026-07-04 (rechecked); World Labs/AMI/Wayve confirmed CLOSED and written into investment.md; "Shihang $1B" REFUTED (actual: Seahi >¥1B RMB ≈ $140M, Crunchbase currency error).
+- [ ] Cross-page propagation batch from loop(8) leads: world-models.md lacks the 2026 world-model funding wave (World Labs/AMI/Wayve closed rounds); landscape-row.md check Neura milestone-contingency + Wayve/AMI closed status; locomotion.md + tech-tree.md attribute "Unitree 5,500+ 2025" as prospectus self-reported; data.md upgrade AgiBot World to verified paper figures (>1M trajectories, 2,976.4 h, 217 tasks, 100 robots); organizations.md fix AgiBot "backdoor listing" (company denied — landscape-china has the denial); check GR-3 name collision (ByteDance VLA vs Fourier robot) on remaining pages; glossary.md CoT entry could cite learned-gait numbers; MirrorMe Black Panther II quadruped 13.4 m/s claim; verify FITEE 2025 CoT 0.4306 datapoint from primary.

@@ -4,15 +4,28 @@ slug: investment
 updated: 2026-07-04
 confidence: verified
 ---
-> Capital is flooding into Physical AI at a record pace: venture funding for robotics startups hit ~$15B in 2025 (roughly +70% vs 2024) and had already reached ~$18.8B by mid-2026 per Crunchbase. Marquee deals define the cycle — Figure's $1B+ Series C at a $39B post-money valuation (2025-09), Skild AI's $1.4B at >$14B (2026-01), Physical Intelligence's $600M at $5.6B (2025-11) with a reported follow-on at $11B+ in talks (2026-03) — while China channels state capital (a ~¥1T NDRC robotics/AI fund, >$26B in city-level funds) and opens the IPO exit route (Unitree's STAR Market IPO registration approved 2026-07-02 at a ~$5.9B valuation). The gulf between valuations and actual revenue (Unitree, the segment's largest discloser, booked only ~¥1.69B ≈ $235M in 2025) fuels credible bubble warnings, including from China's own NDRC and from robotics pioneer Rodney Brooks.
+> Capital is flooding into Physical AI at a record pace: venture funding for robotics startups hit ~$15B in 2025 per Crunchbase — though broader-scope trackers count ~$26–28B (see the [tracker note](#why-2025-totals-differ-by-tracker)) — and had already reached ~$18.8B by mid-2026 (Crunchbase). Marquee deals define the cycle — Figure's $1B+ Series C at a $39B post-money valuation (2025-09), Skild AI's $1.4B at >$14B (2026-01), Physical Intelligence's $600M at $5.6B (2025-11) with a reported follow-on at $11B+ still unclosed as of 2026-07 — while China channels state capital (a ~¥1T NDRC robotics/AI fund, >$26B in city-level funds) and opens the IPO exit route (Unitree's STAR Market IPO registration approved 2026-07-02 at a ~$5.9B valuation). The gulf between valuations and actual revenue (Unitree, the segment's largest discloser, booked only ~¥1.69B ≈ $235M in 2025) fuels credible bubble warnings, including from China's own NDRC and from robotics pioneer Rodney Brooks.
 
 ## Headline numbers (as of 2026-07)
 
-- Robotics venture funding: **~$15B in 2025**, up from $8.2B in 2024 and above the prior 2021 peak ($14.1B per Crunchbase); **$18.8B raised in 2026 through mid-year** — on pace to more than double 2025 (Crunchbase).
+- Robotics venture funding: **~$15B in 2025**, up from $8.2B in 2024 and above the prior 2021 peak ($14.1B per Crunchbase); **$18.8B raised in 2026 through mid-year** — on pace to more than double 2025 (Crunchbase). These are Crunchbase-scope figures; PitchBook counts **$27.6B for 2025** under a broader "robotics & physical AI" definition — see [Why 2025 totals differ by tracker](#why-2025-totals-differ-by-tracker).
 - Humanoid-specific venture funding: **~$3.2B globally in 2025** per Dealroom (part-year figure via Sifted, unverified) — more than the previous six years combined.
 - Most valuable private company: **Figure AI at $39B post-money** (as of 2025-09), among the ~20 most valuable startups in the world.
-- Largest single rounds to date: Saronic $1.75B Series D at $9.25B (2026-03, defense autonomy), Skild AI $1.4B (2026-01), Neura Robotics up to $1.4B (2026-06), Figure $1B+ (2025-09), Shihang Intelligent $1B Series A (2026-06, unverified single source).
+- Largest single rounds to date: Saronic $1.75B Series D at $9.25B (2026-03, defense autonomy), Skild AI $1.4B (2026-01), Neura Robotics up to $1.4B (2026-06, milestone-contingent), Wayve $1.2B Series D (2026-02, autonomous driving), AMI Labs $1.03B seed (2026-03, world models), Figure $1B+ (2025-09), World Labs $1B (2026-02, world models). A widely repeated "Shihang Intelligent $1B Series A" (Crunchbase, 2026-06) is a **currency error** — the round was >¥1B RMB ≈ $140M (see China table).
 - First major pure-play humanoid IPO: **Unitree Robotics**, CSRC registration approved 2026-07-02, raising ¥4.2B (~$618M) on Shanghai's STAR Market at a ~¥40B (~$5.9B) valuation.
+
+### Why 2025 totals differ by tracker
+
+2025 robotics-funding totals diverge by ~2x across trackers; the spread is methodology, not disagreement about the deals themselves.
+
+| Tracker | 2025 total | Scope / notes |
+|---|---|---|
+| Crunchbase | ~$14B as first reported (2026-02), revised to **~$15B** by mid-2026 | Narrower "robotics" industry tag; excludes most autonomous-vehicle and parts of drone/defense funding; totals drift upward as late-reported rounds are added retroactively |
+| PitchBook | **$27.6B** across 1,009 deals (vs $13.7B / 851 deals in 2024) | "Robotics & physical AI" vertical — includes defense & security robotics ($8.0B across 234 deals in 2025), drones and autonomy |
+| Dealroom | **~$26.5B** (cited in secondary coverage; primary report paywalled, unverified) | Broad robotics + physical-AI definition; under the same methodology Dealroom counts $55.8B for 2026 YTD — "nearly double" its full-2025 total |
+
+- Even larger figures (~$40.7B for 2025) circulate when physical-AI-adjacent categories — AV platforms, world-model labs like World Labs and AMI Labs — are folded in (unverified).
+- Divergence drivers: **scope** (do AVs, drones, defense autonomy, world-model labs count as "robotics"?), **timing** (retroactive data additions), and occasional **data-entry error** (e.g., Shihang's ¥1B round recorded as $1B). Always cite the tracker alongside the number.
 
 ## Mega-rounds: US & Europe
 
@@ -26,14 +39,17 @@ As-of-dated; every row sourced (see [Sources](#sources)). Valuations are post-mo
 | Skild AI | Series B | ~$100–135M (reports differ: Crunchbase records $135M, other coverage ~$100M) | $4.5B | 2025 (mid) | SoftBank (reported); 7 months before the $14B round, which tripled the valuation |
 | [Physical Intelligence](vla-models.md) | Series B | $600M | $5.6B | 2025-11 | CapitalG (Alphabet); Lux, Thrive, Jeff Bezos |
 | Physical Intelligence | Series A | $400M | $2.4B | 2024-11 | Bezos, Thrive, Lux (after ~$70M seed) |
-| Physical Intelligence | (in talks) | ~$1B | $11B+ | 2026-03 | Founders Fund, Lightspeed reported; **no close announced as of 2026-07** (unverified) |
+| Physical Intelligence | (in talks) | ~$1B | $11B+ | 2026-03 | Founders Fund set to participate, Lightspeed in talks (Bloomberg + TechCrunch); **still in talks — no close announced as of 2026-07** |
 | Apptronik | Series A (total, incl. extensions) | >$935M | ~$5–5.3B | 2026-02 | Google, Mercedes-Benz, B Capital, PEAK6, Qatar Investment Authority ($415M initial Series A 2025, $520M extension 2026-02) |
-| 1X Technologies | (reported raise) | up to $1B | ~$10B target | 2025-09 (reported) | Talks reported; **close unconfirmed** (unverified). Prior: $100M Series B at $820M, 2024-01 |
+| 1X Technologies | (reported raise) | up to $1B | ~$10B target | 2025-09 (reported) | Talks reported 2025-09; **no close announced as of 2026-07** (unverified). Prior: $100M Series B at $820M, 2024-01 |
 | Agility Robotics | Series C | ~$400M | ~$2.1B | 2025 | WP Global Partners; SoftBank, Amazon Industrial Innovation Fund, DCVC, Playground |
-| Neura Robotics (DE) | Series C | up to $1.4B | ~$7B (reported) | 2026-06 | Tether, Nvidia, Amazon, Qualcomm, Bosch, Schaeffler, European Investment Bank (largest European robotics round; announced 2026-06-10) |
+| Neura Robotics (DE) | Series C | up to $1.4B | ~$7B (reported) | 2026-06 | Tether, Nvidia, Amazon, Qualcomm, Bosch, Schaeffler, European Investment Bank (largest European robotics round; announced 2026-06-10). **Full $1.4B is contingent on undisclosed performance milestones** (CNBC + company release) — a ceiling, not cash banked |
+| Wayve (UK) | Series D (closed) | $1.2B (+$300M milestone-based Uber capital = $1.5B total secured) | $8.6B | 2026-02-25 | Eclipse, Balderton, SoftBank Vision Fund 2 co-leads; Microsoft, Nvidia, Uber; Mercedes-Benz, Nissan, Stellantis; OTPP, Baillie Gifford — autonomous driving / embodied AI |
+| World Labs (US) | Growth round (closed) | $1B | ~$5.4B post (reported; company did not confirm — Bloomberg had reported ~$5B during talks) | 2026-02-18 | Autodesk ($200M lead); AMD, Nvidia, Emerson Collective, Fidelity, Sea. Fei-Fei Li's spatial-intelligence/world-model lab; total raised $1.23B |
+| AMI Labs (FR) | Seed (closed) | $1.03B | $3.5B pre-money | 2026-03-09 | Co-led by Cathay Innovation, Greycroft, Hiro Capital, HV Capital, Bezos Expeditions; Nvidia, Samsung, Temasek, Toyota Ventures. Yann LeCun's world-model lab; largest European seed round |
 | Mind Robotics (US) | Series A + follow-on | $500M + $400M | n/d | 2026-03/05 | (unverified, single source — Crunchbase) |
 
-Context rows: Saronic (maritime autonomy/defense) raised a $1.75B Series D in 2026-03 — a reminder that "robotics funding" totals include defense autonomy, not just humanoids/manipulation.
+Context rows: Saronic (maritime autonomy/defense) raised a $1.75B Series D in 2026-03 — a reminder that "robotics funding" totals include defense autonomy, not just humanoids/manipulation. Wayve, World Labs and AMI Labs are included on the same logic: broad-scope trackers count AV platforms and [world-model](world-models.md) labs in "physical AI" totals, and their 2026 mega-rounds (~$3.2B combined, all closed) drove much of the H1-2026 record.
 
 ## Mega-rounds & valuations: China
 
@@ -46,7 +62,7 @@ Context rows: Saronic (maritime autonomy/defense) raised a $1.75B Series D in 20
 | Galbot | Growth round | >$300M | $3B | 2025-12 | Total raised ~$800M; investors from China, Singapore, Middle East |
 | X Square Robot (Shenzhen) | Series C (4th of four consecutive rounds) | n/d | >$2.8B (RMB 20B) | 2026-06-29 | IDG participated in the C; HongShan/Xiaomi in multiple rounds; claims lead-round backing across stages from Alibaba, ByteDance, Meituan, Xiaomi (company release) |
 | AI² Robotics (Shenzhen) | New financing | ~¥5B (~$735M) | RMB 20B+ (~$2.8B) | 2026-06-29 | Follows a Series B at ~RMB 10B (~$1.4B) valuation earlier in 2026; AlphaBot wheeled humanoids |
-| Shihang Intelligent (Beijing) | Series A | $1B | n/d | 2026-06 | (unverified, single source — Crunchbase) |
+| Shihang Intelligent / Seahi 世航智能 (Suzhou) | Series A (closed) | **>¥1B (~$140M)** — Crunchbase's "$1B" figure is a currency error | n/d | 2026-06-15 | Marine embodied robots (0–10,000 m depth); Shanghe Momentum Fund lead; Vertex Growth (Temasek), CITIC agriculture fund, Broad-Ocean Motor; existing backers incl. GSR Ventures re-upped. Largest single marine-robotics round globally (Chinese primary coverage: Sina Finance, pedaily, STCN) |
 
 - Chinese humanoid valuations run far below US peers despite comparable or better shipping volumes — Unitree IPOs at ~$5.9B **with** ~$235M revenue while Figure is privately marked at $39B with no disclosed revenue (as of 2026-07).
 - Unitree revenue trajectory (from IPO filings, via Caixin): ¥123M (2022) → ¥159M (2023) → ¥392M (2024) → ¥1.69B (2025); humanoids were 51.5% of 2025 revenue. See [Landscape: China](landscape-china.md).
@@ -90,7 +106,8 @@ Context rows: Saronic (maritime autonomy/defense) raised a $1.75B Series D in 20
 - Exit route is domestic listings: Unitree (STAR, approved 2026-07), AgiBot's Shangwei maneuver (2025-07), reported AgiBot HK IPO for 2026 (unverified) — public-market access at valuations US peers cannot yet test.
 
 **Europe & ROW** (see [Landscape: ROW](landscape-row.md))
-- Neura Robotics (Germany) raised up to $1.4B in 2026-06 at a reported ~$7B valuation — Europe's first humanoid mega-round (Tether, Nvidia, Amazon, Qualcomm, Bosch, Schaeffler, EIB).
+- Neura Robotics (Germany) raised up to $1.4B in 2026-06 at a reported ~$7B valuation — Europe's first humanoid mega-round (Tether, Nvidia, Amazon, Qualcomm, Bosch, Schaeffler, EIB); the full amount is milestone-contingent.
+- Europe's largest *closed* physical-AI rounds of 2026 are not humanoids: Wayve (UK) closed a $1.2B Series D at $8.6B post (2026-02, autonomous driving) and AMI Labs (Paris) closed a $1.03B seed at $3.5B pre-money (2026-03, world models) — the largest European seed round on record.
 - 1X (Norway/US) is the main Nordic contender; otherwise European capital participates mostly as LPs/strategics (Mercedes-Benz → Apptronik, Schneider Electric → Skild).
 - SoftBank (Japan) is the single largest cross-border allocator: Skild lead, ABB Robotics acquisition, Agility participation.
 
@@ -102,6 +119,7 @@ Context rows: Saronic (maritime autonomy/defense) raised a $1.75B Series D in 20
 - https://www.businesswire.com/news/home/20260114335623/en/Skild-AI-Raises-$1.4B-Now-Valued-Over-$14B — Skild Series C close (primary): $1.4B, >$14B valuation, investor list.
 - https://www.bloomberg.com/news/articles/2025-11-20/robotics-startup-physical-intelligence-valued-at-5-6-billion-in-new-funding — PI $600M Series B at $5.6B, CapitalG lead (2025-11).
 - https://techcrunch.com/2026/03/27/physical-intelligence-is-reportedly-in-talks-to-raise-1-billion-again/ — PI reported $1B raise at $11B+ in talks (2026-03).
+- https://www.bloomberg.com/news/articles/2026-03-27/ex-deepmind-staffers-robotics-startup-in-talks-for-11-billion-valuation — PI $11B+ talks detail: Founders Fund set to participate, Lightspeed in talks; deal in early stages. No close announced as of 2026-07.
 - https://techcrunch.com/2026/02/11/humanoid-robot-startup-apptronik-has-now-raised-935m-at-a-5b-valuation/ — Apptronik >$935M total Series A, ~$5.3B valuation (2026-02).
 - https://apptronik.com/news-collection/apptronik-closes-over-935-million-series-a — Apptronik Series A close (primary).
 - https://www.humanoidsdaily.com/news/report-humanoid-robotics-firm-1x-seeking-up-to-dollar1b-at-a-valuation-of-dollar10b-or-more — 1X reportedly seeking up to $1B at $10B+ (2025-09); prior $100M at $820M (2024-01).
@@ -119,8 +137,19 @@ Context rows: Saronic (maritime autonomy/defense) raised a $1.75B Series D in 20
 - https://www.prnewswire.com/apac/news-releases/x-square-robot-secures-four-consecutive-financing-rounds-surpasses-us2-8-billion-valuation-in-push-for-physical-ai-foundation-models-302813098.html — X Square Robot four rounds through Series C, >$2.8B/RMB 20B (2026-06-29, primary PR).
 - https://siliconangle.com/2026/06/29/chinese-robotics-outfits-ai2-robotics-x-square-robots-secure-funding-2-8b-valuation/ — AI² Robotics ~$735M at ~$2.8B and X Square at $2.8B, same day (2026-06-29).
 - https://autonews.gasgoo.com/articles/icv/seeds-ai-robotics-secures-nearly-5-billion-yuan-in-new-financing-2071594874301100032 — AI² Robotics ~RMB 5B new financing (2026-06).
-- https://news.crunchbase.com/robotics/startup-venture-funding-surges-2026-data/ — sector totals: $15B (2025), $18.8B (2026 YTD), $14.1B 2021 peak, largest 2026 rounds (Saronic $1.75B at $9.25B, Neura, Skild, Shihang, Apptronik, Mind Robotics).
-- https://www.cnbc.com/2026/06/10/neura-robotics-funding-ai-humanoid-robots.html — Neura Series C up to $1.4B (2026-06-10); ~$7B reported valuation; Tether, Nvidia, Amazon, Qualcomm, Bosch, Schaeffler, EIB.
+- https://news.crunchbase.com/robotics/startup-venture-funding-surges-2026-data/ — sector totals: $15B (2025), $18.8B (2026 YTD), $14.1B 2021 peak, largest 2026 rounds (Saronic $1.75B at $9.25B, Neura, Skild, Apptronik, Mind Robotics). **Caution: its "Shihang Intelligent $1B Series A" is a currency error — the round was >¥1B RMB (~$140M), per Chinese primary coverage below.**
+- https://news.crunchbase.com/venture/ai-humanoid-robot-funding-apptronik/ — Crunchbase as of 2026-02: "nearly $14B" robotics funding in 2025, vs $8.2B (2024) and $13.1B (2021) — later revised upward to $15B/$14.1B as late-reported rounds were added (methodology-note evidence).
+- https://pitchbook.com/news/reports/q4-2025-robotics-physical-ai-vc-trends — PitchBook: $27.6B across 1,009 deals in 2025 for robotics & physical AI (vs $13.7B/851 deals in 2024); defense & security robotics $8.0B across 234 deals (+139% YoY).
+- https://www.cnbc.com/2026/06/10/neura-robotics-funding-ai-humanoid-robots.html — Neura Series C up to $1.4B (2026-06-10); ~$7B reported valuation; Tether, Nvidia, Amazon, Qualcomm, Bosch, Schaeffler, EIB; **full amount contingent on undisclosed performance milestones** (Neura declined to specify).
+- https://neura-robotics.com/record-series-c/ — Neura Series C announcement (primary): "up to $1.4B", investor syndicate, use of funds.
+- https://wayve.ai/press/series-d/ — Wayve Series D close (primary, 2026-02-25): $1.2B at $8.6B post-money; Eclipse/Balderton/SoftBank Vision Fund 2 leads; +$300M milestone-based Uber capital = $1.5B total secured.
+- https://www.cnbc.com/2026/02/24/wayve-fundraise-nvidia-microsoft.html — Wayve $8.6B valuation; Nvidia/Microsoft participation (independent confirmation).
+- https://finance.yahoo.com/news/ai-pioneer-fei-fei-lis-192214332.html — World Labs $1B round closed (Reuters, 2026-02-18): Autodesk $200M lead; AMD, Nvidia, Emerson Collective, Fidelity, Sea; company declined to confirm valuation.
+- https://www.forbes.com/sites/josipamajic/2026/06/30/world-model-startups-raise-3-billion-vcs-bet-beyond-llms/ — World Labs $5.4B post-money and $1.23B total raised; >$3B into world-model startups in H1 2026.
+- https://techcrunch.com/2026/03/09/yann-lecuns-ami-labs-raises-1-03-billion-to-build-world-models/ — AMI Labs $1.03B closed at $3.5B pre-money (2026-03); co-leads Cathay Innovation, Greycroft, Hiro Capital, HV Capital, Bezos Expeditions; Nvidia, Samsung, Temasek, Toyota Ventures.
+- https://www.wamda.com/2026/03/shorooq-invests-ami-labs-ai-startup-hits-3-5-billion-valuation — AMI Labs $3.5B valuation (independent confirmation).
+- https://finance.sina.com.cn/roll/2026-06-15/doc-inicnpyr0018601.shtml — Shihang Intelligent (世航智能) Series A **>¥1B RMB** (2026-06-15), record marine-robotics round; Shanghe Momentum lead, Vertex Growth (Temasek), CITIC fund, Broad-Ocean Motor, GSR Ventures — refutes the $1B USD reading.
+- https://news.pedaily.cn/202606/565212.shtml — Shihang >¥1B Series A corroboration; Suzhou-based marine embodied robots, 0–10,000 m full-depth operation.
 - https://news.crunchbase.com/robotics/startup-funding-rises-h1-2025-ai-apptronik-data/ — 2025 vs 2024 ($8.2B) robotics funding comparison.
 - https://sifted.eu/articles/1x-humanoid-robot-launch — Dealroom figure: $3.2B humanoid funding in 2025 > prior six years combined; 1X NEO $20k pre-orders.
 - https://www.goldmansachs.com/insights/articles/the-global-market-for-robots-could-reach-38-billion-by-2035 — Goldman $38B / 1.4M units by 2035 forecast.

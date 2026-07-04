@@ -89,7 +89,7 @@ confidence: verified
 | ETH RSL (Bjelonic) | RIVR (ex-Swiss-Mile) | 2023 | Wheeled-legged delivery | **Acquired by Amazon (2026-03)** |
 | KAIST RaiLab (Hwangbo) | Raion Robotics | 2023 | Raibo quadrupeds | Seed stage |
 | Stanford IRIS (Finn) + Berkeley RAIL (Levine) | **Physical Intelligence** | 2024 | π VLA models | $5.6B (2025-11); see [Pi](company-pi.md) |
-| Stanford SVL (Fei-Fei Li) | World Labs | 2024 | Generative world models | Marble shipped 2025-11; ~$1B raise reported (2026-02, unverified) |
+| Stanford SVL (Fei-Fei Li) | World Labs | 2024 | Generative world models | Marble shipped 2025-11; $1B round closed 2026-02-18 (Autodesk-led, ~$5.4B post reported) |
 | PKU (Yaodong Yang, chief sci.) | PsiBot | 2024 (unverified) | Dexterous RL VLA | ¥2B raised (state-backed investors) |
 | Stanford IRIS/REAL alumni (Zhao & Chi) | Sunday Robotics | 2024 | Memo home robot, Skill Capture Glove | Out of stealth 2025-11 ($35M, Benchmark/Conviction); reported ~$165M follow-on at ~$1.15B (2026, as reported) |
 

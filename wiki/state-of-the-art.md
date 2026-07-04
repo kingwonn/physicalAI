@@ -1,10 +1,10 @@
 ---
 title: State of the Art (2026-07 snapshot)
 slug: state-of-the-art
-updated: 2026-07-03
+updated: 2026-07-04
 confidence: verified
 ---
-> As of July 2026, Physical AI has crossed from lab demos into first commercial deployments: generalist [VLA models](vla-models.md) (Physical Intelligence's π0.7, Google DeepMind's Gemini Robotics 1.5/ER 1.6, NVIDIA's GR00T line, Figure's Helix 02) can execute multi-minute household and industrial tasks zero-shot across robot embodiments; [humanoids](humanoid-robots.md) are working paid jobs at BMW and GXO sites (with Toyota's RAV4 line contracted for 2026) while China ships ~85–90% of global humanoid units; [world models](world-models.md) (Genie 3, NVIDIA Cosmos 3) have become both simulation engines and, increasingly, the policy backbone itself; and capital has followed, with Figure at a $39B valuation, Skild AI at ~$14B, and Physical Intelligence reportedly raising at $11B+. Dexterous [manipulation](manipulation.md) remains the clearest unsolved bottleneck.
+> As of July 2026, Physical AI has crossed from lab demos into first commercial deployments: generalist [VLA models](vla-models.md) (Physical Intelligence's π0.7, Google DeepMind's Gemini Robotics 1.5/ER 1.6, NVIDIA's GR00T line, Figure's Helix 02) can execute multi-minute household and industrial tasks zero-shot across robot embodiments; [humanoids](humanoid-robots.md) are working paid jobs at BMW and GXO sites (with Toyota's RAV4 line contracted for 2026) while China ships ~80–90% of global humanoid units; [world models](world-models.md) (Genie 3, NVIDIA Cosmos 3) have become both simulation engines and, increasingly, the policy backbone itself; and capital has followed, with Figure at a $39B valuation, Skild AI at ~$14B, and Physical Intelligence reportedly raising at $11B+. Dexterous [manipulation](manipulation.md) remains the clearest unsolved bottleneck.
 
 ## Executive snapshot: who leads what (as of 2026-07)
 
@@ -14,7 +14,7 @@ confidence: verified
 | Embodied reasoning (high-level "brain") | Google DeepMind (Gemini Robotics-ER 1.6) | 93% instrument-reading accuracy vs 23% for ER 1.5 (Apr 2026) |
 | Open robot foundation model | NVIDIA (GR00T N1.7 / N2 preview), Cosmos 3 | GR00T N2 ranks #1 on MolmoSpaces and RoboArena leaderboards (Mar 2026) |
 | Humanoid commercial deployment | Figure (BMW), Agility (GXO/Toyota), UBTech (China) | Figure 03s doing logistics sequencing at BMW Spartanburg (from 2026-06); Digit moved 100k+ totes at GXO; UBTech claims 1,000+ industrial humanoids (unverified) |
-| Humanoid shipment volume | Unitree, AgiBot (China) | ~5,500 and ~5,168 units respectively in 2025; ~85–90% of global shipments were Chinese |
+| Humanoid shipment volume | AgiBot, Unitree (China) — #1 rank disputed | 2025 global shipments ~13k (Omdia) to ~18k (IDC); AgiBot ~5.2k per Omdia/IDC vs Unitree >5.5k per its own prospectus; ~80–90% Chinese — see shipment-count reconciliation below |
 | Dynamic locomotion | Unitree, Boston Dynamics | Televised autonomous kung-fu with flips (Spring Festival Gala, 2026-02-16); production electric Atlas with 56 DoF |
 | World models | Google DeepMind (Genie 3), NVIDIA (Cosmos 3) | Real-time 720p/24fps interactive worlds; open-source omnimodal WFM trained on ~20T tokens |
 | Consumer home humanoid | 1X (NEO) | ~10,000 pre-orders in 5 days at $20k (company-reported); first US deliveries slated for 2026 |
@@ -53,13 +53,33 @@ Full detail in [Humanoid robots](humanoid-robots.md); company profiles in [Organ
 | Boston Dynamics | Electric Atlas | Production version unveiled CES 2026-01-05; 56 DoF, 2.3 m reach, 50 kg certified lift; 2026 fleet allocations fully committed (Hyundai RMAC, Google DeepMind partnership); Hyundai building a 30,000-robots/yr US factory; reported 25,000-unit internal commitment (unverified) |
 | 1X | NEO | $20,000 (or $499/mo) consumer home humanoid; ~10,000 pre-orders in first 5 days (Oct 2025, company-reported); full-scale production at Hayward, CA since 2026-04-30 (10k/yr capacity claimed); first home deliveries promised before end of 2026 |
 | Agility Robotics | Digit | GXO logistics: 100,000+ totes moved at Flowery Branch (as of late 2025); 7-unit RaaS contract for Toyota's RAV4 plant (Woodstock, Ontario; signed 2026-02) with rollout during 2026 |
-| Unitree | G1 / R1 / H2 | ~5,500 humanoids shipped 2025 (most of any maker); G1 at ~$16k (listed on Amazon at $17,990); R1 at ~$5,900; Shanghai STAR IPO cleared exchange listing review 2026-06-01 and won CSRC registration approval 2026-07-02 (reported 2026-07-03; ~¥4.2B / ~$618M raise); 2025 revenue ¥1.70B, net profit (excl. non-recurring) ~¥590M |
-| AgiBot (Zhiyuan) | Expedition A3 etc. | 10,000th general-purpose robot rolled out late March 2026 (~5,168 shipped in 2025); pursuing backdoor listing |
+| Unitree | G1 / R1 / H2 | >5,500 humanoids sold and delivered in 2025 per its IPO prospectus (bipedal only, wheeled models excluded; Omdia/IDC credit it with 4,200 and rank it #2 — see shipment reconciliation below); G1 at ~$16k (listed on Amazon at $17,990); R1 at ~$5,900; Shanghai STAR IPO cleared exchange listing review 2026-06-01 and won CSRC registration approval 2026-07-02 (reported 2026-07-03; ~¥4.2B / ~$618M raise); 2025 revenue ¥1.70B, net profit (excl. non-recurring) ~¥590M |
+| AgiBot (Zhiyuan) | Expedition A3 etc. | 10,000th general-purpose robot rolled out late March 2026; 5,168 humanoids shipped in 2025 per Omdia (5,200 per IDC), which both rank it #1 globally; pursuing backdoor listing |
 | UBTech | Walker S2 | Claims 1,000+ industrial humanoids deployed in auto/electronics/logistics plants (company-reported, unverified); launched UWORLD U1 consumer companion line 2026-06-30, from ~RMB 119,800, 13k+ orders claimed (company-reported), deliveries from ~2026-09 |
 | Apptronik | Apollo / Apollo 2 | $935M total Series A (+$520M extension 2026-02-11) at ~$5.3B reported post-money valuation; Mercedes-Benz, Google, John Deere among backers; unveiled Apollo 2 + 90,000 sq ft "Robot Park" training campus (Austin, 2026-06-30) with Google DeepMind |
 
-- Market scale: TrendForce forecasts global humanoid shipments >50,000 units in 2026 (~700% YoY); China projected +94% output YoY with Unitree + AgiBot capturing ~80% of Chinese shipments (as of 2026-04 forecast).
-- Regional split: ~85–90% of 2025 humanoid unit shipments were Chinese ([Landscape: China](landscape-china.md)), while the highest-value deployments and frontier models remain US-led ([Landscape: USA](landscape-usa.md)); Europe/Korea/Japan positions covered in [Landscape: rest of world](landscape-row.md).
+- Market scale: TrendForce forecasts global humanoid shipments >50,000 units in 2026 (~700% YoY — note this growth rate implies a ~6–7k 2025 base, well below the ~13–18k tracker range reconciled below; forecast baselines diverge too); China projected +94% output YoY with Unitree + AgiBot capturing ~80% of Chinese shipments (as of 2026-04 forecast).
+- Regional split: ~80–90% of 2025 humanoid unit shipments were Chinese — ~87% within Omdia's top-10 table, ~90% per IDC coverage, ">80%" per Morgan Stanley ([Landscape: China](landscape-china.md)) — while the highest-value deployments and frontier models remain US-led ([Landscape: USA](landscape-usa.md)); Europe/Korea/Japan positions covered in [Landscape: rest of world](landscape-row.md).
+
+### Reconciling 2025 shipment counts (as of 2026-07)
+
+Published 2025 humanoid totals range from ~13,000 to ~18,000 units. The divergence is mostly definitional — each tracker counts a different thing:
+
+| Tracker (report) | 2025 figure | What it counts |
+|---|---|---|
+| Omdia — *Market Radar: General-purpose Embodied Intelligent Robots* (2026-01) | 13,317 global | Vendor unit shipments, global. Top 10: AgiBot 5,168 (#1, ~39% share), Unitree 4,200, UBTech 1,000, Leju 500, EngineAI 400, Fourier 300, Figure/Agility/Tesla ~150 each, others ~1,350 |
+| IDC — *Global Humanoid Robot Market Analysis* (2026-01; this is the "~18,000" figure carried by Xinhua/CCTV/Global Times) | ~18,000 global, +508% YoY | Shipments by company and application scenario (entertainment, research, manufacturing, warehousing, etc.); AgiBot #1 at 5,200, Unitree 4,200, UBTech 1,000; ~90% Chinese |
+| Unitree — STAR IPO prospectus (filed 2026-03) | >5,500 (own units only) | Units "actually sold and delivered to end customers" — orders were higher, and mass-production output was >6,500; bipedal humanoids only, wheeled models excluded; claims the top global share (~32% per one prospectus read — single-source, unverified), which would imply a ~17k global market |
+| Morgan Stanley (analyst Sheng Zhong, 2026-06) | >16,000 deployed globally in 2025; China >80% | External sales only — explicitly excludes prototypes, trial units, and internal-use builds; the baseline for its China-only 2026 forecast, raised 14k → 28k → 50k over H1 2026 |
+
+Why they diverge:
+
+- **Shipments ≠ production ≠ orders**: Unitree alone reports three numbers (>5,500 delivered, >6,500 produced, orders higher still); trackers sample different points in this funnel.
+- **Form-factor scope**: whether wheeled/dual-arm platforms count as "humanoids." Unitree's figure explicitly excludes its wheeled models; scope differences like this are the likely wedge between Omdia's ~13k and IDC's ~18k, and behind the AgiBot-vs-Unitree #1 dispute — both claim the 2025 top spot (likely wedge: inference, unverified).
+- **China-only vs global**: Morgan Stanley's widely quoted 50,000-unit 2026 forecast covers China only; Omdia/IDC totals are global (~80–90% Chinese either way).
+- **Vendor-level disagreement persists**: Omdia and IDC both credit Unitree with 4,200 units, ~24% below Unitree's own prospectus disclosure — a sign of how immature humanoid market tracking still is (press coverage notes demo/test units are hard to separate from sales).
+
+Wiki convention: quote 2025 global humanoid shipments as "~13,000–18,000 depending on tracker" with attribution, and treat any single-company #1 claim as disputed.
 
 ## Locomotion
 
@@ -134,7 +154,14 @@ Cross-reference: [Open problems](open-problems.md).
 - https://www.bloomberg.com/news/articles/2026-03-27/ex-deepmind-staffers-robotics-startup-in-talks-for-11-billion-valuation — Physical Intelligence in talks for ~$1B at >$11B valuation (2026-03-27)
 - https://techcrunch.com/2026/01/14/robotic-software-maker-skild-ai-hits-14b-valuation/ — Skild AI $1.4B Series C at >$14B, SoftBank-led (2026-01-14)
 - https://www.caixinglobal.com/2026-07-03/unitree-robotics-wins-approval-for-618-million-star-market-ipo-102460136.html — Unitree CSRC registration approval (approved Thursday 2026-07-02, reported 2026-07-03), ~$618M raise, 2025 financials
-- https://www.scmp.com/tech/tech-trends/article/3340446/chinas-unitree-ships-more-5500-humanoid-robots-2025-surpassing-us-peers — Unitree 5,500+ / AgiBot 5,168 2025 shipments (Omdia)
+- https://www.scmp.com/tech/tech-trends/article/3340446/chinas-unitree-ships-more-5500-humanoid-robots-2025-surpassing-us-peers — Unitree 5,500+ shipped / 6,000+ produced in 2025 (via 36Kr/insider, bipedal only, wheeled excluded; Unitree declined comment); Omdia's ~150-unit counts for Tesla/Figure/Agility
+- https://technode.com/2026/01/09/chinas-agibot-leads-global-humanoid-robot-shipments-in-2025-omdia-says/ — Omdia Market Radar: ~13k global 2025 shipments; AgiBot 5,168 (39%), Unitree 4,200, UBTech 1,000
+- https://www.forbes.com/sites/johnkoetsier/2026/01/09/top-10-humanoid-robot-companies-by-shipments-revealed/ — Omdia full top-10 table and 13,317-unit global total; notes sales/demo/test-unit ambiguity
+- https://www.globaltimes.cn/page/202601/1354054.shtml — IDC Global Humanoid Robot Market Analysis: ~18,000 units 2025, +508% YoY, AgiBot #1 at 5,200 (the figure carried by Xinhua/state media)
+- https://www.humanoidsdaily.com/news/unitree-files-for-580m-ipo-humanoid-sales-surpass-robot-dogs-as-profits-soar — Unitree prospectus: 5,500 humanoids 2025, wheeled excluded, humanoids >51% of revenue
+- https://roboticsandautomationnews.com/2026/03/31/unitree-robotics-files-for-610-million-ipo-as-humanoid-robot-sales-surge/100272/ — Unitree prospectus definitions: >5,500 "sold and delivered to end customers," orders higher, output >6,500
+- https://www.scmp.com/tech/article/3358210/morgan-stanley-raises-china-humanoid-robot-shipment-forecast-50000-units — Morgan Stanley raises China-only 2026 forecast to 50,000 (from 28,000; 446,000 by 2030), 2026-06-24
+- https://www.cryptopolitan.com/morgan-stanley-doubles-chinas-humanoid-shipment-target-to-50000/ — Morgan Stanley methodology (external sales only, excl. prototypes/trials/internal use); >16,000 deployed globally 2025, China >80%; analyst Sheng Zhong
 - https://www.prnewswire.com/news-releases/kung-fu-meets-spring--unitree-spring-festival-gala-robots-present-cyber-real-kung-fu-in-the-year-of-the-horse-302689291.html — Unitree autonomous kung-fu at Spring Festival Gala (2026-02-16)
 - https://www.eweek.com/news/tesla-optimus-robot-2027-sale/ — Musk: Optimus consumer sales targeted end of 2027 (Davos, 2026-01)
 - https://techcrunch.com/2026/02/19/toyota-hires-seven-agility-humanoid-robots-for-canadian-factory/ — Toyota Woodstock 7-Digit RaaS contract (2026-02)

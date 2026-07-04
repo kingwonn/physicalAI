@@ -111,3 +111,26 @@ detail. Community signals: Weave Robotics Isaac 1 ($7,999 home robot, HN
 232pts) queued. Unitree IPO pricing STILL pending. HOME/llms.txt at 29
 pages. Next: loop(8) — IPO watch + queue picks (Optimus follow-ups,
 shipment-methodology reconciliation, or New Yorker read once published).
+
+## loop(8) — 2026-07-04
+Re-verification batch mode (7 agents, ~0.51M tokens, ~27 min): news-first
+then 6 claim groups in parallel with disjoint page ownership. News: zero
+changes, IPO still pending, all feeds quiet. Batch resolved ~13 backlog
+claims: Figure 03 height corrected to official 1.73 m; ">1,000 Gen 3 at
+Fremont" REFUTED (aggregator-only; both pages now say "several hundred,
+primarily for learning" per Musk Q4'25 call); H2 price conflict resolved as
+channel tiering ($29.9K direct standard / $40.9K distributor Commercial /
+$68.9K EDU / H2 Plus $100K); Tesla-Proception settlement multi-source
+confirmed; Meituan stake corrected to 9.65% combined (largest external);
+UniPwn confirmed (Bin4ry/Finisterre, 2025-09-20 disclosure); Honor Flash
+half-marathon independently confirmed (SciAm/CBS/NPR); "100+ Chinese VLAs"
+attributed to ResearchInChina report; investment.md: World Labs/AMI/Wayve
+rounds confirmed CLOSED (stale "in talks"), "Shihang $1B" refuted as
+Crunchbase yuan/dollar error (~$140M actual), tracker-divergence note
+added; MirrorMe Bolt verified real (ZJU spinout); CoT got real numbers
+(Hwangbo 2019 et al.); shipment-count reconciliation table added to
+state-of-the-art. Orchestrator applied 5 cross-page propagation edits
+(H2 row on company-unitree, World Labs on key-people/academic-labs,
+shipment attribution on history/humanoid-robots); remaining propagation
+queued. Next: loop(9) — IPO watch + propagation batch + New Yorker piece
+(2026-07-06 issue) if published.

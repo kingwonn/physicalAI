@@ -1,7 +1,7 @@
 ---
 title: Organizations: Global Who's-Who
 slug: organizations
-updated: 2026-07-03
+updated: 2026-07-04
 confidence: verified
 ---
 > The Physical AI field is organized around four kinds of players: **software-first "robot brain" labs** (Physical Intelligence, Skild AI, Google DeepMind Robotics), **vertically integrated humanoid makers** (Figure, Tesla, 1X, Apptronik in the US; Unitree, AgiBot, UBTech, Galbot in China; Neura in Europe), **big-tech platform divisions** (NVIDIA's Isaac/GR00T stack, Amazon warehouse robotics, Toyota Research Institute, Hyundai/Boston Dynamics), and **academic + state-backed programs** (Stanford, Berkeley, CMU, ETH Zurich, Ai2, China's national innovation centers, Korea's K-Humanoid Alliance). As of 2026-07 the capital league table is led by Figure ($39B valuation), Skild AI ($14B), Neura (~$7B), Unitree (~$6B IPO target), and Physical Intelligence ($5.6B), while China dominates unit volume — Unitree + AgiBot alone are forecast to take ~80% of 2026 humanoid shipments. Deeper regional detail lives in [Landscape: USA](landscape-usa.md), [Landscape: China](landscape-china.md), and [Landscape: rest of world](landscape-row.md).
@@ -63,9 +63,9 @@ China ships the large majority of global humanoid units — TrendForce forecasts
 | Fourier | Shanghai; GR-3 humanoid, rehab-robotics origin |
 | X-Humanoid (Beijing HRIC) | State-backed innovation center (Jingcheng + Xiaomi + UBTech, 2023-11); Tien Kung robot won 2025 Beijing robot half-marathon |
 | Shanghai Embodied AI Innovation Center | "National and local co-built" center expanded at WAIC 2025; open OpenLoong/Qinglong humanoid platform |
-| New entrants | Consumer-electronics giants entering: Xiaomi (CyberOne lineage), Honor — Honor's "Flash" won the 2026 Beijing half-marathon in 50:26 autonomously, beating the human world record per organizers (2026-04) (unverified) |
+| New entrants | Consumer-electronics giants entering: Xiaomi (CyberOne lineage), Honor — the smartphone maker's "Lightning" robot ("Flash" in some translations) won the 2026 Beijing half-marathon in 50:26 running autonomously, beating the ratified human world record (57:20) — independently confirmed (Scientific American, CBS, NPR), though the winner fell late in the race after clipping a barricade and was set upright by handlers (2026-04) |
 
-The 2026 Beijing Yizhuang half-marathon's rule change (1.2x time penalty for teleoperated robots) pushed ~40% of entrants to run fully autonomously — a useful proxy for China's locomotion-autonomy progress. See [Locomotion](locomotion.md), [Landscape: China](landscape-china.md).
+The 2026 Beijing Yizhuang half-marathon's rule change (1.2x time penalty for teleoperated robots) pushed ~38% of entrants to run fully autonomously (per Scientific American) — a useful proxy for China's locomotion-autonomy progress, albeit on a dedicated, pre-mapped course. See [Locomotion](locomotion.md), [Landscape: China](landscape-china.md).
 
 ## US & European humanoid makers
 
@@ -134,6 +134,7 @@ The dominant 2024–2026 pattern: professor-founded startups (Skild, PI, Galbot)
 - https://www.trendforce.com/presscenter/news/20260409-13007.html — China 2026 humanoid output +94%, Unitree+AgiBot ~80% share
 - https://techcrunch.com/2026/02/28/why-chinas-humanoid-robot-industry-is-winning-the-early-market/ — China early-market dynamics; Galbot/UBTech shipment context
 - https://en.people.cn/n3/2026/0420/c90000-20448083.html — 2026 Beijing half-marathon results, autonomy rules (state media)
+- https://www.scientificamerican.com/article/a-humanoid-robot-beat-the-human-half-marathon-record-at-a-beijing-race-but-what-did-it-actually-prove/ — independent confirmation of Honor "Lightning" 50:26 result; 38% autonomy rate; fall/handler-assist and pre-mapped-course caveats
 - https://electrek.co/2026/04/22/tesla-optimus-production-fremont-model-sx-line/ — Optimus V3 Fremont production timing, Musk caveats
 - https://neura-robotics.com/record-series-c/ — Neura Series C up to $1.4B (2026-06), company claims
 - https://www.cnbc.com/2026/06/10/neura-robotics-funding-ai-humanoid-robots.html — Neura backers, ~$7B valuation, Dealroom $55.8B 2026 YTD robotics funding

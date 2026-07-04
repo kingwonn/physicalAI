@@ -43,7 +43,7 @@ The wiki's canonical case of aspirational-timeline compounding. Every pre-2026 p
 | 2026-01-22 (Davos, WEF) | Consumer sales "by the end of 2027," once "highly reliable, safe and functional" | Open; Q1'26 call softened to "useful outside of Tesla sometime next year" |
 | 2026-04-22 (Q1'26 call) | Fremont production starts late July–August 2026; 2026 output "literally impossible to predict" (10,000 unique parts) | Line installing as of 2026-07; Musk 2026-07-02: "production will be extremely slow at first... This is not like making a car" |
 
-- The 2026-01-28 Q4'25 earnings call is the key self-correction: "We are still very much at the early stages of Optimus. It's still in the R&D phase... It's not in usage in our factories in a material way" — directly contradicting the 2024–25 "useful work now" framing and sitting awkwardly beside the ">1,000 Gen 3 robots on the Fremont floor" claim circulating the same month (reported, unverified).
+- The 2026-01-28 Q4'25 earnings call is the key self-correction: "We are still very much at the early stages of Optimus. It's still in the R&D phase... It's not in usage in our factories in a material way" — directly contradicting the 2024–25 "useful work now" framing. On the same call Musk put the fleet at **several hundred units deployed, "primarily for learning and data collection"** — the ">1,000 Gen 3 robots on the Fremont floor" figure that circulated the same month appears only in SEO aggregators with no identifiable primary source (no Musk statement or reputable-outlet report), conflicts with Musk's own number, and likely descends from his June-2024 aspiration of "over 1,000 in Tesla facilities in 2025"; treat it as refuted (checked 2026-07-04).
 - Fan re-interpretation of delays as secret progress ("4D chess") got an unusual direct rebuttal from Musk (2026-07-02).
 
 ## Fremont line status (as of 2026-07)
@@ -84,7 +84,7 @@ The wiki's canonical case of aspirational-timeline compounding. Every pre-2026 p
 - **Milan Kovac** — Autopilot engineer from 2016, Optimus engineering lead from ~2022, promoted VP 2024 — **left effective immediately 2025-06-06**, citing family; departure landed the same week as the Musk–Trump public blowup and amid the missed-5,000-unit year.
 - **Ashok Elluswamy** (VP of AI software; first Autopilot hire) has led Optimus since, folding it into the FSD/AI org — he remains the program lead as of 2026-07 (CVPR 2026 keynote; no reported change).
 - **Chris Walti**, the original Optimus program lead, left in 2022 to found warehouse-robotics firm Mytra and has publicly argued the humanoid form factor is wrong for most material handling (reported).
-- **Proception lawsuit**: Tesla sued a former Optimus engineer whose startup, Proception, builds dexterous robot hands, alleging trade-secret theft (2025); reported settled (single-source, unverified) — an index of how contested hand IP has become.
+- **Proception lawsuit — settled 2026-06**: Tesla sued former Optimus hand-team technical lead **Jay Li**, whose startup Proception builds dexterous robot hands, alleging he downloaded design files/source code/prototype videos before leaving (2025). The suit settled with Tesla dropping all claims and dismissing the case (2026-06); the same day Proception announced an **$11M seed** led by First Round Capital (with Y Combinator, BoxGroup) and began shipping its first ProHand units (TechCrunch exclusive 2026-06-29, independently covered by The Next Web) — an index of how contested hand IP has become.
 - Broader 2025–26 exec churn context (Playter, Kalinowski, Jang) in [Key people](key-people.md).
 
 ## Demo skepticism record
@@ -101,7 +101,7 @@ The wiki's canonical case of aspirational-timeline compounding. Every pre-2026 p
 | Metric | Claimed | Best verifiable estimate |
 |---|---|---|
 | Cumulative units built (through 2025) | "thousands" implied by 2025 targets | **"Hundreds"** (The Information, mid-2025; Musk: "several hundred units deployed, primarily for learning") |
-| Robots doing useful factory work | "2 working autonomously" (2024-06); ">1,000 on Fremont floor" (2026-01, reported) | **~0 "in a material way"** per Musk himself (Q4'25 call, 2026-01-28) |
+| Robots doing useful factory work | "2 working autonomously" (2024-06); ">1,000 on Fremont floor" (2026-01, aggregator-only — no primary source found; refuted by Musk's own "several hundred... primarily for learning") | **~0 "in a material way"** per Musk himself (Q4'25 call, 2026-01-28) |
 | External customers / revenue | sales "for other companies" in 2026 (2024 claim) | **None**; consumer sales now guided end-2027 |
 | Production rate | 50–100K in 2026 (2025-01 claim) | Line not yet started (as of 2026-07); "extremely slow at first" |
 | Fleet reliability data | — | **None published** |
@@ -116,6 +116,8 @@ The wiki's canonical case of aspirational-timeline compounding. Every pre-2026 p
 - https://techcrunch.com/2024/10/14/tesla-optimus-bots-were-controlled-by-humans-during-the-we-robot-event/ — We,Robot teleoperation confirmation
 - https://venturebeat.com/ai/teslas-big-we-robot-event-criticized-for-parlor-tricks-and-vague-timelines-for-robots-cybercab-robovan — "parlor tricks" criticism of We,Robot
 - https://techcrunch.com/2025/07/25/tesla-is-reportedly-behind-on-its-pledge-to-build-5000-optimus-bots-this-year/ — The Information: 5,000-unit pledge, "hundreds" built by 2025-07, staff share-sale plea, 1M/yr-in-<5-yrs quote; Proception suit mention
+- https://techcrunch.com/2026/06/29/robot-hand-company-settles-tesla-trade-secret-suit-and-announces-11m-raise/ — Proception settlement: Tesla drops all claims/dismisses case; $11M seed (First Round, YC, BoxGroup); founder Jay Li ex-Optimus (exclusive)
+- https://thenextweb.com/news/proception-robot-hand-tesla-trade-secret-settlement-seed-round — independent confirmation of Proception settlement + $11M seed
 - https://x.com/TheHumanoidHub/status/1940425831907795142 — LatePost Auto: mid-2025 production pause (~2 months) for redesign
 - https://www.trendforce.com/news/2025/10/10/news-tesla-reportedly-scales-back-optimus-production-as-hand-design-issues-stall-assembly/ — hand/forearm redesign stall; bodies-without-hands stockpile (via The Information)
 - https://www.tomshardware.com/maker-stem/robot-kits/elon-musks-optimus-boast-in-doubt-as-humanoid-robot-production-plans-halted-telsas-projections-for-10-000-robots-in-2025-cast-into-doubt-according-to-supply-chain-sources — 10K-in-2025 projection collapse, supply-chain sourcing

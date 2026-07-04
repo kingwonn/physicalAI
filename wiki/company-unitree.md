@@ -38,7 +38,7 @@ confidence: verified
 | B1 | 2021 | industrial (n/d) | Industrial line debut (inspection, IP68) |
 | Go2 | 2023-07 | from $1,600 (Air); $2,800 (Pro); EDU tiers to ~$22.5K | Built-in LiDAR + LLM voice integration at consumer price |
 | B2 / B2-W | 2023 (B2); wheeled B2-W later | US store list $100K (as of 2026-07) | 6 m/s industrial platform; B2-W wheel-leg videos went viral 2025 |
-| A2 | 2025 | US store list $100K (as of 2026-07) | Current industrial/inspection flagship |
+| A2 | 2025-08 (unveiled ~2025-08-06/07, a week after R1) | no launch price disclosed; reseller pre-orders took $3K deposits for early-2026 delivery; US store list $100K (as of 2026-07) | "Stellar Explorer" industrial/inspection flagship; dual front/rear LiDAR, 5 m/s, 25 kg walking / 100 kg standing payload, 20 km unloaded range |
 
 - Unitree is routinely credited with ~60–70% of global quadruped-robot shipments (secondary reports, unverified); quadrupeds were the majority of revenue until 2025, when humanoids overtook them for the first time.
 - Quadruped unit manufacturing cost fell from ~$3,300 (2022) to ~$1,800 (mid-2025) per the prospectus — the template for humanoid cost-down.
@@ -51,7 +51,7 @@ confidence: verified
 | H1-2 | 2024 | n/d | Upgraded joints/perception for research fleets |
 | G1 | 2024-05 | from RMB 99K (~$13.5K official); EDU variants to ~$73.9K | 1.32 m / ~35 kg, 23–43 DoF; the de-facto global research humanoid; collapsed the humanoid price floor |
 | R1 | 2025-07-25 | RMB 39,900 (~$5,900); R1 Air repriced RMB 29,900 (~$4,200) 2026-06; dual-arm modular variant from $4,290 | 1.21 m / ~25 kg, ~26 DoF; TIME Best Inventions 2025; cheapest humanoid on the market |
-| H2 | 2025-10 | reported from $29.9K (China base config; intl. pricing n/d, sources conflict to $40.9K — unverified) | ~1.8 m / ~70 kg, 31 DoF (3-DoF waist, 2-DoF neck); 360 N·m peak leg torque; bionic-face option; hands sold separately (Dex3-1/Dex5-1) |
+| H2 | 2025-10 | tiered (resolved 2026-07-04): $29.9K official standard direct (no dexterous hands, no secondary development); $40.9K US/CA distributor "Commercial" (no SDK, 8-mo warranty) / $68.9K EDU; H2 Plus $100K (shop.unitree.com) | 1.8 m (official) / ~70 kg (unverified), 31 DoF (3-DoF waist, 2-DoF neck); 360 N·m peak leg torque; bionic-face option; hands sold separately (Dex3-1/Dex5-1) |
 
 - Optional **Dex5-1** 20-DoF dexterous hand (94-point tactile array @1 kHz) and the NVIDIA/Unitree **H2 Plus reference design** with Sharpa visuo-tactile hands (2026-06) — see [Tactile & hands](tactile-hands.md) and [Hardware](hardware.md).
 - **GD01 manned mecha (unveiled 2026-05-12)**: a ~500 kg (with pilot) rideable "transformable civilian vehicle" that walks on two legs and can lean back into a quadruped crawl mode; Wang Xingxing piloted it in the launch video (which also showed it smashing through a brick wall with its arms). Priced from RMB 3.9M (~$574K; Unitree's international listing says "from $650,000"). Marketed as the world's first mass-produced manned mecha (company claim); minimal technical detail published beyond the ~1-minute demo — a halo/brand product rather than a volume line (as of 2026-07).
@@ -82,7 +82,7 @@ confidence: verified
 
 | Date | Event |
 |---|---|
-| 2025-06 | Series C ~RMB 700M at >RMB 12B (~$1.7B) post — Alibaba, Tencent, Ant, Geely, China Mobile fund, HongShan, Jinqiu; Meituan an earlier large outside shareholder (~8%, reported, unverified) |
+| 2025-06 | Series C ~RMB 700M at >RMB 12B (~$1.7B) post — Alibaba, Tencent, Ant, Geely, China Mobile fund, HongShan, Jinqiu. Largest outside shareholder is Meituan: **9.65% combined** via Hanhai Information (7.61%), Chengdu Longzhu (1.02%) and Galaxy Z (1.02%) per the prospectus — built from its 2024-02 Series B2 lead at ~RMB 3.1B valuation; HongShan (Sequoia China) next at 7.11% |
 | 2025-07 | IPO tutoring begins with CITIC Securities (lead underwriter/sponsor) |
 | 2026-03-20 | SSE accepts STAR Market filing: ~RMB 4.202B raise, ≥40.446M shares (≥10% float) |
 | 2026-06-01 | SSE Listing Committee approval — first "embodied AI" company cleared for A-shares |
@@ -127,7 +127,7 @@ confidence: verified
 | Date | Event |
 |---|---|
 | 2025-03/04 | **CVE-2025-2894**: researchers document a pre-installed remote-access tunnel ("CloudSail") in Go1 firmware — an effective backdoor; units at MIT, Princeton, CMU potentially exposed; Unitree deactivates the service |
-| 2025-09 | "UniPwn" BLE vulnerability (reported): proximity attackers could gain root on Go2, B2, G1, H1; researchers also report G1 transmitting multi-modal sensor/telemetry data to servers in China without operator notification (research claims) |
+| 2025-09-20 | **"UniPwn" BLE exploit publicly disclosed** by researchers Andreas Makris (Bin4ry) and Kevin Finisterre: the BLE Wi-Fi-config interface uses a hardcoded encryption key/IV, accepts any handshake secret containing "unitree", and passes unsanitized input to root shell scripts — giving proximity attackers root on Go2, B2, G1, H1, and wormable robot-to-robot (CVE-2025-60017/-60250/-60251). Reported to Unitree 2025-05; unpatched at publication; Unitree statement (2025-09-29, LinkedIn) claimed the "majority of fixes" were complete. Separately, researchers report G1 transmitting multi-modal sensor/telemetry data to servers in China without operator notification (research claim, unverified) |
 | 2026-03-17 | House Homeland Security subcommittee hearing "DeepSeek and Unitree Robotics" on CCP-linked robotics risks |
 | 2026-05-20 | **Blocking CCP Spy Tech Act** (S.4586) introduced (Sens. Scott, Cotton): names Unitree among Hangzhou's "six little dragons"; would trigger an investigation that could add it to the FCC Covered List |
 | 2026-06-04 | **GUARD Act** (H.R.9129) introduced (Moolenaar/Obernolte/McClellan): mandates national-security review of adversary-state humanoid/quadruped robots, with import bans via the FCC Covered List (automatic listing if no determination within one year) |
@@ -169,6 +169,8 @@ confidence: verified
 - https://www.tanayj.com/p/unitrees-ipo-filing-the-state-of — customer mix (74/17/9 humanoid; JD.com largest customer), purchased components 14–18% of cost, unit-cost declines, international >55% of revenue for most of company history, ~$300M IPO proceeds to AI training
 - https://eu.36kr.com/en/p/3731404085015046 — prospectus deep-dive: overseas revenue >55% in each of 2022–2024; 2025 split 60.8% domestic / 39.2% overseas
 - https://kraneshares.com/a-complete-guide-to-unitree-robotics-2026-ipo-why-it-matters-for-star-market-etf-kstr-humanoid-robotics-etf-koid/ — Series C (RMB 12.7B post, 2025-06) and investor list
+- https://technode.com/2026/06/02/unitree-ipo-approved-meituan-backed-group-emerges-as-top-shareholder/ — Meituan-backed entities 9.65% combined, largest external shareholder; HongShan 7.11%
+- https://eu.36kr.com/en/p/3835853052392576 — Meituan stake breakdown per prospectus: Hanhai Information 7.61% + Chengdu Longzhu 1.02% + Galaxy Z 1.02%; Series B2 lead 2024-02 at ~RMB 3.1B valuation
 - https://www.bloomberg.com/news/articles/2025-07-25/china-s-unitree-r1-is-a-humanoid-robot-costing-less-than-6-000 — R1 launch 2025-07-25 at RMB 39,900
 - https://www.scmp.com/tech/article/3349489/chinas-unitree-debut-cheapest-humanoid-robot-globally-alibaba-site-sources — R1 Air repriced RMB 29,900; AliExpress international debut (2026-06)
 - https://www.humanoidsdaily.com/news/unitree-expands-r1-lineup-with-dual-arm-modular-platform-starting-at-4-290 — R1 dual-arm modular variant from $4,290
@@ -176,6 +178,8 @@ confidence: verified
 - https://www.humanoidsdaily.com/news/unitree-unveils-h2-humanoid-successor-to-h1 — H2 unveiling (2025-10), 180 cm/70 kg
 - https://robohorizon.com/en-us/news/2025/11/unitree-h2-price-and-limitations/ — H2 $29.9K base-config caveats; domestic-market pricing; hands sold separately
 - https://shop.unitree.com/ — current US store prices: B2 $100K, A2 $100K, Go2 from $1,600 (as of 2026-07)
+- https://roboticsandautomationnews.com/2025/08/07/unitree-unveils-new-a2-quadruped-robot-with-100-kg-load-capacity-and-20-km-range/93591/ — A2 unveiled 2025-08-07: 100 kg standing load, 20 km range
+- https://www.therobotreport.com/unitree-launches-a2-quadruped-equipped-with-front-and-rear-lidar/ — A2 launch (article 2025-08-08, "this week", a week after R1); dual LiDAR specs; no launch pricing disclosed
 - https://spectrum.ieee.org/quadruped-robot-unitree-go2 — Go2 launch at $1,600 with LiDAR
 - https://www.inceptivemind.com/unitree-a1-latest-quadruped-robot-costs-less-10k/13054/ — A1 under $10K (2020)
 - https://www.i-programmer.info/news/169-robotics/14640-unitree-go1.html — Go1 from ~$2,700 (2021)
@@ -190,6 +194,9 @@ confidence: verified
 - https://interestingengineering.com/ai-robotics/viral-humanoid-robot-kicks-child-in-stomach — G1 child-kick incident (2026-06)
 - https://www.axios.com/2025/04/01/threat-spotlight-backdoor-in-chinese-robots-future-of-cybersecurity — Go1 CloudSail backdoor (CVE-2025-2894); MIT/Princeton/CMU exposure
 - https://oecd.ai/en/incidents/2025-05-05-0a57 — lawmaker warnings on Unitree backdoor; G1 telemetry and BLE-vulnerability claims
+- https://spectrum.ieee.org/unitree-robot-exploit — UniPwn: Makris/Finisterre, disclosure timeline (vendor contacted 2025-05, public 2025-09-20), Unitree LinkedIn response 2025-09-29
+- https://github.com/Bin4ry/UniPwn — UniPwn PoC repo: hardcoded key/IV, "unitree" handshake bypass, root command injection, wormability
+- https://github.com/advisories/GHSA-cmhh-362m-7qph — CVE-2025-60017: root OS command injection on Go2, G1, H1, B2 via Wi-Fi-config parameters
 - https://www.congress.gov/119/meeting/house/118982/witnesses/HHRG-119-HM08-Wstate-DoshiPhDR-20260317.pdf — House Homeland Security hearing "DeepSeek and Unitree Robotics" (2026-03-17)
 - https://chinaselectcommittee.house.gov/media/press-releases/moolenaar-obernolte-mcclellan-introduce-legislation-to-ban-dangerous-chinese-robots — GUARD Act introduction
 - https://dronelife.com/2026/06/04/congress-introduces-guard-act-extending-fcc-covered-list-framework-to-robotics/ — GUARD Act introduced 2026-06-04; FCC Covered List mechanism, one-year automatic listing

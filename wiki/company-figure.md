@@ -11,7 +11,7 @@ confidence: verified
 - **Founded 2022** by **Brett Adcock** — serial founder (Vettery, sold to Adecco for ~$100M; Archer Aviation, took public via SPAC). Adcock initially bootstrapped Figure and put **$20M of personal capital into the Series A** (per Wikipedia's sourcing); he reportedly retains ~50% ownership (unverified).
 - Early team recruited from **Boston Dynamics, Tesla, Apple, Google DeepMind** — deliberately hardware-heavy at first, then AI-heavy after the OpenAI split.
 - **Corey Lynch** (ex-Google Brain, language-conditioned imitation learning) joined 2023-06 and led the Helix effort as Director of AI — part of the broader Google-robotics diaspora that seeded the US field (see [Key people](key-people.md)).
-- Headcount has stayed small relative to valuation: ~180 employees per Wikipedia; ~200–250 per 2026 reporting (unverified). Adcock posted "robots now outnumber humans at Figure" (X, 2026-06-20) — fleet >750 robots claimed vs. flat headcount (company claim, unverified).
+- Headcount has stayed small relative to valuation: ~180 employees in early coverage (Wikipedia), growing to ~400 by end-2025 and ~650–660 in 2026 per the "Headcount vs Robots" chart Adcock published. Adcock posted **"For the first time, robots now outnumber humans at Figure"** (X, 2026-06-20 — primary post confirmed); the chart shows the robot fleet crossing the headcount line in Q2 2026 at roughly **700–750 robots vs ~650 staff** (both company-reported; no third-party audit). A widely repeated "~200–250 staff" figure traces to a single aggregator and is inconsistent with the chart's mid-2026 crossover (>350 robots already existed by 2026-04) — treat it as erroneous.
 - Adcock has also launched **Hark**, a separate personal-AI hardware/model lab seeded with $100M of his own capital (The Information, 2026-03); Hark raised a **$700M Series A at $6B post-money** led by Parkway Venture Capital — the same lead as Figure's Series A/C (TechCrunch, 2026-05-21).
 - Mission framing ("Master Plan"): general-purpose humanoids for labor shortage → commercial logistics/manufacturing first, then the home.
 
@@ -58,8 +58,8 @@ confidence: verified
 ## Figure 03 hardware (announced 2025-10-09)
 
 - Third-generation robot, designed jointly for **BotQ mass manufacture** (die-cast/injection-molded parts replacing CNC) and **home settings**; TIME Best Invention 2025.
-- ~1.68 m, ~60–61 kg — **9% lighter than Figure 02** (height/weight figures vary across secondary sources: some list 1.73 m; unverified); ~20 kg payload (unverified).
-- **2 kW inductive wireless charging** through foot coils (self-docking); ~2.3 kWh battery, ~5 h runtime (reported).
+- **5'8" (~1.73 m), 61 kg, 20 kg payload, 5 h runtime, 1.2 m/s** per Figure's official spec page; **9% less mass than Figure 02** (announcement). The ~1.68 m figure in earlier secondary coverage is not supported by Figure's own spec sheet (corrected 2026-07-04).
+- **2 kW inductive wireless charging** through foot coils (self-docking); ~2.3 kWh battery (reported); 5 h runtime (official spec page).
 - Perception/manipulation: cameras with 2× frame rate, 75% lower latency, 60% wider FoV; **palm cameras** in each hand; **fingertip tactile sensors detecting ~3 g** (see [Tactile & hands](tactile-hands.md)); 2× faster actuators than 02; speech-to-speech audio.
 - Soft washable textile covering — a home-safety/aesthetics signal unusual among industrial humanoids.
 - Not for individual sale (as of 2026-07): commercial deployments plus a stated ~$20K consumer price target (unverified) and "broader home availability late 2026" (company target).
@@ -115,7 +115,8 @@ The wiki's canonical example of separating primary-source fact from aggregator d
 - https://www.figure.ai/news/helix — Helix architecture: S2 7B @ 7–9 Hz, S1 80M @ 200 Hz, 35-DoF, ~500 h teleop, claimed firsts (official, 2025-02-20)
 - https://www.figure.ai/news/helix-02 — Helix 02: System 0 10M @ 1 kHz, tactile/palm-camera integration, 61-action dishwasher demo (official, 2026-01-27)
 - https://www.humanoidsdaily.com/news/the-end-of-c-brett-adcock-on-helix-02-and-figure-s-path-to-room-scale-autonomy — Adcock interview: ~109K lines of C++ deleted, "Software 2.0" framing
-- https://www.figure.ai/news/introducing-figure-03 — Figure 03 specs: 9% lighter, 2 kW wireless charging, 3 g tactile, palm cameras, mass-manufacture design (official, 2025-10)
+- https://www.figure.ai/news/introducing-figure-03 — Figure 03 specs: 9% lighter, 2 kW wireless charging, 3 g tactile, palm cameras, mass-manufacture design (official, 2025-10; no height/weight given)
+- https://www.figure.ai/figure — Figure 03 official spec page: 5'8", 61 kg, 20 kg payload, 5 h runtime, 1.2 m/s (settles the 1.68 m vs 1.73 m conflict)
 - https://www.figure.ai/news/botq — BotQ announcement: 12,000/yr first-gen line, 100K 4-year goal, vertical integration (official, 2025-03)
 - https://www.figure.ai/news/ramping-figure-03-production — >350 units, 1/day→1/hour in <120 days, >9,000 actuators, yield stats (official, 2026-04-29)
 - https://www.press.bmwgroup.com/global/article/detail/T0458778EN/bmw-group-advances-the-use-of-physical-ai-in-production-with-figure-03-project-in-spartanburg?language=en — BMW primary: Figure 03 sequencing in Hall 52, Figure 02 pilot recap (2026-06-25)
@@ -139,7 +140,10 @@ The wiki's canonical example of separating primary-source fact from aggregator d
 - https://techcrunch.com/2025/02/27/figure-will-start-alpha-testing-its-humanoid-robot-in-the-home-in-2025/ — home alpha acceleration credited to Helix
 - https://www.ttnews.com/articles/ups-figure-ai-robots — UPS–Figure talks (2025-04, unconfirmed)
 - https://www.therobotreport.com/brookfield-partners-figure-ai-develop-humanoid-pre-training-dataset/ — Brookfield pre-training-data partnership
-- https://explainx.ai/blog/figure-ai-robots-outnumber-humans-milestone-2026 — Adcock "robots outnumber humans" post, >750 fleet claim (aggregator, unverified)
+- https://x.com/adcock_brett/status/2068040783295627609 — Adcock post (primary, 2026-06-20): "For the first time, robots now outnumber humans at Figure" + Headcount-vs-Robots chart
+- https://robohorizon.com/en-us/news/2026/06/figure-ceo-the-robots-have-officially-outnumbered-the-humans/ — chart reading: robots >700 crossing ~650 headcount in Q2 2026
+- https://newskarnataka.com/technology/robots-now-outnumber-humans-at-figure-ai-says-ceo/21062026/ — independent chart reading: ~740 robots by Q2 2026, ~650–660 staff, ~400 staff end-2025
+- https://explainx.ai/blog/figure-ai-robots-outnumber-humans-milestone-2026 — aggregator; its ">750 fleet vs ~200–250 staff" framing conflicts with Adcock's own chart (~650 staff) — do not reuse
 - https://www.techtimes.com/articles/316632/20260514/figure-ais-helix-02-robots-complete-full-8-hour-autonomous-shifts-humanoid-race-intensifies.htm — 8-hour autonomous shift claim (company-sourced, unverified)
 - https://sherwood.news/tech/figures-robots-just-sorted-packages-for-200-hours-straight/ — ~200-hour livestreamed sorting run, ~249,560 packages (2026-05)
 - https://interestingengineering.com/ai-robotics/figure-03-humanoid-robot-200-hour-shift — zero-failure claim; Scott Walter 8-hour challenge origin; three robots (Bob/Jim/Rose); says Sunnyvale HQ (conflicts with Sherwood's San Jose)
