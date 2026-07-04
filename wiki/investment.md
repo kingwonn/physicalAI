@@ -106,6 +106,13 @@ Context rows: Saronic (maritime autonomy/defense) raised a $1.75B Series D in 20
 - Exit route is domestic listings: Unitree (STAR, approved 2026-07), AgiBot's Shangwei maneuver (2025-07), reported AgiBot HK IPO for 2026 (unverified) — public-market access at valuations US peers cannot yet test.
 - Retail demand for that paper is running ahead of fundamentals: Unitree's registration approval alone (2026-07-02) set off a limit-up wave in A-share robot names the next day (40+ sealed limit-up; 50+ counting stocks up >10%), including proxies whose only link is a sub-1% indirect Unitree stake (property firm 首开股份, ~0.3% via a fund, repeated its 2025-09 streak of 11 limit-ups in 12 days).
 
+**South Korea** (see [Landscape: RoW](landscape-row.md))
+- The other big state-coordinated capital story alongside China (as of 2026-07): President Lee Jae Myung's **"3 mega-projects" briefing (2026-06-29)** announced a **">$1 trillion" public-private triple axis** — semiconductors, AI data centers, physical AI. Won figures below are primary-verified against MOTIE releases (full source trail in [Landscape: RoW](landscape-row.md)):
+  - **Semiconductors: ₩800T** new Samsung/SK fabs in the southwest (**exact sites still undecided as of 2026-07** — Samsung's chairman has named Gwangju as host city, plot TBD; SK's site fully TBD) + **₩81T** Chungcheong packaging hub = **₩881T combined**; circulating dollar figures (~$576–585B) are **outlets' own conversions** — the government stated won only.
+  - **AI data centers: ₩550T private capital** (SK, GS, Naver; 8.4 GW stage 1, 18.4 GW total planned).
+  - **Physical AI / robots**: K-Humanoid Alliance **KRW 1T+ combined public-private by 2030** (launched 2025-04); Hyundai's **₩9T Saemangeum robot-AI-hydrogen hub** (incl. a **30,000-robots/yr plant**, ₩0.4T of the total; policy-finance-backed); **National Growth Fund ₩16T in 2026** across six sectors incl. robots (M.AX Frontier Project, 2026-07-01).
+- Structurally distinct from China's fund-of-funds model: most of the headline won total is coordinated **chaebol capex** (Samsung, SK, Hyundai, GS, Naver) with state funds (National Growth Fund) a smaller slice.
+
 **Europe & ROW** (see [Landscape: ROW](landscape-row.md))
 - Neura Robotics (Germany) raised up to $1.4B in 2026-06 at a reported ~$7B valuation — Europe's first humanoid mega-round (Tether, Nvidia, Amazon, Qualcomm, Bosch, Schaeffler, EIB); the full amount is milestone-contingent.
 - Europe's largest *closed* physical-AI rounds of 2026 are not humanoids: Wayve (UK) closed a $1.2B Series D at $8.6B post (2026-02, autonomous driving) and AMI Labs (Paris) closed a $1.03B seed at $3.5B pre-money (2026-03, world models) — the largest European seed round on record.
@@ -168,6 +175,9 @@ Context rows: Saronic (maritime autonomy/defense) raised a $1.75B Series D in 20
 - https://group.softbank/en/news/press/20251008 — SoftBank–ABB Robotics $5.375B acquisition (primary press release).
 - https://www.therobotreport.com/abb-group-sells-abb-robotics-softbank-5-3b/ — ABB Robotics deal details: $2.28B 2024 revenue, ~7,000 staff, closing timeline.
 - https://ifr.org/news/china-to-invest-1-trillion-yuan-in-robotics-and-high-tech-industries/ — China's ~¥1T state-backed robotics/AI VC fund.
+- https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/171974/view — MOTIE primary press release (2026-06-29): Korea "3 mega-projects" briefing — ₩800T southwest fabs + ₩81T Chungcheong packaging, ₩550T AI data centers, physical-AI axis goals.
+- https://www.korea.kr/news/policyNewsView.do?newsId=148967448 — korea.kr: National Growth Fund ₩16T in 2026 across six physical-AI-adjacent sectors (M.AX Frontier Project).
+- https://www.thelec.kr/news/articleView.html?idxno=52834 — Hyundai ₩9T Saemangeum robot-AI-hydrogen hub breakdown: AI DC ₩5.8T, robot manufacturing cluster ₩0.4T (30,000 robots/yr), investment agreement 2026-02-27.
 - https://jamestown.org/embodied-intelligence-the-prcs-whole-of-nation-push-into-robotics/ — >$26B city-level humanoid funds; $8.2B National AI Industry Investment Fund; Beijing ¥100B fund.
 - https://seekingalpha.com/news/4578385-tesla-signals-over-25b-2025minus-2026-capex-as-it-targets-optimus-production-by-late-july — Tesla >$25B capex signal and Optimus production targets (reported).
 - https://thenextweb.com/news/tesla-25-billion-capex-2026-optimus-robotaxi-ai-chip-fab — Tesla raised 2026 capex guidance to ~$25B at the Q1-2026 call (2026-04-22), vs $8.5B spent in 2025; Optimus factory plans.

@@ -196,3 +196,19 @@ company-pi refutation). Queue: 2 items closed, Korea follow-ups queued.
 
 Next: loop(12) — Monday IPO window opens; investment.md Korea fold-in;
 routine sweep.
+
+## loop(12) — 2026-07-04
+Weekend light pass (4 agents, ~0.25M tokens, ~10 min). Sweep found a real
+COVERAGE GAP dating to April: State Grid's leaked 2026 Embodied
+Intelligence Development Plan — RMB 6.8B for ~8,500 robots (5,000
+quadrupeds / 3,000 dual-arm / 500 humanoids at ~RMB 5M/unit) — added to
+landscape-china with single-leaked-document caveats; it is the landmark
+order Morgan Stanley cited when raising its 2026 China forecast to 50K;
+verify pass added the primary Jiemian exclusive and flagged 36Kr's
+Zhipu/AgiBot mistranslation. Korea fold-in to investment.md completed and
+verified (fab-siting nuance: Samsung's Lee publicly named Gwangju at the
+briefing — "undecided" was overstated; state-led vs chaebol-capex framing
+fixed for internal consistency). IPO: zero movement (Saturday); Monday
+07-06 window armed. Queue: New Yorker item closed (done loops 9-10); State
+Grid tender-watch added. Next: loop(13) — Sunday quiet cycle expected;
+Monday brings the IPO window + Chinese trading week.
