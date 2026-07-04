@@ -1,7 +1,7 @@
 ---
 title: Key People
 slug: key-people
-updated: 2026-07-03
+updated: 2026-07-04
 confidence: verified
 ---
 > The Physical AI field is driven by a small, densely connected set of people: academic researchers who co-founded foundation-model startups (Sergey Levine, Chelsea Finn, Deepak Pathak), corporate lab leaders (Jim Fan and Yuke Zhu at NVIDIA GEAR, Carolina Parada at Google DeepMind, Pieter Abbeel at Amazon), and founder-executives racing to commercialize humanoids (Brett Adcock/Figure, Bernt Børnich/1X, Wang Xingxing/Unitree, Peng Zhihui/AgiBot). 2024–2026 saw heavy churn: the Google robotics diaspora seeded most US robot-foundation-model startups, Amazon absorbed Covariant's founders, Tesla and Boston Dynamics changed program leaders, and several high-profile executives (Robert Playter, Caitlin Kalinowski, Eric Jang, Milan Kovac) exited as the field shifted from research to deployment.
@@ -25,7 +25,7 @@ confidence: verified
 | **Corey Lynch** | Figure AI — Director of AI | Language-conditioned imitation learning (ex-Google Brain); led Figure's Helix VLA | Left Google Brain for Figure (2023-06); shipped Helix, first humanoid VLA with two-robot collaboration (2025-02) |
 | **Eric Jang** | Independent (as of 2026-01) | VP of AI at 1X 2022–2026; "all roads lead to robots"; led NEO's Redwood AI model and 1X World Model | Stepped down from 1X (2026-01); succeeded by Mohi Khansari (Redwood chief architect) as Head of Robot Learning |
 
-Physical Intelligence's other co-founders: Brian Ichter (ex-Google Brain), Jasmine Hsu, and Stripe-veteran investor Lachy Groom; π0.7 lists ~90 authors including Danny Driess.
+Physical Intelligence's other co-founders: Brian Ichter (ex-Google Brain), Quan Vuong, Adnan Esmail, and Stripe-veteran investor Lachy Groom ("Jasmine Hsu" appears on some rosters but is absent from most, incl. the 2026-01 TechCrunch profile — unverified; see [PI deep dive](company-pi.md)); π0.7 lists ~90 authors including Danny Driess.
 
 ## Founders and executives — US & Europe
 
@@ -37,7 +37,7 @@ Physical Intelligence's other co-founders: Brian Ichter (ex-Google Brain), Jasmi
 | **Jeff Cardenas** | Apptronik — co-founder & CEO (Austin, spun out of UT HCRL 2016) | Apollo humanoid; Mercedes-Benz, GXO, Jabil pilots; Google DeepMind AI partnership | $350M Series A (2025-02, B Capital/Capital Factory, Google) grown to $403M; $520M Series A-X extension (2026-02) → >$935M total Series A at ~$5.3B post-money; new investors incl. John Deere, AT&T Ventures, Qatar Investment Authority |
 | **Robert Playter** | Boston Dynamics — CEO 2020–2026 | 30 years at BD; led Spot commercialization and electric Atlas launch | Stepped down 2026-02 (last day 2026-02-27), citing retirement; CFO Amanda McMaster interim CEO; exit coincided with Hyundai's commercialization push (reported target: up to 30k humanoids/yr by 2028); Hyundai bought out SoftBank's remaining 9.65% stake for $325M, taking 100% ownership (2026-06, per Reuters/KED Global) |
 | **Kyle Vogt** | The Bot Company — founder & CEO (founded 2024) | Co-founded Cruise (ousted late 2023); Twitch co-founder | Building non-humanoid home robots; $150M seed (2024-05, $550M val); $150M at $2B led by Greenoaks (2025-03); reportedly raising $250M at >$4B (2025-10, unconfirmed close) |
-| **Caitlin Kalinowski** | ex-OpenAI — hardware/robotics lead 2024-11 → 2026-03 | Led Meta AR glasses hardware; Apple product design | Joined OpenAI to build robotics/hardware from scratch (2024-11); resigned 2026-03-07 citing governance concerns over OpenAI's Pentagon contract ("lethal autonomy without human authorization"); Benjamin Bolte (founder of collapsed open-source humanoid startup K-Scale Labs) joined OpenAI the same week |
+| **Caitlin Kalinowski** | ex-OpenAI — hardware/robotics lead 2024-11 → 2026-03 | Led Meta AR glasses hardware; Apple product design | Joined OpenAI to build robotics/hardware from scratch (2024-11); resigned 2026-03-07 citing governance concerns over OpenAI's Pentagon contract ("lethal autonomy without human authorization"); OpenAI confirmed the departure, saying the contract excludes domestic surveillance and autonomous weapons; Benjamin Bolte (founder of collapsed open-source humanoid startup K-Scale Labs) joined OpenAI the same week; OpenAI's robotics division is now fronted by Aditya Ramesh as VP of Robotics ([Landscape: USA](landscape-usa.md)) |
 | **Ashok Elluswamy** | Tesla — VP of AI software; Optimus lead | First engineer hired for Autopilot; head of FSD AI | Took over Optimus program after Milan Kovac (head of Optimus engineering) departed 2025-06; unified FSD and Optimus AI stacks; presented "Building Foundational Models for Robotics at Tesla" (2026-02) |
 | **Marc Raibert** | RAI Institute — Executive Director | See researcher table above | — |
 
@@ -123,6 +123,7 @@ See [Landscape: China](landscape-china.md) for the full company picture.
 - https://techcrunch.com/2025/03/23/former-cruise-ceo-kyle-vogts-new-robotics-startup-reportedly-raises-another-150m/ — Bot Company $150M at $2B (2025-03)
 - https://www.bloomberg.com/news/articles/2025-10-28/cruise-founder-kyle-vogt-s-robotics-startup-eyes-4-billion-valuation — Bot Company reported $4B+ round talks
 - https://www.humanoidsdaily.com/news/openai-hardware-leader-caitlin-kalinowski-resigns-over-pentagon-deal-as-benjamin-bolte-joins — Kalinowski resignation (2026-03-07); Bolte hire
+- https://finance.yahoo.com/news/openai-robotics-leader-resigns-over-171328055.html — Fortune (via Yahoo): OpenAI confirmed Kalinowski's departure; her quoted concerns; company's stated contract safeguards
 - https://www.tri.global/about-us/dr-russ-tedrake — Tedrake as SVP Large Behavior Models at TRI
 - https://pressroom.toyota.com/ai-powered-robot-by-boston-dynamics-and-toyota-research-institute-takes-a-key-step-towards-general-purpose-humanoids/ — Atlas LBM demo (2025-08), Tedrake/Kuindersma
 - https://techcrunch.com/2025/11/12/fei-fei-lis-world-labs-speeds-up-the-world-model-race-with-marble-its-first-commercial-product/ — World Labs Marble launch (2025-11)

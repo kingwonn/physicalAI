@@ -175,3 +175,24 @@ Ipsos 2024; deposits not independently verified). GR-3 found already
 covered (dedup held); FITEE erratum checked from full PDF — affiliation-only,
 CoT numbers stand. Next: loop(11) — IPO inquiry announcement (SSE window),
 routine sweep; queue is mostly event-driven watch items now.
+
+## loop(11) — 2026-07-04
+Light pass (5 agents, ~0.35M tokens, ~21 min). IPO probe via recorded
+SSE/Eastmoney JSON endpoints: no announcement (Saturday, markets closed);
+next window is the 07-06 trading week. PEOPLE FLOWS all verified and
+upgraded: Sangbae Kim → Meta Robotics Architect (2025-03, MIT on-leave,
+"Metabot" program under Marc Whitten w/ ex-Apple Jian Zhang), Pertsch → PI
+(own site), Aditya Ramesh VP-of-Robotics confirmed, Kalinowski departure
+OpenAI-confirmed (stale "(no OpenAI confirmation)" marker removed), Meta
+ARI acquisition enriched (Pinto + Xiaolong Wang → Superintelligence Labs).
+KOREA section rebuilt on primary MOTIE releases: chip-figure conflict
+resolved as scope difference (W800T fabs vs W881T incl. packaging; USD
+conversions are outlets' own), Hyundai "$5.8B" decoded as W9T Saemangeum
+hub breakdown, K-Humanoid Alliance KRW 1T primary-verified, fab sites
+explicitly undecided, MSIT's separate W50.4B consortium disambiguated —
+verify pass then fixed 8 more nuances (venue 迎宾馆 not Blue House, etc.).
+Orchestrator fixed Jasmine Hsu residue on key-people (aligned with
+company-pi refutation). Queue: 2 items closed, Korea follow-ups queued.
+
+Next: loop(12) — Monday IPO window opens; investment.md Korea fold-in;
+routine sweep.
