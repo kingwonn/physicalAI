@@ -155,3 +155,23 @@ attribution overstatements; 7 rich leads queued (1X Neo data, NVIDIA
 ubiquity quote, Neura mocap program, G1 BT botnet → safety page, etc.).
 Next: loop(10) — IPO watch (inquiry announcement could land w/o 07-06),
 Witt-leads batch, ByteDance GR-3 into vla-models.
+
+## loop(10) — 2026-07-04
+Witt-leads batch + IPO forensics (5 agents, ~0.48M tokens, ~21 min).
+IPO: still no pricing at China market close; recorded working SSE/Eastmoney
+JSON probe endpoints in the queue for future sweeps; earliest formal launch
+week of 2026-07-06. RESOLVED the Unitree 2025 profit-measure conflict with
+primary STCN quotes: GAAP net profit 2022 −¥22.1M / 2023 −¥11.1M / 2024
+¥94.5M / 2025 ~¥288M; the ~¥600M figure is 扣非净利润 (CSRC-standardized,
++674%) — news-verify even reverted an earlier over-correction on
+state-of-the-art. Documented the A-share proxy mania (limit-up wave
+2026-07-03, 首开股份 ~0.3% indirect stake repeat mania) in investment.
+WITT BATCH: all 5 leads applied (1X NEO data incl. 10k deposits marked
+company-reported; NVIDIA ubiquity quote + 60%-battery-drain datapoint; Neura
+mocap program + Waymo 500k-h precedent into data/data-foundry; G1 BT botnet
+into safety-regulation; Stanford adoption survey into open-problems) —
+verify pass corrected 3 attribution nuances (survey is 2025 AI Index ch.8 /
+Ipsos 2024; deposits not independently verified). GR-3 found already
+covered (dedup held); FITEE erratum checked from full PDF — affiliation-only,
+CoT numbers stand. Next: loop(11) — IPO inquiry announcement (SSE window),
+routine sweep; queue is mostly event-driven watch items now.

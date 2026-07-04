@@ -49,6 +49,8 @@ China industrialized data collection as policy; [Landscape: China](landscape-chi
 | [Tesla Optimus](company-optimus.md) | Salaried "Data Collection Operators" in Palo Alto — $48/h max, mocap suit + VR, 5'7"–5'11" height requirement, 7+ h walking/day; >50 people had held the role by 2024-08 (Business Insider LinkedIn analysis) | Undisclosed | Pivoted 2025-06 to camera-only helmet/backpack rigs (five cameras) capturing everyday tasks — dropped the mocap suits, kept the payroll model |
 | Apptronik | "Robot Park" (Austin, 90,000 sq ft, announced 2026-06-30): Apollo fleets doing real logistics/manufacturing/retail work under mixed teleop + autonomy | Undisclosed | Feeds Google DeepMind's Gemini Robotics; satellite sites at Mercedes-Benz and GXO — work-as-data-collection, revenue offsets collection cost |
 
+- European counterpart: **Neura Robotics** (Germany) has put **1,000+ industrial workers in motion-capture suits** to generate humanoid training data — CEO David Reger: "We're getting, like, a lot of data" (per Witt, New Yorker 2026-07-06 issue; company program, scale unverified) — mocap-suited *workers doing their actual jobs* as a foundry channel, distinct from both dedicated teleop halls and passive egocentric capture. Witt's ceiling: even planet-scale mocap would take decades to match ChatGPT-scale training corpora; see [Data](data.md).
+- Precedent from AVs: **Waymo** used **500,000+ hours** of real-world driving data in its 2025 scaling-law study (primary source: Waymo blog), and its remote teleop "pilots" (Philippines-based, per Witt) double as data producers — the template for 1X's teleop-Expert-Mode-as-data-channel economics ("It's also useful data for us" — Børnich).
 - The Tesla wage anchor ($48/h, i.e. ~$100k/yr full-time) is the clearest public price for US first-party collection labor — 5–15× Chinese center wages.
 - Common pattern: US labs treat collection labor as skilled in-house work (quality control, consistent rigs), then push scale to cheaper channels — human video (Tesla, Figure), customer-site fleet data (Apptronik), or contracted foundry networks (Generalist).
 
@@ -147,3 +149,5 @@ Best available numbers, mostly from one industry-analytics source (SVRC / roboti
 - https://arxiv.org/pdf/2408.14037 — Re-Mix: optimizing data-mixture weights for large-scale imitation learning.
 - https://arxiv.org/pdf/2603.09056 — influence-function demonstration curation ("Quality over Quantity", 2026).
 - https://www.pi.website/blog/pi05 — π0.5 data mixture (~400 h mobile-manipulation demos) as PI in-house collection anchor.
+- https://www.newyorker.com/magazine/2026/07/06/are-humanoid-robots-ready-to-be-deployed — Witt: Neura 1,000+ mocap-suited workers, Waymo Philippines teleop pilots, 1X teleop-as-data quote (read via Wayback snapshot).
+- https://waymo.com/blog/2025/06/scaling-laws-in-autonomous-driving/ — Waymo 500,000 h real-world driving scaling study (primary).

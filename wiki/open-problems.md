@@ -273,6 +273,25 @@ confidence: verified
   robot humanlike, you expect it to have humanlike capabilities. But
   technology is far behind that." (Skild's own bet — one cross-embodiment
   brain in any body, humanoid or not — is a hedge against the form factor.)
+- **Adoption attitudes split sharply by geography (as of 2026-07).** Witt
+  (same piece) cites a Stanford analysis of opinion polls across ~three dozen
+  countries: respondents in **China, South Korea, Thailand, and Indonesia are
+  the most excited** about consumer applications of AI; **US and
+  Canada respondents the least**. This matches Stanford HAI's AI Index
+  public-opinion chapters: the 2025 edition (Ipsos 2024, 32 countries) has
+  strong majorities in China (83%), Indonesia (80%), Thailand (77%) seeing
+  AI products as more beneficial than harmful vs 40% Canada / 39% US, and
+  names China, South Korea, and Indonesia as the high-excitement cluster;
+  the 2026 edition (Ipsos 2025, 30 countries) repeats the pattern — China,
+  Malaysia, Thailand, Indonesia >80% expecting AI to profoundly change
+  their lives, US/Canada in the low-excitement/high-nervousness corner.
+  Witt's exact wording is "consumer applications of A.I." — robots are the
+  article's context, not the survey question. Witt's cultural gloss: Čapek-to-
+  Terminator narratives taint Western perception, while Neura's CEO reports
+  South Korean journalists are simply "tired of waiting." Adoption-attitude
+  datapoint, not a demand forecast — but it cuts against the US-first launch
+  strategy of home humanoids like NEO, and suggests East/Southeast Asia may
+  be the more willing early consumer market.
 
 ## 8. Timeline discourse — who argues what
 
@@ -335,4 +354,6 @@ confidence: verified
 - https://finance.yahoo.com/markets/stocks/articles/why-teslas-optimus-story-more-153200371.html — Optimus missed-targets accounting (secondary).
 - https://www.bloomberg.com/news/videos/2026-05-15/figure-ceo-says-humanoid-robot-test-had-no-outside-aid-video — Adcock denies teleoperation in Figure home tests.
 - https://247wallst.com/investing/2026/05/31/jensen-huang-just-called-humanoid-robots-a-40-trillion-market-heres-why-wall-street-is-loading-up-on-physical-ai-stocks/ — Huang $40T market claim (2026-05, secondary).
-- https://www.newyorker.com/magazine/2026/07/06/are-humanoid-robots-ready-to-be-deployed — Stephen Witt, "Are Humanoid Robots Ready to Be Deployed?" (2026-07-06 issue): 1X Neo teleop demo & "robotics slop", Ames/Parada/Talla/Cardenas/Pathak/Haley positions, Xpeng Iron fall, Neura mocap program, teleop economy (paywalled; read in full via Wayback snapshot 2026-07-03).
+- https://www.newyorker.com/magazine/2026/07/06/are-humanoid-robots-ready-to-be-deployed — Stephen Witt, "Are Humanoid Robots Ready to Be Deployed?" (2026-07-06 issue): 1X Neo teleop demo & "robotics slop", Ames/Parada/Talla/Cardenas/Pathak/Haley positions, Xpeng Iron fall, Neura mocap program, teleop economy, Stanford cross-country attitude survey (paywalled; read in full via Wayback snapshot 2026-07-03).
+- https://hai.stanford.edu/ai-index/2025-ai-index-report/public-opinion — Stanford HAI AI Index 2025 public-opinion chapter (Ipsos 2024, 32 countries): source of the China 83% / Indonesia 80% / Thailand 77% vs Canada 40% / US 39% benefit-vs-harm split and the China/South Korea/Indonesia high-excitement cluster behind Witt's claim.
+- https://hai.stanford.edu/ai-index/2026-ai-index-report/public-opinion — Stanford HAI AI Index 2026 public-opinion chapter (Ipsos 2025, 30 countries): same pattern persists (China/Malaysia/Thailand/Indonesia >80% optimism; US/Canada lowest excitement, highest nervousness).

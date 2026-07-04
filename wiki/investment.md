@@ -104,6 +104,7 @@ Context rows: Saronic (maritime autonomy/defense) raised a $1.75B Series D in 20
 - State capital leads: NDRC-backed robotics/AI/frontier VC fund designed to attract ~¥1T (~$138B) over 20 years (announced 2025-03); an $8.2B National AI Industry Investment Fund (from 2025-01); Beijing's ¥100B (~$14B) future-industries fund; >$26B in city-level humanoid/robotics funds (Beijing, Shenzhen, others) since late 2024 (per Morgan Stanley, corroborated by Jamestown).
 - Embodied intelligence named one of four "future industries" in the 2025-03 government work report.
 - Exit route is domestic listings: Unitree (STAR, approved 2026-07), AgiBot's Shangwei maneuver (2025-07), reported AgiBot HK IPO for 2026 (unverified) — public-market access at valuations US peers cannot yet test.
+- Retail demand for that paper is running ahead of fundamentals: Unitree's registration approval alone (2026-07-02) set off a limit-up wave in A-share robot names the next day (40+ sealed limit-up; 50+ counting stocks up >10%), including proxies whose only link is a sub-1% indirect Unitree stake (property firm 首开股份, ~0.3% via a fund, repeated its 2025-09 streak of 11 limit-ups in 12 days).
 
 **Europe & ROW** (see [Landscape: ROW](landscape-row.md))
 - Neura Robotics (Germany) raised up to $1.4B in 2026-06 at a reported ~$7B valuation — Europe's first humanoid mega-round (Tether, Nvidia, Amazon, Qualcomm, Bosch, Schaeffler, EIB); the full amount is milestone-contingent.
@@ -129,6 +130,9 @@ Context rows: Saronic (maritime autonomy/defense) raised a $1.75B Series D in 20
 - https://www.caixinglobal.com/2026-07-03/unitree-robotics-wins-approval-for-618-million-star-market-ipo-102460136.html — Unitree IPO approval (published 2026-07-03), ¥4.2B raise, ~¥40B/$5.9B valuation, revenue history 2022–2025.
 - https://www.scmp.com/tech/tech-trends/article/3359290/unitree-ipo-test-valuations-venture-capital-floods-china-robotics — SCMP 2026-07-03: Unitree IPO as a valuation test "as venture capital floods China robotics" (headline framing; no VC totals in article); RMB 591M adjusted 2025 profit; debut as early as late July.
 - https://finance.sina.com.cn/jjxw/2026-07-02/doc-inifmmms5898225.shtml — post-registration process: SSE 5-working-day no-objection on the issuance plan, then inquiry pricing and T/T+1/T+2 online subscription.
+- https://www.myzaker.com/article/6a478df88e9f09665d7aa094 — 2026-07-03 rally, day after Unitree's registration approval: 超50只 stocks limit-up or up >10% (body phrasing; headline says "超50股涨停"), 绿的谐波 leading at +18.15%.
+- https://finance.sina.com.cn/wm/2026-07-03/doc-inifpcva3674731.shtml — Sina count of the same rally: "40余股封涨停" (绿的谐波、拓普集团 et al.) plus dozens more up >10%.
+- https://www.stcn.com/article/detail/3335199.html — 首开股份 ~0.3% indirect Unitree stake via Jinshi Growth fund; 2025-09 limit-up streak on the proxy trade.
 - https://www.globaltimes.cn/page/202607/1364985.shtml — CSRC greenlit Unitree's IPO registration on Thursday 2026-07-02 (article published same day); ¥4.2B raise, use of proceeds.
 - https://hellochinatech.com/p/unitree-ipo-humanoid-robotics-really-sells — prospectus breakdown: humanoids 51.5% of Unitree's 2025 revenue (vs 1.9% in 2023), ~¥1.7B 2025 revenue, ~35% adjusted margins.
 - https://www.caixinglobal.com/2026-05-26/unitree-fast-tracks-shanghai-ipo-with-target-valuation-of-62-billion-102447449.html — earlier ~$6.2B IPO valuation target and fast-track timeline.

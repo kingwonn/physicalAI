@@ -13,6 +13,7 @@ confidence: verified
 - The model layer is deliberately **open-weight** (GR00T under NVIDIA Open Model License, Cosmos permissively licensed) while the money layer (GPUs, Jetson) is proprietary — the inverse of vertically integrated players like [Figure](company-figure.md) (closed model, own robot) or Tesla.
 - Supporting glue: **OSMO** (workflow orchestration across the three computers), **Metropolis** (vision AI for factories), **Mega** Omniverse Blueprint (factory-scale digital twins with Siemens), **Isaac ROS** (GPU-accelerated ROS 2 packages).
 - Scale claims (NVIDIA, GTC 2026-03): **~2M robotics developers** on its platforms; 40,000+ Inception startups; Hugging Face partnership connecting to 13M AI builders — robotics is the fastest-growing category on Hugging Face, with NVIDIA models leading downloads (as of 2026-01).
+- **Independent field corroboration of the moat (as of 2026-07)**: Stephen Witt, after touring 1X, Skild, Caltech and others for the New Yorker (2026-07-06 issue): "Every single robot I encountered while reporting this article ran on an Nvidia microchip, and every single one had trained in an Nvidia digital gym." Same piece relays a former employee's characterization that NVIDIA deliberately built "vender lock" — making robot makers dependent on its stack — the strongest third-party (non-vendor) statement of NVIDIA ubiquity on record, though scoped to the robots one reporter happened to see.
 
 ## Simulation layer: Isaac Sim, Isaac Lab, Newton, Arena
 
@@ -57,6 +58,7 @@ Details in [Hardware](hardware.md). Jetson lineage: TK1 (2014) → TX1/TX2 → A
 | Jetson T4000 | 1,200 TFLOPS (FP4 sparse) | 64 GB | $1,999 @1k units | announced CES 2026-01 (mid-tier) |
 
 - Thor's 128 GB fits multi-billion-parameter VLAs onboard; early adopters: Agility, Amazon Robotics, Boston Dynamics, Figure, Caterpillar, Meta; 1X NEO ships on Thor; OpenAI and Physical Intelligence evaluating (as of 2025-08, NVIDIA list).
+- **Power cost of onboard NVIDIA compute**: per Witt's New Yorker reporting (2026-07-06 issue), an NVIDIA edge chip "can drain as much as sixty per cent of a robot's electricity supply" — vs ~20% of body energy for the human brain; Apptronik CEO Jeff Cardenas, in the same piece: "It's not the motors that take up most of the battery. It's actually the compute." A concrete number behind the price/power-sensitivity risk flagged below and in [Hardware](hardware.md).
 - **Halos**: introduced at GTC 2025-03 as an AV full-stack safety system; **Halos for Robotics announced 2026-06-22 (Automate 2026)** — billed as the industry's first full-stack safety system for Physical AI. Four layers: **IGX Thor** industrial-grade compute, **Holoscan Sensor Bridge**, **Halos OS** safety software, and the **Halos AI Systems Inspection Lab** (certification prep against IEC 61508, ISO 13849, ISO/IEC TR 5469). NVIDIA claims it transfers 18,600+ engineering-years of AV safety work to robots (vendor framing). **Agility Robotics is first adopter** for Digit — safety becoming a platform-sold feature is new for the field; see [Safety & regulation](safety-regulation.md).
 
 ## Verticals
@@ -146,3 +148,4 @@ The gulf between narrative and disclosed numbers is the core skeptic exhibit:
 - https://www.digitimes.com/news/a20250103PD214/huawei-nvidia-robotics-llm-robot.html — Huawei entering humanoid robotics on the NVIDIA platform model
 - https://www.huaweicloud.com/intl/en-us/news/20250919133255709.html — Huawei CloudRobo embodied-AI platform description
 - https://builtin.com/articles/nvidias-cuda-future-ai-infrastructure — CUDA lock-in critique; argument that heterogeneous robotics workloads weaken the moat
+- https://www.newyorker.com/magazine/2026/07/06/are-humanoid-robots-ready-to-be-deployed — Witt: "every single robot… ran on an Nvidia microchip / trained in an Nvidia digital gym"; edge chips drain up to 60% of robot battery (Cardenas quote); "vender lock" ex-employee characterization (read via Wayback snapshot)
