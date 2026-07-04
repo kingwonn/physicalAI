@@ -21,6 +21,10 @@ Each iteration is one pass of:
    anything promoted to a page still needs a primary source. (X/YouTube/TikTok
    in that engine need API keys we don't have; 小红书/微信公号/知乎 are not
    supported by it at all and remain a known blind spot.)
+   *Media feeds:* sweep agents should also scan the RSS watchlist in
+   `wiki/_meta/feeds.md` (blogs, YouTube channel feeds, podcast feeds — all
+   zero-config; connectivity verified 2026-07-04). Same rule: leads/sentiment
+   only, facts need primary sources.
 3. **Verify** — adversarial fact-check agents re-derive the highest-stakes
    claims (dates, dollar amounts, model names, SOTA assertions) from
    independent sources and fix errors in place. Pages that pass get
