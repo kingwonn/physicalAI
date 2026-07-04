@@ -1,10 +1,10 @@
 ---
 title: "Landscape: Europe, Japan, Korea & Rest of World"
 slug: landscape-row
-updated: 2026-07-03
+updated: 2026-07-04
 confidence: verified
 ---
-> Outside the [US](landscape-usa.md) and [China](landscape-china.md), Physical AI is led by a handful of well-capitalized European startups (1X, NEURA Robotics, Wandercraft), Japan's industrial-robotics incumbents pivoting toward AI plus a state-backed foundation-model consortium, and Korea's chaebol conglomerates (Samsung, LG, Hyundai, Doosan) buying and building their way into humanoids. As of 2026-06 the region's headline events are NEURA's up-to-$1.4B Series C (Europe's largest robotics round), Hyundai taking 100% ownership of Boston Dynamics, Japan's SoftBank–NEC–Sony–Honda "Japan AI Foundation Model Development" JV (operating company: **Noetra**) with up to ¥1T in state backing, and Mobileye's $900M acquisition of Israel's Mentee Robotics.
+> Outside the [US](landscape-usa.md) and [China](landscape-china.md), Physical AI is led by a handful of well-capitalized European startups (1X, NEURA Robotics, Wandercraft), Japan's industrial-robotics incumbents pivoting toward AI plus a state-backed foundation-model consortium, and Korea's chaebol conglomerates (Samsung, LG, Hyundai, Doosan) buying and building their way into humanoids. As of 2026-06 the region's headline events are NEURA's up-to-$1.4B Series C (Europe's largest robotics round), Hyundai taking 100% ownership of Boston Dynamics, Japan's SoftBank–NEC–Sony–Honda "Japan AI Foundation Model Development" JV (operating company: **Noetra**) with up to ¥1T in state backing, Korea's ">$1 trillion" triple-axis AI investment drive (announced 2026-06-29: chips + AI data centers + physical AI), and Mobileye's $900M acquisition of Israel's Mentee Robotics.
 
 ## Europe
 
@@ -68,11 +68,20 @@ confidence: verified
 | Kawasaki Heavy Industries | **Kaleido gen-9** humanoid shown at iREX 2025; first pilots targeted 2026 |
 | Honda | ASIMO line retired as a product; robotics know-how folded into the ASIMO OS brand (0-series EVs) and the 2026 foundation-model JV |
 
-- The strategic picture: Japan retains the world's densest industrial-robot supply chain (FANUC, Yaskawa, Kawasaki, plus servo/reducer suppliers — see [Hardware](hardware.md)) but has **no venture-scale humanoid champion**; Chinese humanoid vendors began actively selling into Japan in 2025–26. Japan's bet is sovereign models + incumbents' manufacturing rather than startups.
+- The strategic picture: Japan retains the world's densest industrial-robot supply chain (FANUC, Yaskawa, Kawasaki, plus servo/reducer suppliers — see [Hardware](hardware.md)) but has **no venture-scale humanoid champion**; Chinese humanoid vendors began actively selling into Japan in 2025–26 (see the JAL Haneda trial below). Japan's bet is sovereign models + incumbents' manufacturing rather than startups.
+
+### JAL × GMO AI & Robotics: humanoid trial at Haneda
+- **Japan Airlines (via ops subsidiary JAL Ground Service) + GMO AI & Robotics** (GMO Internet Group's AI/robotics unit) announced 2026-04 what JAL calls **Japan's first airport humanoid-robot demonstration**: trials at Tokyo Haneda running **2026-05 through 2028**, with robots deployed progressively across the airport.
+- Initial phase: two units on container transport and opening/closing container-securing levers. Target tasks: **baggage/cargo loading, ground-support-equipment (GSE) operation, and cabin cleaning**; human supervisors retain control of safety functions. Framing is explicit labor-shortage relief — record inbound tourism against a shrinking aviation workforce.
+- Hardware is **Unitree G1-based** (~1.32 m, ~35 kg, ~2 h per charge) — a Chinese platform working inside Japan's flagship airport, the concrete case of the Chinese-vendors-into-Japan dynamic above. Per-unit cost is reported inconsistently: **~$13.5K (base-variant figure per New Atlas) vs ~$15.4K (per CNBC)**. See [Humanoid robots](humanoid-robots.md) for G1 platform detail.
 
 ## South Korea
 
-### Samsung / Rainbow Robotics
+### National AI strategy: the ">$1T triple axis" (2026-06-29)
+- **President Lee Jae Myung announced (2026-06-29)** a public-private investment drive totaling **more than $1 trillion**, framed as a "triple axis for a great leap forward": **semiconductors, AI data centers, and physical AI**.
+- Semiconductors: Samsung + SK Hynix (with suppliers) to invest **₩800T (~$518B per Al Jazeera; Ars Technica reports $585B)** in two new fab clusters each in the southwest plus Seoul-region fab construction, aiming to **double DRAM output within five years**; a further ₩81T (~$52.5B) chip-packaging cluster in the Chungcheong area.
+- AI data centers: **₩550T (~$356B)** from SK Group, GS Group and Naver, scaling toward **18.4 GW total capacity and ₩1,000T by 2035**.
+- Physical AI: humanoid robots designated a **national strategic industry** — commercialization targeted **across 10 major industries by 2028**, state-backed robot-training data factories and Korean foundation models, and **10,000 "AI robotics specialists" trained over five years**; Hyundai committed **$5.8B** for robot manufacturing and AI infrastructure (consistent with its 30,000-Atlas/yr RMAC plan below). All figures as of 2026-07, from press coverage of the announcement; not yet reconciled against MSIT primary documents.
 - Samsung exercised its call option (announced 2024-12-31, completed 2025-02) to raise its stake in **Rainbow Robotics from 14.7% to ~35% for KRW 267B (~$181.6M)**, becoming controlling shareholder and consolidating it as a subsidiary. A **Future Robotics Office** reporting to the CEO's office was created, led by Jun-ho Oh (KAIST HUBO creator; Rainbow co-founder).
 - Rainbow Robotics (founded 2011 out of KAIST's HUBO lab) sells the **RB-Y1**: dual 7-DoF arms on a fast wheeled base, ~140 cm tall — a wheeled-humanoid research/industrial platform.
 - **2026-03**: Samsung announced plans to convert all global production facilities into "AI-driven factories" by **2030**, deploying RB-Y1 on its own lines with agentic AI across warehousing-to-shipment.
@@ -117,7 +126,7 @@ confidence: verified
 |---|---|---|---|---|
 | Europe | NEURA 4NE1, 1X NEO, Wandercraft Calvin | NEURA ≤$1.4B; 1X ~$10B valuation (reported) | Industrial OEM partnerships, state co-investment | No frontier-scale in-house VLA training |
 | Japan | Sovereign foundation-model JV; Kaleido, Torobo | Up to ¥1T public over 5 yrs | Industrial-robot supply chain, data-rich incumbents | No venture-scale humanoid startup |
-| Korea | Samsung×Rainbow, Hyundai×Boston Dynamics, LG CLOiD | Hyundai KRW 125.2T (group-wide); K-Alliance ≥KRW 1T | Chaebols as builder *and* first customer; components | Software/AI models still largely externally sourced (e.g., DeepMind) |
+| Korea | Samsung×Rainbow, Hyundai×Boston Dynamics, LG CLOiD | National ">$1T triple axis" (2026-06); Hyundai KRW 125.2T (group-wide); K-Alliance ≥KRW 1T | Chaebols as builder *and* first customer; components | Software/AI models still largely externally sourced (e.g., DeepMind) |
 | Israel | Mobileye×Mentee | $900M acquisition | AV-grade AI talent transfer to humanoids | Small domestic market |
 | India | iHub, Muks, contract manufacturing | ~$45M H1 2026 (early-stage) | Cost, scale manufacturing potential | Capital depth, actuator supply chain |
 | Gulf | Deployment pilots, sovereign LPs | n/a | Regulatory sandbox + capital | No domestic builders yet |
@@ -149,6 +158,9 @@ confidence: verified
 - https://asiatimes.com/2026/07/japan-rallies-tech-giant-alliance-to-build-sovereign-ai/ — Japan sovereign-AI alliance context
 - https://www.yaskawa-global.com/wp-content/uploads/2025/10/20251003_haihu_en.pdf — Yaskawa disclosure: 100% acquisition of Tokyo Robotics (2025-10-03)
 - https://www.businesstoday.com.my/2026/07/01/japan-targets-10-million-ai-robots-by-2040-under-new-national-strategy/ — 10M robots by 2040 national strategy
+- https://press.jal.co.jp/en/release/202604/009502.html — JAL primary: GMO AI & Robotics partnership, "Japan's first" airport humanoid demonstration, Haneda trial scope
+- https://newatlas.com/ai-humanoids/humanoid-robots-baggage-handlers-tokyo-airport-unitree/ — Unitree G1 at Haneda, trial through 2028, ~$13.5K base-variant cost figure
+- https://www.cnbc.com/2026/05/01/japan-airlines-humanoid-robots-haneda-labor-shortage.html — trial start 2026-05, labor-shortage framing, ~$15.4K per-unit figure
 - https://www.artificialintelligence-news.com/news/japan-ai-robots-2040-national-ai-model/ — Noetra name, NEDO selection (2026-06-30), ¥387.3B FY2026 subsidy, 18 industries
 - https://techwireasia.com/2026/04/japan-physical-ai-softbank-nec-honda-sony/ — JV members, ¥1T NEDO funding, roles
 - https://news.samsung.com/global/samsung-electronics-to-become-largest-shareholder-in-rainbow-robotics-accelerating-future-robot-development — Samsung 35% stake, KRW 267B, Future Robotics Office
@@ -156,6 +168,8 @@ confidence: verified
 - https://www.gizmochina.com/2026/03/01/samsung-plans-transition-to-ai-driven-factories-with-humanoid-robots-and-agentic-ai-by-2030/ — Samsung AI-driven factories by 2030 with RB-Y1
 - https://www.techtimes.com/articles/318386/20260615/samsung-backed-rainbow-robotics-puts-its-dual-arm-robot-work-coupang-warehouse.htm — RB-Y1 Coupang warehouse PoC, Toyota trial
 - https://www.koreaherald.com/article/10771827 — second report of RB-Y1 Coupang pilot (companies not publicly confirming)
+- https://www.aljazeera.com/news/2026/6/29/south-korea-announces-more-than-1-trillion-ai-chip-investment-drive — Korea >$1T drive: ₩800T fabs, ₩81T packaging cluster, ₩550T data centers, 2035 targets
+- https://arstechnica.com/ai/2026/06/south-korea-to-spend-1t-on-more-memory-chip-production-and-humanoid-robots/ — humanoid component: 10 industries by 2028, 10,000 specialists, Hyundai $5.8B, national strategic industry designation
 - https://www.lgnewsroom.com/2025/01/lg-acquires-majority-stake-in-bear-robotics-to-bolster-robotics-capabilities/ — LG 51% Bear Robotics
 - https://www.lgnewsroom.com/2025/12/lg-to-unveil-home-robot-at-ces-2026-sharing-vision-for-the-zero-labor-home/ — CLOiD home robot, CES 2026
 - https://www.techtimes.com/articles/319355/20260630/lg-electronics-sets-ceo-level-robotics-business-center-speed-its-robot-push.htm — LG Robotics Business Center

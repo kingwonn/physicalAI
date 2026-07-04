@@ -10,7 +10,7 @@ Distilled from loop(1)'s 54 research leads (2026-07-03) plus the original backlo
 - [x] ~~Tactile sensing & dexterous hands deep page~~ — done loop(3): [tactile-hands.md](../tactile-hands.md)
 - [x] ~~Evaluation crisis / benchmarks page~~ — done loop(3): [evaluation.md](../evaluation.md)
 - [x] ~~Per-company deep pages~~ — series complete: Figure ✅ + Unitree ✅ loop(4); PI ✅ + NVIDIA ✅ loop(5); Optimus ✅ loop(6): [company-optimus.md](../company-optimus.md).
-- [ ] Data-foundry economics page/section: Scale Physical AI Data Engine, Generalist GEN-1 + "data foundry partners", teleop-hour pricing, proprietary-vs-open data gap.
+- [x] ~~Data-foundry economics page~~ — done loop(7): [data-foundry.md](../data-foundry.md); follow-ups: Forbes 2026-05-14 Scale-post-Meta piece (paywalled) for robotics-segment revenue; retry CNBC China-centers article (403) for per-center economics; Genesis AI (~$105M seed 2025) not yet covered anywhere in wiki.
 - [x] ~~Academic lab map~~ — done loop(6): [academic-labs.md](../academic-labs.md); follow-ups: verify Sangbae Kim→Meta and Karl Pertsch→PI moves; pin down Hutter-NVIDIA relationship; second-tier labs (Georgia Tech/Danfei Xu, UCSD/Xiaolong Wang, CMU LeCAR/Guanya Shi).
 - [ ] Optimus follow-ups from loop(6): Tesla vs Proception hand-IP suit settlement (single source); reconcile ">1,000 Gen 3 on Fremont floor" claim across company-optimus + humanoid-robots; find primary Elluswamy CVPR 2026 transcript ("Digital Optimus").
 
@@ -35,8 +35,10 @@ Distilled from loop(1)'s 54 research leads (2026-07-03) plus the original backlo
 - [ ] Figure-Qualcomm compute collaboration: if Figure 04-gen drops NVIDIA onboard silicon, update company-nvidia + company-figure skeptic sections.
 - [ ] Dated refresh triggers: GR00T N2 GA (late 2026); first Halos AI Systems Inspection Lab certification outcomes (Agility Digit vs IEC 61508/ISO 13849).
 - [ ] PI unnamed pilot partners (logistics, grocery, chocolate mfg per TechCrunch 2026-01) — watch for names; would fill company-pi business-model void.
-- [ ] Japan Airlines × GMO AI & Robotics humanoid trial at Haneda — primary confirmed 2026-07-04: JAL press release (2026-04, "Japan's first" airport humanoid demonstration, https://press.jal.co.jp/en/release/202604/009502.html); trials run 2026-05→2028, Unitree G1-based, tasks incl. baggage loading, GSE operation, cabin cleaning. Per-unit cost conflicts across sources (~$13.5K New Atlas vs ~$15.4K CNBC) — pick one with attribution when writing it into landscape-row.md Japan section.
+- [x] ~~Japan Airlines × GMO AI & Robotics humanoid trial at Haneda~~ — done 2026-07-04: written into [landscape-row.md](../landscape-row.md) Japan section (2026-05→2028 trial, Unitree G1-based, baggage/GSE/cabin-cleaning tasks, "Japan's first" per JAL; cost conflict kept with explicit attribution: ~$13.5K New Atlas vs ~$15.4K CNBC).
 - [ ] MIIT+SASAC real-scene-training special action follow-through: end-June implementation plans and November progress reports (which provinces/SOEs, which vendors win the "consortium" slots) — added to landscape-china.md 2026-07-04.
+- [ ] Korea ">$1T triple axis" drive (2026-06-29, added to landscape-row.md 2026-07-04): verify robotics figures (10-industry commercialization by 2028, Hyundai $5.8B, 10,000 specialists) against MSIT/presidential-office primary documents; reconcile chip-investment conflict ($518B Al Jazeera vs $585B Ars); consider a fold-in to investment.md; track which vendors win the robot data-factory slots.
+- [ ] Weave Robotics "Isaac 1" $7,999 home robot, Fall 2026 deliveries (HN 232pts, 2026-07-01, weaverobotics.com/isaac-1) — assess for home-robot coverage in humanoid-robots.md/landscape-usa.md (wheeled non-humanoid; relevant as 1X NEO price counterpoint).
 
 ## Claims to re-verify (single-source or conflicting)
 

@@ -4,7 +4,7 @@ slug: HOME
 updated: 2026-07-03
 confidence: verified
 ---
-> Annotated index of the physicalAI wiki: 28 topic pages on Physical AI worldwide,
+> Annotated index of the physicalAI wiki: 29 topic pages on Physical AI worldwide,
 > each researched by a web-research agent and passed through an adversarial
 > fact-check (`confidence: verified`). Start with the three core pages, then go
 > deep by technology, people/orgs, region, or capital.
@@ -41,6 +41,7 @@ disputes are catalogued in [Open problems](open-problems.md).
 | [Hardware Substrate](hardware.md) | Actuators, dexterous hands, tactile/force sensing, onboard compute, batteries, BOM cost curves, China-dominated supply chain |
 | [The Robot Data Problem](data.md) | Teleop, egocentric human video, sim data, open datasets, commercial data factories, first scaling-law evidence |
 | [Tactile Sensing & Dexterous Hands](tactile-hands.md) | Hand landscape with prices, GelSight-lineage vs taxel arrays, tactile datasets/models, China's hand mass-production economics, why dexterity hardware remains the gap |
+| [Data Foundry Economics](data-foundry.md) | The business of manufacturing robot data: Scale post-Meta, Generalist's wearables foundry, China's state-subsidized data factories, teleop $/hour economics, marketplaces |
 | [Evaluation & Benchmarks](evaluation.md) | Saturated sim suites vs real-robot arenas (RoboArena, RoboChallenge, GM-100), embodied-reasoning exams, industry throughput metrics, the self-reported-benchmark credibility problem |
 
 ## People & organizations

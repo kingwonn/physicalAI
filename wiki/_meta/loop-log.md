@@ -95,3 +95,19 @@ cycle). HOME/llms.txt at 28 pages. Company deep-page series COMPLETE
 (Figure, Unitree, PI, NVIDIA, Optimus). Next: loop(7) — IPO watch +
 data-foundry economics page or JAL/landscape-row refresh; consider
 lengthening interval through the US holiday weekend.
+
+## loop(7) — 2026-07-04
+Data-foundry page + assigned refresh (4 agents, ~0.34M tokens, ~19 min).
+New page data-foundry verified after 11 corrections — the fact-check pass
+was unusually productive: payment-direction reversal on the Rest of World
+in-home data-collection anecdote, Eric Jang's 1X departure (2026-01), Aria
+partner-count fix, AgiBot Lingang 4,000m² vs 3,000m² conflict flagged from
+the primary paper, multiple citation-URL repairs. News agent completed the
+assigned JAL Haneda write-in (landscape-row Japan, cost conflict kept with
+explicit attribution) and added Korea's ">$1T triple axis" national AI
+strategy (2026-06-29, humanoids as national strategic industry) — verify
+pass added JAL Ground Service attribution and initial two-unit test-phase
+detail. Community signals: Weave Robotics Isaac 1 ($7,999 home robot, HN
+232pts) queued. Unitree IPO pricing STILL pending. HOME/llms.txt at 29
+pages. Next: loop(8) — IPO watch + queue picks (Optimus follow-ups,
+shipment-methodology reconciliation, or New Yorker read once published).
