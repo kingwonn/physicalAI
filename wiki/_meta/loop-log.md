@@ -297,3 +297,24 @@ out, amount fixed to $500M); BD Hyundai rights offering ~$870M. Result:
 2025:42 → 2026-H1:31). Deliverable: viz/funding-timeline.html (interactive,
 filter by category/region/mega, source-quality chips, not-closed flags) +
 dataset wiki/_meta/funding-events.json. Loop paused.
+
+## odm-competitors — 2026-07-05 (directed; 5 Sonnet collectors + Opus synth/verify)
+Built a deep ODM/EMS/module-maker competitor page (9 agents, ~0.67M tokens):
+16 companies across Taiwan EMS (Foxconn, Quanta/Techman, Wistron, Compal,
+Pegatron, Inventec), China ODM/EMS (Luxshare, BYD Electronics, Huaqin,
+Longcheer, Wingtech, Lens), module makers (Quectel[ref], Fibocom, MeiG,
+Thundercomm) — commitment-ranked scoreboard + per-company profiles across
+4 dimensions (product-line / investment / design-win / deployment) + a
+synthesis (committed-vs-announcement, own-brand-vs-arms-dealer) + Quectel-
+specific read. HEADLINE FIND: the steel-in-the-ground leaders are China
+A-share ODMs assembling domestic champions, NOT the Taiwan giants —
+Longcheer runs AgiBot 精灵 G2 on a live Nanchang 3C line (~1,000-unit
+framework order, scaling 4→~100 by Q3 2026); Lens holds 70% of the AgiBot
+JV. Foxconn is the arms-dealer's arms-dealer (Agility PIPE, no own brand).
+Luxshare is the own-brand/channel-conflict case (~3,000 self-robots 2025).
+Verify (Opus) applied 7 corrections incl. Lens 70% stake, MeiG partner =
+AidLux (not Airha), Foxconn LH-L02 hand claim flagged unverified,
+Wistron≠上纬 entity-separation source added; re-confirmed Luxshare did NOT
+win the China Mobile tender (AgiBot+Unitree did). EN verified + zh synced.
+HOME/llms.txt at 38 pages, zh synced, both readers rebuilt (40 EN / 39 zh).
+Loop paused.

@@ -67,6 +67,7 @@ disputes are catalogued in [Open problems](open-problems.md).
 |---|---|
 | [Investment & Market](investment.md) | As-of-dated ledger of mega-rounds, valuations, IPOs, state funds, market forecasts — with bubble-watch skepticism |
 | [ODM Opportunity Map](odm-opportunity.md) | Where contract manufacturers fit: honest market bound (~$2B hardware pool 2026), value-chain entry map, ODM/EMS competitor scoreboard (Jabil/Foxconn/Lens/Luxshare…), timing and strategic-options matrix |
+| [ODM/EMS Competitor Landscape](odm-competitors.md) | Deep commitment-ranked scoreboard of 16 ODM/EMS/module makers (Foxconn, Luxshare, Longcheer, Lens, Huaqin, Quanta, Fibocom, MeiG…) across product-line / investment / design-win / deployment — own-brand vs arms-dealer split |
 | [Open Problems & Debates](open-problems.md) | Data scarcity, sim2real limits, dexterity gap, reliability, safety certification, evaluation crisis, form-factor and timeline debates |
 | [Safety & Regulation](safety-regulation.md) | ISO 25785-1 / 10218:2025 / UL 3300, EU Machinery Regulation + AI Act, China's HEIS, certification gates for factory and home deployment, incidents and insurance |
 
