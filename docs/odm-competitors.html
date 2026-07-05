@@ -1,0 +1,140 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>ODM/EMS 友商具身智能承诺度记分牌</title>
+<style>
+:root{--paper:#F3F5F5;--panel:#FFF;--ink:#0F171C;--ink2:#18242B;--steel:#55666C;--mute:#83979B;
+--line:#DCE2E2;--line2:#E9EEEE;--teal:#0C8C88;--tealbr:#12B3AC;--heat:#E4592A;--verify:#2E8B57;
+--sans:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",system-ui,-apple-system,sans-serif;
+--mono:ui-monospace,"SF Mono","Cascadia Code",Consolas,Menlo,monospace}
+*{box-sizing:border-box}html{background:var(--paper)}
+body{margin:0;font-family:var(--sans);color:var(--ink);line-height:1.65;font-size:15px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1000px;margin:0 auto;padding:0 22px}
+a{color:var(--teal);text-decoration:none}a:hover{text-decoration:underline}
+:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+.mh{border-top:4px solid var(--teal);background:var(--ink);color:#E8EEEE;padding:30px 0 24px}
+.mh .eb{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--tealbr);margin:0 0 10px}
+.mh h1{font-size:clamp(23px,4vw,34px);font-weight:800;margin:0 0 8px;letter-spacing:-.01em;text-wrap:balance}
+.mh p{margin:0;color:#9DB0B3;font-size:14px;max-width:48em}
+.sum{display:flex;flex-wrap:wrap;gap:24px;margin-top:20px}
+.sum .v{font-family:var(--mono);font-size:24px;font-weight:700;color:#EAF2F2;line-height:1}
+.sum .v .own{color:var(--heat)}.sum .v .arm{color:var(--tealbr)}
+.sum .k{font-family:var(--mono);font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:#7E9295;margin-top:6px}
+.controls{position:sticky;top:0;z-index:20;background:rgba(243,245,245,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:11px 0}
+.crow{display:flex;flex-wrap:wrap;gap:7px;align-items:center}
+.crow+.crow{margin-top:7px}
+.clab{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);margin-right:2px}
+.pill{font-family:var(--mono);font-size:12px;padding:5px 11px;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--steel);cursor:pointer;transition:.15s}
+.pill:hover{border-color:var(--steel)}
+.pill.off{opacity:.32}
+.pill.own.on{background:var(--heat);color:#fff;border-color:var(--heat)}
+.pill.arms.on{background:var(--teal);color:#fff;border-color:var(--teal)}
+.pill.t.on{background:var(--ink);color:#EAF2F2;border-color:var(--ink)}
+.board{margin:22px 0 50px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;margin-bottom:9px;overflow:hidden;transition:.15s}
+.card.self{border-color:var(--teal);box-shadow:0 0 0 1px var(--teal)}
+.chead{display:grid;grid-template-columns:150px 1fr auto;gap:14px;align-items:center;padding:14px 18px;cursor:pointer}
+.chead:hover{background:var(--line2)}
+.cnm{min-width:0}
+.cnm .n{font-weight:700;font-size:16px;color:var(--ink)}
+.cnm .n .star{color:var(--teal);font-size:12px;margin-left:4px}
+.cnm .en{font-family:var(--mono);font-size:11px;color:var(--mute);margin-top:1px}
+.cmid .mv{font-size:13px;color:var(--steel);line-height:1.5}
+.cmid .tags{margin-top:5px;display:flex;flex-wrap:wrap;gap:5px;align-items:center}
+.chip{font-family:var(--mono);font-size:10px;padding:1px 7px;border-radius:3px;white-space:nowrap;border:1px solid var(--line);color:var(--steel);background:var(--panel)}
+.chip.post{color:#fff;border:none}
+.chip.sq-primary{color:var(--verify);border-color:rgba(46,139,87,.4)}
+.chip.sq-secondary{color:var(--steel)}
+.chip.sq-company-reported,.chip.sq-single-source{color:var(--heat);border-color:rgba(228,89,42,.4)}
+.cright{text-align:right;white-space:nowrap;display:flex;flex-direction:column;align-items:flex-end;gap:5px}
+.tier{display:flex;align-items:center;gap:8px}
+.tierbar{width:78px;height:8px;background:var(--line2);border-radius:2px;overflow:hidden}
+.tierbar i{display:block;height:100%;border-radius:2px}
+.tlab{font-family:var(--mono);font-size:11px;color:var(--steel)}
+.exp{font-family:var(--mono);font-size:11px;color:var(--mute)}
+.cbody{display:none;padding:2px 18px 18px;border-top:1px solid var(--line2)}
+.card.open .cbody{display:block}
+.dims{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+@media(max-width:640px){.dims{grid-template-columns:1fr}.chead{grid-template-columns:1fr;gap:8px}.cright{align-items:flex-start;text-align:left}}
+.dim{background:var(--paper);border-radius:6px;padding:11px 13px}
+.dim .dh{font-family:var(--mono);font-size:10px;letter-spacing:.06em;color:var(--teal);font-weight:600;margin-bottom:4px}
+.dim .dt{font-size:12.5px;color:var(--ink);line-height:1.55}
+.read{margin-top:12px;font-size:13px;color:var(--steel);background:var(--paper);border-left:3px solid var(--teal);padding:9px 14px;border-radius:0 6px 6px 0}
+.read b{color:var(--ink)}
+.empty{text-align:center;color:var(--mute);padding:40px;display:none}
+footer{border-top:1px solid var(--line);padding:22px 0 40px;font-size:12.5px;color:var(--steel);line-height:1.7}
+footer .m{font-family:var(--mono);font-size:11px;color:var(--mute);margin-top:8px;display:flex;flex-wrap:wrap;gap:6px 18px}
+</style>
+<div class="mh"><div class="wrap">
+  <p class="eb">ODM · EMS · 模组厂 · 具身智能竞争情报</p>
+  <h1>友商记分牌:谁真投入,谁只公告</h1>
+  <p>16 家代工/模组厂在具身智能上的承诺度排序 + 双轴姿态(自造整机 vs 军火商供货)。点任一行展开四维度:产品线 / 投资 / 抢客户 / 落地。数据经对抗核查(纠正立讯-中国移动、纬创-上纬等误传)。</p>
+  <div class="sum">
+    <div class="s"><div class="v">16</div><div class="k">覆盖公司</div></div>
+    <div class="s"><div class="v">6</div><div class="k">承诺度 ≥ 供货投资</div></div>
+    <div class="s"><div class="v"><span class="own">3</span> / <span class="arm">7</span></div><div class="k">自造整机 / 军火商供货</div></div>
+    <div class="s"><div class="v">3</div><div class="k">工厂里真落地(龙旗/蓝思/立讯)</div></div>
+  </div>
+</div></div>
+<div class="wrap">
+  <div class="controls">
+    <div class="crow"><span class="clab">姿态</span>
+      <button class="pill own on" data-post="own">自造整机(渠道冲突)</button>
+      <button class="pill arms on" data-post="arms">军火商供货(中立)</button>
+      <button class="pill t on" data-post="none">未定/邻域</button>
+    </div>
+    <div class="crow"><span class="clab">类型</span>
+      <button class="pill t on" data-type="EMS">EMS</button>
+      <button class="pill t on" data-type="ODM">ODM</button>
+      <button class="pill t on" data-type="模组">模组</button>
+      <span class="clab" style="margin-left:8px">区域</span>
+      <button class="pill t on" data-reg="台湾">台湾</button>
+      <button class="pill t on" data-reg="中国">中国大陆</button>
+    </div>
+  </div>
+  <div class="board" id="board"></div>
+  <div class="empty" id="empty">没有匹配的公司 — 放宽筛选。</div>
+</div>
+<footer><div class="wrap">
+  <div>数据来源:physicalAI 知识库 <a href="https://github.com/kingwonn/physicalAI/blob/main/wiki/odm-competitors.md">wiki/odm-competitors.md</a>(经对抗核查,confidence: verified)。承诺度阶梯:自造整机/产线级落地 &gt; 合资/产线 &gt; 供货+投资 &gt; 设计导入 &gt; 试点 &gt; 公告/零部件 &gt; 未见动作。★=本情报的视角主体(移远)。来源强度:<span class="chip sq-primary">一手</span> <span class="chip">二手</span> <span class="chip sq-company-reported">公司口径/单源</span>。</div>
+  <div class="m"><span>快照 2026-07-05</span><span>16 家 · 对抗核查</span><span>配套:ODM 机会图谱 · 移远 pitch</span></div>
+</div></footer>
+<script>
+const DATA=[{"co": "龙旗科技", "en": "Longcheer", "type": "ODM", "reg": "中国", "tier": 6, "tlabel": "产线级落地", "posture": "arms", "move": "智元精灵 G2 跑南昌平板产线:~1,000 台框架订单、六天 64,828 任务 99.99%、智元第 15,000 台交付;Q3 2026 从 4→~100 台", "sq": "secondary", "d1": "全球智能产品 ODM(手机/平板/穿戴),定位工业具身智能制造伙伴", "d2": "未见股权;客户 + 制造伙伴关系", "d3": "智元战略合作(~2025-10),框架订单 ~1,000 台精灵 G2", "d4": "南昌平板厂产线'员工':>99.5% 成功、18-20s/循环、~310 台/时;Q3 2026 扩到 ~100 台", "read": "页面上落地最实的 ODM×人形关系,但是龙旗'买/托管'智元的机器,非自造整机"}, {"co": "蓝思科技", "en": "Lens Tech", "type": "EMS/零件", "reg": "中国", "tier": 6, "tlabel": "合资+产线组装", "posture": "arms", "move": "与智元合资'湖南智启未来'(2025-04,蓝思持股 70%)+ 承接智元 2025 全系人形组装", "sq": "primary", "d1": "玻璃/结构件巨头(苹果链),延伸到机器人组装 + 结构/散热件", "d2": "入股智元清洁机器人子公司智鼎", "d3": "合资公司(蓝思 70%,注册资本 ¥1000 万,长沙)", "d4": "承接智元 2025 全系人形组装(2025-08);未披露产能/台数(¥1000万是期权,尚非工厂)", "read": "两家最硬承诺的陆系 ODM 之一,锚定出货可信的整机厂(智元 2025 出 5000+)"}, {"co": "立讯精密", "en": "Luxshare", "type": "ODM/EMS", "reg": "中国", "tier": 6, "tlabel": "自造整机", "posture": "own", "move": "公司口径:2025 自研人形 ~3,000 台全外销;2026 初'制造 2.0'柔性线;中期自研核心零部件 ~80%", "sq": "company-reported", "d1": "自造整机 + 零部件:目标减速器/腱驱手等 ~80% 自研;通用机器人原型", "d2": "未见第三方机器人股权", "d3": "客户名未披露,全为公司口径数据", "d4": "~3,000 台(公司口径,2025-11)。⚠ 中国移动 ¥1.24 亿订单实为智元+宇树中标,非立讯", "read": "承诺阶梯最高档,但带渠道冲突:自造整机=与所有潜在代工客户为敌"}, {"co": "广达 / 达明", "en": "Quanta/Techman", "type": "ODM/模组", "reg": "台湾", "tier": 5, "tlabel": "自研(预量产)", "posture": "own", "move": "轮式人形 TM Xplore I,NVIDIA GTC 2026 展(2026-03-18);量产目标 2H 2026", "sq": "primary", "d1": "达明(TRI)协作臂子公司;TM Xplore I 轮式、22+ 关节、Jetson Thor 上跑 VLA;QCT 供 GPU 服务器", "d2": "未见机器人股权/并购(有机成长)", "d3": "仅 NVIDIA 三方共研;未见第三方整机厂设计导入", "d4": "达明协作臂升级广达德国厂;TM Xplore I 先在自厂测试;无人形台数", "read": "比富士康窄:一台自研人形未出货,天花板=设计导入(QCT 做 NVIDIA 生态基建)"}, {"co": "华勤技术", "en": "Huaqin", "type": "ODM", "reg": "中国", "tier": 5, "tlabel": "自研内用(试点)", "posture": "own", "move": "一代人形已测,二代双足在研;轮式机器人 2026-06 批量交付入自厂;执行器/控制板自研", "sq": "secondary", "d1": "定位'3C 制造全栈机器人方案总供';一代已测、二代双足在研;执行器/脑体控制板自研", "d2": "未见机器人股权", "d3": "为大模型公司造数据采集机器人(2026 量产)", "d4": "轮式机器人 2026-06 批量入自厂:来料分拣/搬运/产线检测", "read": "真正的垂直整合内用先行程序,早但具体;富士康路线的小号版"}, {"co": "富士康 / 鸿海", "en": "Foxconn", "type": "EMS", "reg": "台湾", "tier": 4, "tlabel": "供货 + 投资(无自有品牌)", "posture": "arms", "move": "领投 Agility >$2 亿 PIPE(2026-06-24);代工 Robust.AI Carter;优必选 Walker S1 入自厂试", "sq": "primary", "d1": "自动化 BU(iPEBG);COMPUTEX 2026 展 Nurabot 护理机器人、川崎手术机器人、轮式工业人形(NVIDIA 脑+生态硬件,非自有整机)。灵巧手 LH-L02 声明未证实", "d2": "领投 Agility >$2 亿 PIPE;持 NUWA 女娲 22.71%;Robust.AI 无股权", "d3": "优必选(2025-01 战略合作,Walker S1 深圳→郑州)、NVIDIA、Robust.AI 代工、川崎、天奇(≥2000 台计划)", "d4": "休斯顿 GB300 厂 GR00T 机器人拟 Q1 2026 上线(未证实);高雄服务人形共研", "read": "军火商的军火商:投 Agility、代工优必选/Robust.AI,从不出自有整机=最大可选性、最小渠道冲突"}, {"co": "移远通信", "en": "Quectel", "type": "模组", "reg": "中国", "tier": 3, "tlabel": "设计导入(军火商)", "posture": "arms", "move": "Robrain 大脑 × LimX TRON 1(MWC 2025-06);5G 模组对宇树量产;¥4.11 亿 AI 机器人募投", "sq": "primary", "self": true, "d1": "机器人算力模组梯队 SG885G(48T)/SH602HA-AP/SP895BD-AP(77T);全系蜂窝/GNSS/WiFi", "d2": "¥4.11 亿 AI 算力模组募投(含 AI 机器人方案)", "d3": "Robrain×LimX、宇树四足模组量产、星动纪元、德壹、EEVE", "d4": "试点级设计导入,无台数披露", "read": "全球蜂窝模组 #1(~36%),已有具名机器人案例;短板是峰值算力。★本页视角主体"}, {"co": "广和通", "en": "Fibocom", "type": "模组", "reg": "中国", "tier": 3, "tlabel": "设计导入+平台+投资", "posture": "arms", "move": "Fibot 具身开发平台(2024-03,复现 Mobile ALOHA);联合领投珞博 Pre-A(2026-04,AI 陪伴玩具非人形)", "sq": "primary", "d1": "Fibot 具身平台(臂+算力+全向底盘,SC171/QCM6490,12T)——比裸模组更深的子系统绑定", "d2": "联合领投珞博智能(2026-04)⚠ 珞博是 AI 陪伴玩具 Fuzozo 芙崽,非人形,角色是连接+资费+投资", "d3": "平台 + 连接设计导入", "d4": "——", "read": "'平台+投资'绑定模式是对裸模组厂(如移远)最锋利的竞争压力"}, {"co": "美格智能", "en": "MeiG", "type": "模组", "reg": "中国", "tier": 3, "tlabel": "设计导入", "posture": "arms", "move": "双 SNM970(48T)=~100 TOPS 驱动'通天晓'人形(AidLux/阿加犀×高通,CES 2025)", "sq": "secondary", "d1": "SNM970(QCS8550,48T);SG880 系列 0.2→48T,面向人形", "d2": "未见机器人股权", "d3": "双 SNM970=~100T 驱动通天晓/Ultra Magnus 人形原型(CES 2025)——具名人形设计导入", "d4": "部署试点级", "read": "移远最直接的 QCS8550 对 QCS8550 对手,同高通生态、同人形目标"}, {"co": "Thundercomm 创通", "en": "Thundercomm", "type": "模组/集成", "reg": "中国", "tier": 3, "tlabel": "设计导入(高算力)", "posture": "arms", "move": "TurboX IRB10(高通 Dragonwing IQ10,峰值 700 TOPS,20 路摄像头),EW 2026,点名全尺寸人形", "sq": "primary", "d1": "纯高通生态集成商(非电信模组厂),攻人形 SoM socket 于高算力档", "d2": "——", "d3": "TurboX IRB10 点名工业 AMR/全尺寸人形/服务机器人", "d4": "——", "read": "移远算力档的峰值威胁:700 TOPS 远超模组厂 77 TOPS 档"}, {"co": "比亚迪电子", "en": "BYD Electronics", "type": "EMS", "reg": "中国", "tier": 2, "tlabel": "试点(集团级)", "posture": "none", "move": "优必选 Walker S1 在比亚迪汽车厂试点;上市主体 BYDE 仅披露'部分布局'", "sq": "secondary", "d1": "人形程序在比亚迪集团级(非上市 BYDE);~2 万台上线 2026 愿景(未证实)", "d2": "——", "d3": "优必选 Walker S1 在比亚迪厂=客户关系,非 BYDE 制造", "d4": "集团级试点", "read": "上市主体无对外人形制造合同披露"}, {"co": "和硕", "en": "Pegatron", "type": "ODM", "reg": "台湾", "tier": 1, "tlabel": "公告/零部件先行", "posture": "none", "move": "5 年机器人 BU;'Aria'服务机器人 + 机器狗(COMPUTEX 2025-26);无对外 OEM 客户", "sq": "secondary", "d1": "机器人 BU 五年建设,零部件先行;Aria 服务机器人 + 机器狗", "d2": "未见股权/合资", "d3": "董事长称 NVIDIA 点名和硕入人形供应链;无具名对外 OEM 客户", "d4": "无量产人形、无部署", "read": "公告/零部件先行"}, {"co": "闻泰科技", "en": "Wingtech", "type": "ODM/半导体", "reg": "中国", "tier": 1, "tlabel": "公告/零部件先行", "posture": "none", "move": "车规芯片(MOSFET/IGBT/SiC)可靠性叙事;人形'早期阶段'", "sq": "secondary", "d1": "ODM + 功率半导体(Nexperia);机器人姿态零部件/可靠性先行,人形明确'早期'", "d2": "——", "d3": "未见具名人形 OEM 客户", "d4": "——", "read": "公告/零部件先行"}, {"co": "英业达", "en": "Inventec", "type": "ODM", "reg": "台湾", "tier": 1, "tlabel": "邻域基建(无人形)", "posture": "none", "move": "COMPUTEX 2026:Atlas Edge AI 服务器(IGX Thor)、iTwin 协作臂、巡检 UGV", "sq": "company-reported", "d1": "AI 服务器 + 双臂协作臂 iTwin + 巡检 UGV + Omniverse/Isaac 工具", "d2": "未见机器人股权", "d3": "未见具名 OEM 客户", "d4": "无人形制造/组装", "read": "邻域基础设施,无人形动作"}, {"co": "仁宝", "en": "Compal", "type": "ODM", "reg": "台湾", "tier": 0, "tlabel": "未见动作", "posture": "none", "move": "仅模糊智慧医疗框架;本轮未见人形/机器人组装动作", "sq": "single-source", "d1": "笔电/智能设备 ODM,模糊智慧医疗兴趣", "d2": "——", "d3": "——", "d4": "——", "read": "具身机器人未见动作(截至 2026-07),观察项非对手"}, {"co": "纬创资通", "en": "Wistron", "type": "ODM", "reg": "台湾", "tier": 0, "tlabel": "未见动作", "posture": "none", "move": "仅 RPA 软件 + AI 服务器产能;无实体机器人动作(勿与上纬/Swancor 混淆)", "sq": "secondary", "d1": "无专门机器人 BU;'机器人'实为 RPA 软件;核心是 AI 服务器/GPU 机架制造", "d2": "——", "d3": "——", "d4": "——", "read": "实体机器人未见动作,是数据中心基建盘。⚠ 勿混淆上纬新材(智元启元 Q1 壳)"}];
+const POST={own:["自造整机","E4592A"],arms:["军火商供货","0C8C88"],none:["未定/邻域","83979B"]};
+const TC={6:"0C8C88",5:"12B3AC",4:"3AA99B",3:"6FB8A8",2:"C9A24A",1:"C98A4A",0:"8AA0A3"};
+const st={post:new Set(["own","arms","none"]),type:new Set(["EMS","ODM","模组"]),reg:new Set(["台湾","中国"])};
+function typematch(t){if(st.type.has("EMS")&&t.indexOf("EMS")>=0)return true;if(st.type.has("ODM")&&t.indexOf("ODM")>=0)return true;if(st.type.has("模组")&&t.indexOf("模组")>=0)return true;return false;}
+function esc(s){const d=document.createElement("div");d.textContent=s==null?"":s;return d.innerHTML;}
+function render(){
+  const b=document.getElementById("board");b.innerHTML="";
+  const rows=DATA.filter(d=>st.post.has(d.posture)&&typematch(d.type)&&st.reg.has(d.reg)).sort((a,b)=>b.tier-a.tier);
+  document.getElementById("empty").style.display=rows.length?"none":"block";
+  rows.forEach(d=>{
+    const pc=POST[d.posture][1],pl=POST[d.posture][0],tc=TC[d.tier];
+    const sqmap={primary:"一手",secondary:"二手","company-reported":"公司口径","single-source":"单源"};
+    const c=document.createElement("div");c.className="card"+(d.self?" self":"");
+    c.innerHTML=`<div class="chead">
+      <div class="cnm"><div class="n">${esc(d.co)}${d.self?'<span class="star">★</span>':""}</div><div class="en">${esc(d.en)}</div></div>
+      <div class="cmid"><div class="mv">${esc(d.move)}</div>
+        <div class="tags"><span class="chip post" style="background:#${pc}">${pl}</span><span class="chip">${esc(d.type)}</span><span class="chip">${esc(d.reg)}</span><span class="chip sq-${d.sq}">${sqmap[d.sq]||d.sq}</span></div>
+      </div>
+      <div class="cright"><div class="tier"><span class="tlab">${esc(d.tlabel)}</span><span class="tierbar"><i style="width:${(d.tier/6*100)}%;background:#${tc}"></i></span></div><span class="exp">▸ 四维度</span></div>
+    </div>
+    <div class="cbody">
+      <div class="dims">
+        <div class="dim"><div class="dh">① 产品线布局</div><div class="dt">${esc(d.d1)}</div></div>
+        <div class="dim"><div class="dh">② 投资</div><div class="dt">${esc(d.d2)}</div></div>
+        <div class="dim"><div class="dh">③ 抢客户 / 设计导入</div><div class="dt">${esc(d.d3)}</div></div>
+        <div class="dim"><div class="dh">④ 落地部署</div><div class="dt">${esc(d.d4)}</div></div>
+      </div>
+      <div class="read"><b>读数:</b>${esc(d.read)}</div>
+    </div>`;
+    c.querySelector(".chead").addEventListener("click",()=>{c.classList.toggle("open");const e=c.querySelector(".exp");e.textContent=c.classList.contains("open")?"▾ 收起":"▸ 四维度";});
+    b.appendChild(c);
+  });
+}
+document.querySelectorAll(".pill[data-post]").forEach(x=>x.addEventListener("click",()=>{const k=x.dataset.post;st.post.has(k)?(st.post.delete(k),x.classList.add("off")):(st.post.add(k),x.classList.remove("off"));render();}));
+document.querySelectorAll(".pill[data-type]").forEach(x=>x.addEventListener("click",()=>{const k=x.dataset.type;st.type.has(k)?(st.type.delete(k),x.classList.remove("on"),x.classList.add("off")):(st.type.add(k),x.classList.add("on"),x.classList.remove("off"));render();}));
+document.querySelectorAll(".pill[data-reg]").forEach(x=>x.addEventListener("click",()=>{const k=x.dataset.reg;st.reg.has(k)?(st.reg.delete(k),x.classList.remove("on"),x.classList.add("off")):(st.reg.add(k),x.classList.add("on"),x.classList.remove("off"));render();}));
+render();
+</script>
