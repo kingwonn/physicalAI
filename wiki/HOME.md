@@ -4,7 +4,7 @@ slug: HOME
 updated: 2026-07-03
 confidence: verified
 ---
-> Annotated index of the physicalAI wiki: 29 topic pages on Physical AI worldwide,
+> Annotated index of the physicalAI wiki: 36 topic pages on Physical AI worldwide,
 > each researched by a web-research agent and passed through an adversarial
 > fact-check (`confidence: verified`). Start with the three core pages, then go
 > deep by technology, people/orgs, region, or capital.
@@ -28,6 +28,7 @@ disputes are catalogued in [Open problems](open-problems.md).
 | [History of Physical AI](history.md) | Unimate (1961) and Shakey → deep-RL/sim2real era → the 2022-26 robot-foundation-model turn and the humanoid mass-production wave |
 | [State of the Art (2026-07)](state-of-the-art.md) | Hub snapshot of the frontier: leading VLAs, first commercial humanoid fleets (BMW/GXO/Toyota), shipment shares, record capital |
 | [Physical AI Tech Tree](tech-tree.md) | Layered dependency map (hardware → perception → control → learning → foundation models → deployment) with per-branch bottlenecks |
+| [Visions & Theses](visions.md) | How the leaders frame Physical AI — dated primary quotes from Huang, Musk, Hassabis, Li, LeCun, Son, Wang Xingxing + the skeptic counterweight; convergence/divergence matrix |
 
 ## Technology
 
@@ -77,6 +78,12 @@ disputes are catalogued in [Open problems](open-problems.md).
 | [Physical Intelligence](company-pi.md) | Google-diaspora founding, ~$1.07B raised, π0→π0.7 model arc, openpi ecosystem, pre-revenue posture, skeptic case |
 | [NVIDIA Robotics Stack](company-nvidia.md) | Three-computer thesis, Isaac/GR00T/Cosmos/Jetson/Halos, partnership graph, ~1%-of-revenue reality vs $40T TAM rhetoric, platform-bet challengers |
 | [Tesla Optimus](company-optimus.md) | Generation timeline, Musk claims-vs-delivery ledger, Fremont line status, AI5 silicon, supply-chain choke points, demo skepticism record |
+| [Boston Dynamics](company-bostondynamics.md) | 100% Hyundai-owned pivot from research theater to production Atlas; partner-built brain; 25,000+ captive units; Spot/Stretch economics |
+| [Agility Robotics](company-agility.md) | Boring-warehouse-work-first thesis, $2.5B SPAC (Foxconn PIPE), most documented deployment record, RaaS economics |
+| [1X Technologies](company-1x.md) | Home-first consumer bet, tendon-driven safety hardware, teleop data flywheel, $20K NEO, delivery-risk falsifiers |
+| [Skild AI](company-skild.md) | Omni-bodied brain at >$14B, revenue-first contrast to PI, In-Q-Tel/defense angle, SoftBank convergence |
+| [AgiBot 智元](company-agibot.md) | China volume leader, open data/model ecosystem (AgiBot World, GO-1), ODM/EMS-partnered manufacturing (Lens JV), HK IPO path |
+| [UBTech 优必选](company-ubtech.md) | First listed humanoid maker, Walker S2 industrial ramp, U1 consumer launch, losses-vs-order-book financial reality |
 
 ## Reference
 

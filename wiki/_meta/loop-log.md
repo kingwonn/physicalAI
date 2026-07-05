@@ -225,3 +225,20 @@ leftovers, a translator's bracketed self-note in company-unitree corrected
 to ~$300M). Published the Chinese reader artifact (see LOOP.md State) and
 recorded the zh sync rule + PAUSED status in LOOP.md. Loop resumes only on
 user request; hot watch item remains Unitree IPO pricing (week of 07-06).
+
+## tier2-visions batch — 2026-07-05 (loop still paused; directed build)
+User set new direction: companies = top priority (tech route/bets/SWOT per
+player), leader theses next, and the endgame is an ODM boss-pitch (market
+size, entry points, 友商 moves, FOMO). Built 7 pages via 4-stage pipeline
+(research Fable → verify Fable → translate Sonnet → QC Sonnet), 28 agents,
+~2.3M tokens, ~1h42m: visions (13 corrections — Musk composite quotes
+restored to verbatim transcripts, Brooks attribution fixed, Huang CES line
+is video narration not spoken), company-bostondynamics (13 — official spec
+sheet 1.9m/90kg, 100% Hyundai ownership verified, DHL is MoU not order),
+company-agility (13), company-1x (9), company-skild (10), company-agibot
+(8), company-ubtech (13). All EN verified; all zh synced. Cross-page fixes
+applied (landscape-usa BD ownership, locomotion Atlas date). ODM gold:
+Lens Tech × AgiBot assembly JV = first real humanoid-EMS test; Foxconn ×
+Agility PIPE + manufacturing. HOME/llms.txt at 36 pages, zh HOME synced.
+Queue: ODM-pitch track added (odm-opportunity page next, then Chinese-first
+boss deck). GitHub push still blocked on deploy key.

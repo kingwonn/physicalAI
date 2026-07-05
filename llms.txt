@@ -1,6 +1,6 @@
 # physicalAI wiki
 
-> Git-versioned, LLM-maintained knowledge base on Physical AI worldwide: history, SOTA, tech tree, key people/orgs, regional landscapes, company deep dives, hardware, data, investment, open problems, safety/regulation, evaluation. 29 topic pages, each adversarially fact-checked (`confidence: verified`), last updated 2026-07-04. Maintained by an autonomous research loop (LOOP.md); every change is a git commit.
+> Git-versioned, LLM-maintained knowledge base on Physical AI worldwide: history, SOTA, tech tree, key people/orgs, regional landscapes, company deep dives, hardware, data, investment, open problems, safety/regulation, evaluation. 36 topic pages, each adversarially fact-checked (`confidence: verified`), last updated 2026-07-05. Maintained by an autonomous research loop (LOOP.md); every change is a git commit.
 
 ## Start here
 - [HOME](wiki/HOME.md): annotated index, field overview, reading order
@@ -9,6 +9,7 @@
 - [History of Physical AI](wiki/history.md): Unimate/Shakey → deep-RL/sim2real → the 2022-26 robot-foundation-model turn and humanoid mass-production wave
 - [State of the Art (2026-07)](wiki/state-of-the-art.md): hub snapshot — leading VLAs, first commercial humanoid fleets, shipment shares, record capital
 - [Physical AI Tech Tree](wiki/tech-tree.md): layered dependency map with per-branch bottlenecks (data, dexterity, reliability)
+- [Visions & Theses](wiki/visions.md): leaders' framings with dated primary quotes (Huang, Musk, Hassabis, Li, LeCun, Son, Wang) + skeptics; convergence/divergence matrix
 
 ## Technology
 - [Vision-Language-Action Models](wiki/vla-models.md): RT-1/RT-2 → π0.x, GR00T, Gemini Robotics, Helix — architectures, data, benchmarks, open-vs-closed
@@ -43,6 +44,12 @@
 - [Physical Intelligence](wiki/company-pi.md): founding team, ~$1.07B raised, π0→π0.7 arc, openpi ecosystem, pre-revenue posture
 - [NVIDIA Robotics Stack](wiki/company-nvidia.md): three-computer thesis, Isaac/GR00T/Cosmos/Jetson/Halos, ~1%-of-revenue reality vs $40T TAM
 - [Tesla Optimus](wiki/company-optimus.md): generation timeline, claims-vs-delivery ledger, Fremont status, AI5 silicon, supply chain
+- [Boston Dynamics](wiki/company-bostondynamics.md): 100% Hyundai-owned, production Atlas, partner-built brain, Spot/Stretch economics
+- [Agility Robotics](wiki/company-agility.md): warehouse-first thesis, $2.5B SPAC w/ Foxconn PIPE, deployment record, RaaS economics
+- [1X Technologies](wiki/company-1x.md): home-first bet, tendon-driven NEO, teleop flywheel, delivery-risk falsifiers
+- [Skild AI](wiki/company-skild.md): omni-bodied brain at >$14B, revenue-first posture, In-Q-Tel/defense angle
+- [AgiBot](wiki/company-agibot.md): China volume leader, open data ecosystem, ODM/EMS manufacturing path, HK IPO
+- [UBTech](wiki/company-ubtech.md): first listed humanoid maker, Walker industrial ramp, U1 consumer launch, financial reality
 
 ## Reference
 - [Glossary](wiki/glossary.md): ~35 core Physical AI terms, each cross-linked to its covering page
