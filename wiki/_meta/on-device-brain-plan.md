@@ -10,8 +10,8 @@ Audience: technical + strategic (Quectel-style on-device compute-module maker).
 
 ## Section plan (12 sub-topics → 6 research iterations + 1 synthesis)
 
-- [ ] **A. 大脑架构基础 & 双系统** — perception→cognition→action; System 1 (fast reactive) / System 2 (slow deliberative VLA) dual-system; what "brain" means; Helix / GR00T N1 / π0 architectures.
-- [ ] **B. 云边分工 (split-brain / 云边混合)** — latency/reliability/privacy case for on-device; what MUST be local vs cloud; bandwidth & latency budgets; the offline-capability argument.
+- [x] **A. 大脑架构基础 & 双系统** — perception→cognition→action; System 1 (fast reactive) / System 2 (slow deliberative VLA) dual-system; what "brain" means; Helix / GR00T N1 / π0 architectures.
+- [x] **B. 云边分工 (split-brain / 云边混合)** — latency/reliability/privacy case for on-device; what MUST be local vs cloud; bandwidth & latency budgets; the offline-capability argument.
 - [ ] **C. 端侧 VLA 推理算力需求** — TOPS/memory-bandwidth to run a VLA at N Hz; real numbers per model; the compute ladder (10/48/77/700/2070); INT8/FP4.
 - [ ] **D. 面向端侧的模型优化** — quantization (INT4/INT8/FP4), distillation, small-VLA, action-head choices (diffusion/flow-matching/autoregressive tokens) and their latency; on-device LLM.
 - [ ] **E. 实时控制的切分** — AI-module (perception/policy 7-50 Hz) + MCU (motor control ~1 kHz); determinism, safety, why the split; the two-brain hardware pattern.
