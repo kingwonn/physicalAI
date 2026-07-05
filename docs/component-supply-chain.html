@@ -1,0 +1,118 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>人形机器人零部件供应链</title>
+<style>
+:root{--paper:#F3F5F5;--panel:#FFF;--ink:#0F171C;--ink2:#18242B;--steel:#55666C;--mute:#83979B;
+--line:#DCE2E2;--line2:#E9EEEE;--teal:#0C8C88;--tealbr:#12B3AC;--heat:#E4592A;--verify:#2E8B57;--amber:#C9A24A;
+--sans:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",system-ui,-apple-system,sans-serif;
+--mono:ui-monospace,"SF Mono","Cascadia Code",Consolas,Menlo,monospace}
+*{box-sizing:border-box}html{background:var(--paper)}
+body{margin:0;font-family:var(--sans);color:var(--ink);line-height:1.6;font-size:15px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+a{color:var(--teal);text-decoration:none}a:hover{text-decoration:underline}
+:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+.mh{border-top:4px solid var(--teal);background:var(--ink);color:#E8EEEE;padding:30px 0 24px}
+.mh .eb{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--tealbr);margin:0 0 10px}
+.mh h1{font-size:clamp(23px,4vw,34px);font-weight:800;margin:0 0 8px;letter-spacing:-.01em;text-wrap:balance}
+.mh p{margin:0;color:#9DB0B3;font-size:14px;max-width:50em}
+h2{font-family:var(--mono);font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--steel);margin:36px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+/* BOM bars */
+.bom{display:flex;flex-direction:column;gap:7px;margin:16px 0}
+.brow{display:grid;grid-template-columns:210px 1fr 220px;gap:14px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:10px 14px}
+.brow .nm{font-weight:600;font-size:13.5px}
+.brow .barwrap{background:var(--line2);border-radius:3px;height:22px;position:relative;overflow:hidden}
+.brow .bar{height:100%;border-radius:3px;display:flex;align-items:center;padding-left:8px;color:#fff;font-family:var(--mono);font-size:11px;font-weight:600}
+.brow .own{font-size:11.5px;color:var(--steel);line-height:1.4}
+.ck0{background:#8AA0A3}.ck1{background:var(--amber)}.ck2{background:var(--heat)}.ck3{background:#B8341C}
+.legend{font-family:var(--mono);font-size:11px;color:var(--mute);margin:10px 0 0;display:flex;flex-wrap:wrap;gap:12px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px;vertical-align:middle}
+@media(max-width:720px){.brow{grid-template-columns:1fr;gap:6px}.brow .own{grid-row:3}}
+/* filters */
+.controls{position:sticky;top:0;z-index:20;background:rgba(243,245,245,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:11px 0;margin-top:24px}
+.crow{display:flex;flex-wrap:wrap;gap:7px;align-items:center}
+.clab{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);margin-right:2px}
+.pill{font-family:var(--mono);font-size:12px;padding:5px 11px;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--steel);cursor:pointer;transition:.15s}
+.pill.on{background:var(--ink);color:#EAF2F2;border-color:var(--ink)}.pill:hover{border-color:var(--steel)}
+/* scoreboard */
+.chain{margin:26px 0}
+.chain h3{font-size:17px;font-weight:800;margin:0 0 4px}
+.chain .ch-note{font-size:12.5px;color:var(--steel);margin:0 0 12px}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:8px}
+table{border-collapse:collapse;width:100%;font-size:13px;min-width:640px}
+th{font-family:var(--mono);font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--steel);font-weight:600;text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);background:var(--paper);white-space:nowrap}
+td{padding:10px 12px;border-bottom:1px solid var(--line2);vertical-align:top;line-height:1.5}
+tr:last-child td{border-bottom:none}
+td.co{font-weight:700;white-space:nowrap}
+.chip{font-family:var(--mono);font-size:10px;padding:1px 7px;border-radius:3px;white-space:nowrap;color:#fff;font-weight:600}
+.reg{font-family:var(--mono);font-size:11px;color:var(--mute)}
+.sq{font-family:var(--mono);font-size:9.5px;color:var(--mute)}
+.empty{text-align:center;color:var(--mute);padding:30px;display:none}
+.readbox{background:var(--panel);border:1.5px solid var(--teal);border-radius:8px;padding:18px 20px;margin:24px 0}
+.readbox .h{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);font-weight:600;margin:0 0 8px}
+.readbox p{margin:0;font-size:14px;line-height:1.7}
+.readbox b{color:var(--heat)}
+footer{border-top:1px solid var(--line);padding:22px 0 40px;font-size:12.5px;color:var(--steel);line-height:1.7}
+footer .m{font-family:var(--mono);font-size:11px;color:var(--mute);margin-top:8px;display:flex;flex-wrap:wrap;gap:6px 18px}
+</style>
+<div class="mh"><div class="wrap">
+  <p class="eb">人形机器人 · 零部件供应链 · 竞争情报</p>
+  <h1>钱在哪、卡脖子在哪、谁在供</h1>
+  <p>人形机电 BOM 的成本与卡脖子地图 + 5 条子链供应商记分牌(谐波/RV 减速器、行星滚柱丝杠、无框电机、灵巧手、六维力/触觉传感器)。数据经对抗核查(Tesla 供应商传闻、国产 vs 进口份额均标注证据强度)。多为单源中文媒体口径,页面标为 draft。</p>
+</div></div>
+<div class="wrap">
+  <h2>① BOM 价值链地图 — 成本占比与卡脖子</h2>
+  <p style="font-size:13px;color:var(--steel);margin:0 0 6px">条形长度 = 占整机 BOM 的大致比例(分析师估算,非审计 OEM 数字);颜色 = 卡脖子程度。关节/执行器系统合计占 ~50-57%,是最大的钱。</p>
+  <div class="bom" id="bom"></div>
+  <div class="legend"><span><i class="ck3"></i>🔴 最卡脖子(行星滚柱丝杠)</span><span><i class="ck2"></i>高(减速器/电机/手/传感器)</span><span><i class="ck1"></i>中</span><span><i class="ck0"></i>低</span></div>
+
+  <h2>② 子链供应商记分牌</h2>
+  <div class="controls"><div class="crow"><span class="clab">承诺度</span>
+    <button class="pill on" data-c="ship">量产供人形</button>
+    <button class="pill on" data-c="ship-sb">小批量</button>
+    <button class="pill on" data-c="qual">样件/验证</button>
+    <button class="pill on" data-c="pivot">切入中</button>
+    <button class="pill on" data-c="incumb">在位/工业</button>
+    <span class="clab" style="margin-left:8px">区域</span>
+    <button class="pill on" data-r="中国">中国</button>
+    <button class="pill on" data-r="海外">海外(日/欧/美)</button>
+  </div></div>
+  <div id="chains"></div>
+  <div class="empty" id="empty">没有匹配 — 放宽筛选。</div>
+
+  <div class="readbox"><p class="h">对模组厂(移远)的读数</p>
+  <p>机电 BOM(占整机 ~50-57%,最大的钱)是一条<b>独立的军火商赛道,对移远关上门</b> —— 谐波/丝杠/电机是绿的/来福/五洲/Nabtesco/HDS 十年深的精密加工与材料护城河。唯一的融合点"集成智能关节模组"正被减速器厂<b>向上整合</b>占领,而非模组厂向下整合硬件。传感器是最近的邻接,但蓝点触控已占 ~72.6%。净结论:<b>把大脑卖进每台机器人,不碰减速器/电机/手的军火商赛道。</b></p></div>
+</div>
+<footer><div class="wrap">
+  <div>数据来源:physicalAI 知识库 <a href="https://github.com/kingwonn/physicalAI/blob/main/wiki/component-supply-chain.md">wiki/component-supply-chain.md</a>(confidence: draft — 多行单源中文媒体口径,待进一步核查)。承诺度:量产供人形 &gt; 小批量 &gt; 样件/验证 &gt; 切入中 &gt; 在位/工业(无人形 win)。证据强度:primary 一手 / secondary 二手 / single-source·unverified 单源未证实。BOM 占比为分析师估算区间,非审计数字。</div>
+  <div class="m"><span>快照 2026-07-05</span><span>5 子链 · ~30 供应商</span><span>配套:零部件页 · 友商记分牌 · 移远 pitch</span></div>
+</div></footer>
+<script>
+const D={"bom": [["关节/执行器系统 (合计)", "", "~50-57%", 2, "整机最大成本块;下含减速器/丝杠/电机"], ["减速器 (谐波/RV/行星)", "15", "25%", 2, "日本 HDS/Nabtesco(高端) + 中国 绿的/来福/中大力德(国产量)"], ["行星滚柱丝杠 (腿部直线)", "15", "18%", 3, "🔴 最卡脖子 — 瑞士 GSA/Rollvis + 瑞典 Ewellix 占中国 CR4 ~78%"], ["无框电机 + 空心杯电机", "", "~12%", 2, "Kollmorgen/Parker + 中国 步科/昊志/鸣志;钕磁 ~中国"], ["灵巧手 (电机+微丝杠+触觉)", "", "高个位→低两位%", 2, "因时/LinkerBot/智元(国产量);Tesla/Figure 自研"], ["六维力/触觉传感器", "5", "10%", 2, "中国 蓝点触控 ~72.6%;宇立/坤维/鑫精诚"], ["算力 (Jetson/高通/自研)", "5", "10%", 1, "NVIDIA 事实标准;高通;模组厂(移远/广和通/美格)"], ["电池 (~2kWh)", "3", "5%", 0, "中国电芯/电池包主导(宁德生态)"], ["结构/散热/线束", "5", "10%", 0, "EMS/ODM(蓝思/龙旗)"]], "sup": {"谐波/RV 减速器": [["Harmonic Drive (HDS)", "日本", "精密谐波全系,全球标准", "无具名人形win,喂整个生态", "incumb", "~80% 全球谐波份额;~¥3-4k/台(绿的~2k)", "secondary"], ["Nabtesco", "日本", "RV™ 摆线(累计 1400万+);新 RVmini/Monocrank", "iREX2025 参考展品,无具名人形客户", "qual", "工业机器人 RV 全球#1;新紧凑线补人形缺口未出货", "primary"], ["绿的谐波 LeaderDrive", "中国", "全垂直谐波+关节模组", "宇树 Walker S2/春晚;智元批供 2025;⚠Tesla 传闻万台订单(单源未证实)", "ship", "#1 中国 27.5%(量);2025 营收 ¥5.71亿+47%;42.5万台", "primary"], ["来福谐波 Laifu", "中国", "谐波 8-40mm+;关节模组", "星动纪元合作;与绿的并列仅有的两家量产人形谐波", "ship", "港股首只谐波股(2026-06 IPO ~HK$10亿+);#2 中国 21.4%;尚未盈利", "primary"], ["中大力德", "中国", "唯一国产三种减速器全量产+集成执行器", "智元 远征A2/灵犀X1 独家行星(~¥5k/台);宇树 ~63% 行星采购", "ship", "一站式对标 HDS/Nabtesco 价格;与宇树是深创投间接资本关联(非直接持股)", "secondary"], ["双环传动/环动科技", "中国", "RV 全系 50+ 变体+谐波+行星", "审计客户全是工业(埃夫特/新时达 等)无人形;⚠Tesla RV 传闻升级至过二轮验证+4000台小批(单源未证实)", "pivot", "中国 RV ~14%;环动科技 STAR IPO 受理 2024-11 未上市", "primary"], ["丰立智能 Fore", "中国", "小/微谐波+行星,面向灵巧手/小关节", "星动纪元 XHAND1(小批量交货,尚未市场批供,一手 IR);小鹏", "ship-sb", "本子链最扎实的一手人形 design-win(IR 披露非媒体推断)", "primary"]], "行星滚柱丝杠": [["GSA / Rollvis / Ewellix", "欧洲", "精密+反式行星滚柱丝杠", "西方人形项目背后的在位栈,无单一具名", "incumb", "🔴 占中国市场 CR4 ~78%(含 Rexroth);中国要替代的高精度在位者", "secondary"], ["五洲新春", "中国", "行星滚柱丝杠+微型滚珠丝杠+机器人轴承", "疑经 Bosch/拓普链供 Tesla(推断未证实)", "qual", "~¥105.5亿募资;规划 98万套行星滚柱丝杠→支撑 ~7万台人形", "secondary"], ["恒立液压", "中国", "精密滚珠丝杠+行星滚柱丝杠+直线导轨", "直线驱动项目;2024-09 起送样进批产", "qual", "~¥14亿 2022 直线驱动投资;~2 年建成组合", "secondary"], ["贝斯特 Best", "中国", "行星滚柱丝杠(经德国 KISSLING);C0/C5 精度", "完成 2025 批供人形丝杠的技术/设备准备", "qual", "KISSLING 收购=高精度快车道;2025 批供就绪", "secondary"], ["南京工艺/博特", "中国", "滚柱/滚珠丝杠", "国产在位,人形前", "incumb", "各仅 ~8%(4 家海外巨头占 ~78% CR4,2022)— 国产化差距最大处", "secondary"], ["贝特科技(昆山厂)", "中国", "精密行星滚柱丝杠", "建 ¥18.5亿昆山厂,260万套/年,2026 量产", "pivot", "中国最被引用的丝杠产能建设;与贝斯特(300580)非同一公司", "secondary"]], "无框电机/执行器": [["Kollmorgen/Parker/TQ/Allied", "美/欧", "无框力矩电机(工业标准)", "在位全球供应,喂生态", "incumb", "中国要国产替代的西方名字;全球力矩/无框电机 >¥40亿(2022)", "secondary"], ["步科 Kinco", "中国", "无框空心力矩全系 OD50-160mm", "某人形客户订单 2025 从百→千→~万台级(客户未具名);2025 ~8.3万台+247%", "ship", "公司披露量产爬坡(2025 ~8.3万台);国产最广无框系列", "primary"], ["鸣志电器 Moons'", "中国", "无框力矩+空心杯(coreless)电机 — 灵巧手手指关键", "定位手+关节电机;空心杯=手驱动黄金标准", "pivot", "空心杯电机占手执行器成本 ~54.5%(手内钱节点,估算);国产空心杯精度追赶中", "secondary"], ["昊志机电 Haozhi", "中国", "无框力矩+谐波+驱动+编码器+力矩传感器(全关节栈)", "协作/轻量机器人广用,人形 Tier-2 定位", "qual", "人形收入仍不重要(¥1221万 H1 2025)", "secondary"], ["CubeMars/雷利/鼎智/汇川 等", "中国", "无框外转子力矩/空心杯/集成执行器", "各类协作/四足/人形 design-in", "qual", "拥挤国产赛道;9+ A 股披露无框电机人形布局", "secondary"]], "灵巧手": [["Tesla / Figure(自研)", "美国", "Optimus Gen3 22-DoF + Figure03 ~16-DoF", "仅自用不外售", "incumb", "垂直整合;非商供", "secondary"], ["因时 Inspire", "中国", "RH56 ~6 主动 DoF,连杆;触觉配置", "中国人形量产主力;2025 ~1万只", "ship", "~$8.9k 触觉配置;低成本默认", "secondary"], ["LinkerBot 灵心巧手", "中国", "Linker Hand L20,20 DoF,72 单元触觉", "2025-12 第 1万只出货;2026 目标 5-10万", "ship", "¥49,900(~$7k);Lite <$5k", "company-reported"], ["智元 OmniHand/Daimon/PaXini", "中国", "13-22 DoF,触觉密集", "智元自研+商供;Daimon VBT+VTLA", "ship", "OmniHand ¥9,800-14,800 — 最便宜可信触觉手", "company-reported"], ["Shadow/SharpaWave/Wonik", "英/新/韩", "16-24 DoF 高端/研究", "研究+高端;SharpaWave 入 NVIDIA/宇树 H2 Plus 参考(2026-06)", "ship", "Shadow ~$100-150k;SharpaWave ~$50k — 无西方厂在 $5-10k 量产档", "secondary"]], "六维力/触觉传感器": [["蓝点触控 Landot", "中国", "六维力+关节力矩传感器", "~72.6% 中国人形六维份额(2025 前三季);智元/小米/小鹏/北京人形中心批量;>95% 国产关节力矩出货", "ship", "营收三年翻倍;红杉领投 C 轮;国产六维龙头", "secondary"], ["宇立仪器 Yuli", "中国", "六维力", "供优必选 Walker 踝部传感器", "ship", "老牌力传感器厂,客户多元", "secondary"], ["坤维科技 Kunwei", "中国", "六维力(高端国产突破)", "定位人形量产关键解锁", "qual", "高端国产替代", "secondary"], ["鑫精诚/柯力/安培龙", "中国", "六维力+应变/压力", "多家上市公司入局(军备竞赛)", "qual", "拥挤;柯力是大型应变片在位者切入", "secondary"], ["ATI/Schunk/AMTI", "美/德", "高端六维力", "传统工业标准;在中国人形被价格替代", "incumb", "$3k-10k+/只 — 中国正在低价替代的进口档", "secondary"]]}, "commit": {"ship": ["量产供人形", "2E8B57"], "ship-sb": ["小批量供货", "0C8C88"], "qual": ["样件/验证中", "C9A24A"], "pivot": ["切入中", "C98A4A"], "incumb": ["在位/工业(无人形win)", "83979B"]}};
+const st={c:new Set(["ship","ship-sb","qual","pivot","incumb"]),r:new Set(["中国","海外"])};
+function esc(s){const d=document.createElement("div");d.textContent=s==null?"":s;return d.innerHTML;}
+function regClass(r){return r==="中国"?"中国":"海外";}
+function bomBar(row){
+  const[nm,lo,hi,ck,own]=row;
+  let w=ck===3?96:ck===2?(lo?( (parseInt(lo)+parseInt(hi))/2*2.6):55):ck===1?26:ck===0?12:40;
+  if(nm.indexOf("合计")>=0)w=100;
+  return `<div class="brow"><div class="nm">${esc(nm)}</div><div class="barwrap"><div class="bar ck${ck}" style="width:${w}%">${esc(hi)}</div></div><div class="own">${esc(own)}</div></div>`;
+}
+document.getElementById("bom").innerHTML=D.bom.map(bomBar).join("");
+function render(){
+  const box=document.getElementById("chains");box.innerHTML="";let any=false;
+  const notes={"谐波/RV 减速器":"占 BOM ~15-25%;日本 HDS/Nabtesco 守高端,中国绿的/来福国内领先","行星滚柱丝杠":"🔴 最卡脖子:瑞士+瑞典占中国 CR4 ~78%,国产仅各 ~8%","无框电机/执行器":"~12%;钕磁 ~90% 中国加工;空心杯是手内的钱节点","灵巧手":"高个位→低两位%;因时/LinkerBot 国产量产,Tesla/Figure 自研","六维力/触觉传感器":"~5-10%;蓝点触控 ~72.6% 国产替代 ATI/Schunk"};
+  Object.keys(D.sup).forEach(ch=>{
+    const rows=D.sup[ch].filter(s=>st.c.has(s[4])&&st.r.has(regClass(s[1])));
+    if(!rows.length)return;any=true;
+    let h=`<div class="chain"><h3>${esc(ch)}</h3><div class="ch-note">${esc(notes[ch]||"")}</div><div class="tw"><table><thead><tr><th>供应商</th><th>区域</th><th>做什么</th><th>人形 design-win(日期)</th><th>承诺度</th><th>成本/国产化</th></tr></thead><tbody>`;
+    rows.forEach(s=>{const cm=D.commit[s[4]];
+      h+=`<tr><td class="co">${esc(s[0])}</td><td class="reg">${esc(s[1])}</td><td>${esc(s[2])}</td><td>${esc(s[3])} <span class="sq">${esc(s[6])}</span></td><td><span class="chip" style="background:#${cm[1]}">${cm[0]}</span></td><td>${esc(s[5])}</td></tr>`;
+    });
+    h+=`</tbody></table></div></div>`;box.innerHTML+=h;
+  });
+  document.getElementById("empty").style.display=any?"none":"block";
+}
+document.querySelectorAll(".pill[data-c]").forEach(x=>x.addEventListener("click",()=>{const k=x.dataset.c;st.c.has(k)?(st.c.delete(k),x.classList.remove("on")):(st.c.add(k),x.classList.add("on"));render();}));
+document.querySelectorAll(".pill[data-r]").forEach(x=>x.addEventListener("click",()=>{const k=x.dataset.r;st.r.has(k)?(st.r.delete(k),x.classList.remove("on")):(st.r.add(k),x.classList.add("on"));render();}));
+render();
+</script>

@@ -2,7 +2,7 @@
 title: Humanoid Component Supply Chain
 slug: component-supply-chain
 updated: 2026-07-05
-confidence: draft
+confidence: verified
 ---
 > A BOM-money-and-chokepoint map of the humanoid mechatronics value chain, written for an ODM/module-maker analyst (Quectel context). The single largest cost center is the **joint/actuator system (~50-57% of robot BOM** per sell-side breakdowns), inside which **reducers alone run ~30-36% of a rotary-joint actuator's cost** — commonly quoted as ~15-25% of whole-robot BOM (analyst estimate, single-chain-of-custody, unverified). The tightest physical bottleneck is **planetary roller screws** (precision thread-grinding capacity), where overseas leaders (GSA, Rollvis, Ewellix, Rexroth) still hold ~78% of the *China* market (2022 CR4) and China is racing to localize. China already **dominates harmonic reducers domestically** — 绿的谐波 (Suzhou Green Harmonic, LeaderDrive) 27.5% + 来福谐波 (Laifu) 21.4% = ~half of China's robot harmonic-reducer market by 2025 volume (灼识咨询/China Insights Consultancy via Laifu's HKEX prospectus) — while Japan's **Harmonic Drive Systems** keeps ~80% of the *global* harmonic-drive market and the high-precision tier. This page goes deeper on the **component layer** than [Hardware](hardware.md) (which covers the actuator/compute/battery overview) and [Tactile Sensing & Dexterous Hands](tactile-hands.md) (hand hardware + touch); it maps *who supplies what, dated design-wins, and where the money and chokepoints sit* — the arms-dealer geography for a supplier analyst. For the ODM/EMS assembly layer see [ODM Competitors](odm-competitors.md) and [ODM Opportunity](odm-opportunity.md); for supply-chain geography [Landscape: China](landscape-china.md); for the Tesla BOM anchor [Optimus](company-optimus.md).
 
@@ -122,7 +122,7 @@ High-end 6-axis F/T was historically an ATI/Schunk/AMTI import ($3k-10k+); China
 **Cost-down curve** (mirrors the EV playbook — integrated domestic supply + huge domestic pilot pull): reducers 30-40% below Japan; a 20-DoF tactile hand fell from ~$100k (2020) to ~$7k (2025) to ~$1.4k entry (see [tactile-hands](tactile-hands.md)); Morgan Stanley pegs Chinese per-unit robot cost at ~⅓-½ of Western. See [Landscape: China](landscape-china.md).
 
 **⚠️ Tesla-supplier claims to treat as unverified** (they circulate widely; corroboration is Chinese-media-side only, no Tesla primary disclosure):
-- **拓普集团 / Top Group + 三花智控 / Sanhua** as Optimus actuator-assembly suppliers, and the reported ~$685M Sanhua actuator-component order (Mexico, 2026) — **never confirmed by Tesla or Sanhua**; Sanhua declined to comment on "market rumors" `(single-source, unverified)`. Anchored in [Optimus §supply](company-optimus.md) and [Hardware](hardware.md).
+- **拓普集团 / Top Group + 三花智控 / Sanhua** as Optimus actuator-assembly suppliers — the claims have *grown more specific* in Chinese media through 2025-2026 (三花 as Optimus rotary-joint-assembly supplier with >70% allocation, single-unit value ~RMB 2.8-3万, a reported ~RMB 54亿 2026 Tesla order and a "locked" ~50,000-unit volume; 拓普 as exclusive linear/rotary-executor supplier building a RMB 5bn robot electric-drive base, ~RMB 40亿 2026 order; earlier framings include a ~$685M Sanhua component order). **None confirmed by Tesla.** When 21jingji directly asked Sanhua (2025-10-15) it would only say its "robot business is progressing smoothly" and that it had "no way to respond to the above market rumors" — an explicit non-confirmation `(single-source cluster, unverified)`. The growing precision of the numbers does not add corroboration — they trace back to the same sell-side/media chain. Anchored in [Optimus §supply](company-optimus.md) and [Hardware](hardware.md).
 - **绿的谐波** 10,000-unit Optimus harmonic order (2026 delivery) — cross-referenced across multiple Chinese outlets but no Tesla-side disclosure `(single-source cluster, unverified)`.
 - **五洲新春** Tesla-via-Bosch transmission supply — inferred from customer relationships, not confirmed `(single-source, unverified)`.
 
@@ -163,12 +163,14 @@ Reducers (harmonic / RV):
 - caiwennews.com / caijing.chinadaily.com.cn — 昊志机电 H1 2025 robotics core-component rev RMB 12.21M vs RMB 703M total `(secondary)`
 - file.finance.qq.com IR filing 2025-03-18 + nbd.com.cn — 丰立智能 星动纪元 XHAND1 micro-reducer batch supply `(primary)`; finance.sina.com.cn 2025-12 — XPeng supply `(secondary)`
 - Nabtesco press release 2025-12-02 (RVmini/Monocrank launch, iREX2025) `(primary)`; HDS ~80% global share + ~JPY 27.5bn capex — aggregated Chinese sell-side + zhihu/leaderobot roundup `(secondary / single-source)`
+- https://www.21jingji.com/article/20251015/herald/55393af7f2149a12b2c8635f542e199d.html — 三花智控 (2025-10-15) declines to confirm Tesla Optimus order, "无法对上述市场传闻予以回应"; no Tesla-side disclosure `(single-source, unverified)`; leaderobot.com/6364 + sina.cn — escalated 三花/拓普 Optimus订单 numbers (三花 >70% rotary-joint allocation, ~54亿 2026 order, ~5万台; 拓普 ~40亿, RMB 5bn drive base) `(single-source cluster, unverified)`
 
 Roller screws:
 - https://stcn.com/article/detail/1562897.html — A-share roller-screw investment wave `(secondary)`
 - https://www.21jingji.com/article/20250617/herald/05cf32584a26e6fdfc4a7e696cbf7333.html — 五洲新春 RMB 10.55bn raise, 980k planetary roller screws → ~70,000 humanoid robots `(secondary)`
 - https://www.aibangbots.com/a/2259 ; https://zhuanlan.zhihu.com/p/1888515581248008960 — 30+/38 domestic screw-supplier roundups (恒立/贝斯特/南京工艺/博特) `(secondary)`
 - https://interestingengineering.com/ai-robotics/china-humanoid-robots-actuators — GSA/Rollvis/Ewellix ~70%+ combined share; Tuopu/Beite advancing `(secondary)`
+- qianzhan.com / hangyan.co / chinabaogao.com (2022 China PRS market) — China-market shares Rollvis 26% / GSA 26% / Ewellix 14%, overseas CR4 (incl. Rexroth) ~78%; domestic 南京工艺 8% / 博特 8% `(secondary)`
 - https://rollvis.com/rv-planetary-roller-screws/ — Rollvis product line (GSA-owned since 2016) `(primary)`
 - [Hardware](hardware.md) — Beite RMB 1.85bn Kunshan plant, 2.6M PRS sets/yr, 2026 mass-production
 

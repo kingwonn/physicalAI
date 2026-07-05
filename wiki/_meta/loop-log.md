@@ -328,3 +328,13 @@ console existed only as Artifacts. Now the whole bilingual wiki (incl.
 odm-competitors) is browsable as HTML from the repo. Prepended doctype+utf-8
 to the Artifact-fragment files for standalone/Pages serving. Enable Pages
 (Settings → Pages → main /docs) to serve the portal live. Loop paused.
+
+## component supply-chain integration — 2026-07-05
+Component page zh mirror confirmed (wiki-zh/component-supply-chain.md, from
+the workflow Sync phase), added to zh HOME + both readers. Built interactive
+HTML (docs/component-supply-chain.html + Artifact): BOM value-chain map
+(9 subsystems, cost% + chokepoint color) + 5 sub-chain supplier scoreboards
+(~28 suppliers, filter by commitment/region) + Quectel read. Added to docs/
+portal. Readers rebuilt (41 EN / 40 zh). EN page kept confidence:draft
+(many single-source Chinese-media rows) — flagged in HTML + queue for a
+future adversarial verify pass.
