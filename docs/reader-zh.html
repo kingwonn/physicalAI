@@ -592,6 +592,8 @@ hr{border:none;border-top:1px solid var(--line);margin:22px 0}
 <tr><td>J</td><td>端侧学习与数据飞轮</td><td>云训练+端适配;车队数据飞轮;OTA;测试时算力</td></tr>
 <tr><td>K</td><td>"做好"的判据与评价</td><td>延迟/泛化/可靠性/功耗/成本/可更新的评分标尺</td></tr>
 <tr><td>L</td><td>参考架构与模组厂视角</td><td>三层收官架构 + 模组规格清单 + 移远战略读数</td></tr>
+<tr><td>M</td><td>安全与对抗鲁棒性</td><td>权重保护/安全启动/TEE、VLM 提示注入与对抗补丁、UniPwn、供应链信任</td></tr>
+<tr><td>N</td><td>内存容量/并发/量产标定</td><td>多模型共驻单 SoC、GPU 分时(MPS/MIG)、传感器融合预算、bring-up 与预集成价值</td></tr>
 </tbody></table></div>
 <hr>
 <h2>大脑架构基础与双系统 (Architecture &amp; Dual-System)</h2>
@@ -1548,7 +1550,153 @@ hr{border:none;border-top:1px solid var(--line);margin:22px 0}
 <li><a href="https://automate.org/" target="_blank" rel="noopener">https://automate.org/</a> — QNX/机器人功能安全:独立看门狗/联锁,IEC 61508 SIL-2/3,OTA 依据</li>
 <li><a href="https://arxiv.org/abs/2603.22703" target="_blank" rel="noopener">https://arxiv.org/abs/2603.22703</a> — Learning Safe-Stoppability Monitors for Humanoid Robots</li>
 </ul>
-<hr></article>
+<hr>
+<h2>安全与对抗鲁棒性 (Security &amp; Adversarial Robustness)</h2>
+<blockquote>
+<p>端侧具身大脑是一个<strong>具备执行能力(actuation-capable)</strong>的攻击面:一个被越狱的规划器或一个被伪造的感知输入,泄露的不是数据,而是<strong>驱动电机运动</strong>。必须分开防御两类威胁——<strong>经典设备安全</strong>(安全启动 secure boot、TEE、签名 OTA、信任根 root-of-trust),旗舰 SoC 在这方面已经很强;以及<strong>AI 原生的对抗鲁棒性</strong>(VLM 越狱、对抗补丁、供应链模型后门),截至 <strong>2026-07</strong>,<strong>没有任何已发布现场实效数据的量产级缓解方案</strong>。2025 年针对 Unitree 的 UniPwn 蠕虫——源自一个硬编码密钥、可自我传播、可获取 root 权限——是"在量产机器人上出货一套不设防的连接性技术栈绝非假设情形"的标准反例(primary)。对模组厂(模组厂)的读数:硬件安全是一个<strong>采购</strong>问题(挑对 SoC 即可解决),对抗鲁棒性是一个<strong>开放研究</strong>问题,你必须围绕它做架构设计,而不是靠采购解决。</p>
+</blockquote>
+<h3>1. 芯片级设备安全——旗舰 SoC 实际能给你什么</h3>
+<div class="tw"><table><thead><tr><th>能力</th><th>Jetson Thor / AGX Thor (NVIDIA)</th><th>Qualcomm robotics(SPU 级,含 Dragonwing IQ10)</th></tr></thead><tbody>
+<tr><td>硬件信任根</td><td>片上 <strong>BootROM</strong> 通过 <strong>PKC</strong> 认证 BCT/bootloader/热启动向量;<strong>Thor 支持最多 16 个 OEM PKC 密钥</strong>(RSA-3K、ECDSA P-256、ECDSA P-521、XMSS——各 4 个槽位),其哈希烧录进一次性写入的 <code>PublicKeyHash</code> 熔丝,并配有<strong>吊销策略(revocation policy)</strong>熔丝,以应对出货后密钥被攻破的情形(primary——早期的 2-哈希 / FUSE_PK_H1-H2 方案是 Orin/Xavier 时代的设计;已更正为 Thor 的 16 密钥方案)</td><td><strong>SPU</strong>:物理独立的安全子系统,拥有自己的引导加载程序/引导链、专用时钟、硬件防重放、密钥管理+加密管理单元(primary)</td></tr>
+<tr><td>TEE</td><td><strong>OP-TEE</strong>(基于 Arm TrustZone);OP-TEE 通过安全引擎从一个 256 位熔丝密钥(OEM_K1)派生根密钥 <strong>EKB_RK</strong>,把安全启动串联到 TEE 密钥层级(primary)</td><td>SPU 托管的 TEE;<strong>可获得 Common Criteria EAL4+ 认证</strong>,<strong>符合 StrongBox 标准</strong>(primary)</td></tr>
+<tr><td>机密计算</td><td><strong>NVIDIA 机密计算</strong>(受保护的 GPU enclave,无需改代码)是 **Blackwell <em>独立 dGPU</em>(H100/B200 级)特性,不在 Jetson AGX Thor 上提供<strong>——一位开发者在 AGX Thor 论坛请求启用 CC + </strong>TDISP<strong>,得到 NVIDIA 员工的回复是"Jetson Thor 不支持,仅限 dGPU"(2025-09)(</strong>更正<strong>:早期草稿曾错误地把 Thor 的 CC/TDISP 列为已出货功能——截至 </strong>2026-07**,Thor 机密计算*不可用*)</td><td>内联加密加速器;掩码/盲化 + 工况传感器,用以抵御功耗/侧信道攻击(primary)</td></tr>
+<tr><td>签名 OTA</td><td><strong>PV 密钥签名的 UEFI capsule</strong> 认证;更新镜像必须串联回熔丝信任根——仅凭网络访问权限<strong>无法</strong>在没有 OEM 私钥的情况下推送被接受的模型/固件更新(primary)</td><td>通过 IQ10 RRD 提供面向"安全现场部署"的平台安全服务(primary)</td></tr>
+<tr><td>安全/隔离</td><td>GPU 可分区为最多 <strong>7 个硬件隔离实例</strong>(算力/内存/缓存),明确用于把"快反应"安全任务与"慢思考"VLM/规划任务分开(primary)</td><td><strong>专用安全岛,可认证到 SIL-3</strong>(IQ10);RRD 将其与操作系统+安全服务结合,提供"功能安全、系统完整性、安全现场部署"(primary)</td></tr>
+<tr><td>峰值 AI/功耗(背景参考)</td><td><strong>2,070 FP4 / 1,035 FP8 TFLOPS @ 40–130 W</strong>;相对 AGX Orin 算力 7.5 倍、能效 3.5 倍(primary)</td><td>IQ10:<strong>最高 700 TOPS</strong>,18 核 Oryon CPU;2026-06 早期接入,2026-09 目标量产(primary)</td></tr>
+</tbody></table></div>
+<ul>
+<li><strong>对大脑设计而言的关键架构要点:</strong> 支撑多租户负载的同一隔离边界,同时也充当<strong>安全域隔墙</strong>——运行在某个 GPU 实例上、位于 AI 算力域的被攻陷 S2 VLM 规划器,<strong>不应能触达</strong>安全岛上执行动作的关键 S0 代码。Thor 的 7 路 GPU 分区与 IQ10 的 SIL-3 安全岛,是目前落地实现这一点的两种量产机制(primary)。这与参考架构一节中 S2/S1 对 S0 的切分直接对应。</li>
+<li><strong>隔离是必要条件,但不是充分条件:</strong> 上述任何机制都无法阻止一个*对抗性输入*让 VLM 本身处理出错——模型仍在 TEE 内忠实地执行一条被投毒的指令。设备安全 ≠ AI 鲁棒性。</li>
+</ul>
+<h3>2. 前车之鉴——UniPwn(Unitree,披露于 2025-09-20)</h3>
+<ul>
+<li>通过 BLE 对 Unitree <strong>Go2 / G1 / H1 / B2</strong> 实现的<strong>可蠕虫式传播、可获取 root、网络邻近即可攻陷</strong>的接管(primary):</li>
+<ul>
+<li>所谓"安全握手"仅检查一个解密后的 BLE 数据包中是否包含字面字符串 <strong><code>unitree</code></strong>,即设置认证标志位。</li>
+<li><strong>每一台设备出厂时都使用完全相同的</strong> AES-CFB128 密钥 <code>df98b715d5c6ed2b25817b6f2554124a</code> 和 IV <code>2841ae97419c2973296a0d4bdfe19a4f</code>——一个密钥即可攻破整个机队。</li>
+<li>Shell 命令由攻击者可控的 Wi-Fi SSID/密码<strong>未经消毒直接拼接</strong>而成(例如 <code>";$(reboot -f);#</code>)→ 获得 <strong>root</strong>。</li>
+<li>一台被攻陷的设备会<strong>扫描附近的 Unitree 机器人并通过 BLE 自动感染</strong>——一个真实的机器人僵尸网络,是此类攻击首次针对人形机器人被公开披露。</li>
+<li>CVE 编号:<strong>CVE-2025-35027、CVE-2025-60017、CVE-2025-60250、CVE-2025-60251</strong>(primary)。</li>
+</ul>
+<li><strong>厂商响应迟滞长达 5 个月(primary):</strong> 2025-04-14 发现 → 约 2025-05-14 上报 → Unitree 在 2025-07-18/20 表示修复需要"数个季度乃至数年" → 2025-09-20 公开披露。Unitree 于 2025-09-29 在 LinkedIn 上声称"大部分修复"已完成,但截至 <strong>2026-07</strong>,其人形机器人<strong>没有任何已发布的独立安全审计</strong>予以佐证(primary)。</li>
+<li><strong>并非孤立事件:</strong> Unitree <strong>Go1</strong> 出厂即预装了一个远程访问后门(<strong>"CloudSail",CVE-2025-2894</strong>),于 2025 年 3/4 月被发现;<strong>MIT、Princeton、CMU</strong> 的设备在 Unitree 停用该服务前均存在被暴露的可能(primary)。模组厂大脑很可能出货于同一类机器人上,其知识产权被窃取/被篡改的风险<strong>已经是现实</strong>,而非假设。</li>
+</ul>
+<h3>3. AI 原生的对抗性威胁——尚未解决的问题</h3>
+<div class="tw"><table><thead><tr><th>攻击</th><th>目标层</th><th>已报告的实效</th><th>威胁模型的现实性</th><th>来源</th></tr></thead><tbody>
+<tr><td><strong>RoboPAIR</strong> 越狱</td><td>S2 VLM 规划器</td><td>对 3 套系统(Go2 黑盒、Clearpath Jackal 灰盒、NVIDIA Dolphins 白盒)<strong>攻击成功率 100%</strong>,数天内完成</td><td>迭代式攻击者-LLM;诱导驶离桥面、寻找武器、搜寻炸弹布设点</td><td>primary——IEEE Spectrum;arXiv(ICRA 2025)</td></tr>
+<tr><td><strong>BadRobot</strong></td><td>具身 LLM(S2)</td><td>形式化定义 3 类漏洞;<strong>仅凭语音交互</strong>即足以突破安全约束</td><td>首个专门针对*具身* LLM 智能体的攻击范式</td><td>primary——arXiv 2407.20242</td></tr>
+<tr><td><strong>VLA 对抗补丁</strong>(UADA / UPA / TMA)</td><td>S1 VLA 策略(感知)</td><td>在 LIBERO 仿真中,UADA/TMA <strong>失败率 100%</strong>(UPA 89.7%;良性基线约 23.5%);物理世界中:UADA 攻击成功率 <strong>43%</strong>,TMA 平均失败率 <strong>88.6%</strong>。补丁大小为 224×224 图像的 3–10%;UADA 归一化动作偏差约 21%(仿真)→ 32.6%(物理世界)</td><td>补丁在视觉上模仿机械臂结构以提升真实世界可信度(OpenVLA-7B / -LIBERO)</td><td>primary——arXiv 2411.13587v3</td></tr>
+<tr><td><strong>部分可观测补丁</strong>(2026)</td><td>S1 VLA 策略</td><td>仅从一段简短观测到的<strong>前缀(prefix)</strong>生成的<strong>单个固定</strong>补丁,对后续所有帧均有效——去掉了"能获取完整轨迹"这一假设</td><td>现实性大幅提高:攻击者无需观察整个任务过程</td><td>primary——arXiv 2606.03556</td></tr>
+<tr><td><strong>通用/可迁移补丁</strong>("When Robots Obey the Patch",UPA-RFAS)</td><td>S1 VLA 策略</td><td>在<strong>未知的 VLA 架构、微调变体、仿真到现实迁移</strong>场景下均有效——无需针对每个机器人/每个模型单独调参</td><td>严重性升级:一个补丁可攻击多台机器人</td><td>primary——arXiv 2511.21192(发布于 2025-11-30;"CVPR 2026" 会议信息<strong>未证实</strong>——未查到录用记录)</td></tr>
+<tr><td><strong>TrojanRobot /"Robot Collapse"</strong></td><td>供应链(VLM 模块)</td><td>后门微调过的 VLM 作为即插即用模块;<strong>LVLM 即后门</strong>变体*仅*需要一段带后门的系统提示词(无需微调)。覆盖 4 个 VLM × 18 个真实世界任务,物理+仿真</td><td>为"第三方模型被攻陷"这一风险提供了具体证据</td><td>primary——arXiv 2411.11683(v7,2026-04-02)</td></tr>
+</tbody></table></div>
+<ul>
+<li><strong>为什么这一层格外难防:</strong> 这些攻击之所以成功,<em>正是因为模型按其训练方式行事</em>——没有可打补丁的内存破坏类漏洞。一个驻留在 TEE 内、已签名、正确启动的 VLA 策略,面对其视野中一个物理对象上的对抗补丁,依然完全脆弱。</li>
+<li><strong>威胁模型正在变得更糟,而非更好:</strong> 2025→2026 年的演进(完整轨迹依赖 → 仅需前缀 → 架构无关的通用补丁)恰恰移除了那些曾让这些攻击显得像"实验室奇观"的假设条件。一台已部署机器人的摄像头<strong>必然</strong>会看到攻击者选定的场景。</li>
+<li><strong>实际可行的缓解措施(均为部分缓解,截至 2026-07 均无在 VLA 机器人上发布现场实效数据):</strong> 在 S2 规划器上做输入消毒/语义护栏;在 S1 感知上做对抗训练与输入预处理;<strong>带外(out-of-band)的 S0 安全包络</strong>(地理围栏、力矩/速度限制、SIL-3 安全岛上的紧急停止),使得*即便 S2 已被完全越狱*,也无法下达不安全的运动指令——安全岛之所以是最后一道防线,正因为它不信任 AI 技术栈(作为"完整防御"这一说法未经证实;它能约束伤害范围,但不能阻止不当行为的发生)。</li>
+</ul>
+<h3>4. 监管叠加因素(模组厂/采购风险)</h3>
+<ul>
+<li><strong>GUARD 法案(H.R.9129,"2026 年防范对抗性机器人主导地位法案"[Guarding the U.S. against Adversarial Robotics Dominance Act of 2026],由 Moolenaar/Obernolte/McClellan 于 2026-06-03 提出;dronelife 报道日期为 2026-06-04):</strong> 要求对来自对手国家的人形/四足机器人进行国家安全审查,若相关机构在法案生效一年内未作出裁定,将<strong>自动列入 FCC 涵盖清单(Covered List)</strong>;并通过参议院配套立法明确将矛头指向 Unitree("六条小龙")(primary——congress.gov / 众议院美中战略竞争特别委员会;另见 <a href="#company-unitree">company-unitree.md</a>)。</li>
+<li><strong>对模组厂的启示:</strong> 在被标记为不安全(UniPwn 级别)的机器人上出货大脑,如今是一种<strong>市场准入</strong>风险,而不只是声誉风险。一套可证明的"安全启动+签名 OTA+隔离安全域"方案,正在成为进入西方采购体系的基本门槛——而这恰恰是旗舰 SoC(Thor 的 16 密钥 PKC 信任根 + OP-TEE + 7 路 GPU 隔离;高通 SPU 的 EAL4+/SIL-3)让你可以<strong>直接购买</strong>而非自行搭建的差异化点。(注:Blackwell GPU 机密计算/TDISP 是 <em>dGPU</em> 特性,Jetson Thor 上不可用——不要把它引用为基于 Thor 的大脑的卖点。)</li>
+</ul>
+<p><strong>要点小结:</strong> 设备安全在芯片层面已经解决——选 Thor(OP-TEE + 16 密钥 PKC 信任根 + 7 路 GPU 隔离;注意 Blackwell 机密计算/TDISP 仅限 dGPU,Thor 上没有)或高通 SPU/IQ10 平台(EAL4+ TEE + SIL-3 安全岛),并接好安全启动+签名 OTA。<strong>对抗鲁棒性尚未解决</strong>——截至 2026-07,不存在任何在 VLA 机器人上发布过现场实效数据的补丁防御或越狱防御,因此唯一可靠的缓解手段是安全岛上一个<strong>独立于 AI、约束物理伤害范围</strong>的 S0 安全包络,用以限制一个已被攻陷的大脑所能造成的物理伤害。</p>
+<p>来源:</p>
+<ul>
+<li><a href="https://docs.nvidia.com/jetson/" target="_blank" rel="noopener">https://docs.nvidia.com/jetson/</a> — Jetson Linux 开发者指南:OP-TEE、安全启动(PKC/FSKP)、签名 OTA / UEFI capsule、固件 TPM</li>
+<li><a href="https://forums.developer.nvidia.com/t/enabling-nvidia-confidential-computing-cc-and-tdisp-on-jetson-agx-thor-blackwell-gpu/344837" target="_blank" rel="noopener">https://forums.developer.nvidia.com/t/enabling-nvidia-confidential-computing-cc-and-tdisp-on-jetson-agx-thor-blackwell-gpu/344837</a> — Jetson AGX Thor CC/TDISP 请求;NVIDIA 员工回复:Jetson Thor 不支持,仅限 dGPU(2025-09)</li>
+<li><a href="https://docs.nvidia.com/jetson/archives/r39.2/DeveloperGuide/SD/Security/SecureBoot/QuickStartThor.html" target="_blank" rel="noopener">https://docs.nvidia.com/jetson/archives/r39.2/DeveloperGuide/SD/Security/SecureBoot/QuickStartThor.html</a> — Thor 安全启动:最多 16 个 PKC 密钥(RSA-3K / ECDSA P-256 / P-521 / XMSS)、PublicKeyHash 熔丝、吊销策略</li>
+<li><a href="https://www.nvidia.com/en-gb/data-center/solutions/confidential-computing/" target="_blank" rel="noopener">https://www.nvidia.com/en-gb/data-center/solutions/confidential-computing/</a> — Blackwell GPU 机密计算(enclave,无需改代码)</li>
+<li><a href="https://developer.ridgerun.com/wiki/index.php/NVIDIA_Jetson_Thor" target="_blank" rel="noopener">https://developer.ridgerun.com/wiki/index.php/NVIDIA_Jetson_Thor</a> — Thor SoC 特性:7 路 GPU 隔离、快/慢任务分离</li>
+<li><a href="https://developer.nvidia.com/blog/" target="_blank" rel="noopener">https://developer.nvidia.com/blog/</a> — Jetson Thor 介绍(2,070 FP4 TFLOPS,相对 Orin 7.5×/3.5×,采用厂商)</li>
+<li><a href="https://csrc.nist.gov/" target="_blank" rel="noopener">https://csrc.nist.gov/</a> — NIST CMVP 安全策略,Qualcomm SPU HW v3.1</li>
+<li><a href="https://www.qualcomm.com/" target="_blank" rel="noopener">https://www.qualcomm.com/</a> — "Guard Your Data" SPU 白皮书;Dragonwing IQ10 新闻稿(2026 年 1 月,SIL-3 安全岛,约 700 TOPS)</li>
+<li><a href="https://docs.qualcomm.com/" target="_blank" rel="noopener">https://docs.qualcomm.com/</a> — IQ10 机器人参考设计产品简介</li>
+<li><a href="https://github.com/Bin4ry/UniPwn" target="_blank" rel="noopener">https://github.com/Bin4ry/UniPwn</a> — UniPwn 概念验证:硬编码密钥/IV、"unitree" 握手绕过、root 命令注入、可蠕虫化、披露时间线</li>
+<li><a href="https://spectrum.ieee.org/unitree-robot-exploit" target="_blank" rel="noopener">https://spectrum.ieee.org/unitree-robot-exploit</a> — UniPwn 披露与厂商响应时间线</li>
+<li><a href="https://spectrum.ieee.org/jailbreak-llm" target="_blank" rel="noopener">https://spectrum.ieee.org/jailbreak-llm</a> — RoboPAIR 在 3 套机器人系统上 100% 越狱成功率</li>
+<li><a href="https://www.axios.com/2025/04/01/threat-spotlight-backdoor-in-chinese-robots-future-of-cybersecurity" target="_blank" rel="noopener">https://www.axios.com/2025/04/01/threat-spotlight-backdoor-in-chinese-robots-future-of-cybersecurity</a> — Go1 CloudSail 后门(CVE-2025-2894)</li>
+<li><a href="https://arxiv.org/html/2407.20242" target="_blank" rel="noopener">https://arxiv.org/html/2407.20242</a> — BadRobot 具身 LLM 越狱范式</li>
+<li><a href="https://arxiv.org/html/2411.13587v3" target="_blank" rel="noopener">https://arxiv.org/html/2411.13587v3</a> — 针对 VLA 的对抗补丁攻击(UADA/TMA,仿真 100% / 物理 86.6%)</li>
+<li><a href="https://arxiv.org/pdf/2606.03556" target="_blank" rel="noopener">https://arxiv.org/pdf/2606.03556</a> — 针对 VLA 的部分可观测对抗补丁攻击(2026)</li>
+<li><a href="https://arxiv.org/abs/2511.21192" target="_blank" rel="noopener">https://arxiv.org/abs/2511.21192</a> —"When Robots Obey the Patch":通用可迁移补丁(CVPR 2026)</li>
+<li><a href="https://arxiv.org/abs/2411.11683" target="_blank" rel="noopener">https://arxiv.org/abs/2411.11683</a> —"Robot Collapse":针对基于 VLM 的操作任务的供应链后门攻击(v7,2026-04-02)</li>
+<li><a href="https://dronelife.com/2026/06/04/congress-introduces-guard-act-extending-fcc-covered-list-framework-to-robotics/" target="_blank" rel="noopener">https://dronelife.com/2026/06/04/congress-introduces-guard-act-extending-fcc-covered-list-framework-to-robotics/</a> — GUARD 法案(H.R.9129)FCC 涵盖清单机制</li>
+</ul>
+<hr>
+<h2>内存容量 / 并发调度 / 量产标定 (Memory, Concurrency &amp; Bring-Up)</h2>
+<p>端侧大脑本质上是一个<strong>固定容量、混合关键度(mixed-criticality)的资源分配问题</strong>:一个数 GB 级的 VLM(S2,慢系统)、一个小型动作专家(S1,快系统)、VSLAM、ASR/TTS,以及安全/看门狗代码,必须共处于同一个 RAM 池、共享一颗(或两颗)GPU,而且<strong>绝不能让 5-10Hz 的推理循环饿死 200Hz 的控制循环</strong>。本节给出 RAM 预算方法、挑选并发机制,并列出早期规格测算中经常低估的量产(bring-up/量产标定)代价。</p>
+<h3>1. 芯片包络(128GB Thor vs. 64GB IQ10)</h3>
+<div class="tw"><table><thead><tr><th>平台</th><th>统一内存</th><th>内存带宽/总线</th><th>AI 算力</th><th>CPU</th><th>功耗</th><th>封装形态</th><th>来源</th></tr></thead><tbody>
+<tr><td><strong>Jetson Thor</strong>(T5000)</td><td>128GB LPDDR5X</td><td>273 GB/s / 256-bit</td><td>2070 TFLOPS 稀疏 FP4 · 1035 稠密 FP4 · 517 稠密 FP8;2560 个 CUDA / 96 个 Tensor 核心(Blackwell)</td><td>14 核 Arm Neoverse-V3AE @2.6GHz</td><td>40–130W</td><td>裸 SoM</td><td>(primary)</td></tr>
+<tr><td><strong>Qualcomm Dragonwing IQ10</strong></td><td>64GB LPDDR5x,带 ECC("16×16 ECC 硬化控制器" <em>(未证实)</em>)</td><td>未公开</td><td>700 TOPS</td><td>18 核 Oryon(12×V3 大核 @5.0GHz + 6×V3 中核 @3.6GHz)</td><td>-40–70°C,支持 12/24V 输入</td><td><strong>强制风冷的封闭模组</strong>;约 176×125×75mm <em>(未证实——单一来源)</em>;硬件安全岛 <em>(未证实——高通产品简介未提及)</em>;最多 12 路 GMSL2 摄像头,8K@120fps 编解码</td><td>(primary)</td></tr>
+</tbody></table></div>
+<ul>
+<li><strong>统一内存是 Thor 上真正起支撑作用的属性(primary):</strong> CPU 侧的感知预处理与 GPU 侧的 transformer 推理共享同一地址空间,因此<strong>每次 S2/S1 交接都不必付出 PCIe 拷贝代价</strong>——而这正是分立 GPU 设计在每个周期都要承担的张量传输成本。</li>
+<li>IQ10 是<strong>以预集成、强制风冷的封闭模组形态出货,而非裸 SoC</strong>(primary——高通确认了集成式强制风冷、-40–70°C、12/24V 输入),据称还带有一个<strong>硬件安全岛</strong> <em>(未证实——"安全岛"这一说法仅见于单一来源的 COMPUTEX 报道,高通官方产品简介中未见)</em>,使得安全/看门狗隔离是物理层面的,而非靠调度实现——这是对 Thor 用软件方式解决的同一个混合关键度问题给出的另一种答案(见第 3 节)。</li>
+</ul>
+<h3>2. RAM 分割:实际能装下什么</h3>
+<p>并发预算 = <strong>标称容量 − 固件/内核预留区 − Σ 各模型占用</strong>,而<strong>量化(quantization)</strong>与<strong>视觉 token 压缩</strong>是买更大芯片之前的两个一阶杠杆。</p>
+<p><strong>S2 VLM 的占用是主导项</strong>(在 64–128GB 规模下,其余一切都只是舍入误差):</p>
+<div class="tw"><table><thead><tr><th>模型</th><th>参数量</th><th>推理内存</th><th>微调内存</th><th>备注</th><th>来源</th></tr></thead><tbody>
+<tr><td><strong>pi0</strong>(Physical Intelligence)</td><td>约 3.3B(2.29B PaliGemma VLM + 315M flow-matching 动作专家)</td><td>下限 <strong>&gt;8GB</strong>(RTX 4090);典型约 14GB(bf16)</td><td>LoRA &gt;22.5GB;全量微调 &gt;70GB(A100-80/H100);A100-40 上 batch size 16 训练峰值 40GB</td><td>典型的重量级 S2</td><td>(primary)</td></tr>
+<tr><td><strong>SmolVLA</strong>(最小档)</td><td>SmolLM2 135M/360M/1.7B + SigLIP-B/16 93M</td><td><strong>&lt;1–5GB</strong>(约 2GB)</td><td>—</td><td>比 pi0 轻约 5–10 倍</td><td>(secondary)</td></tr>
+</tbody></table></div>
+<ul>
+<li><strong>pi0 约 14GB vs. SmolVLA 约 2GB 的差距,本身就是容量预算决策所在</strong>:S2 选 SmolVLA 会让整个 RAM 分割运算相差 <strong>5–10 倍</strong>(secondary)。</li>
+<li><strong>具体并发实例(NVIDIA 自家案例,8GB 规模)</strong>(primary):一个 4-bit VLM(2.2GB)+ ASR + TTS 占用 <strong>7.6GB 可用内存中的 4.5GB(约 60%)</strong>。该方法论可直接套用到 64–128GB 规模。量化节省的内存:Qwen3-8B FP16→W4A16 节省约 10GB;Qwen3-4B BF16→INT4 节省约 5.6GB。</li>
+<li><strong>外围模型很便宜</strong>(secondary):在 Orin NX 16GB 上,神经 SLAM 地图仅占 <strong>约 75–290MB</strong>;cuVSLAM 在 Xavier 级硬件上达到<strong>约 143Hz(每帧 0.007s)</strong>,平移误差 0.94% / 0.0019°·m⁻¹(KITTI)。容量之争由 VLM/动作模型主导,<strong>不是</strong>由建图主导。</li>
+</ul>
+<h3>3. 并发机制:空间分区(MIG)优于分时共享(MPS)</h3>
+<p>核心失效模式:如果天真地把 S2 和 S1 在同一颗 GPU 上做时间片复用,VLM 一个执行到一半的 kernel 就可能让 200Hz 循环错过截止期限。</p>
+<div class="tw"><table><thead><tr><th>机制</th><th>行为</th><th>对机器人大脑的结论</th></tr></thead><tbody>
+<tr><td><strong>NVIDIA MPS</strong></td><td>把共享进程的 GPU 上下文合并成一个;<strong>没有基于优先级的抢占</strong>(只有一个不具约束力的优先级*提示*),默认 FIFO 设备队列 → 一个低优先级作业会在其整个 kernel 执行期间阻塞一个高优先级作业(<strong>优先级反转</strong>);高优先级作业的完成时间"比独占运行时高出数倍"</td><td>对混合关键度场景<strong>不安全</strong>(secondary,FIKIT arXiv 2311.10359)</td></tr>
+<tr><td><strong>MIG(空间分区)</strong></td><td>物理 SM 分区</td><td><strong>更优选</strong>——控制代码不会被饿死(primary)</td></tr>
+</tbody></table></div>
+<ul>
+<li><strong>JetPack 7.2 在 Thor 上的 MIG</strong>(primary):是一个<strong>固定的双路划分</strong>,而非任意的 7 片——一个较大的 <strong>AI/图形分区(12 个 SM / 1536 个 CUDA 核心)</strong> 用于 VLM/渲染/通用 CUDA,一个较小的<strong>隔离计算分区(8 个 SM / 1024 个 CUDA 核心)</strong> 专供机器人/控制/感知/安全使用,使得一个失控的 VLM 作业<strong>在物理上无法</strong>饿死安全分区。再配合一个<strong>可抢占的 RT 内核</strong>,实现混合关键度的确定性调度。</li>
+<li><strong>Figure Helix 的答案:干脆不共享</strong>(primary):S2(<strong>7B VLM @7–9Hz</strong>,异步后台进程)与 S1(<strong>80M 交叉注意力 transformer @200Hz</strong>,实时进程)运行在<strong>两颗独立的物理嵌入式 GPU</strong> 上——彻底绕开了争用问题,代价是 2 倍的 GPU 硅片。</li>
+</ul>
+<h3>4. 协调不同时间尺度:分块是泄压阀</h3>
+<p>各系统并不是把 VLM 变快;而是通过动作分块(action chunking),<strong>把一次慢的前向传播摊薄到多个控制周期上</strong>。</p>
+<div class="tw"><table><thead><tr><th>系统</th><th>S2(慢)</th><th>S1(快)</th><th>杠杆</th><th>来源</th></tr></thead><tbody>
+<tr><td>Figure Helix</td><td>7B VLM @7–9Hz</td><td>80M @200Hz</td><td>双 GPU,异步 S2</td><td>(primary)</td></tr>
+<tr><td>DualVLN</td><td>7B VLM @2Hz</td><td>扩散策略 @30Hz</td><td>—</td><td>(secondary)</td></tr>
+<tr><td>FiS-VLA</td><td>—</td><td><strong>无分块 21.9Hz → 8 步分块 117.7Hz</strong></td><td>动作分块</td><td>(secondary)</td></tr>
+</tbody></table></div>
+<ul>
+<li><strong>还存在第三个、更快的时间尺度</strong>(secondary):用于打滑/振动检测的触觉感知通常以 <strong>1000Hz</strong> 采样(例如 Robotiq 指尖传感器)——是 S1 循环的 <strong>10 倍</strong>,S2 循环的 <strong>100–200 倍</strong>。原始触觉数据流必须先经过<strong>降采样/压缩</strong>才能送入任何 transformer(TacMamba 的"触觉历史压缩适配器",arXiv 2603.01700)——把原始高速率 token 直接喂给 VLA 骨干网络,会被骨干网络的推理速度卡住。</li>
+</ul>
+<h3>5. Token 化成本——视觉主导,且是二次方增长</h3>
+<ul>
+<li><strong>分辨率 → token 数量(SigLIP/PaliGemma patch-14)</strong>(primary):224px² → <strong>256 个 token</strong>,448px² → <strong>1024 个 token</strong>,896px² → <strong>4096 个 token</strong>。自注意力对 token 数是二次方复杂度,所以 224→896px 是一次 <strong>16 倍的 token 数量 / 大得多的算力</strong>跃升。每多加一个摄像头(人形机器人通常带立体头部摄像头 + 手腕摄像头),都会<strong>按每路视频流线性叠加</strong>这一开销。</li>
+<li><strong>双视觉编码器让成本翻倍</strong>(secondary):OpenVLA 在做任何语言模型计算之前会先跑 <strong>DINOv2 + SigLIP</strong>(融合使用)——这是 2024-26 年间的常见模式,让视觉编码开销约翻倍。</li>
+<li><strong>Token 压缩是一阶杠杆,而不只是量化的附属手段</strong>(secondary):"Think Twice, Act Once"(arXiv 2505.21200)表明视觉 token 主导了 VLA 推理成本,该方法把 token 数量最多削减 <strong>50%</strong>,配合动作复用可带来<strong>约 40% 的提速</strong>,同时保持任务成功率——这是 OEM 在购买更大算力芯片*之前*就能用上的手段。</li>
+<li><strong>公认的开放问题核查</strong>(primary):<strong>VLA-Perf</strong>(NVIDIA,arXiv 2602.18397;github.com/NVlabs/vla-perf)是一个专门针对端侧 vs. 边缘服务器 vs. 云端 VLA 部署决策的 2026 年分析型性能模型——它的存在本身就证明这是一个活跃的空白地带,而非已解决的问题(完整数值表格是以图片形式渲染的,无法提取文本——具体数字应视为未证实)。</li>
+</ul>
+<h3>6. 量产/量产标定的代价(经常被低估)</h3>
+<ul>
+<li><strong>固件/内核预留区是真实存在的固定代价</strong>(primary):在 8GB 的 Orin Nano 上,只有<strong>约 7.6GB 可用</strong>(约损失 400MB)。显示相关预留 ≤68MB(DCE 32MB、DISP_EARLY_BOOT_FB 34MB、DCE_TSEC/TSEC_DCE 各 1MB);摄像头相关预留 ≤33MB(CAMERA_TASKLIST 32MB、RCE 1MB)。<strong>仅关闭图形化桌面就能释放多达 865MB。</strong> 在 64–128GB 规模下这一比例会缩小,但<strong>并非为零</strong>——在做容量测算时就应把它计入预算。</li>
+<li>多摄像头 GMSL2 接入(IQ10 上最多 12 路)与 8K 编解码,是标定阶段需要标准化的固定的逐帧带宽/延迟成本。</li>
+<li>ECC 硬化控制器(IQ10)以少量容量/延迟为代价换取抗位错安全性——这是一个量产可靠性决策,而非跑分决策。</li>
+</ul>
+<p>来源:</p>
+<ul>
+<li>developer.nvidia.com/blog/introducing-nvidia-jetson-thor-the-ultimate-platform-for-physical-ai</li>
+<li>developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2</li>
+<li>developer.nvidia.com/blog/maximizing-memory-efficiency-to-run-bigger-models-on-nvidia-jetson</li>
+<li>finance.sina.com.cn(COMPUTEX 2026 高通 Dragonwing IQ10 报道)</li>
+<li>github.com/Physical-Intelligence/openpi ; blog.phospho.ai(pi0 架构)</li>
+<li>emergentmind.com/topics/smolvla ; arxiv.org/html/2504.05299(SmolVLM)</li>
+<li>arxiv.org/html/2311.10359v5(FIKIT——MPS 上下文合并/无抢占/FIFO"比独占运行高出数倍") ; arxiv.org/pdf/2406.05221(GCAPS——Tegra 抢占式 GPU 调度;本身并未讨论 MPS)</li>
+<li>figure.ai/news/helix</li>
+<li>openreview.net(FiS-VLA) ; arxiv.org/pdf/2512.20188(Async Fast-Slow VLA 综述)</li>
+<li>arxiv.org/abs/2602.18397 ; github.com/NVlabs/vla-perf(VLA-Perf)</li>
+<li>github.com/NVIDIA-ISAAC-ROS/isaac_ros_visual_slam</li>
+<li>arxiv.org/html/2412.03555v1(PaliGemma 2) ; emergentmind.com/topics/openvla</li>
+<li>arxiv.org/pdf/2505.21200(Think Twice, Act Once)</li>
+<li>blog.robotiq.com/robotiq-brings-the-sense-of-touch-to-physical-ai ; arxiv.org/pdf/2603.01700(TacMamba)</li>
+</ul></article>
 <article id="visions" class="page"><div class="pagehead"><h1>愿景与论点：领军者如何构建物理AI(Physical AI)的叙事框架</h1><p class="pmeta"><span class="ok">✓ 已核查</span><span>更新 2026-07-05</span><span class="slugtag">visions</span></p></div><blockquote>
 <p>物理AI(Physical AI)领域最具影响力的十余位人物,除了都认同"这个市场规模巨大"之外,几乎没有其他共识。Jensen Huang 兜售一个 40-50 万亿美元的劳动力自动化总目标市场(TAM),其 CES 2026 主题演讲宣称"物理AI的 ChatGPT 时刻"已近在眼前;Elon Musk 声称"特斯拉约 80% 的价值将来自 Optimus"(X 平台,2025-09),而这与该行业最糟糕的交付记录形成对照;Demis Hassabis 将具身智能(embodied intelligence)定位为通用人工智能(AGI)的核心支柱,并预计机器人领域将在"未来约18个月内"(2026-02)迎来突破;Fei-Fei Li 和 Yann LeCun 都认为大语言模型(LLM)是错误的底层架构,世界模型(world model)才是正确方向——Li 的路径是"空间智能(spatial intelligence)",LeCun 则通过反生成式的 JEPA 架构与一家估值十亿美元级的初创公司(AMI Labs);Masayoshi Son(孙正义)斥资 54 亿美元收购 ABB Robotics,意图"融合超级人工智能(Artificial Super Intelligence)与机器人技术";Jeff Bezos 几乎为美国每一个机器人"大脑"实验室都提供了个人投资,却坚称自己的物理AI初创公司"与机器人技术毫无关系";Brett Adcock 与王兴兴分别押注于成本曲线两端的人形机器人;Karol Hausman 和 Sergey Levine 则认定"大脑"比任何"身体"都更重要。而反对的声音——Rodney Brooks、Gary Marcus、Ken Goldberg——则强力反击;Brooks 将依靠视频训练获得人形机器人灵巧操作能力的想法称为"纯粹的幻想"。这些论点在世界模型以及"软件而非硬件才是瓶颈"这一点上趋于一致;但在形态(form factor)、时间线,以及市场规模究竟是 380 亿美元还是 50 万亿美元的问题上则严重分歧。背景资料:<a href="#key-people">关键人物</a>、<a href="#investment">投资</a>、<a href="#open-problems">待解决的问题</a>、<a href="#state-of-the-art">技术前沿</a>。</p>
 </blockquote>

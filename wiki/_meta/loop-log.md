@@ -338,3 +338,18 @@ HTML (docs/component-supply-chain.html + Artifact): BOM value-chain map
 portal. Readers rebuilt (41 EN / 40 zh). EN page kept confidence:draft
 (many single-source Chinese-media rows) — flagged in HTML + queue for a
 future adversarial verify pass.
+
+## on-device-brain deep-research loop — COMPLETE 2026-07-05
+7 iterations (6 planned A-L + 1 gap-fill M-N) over a sustained research loop:
+each sub-topic Sonnet-collected → Opus-written → Opus-adversarially-verified,
+all load-bearing numbers checked vs arXiv/vendor primaries. Assembled into
+wiki/on-device-brain.md (14 sections, ~1248 lines, confidence: verified) +
+zh mirror + reference-architecture HTML (docs/on-device-brain.html, v2 with
+security block). Completeness critic confirmed zero cross-section numeric
+contradiction, fixed 15 dead links, flagged 4 gaps (2 closed by M/N).
+Thesis: on-device the binding constraint is memory-bandwidth + reliability/
+generalization, not TOPS; the win is the S2/S1/S0 tiered split; for a module
+maker the on-device brain is the defensible arms-dealer lane. Notable finds:
+Jetson Thor has NO confidential-compute/TDISP (dGPU-only); RoboPAIR 100%
+robot-jailbreak; MPS has no priority preemption. HOME/llms/readers at 42 EN /
+41 zh; portal 专题深度报告 section. Loop paused (news-freshness loop still off).

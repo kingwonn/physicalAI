@@ -596,6 +596,8 @@ hr{border:none;border-top:1px solid var(--line);margin:22px 0}
 <tr><td>J</td><td>端侧学习与数据飞轮</td><td>云训练+端适配;车队数据飞轮;OTA;测试时算力</td></tr>
 <tr><td>K</td><td>"做好"的判据与评价</td><td>延迟/泛化/可靠性/功耗/成本/可更新的评分标尺</td></tr>
 <tr><td>L</td><td>参考架构与模组厂视角</td><td>三层收官架构 + 模组规格清单 + 移远战略读数</td></tr>
+<tr><td>M</td><td>安全与对抗鲁棒性</td><td>权重保护/安全启动/TEE、VLM 提示注入与对抗补丁、UniPwn、供应链信任</td></tr>
+<tr><td>N</td><td>内存容量/并发/量产标定</td><td>多模型共驻单 SoC、GPU 分时(MPS/MIG)、传感器融合预算、bring-up 与预集成价值</td></tr>
 </tbody></table></div>
 <hr>
 <h2>大脑架构基础与双系统 (Architecture &amp; Dual-System)</h2>
@@ -1551,6 +1553,153 @@ hr{border:none;border-top:1px solid var(--line);margin:22px 0}
 <li><a href="https://www.ti.com/lit/an/slla659a" target="_blank" rel="noopener">https://www.ti.com/lit/an/slla659a</a> — CAN-FD for deterministic multi-axis robotics</li>
 <li><a href="https://automate.org/" target="_blank" rel="noopener">https://automate.org/</a> — QNX/robot functional-safety: independent watchdog/interlock, IEC 61508 SIL-2/3, OTA rationale</li>
 <li><a href="https://arxiv.org/abs/2603.22703" target="_blank" rel="noopener">https://arxiv.org/abs/2603.22703</a> — Learning Safe-Stoppability Monitors for Humanoid Robots</li>
+</ul>
+<hr>
+<h2>安全与对抗鲁棒性 (Security &amp; Adversarial Robustness)</h2>
+<blockquote>
+<p>An on-device embodied brain is an <strong>actuation-capable</strong> attack surface: a jailbroken planner or a spoofed perception input does not leak data, it <em>moves motors</em>. Two threat classes must be defended separately — <strong>classical device security</strong> (secure boot, TEE, signed OTA, root-of-trust) where the flagship SoCs are already strong, and <strong>AI-native adversarial robustness</strong> (VLM jailbreaks, adversarial patches, supply-chain model backdoors) where <strong>there is no shipping mitigation with published field efficacy as of 2026-07</strong>. The 2025 UniPwn worm against Unitree — root, wormable, from a hardcoded key — is the canonical proof that shipping an unsecured connectivity stack on a field robot is not hypothetical (primary). The module-maker (模组厂) takeaway: hardware security is a <em>procurement</em> problem (pick the SoC), adversarial robustness is an <em>open research</em> problem you must architect around, not buy.</p>
+</blockquote>
+<h3>1. Silicon-level device security — what the flagship SoCs actually give you</h3>
+<div class="tw"><table><thead><tr><th>Capability</th><th>Jetson Thor / AGX Thor (NVIDIA)</th><th>Qualcomm robotics (SPU-class, incl. Dragonwing IQ10)</th></tr></thead><tbody>
+<tr><td>Hardware root of trust</td><td>On-die <strong>BootROM</strong> authenticates BCT/bootloader/warm-boot vector via <strong>PKC</strong>; <strong>Thor supports up to 16 OEM PKC keys</strong> (RSA-3K, ECDSA P-256, ECDSA P-521, XMSS — 4 slots each) whose hashes burn into write-once <code>PublicKeyHash</code> fuses, with a <strong>revocation policy</strong> fuse if a key is compromised post-ship (primary — the older 2-hash / FUSE_PK_H1-H2 scheme was Orin/Xavier-era; corrected to Thor's 16-key design)</td><td><strong>SPU</strong>: physically separate security subsystem, own boot-loader/boot-chain, dedicated clocks, HW anti-replay, key-mgmt + crypto-mgmt units (primary)</td></tr>
+<tr><td>TEE</td><td><strong>OP-TEE</strong> (Arm TrustZone-based); OP-TEE derives root key <strong>EKB_RK</strong> from a 256-bit fuse key (OEM_K1) via the Security Engine, chaining secure boot → TEE key hierarchy (primary)</td><td>SPU-hosted TEE; <strong>Common Criteria EAL4+ certifiable</strong>, <strong>StrongBox-compliant</strong> (primary)</td></tr>
+<tr><td>Confidential compute</td><td><strong>NVIDIA Confidential Computing</strong> (protected GPU enclave, no code changes) is a **Blackwell <em>dGPU</em> feature (H100/B200-class), NOT available on Jetson AGX Thor<strong> — an AGX Thor dev-forum request to enable CC + </strong>TDISP<strong> was answered by NVIDIA staff "not supported on Jetson Thor, dGPU only" (2025-09) (</strong>correction**: earlier draft wrongly listed Thor CC/TDISP as shipping — Thor confidential compute is <em>unavailable as of 2026-07</em>)</td><td>Inline crypto accelerators; masking/blinding + operating-condition sensors to resist power/side-channel attacks (primary)</td></tr>
+<tr><td>Signed OTA</td><td><strong>PV-key-signed UEFI capsule</strong> authentication; update images must chain back to the fused RoT — network access alone <strong>cannot</strong> push an accepted model/firmware update without the OEM private key (primary)</td><td>Platform security services for "secure field deployment" via IQ10 RRD (primary)</td></tr>
+<tr><td>Safety/security isolation</td><td>GPU partitionable into up to <strong>7 HW-isolated instances</strong> (compute/mem/cache), explicitly framed as separating "fast-reaction" safety tasks from "slow-thinking" VLM/planning (primary)</td><td><strong>Dedicated safety island certifiable to SIL-3</strong> (IQ10); RRD combines it with OS + security services for "functional safety, system integrity, secure field deployment" (primary)</td></tr>
+<tr><td>Peak AI / power (context)</td><td><strong>2,070 FP4 / 1,035 FP8 TFLOPS @ 40–130 W</strong>; 7.5× compute, 3.5× efficiency vs AGX Orin (primary)</td><td>IQ10: <strong>up to 700 TOPS</strong>, 18 Oryon CPU cores; early access 2026-06, GA target 2026-09 (primary)</td></tr>
+</tbody></table></div>
+<ul>
+<li><strong>Key architectural point for the brain:</strong> the same isolation boundary that runs multi-tenant workloads doubles as a <strong>security domain wall</strong> — a compromised S2 VLM planner in one GPU instance / on the AI-compute domain <strong>should not be able to reach actuation-critical S0 code</strong> on the safety island. Thor's 7-way GPU partitioning and IQ10's SIL-3 safety island are the two shipping mechanisms to enforce this (primary). This maps directly onto the S2/S1 vs S0 split from Reference architecture.</li>
+<li><strong>The isolation is necessary but not sufficient:</strong> none of the above stops an <em>adversarial input</em> that the VLM itself mis-processes — the model runs inside the TEE faithfully executing a poisoned instruction. Device security ≠ AI robustness.</li>
+</ul>
+<h3>2. The cautionary tale — UniPwn (Unitree, disclosed 2025-09-20)</h3>
+<ul>
+<li><strong>Wormable, root, network-adjacent takeover</strong> of Unitree <strong>Go2 / G1 / H1 / B2</strong> via BLE (primary):</li>
+<ul>
+<li>The "security handshake" only checks whether a decrypted BLE packet contains the literal string <strong><code>unitree</code></strong> before setting an authenticated flag.</li>
+<li><strong>Every unit ships the identical</strong> AES-CFB128 key <code>df98b715d5c6ed2b25817b6f2554124a</code> and IV <code>2841ae97419c2973296a0d4bdfe19a4f</code> — one key breaks the whole fleet.</li>
+<li>Shell commands built by <strong>unsanitized concatenation</strong> of attacker-controlled Wi-Fi SSID/password (e.g. <code>";$(reboot -f);#</code>) → <strong>root</strong>.</li>
+<li>A compromised unit <strong>scans BLE for nearby Unitree robots and auto-infects</strong> — a genuine robot botnet, first publicly disclosed of its kind against humanoids.</li>
+<li>CVEs: <strong>CVE-2025-35027, CVE-2025-60017, CVE-2025-60250, CVE-2025-60251</strong> (primary).</li>
+</ul>
+<li><strong>5-month vendor-response failure (primary):</strong> found 2025-04-14 → reported ~2025-05-14 → Unitree said fixes would take "quarters or years" (2025-07-18/20) → public disclosure 2025-09-20. Unitree's 2025-09-29 LinkedIn claim of "majority of fixes" complete has <strong>no published independent security audit</strong> of its humanoids as of 2026-07 (primary).</li>
+<li><strong>Not a one-off:</strong> Unitree <strong>Go1</strong> shipped a pre-installed remote-access backdoor (<strong>"CloudSail", CVE-2025-2894</strong>), found Mar/Apr 2025; units at <strong>MIT, Princeton, CMU</strong> were potentially exposed before Unitree deactivated the service (primary). IP-theft / tamper risk on the exact robot class a module-maker brain would ship on is <em>already realized</em>, not theoretical.</li>
+</ul>
+<h3>3. AI-native adversarial threats — the open problem</h3>
+<div class="tw"><table><thead><tr><th>Attack</th><th>Target layer</th><th>Reported efficacy</th><th>Threat-model realism</th><th>Source</th></tr></thead><tbody>
+<tr><td><strong>RoboPAIR</strong> jailbreak</td><td>S2 VLM planner</td><td><strong>100% attack success</strong> on 3 systems (Go2 black-box, Clearpath Jackal grey-box, NVIDIA Dolphins white-box) within days</td><td>Iterative attacker-LLM; induced driving off bridges, weapon-seeking, bomb-site hunting</td><td>primary — IEEE Spectrum; arXiv (ICRA 2025)</td></tr>
+<tr><td><strong>BadRobot</strong></td><td>Embodied-LLM (S2)</td><td>Formalizes 3 vuln classes; <strong>voice interaction alone</strong> suffices to break safety constraints</td><td>First paradigm specific to <em>embodied</em> LLM agents</td><td>primary — arXiv 2407.20242</td></tr>
+<tr><td><strong>VLA adversarial patch</strong> (UADA / UPA / TMA)</td><td>S1 VLA policy (perception)</td><td><strong>100% failure</strong> in LIBERO sim for UADA/TMA (UPA 89.7%; benign baseline ~23.5%); physical world: UADA <strong>43%</strong> ASR, TMA <strong>88.6%</strong> avg failure. Patch = 3–10% of a 224×224 image; Normalized Action Discrepancy for UADA ~21% (sim) → 32.6% (physical)</td><td>Patches visually mimic robot-arm structures for real-world plausibility (OpenVLA-7B / -LIBERO)</td><td>primary — arXiv 2411.13587v3</td></tr>
+<tr><td><strong>Partially-observable patch</strong> (2026)</td><td>S1 VLA policy</td><td>One <strong>fixed</strong> patch from a short observed <strong>prefix</strong> works on all later frames — drops the full-trajectory-access assumption</td><td>Materially more realistic: attacker need not watch the whole task</td><td>primary — arXiv 2606.03556</td></tr>
+<tr><td><strong>Universal / transferable patch</strong> ("When Robots Obey the Patch", UPA-RFAS)</td><td>S1 VLA policy</td><td>Effective across <strong>unknown VLA architectures, fine-tuned variants, sim-to-real</strong> — no per-robot/per-model tuning</td><td>Raises severity: one patch, many robots</td><td>primary — arXiv 2511.21192 (posted 2025-11-30; "CVPR 2026" venue <em>unverified</em> — no acceptance record found)</td></tr>
+<tr><td><strong>TrojanRobot / "Robot Collapse"</strong></td><td>Supply chain (VLM module)</td><td>Backdoor-finetuned VLM as drop-in module; <strong>LVLM-as-a-backdoor</strong> variant needs <em>only</em> a backdoored system prompt (no fine-tuning). 4 VLMs × 18 real-world tasks, physical + sim</td><td>Concrete evidence for the compromised-third-party-model risk</td><td>primary — arXiv 2411.11683 (v7, 2026-04-02)</td></tr>
+</tbody></table></div>
+<ul>
+<li><strong>Why this layer is uniquely hard:</strong> the attacks succeed <em>because the model behaves as trained</em> — there is no memory-corruption bug to patch. A TEE-resident, signed, correctly-booted VLA policy is fully vulnerable to an adversarial patch on a physical object in its field of view.</li>
+<li><strong>The threat model is getting worse, not better:</strong> the 2025→2026 progression (full-trajectory → prefix-only → architecture-agnostic universal patches) removes exactly the assumptions that made these attacks feel like lab curiosities. A deployed robot's camera <em>will</em> see attacker-chosen scenery.</li>
+<li><strong>Practical mitigations (all partial, none with published field efficacy on VLA robots as of 2026-07):</strong> input sanitization / semantic guardrails on the S2 planner; adversarial training and input preprocessing on S1 perception; <strong>out-of-band S0 safety envelope</strong> (geofence, torque/velocity limits, e-stop on the SIL-3 island) so that <em>even a fully jailbroken S2</em> cannot command an unsafe motion — the safety island is the last line of defense precisely because it does not trust the AI stack (unverified as a complete defense; it bounds harm, it does not prevent misbehavior).</li>
+</ul>
+<h3>4. Regulatory overlay (module-maker / procurement risk)</h3>
+<ul>
+<li><strong>GUARD Act (H.R.9129, "Guarding the U.S. against Adversarial Robotics Dominance Act of 2026", introduced 2026-06-03</strong> by Moolenaar/Obernolte/McClellan; dronelife coverage dated 2026-06-04): mandates national-security review of adversary-state humanoid/quadruped robots, with <strong>automatic FCC Covered List addition</strong> if the appropriate agency makes no determination within one year of enactment; explicitly aimed at Unitree ("six little dragons") via companion Senate legislation (primary — congress.gov / House Select Committee on the CCP; see <a href="#company-unitree">company-unitree.md</a>).</li>
+<li><strong>Read for a module-maker:</strong> shipping the brain on a robot flagged as insecure (UniPwn-class) is now a <strong>market-access</strong> risk, not just a reputational one. A demonstrable secure-boot + signed-OTA + isolated-safety-domain story is becoming table stakes for Western procurement — and is a differentiator the flagship SoCs (Thor 16-key PKC RoT + OP-TEE + 7-way GPU isolation; Qualcomm SPU EAL4+/SIL-3) let you <em>buy</em> rather than build. (Note: Blackwell GPU Confidential Computing / TDISP is a <em>dGPU</em> feature, not available on Jetson Thor — do not cite it for a Thor-based brain.)</li>
+</ul>
+<p><strong>Bottom line (要点):</strong> device security is solved at the silicon tier — pick Thor (OP-TEE + 16-key PKC RoT + 7-way GPU isolation; note Blackwell Confidential Computing/TDISP is dGPU-only, not on Thor) or a Qualcomm SPU/IQ10 platform (EAL4+ TEE + SIL-3 safety island) and wire up secure boot + signed OTA. <strong>Adversarial robustness is unsolved</strong> — no patch-defense or jailbreak-defense with published VLA-robot field efficacy exists as of 2026-07, so the only load-bearing mitigation is an <strong>AI-independent S0 safety envelope</strong> on the safety island that bounds the physical harm a compromised brain can do.</p>
+<p>来源:</p>
+<ul>
+<li><a href="https://docs.nvidia.com/jetson/" target="_blank" rel="noopener">https://docs.nvidia.com/jetson/</a> — Jetson Linux Developer Guide: OP-TEE, Secure Boot (PKC/FSKP), signed OTA / UEFI capsule, Firmware TPM</li>
+<li><a href="https://forums.developer.nvidia.com/t/enabling-nvidia-confidential-computing-cc-and-tdisp-on-jetson-agx-thor-blackwell-gpu/344837" target="_blank" rel="noopener">https://forums.developer.nvidia.com/t/enabling-nvidia-confidential-computing-cc-and-tdisp-on-jetson-agx-thor-blackwell-gpu/344837</a> — Jetson AGX Thor CC/TDISP request; NVIDIA staff reply: NOT supported on Jetson Thor, dGPU-only (2025-09)</li>
+<li><a href="https://docs.nvidia.com/jetson/archives/r39.2/DeveloperGuide/SD/Security/SecureBoot/QuickStartThor.html" target="_blank" rel="noopener">https://docs.nvidia.com/jetson/archives/r39.2/DeveloperGuide/SD/Security/SecureBoot/QuickStartThor.html</a> — Thor secure boot: up to 16 PKC keys (RSA-3K / ECDSA P-256 / P-521 / XMSS), PublicKeyHash fuses, revocation policy</li>
+<li><a href="https://www.nvidia.com/en-gb/data-center/solutions/confidential-computing/" target="_blank" rel="noopener">https://www.nvidia.com/en-gb/data-center/solutions/confidential-computing/</a> — Blackwell GPU confidential computing (enclave, no code change)</li>
+<li><a href="https://developer.ridgerun.com/wiki/index.php/NVIDIA_Jetson_Thor" target="_blank" rel="noopener">https://developer.ridgerun.com/wiki/index.php/NVIDIA_Jetson_Thor</a> — Thor SoC features: 7-way GPU isolation, fast/slow task separation</li>
+<li><a href="https://developer.nvidia.com/blog/" target="_blank" rel="noopener">https://developer.nvidia.com/blog/</a> — Jetson Thor introduction (2,070 FP4 TFLOPS, 7.5×/3.5× vs Orin, adopters)</li>
+<li><a href="https://csrc.nist.gov/" target="_blank" rel="noopener">https://csrc.nist.gov/</a> — NIST CMVP security policy, Qualcomm SPU HW v3.1</li>
+<li><a href="https://www.qualcomm.com/" target="_blank" rel="noopener">https://www.qualcomm.com/</a> — "Guard Your Data" SPU whitepaper; Dragonwing IQ10 press release (Jan 2026, SIL-3 safety island, ~700 TOPS)</li>
+<li><a href="https://docs.qualcomm.com/" target="_blank" rel="noopener">https://docs.qualcomm.com/</a> — IQ10 Robotics Reference Design product brief</li>
+<li><a href="https://github.com/Bin4ry/UniPwn" target="_blank" rel="noopener">https://github.com/Bin4ry/UniPwn</a> — UniPwn PoC: hardcoded key/IV, "unitree" handshake bypass, root command injection, wormability, disclosure timeline</li>
+<li><a href="https://spectrum.ieee.org/unitree-robot-exploit" target="_blank" rel="noopener">https://spectrum.ieee.org/unitree-robot-exploit</a> — UniPwn disclosure and vendor-response timeline</li>
+<li><a href="https://spectrum.ieee.org/jailbreak-llm" target="_blank" rel="noopener">https://spectrum.ieee.org/jailbreak-llm</a> — RoboPAIR 100% jailbreak success across 3 robotic systems</li>
+<li><a href="https://www.axios.com/2025/04/01/threat-spotlight-backdoor-in-chinese-robots-future-of-cybersecurity" target="_blank" rel="noopener">https://www.axios.com/2025/04/01/threat-spotlight-backdoor-in-chinese-robots-future-of-cybersecurity</a> — Go1 CloudSail backdoor (CVE-2025-2894)</li>
+<li><a href="https://arxiv.org/html/2407.20242" target="_blank" rel="noopener">https://arxiv.org/html/2407.20242</a> — BadRobot embodied-LLM jailbreak paradigm</li>
+<li><a href="https://arxiv.org/html/2411.13587v3" target="_blank" rel="noopener">https://arxiv.org/html/2411.13587v3</a> — adversarial patch attacks on VLA (UADA/TMA, sim 100% / physical 86.6%)</li>
+<li><a href="https://arxiv.org/pdf/2606.03556" target="_blank" rel="noopener">https://arxiv.org/pdf/2606.03556</a> — partially-observable adversarial patch attacks on VLA (2026)</li>
+<li><a href="https://arxiv.org/abs/2511.21192" target="_blank" rel="noopener">https://arxiv.org/abs/2511.21192</a> — "When Robots Obey the Patch": universal transferable patches (CVPR 2026)</li>
+<li><a href="https://arxiv.org/abs/2411.11683" target="_blank" rel="noopener">https://arxiv.org/abs/2411.11683</a> — "Robot Collapse": supply-chain backdoor attacks against VLM-based manipulation (v7, 2026-04-02)</li>
+<li><a href="https://dronelife.com/2026/06/04/congress-introduces-guard-act-extending-fcc-covered-list-framework-to-robotics/" target="_blank" rel="noopener">https://dronelife.com/2026/06/04/congress-introduces-guard-act-extending-fcc-covered-list-framework-to-robotics/</a> — GUARD Act (H.R.9129) FCC Covered List mechanism</li>
+</ul>
+<hr>
+<h2>内存容量 / 并发调度 / 量产标定 (Memory, Concurrency &amp; Bring-Up)</h2>
+<p>The on-device brain is a <strong>fixed-capacity, mixed-criticality resource-allocation problem</strong>: a multi-GB VLM (S2, slow 慢系统), a small action expert (S1, fast 快系统), VSLAM, ASR/TTS, and safety/watchdog code must all co-reside in one RAM pool and share one (or two) GPUs <em>without the 5-10Hz reasoning loop ever starving the 200Hz control loop</em>. This section budgets the RAM, picks a concurrency mechanism, and lists the量产 (bring-up/量产标定) taxes that early sizing routinely underestimates.</p>
+<h3>1. The silicon envelope (128GB Thor vs 64GB IQ10)</h3>
+<div class="tw"><table><thead><tr><th>Platform</th><th>Unified RAM</th><th>Mem BW / bus</th><th>AI compute</th><th>CPU</th><th>Power</th><th>Packaging</th><th>Src</th></tr></thead><tbody>
+<tr><td><strong>Jetson Thor</strong> (T5000)</td><td>128GB LPDDR5X</td><td>273 GB/s / 256-bit</td><td>2070 TFLOPS sparse FP4 · 1035 dense FP4 · 517 dense FP8; 2560 CUDA / 96 Tensor cores (Blackwell)</td><td>14-core Arm Neoverse-V3AE @2.6GHz</td><td>40–130W</td><td>bare SoM</td><td>(primary)</td></tr>
+<tr><td><strong>Qualcomm Dragonwing IQ10</strong></td><td>64GB LPDDR5x, ECC ("16×16 ECC-hardened controllers" <em>(unverified)</em>)</td><td>n/a published</td><td>700 TOPS</td><td>18-core Oryon (12×V3 large @5.0GHz + 6×V3 medium @3.6GHz)</td><td>-40–70°C, 12/24V in</td><td><strong>forced-air-cooled enclosed module</strong>; ~176×125×75mm <em>(unverified — single-source)</em>; HW security island <em>(unverified — not in Qualcomm brief)</em>; ≤12× GMSL2 cam, 8K@120fps codec</td><td>(primary)</td></tr>
+</tbody></table></div>
+<ul>
+<li><strong>Unified memory is the load-bearing Thor property</strong> (primary): CPU-side perception pre-processing and GPU-side transformer inference share one address space, so there is <strong>no PCIe copy tax at each S2/S1 handoff</strong> — the tensor-transfer cost that a discrete-GPU design pays every tick.</li>
+<li>IQ10 ships <strong>as a pre-integrated, forced-air-cooled enclosed module, not a bare SoC</strong> (primary — Qualcomm confirms integrated forced-air cooling, -40–70°C, 12/24V), reportedly with a <strong>hardware security island</strong> <em>(unverified — the security-island framing appears only in single-source COMPUTEX coverage, not the Qualcomm product brief)</em> so safety/watchdog isolation is physical, not scheduled — a different answer to the same mixed-criticality problem Thor solves in software (§3).</li>
+</ul>
+<h3>2. RAM carve-up: what actually fits</h3>
+<p>The concurrency budget = <strong>nominal capacity − firmware/kernel carveouts − Σ per-model footprint</strong>, with <strong>quantization</strong> and <strong>visual-token compression</strong> as the two first-order levers before buying bigger silicon.</p>
+<p><strong>S2 VLM footprint is the dominant term</strong> (everything else is rounding error at 64–128GB):</p>
+<div class="tw"><table><thead><tr><th>Model</th><th>Params</th><th>Inference mem</th><th>Fine-tune mem</th><th>Note</th><th>Src</th></tr></thead><tbody>
+<tr><td><strong>pi0</strong> (Physical Intelligence)</td><td>~3.3B (2.29B PaliGemma VLM + 315M flow-matching action expert)</td><td><strong>&gt;8GB</strong> floor (RTX 4090); ~14GB bf16 typical</td><td>LoRA &gt;22.5GB; full &gt;70GB (A100-80/H100); 40GB peak train @bs16 on A100-40</td><td>canonical heavy S2</td><td>(primary)</td></tr>
+<tr><td><strong>SmolVLA</strong> (smallest)</td><td>SmolLM2 135M/360M/1.7B + SigLIP-B/16 93M</td><td><strong>&lt;1–5GB</strong> (~2GB)</td><td>—</td><td>~5–10× lighter than pi0</td><td>(secondary)</td></tr>
+</tbody></table></div>
+<ul>
+<li>The <strong>pi0 ~14GB vs SmolVLA ~2GB</strong> gap <strong>is</strong> the capacity-budgeting decision: choosing SmolVLA for S2 changes the whole RAM carve-up math by <strong>5–10×</strong> (secondary).</li>
+<li><strong>Worked concurrency example (NVIDIA's own, 8GB scale)</strong> (primary): a 4-bit VLM (2.2GB) + ASR + TTS occupies <strong>4.5 of 7.6GB usable (~60%)</strong>. Methodology scales directly to 64–128GB. Quantization savings: Qwen3-8B FP16→W4A16 saves ~10GB; Qwen3-4B BF16→INT4 saves ~5.6GB.</li>
+<li><strong>Peripheral models are cheap</strong> (secondary): neural-SLAM maps run <strong>~75–290MB</strong> on Orin NX 16GB; cuVSLAM hits <strong>~143Hz (0.007s/frame)</strong> with 0.94% translation / 0.0019°·m⁻¹ error (KITTI) on Xavier-class HW. The capacity fight is VLM/action-model-dominated, <strong>not</strong> mapping-dominated.</li>
+</ul>
+<h3>3. Concurrency: spatial partition (MIG) beats time-share (MPS)</h3>
+<p>The core failure mode: naively time-multiplexing S2 and S1 on one GPU lets the VLM's mid-flight kernel make the 200Hz loop miss deadlines.</p>
+<div class="tw"><table><thead><tr><th>Mechanism</th><th>Behavior</th><th>Verdict for a robot brain</th></tr></thead><tbody>
+<tr><td><strong>NVIDIA MPS</strong></td><td>merges GPU contexts of sharing processes into one; <strong>no priority-based preemption</strong> (only a non-binding priority <em>hint</em>), default FIFO device queue → a low-prio job blocks a high-prio one for its full kernel duration (<strong>priority inversion</strong>); high-prio job-completion-time "several times higher than that of running exclusively"</td><td><strong>unsafe</strong> for mixed-criticality (secondary, FIKIT arXiv 2311.10359)</td></tr>
+<tr><td><strong>MIG (spatial)</strong></td><td>physical SM partition</td><td><strong>preferred</strong> — control code cannot be starved (primary)</td></tr>
+</tbody></table></div>
+<ul>
+<li><strong>JetPack 7.2 MIG on Thor</strong> (primary): a <strong>2-way fixed split</strong>, not 7 arbitrary slices — a larger <strong>AI/graphics slice (12 SMs / 1536 CUDA cores)</strong> for VLM/render/general CUDA, and a smaller <strong>isolated compute slice (8 SMs / 1024 CUDA cores)</strong> reserved for robotics/control/perception/safety, so a runaway VLM job <strong>physically cannot</strong> starve the safety partition. Paired with a <strong>Preemptible RT kernel</strong> for deterministic mixed-criticality scheduling.</li>
+<li><strong>Figure Helix's answer: don't share at all</strong> (primary): S2 (<strong>7B VLM @7–9Hz</strong>, async background process) and S1 (<strong>80M cross-attention transformer @200Hz</strong>, real-time process) run on <strong>two separate physical embedded GPUs</strong> — sidesteps contention entirely at the cost of 2× GPU silicon.</li>
+</ul>
+<h3>4. Reconciling the timescales: chunking is the pressure valve</h3>
+<p>Systems don't make the VLM faster; they <strong>amortize one slow forward pass across many control ticks</strong> via action chunking.</p>
+<div class="tw"><table><thead><tr><th>System</th><th>S2 (slow)</th><th>S1 (fast)</th><th>Lever</th><th>Src</th></tr></thead><tbody>
+<tr><td>Figure Helix</td><td>7B VLM @7–9Hz</td><td>80M @200Hz</td><td>dual-GPU, async S2</td><td>(primary)</td></tr>
+<tr><td>DualVLN</td><td>7B VLM @2Hz</td><td>diffusion policy @30Hz</td><td>—</td><td>(secondary)</td></tr>
+<tr><td>FiS-VLA</td><td>—</td><td><strong>21.9Hz no-chunk → 117.7Hz with 8-step chunk</strong></td><td>action chunking</td><td>(secondary)</td></tr>
+</tbody></table></div>
+<ul>
+<li><strong>A third, faster timescale exists</strong> (secondary): tactile sensing for slip/vibration commonly samples at <strong>1000Hz</strong> (e.g. Robotiq fingertips) — <strong>10× the S1 loop, 100–200× the S2 loop</strong>. Raw tactile streams must be <strong>decimated/compressed</strong> before any transformer (TacMamba's "tactile history compression adapter", arXiv 2603.01700) — feeding raw high-rate tokens into a VLA backbone is bottlenecked by the backbone's inference speed.</li>
+</ul>
+<h3>5. Tokenization cost — vision dominates, and it's quadratic</h3>
+<ul>
+<li><strong>Resolution → token count (SigLIP/PaliGemma patch-14)</strong> (primary): 224px²→<strong>256 tok</strong>, 448px²→<strong>1024 tok</strong>, 896px²→<strong>4096 tok</strong>. Self-attention is quadratic in tokens, so 224→896px is a <strong>16× token / much-larger-compute</strong> jump. Each additional camera (humanoids carry stereo head + wrist cams) adds this <strong>linearly per stream</strong>.</li>
+<li><strong>Dual vision encoders double the cost</strong> (secondary): OpenVLA runs <strong>DINOv2 + SigLIP</strong> (fused) before any LM compute — a common 2024-26 pattern that ~2× the visual-encode tax.</li>
+<li><strong>Token compression is a first-order lever, not just quantization</strong> (secondary): "Think Twice, Act Once" (arXiv 2505.21200) shows visual tokens dominate VLA inference cost and cuts token count up to <strong>50%</strong> + action-reuse for <strong>~40% speedup</strong> with maintained success — available to OEMs <em>before</em> buying bigger silicon.</li>
+<li><strong>Recognized-open-problem check</strong> (primary): <strong>VLA-Perf</strong> (NVIDIA, arXiv 2602.18397; github.com/NVlabs/vla-perf) is a dedicated 2026 analytical performance-model for exactly the on-device vs edge-server vs cloud VLA placement decision — its existence confirms this is an active gap, not a solved problem (full numeric tables were image-rendered, not text-extractable — treat specifics as unverified).</li>
+</ul>
+<h3>6. Bring-up / 量产标定 taxes (frequently underestimated)</h3>
+<ul>
+<li><strong>Firmware/kernel carveouts are real fixed taxes</strong> (primary): on 8GB Orin Nano only <strong>~7.6GB is usable</strong> (~400MB lost). Display carveouts ≤68MB (DCE 32MB, DISP_EARLY_BOOT_FB 34MB, DCE_TSEC/TSEC_DCE 1MB each); camera carveouts ≤33MB (CAMERA_TASKLIST 32MB, RCE 1MB). <strong>Disabling the graphical desktop alone frees up to 865MB.</strong> Proportionally smaller at 64–128GB but <strong>non-zero</strong> — budget them at sizing time.</li>
+<li>Multi-camera GMSL2 ingest (≤12× on IQ10) and 8K codec are fixed per-frame bandwidth/latency costs to standardize during 标定.</li>
+<li>ECC-hardened controllers (IQ10) trade a little capacity/latency for bit-error safety — a量产-reliability, not a benchmark, decision.</li>
+</ul>
+<p>来源:</p>
+<ul>
+<li>developer.nvidia.com/blog/introducing-nvidia-jetson-thor-the-ultimate-platform-for-physical-ai</li>
+<li>developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2</li>
+<li>developer.nvidia.com/blog/maximizing-memory-efficiency-to-run-bigger-models-on-nvidia-jetson</li>
+<li>finance.sina.com.cn (COMPUTEX 2026 Qualcomm Dragonwing IQ10 coverage)</li>
+<li>github.com/Physical-Intelligence/openpi ; blog.phospho.ai (pi0 architecture)</li>
+<li>emergentmind.com/topics/smolvla ; arxiv.org/html/2504.05299 (SmolVLM)</li>
+<li>arxiv.org/html/2311.10359v5 (FIKIT — MPS context-merge / no-preemption / FIFO "several times higher than running exclusively") ; arxiv.org/pdf/2406.05221 (GCAPS — Tegra preemptive GPU scheduling; does NOT itself discuss MPS)</li>
+<li>figure.ai/news/helix</li>
+<li>openreview.net (FiS-VLA) ; arxiv.org/pdf/2512.20188 (Async Fast-Slow VLA survey)</li>
+<li>arxiv.org/abs/2602.18397 ; github.com/NVlabs/vla-perf (VLA-Perf)</li>
+<li>github.com/NVIDIA-ISAAC-ROS/isaac_ros_visual_slam</li>
+<li>arxiv.org/html/2412.03555v1 (PaliGemma 2) ; emergentmind.com/topics/openvla</li>
+<li>arxiv.org/pdf/2505.21200 (Think Twice, Act Once)</li>
+<li>blog.robotiq.com/robotiq-brings-the-sense-of-touch-to-physical-ai ; arxiv.org/pdf/2603.01700 (TacMamba)</li>
 </ul>
 <hr></article>
 <article id="visions" class="page"><div class="pagehead"><h1>Visions &amp; Theses: How the Leaders Frame Physical AI</h1><p class="pmeta"><span class="ok">✓ 已核查</span><span>更新 2026-07-05</span><span class="slugtag">visions</span></p></div><blockquote>

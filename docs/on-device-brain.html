@@ -121,8 +121,17 @@ footer .m{font-family:var(--mono);font-size:11px;color:var(--mute);margin-top:8p
     <div class="axis open"><span class="st-lab">✗ 未解决</span><p class="a">可靠性(9 个 9)</p><p>演示 vs 24/7 的部署鸿沟;MTBF 几无公开数据(Spot 巡检 78h MTBI 是少数);评测危机(自报数字、无标准端侧基准)。</p></div>
   </div>
 
+  <h2>④ 安全 + 工程落地(可交付脑模组必答)</h2>
+  <p class="sub">功能安全(急停/回退)之外,还有网络安全面和工程落地成本 —— 对"卖脑模组"的军火商定位是真实差异化点。</p>
+  <div class="score">
+    <div class="axis open"><span class="st-lab">✗ 薄弱</span><p class="a">权重保护 / TEE</p><p>整个模型在可被偷的机器人上。<strong>Jetson Thor 无机密计算/TDISP(独立 GPU 专属)</strong>;高通 SPU(EAL4+)可做。需权重加密 + 安全启动(Thor 最多 16 把 OEM 公钥)+ 远程证明。</p></div>
+    <div class="axis open"><span class="st-lab">✗ 未解决</span><p class="a">对抗 / 提示注入</p><p>RoboPAIR 对 Go2/Jackal 越狱 100% 成功;VLA 对抗补丁物理世界失败率 88.6%;入户机器人可被"哄骗"提示越狱。截至 2026-07 无已发表现场防御。</p></div>
+    <div class="axis partial"><span class="st-lab">◐ 前车之鉴</span><p class="a">供应链信任 / UniPwn</p><p>宇树 G1 蓝牙僵尸网络(UniPwn,CVE-2025-35027 等,硬编码 AES 密钥、可蠕虫到 root);GUARD Act 把连接模组信任推上台面(与移远相关)。安全启动 + 签名 OTA 是底线。</p></div>
+    <div class="axis partial"><span class="st-lab">◐ 工程门槛</span><p class="a">内存/并发/标定</p><p>S2(pi0 ~14GB)+S1+感知+VSLAM+安全监视共驻单 SoC(128GB Thor);单 GPU 分时(MPS 无优先级抢占 → 快环可能被慢 VLM 饿死;需 MIG/优先级)。逐台标定 + bring-up 是 OEM 的真痛点 → <b>模组厂"预集成大脑"的价值所在</b>。</p></div>
+  </div>
+
   <div class="readbox">
-    <p class="h">④ 对模组厂(移远式)的战略读数</p>
+    <p class="h">⑤ 对模组厂(移远式)的战略读数</p>
     <p><b>端侧大脑(算力 + 连接 + 定位模组)是可防御的军火商赛道。</b>不赌哪家整机赢,卖每台机器人都要的三层大脑硬件。</p>
     <p>两侧夹击要认清:一边是<b>机电 BOM</b>(减速器/丝杠/电机,占整机 ~50-57%)—— 十年精密加工护城河,模组厂进不去(见零部件供应链);另一边是<b>芯片原厂(高通/NVIDIA)越过模组商直供整机</b> —— 这才是真威胁,不是富士康的 PIPE。</p>
     <p style="margin-top:10px"><strong style="color:var(--ink)">一个"端侧大脑模组"应该暴露什么(规格清单):</strong></p>
