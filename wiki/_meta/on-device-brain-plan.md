@@ -20,8 +20,8 @@ Audience: technical + strategic (Quectel-style on-device compute-module maker).
 - [x] **H. 软件栈 & 运行时** — ROS2, on-device inference engines (TensorRT / Qualcomm AI stack / llama.cpp-class), OS (Ubuntu on edge modules), the VLA runtime & middleware.
 - [x] **I. 为端侧而生的模型** — Gemini Robotics On-Device, NVIDIA GR00T N1 (Jetson-native), Figure Helix S1/S2, π0/π0.5 on-device, small open VLAs; who ships an edge brain.
 - [x] **J. 端侧学习/自适应 & 数据飞轮** — on-device adaptation vs cloud training; the deployed-robot data flywheel; test-time compute.
-- [ ] **K. "做好"的判据 & 评价** — latency / generalization / reliability (9s) / power / cost / updatability; how to benchmark an on-device brain.
-- [ ] **L. 参考架构 & 模组厂视角** — the emerging best-practice on-device-brain architecture (recipe); what an on-device-brain MODULE should look like (Quectel Robrain-class); strategic read for a module maker.
+- [x] **K. "做好"的判据 & 评价** — latency / generalization / reliability (9s) / power / cost / updatability; how to benchmark an on-device brain.
+- [x] **L. 参考架构 & 模组厂视角** — the emerging best-practice on-device-brain architecture (recipe); what an on-device-brain MODULE should look like (Quectel Robrain-class); strategic read for a module maker.
 
 ## Iteration mapping
 - iter1: A+B · iter2: C+D · iter3: E+F · iter4: G+H · iter5: I+J · iter6: K+L
