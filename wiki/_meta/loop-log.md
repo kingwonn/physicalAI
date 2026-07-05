@@ -275,3 +275,11 @@ decision-grade error: Fibocom's 珞博 investment is AI-companion-TOY (Fuzozo),
 not humanoid. Deck design: instrument-panel/oscilloscope identity (slate ink
 + signal-teal + heat-orange, mono data readouts, canvas signal waveform).
 Pitch target recorded in memory. Loop paused.
+
+## GitHub push — 2026-07-05
+Pushed the full repo to https://github.com/kingwonn/physicalAI (master →
+main, 25 commits) via an SSH deploy key (added by user with write access).
+Contents: 38-page bilingual wiki (wiki/ + wiki-zh/) + pitch/ (Quectel
+analysis, HTML briefing, .pptx deck) + protocol/meta. Remote is now the
+canonical mirror; future work can push incrementally (git push). Loop
+remains paused.
