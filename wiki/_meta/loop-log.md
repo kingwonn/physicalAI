@@ -318,3 +318,13 @@ Wistron≠上纬 entity-separation source added; re-confirmed Luxshare did NOT
 win the China Mobile tender (AgiBot+Unitree did). EN verified + zh synced.
 HOME/llms.txt at 38 pages, zh synced, both readers rebuilt (40 EN / 39 zh).
 Loop paused.
+
+## docs/ HTML site — 2026-07-05
+Consolidated all HTML deliverables into the repo under docs/ (GitHub-Pages-
+ready): index.html hub + reader-en.html + reader-zh.html + console.html +
+funding-timeline.html + quectel-pitch.html. Previously only pitch/quectel-
+pitch.html and viz/funding-timeline.html were in the repo; the readers and
+console existed only as Artifacts. Now the whole bilingual wiki (incl.
+odm-competitors) is browsable as HTML from the repo. Prepended doctype+utf-8
+to the Artifact-fragment files for standalone/Pages serving. Enable Pages
+(Settings → Pages → main /docs) to serve the portal live. Loop paused.

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>physicalAI — 具身智能知识库 · 门户</title>
+<style>
+:root{--paper:#F3F5F5;--panel:#FFF;--ink:#0F171C;--ink2:#18242B;--steel:#55666C;--mute:#83979B;
+--line:#DCE2E2;--teal:#0C8C88;--tealbr:#12B3AC;--heat:#E4592A;
+--sans:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",system-ui,-apple-system,sans-serif;
+--mono:ui-monospace,"SF Mono","Cascadia Code",Consolas,Menlo,monospace}
+*{box-sizing:border-box}
+html{background:var(--paper)}
+body{margin:0;font-family:var(--sans);color:var(--ink);line-height:1.7;font-size:16px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:940px;margin:0 auto;padding:0 24px}
+a{color:var(--teal);text-decoration:none}a:hover{text-decoration:underline}
+:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+.masthead{border-top:4px solid var(--teal);background:var(--ink);color:#E8EEEE;padding:36px 0 30px}
+.masthead .eb{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--tealbr);margin:0 0 12px}
+.masthead h1{font-size:clamp(26px,4.5vw,40px);font-weight:800;margin:0 0 10px;letter-spacing:-.01em}
+.masthead p{margin:0;color:#9DB0B3;font-size:15px;max-width:44em}
+.masthead .gh{display:inline-block;margin-top:16px;font-family:var(--mono);font-size:12px;color:var(--tealbr)}
+h2{font-family:var(--mono);font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--steel);
+  margin:44px 0 16px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:20px 22px;transition:.15s}
+.card:hover{border-color:var(--teal);box-shadow:0 6px 20px -12px rgba(12,140,136,.5);text-decoration:none}
+.card .ic{font-size:26px;line-height:1}
+.card .t{font-weight:700;font-size:17px;color:var(--ink);margin:10px 0 4px}
+.card .d{font-size:13.5px;color:var(--steel);line-height:1.55}
+.card .m{font-family:var(--mono);font-size:11px;color:var(--mute);margin-top:10px}
+.docrow{display:flex;flex-wrap:wrap;gap:10px;margin:8px 0 0}
+.docrow a{font-family:var(--mono);font-size:12.5px;padding:6px 12px;border:1px solid var(--line);border-radius:6px;
+  background:var(--panel);color:var(--steel)}
+.docrow a:hover{border-color:var(--teal);color:var(--teal);text-decoration:none}
+.note{font-size:13px;color:var(--steel);background:var(--panel);border-left:3px solid var(--teal);
+  padding:12px 16px;border-radius:0 6px 6px 0;margin:16px 0}
+footer{margin-top:50px;border-top:1px solid var(--line);padding:22px 0 44px;font-family:var(--mono);
+  font-size:11px;color:var(--mute);display:flex;flex-wrap:wrap;gap:6px 22px}
+</style>
+</head>
+<body>
+<header class="masthead"><div class="wrap">
+  <p class="eb">Physical AI · 具身智能 · LLM-Wiki</p>
+  <h1>physicalAI 知识库门户</h1>
+  <p>git 版本化、经对抗核查的全球具身智能知识库(38 页双语)+ ODM 视角的机会分析、移远(Quectel)决策材料、融资时间线与友商竞争情报。所有交付物为自包含 HTML,离线可用。</p>
+  <a class="gh" href="https://github.com/kingwonn/physicalAI">↗ github.com/kingwonn/physicalAI</a>
+</div></header>
+
+<div class="wrap">
+  <h2>知识库(全文阅读器 · 38 页双语)</h2>
+  <div class="grid">
+    <a class="card" href="reader-en.html"><div class="ic">📚</div><div class="t">English Reader</div><div class="d">38 verified pages — history, SOTA, tech tree, 11 company deep-dives, leader theses, regional landscapes, ODM opportunity + competitor landscape.</div><div class="m">reader-en.html</div></a>
+    <a class="card" href="reader-zh.html"><div class="ic">📕</div><div class="t">中文版阅读器</div><div class="d">39 页全译:历史 / 技术现状 / 技术树 / 公司深度 / 大佬观点 / 全球格局 / ODM 机会与友商全景。</div><div class="m">reader-zh.html</div></a>
+  </div>
+
+  <h2>ODM 决策材料 · 移远(Quectel)</h2>
+  <div class="grid">
+    <a class="card" href="quectel-pitch.html"><div class="ic">📡</div><div class="t">移远 × Physical AI 老板 pitch</div><div class="d">面向创始人 + 销售/市场 VP 的中文决策简报:蛋糕多大 / 军火商逻辑 / 起点盘点 / 友商记分牌 / 怎么切 / 风险 / The Ask。</div><div class="m">quectel-pitch.html · 另有 12 页 PPT 见下</div></a>
+    <a class="card" href="funding-timeline.html"><div class="ic">💰</div><div class="t">Physical AI 融资时间线</div><div class="d">157 笔融资/IPO/并购(2013–2026,~$90B)。可按类别/区域/大额筛选,标注来源强度与"未关闭"轮次。</div><div class="m">funding-timeline.html</div></a>
+    <a class="card" href="console.html"><div class="ic">🤖</div><div class="t">研究循环控制台</div><div class="d">知识库自更新循环的运维面板:迭代状态、信源审计、日志与队列。</div><div class="m">console.html</div></a>
+  </div>
+
+  <div class="note">📎 非 HTML 交付物(在仓库内):<b>移远 12 页决策 PPT</b> <code>pitch/移远通信-PhysicalAI-机会评估.pptx</code> · <b>移远全文分析</b> <code>pitch/quectel.md</code> · <b>ODM 机会图谱</b> <code>wiki/odm-opportunity.md</code> · <b>友商竞争情报</b> <code>wiki/odm-competitors.md</code> · <b>融资数据集</b> <code>wiki/_meta/funding-events.json</code></div>
+
+  <h2>ODM 视角 · markdown 源</h2>
+  <div class="docrow">
+    <a href="https://github.com/kingwonn/physicalAI/blob/main/wiki/odm-opportunity.md">ODM 机会图谱</a>
+    <a href="https://github.com/kingwonn/physicalAI/blob/main/wiki/odm-competitors.md">友商竞争情报(16 家)</a>
+    <a href="https://github.com/kingwonn/physicalAI/blob/main/pitch/quectel.md">移远机会契合分析</a>
+    <a href="https://github.com/kingwonn/physicalAI/blob/main/wiki/investment.md">投资与市场</a>
+  </div>
+</div>
+
+<footer><div class="wrap" style="display:flex;flex-wrap:wrap;gap:6px 22px">
+  <span>快照 2026-07-05</span><span>38 页双语 · 全部对抗核查</span><span>github.com/kingwonn/physicalAI</span><span>启用 GitHub Pages(Settings → Pages → main /docs)即可在线访问本门户</span>
+</div></footer>
+</body>
+</html>
