@@ -258,3 +258,20 @@ is the design-win window (Jabil-Apptronik, Lens-AgiBot JV, Foxconn-Agility
 PIPE). HOME/llms.txt at 37 pages, zh synced, both readers rebuilt (39 EN /
 38 zh incl. meta). Next: Chinese-first boss pitch deck (needs user's ODM
 profile answers). Loop paused; GitHub push still awaiting deploy key.
+
+## Quectel boss-pitch — 2026-07-05 (directed; Opus synthesis + Sonnet research)
+Built the Quectel (移远通信) opportunity-fit analysis (pitch/quectel.md,
+verified) and a Chinese-first executive pitch deck (pitch/quectel-pitch.html
++ Artifact). Research (Sonnet, 3 parallel) → synthesis + verify (Opus).
+KEY REFRAME: Quectel has ALREADY entered robotics 2+ yrs — SG885G(48
+TOPS)/SH602HA-AP(CES2026)/SP895BD-AP(77 TOPS) compute-module ladder, Robrain
+brain co-launched with LimX on TRON1 biped (MWC Shanghai 2025-06), Unitree
+quadruped module in mass production (secondary), ¥411M AI-robotics line in
+the 2025 ≤¥2.3B placement — so the pitch is "scale, not enter". Arms-dealer
+thesis (Intel Inside + 高德, not Foxconn). Honest 3-tier sizing ($40-50T wage
+TAM ≠ ~$20 億 hardware ≠ $3-8億/yr module SAM). FOMO scoreboard: 美格/
+Thundercomm/高通/NVIDIA/广和通 all moved in past 18 months. Verify killed a
+decision-grade error: Fibocom's 珞博 investment is AI-companion-TOY (Fuzozo),
+not humanoid. Deck design: instrument-panel/oscilloscope identity (slate ink
++ signal-teal + heat-orange, mono data readouts, canvas signal waveform).
+Pitch target recorded in memory. Loop paused.
