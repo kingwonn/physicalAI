@@ -1,0 +1,2541 @@
+[
+{
+"date": "2013-12",
+"company": "Boston Dynamics",
+"stage": "M&A",
+"amount": "undisclosed",
+"amount_usd_m": 0,
+"valuation": "",
+"category": "humanoid",
+"region": "US",
+"lead_investors": [
+"Google (Alphabet)"
+],
+"note": "Pre-window context: Google acquired Boston Dynamics (undisclosed price); included for ownership-chain continuity since window covers subsequent SoftBank/Hyundai sales.",
+"source": "https://en.wikipedia.org/wiki/Boston_Dynamics",
+"source_quality": "secondary"
+},
+{
+"date": "2015",
+"company": "UBTech",
+"stage": "Series A",
+"amount": "~$60M",
+"amount_usd_m": 60,
+"category": "humanoid",
+"region": "China",
+"lead_investors": [
+"Qiming"
+],
+"valuation": "",
+"note": "iFlytek became a shareholder via transfer",
+"source": "zhuanlan.zhihu.com",
+"source_quality": "secondary"
+},
+{
+"date": "2016-05",
+"company": "CloudMinds (达闼科技)",
+"stage": "Seed",
+"amount": "$30M",
+"amount_usd_m": 30,
+"valuation": "",
+"category": "humanoid",
+"region": "China",
+"lead_investors": [
+"SoftBank",
+"Foxconn",
+"Walden International"
+],
+"note": "Seed round for cloud-robotics/humanoid company; SoftBank led with $10M of the $30M.",
+"source": "https://www.pingwest.com/w/185501",
+"source_quality": "secondary"
+},
+{
+"date": "2017-02",
+"company": "CloudMinds (达闼科技)",
+"stage": "Series A",
+"amount": "$100M",
+"amount_usd_m": 100,
+"valuation": "",
+"category": "humanoid",
+"region": "China",
+"lead_investors": [
+"SoftBank"
+],
+"note": "Series A for cloud robotics/humanoid platform.",
+"source": "https://www.gg-robot.com/art-66360.html",
+"source_quality": "secondary"
+},
+{
+"date": "2017-06",
+"company": "Boston Dynamics",
+"stage": "M&A",
+"amount": "$100M",
+"amount_usd_m": 100,
+"valuation": "",
+"category": "humanoid",
+"region": "US",
+"lead_investors": [
+"SoftBank Group"
+],
+"note": "SoftBank acquired Boston Dynamics (and Schaft) from Alphabet for a reported ~$100M.",
+"source": "https://techcrunch.com/2017/06/08/softbank-is-buying-robotics-firm-boston-dynamics-and-schaft-from-alphabet/",
+"source_quality": "primary"
+},
+{
+"date": "2018-01",
+"company": "Agility Robotics",
+"stage": "Series A",
+"amount": "$8M",
+"amount_usd_m": 8,
+"valuation": "",
+"category": "humanoid",
+"region": "US",
+"lead_investors": [
+"Playground Global"
+],
+"note": "Cassie/Digit maker's first institutional round; Sony Innovation Fund and Robotics Hub also participated.",
+"source": "https://onami.us/onami-success-stories/agility-robotics-secures-8m-series-a-funding",
+"source_quality": "secondary"
+},
+{
+"date": "2018-02",
+"company": "OSARO",
+"stage": "Series A",
+"amount": "$10M",
+"amount_usd_m": 10,
+"valuation": "",
+"category": "robot-brain(VLA)",
+"region": "US",
+"lead_investors": [],
+"note": "Machine-learning-for-industrial-robotics startup; approximate date, April 2017–2018 per differing sources.",
+"source": "https://roboticsandautomationnews.com/2019/10/05/osaro-raises-16-million-in-funding-to-develop-its-machine-learning-for-industrial-automation/26117/",
+"source_quality": "secondary"
+},
+{
+"date": "2018-05",
+"company": "UBTECH Robotics (优必选)",
+"stage": "Series C",
+"amount": "$820M",
+"amount_usd_m": 820,
+"valuation": "$5B",
+"category": "humanoid",
+"region": "China",
+"lead_investors": [
+"Tencent"
+],
+"note": "Record single AI-sector funding round at the time; ICBC, Haier, Telstra, CDH Investments (follow-on) etc. also participated.",
+"source": "https://www.shenzhenware.com/articles/12298",
+"source_quality": "primary"
+},
+{
+"date": "2018-08",
+"company": "Unitree Robotics (宇树科技)",
+"stage": "Angel",
+"amount": "undisclosed (RMB, small)",
+"amount_usd_m": 0,
+"valuation": "",
+"category": "quadruped-AMR",
+"region": "China",
+"lead_investors": [
+"Bianliang Capital (变量资本)",
+"Anchuang Tech Investment"
+],
+"note": "First formal institutional angel round after 2016 personal angel investment; He Xiaopeng (Xpeng founder) was a backer.",
+"source": "https://baike.baidu.com/item/%E5%AE%87%E6%A0%91%E7%A7%91%E6%8A%80%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/66925085",
+"source_quality": "single-source"
+},
+{
+"date": "2018-12",
+"company": "RightHand Robotics",
+"stage": "Series B",
+"amount": "$23M",
+"amount_usd_m": 23,
+"valuation": "",
+"category": "component-module",
+"region": "US",
+"lead_investors": [
+"Menlo Ventures"
+],
+"note": "RightPick robotic piece-picking gripper/AI; GV, Matrix Partners, Playground Global also joined.",
+"source": "https://www.mmh.com/article/righthand_robotics_raises_23m_in_series_b_funding",
+"source_quality": "secondary"
+},
+{
+"date": "2019 (est. late)",
+"company": "CloudMinds (达闼科技)",
+"stage": "Series B",
+"amount": "$300M",
+"amount_usd_m": 300,
+"valuation": "",
+"category": "humanoid",
+"region": "China",
+"lead_investors": [
+"SoftBank"
+],
+"note": "Final private round before attempted US IPO; exact month unclear (unverified single-source on date).",
+"source": "https://www.ryanbencapital.com/?p=23940",
+"source_quality": "single-source"
+},
+{
+"date": "2019-04",
+"company": "Diligent Robotics",
+"stage": "Seed",
+"amount": "$3M",
+"amount_usd_m": 3,
+"valuation": "",
+"category": "robot-brain(VLA)",
+"region": "US",
+"lead_investors": [],
+"note": "Moxi hospital-service-robot maker seed round / market launch.",
+"source": "https://www.diligentrobots.com/press/prweb",
+"source_quality": "secondary"
+},
+{
+"date": "2019-07",
+"company": "Fourier Intelligence (傅利叶智能)",
+"stage": "Series B",
+"amount": "~RMB100M ($14M est.)",
+"amount_usd_m": 14,
+"valuation": "",
+"category": "component-module",
+"region": "China",
+"lead_investors": [
+"Shenzhen Guozhong Venture Capital",
+"Qianhai FOF"
+],
+"note": "Rehab-robotics/exoskeleton maker (later pivoted to humanoids, GR-1 in 2023); IDG Capital and Volcanics Venture followed on. Round spanned Jul 2019–May 2020.",
+"source": "https://www.cls.cn/detail/491977",
+"source_quality": "secondary"
+},
+{
+"date": "2019-10",
+"company": "OSARO",
+"stage": "Series B",
+"amount": "$16M",
+"amount_usd_m": 16,
+"valuation": "",
+"category": "robot-brain(VLA)",
+"region": "US",
+"lead_investors": [
+"King River Capital"
+],
+"note": "ML for industrial/warehouse robot automation; brought total funding to $29.3M.",
+"source": "https://venturebeat.com/2019/10/03/osaro-raises-16-million-to-make-warehouse-robots-smarter-with-ai/",
+"source_quality": "primary"
+},
+{
+"date": "2019-12",
+"company": "Unitree Robotics (宇树科技)",
+"stage": "Pre-A",
+"amount": "tens of millions RMB",
+"amount_usd_m": 5,
+"valuation": "",
+"category": "quadruped-AMR",
+"region": "China",
+"lead_investors": [
+"Sequoia China Seed Fund (红杉中国种子基金)"
+],
+"note": "Pre-A round, first Sequoia China involvement.",
+"source": "https://36kr.com/p/1725020880897",
+"source_quality": "secondary"
+},
+{
+"date": "2020-01",
+"company": "Berkshire Grey",
+"stage": "Series B",
+"amount": "$263M",
+"amount_usd_m": 263,
+"valuation": "",
+"category": "robot-brain(VLA)",
+"region": "US",
+"lead_investors": [
+"SoftBank"
+],
+"note": "AI-driven warehouse/fulfillment robotics; Khosla Ventures, NEA, Canaan also participated. Later SPAC'd in 2021 at $2.7B.",
+"source": "https://siliconangle.com/2021/02/24/warehouse-robot-startup-berkshire-grey-inks-spac-deal-2-7b-valuation/",
+"source_quality": "secondary"
+},
+{
+"date": "2020-04-16",
+"company": "Ghost Robotics",
+"stage": "Seed/early",
+"amount": "<$5M",
+"amount_usd_m": 3,
+"valuation": "",
+"category": "quadruped-AMR",
+"region": "US",
+"lead_investors": [],
+"note": "Quadruped (Vision 60) maker, UPenn spinout; small early round, amount thin/unverified.",
+"source": "https://www.crunchbase.com/organization/ghost-robotics-llc/company_financials",
+"source_quality": "single-source"
+},
+{
+"date": "2020-05",
+"company": "Covariant",
+"stage": "Series B",
+"amount": "$40M",
+"amount_usd_m": 40,
+"valuation": "",
+"category": "robot-brain(VLA)",
+"region": "US",
+"lead_investors": [
+"Index Ventures"
+],
+"note": "AI-for-robotic-manipulation ('universal AI'); Radical Ventures and Amplify Partners also joined.",
+"source": "https://covariant.ai/covariant-raises-usd40-million-in-series-b-funding-to-bring-ai-robotics-to-new-industries/",
+"source_quality": "primary"
+},
+{
+"date": "2020-05-22",
+"company": "Unitree Robotics (宇树科技)",
+"stage": "Pre-A+",
+"amount": "undisclosed (RMB)",
+"amount_usd_m": 0,
+"valuation": "",
+"category": "quadruped-AMR",
+"region": "China",
+"lead_investors": [
+"Chuxin Capital (初心资本)"
+],
+"note": "Follow-on with Sequoia China re-investing.",
+"source": "https://hub.baai.ac.cn/view/35340",
+"source_quality": "single-source"
+},
+{
+"date": "2020-07",
+"company": "Dexterity Inc.",
+"stage": "Series A",
+"amount": "$56M",
+"amount_usd_m": 56,
+"valuation": "",
+"category": "robot-brain(VLA)",
+"region": "US",
+"lead_investors": [],
+"note": "Full-stack AI robotic picking/warehouse automation.",
+"source": "https://www.texau.com/profiles/dexterity",
+"source_quality": "secondary"
+},
+{
+"date": "2020-07",
+"company": "RightHand Robotics",
+"stage": "Debt",
+"amount": "$6M",
+"amount_usd_m": 6,
+"valuation": "",
+"category": "component-module",
+"region": "US",
+"lead_investors": [],
+"note": "Debt financing for piece-picking robot gripper/AI maker.",
+"source": "https://www.crunchbase.com/organization/righthand-robotics",
+"source_quality": "secondary"
+},
+{
+"date": "2020-10",
+"company": "Fourier Intelligence (傅利叶智能)",
+"stage": "Series C",
+"amount": "~RMB100M ($14M est.)",
+"amount_usd_m": 14,
+"valuation": "",
+"category": "component-module",
+"region": "China",
+"lead_investors": [
+"Vision Plus Capital",
+"Prosperity7 Ventures"
+],
+"note": "Round spanned Oct 2020–Jul 2021.",
+"source": "https://www.aibangbots.com/a/5720",
+"source_quality": "single-source"
+},
+{
+"date": "2020-10-15",
+"company": "Agility Robotics",
+"stage": "Series B (initial)",
+"amount": "undisclosed",
+"amount_usd_m": 0,
+"valuation": "",
+"category": "humanoid",
+"region": "US",
+"lead_investors": [
+"DCVC",
+"TDK Ventures"
+],
+"note": "First DCVC/TDK Ventures investment; part of broader Series B that formally closed larger in Apr 2022.",
+"source": "https://www.crunchbase.com/funding_round/agility-robotics-series-b--da34c226/funding_round_overview/timeline",
+"source_quality": "secondary"
+},
+{
+"date": "2020-11",
+"company": "Kindred AI",
+"stage": "M&A",
+"amount": "undisclosed",
+"amount_usd_m": 0,
+"valuation": "",
+"category": "robot-brain(VLA)",
+"region": "US/Canada",
+"lead_investors": [
+"Ocado Group"
+],
+"note": "Kindred (robot-learning/piece-picking AI, raised ~$44M total from Tencent, First Round, Eclipse, Ocado, AME Cloud) acquired by Ocado.",
+"source": "https://www.cbinsights.com/company/kindred-systems",
+"source_quality": "secondary"
+},
+{
+"date": "2020-12 (announced) / 2021-06 (closed)",
+"company": "Boston Dynamics",
+"stage": "M&A / Majority stake purchase",
+"amount": "~$880M for 80%",
+"amount_usd_m": 880,
+"category": "humanoid",
+"region": "US",
+"lead_investors": [
+"Hyundai Motor Group"
+],
+"valuation": "$1.1B",
+"note": "Chairman Chung Eui-sun personally took ~20% of the buyer side (reported)",
+"source": "en.wikipedia.org/wiki/Boston_Dynamics",
+"source_quality": "secondary"
+},
+{
+"date": "2020-12-11",
+"company": "Hyundai Motor Group / Boston Dynamics",
+"stage": "M&A (announced)",
+"amount": "$880M (for 80%)",
+"amount_usd_m": 880,
+"valuation": "$1.1B",
+"category": "humanoid",
+"region": "US/Korea",
+"lead_investors": [
+"Hyundai Motor Group"
+],
+"note": "Hyundai to acquire 80% controlling stake in Boston Dynamics from SoftBank; deal closed June 2021.",
+"source": "https://www.builtinboston.com/articles/hyundai-acquires-boston-dynamics-1b-valuation-hiring",
+"source_quality": "primary"
+},
+{
+"date": "2020-12",
+"company": "ANYbotics",
+"stage": "Series A",
+"amount": "$22.3M",
+"amount_usd_m": 22.3,
+"valuation": "",
+"category": "quadruped-AMR",
+"region": "Europe",
+"lead_investors": [
+"Swisscom Ventures",
+"EquityPitcher Ventures"
+],
+"note": "ANYmal quadruped inspection robot maker, ETH Zurich spinout.",
+"source": "https://www.startupticker.ch/en/news/anybotics-raises-additional-usd-20-million",
+"source_quality": "secondary"
+},
+{
+"date": "2020-12",
+"company": "Berkshire Grey",
+"stage": "SPAC (announced)",
+"amount": "$2.7B valuation",
+"amount_usd_m": 0,
+"valuation": "$2.7B",
+"category": "robot-brain(VLA)",
+"region": "US",
+"lead_investors": [
+"Revolution Acceleration Acquisition Corp"
+],
+"note": "SPAC deal announced Dec 2020/Feb 2021 by John Delaney and Steve Case's SPAC; ~$507M cash to balance sheet.",
+"source": "https://www.bostonglobe.com/2021/02/24/business/warehouse-robotics-maker-berkshire-grey-plans-go-public-through-spac-merger/",
+"source_quality": "primary"
+},
+{
+"date": "2021-02-19",
+"company": "Boston Dynamics",
+"stage": "Grant/Strategic",
+"amount": "$37M",
+"amount_usd_m": 37,
+"valuation": "",
+"category": "humanoid",
+"region": "US",
+"lead_investors": [
+"SoftBank"
+],
+"note": "Additional SoftBank capital injection into Boston Dynamics pre-Hyundai-deal-close (reported as occurring ~Feb 2019 by some sources; included with date caveat).",
+"source": "https://builtin.com/robotics/boston-dynamics-receives-additional-37-million-softbank",
+"source_quality": "single-source"
+},
+{
+"date": "2021-02-24",
+"company": "Berkshire Grey",
+"stage": "IPO/SPAC",
+"amount": "$2.7B valuation",
+"amount_usd_m": 0,
+"valuation": "$2.7B",
+"category": "robot-brain(VLA)",
+"region": "US",
+"lead_investors": [
+"Revolution Acceleration Acquisition Corp"
+],
+"note": "Formal SPAC merger agreement announced; NASDAQ listing followed mid-2021.",
+"source": "https://www.therobotreport.com/berkshire-grey-going-public-27b-spac-deal/",
+"source_quality": "primary"
+},
+{
+"date": "2021-06-21",
+"company": "Boston Dynamics",
+"stage": "M&A (completed)",
+"amount": "$880M (for 80%)",
+"amount_usd_m": 880,
+"valuation": "$1.1B",
+"category": "humanoid",
+"region": "US/Korea",
+"lead_investors": [
+"Hyundai Motor Group"
+],
+"note": "Deal closing completed; Hyundai Motor Group holds 80%, SoftBank retains 20%. Primary source: joint Hyundai/Boston Dynamics/SoftBank release.",
+"source": "https://bostondynamics.com/news/hyundai-motor-group-completes-acquisition-of-boston-dynamics-from-softbank/",
+"source_quality": "primary"
+},
+{
+"date": "2021-07",
+"company": "Covariant",
+"stage": "Series C",
+"amount": "$80M",
+"amount_usd_m": 80,
+"valuation": "",
+"category": "robot-brain(VLA)",
+"region": "US",
+"lead_investors": [
+"Index Ventures"
+],
+"note": "Brought total capitalization to $147M in two years since public launch; added Temasek and CPP Investments as new investors.",
+"source": "https://www.prnewswire.com/news-releases/covariant-raises-80m-in-series-c-funding-achieves-autonomy-across-industries-301340995.html",
+"source_quality": "primary"
+},
+{
+"date": "2021-07-30",
+"company": "Unitree Robotics (宇树科技)",
+"stage": "Series A",
+"amount": "tens of millions USD (~$10-30M)",
+"amount_usd_m": 15,
+"valuation": "",
+"category": "quadruped-AMR",
+"region": "China",
+"lead_investors": [
+"Shunwei Capital (顺为资本)"
+],
+"note": "Series A for quadruped robot maker; exact amount undisclosed beyond 'tens of millions USD'.",
+"source": "https://cn.technode.com/post/2021-07-30/unitree-robotics-a/",
+"source_quality": "secondary"
+},
+{
+"date": "2021-08",
+"company": "Ghost Robotics",
+"stage": "Seed",
+"amount": "$0.45M",
+"amount_usd_m": 0.45,
+"valuation": "",
+"category": "quadruped-AMR",
+"region": "US",
+"lead_investors": [
+"Alumni Ventures"
+],
+"note": "Small seed tranche; likely part of larger undisclosed raise, thin/unverified figure from Crunchbase.",
+"source": "https://www.crunchbase.com/organization/ghost-robotics-llc/company_overview/overview_timeline",
+"source_quality": "single-source"
+},
+{
+"date": "2021-10",
+"company": "Dexterity Inc.",
+"stage": "Series B",
+"amount": "$140M",
+"amount_usd_m": 140,
+"valuation": "",
+"category": "robot-brain(VLA)",
+"region": "US",
+"lead_investors": [
+"Kleiner Perkins",
+"Lightspeed Venture Partners"
+],
+"note": "Full-stack robotic picking/warehouse automation scale-up.",
+"source": "https://techcrunch.com/2021/10/13/warehouse-robotics-firm-dexterity-raises-140m/",
+"source_quality": "primary"
+},
+{
+"date": "2022",
+"company": "Figure AI",
+"stage": "Seed",
+"amount": "$100M (self-funded)",
+"amount_usd_m": 100,
+"valuation": "",
+"category": "humanoid",
+"region": "US",
+"lead_investors": [
+"Brett Adcock (founder)"
+],
+"note": "Founder Brett Adcock self-funded Figure's founding/seed round with $100M of his own capital.",
+"source": "https://sacra.com/c/figure-ai/",
+"source_quality": "single-source"
+},
+{
+"date": "2022",
+"company": "人形机器人领域 (China humanoid sector aggregate)",
+"stage": "Various",
+"amount": "RMB480M (~$70M) across 2 deals",
+"amount_usd_m": 70,
+"valuation": "",
+"category": "humanoid",
+"region": "China",
+"lead_investors": [],
+"note": "Per Gaogong Consulting (高工咨询), China's humanoid-robot sector saw only 2 funding events in 2022 totaling ~RMB480M — illustrates the sector was still nascent before 2023's boom.",
+"source": "https://www.aibangbots.com/a/1672",
+"source_quality": "single-source"
+},
+{
+"date": "2022",
+"company": "Apptronik",
+"stage": "Seed",
+"amount": "~$15M",
+"amount_usd_m": 15,
+"valuation": "",
+"category": "humanoid",
+"region": "US",
+"lead_investors": [],
+"note": "UT Austin Human Centered Robotics Lab spinout (2016); seed round coincided with NASA Valkyrie collaboration/Apollo humanoid program start.",
+"source": "https://analyticsindiamag.com/ai-news-updates/apptronik-secures-350-million-in-series-a-funding-with-backing-from-google/",
+"source_quality": "secondary"
+},
+{
+"date": "2022",
+"company": "Figure AI",
+"stage": "Bootstrap",
+"amount": "Adcock personal capital",
+"amount_usd_m": 0,
+"category": "humanoid",
+"region": "US",
+"lead_investors": [
+"Brett Adcock (personal)"
+],
+"valuation": "",
+"note": "Founder self-funded initial capital before Series A",
+"source": "figure.ai/en.wikipedia.org",
+"source_quality": "secondary"
+},
+{
+"date": "2022-04",
+"company": "Agility Robotics",
+"stage": "Series B",
+"amount": "$150M",
+"amount_usd_m": 150,
+"valuation": "",
+"category": "humanoid",
+"region": "US",
+"lead_investors": [
+"DCVC",
+"Playground Global"
+],
+"note": "Digit humanoid maker; Amazon Industrial Innovation Fund joined as new investor.",
+"source": "https://www.agilityrobotics.com/content/agility-robotics-raises-150m-series-b-led-by-dcvc-and-playground-global",
+"source_quality": "primary"
+},
+{
+"date": "2022-04",
+"company": "Unitree Robotics (宇树科技)",
+"stage": "Series B",
+"amount": "hundreds of millions RMB",
+"amount_usd_m": 30,
+"valuation": "",
+"category": "quadruped-AMR",
+"region": "China",
+"lead_investors": [
+"Shunwei Capital"
+],
+"note": "Series B round; Shunwei continued to increase stake. Amount described only as '数亿元' (hundreds of millions RMB).",
+"source": "https://cn.technode.com/post/2022-04-20/unitree-robotics-series-b/",
+"source_quality": "secondary"
+},
+{
+"date": "2022-04",
+"company": "Diligent Robotics",
+"stage": "Series B",
+"amount": "$30M+",
+"amount_usd_m": 30,
+"valuation": "",
+"category": "robot-brain(VLA)",
+"region": "US",
+"lead_investors": [
+"Tiger Global"
+],
+"note": "Moxi hospital-service-robot maker; brought total funding to ~$50M.",
+"source": "https://www.diligentrobots.com/blog/diligent-robotics-raises-over-30-million-in-series-b-funding-round-to-deploy-collaborative-robots-to-healthcare-systems-across-the-nation",
+"source_quality": "primary"
+},
+{
+"date": "2022-04",
+"company": "Vicarious / Intrinsic (Alphabet)",
+"stage": "M&A",
+"amount": "undisclosed (Vicarious had raised ~$250M total)",
+"amount_usd_m": 0,
+"valuation": "",
+"category": "robot-brain(VLA)",
+"region": "US",
+"lead_investors": [
+"Intrinsic (Alphabet)"
+],
+"note": "Alphabet's Intrinsic acquired robot-learning pioneer Vicarious; some Vicarious staff/CTO Dileep George moved to DeepMind.",
+"source": "https://techcrunch.com/2022/04/22/alphabet-owned-intrinsic-is-acquiring-fellow-robotic-software-firm-vicarious/",
+"source_quality": "primary"
+},
+{
+"date": "2022-11",
+"company": "Sanctuary AI",
+"stage": "Series A (extended)",
+"amount": "$76M",
+"amount_usd_m": 76,
+"valuation": "",
+"category": "humanoid",
+"region": "Other",
+"lead_investors": [
+"Bell Canada"
+],
+"note": "Extension/close of Series A; Magna International, Workday Ventures, BDC Capital, InBC, plus a Canadian Strategic Innovation Fund grant.",
+"source": "https://www.therobotreport.com/sanctuary-ai-obtains-canadian-funding-general-purpose-humanoid-development/",
+"source_quality": "secondary"
+},
+{
+"date": "2023",
+"company": "China robotics sector aggregate",
+"stage": "Aggregate (352 rounds)",
+"amount": "¥20B+ (~$2.8B) aggregate",
+"amount_usd_m": 2800,
+"valuation": "",
+"category": "humanoid",
+"region": "China",
+"lead_investors": [],
+"note": "Aggregate market figure, not a single event: 352 financing events, total >¥20B across China robotics industry in 2023 per 机器人大讲堂; included for context only",
+"source": "https://www.leaderobot.com/news/3433",
+"source_quality": "unverified"
+},
+{
+"date": "2023-03",
+"company": "Berkshire Grey",
+"stage": "M&A (acquisition)",
+"amount": "~$375M (SPAC-era value, all-stock deal)",
+"amount_usd_m": 375,
+"valuation": "",
+"category": "quadruped-AMR",
+"region": "US",
+"lead_investors": [
+"SoftBank Group"
+],
+"note": "SoftBank acquired Berkshire Grey (warehouse robotics) closed March 25 2023, all-stock transaction",
+"source": "https://tracxn.com/d/companies/berkshire-grey/",
+"source_quality": "secondary"
+},
+{
+"date": "2023-03",
+"company": "1X Technologies",
+"stage": "Series A2",
+"amount": "$23.5M",
+"amount_usd_m": 23.5,
+"category": "humanoid",
+"region": "Europe",
+"lead_investors": [
+"OpenAI Startup Fund"
+],
+"valuation": "",
+"note": "Also Tiger Global; led to ~$210M post-A2 valuation per Contrary Research",
+"source": "1x.tech/discover (official) 2023-03",
+"source_quality": "primary"
+},
+{
+"date": "2023-03",
+"company": "AgiBot (Zhiyuan Robotics)",
+"stage": "Angel round",
+"amount": "undisclosed",
+"amount_usd_m": 0,
+"valuation": "",
+"category": "humanoid",
+"region": "China",
+"lead_investors": [
+"Gaorong Capital (高瓴创投)",
+"Miracle Plus (奇绩创坛)"
+],
+"note": "Founded Feb 2023 by Peng Zhihui (former Huawei 'genius youth'); amount not disclosed",
+"source": "https://stcn.com/article/detail/1315592.html",
+"source_quality": "unverified"
+},
+{
+"date": "2023-04",
+"company": "Covariant",
+"stage": "Series C (extension)",
+"amount": "$75M",
+"amount_usd_m": 75,
+"valuation": "$625M (implied, total raised $222M)",
+"category": "robot-brain(VLA)",
+"region": "US",
+"lead_investors": [
+"Radical Ventures",
+"Index Ventures"
+],
+"note": "Also CPPIB, Amplify Partners, Gates Frontier, AIX Ventures, Northgate Capital; AI robotic picking",
+"source": "https://www.businesswire.com/news/home/20230404005494/en/Covariant-Adds-$75M-in-Series-C-Funds-to-Meet-Customer-Demand-for-Scaled-AI-Robotics-Deployments",
+"source_quality": "primary"
+},
+{
+"date": "2023-04",
+"company": "Nimble Robotics",
+"stage": "Series B",
+"amount": "$65M",
+"amount_usd_m": 65,
+"valuation": "",
+"category": "quadruped-AMR",
+"region": "US",
+"lead_investors": [
+"Cedar Pine"
+],
+"note": "Warehouse fulfillment robotics/AI",
+"source": "https://salestools.io/en/report/nimble-robotics-106-million-series-c-october-2024",
+"source_quality": "secondary"
+},
+{
+"date": "2023-05",
+"company": "Figure AI",
+"stage": "Series A",
+"amount": "$70M",
+"amount_usd_m": 70,
+"valuation": "$500M post",
+"category": "humanoid",
+"region": "US",
+"lead_investors": [
+"Parkway Venture Capital"
+],
+"note": "Also Brett Adcock, Aliya Capital, Bold Capital Partners, Tamarack Global, KUKA CEO Till Reuter; funds Figure 01 dev",
+"source": "https://techcrunch.com/2023/05/24/2546360/ ; https://www.prnewswire.com/news-releases/figure-announces-70m-series-a-to-support-commercialization-of-figure-01-humanoid-robot-301832819.html",
+"source_quality": "primary"
+},
+{
+"date": "2023-05",
+"company": "Skild AI",
+"stage": "Founding/Seed",
+"amount": "~$14.5M",
+"amount_usd_m": 14.5,
+"valuation": "",
+"category": "robot-brain(VLA)",
+"region": "US",
+"lead_investors": [
+"undisclosed"
+],
+"note": "Founded May 2023 by Deepak Pathak & Abhinav Gupta (CMU/Meta FAIR); seed amount thinly sourced",
+"source": "https://techcrunch.com/2026/01/14/robotic-software-maker-skild-ai-hits-14b-valuation/",
+"source_quality": "single-source"
+},
+{
+"date": "2023-05",
+"company": "Galbot (银河通用机器人)",
+"stage": "Seed",
+"amount": "undisclosed",
+"amount_usd_m": 0,
+"valuation": "",
+"category": "humanoid",
+"region": "China",
+"lead_investors": [
+"Matrix Partners China (经纬创投)",
+"Lanchi Ventures (蓝驰创投)"
+],
+"note": "Completed seed round ~1 month after May 2023 founding; amount undisclosed",
+"source": "https://www.qimingvc.com/cn/news/",
+"source_quality": "unverified"
+},
+{
+"date": "2023-07",
+"company": "Collaborative Robotics",
+"stage": "Series A",
+"amount": "$30M",
+"amount_usd_m": 30,
+"valuation": "",
+"category": "quadruped-AMR",
+"region": "US",
+"lead_investors": [
+"undisclosed (Sequoia/Khosla among backers)"
+],
+"note": "Founded 2022 by ex-Amazon VP Robotics Brad Porter; Cobot/Rosie warehouse robot",
+"source": "https://www.geekwire.com/2024/collaborative-robotics-hires-a-former-amazon-ai-leader-opens-seattle-office-after-100m-round/",
+"source_quality": "secondary"
+},
+{
+"date": "2023-09-13",
+"company": "World Labs",
+"stage": "Founding (pre-seed, initial tranche)",
+"amount": "$100M (part of $230M total)",
+"amount_usd_m": 100,
+"valuation": "$200M",
+"category": "world-model",
+"region": "US",
+"lead_investors": [
+"undisclosed"
+],
+"note": "Note: date uncertain — initial tranche reported as April 2024, not 2023; Fei-Fei Li's spatial-intelligence startup founded 2024",
+"source": "https://techcrunch.com/2024/09/13/fei-fei-lis-world-labs-comes-out-of-stealth-with-230m-in-funding/",
+"source_quality": "single-source"
+},
+{
+"date": "2023-09",
+"company": "Diligent Robotics",
+"stage": "Series B extension",
+"amount": "$25M",
+"amount_usd_m": 25,
+"valuation": "",
+"category": "quadruped-AMR",
+"region": "US",
+"lead_investors": [
+"Canaan"
+],
+"note": "True Ventures, Next Coast Ventures, DNX Ventures returning; Northwestern Medicine Innovation new; total raised >$104M; Moxi hospital assistant robot",
+"source": "https://www.finsmes.com/2023/09/diligent-robotics-raises-25m-in-funding.html ; https://www.mobihealthnews.com/news/diligent-robotics-scores-more-30m-moxi-healthcare-support-robot",
+"source_quality": "secondary"
+},
+{
+"date": "2023-12",
+"company": "Ghost Robotics",
+"stage": "M&A (majority stake)",
+"amount": "$240M (for 60% stake; implies ~$400M valuation)",
+"amount_usd_m": 240,
+"valuation": "$400M",
+"category": "quadruped-AMR",
+"region": "US",
+"lead_investors": [
+"LIG Nex1"
+],
+"note": "South Korean defense firm LIG Nex1 filed Dec 2023 to acquire 60% stake; deal closed by June 2024; Korea Investment Private Equity co-funded via SPV",
+"source": "https://www.kedglobal.com/mergers-acquisitions/newsView/ked202312100002 ; https://technical.ly/startups/ghost-robotics-acquisition-south-korea-israel-military-protests/",
+"source_quality": "secondary"
+},
+{
+"date": "2023-12",
+"company": "UBTech Robotics",
+"stage": "IPO",
+"amount": "HK$1.0B (~$130M)",
+"amount_usd_m": 130,
+"valuation": "",
+"category": "humanoid",
+"region": "China",
+"lead_investors": [
+"HKEX public offering"
+],
+"note": "First humanoid robot company listed on HKEX main board (9880.HK), Dec 29 2023; Tencent-backed",
+"source": "https://www.scmp.com/business/article/3246584/ubtech-maker-stormtrooper-robots-gains-hong-kong-trading-debut-after-pricing-final-ipo-2023-lower",
+"source_quality": "primary"
+},
+{
+"date": "2023-12",
+"company": "AgiBot (Zhiyuan Robotics / 智元机器人)",
+"stage": "A+++ round",
+"amount": ">¥600M (~$85M)",
+"amount_usd_m": 85,
+"valuation": "",
+"category": "humanoid",
+"region": "China",
+"lead_investors": [
+"Lanchi Ventures (蓝驰)",
+"Zhongke Chuangxing",
+"CDH Investments (鼎晖)",
+"Gaorong (高瓴)"
+],
+"note": "13 institutions incl. Sanhua Holdings, Jishi Capital; part of 5 rounds in 2023 (Angel Mar, A Apr, A+ Apr, A++ Aug, A+++ Dec); only A+++ amount publicly disclosed",
+"source": "https://stcn.com/article/detail/1315592.html",
+"source_quality": "single-source"
+},
+{
+"date": "2024",
+"company": "China humanoid/embodied-AI sector aggregate",
+"stage": "Aggregate (80+ rounds)",
+"amount": "¥15B+ (~$2.1B) aggregate across ~80 deals",
+"amount_usd_m": 2100,
+"valuation": "",
+"category": "humanoid",
+"region": "China",
+"lead_investors": [],
+"note": "Aggregate market figure, not a single event: 80 rounds totaling over ¥15B in Chinese robotics funding in 2024 per 36Kr; included for context only",
+"source": "https://36kr.com/p/3126552076746502",
+"source_quality": "unverified"
+},
+{
+"date": "2024-01",
+"company": "1X Technologies",
+"stage": "Series B",
+"amount": "$100M",
+"amount_usd_m": 100,
+"valuation": "",
+"category": "humanoid",
+"region": "Europe",
+"lead_investors": [
+"EQT Ventures"
+],
+"note": "Participation: Samsung NEXT, OpenAI Startup Fund, Tiger Global; funds NEO humanoid consumer android",
+"source": "https://www.therobotreport.com/1x-technologies-raises-100m-series-b-advance-neo-humanoid-robot/ ; https://techcrunch.com/2024/01/11/openai-backed-1x-raises-another-100m-for-the-race-to-humanoid-robots/",
+"source_quality": "primary"
+},
+{
+"date": "2024-02",
+"company": "Figure AI",
+"stage": "Series B",
+"amount": "$675M",
+"amount_usd_m": 675,
+"valuation": "$2.6B post",
+"category": "humanoid",
+"region": "US",
+"lead_investors": [
+"Microsoft",
+"OpenAI Startup Fund",
+"NVIDIA",
+"Jeff Bezos (Bezos Expeditions)",
+"Parkway Venture Capital",
+"Intel Capital",
+"Align Ventures",
+"ARK Invest"
+],
+"note": "Signed collaboration agreement with OpenAI for humanoid VLA models; 15x valuation jump in 18mo",
+"source": "https://www.prnewswire.com/news-releases/figure-raises-675m-at-2-6b-valuation-and-signs-collaboration-agreement-with-openai-302074897.html",
+"source_quality": "primary"
+},
+{
+"date": "2024-02",
+"company": "Unitree",
+"stage": "Series B2",
+"amount": "n/d",
+"amount_usd_m": 0,
+"category": "humanoid",
+"region": "China",
+"lead_investors": [
+"Meituan (via Hanhai Information)"
+],
+"valuation": "~RMB 3.1B",
+"note": "Meituan-backed entities built to 9.65% combined stake via this and prior rounds",
+"source": "eu.36kr.com/company-unitree.md",
+"source_quality": "secondary"
+},
+{
+"date": "2024-02",
+"company": "AgiBot subsidiary investment / component supply chain",
+"stage": "Strategic investment",
+"amount": "undisclosed",
+"amount_usd_m": 0,
+"valuation": "",
+"category": "component-module",
+"region": "China",
+"lead_investors": [
+"AgiBot"
+],
+"note": "General 2024 note: Chinese humanoid supply-chain (actuators/reducers) saw wave of strategic investments from AgiBot/Unitree/UBTech; individual deals largely undisclosed amounts (context only, not a distinct verifiable event)",
+"source": "https://36kr.com/p/3126552076746502",
+"source_quality": "unverified"
+},
+{
+"date": "2024-03",
+"company": "Physical Intelligence",
+"stage": "Seed",
+"amount": "$70M",
+"amount_usd_m": 70,
+"valuation": "~$400M",
+"category": "robot-brain(VLA)",
+"region": "US",
+"lead_investors": [
+"Thrive Capital",
+"OpenAI",
+"Khosla Ventures",
+"Sequoia Capital"
+],
+"note": "Founded 2024 by Karol Hausman, Sergey Levine, Chelsea Finn et al.",
+"source": "https://siliconvalleyinvestclub.com/physical-intelligence/ ; https://news.crunchbase.com/ai/robot-brain-startup-unicorn-physical-intelligence-bezos/",
+"source_quality": "secondary"
+},
+{
+"date": "2024-04",
+"company": "Collaborative Robotics",
+"stage": "Series B",
+"amount": "$100M",
+"amount_usd_m": 100,
+"valuation": "",
+"category": "quadruped-AMR",
+"region": "US",
+"lead_investors": [
+"General Catalyst"
+],
+"note": "Bison Ventures, Industry Ventures, Lux Capital joined; Sequoia, Khosla, Mayo Clinic returning; total raised >$140M in <2yrs",
+"source": "https://www.prnewswire.com/news-releases/collaborative-robotics-raises-100-million-in-series-b-funding-302112670.html ; https://www.forbes.com/sites/cindygordon/2024/04/10/collaborative-robotics-enroute-to-unicorn-status-with-100m-series-b-financing/",
+"source_quality": "primary"
+},
+{
+"date": "2024-04",
+"company": "Mytra",
+"stage": "Series B (launch)",
+"amount": "$78M",
+"amount_usd_m": 78,
+"valuation": "",
+"category": "quadruped-AMR",
+"region": "US",
+"lead_investors": [
+"undisclosed"
+],
+"note": "Founded by ex-Tesla/Rivian robotics leaders; warehouse robotics",
+"source": "https://www.robotics247.com/article/mytra_founded_by_ex_tesla_and_rivian_robotics_leaders_launches_with_78_million_series_b",
+"source_quality": "secondary"
+},
+{
+"date": "2024-05",
+"company": "Wayve",
+"stage": "Series C",
+"amount": "$1.05B",
+"amount_usd_m": 1050,
+"valuation": "",
+"category": "world-model",
+"region": "Europe",
+"lead_investors": [
+"SoftBank Group"
+],
+"note": "New investor NVIDIA, existing investor Microsoft; UK's largest-ever AI raise; embodied AI for AV2.0 + robotics generalization; borderline scope (AV) but company frames itself as embodied-AI-first",
+"source": "https://techcrunch.com/2024/05/06/wayve-raises-1-billion-led-by-softbank-to-take-self-driving-to-cars-and-robots/",
+"source_quality": "primary"
+},
+{
+"date": "2024-05",
+"company": "Kyle Vogt's The Bot Company",
+"stage": "Seed",
+"amount": "$150M",
+"amount_usd_m": 150,
+"category": "humanoid",
+"region": "US",
+"lead_investors": [],
+"valuation": "$550M",
+"note": "",
+"source": "key-people.md",
+"source_quality": "secondary"
+},
+{
+"date": "2024-06",
+"company": "Galbot (银河通用机器人)",
+"stage": "Angel round",
+"amount": "¥700M (~$97M)",
+"amount_usd_m": 97,
+"valuation": "",
+"category": "humanoid",
+"region": "China",
+"lead_investors": [
+"Qiming Venture Partners (启明创投)",
+"Lanchi Ventures (蓝驰创投)",
+"Matrix Partners China (经纬创投)",
+"Source Code Capital (源码资本)",
+"IDG Capital"
+],
+"note": "Largest angel round in China humanoid space in 2024; also Meituan strategic investment, BAIC investment, SenseTime Guoxiang Capital, iFlytek Investment; founded May 2023 by Peking Univ. prof Wang He",
+"source": "https://stcn.com/article/detail/3549196.html ; https://m.mp.oeeee.com/a/BAAFRD000020240624967206.html",
+"source_quality": "secondary"
+},
+{
+"date": "2024-07",
+"company": "Skild AI",
+"stage": "Series A",
+"amount": "$300M",
+"amount_usd_m": 300,
+"valuation": "$1.5B post",
+"category": "robot-brain(VLA)",
+"region": "US",
+"lead_investors": [
+"Lightspeed Venture Partners",
+"Coatue",
+"SoftBank Group",
+"Jeff Bezos (Bezos Expeditions)"
+],
+"note": "Also Felicis, Sequoia, Menlo Ventures, General Catalyst, CRV, Amazon, SV Angel, CMU; general-purpose robot foundation model",
+"source": "https://www.businesswire.com/news/home/20240709306400/en/Skild-AI-Raises-%24300M-Series-A-To-Build-A-Scalable-AI-Foundation-Model-For-Robotics ; https://www.skild.ai/blogs/announcing-our-300m-series-a",
+"source_quality": "primary"
+},
+{
+"date": "2024-07",
+"company": "Standard Bots",
+"stage": "Series B",
+"amount": "$63M",
+"amount_usd_m": 63,
+"valuation": "",
+"category": "component-module",
+"region": "US",
+"lead_investors": [
+"General Catalyst"
+],
+"note": "Amazon Industrial Innovation Fund, Samsung Next participated; RO1 robotic arm ($37K cobot)",
+"source": "https://www.roboticstomorrow.com/story/2024/07/standard-bots-secures-63m-in-funding-to-propel-american-manufacturing-forward-with-ai-driven-robotics/22857/",
+"source_quality": "primary"
+},
+{
+"date": "2024-07",
+"company": "Cartken",
+"stage": "Follow-on round",
+"amount": "$10M (of $22.5M aggregate)",
+"amount_usd_m": 10,
+"valuation": "",
+"category": "quadruped-AMR",
+"region": "US",
+"lead_investors": [
+"468 Capital"
+],
+"note": "Incubate Fund, LDV Partners, Vela Partners, Magna International, Mitsubishi Electric, Shell Ventures, Volex; delivery robots",
+"source": "https://www.cartken.com/press-release/cartken-announces-22-5m-in-aggregate-funding-to-advance-ai-based-technology-stack-enabling-autonomous-delivery-robots",
+"source_quality": "primary"
+},
+{
+"date": "2024-08 through 2025-12",
+"company": "UBTech",
+"stage": "Post-IPO share placements (six rounds)",
+"amount": "~HK$7.6B cumulative",
+"amount_usd_m": 975,
+"category": "humanoid",
+"region": "China",
+"lead_investors": [],
+"valuation": "",
+"note": "Rounds: 2024-08, 2024-10, 2024-11, 2025-02, 2025-07 (net HK$2.41B), 2025-12 (net HK$3.06B)",
+"source": "finance.sina.com.cn / cs.com.cn",
+"source_quality": "secondary"
+},
+{
+"date": "2024-08",
+"company": "Covariant",
+"stage": "M&A / reverse acquihire",
+"amount": "$380M (+$20M deferred licensing)",
+"amount_usd_m": 400,
+"valuation": "vs $625M prior round valuation",
+"category": "robot-brain(VLA)",
+"region": "US",
+"lead_investors": [
+"Amazon"
+],
+"note": "Amazon hired founders Abbeel/Chen/Duan + 25% of staff, non-exclusive license to Covariant Brain; deal terms revealed later via 2025 FTC/SEC/DOJ whistleblower complaint",
+"source": "https://www.geekwire.com/2024/amazon-hires-covariant-founders-inks-licensing-deal-with-robotics-ai-startup-in-latest-reverse-acquihire-deal/ ; https://en.wikipedia.org/wiki/Covariant_(company)",
+"source_quality": "secondary"
+},
+{
+"date": "2024-08",
+"company": "World Labs",
+"stage": "Seed (second tranche)",
+"amount": "$100M",
+"amount_usd_m": 100,
+"valuation": ">$1B",
+"category": "world-model",
+"region": "US",
+"lead_investors": [
+"NEA"
+],
+"note": "Combined w/ April 2024 $200M-valuation tranche = $230M total disclosed at Sept 2024 stealth-exit; a16z, Radical Ventures, Marc Benioff, Reid Hoffman, NVentures also backers",
+"source": "https://techcrunch.com/2024/08/14/nea-led-a-100m-round-into-fei-fei-lis-new-ai-startup-now-valued-at-over-1b/",
+"source_quality": "primary"
+},
+{
+"date": "2024-08",
+"company": "EngineAI (众擎机器人)",
+"stage": "Angel round",
+"amount": "~$14M",
+"amount_usd_m": 14,
+"valuation": "",
+"category": "humanoid",
+"region": "China",
+"lead_investors": [
+"undisclosed"
+],
+"note": "Founded Oct 2023 by ex-XPeng robotics founder Zhao Tongyang; SA01 bipedal robot launched Jul 2024",
+"source": "https://www.humanoidsdaily.com/news/engine-ai-chinas-high-speed-contender-shakes-up-the-humanoid-robot-race",
+"source_quality": "single-source"
+},
+{
+"date": "2024-09",
+"company": "World Labs",
+"stage": "Seed (stealth-exit disclosure)",
+"amount": "$230M total",
+"amount_usd_m": 230,
+"valuation": "$1B+",
+"category": "world-model",
+"region": "US",
+"lead_investors": [
+"Andreessen Horowitz",
+"NEA",
+"Radical Ventures"
+],
+"note": "Combined disclosure of prior two tranches (Apr 2024 $200M val., Aug 2024 NEA $100M); spatial intelligence / 3D world models for robotics-relevant simulation",
+"source": "https://techcrunch.com/2024/09/13/fei-fei-lis-world-labs-comes-out-of-stealth-with-230m-in-funding/",
+"source_quality": "primary"
+},
+{
+"date": "2024-09",
+"company": "AgiBot (Zhiyuan Robotics)",
+"stage": "Series A (cumulative, 8 rounds)",
+"amount": "undisclosed, tens of billions RMB cumulative claimed",
+"amount_usd_m": 0,
+"valuation": "¥7B+ (~$1B)",
+"category": "humanoid",
+"region": "China",
+"lead_investors": [
+"multiple"
+],
+"note": "By Sept 2024 company had completed 8 financing rounds since Feb 2023 founding; valuation crossed ¥7B; individual round amounts largely undisclosed (unverified aggregate claim)",
+"source": "https://t.cj.sina.com.cn/articles/view/7954840746/1da253caa00101lhhw",
+"source_quality": "unverified"
+},
+{
+"date": "2024-10",
+"company": "Nimble Robotics",
+"stage": "Series C",
+"amount": "$106M",
+"amount_usd_m": 106,
+"valuation": "$1.1B post",
+"category": "quadruped-AMR",
+"region": "US",
+"lead_investors": [
+"undisclosed"
+],
+"note": "Warehouse fulfillment robotics",
+"source": "https://salestools.io/en/report/nimble-robotics-106-million-series-c-october-2024",
+"source_quality": "secondary"
+},
+{
+"date": "2024-11",
+"company": "Physical Intelligence",
+"stage": "Series A",
+"amount": "$400M",
+"amount_usd_m": 400,
+"valuation": "$2.4B post",
+"category": "robot-brain(VLA)",
+"region": "US",
+"lead_investors": [
+"Jeff Bezos",
+"OpenAI",
+"Thrive Capital",
+"Lux Capital",
+"Bond Capital"
+],
+"note": "Announced same period as pi-zero (π0) foundation model launch Oct 2024",
+"source": "https://news.crunchbase.com/ai/robot-brain-startup-unicorn-physical-intelligence-bezos/",
+"source_quality": "primary"
+},
+{
+"date": "2024-11",
+"company": "Galbot (银河通用机器人)",
+"stage": "Strategic round",
+"amount": "¥500M (~$70M)",
+"amount_usd_m": 70,
+"valuation": "",
+"category": "humanoid",
+"region": "China",
+"lead_investors": [
+"SAIC Hengxu",
+"HKIC (Hong Kong Investment Corp)",
+"Shenzhen Capital Group"
+],
+"note": "Also Shanghai AI Industry Fund, Beijing Robotics Industry Fund, CCB International; brought cumulative raise to ~¥1.2B",
+"source": "https://cn.technode.com/post/2024-11-19/galbot/ ; https://www.lanchivc.com/7954/",
+"source_quality": "secondary"
+},
+{
+"date": "2024-11",
+"company": "Agility Robotics (Schaeffler)",
+"stage": "Strategic investment",
+"amount": "undisclosed",
+"amount_usd_m": 0,
+"category": "humanoid",
+"region": "US",
+"lead_investors": [
+"Schaeffler"
+],
+"valuation": "",
+"note": "Also became a Digit customer at Cheraw, SC plant",
+"source": "agilityrobotics.com 2024-11",
+"source_quality": "primary"
+},
+{
+"date": "2024-12-31 (announced) / 2025-02 (completed)",
+"company": "Rainbow Robotics",
+"stage": "M&A / Stake increase (Samsung call option)",
+"amount": "KRW 267B (~$181.6M)",
+"amount_usd_m": 181.6,
+"category": "quadruped-AMR",
+"region": "Korea",
+"lead_investors": [
+"Samsung Electronics"
+],
+"valuation": "",
+"note": "Samsung raised stake from 14.7% to ~35%, becoming controlling shareholder",
+"source": "news.samsung.com",
+"source_quality": "primary"
+},
+{
+"date": "2025",
+"company": "China embodied-AI sector aggregate",
+"stage": "Aggregate (all stages)",
+"amount": "~¥44.4B (~$6.2B)",
+"amount_usd_m": 6200,
+"valuation": "",
+"category": "other",
+"region": "China",
+"lead_investors": [],
+"note": "358 disclosed funding events in China's embodied-AI (具身智能) sector in 2025, total ~CNY 44.4B, +308.6% YoY in deal count and +443.3% in amount, per market research aggregator. Macro context figure, not a single round.",
+"source": "https://www.stcn.com/article/detail/3753646.html",
+"source_quality": "single-source"
+},
+{
+"date": "2025 (through)",
+"company": "Generalist AI",
+"stage": "Early rounds (pre-2026)",
+"amount": "~$140M",
+"amount_usd_m": 140,
+"category": "robot-data",
+"region": "US",
+"lead_investors": [],
+"valuation": "~$440M",
+"note": "Per Forbes reporting",
+"source": "forbes.com",
+"source_quality": "secondary"
+},
+{
+"date": "2025-01",
+"company": "NEURA Robotics",
+"stage": "Series B",
+"amount": "€120M (~$123M)",
+"amount_usd_m": 123,
+"valuation": "",
+"category": "humanoid",
+"region": "Europe",
+"lead_investors": [
+"Lingotto Investment Management"
+],
+"note": "Participation from BlueCrest Capital, Volvo Cars Tech Fund, InterAlpen Partners, Vsquared Ventures, HV Capital, Delta Electronics, C4 Ventures, L-Bank; funds Neuraverse platform and 4NE1 humanoid.",
+"source": "https://www.businesswire.com/news/home/20250115046478/en/NEURA-Robotics-Secures-%E2%82%AC120-Million-in-Series-B-Funding-to-Propel-Cognitive-and-Humanoid-Robotics-Vision",
+"source_quality": "primary"
+},
+{
+"date": "2025-01",
+"company": "Fourier Intelligence",
+"stage": "Series E",
+"amount": "¥800M (~$109M)",
+"amount_usd_m": 109,
+"valuation": "",
+"category": "humanoid",
+"region": "China",
+"lead_investors": [
+"Guoxin Investment",
+"Pudong Venture Capital",
+"Prosperity7"
+],
+"note": "Also participation from Zhangjiang Hi-Tech Investment, Zhangke Yaokun Fund, Junshan Capital.",
+"source": "https://www.sango-automation.com/news/nearly-800-million-general-robotics-company-f-84084739.html",
+"source_quality": "secondary"
+},
+{
+"date": "2025-01",
+"company": "Bear Robotics",
+"stage": "M&A / Majority stake (call option)",
+"amount": "undisclosed",
+"amount_usd_m": 0,
+"category": "quadruped-AMR",
+"region": "Korea",
+"lead_investors": [
+"LG Electronics"
+],
+"valuation": "",
+"note": "LG acquired 51% majority control",
+"source": "lgnewsroom.com 2025-01",
+"source_quality": "primary"
+},
+{
+"date": "2025-02",
+"company": "Apptronik",
+"stage": "Series A",
+"amount": "$350M",
+"amount_usd_m": 350,
+"valuation": "",
+"category": "humanoid",
+"region": "US",
+"lead_investors": [
+"B Capital",
+"Capital Factory"
+],
+"note": "Google participated; DeepMind partnering on embodied AI for Apollo humanoid. Prior funding only $28M, notable capital efficiency.",
+"source": "https://apptronik.com/news-collection/apptronik-raises-350-million-in-series-a-funding",
+"source_quality": "primary"
+},
+{
+"date": "2025-03",
+"company": "Agility Robotics",
+"stage": "Series C",
+"amount": "$400M",
+"amount_usd_m": 400,
+"valuation": "$2.12B",
+"category": "humanoid",
+"region": "US",
+"lead_investors": [
+"WP Global Partners"
+],
+"note": "SoftBank Group participated. Funds mass production of Digit toward 10,000-unit milestone. Total raised ~$641M to date.",
+"source": "https://siliconangle.com/2025/04/01/humanoid-robot-creator-agility-robotics-targets-400m-funding-round/",
+"source_quality": "secondary"
+},
+{
+"date": "2025-03",
+"company": "Kyle Vogt's The Bot Company",
+"stage": "Round",
+"amount": "$150M",
+"amount_usd_m": 150,
+"category": "humanoid",
+"region": "US",
+"lead_investors": [
+"Greenoaks"
+],
+"valuation": "$2B",
+"note": "Non-humanoid home robots; founded by ex-Cruise CEO",
+"source": "techcrunch.com 2025-03-23",
+"source_quality": "secondary"
+},
+{
+"date": "2025-03",
+"company": "Dexterity",
+"stage": "Series B (venture round)",
+"amount": "$95M",
+"amount_usd_m": 95,
+"valuation": "$1.65B",
+"category": "component-module",
+"region": "US",
+"lead_investors": [
+"Lightspeed Venture Partners"
+],
+"note": "Sumitomo Corp also participated. Industrial robot arms/logistics automation for FedEx, UPS. Total raised ~$291M.",
+"source": "https://www.bloomberg.com/news/articles/2025-03-11/ai-robotics-startup-dexterity-lands-1-65-billion-valuation",
+"source_quality": "secondary"
+},
+{
+"date": "2025-03",
+"company": "AgiBot (Zhiyuan Robotics / 智元机器人)",
+"stage": "Strategic round",
+"amount": "undisclosed",
+"amount_usd_m": 0,
+"valuation": "",
+"category": "humanoid",
+"region": "China",
+"lead_investors": [
+"Tencent"
+],
+"note": "Tencent's first investment in embodied AI; follow-on from Longqi Technology, Wolong Electric, Huafa Group, Bluehill Ventures. Part of 10+ rounds in 2025 totaling >CNY 3B at ~CNY150B valuation by year end.",
+"source": "https://www.stcn.com/article/detail/1605342.html",
+"source_quality": "secondary"
+},
+{
+"date": "2025-05",
+"company": "Skild AI",
+"stage": "Series B",
+"amount": "~$100-135M (reports differ: Crunchbase $135M, other coverage ~$100M)",
+"amount_usd_m": 135,
+"category": "robot-brain(VLA)",
+"region": "US",
+"lead_investors": [
+"SoftBank (reported)"
+],
+"valuation": "$4.5B",
+"note": "NVIDIA ~$25M + Samsung ~$10M also participated",
+"source": "news.crunchbase.com / finance.yahoo.com",
+"source_quality": "secondary"
+},
+{
+"date": "2025-05",
+"company": "Persona AI",
+"stage": "Pre-seed",
+"amount": "$27M",
+"amount_usd_m": 27,
+"valuation": "",
+"category": "humanoid",
+"region": "US",
+"lead_investors": [
+"Unity Growth",
+"Tides Ventures"
+],
+"note": "Oversubscribed; humanoid robots for shipbuilding/industrial mfg; partnership with HD Hyundai. Founded by ex-NASA/Nauticus Robotics team.",
+"source": "https://www.prnewswire.com/news-releases/persona-ai-raises-27m-oversubscribed-pre-seed-to-deliver-the-future-of-humanoid-robotics-302455330.html",
+"source_quality": "primary"
+},
+{
+"date": "2025-06",
+"company": "Unitree",
+"stage": "Series C",
+"amount": "~¥700M (~$100M)",
+"amount_usd_m": 100,
+"category": "humanoid",
+"region": "China",
+"lead_investors": [
+"Alibaba",
+"Tencent",
+"China Mobile fund",
+"Ant Group",
+"Geely Capital",
+"HongShan",
+"Jinqiu"
+],
+"valuation": ">¥12B (~$1.7B)",
+"note": "",
+"source": "forbes.com 2025-06-20 / eu.36kr.com",
+"source_quality": "primary"
+},
+{
+"date": "2025-06",
+"company": "Wandercraft",
+"stage": "Series D",
+"amount": "$75M (equity+debt)",
+"amount_usd_m": 75,
+"category": "humanoid",
+"region": "Europe",
+"lead_investors": [],
+"valuation": "",
+"note": "Investors incl. Renault, France 2030/Bpifrance PSIM fund; Calvin-40 industrial humanoid",
+"source": "wandercraft.eu 2025-06",
+"source_quality": "primary"
+},
+{
+"date": "2025-07",
+"company": "AgiBot / Zhiyuan",
+"stage": "Control acquisition of Shangwei New Materials (Swancor)",
+"amount": "~¥2.1B (~$290M)",
+"amount_usd_m": 290,
+"category": "humanoid",
+"region": "China",
+"lead_investors": [
+"AgiBot-affiliated vehicles (智元恒岳, 智元新创)"
+],
+"valuation": "",
+"note": "~63.6% stake acquired; widely read as backdoor listing; AgiBot denies characterization",
+"source": "scmp.com / technode.com 2025-07",
+"source_quality": "primary"
+},
+{
+"date": "2025-07",
+"company": "EngineAI (星动纪元 / Robotera)",
+"stage": "Series A round",
+"amount": "$139M",
+"amount_usd_m": 139,
+"valuation": "",
+"category": "humanoid",
+"region": "China",
+"lead_investors": [],
+"note": "General-purpose humanoid robots; embodied AI for traffic mgmt, security, retail, industrial tasks. Later filed confidentially for HK IPO.",
+"source": "https://theaiinsider.tech/2025/07/21/chinas-engineai-raises-139-million-in-fresh-funding-for-humanoid-robots/",
+"source_quality": "secondary"
+},
+{
+"date": "2025-07",
+"company": "加速进化 (Acceleration Evolution / AGIBOT rival, Booster Robotics)",
+"stage": "Series A+",
+"amount": ">¥100M (~$14M, unverified precise USD)",
+"amount_usd_m": 14,
+"valuation": "",
+"category": "humanoid",
+"region": "China",
+"lead_investors": [
+"Beijing Robotics Industry Development Investment Fund (First Capital/首程控股)"
+],
+"note": "Announced 2025-07-24. Amount described only as 'over CNY 100M'; USD conversion approximate (unverified).",
+"source": "https://www.leaderobot.com/news/5928",
+"source_quality": "single-source"
+},
+{
+"date": "2025-08-31",
+"company": "UBTech",
+"stage": "Strategic financing facility",
+"amount": "$1B",
+"amount_usd_m": 1000,
+"category": "humanoid",
+"region": "China",
+"lead_investors": [
+"Infini Capital"
+],
+"valuation": "",
+"note": "Deployable via placements/CBs/cash rights; tied to Middle East humanoid production plans",
+"source": "therobotreport.com 2025-08-31",
+"source_quality": "secondary"
+},
+{
+"date": "2025-08",
+"company": "Boston Dynamics (Hyundai rights offering)",
+"stage": "Rights offering",
+"amount": "~$870M",
+"amount_usd_m": 870,
+"category": "humanoid",
+"region": "US",
+"lead_investors": [
+"Hyundai Motor Group"
+],
+"valuation": "",
+"note": "Larger than the prior three rounds combined (₩982B, 2022-24); SoftBank reportedly participated pro-rata (~$121M)",
+"source": "bloter.net (Korean)",
+"source_quality": "secondary"
+},
+{
+"date": "2025-08",
+"company": "FieldAI",
+"stage": "Combined two rounds (Series A/B-equivalent)",
+"amount": "$405M ($314M most recent tranche)",
+"amount_usd_m": 405,
+"valuation": "$2B",
+"category": "robot-brain(VLA)",
+"region": "US",
+"lead_investors": [
+"Bezos Expeditions",
+"Prysm Capital",
+"Temasek"
+],
+"note": "Also Bill Gates (Gates Frontier), NVentures, Intel Capital, Khosla Ventures, Samsung, BHP Ventures, Canaan Partners, Emerson Collective. 'Field Foundation Models' embodiment-agnostic robot brain across quadrupeds/humanoids.",
+"source": "https://techcrunch.com/2025/08/20/fieldai-raises-405m-to-build-universal-robot-brains/",
+"source_quality": "primary"
+},
+{
+"date": "2025-08",
+"company": "松延动力 (SongYan Dynamics/Motion)",
+"stage": "Series A / A+ (two rounds)",
+"amount": ">¥100M combined (unverified precise total)",
+"amount_usd_m": 14,
+"valuation": "",
+"category": "humanoid",
+"region": "China",
+"lead_investors": [],
+"note": "'半年融三轮' — three rounds within first half 2025; part of a pattern of 5+ rounds across the year (see Oct/Nov entries). Small consumer-humanoid maker.",
+"source": "https://finance.sina.com.cn/tech/roll/2025-08-07/doc-infkcmre0109739.shtml",
+"source_quality": "single-source"
+},
+{
+"date": "2025-08",
+"company": "AgiBot / Zhiyuan",
+"stage": "Private valuation (strategic round)",
+"amount": "undisclosed",
+"amount_usd_m": 0,
+"category": "humanoid",
+"region": "China",
+"lead_investors": [
+"LG Electronics",
+"Mirae Asset"
+],
+"valuation": "~¥15B (~$2.1B)",
+"note": "Backers overall: Tencent, HongShan, BYD, Hillhouse, LG, JD; reported HK IPO ambitions HK$40-50B unverified",
+"source": "roboticsandautomationnews.com 2025-08-04",
+"source_quality": "secondary"
+},
+{
+"date": "2025-08",
+"company": "Jetson AGX Thor / NVIDIA robotics-related equity",
+"stage": "Corporate capex context",
+"amount": "n/a",
+"amount_usd_m": 0,
+"category": "component-module",
+"region": "US",
+"lead_investors": [],
+"valuation": "",
+"note": "Included for context only — not a funding event; omit from totals",
+"source": "company-nvidia.md",
+"source_quality": "secondary"
+},
+{
+"date": "2025-08",
+"company": "AI² Robotics (智平方)",
+"stage": "Multiple rounds (7 in H1 2025)",
+"amount": "multiple hundred-million-yuan rounds (aggregate undisclosed precisely for 2025 H1)",
+"amount_usd_m": 0,
+"valuation": "",
+"category": "humanoid",
+"region": "China",
+"lead_investors": [],
+"note": "Company stated it completed 7 consecutive 'multi-hundred-million-yuan' financings in H1 2025 alone, before 5 more Series B tranches into early 2026 totaling >CNY10B valuation. Precise per-round USD amounts for 2025 not disclosed in sources found; flagged unverified/aggregate.",
+"source": "https://www.qbitai.com/2026/02/382004.html",
+"source_quality": "single-source"
+},
+{
+"date": "2025-09",
+"company": "Scale AI (Physical AI Data Engine)",
+"stage": "Strategic investment / stake sale",
+"amount": "$14.3B (49% stake)",
+"amount_usd_m": 14300,
+"valuation": "$29B",
+"category": "robot-data",
+"region": "US",
+"lead_investors": [
+"Meta"
+],
+"note": "Meta's $14.3B investment (June 2025 announced, closed mid-2025) explicitly framed around data infra for physical AI; Scale launched dedicated Physical AI Data Engine Sept 2025 (100,000+ production hours, clients incl. Physical Intelligence, Cobot). Deal itself is broader than robotics but included here for its Physical AI data-engine significance.",
+"source": "https://scale.com/physical-ai",
+"source_quality": "secondary"
+},
+{
+"date": "2025-09",
+"company": "Figure AI",
+"stage": "Series C",
+"amount": ">$1B",
+"amount_usd_m": 1000,
+"valuation": "$39B post-money",
+"category": "humanoid",
+"region": "US",
+"lead_investors": [
+"Parkway Venture Capital"
+],
+"note": "Brookfield Asset Management, NVIDIA, Macquarie Capital, Intel Capital, Align Ventures, Tamarack Global, LG Technology Ventures, Salesforce, T-Mobile Ventures, Qualcomm Ventures also participated. 15x jump from $2.6B Feb 2024 valuation. Funds Helix AI platform + BotQ manufacturing.",
+"source": "https://www.figure.ai/news/series-c",
+"source_quality": "primary"
+},
+{
+"date": "2025-09 (reported)",
+"company": "1X Technologies",
+"stage": "(reported raise, unclosed)",
+"amount": "up to $1B",
+"amount_usd_m": 1000,
+"category": "humanoid",
+"region": "Europe",
+"lead_investors": [],
+"valuation": "~$10B target",
+"note": "Reported by The Information 2025-09; no close announced as of 2026-07 — 传闻寻求$1B@$10B,未确认关闭",
+"source": "theinformation.com 2025-09",
+"source_quality": "single-source",
+"not_closed": true
+},
+{
+"date": "2025-09",
+"company": "X Square Robot (千寻智能/星尘智能)",
+"stage": "Series A+",
+"amount": "$140M (~RMB 1B)",
+"amount_usd_m": 140,
+"valuation": "",
+"category": "humanoid",
+"region": "China",
+"lead_investors": [
+"Alibaba Cloud",
+"CAS Investment"
+],
+"note": "8th financing round since Dec 2023 founding. Part of four consecutive rounds culminating in $2.8B valuation by mid-2026 (subsequent rounds fall outside this window).",
+"source": "https://www.cnbc.com/2025/09/08/alibaba-leads-100-million-investment-in-chinese-humanoid-robot-startup.html",
+"source_quality": "primary"
+},
+{
+"date": "2025-09",
+"company": "Humanoid (UK, HMND 01 maker)",
+"stage": "Founder-led capital",
+"amount": "~$50M",
+"amount_usd_m": 50,
+"category": "humanoid",
+"region": "Europe",
+"lead_investors": [
+"Artem Sokolov (founder)"
+],
+"valuation": "",
+"note": "~175 staff as of 2025-09; HMND 01 Alpha unveiled same period",
+"source": "therobotreport.com",
+"source_quality": "secondary"
+},
+{
+"date": "2025-10-08",
+"company": "ABB Robotics (acquired by SoftBank)",
+"stage": "M&A / Corporate acquisition",
+"amount": "$5.375B",
+"amount_usd_m": 5375,
+"category": "component-module",
+"region": "Europe",
+"lead_investors": [
+"SoftBank"
+],
+"valuation": "",
+"note": "SoftBank buys ABB's industrial-arm business (~7,000 employees, $2.28B 2024 revenue); closing targeted mid-to-late 2026",
+"source": "group.softbank/en/news/press/20251008",
+"source_quality": "primary"
+},
+{
+"date": "2025-10 (reported)",
+"company": "Kyle Vogt's The Bot Company",
+"stage": "(reported raise, unclosed)",
+"amount": "$250M",
+"amount_usd_m": 250,
+"category": "humanoid",
+"region": "US",
+"lead_investors": [],
+"valuation": ">$4B",
+"note": "Reportedly in talks; close unconfirmed",
+"source": "bloomberg.com 2025-10-28",
+"source_quality": "single-source"
+},
+{
+"date": "2025-10",
+"company": "Leju Robotics",
+"stage": "Pre-IPO round",
+"amount": ">$200M",
+"amount_usd_m": 200,
+"valuation": "",
+"category": "humanoid",
+"region": "China",
+"lead_investors": [],
+"note": "Raised ahead of planned HK listing; announced alongside Unitree H2 unveiling.",
+"source": "https://www.bloomberg.com/news/articles/2025-10-22/chinese-humanoid-robot-maker-raises-200-million-ahead-of-ipo",
+"source_quality": "secondary"
+},
+{
+"date": "2025-11",
+"company": "Physical Intelligence",
+"stage": "Series B",
+"amount": "$600M",
+"amount_usd_m": 600,
+"valuation": "$5.6B",
+"category": "robot-brain(VLA)",
+"region": "US",
+"lead_investors": [
+"CapitalG (Alphabet)"
+],
+"note": "Existing investors Lux Capital, Thrive Capital, Jeff Bezos; new investors Index Ventures, T. Rowe Price. Up from $2.4B valuation Nov 2024. Total raised to date ~$1.07B. Founded by Karol Hausman, Sergey Levine, et al.",
+"source": "https://www.bloomberg.com/news/articles/2025-11-20/robotics-startup-physical-intelligence-valued-at-5-6-billion-in-new-funding",
+"source_quality": "primary"
+},
+{
+"date": "2025-11",
+"company": "Mind Robotics",
+"stage": "Seed",
+"amount": "$500M",
+"amount_usd_m": 500,
+"valuation": "",
+"category": "other",
+"region": "US",
+"lead_investors": [],
+"note": "Founded by Rivian founder RJ Scaringe (spun out Nov 2025); full-stack foundation models + robotics + deployment infra for manufacturing; testing inside Rivian's Normal, IL plant. (Subsequent $500M Series A and $400M round land in 2026, outside window.) — Rivian 分拆,聚焦传统工业机器人(非人形);总募资~$615M",
+"source": "https://www.eweek.com/news/mind-robotics-rivian-ai-robots-funding/",
+"source_quality": "secondary"
+},
+{
+"date": "2025-11",
+"company": "Robotera (星动纪元, distinct from EngineAI per some sources — caution: naming overlap in coverage)",
+"stage": "Series A+",
+"amount": "~RMB 1B (~$140M)",
+"amount_usd_m": 140,
+"valuation": "",
+"category": "humanoid",
+"region": "China",
+"lead_investors": [
+"Geely Capital"
+],
+"note": "Co-investors BAIC Capital, Alibaba Group, Haier Capital. Commercial orders reportedly surpassed ¥500M. Note: some Chinese press attribute this round to 星动纪元/Robotera with Geely (吉利资本) as lead — possible source conflation with EngineAI naming; flagged unverified pending disambiguation.",
+"source": "https://finance.eastmoney.com/a/202511203570159128.html",
+"source_quality": "single-source"
+},
+{
+"date": "2025-11",
+"company": "Noetix Robotics",
+"stage": "Pre-B",
+"amount": "¥300M (~$42M)",
+"amount_usd_m": 42,
+"valuation": "",
+"category": "humanoid",
+"region": "China",
+"lead_investors": [
+"FG Venture"
+],
+"note": "Co-investors: Vertex Ventures, CRRC Beijing Transformation and Upgrading Fund, OR Capital, Everpine Capital.",
+"source": "https://theaiinsider.tech/2025/11/27/chinese-humanoid-robotics-company-robotera-secures-usd-140m-in-series-a-funding/",
+"source_quality": "secondary"
+},
+{
+"date": "2025-11",
+"company": "松延动力 (SongYan Dynamics)",
+"stage": "Pre-B+",
+"amount": "~¥200M (~$28M)",
+"amount_usd_m": 28,
+"valuation": "",
+"category": "humanoid",
+"region": "China",
+"lead_investors": [
+"中金资本 (CICC Capital)"
+],
+"note": "5th financing round of 2025 for the company, closed within a month of the Pre-B round; ~¥500M raised across the two.",
+"source": "https://news.pedaily.cn/202511/557842.shtml",
+"source_quality": "single-source"
+},
+{
+"date": "2025-12",
+"company": "Galbot (Galaxy General Robotics / 银河通用)",
+"stage": "Mega growth round",
+"amount": "$300M+ (~CNY 2.5B combined w/ related tranche)",
+"amount_usd_m": 300,
+"valuation": "$3B (some sources cite much higher, ~CNY 200B+, likely conflating later March 2026 round)",
+"category": "humanoid",
+"region": "China",
+"lead_investors": [
+"CATL (Xiamen Puquan fund)",
+"Beijing Robotics Industry Fund",
+"Jiyuan Capital",
+"GGV Capital",
+"CICC Capital",
+"Chinese Academy of Sciences Fund",
+"Suzhou Venture Capital",
+"CMG Media Fund",
+"Tianqi Co"
+],
+"note": "Largest single-round financing and cumulative financing in China's embodied-AI sector at the time; total funding to date reported at $800M. Valuation figures across sources are inconsistent ($3B vs ~CNY200B/$28B) — treat valuation as unverified.",
+"source": "https://www.prnewswire.com/news-releases/galbot-secures-over-300-million-in-new-funding-breaking-records-with-3-billion-valuation-in-chinas-humanoid-robot-sector-302647204.html",
+"source_quality": "primary"
+},
+{
+"date": "2025-12-24",
+"company": "UBTech (Fenglong Co. acquisition)",
+"stage": "M&A / Stake acquisition",
+"amount": "~RMB 1.665B",
+"amount_usd_m": 230,
+"category": "component-module",
+"region": "China",
+"lead_investors": [
+"UBTech"
+],
+"valuation": "",
+"note": "Up to 43% of Shenzhen-listed auto-parts maker Fenglong (29.99% transfer + 13.02% tender) at ¥17.72/share; Zhou Jian becomes actual controller",
+"source": "chinaventure.com.cn",
+"source_quality": "secondary"
+},
+{
+"date": "2025-12",
+"company": "Cloudminds / Yunshenchu (云深处科技)",
+"stage": "Pre-IPO round",
+"amount": "~RMB several hundred million (~$70-140M est.)",
+"amount_usd_m": 70,
+"valuation": "not disclosed",
+"lead_investors": [
+"National Artificial Intelligence Industry Fund"
+],
+"region": "China",
+"category": "quadruped-AMR",
+"note": "Announced Dec 25, 2025 (just before window but relevant context): Pre-IPO round led by national AI fund, JD.com followed on. CITIC Securities is listing sponsor for prospective A-share IPO ('second Unitree'). Included for context; falls just outside strict Jan-Jul 2026 window — flagging as boundary case.",
+"source": "https://stcn.com/article/detail/3558169.html",
+"source_quality": "secondary"
+},
+{
+"date": "2025-12",
+"company": "EngineAI",
+"stage": "A1+/A2 rounds",
+"amount": "undisclosed",
+"amount_usd_m": 0,
+"category": "humanoid",
+"region": "China",
+"lead_investors": [],
+"valuation": "",
+"note": "Completed alongside launch of full-size T800",
+"source": "landscape-china.md",
+"source_quality": "secondary"
+},
+{
+"date": "2025 (2025-07)",
+"company": "Galbot",
+"stage": "Round (~$151M)",
+"amount": "~$151M",
+"amount_usd_m": 151,
+"category": "humanoid",
+"region": "China",
+"lead_investors": [
+"Bosch (investment arm)"
+],
+"valuation": "",
+"note": "",
+"source": "landscape-china.md",
+"source_quality": "secondary"
+},
+{
+"date": "2026-01",
+"company": "Skild AI",
+"stage": "Series C",
+"amount": "$1.4B",
+"amount_usd_m": 1400,
+"valuation": "$14B+ post-money",
+"lead_investors": [
+"SoftBank Group"
+],
+"region": "US",
+"category": "robot-brain(VLA)",
+"note": "Announced Jan 14, 2026. Participation from NVentures (Nvidia), Macquarie Capital, Jeff Bezos/Bezos Expeditions, 1789 Capital, Lightspeed, Felicis, Coatue, Sequoia; strategics Samsung, LG, Schneider, CommonSpirit, Salesforce Ventures. Valuation triples from $4.5B seven months prior.",
+"source": "https://techcrunch.com/2026/01/14/robotic-software-maker-skild-ai-hits-14b-valuation/ ; https://www.skild.ai/blogs/series-c",
+"source_quality": "primary"
+},
+{
+"date": "2026-01-06 (announced) / 2026-02-03 (closed)",
+"company": "Mentee Robotics",
+"stage": "M&A / Acquisition",
+"amount": "$900M ($611.9M cash + 26,279,824 Mobileye Class A shares)",
+"amount_usd_m": 900,
+"category": "humanoid",
+"region": "Other",
+"lead_investors": [
+"Mobileye"
+],
+"valuation": "",
+"note": "Folds humanoids into Mobileye's 'Physical AI' strategy; Mentee run as independent unit; Shashua chairs both, recused from board vote",
+"source": "mobileye.com / SEC 8-K",
+"source_quality": "primary"
+},
+{
+"date": "2026-02",
+"company": "Wayve",
+"stage": "Series D",
+"amount": "$1.2B (up to $1.5B incl. contingent Uber tranche)",
+"amount_usd_m": 1200,
+"valuation": "$8.6B post-money",
+"lead_investors": [
+"Eclipse",
+"Balderton",
+"SoftBank Vision Fund 2"
+],
+"region": "Europe",
+"category": "robot-brain(VLA)",
+"note": "Announced Feb 24-25, 2026. New investors Ontario Teachers' Pension Plan, Baillie Gifford, British Business Bank, Icehouse Ventures, Schroders Capital; strategics Microsoft, NVIDIA, Uber, Mercedes-Benz, Nissan, Stellantis. Extra $300M from Uber contingent on London robotaxi deployment. Embodied-AI-first (general driving/embodied model), included per scope note flagging it explicitly.",
+"source": "https://wayve.ai/press/series-d/ ; https://techcrunch.com/2026/02/24/self-driving-tech-startup-wayve-raises-1-2b-from-nvidia-uber-and-three-automakers/",
+"source_quality": "primary"
+},
+{
+"date": "2026-02",
+"company": "World Labs",
+"stage": "Series (unspecified/late)",
+"amount": "$1B",
+"amount_usd_m": 1000,
+"valuation": "~$5B (per Jan report; some estimates higher post-raise)",
+"lead_investors": [
+"AMD",
+"Nvidia",
+"Autodesk"
+],
+"region": "US",
+"category": "world-model",
+"note": "Announced Feb 18-19, 2026. Founded by Fei-Fei Li. Also Emerson Collective, Fidelity Management & Research, Sea Ltd. Autodesk invested $200M and takes advisory role. Product: Marble (3D world-generation).",
+"source": "https://www.bloomberg.com/news/articles/2026-02-18/ai-pioneer-fei-fei-li-s-startup-world-labs-raises-1-billion ; https://finance.yahoo.com/news/ai-pioneer-fei-fei-lis-192214332.html",
+"source_quality": "primary"
+},
+{
+"date": "2026-02",
+"company": "Apptronik",
+"stage": "Series A extension (A-X)",
+"amount": "$520M",
+"amount_usd_m": 520,
+"valuation": "$5B-$5.3B post-money",
+"lead_investors": [
+"B Capital",
+"Google",
+"Mercedes-Benz",
+"PEAK6"
+],
+"region": "US",
+"category": "humanoid",
+"note": "Announced Feb 11, 2026. New investors AT&T Ventures, John Deere, Qatar Investment Authority. Brings total Series A to >$935M, total raised ~$1B. Prior valuation ~$1.75B.",
+"source": "https://apptronik.com/news-collection/apptronik-closes-over-935-million-series-a ; https://techcrunch.com/2026/02/11/humanoid-robot-startup-apptronik-has-now-raised-935m-at-a-5b-valuation/",
+"source_quality": "primary"
+},
+{
+"date": "2026-02",
+"company": "Qianxun Intelligence (千寻智能)",
+"stage": "Two consecutive rounds",
+"amount": "~RMB 2B (~$280M)",
+"amount_usd_m": 280,
+"valuation": ">RMB 10B (unicorn)",
+"lead_investors": [
+"undisclosed (multiple)"
+],
+"region": "China",
+"category": "humanoid",
+"note": "Announced Feb 24, 2026: two consecutive rounds totaling near RMB 2B, valuation crosses RMB 10B threshold, joining China's embodied-AI 'billion-RMB club'.",
+"source": "https://www.qbitai.com/2026/02/381766.html",
+"source_quality": "secondary"
+},
+{
+"date": "2026-02",
+"company": "AI² Robotics",
+"stage": "Series B",
+"amount": "~RMB 1.2B",
+"amount_usd_m": 168,
+"category": "robot-brain(VLA)",
+"region": "China",
+"lead_investors": [],
+"valuation": "~RMB 10B (~$1.4B)",
+"note": "AlphaBot wheeled humanoid line",
+"source": "therobotreport.com",
+"source_quality": "secondary"
+},
+{
+"date": "2026-02",
+"company": "X-Humanoid / Beijing Embodied-AI Robotics Innovation Center",
+"stage": "First market-oriented funding round",
+"amount": "RMB 700M+ (~$100M)",
+"amount_usd_m": 100,
+"category": "robot-data",
+"region": "China",
+"lead_investors": [
+"Baidu (among investors)"
+],
+"valuation": "",
+"note": "State-linked investors; data/training base facility (Yizhuang)",
+"source": "caixinglobal.com 2026-02-04",
+"source_quality": "secondary"
+},
+{
+"date": "2026-03",
+"company": "Saronic",
+"stage": "Series D",
+"amount": "$1.75B",
+"amount_usd_m": 1750,
+"category": "other",
+"region": "US",
+"lead_investors": [],
+"valuation": "$9.25B",
+"note": "Maritime autonomy/defense; context row showing 'robotics funding' totals include defense autonomy",
+"source": "news.crunchbase.com",
+"source_quality": "secondary"
+},
+{
+"date": "2026-03",
+"company": "AMI Labs (Advanced Machine Intelligence)",
+"stage": "Seed",
+"amount": "$1.03B",
+"amount_usd_m": 1030,
+"valuation": "~$3.5B pre-money / $4.5B (per some reports)",
+"lead_investors": [
+"Cathay Innovation",
+"Greycroft",
+"Hiro Capital",
+"HV Capital",
+"Bezos Expeditions"
+],
+"region": "Europe",
+"category": "world-model",
+"note": "Announced/launched Mar 9-10, 2026. Paris-based, founded by Yann LeCun and Alexandre Lebrun. Building JEPA-based world models for robotics, manufacturing, aerospace, biomedical. One of largest seed rounds ever for an AI startup. Shorooq also invested per Wamda coverage.",
+"source": "https://techcrunch.com/2026/03/09/yann-lecuns-ami-labs-raises-1-03-billion-to-build-world-models/ ; https://www.wamda.com/2026/03/shorooq-invests-ami-labs-ai-startup-hits-3-5-billion-valuation",
+"source_quality": "primary"
+},
+{
+"date": "2026-03",
+"company": "Physical Intelligence",
+"stage": "Series (in talks)",
+"amount": "~$1B (in talks, not yet closed as of search)",
+"amount_usd_m": 1000,
+"valuation": "~$11B (target, up from $5.6B)",
+"lead_investors": [
+"Founders Fund",
+"Lightspeed Venture Partners (in talks)"
+],
+"region": "US",
+"category": "robot-brain(VLA)",
+"note": "Reported Mar 27, 2026 (Bloomberg/TechCrunch) as in discussions; returning backers Thrive Capital, Lux Capital. Prior: $400M Series A at $2.4B val, $600M Series B at $5.6B val. No confirmed close found as of this search (unverified/in-progress) — do not treat as closed. — 传闻在谈,截至2026-07未确认关闭",
+"source": "https://www.bloomberg.com/news/articles/2026-03-27/ex-deepmind-staffers-robotics-startup-in-talks-for-11-billion-valuation ; https://techcrunch.com/2026/03/27/physical-intelligence-is-reportedly-in-talks-to-raise-1-billion-again/",
+"source_quality": "single-source",
+"not_closed": true
+},
+{
+"date": "2026-03/05",
+"company": "Mind Robotics",
+"stage": "Series A + follow-on",
+"amount": "$500M",
+"amount_usd_m": 500,
+"category": "other",
+"region": "US",
+"lead_investors": [],
+"valuation": "n/d",
+"note": "Unverified, single source (Crunchbase) — Rivian 分拆,聚焦传统工业机器人(非人形);总募资~$615M",
+"source": "news.crunchbase.com",
+"source_quality": "single-source"
+},
+{
+"date": "2026-03",
+"company": "Galbot (银河通用)",
+"stage": "Series (unspecified, record round)",
+"amount": "RMB 2.5B (~$345M)",
+"amount_usd_m": 345,
+"valuation": "~RMB 21B",
+"lead_investors": [
+"National Artificial Intelligence Industry Investment Fund",
+"Sinopec"
+],
+"region": "China",
+"category": "humanoid",
+"note": "Announced Mar 2, 2026; RMB 2.5B round called largest single embodied-AI round in China at the time. Total funding to date >RMB 6.8B. Some sources cite RMB2.5B (~$345M) figure distinct from a later Feb B round of ~RMB1B.",
+"source": "https://m.caixin.com/m/2026-03-02/102418619.html ; https://finance.sina.com.cn/tech/roll/2026-03-02/doc-inhppxww8401531.shtml",
+"source_quality": "secondary"
+},
+{
+"date": "2026-04",
+"company": "Generalist AI",
+"stage": "Growth round",
+"amount": "$400M",
+"amount_usd_m": 400,
+"category": "robot-data",
+"region": "US",
+"lead_investors": [
+"Radical Ventures"
+],
+"valuation": "~$2B",
+"note": "NVIDIA, Bezos Expeditions among backers; total raised >$500M; vertically integrated data-foundry (wearables)",
+"source": "bloomberg.com 2026-06-04",
+"source_quality": "primary"
+},
+{
+"date": "2026-04",
+"company": "Galaxea AI (星海图/Xinghai Tu, Galaxea Dynamics)",
+"stage": "Series B+",
+"amount": "$290-291M",
+"amount_usd_m": 290,
+"valuation": "$29B (per Yicai) / ~$2.9B (per Caproasia) — figures diverge, treat valuation as unverified",
+"lead_investors": [
+"undisclosed industrial/state-backed investors"
+],
+"region": "China",
+"category": "robot-brain(VLA)",
+"note": "Announced ~Apr 2-4, 2026. Follows ~$140M round in Feb 2026. Focus on VLA/World Action models via real-world data engine (vs. simulation-first approach of Galbot). Valuation figure has major discrepancy across sources ($29B vs $2.9B) — flagged unverified, likely a reporting/typo error (~$2.9B more plausible given round size).",
+"source": "https://www.yicaiglobal.com/news/chinese-embodied-ai-startup-galaxea-raises-usd2904-million-to-boost-basic-model-development-global-layout ; https://www.caproasia.com/2026/04/05/china-ai-tech-startup-galaxea-ai-galaxea-dynamics-raised-291-million-in-series-b-funding-at-2-9-billion-valuation-founded-in-2023-by-gao-jiyang/",
+"source_quality": "unverified"
+},
+{
+"date": "2026-04",
+"company": "Galaxea AI (星海图) — separate entity note",
+"stage": "Series B+",
+"amount": "~RMB 2B (~$280M)",
+"amount_usd_m": 280,
+"valuation": "~RMB 20B (~$2.8B)",
+"lead_investors": [
+"undisclosed"
+],
+"region": "China",
+"category": "robot-brain(VLA)",
+"note": "Chinese-language coverage (qbitai/36kr) of 星海图 B+ round ~RMB2B raised Apr 2026, valuation crossing RMB20B, following a ~RMB1B B round in Feb 2026. This may be the same company/round as the Galaxea AI entry above reported differently by English vs Chinese press (naming/entity conflation between 银河通用/Galbot and 星海图/Galaxea possible) — flagging as likely duplicate/overlap requiring de-duplication downstream.",
+"source": "https://www.qbitai.com/2026/04/394626.html ; https://36kr.com/p/3749019152548360",
+"source_quality": "single-source"
+},
+{
+"date": "2026-04",
+"company": "Zhongqing Robotics (众擎机器人)",
+"stage": "Series B",
+"amount": "$200M (~RMB 1.4B)",
+"amount_usd_m": 200,
+"valuation": ">RMB 10B",
+"lead_investors": [
+"Henan Investment Group Huirong Fund",
+"Luxshare Precision (002475.SZ)"
+],
+"region": "China",
+"category": "humanoid",
+"note": "Announced Apr 9, 2026, Shenzhen-based. Became 4th Shenzhen embodied-AI 'billion club' member. Followed by a B+ round reported in May 2026 (per Tencent News/蓝鲸).",
+"source": "https://finance.sina.com.cn/jjxw/2026-04-09/doc-inhtxkaw0801497.shtml ; https://news.qq.com/rain/a/20260506A06UIP00",
+"source_quality": "secondary"
+},
+{
+"date": "2026-04-15",
+"company": "Zebra Technologies robotics unit (ex-Fetch Robotics) — acquired by Skild AI",
+"stage": "M&A / Acquisition",
+"amount": "undisclosed (cash + equity stake in Skild)",
+"amount_usd_m": 0,
+"category": "robot-brain(VLA)",
+"region": "US",
+"lead_investors": [
+"Skild AI"
+],
+"valuation": "",
+"note": "Zebra received cash plus equity stake in Skild; Zebra had paid $290M in 2021 for the 95% of Fetch it didn't own (~$305M implied value then)",
+"source": "skild.ai/blogs/skild-zebra 2026-04-15",
+"source_quality": "primary"
+},
+{
+"date": "2026-05",
+"company": "Hark (Adcock's separate AI lab)",
+"stage": "Series A",
+"amount": "$700M",
+"amount_usd_m": 700,
+"category": "other",
+"region": "US",
+"lead_investors": [
+"Parkway Venture Capital"
+],
+"valuation": "$6B",
+"note": "Adcock's personal-AI hardware/model lab, seeded with $100M of his own capital; same lead as Figure's A/C",
+"source": "techcrunch.com 2026-05-21",
+"source_quality": "secondary"
+},
+{
+"date": "2026-05",
+"company": "Robotera",
+"stage": "Strategic round",
+"amount": ">$200M",
+"amount_usd_m": 200,
+"valuation": "not disclosed",
+"lead_investors": [
+"SF Group",
+"HSG",
+"IDG Capital"
+],
+"region": "China",
+"category": "humanoid",
+"note": "Announced May 8, 2026. Also Hillhouse Investment, CICC Capital, Jingming Capital, SparkEdge Capital, Luxin Venture Capital, plus industrial partners KENGIC, Dongfeng Asset Investment, ICBC Capital, China Unicom-affiliated funds. Follows a separate ~RMB1B (~$143M) strategic round completed in March 2026.",
+"source": "https://www.prnewswire.com/news-releases/robotera-raises-over-usd-200-million-in-new-round-led-by-sf-group-hsg-and-idg-capital-302766752.html",
+"source_quality": "primary"
+},
+{
+"date": "2026-05",
+"company": "Meta (acquisition of Assured Robot Intelligence / ARI)",
+"stage": "M&A / Acquihire",
+"amount": "undisclosed",
+"amount_usd_m": 0,
+"valuation": "",
+"lead_investors": [
+"Meta"
+],
+"region": "US",
+"category": "robot-brain(VLA)",
+"note": "Announced May 1, 2026. ARI co-founders Xiaolong Wang, Xuxin Cheng, Lerrel Pinto (ex-Fauna Robotics, sold to Amazon) join Meta Superintelligence Labs for humanoid whole-body control models.",
+"source": "https://techcrunch.com/2026/05/01/meta-buys-robotics-startup-to-bolster-its-humanoid-ai-ambitions/",
+"source_quality": "primary"
+},
+{
+"date": "2026-05-01",
+"company": "Assured Robot Intelligence (ARI)",
+"stage": "M&A / Acquisition",
+"amount": "undisclosed",
+"amount_usd_m": 0,
+"category": "humanoid",
+"region": "US",
+"lead_investors": [
+"Meta"
+],
+"valuation": "",
+"note": "Co-founders Lerrel Pinto and Xiaolong Wang joined Meta Superintelligence Labs / Robotics Studio",
+"source": "techcrunch.com 2026-05-01",
+"source_quality": "primary"
+},
+{
+"date": "2026-06",
+"company": "Neura Robotics",
+"stage": "Series C",
+"amount": "up to $1.4B",
+"amount_usd_m": 1400,
+"valuation": "~$7B",
+"lead_investors": [
+"Tether",
+"Qualcomm Technologies",
+"Amazon",
+"NVIDIA"
+],
+"region": "Europe",
+"category": "humanoid",
+"note": "Announced Jun 10, 2026. Also imec.xpand, Bosch, Schaeffler, European Investment Bank, Lingotto Horizon, InterAlpen Partners. Largest full-stack robotics raise ever per company. Full amount contingent on milestones. Existing orderbook/pipeline >$1B. This is the German humanoid maker; supersedes March 2026 in-talks report of ~$1.2B.",
+"source": "https://neura-robotics.com/record-series-c/ ; https://www.cnbc.com/2026/06/10/neura-robotics-funding-ai-humanoid-robots.html",
+"source_quality": "primary"
+},
+{
+"date": "2026-06-29",
+"company": "AI² Robotics",
+"stage": "New financing",
+"amount": "~¥5B (~$735M)",
+"amount_usd_m": 735,
+"category": "robot-brain(VLA)",
+"region": "China",
+"lead_investors": [],
+"valuation": "RMB 20B+ (~$2.8B)",
+"note": "Follows Series B earlier in 2026 at ~RMB 10B valuation",
+"source": "autonews.gasgoo.com 2026-06-29",
+"source_quality": "secondary"
+},
+{
+"date": "2026-06-24",
+"company": "Agility Robotics",
+"stage": "SPAC / de-SPAC merger",
+"amount": "$2.5B deal value (~$600M+ gross proceeds)",
+"amount_usd_m": 600,
+"valuation": "$2.5B",
+"lead_investors": [
+"Churchill Capital Corp XI"
+],
+"region": "US",
+"category": "humanoid",
+"note": "Announced Jun 24, 2026. Business combination agreement with Churchill Capital Corp XI (NASDAQ: CCXI); combined co. to list as 'AGLT'. 100% of existing Agility shareholders roll equity, 180-day lockup. Expected to close in 2026, subject to SEC/shareholder approval. Digit robot deployed at Schaeffler, GXO, Toyota, Mercado Libre.",
+"source": "https://techcrunch.com/2026/06/24/agility-robotics-plans-to-go-public-via-spac-in-a-2-5b-deal/ ; https://www.sec.gov/Archives/edgar/data/0002074973/000121390026071290/ea029548401ex99-1.htm",
+"source_quality": "primary"
+},
+{
+"date": "2026-06-15",
+"company": "Shihang Intelligent / Seahi (世航智能)",
+"stage": "Series A",
+"amount": ">¥1B (~$140M) — Crunchbase's '$1B' USD figure is a currency error",
+"amount_usd_m": 140,
+"category": "other",
+"region": "China",
+"lead_investors": [
+"Shanghe Momentum Fund"
+],
+"valuation": "n/d",
+"note": "Marine embodied robots (0-10,000m depth); Vertex Growth (Temasek), CITIC agriculture fund, Broad-Ocean Motor, GSR Ventures re-upped; largest single marine-robotics round globally",
+"source": "finance.sina.com.cn 2026-06-15",
+"source_quality": "primary"
+},
+{
+"date": "2026-06-29",
+"company": "Proception",
+"stage": "Seed",
+"amount": "$11M",
+"amount_usd_m": 11,
+"category": "component-module",
+"region": "US",
+"lead_investors": [
+"First Round Capital"
+],
+"valuation": "",
+"note": "Y Combinator, BoxGroup also participated; robot-hand startup founded by ex-Tesla Optimus hand-team lead Jay Li; announced same day as settling Tesla trade-secret suit",
+"source": "techcrunch.com 2026-06-29",
+"source_quality": "primary"
+},
+{
+"date": "2026-06",
+"company": "EngineAI",
+"stage": "HK IPO (confidential filing)",
+"amount": "n/d",
+"amount_usd_m": 0,
+"category": "humanoid",
+"region": "China",
+"lead_investors": [],
+"valuation": "",
+"note": "Filed confidentially for Hong Kong IPO",
+"source": "bloomberg.com 2026-06-12",
+"source_quality": "secondary"
+},
+{
+"date": "2026-06-29",
+"company": "X Square Robot",
+"stage": "Series C (culmination of 4 consecutive rounds)",
+"amount": "cumulative to >$2.8B valuation; latest tranche size not separately disclosed",
+"amount_usd_m": 0,
+"valuation": "$2.8B (~RMB 20B)",
+"lead_investors": [
+"IDG Capital (Series C)",
+"HongShan",
+"Xiaomi (repeat backers)"
+],
+"region": "China",
+"category": "robot-brain(VLA)",
+"note": "Announced Jun 29, 2026. Only Chinese embodied-AI firm with lead-round backing from 4 major tech companies at different stages: Meituan, Alibaba, ByteDance, Xiaomi. Round timeline: Series A+ ~$140M (Sep 2025), Series A++ ~$140M (Jan 2026), Series B ~$276M (Apr 2026), Series C (Jun 2026, this entry).",
+"source": "https://theaiinsider.tech/2026/06/29/x-square-robot-announces-four-consecutive-financing-rounds-us2-8-billion-valuation/ ; https://www.therobotreport.com/x-square-robot-brings-valuation-2-8b-four-consecutive-funding-rounds/",
+"source_quality": "primary"
+},
+{
+"date": "2026-07-03",
+"company": "Unitree Robotics",
+"stage": "IPO (STAR Market, Shanghai)",
+"amount": "~$619M raise (~RMB 4.2B)",
+"amount_usd_m": 619,
+"valuation": "~RMB 42B (~$6.18B); estimates range $5.9B-$7B",
+"lead_investors": [
+"CSRC-approved public listing"
+],
+"region": "China",
+"category": "quadruped-AMR",
+"note": "CSRC approved registration Jul 3, 2026 — last formal hurdle before pricing. Proposed float represents >=10% stake. Reported 2025 revenue ~RMB1.7B; profitable since 2020. Debut expected late July 2026. Also known for humanoid + quadruped robots (G1, H1, etc).",
+"source": "https://www.caixinglobal.com/2026-07-03/unitree-robotics-wins-approval-for-618-million-star-market-ipo-102460136.html ; https://kraneshares.com/a-complete-guide-to-unitree-robotics-2026-ipo-why-it-matters-for-star-market-etf-kstr-humanoid-robotics-etf-koid/",
+"source_quality": "primary"
+},
+{
+"date": "2026 (2026 capex guidance)",
+"company": "Tesla (Optimus program)",
+"stage": "Corporate capex",
+"amount": "~$25B (2026 guidance, raised from >$20B)",
+"amount_usd_m": 25000,
+"category": "humanoid",
+"region": "US",
+"lead_investors": [],
+"valuation": "",
+"note": "Roughly 3x the $8.5B spent in 2025; not all capex is robotics-specific (also covers AI compute and robotaxi); internal capex not third-party funding",
+"source": "seekingalpha.com / thenextweb.com",
+"source_quality": "secondary"
+}
+]

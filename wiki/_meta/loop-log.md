@@ -283,3 +283,17 @@ Contents: 38-page bilingual wiki (wiki/ + wiki-zh/) + pitch/ (Quectel
 analysis, HTML briefing, .pptx deck) + protocol/meta. Remote is now the
 canonical mirror; future work can push incrementally (git push). Loop
 remains paused.
+
+## funding-timeline — 2026-07-05 (directed; Opus verify + Sonnet collect)
+Built a Physical-AI funding timeline: harvested every funding/valuation/IPO/
+M&A event from the verified wiki + gap-filled by era via 4 parallel Sonnet
+collectors (2015-2022 / 2023-2024 / 2025 / 2026-H1), deduped in code
+(157 events after merge, 2013→2026-07), Opus verified the 30 largest and
+applied 8 corrections: PI ~$1B@$11B and 1X ~$1B@$10B marked NOT-CLOSED
+(reported/in-talks, excluded from totals); Scale AI / AMI Labs / World Labs
+double-counts removed; Mind Robotics recategorized (Rivian industrial spin-
+out, amount fixed to $500M); BD Hyundai rights offering ~$870M. Result:
+~$90B disclosed-closed across 157 events, clear hockey stick (2024:25 →
+2025:42 → 2026-H1:31). Deliverable: viz/funding-timeline.html (interactive,
+filter by category/region/mega, source-quality chips, not-closed flags) +
+dataset wiki/_meta/funding-events.json. Loop paused.
