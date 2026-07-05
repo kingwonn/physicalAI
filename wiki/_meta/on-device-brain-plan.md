@@ -14,8 +14,8 @@ Audience: technical + strategic (Quectel-style on-device compute-module maker).
 - [x] **B. 云边分工 (split-brain / 云边混合)** — latency/reliability/privacy case for on-device; what MUST be local vs cloud; bandwidth & latency budgets; the offline-capability argument.
 - [x] **C. 端侧 VLA 推理算力需求** — TOPS/memory-bandwidth to run a VLA at N Hz; real numbers per model; the compute ladder (10/48/77/700/2070); INT8/FP4.
 - [x] **D. 面向端侧的模型优化** — quantization (INT4/INT8/FP4), distillation, small-VLA, action-head choices (diffusion/flow-matching/autoregressive tokens) and their latency; on-device LLM.
-- [ ] **E. 实时控制的切分** — AI-module (perception/policy 7-50 Hz) + MCU (motor control ~1 kHz); determinism, safety, why the split; the two-brain hardware pattern.
-- [ ] **F. SoC / 硬件版图** — Jetson Thor (2,070 TFLOPS) vs Qualcomm QCS8550/Snapdragon vs Horizon/D-Robotics vs others; big-brain vs small-brain tiers; NPU/GPU; memory.
+- [x] **E. 实时控制的切分** — AI-module (perception/policy 7-50 Hz) + MCU (motor control ~1 kHz); determinism, safety, why the split; the two-brain hardware pattern.
+- [x] **F. SoC / 硬件版图** — Jetson Thor (2,070 TFLOPS) vs Qualcomm QCS8550/Snapdragon vs Horizon/D-Robotics vs others; big-brain vs small-brain tiers; NPU/GPU; memory.
 - [ ] **G. 功耗 / 散热 / 成本工程** — battery budget, edge-chip power draw (the ~60% claim), thermal on a moving robot, cost-of-compute; the mobile-power constraint.
 - [ ] **H. 软件栈 & 运行时** — ROS2, on-device inference engines (TensorRT / Qualcomm AI stack / llama.cpp-class), OS (Ubuntu on edge modules), the VLA runtime & middleware.
 - [ ] **I. 为端侧而生的模型** — Gemini Robotics On-Device, NVIDIA GR00T N1 (Jetson-native), Figure Helix S1/S2, π0/π0.5 on-device, small open VLAs; who ships an edge brain.
