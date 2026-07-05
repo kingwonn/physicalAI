@@ -1,0 +1,141 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>端侧具身智能大脑 · 参考架构</title>
+<style>
+:root{--paper:#F3F5F5;--panel:#FFF;--ink:#0F171C;--ink2:#18242B;--ink3:#24333B;--steel:#55666C;--mute:#83979B;
+--line:#DCE2E2;--line2:#E9EEEE;--teal:#0C8C88;--tealbr:#12B3AC;--heat:#E4592A;--amber:#C9A24A;--verify:#2E8B57;--violet:#7A5AF0;--blue:#2D7FF0;
+--sans:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",system-ui,-apple-system,sans-serif;
+--mono:ui-monospace,"SF Mono","Cascadia Code",Consolas,Menlo,monospace}
+*{box-sizing:border-box}html{background:var(--paper)}
+body{margin:0;font-family:var(--sans);color:var(--ink);line-height:1.6;font-size:15px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1000px;margin:0 auto;padding:0 22px}
+a{color:var(--teal);text-decoration:none}a:hover{text-decoration:underline}
+.mh{border-top:4px solid var(--teal);background:var(--ink);color:#E8EEEE;padding:30px 0 24px}
+.mh .eb{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--tealbr);margin:0 0 10px}
+.mh h1{font-size:clamp(23px,4vw,34px);font-weight:800;margin:0 0 8px;letter-spacing:-.01em;text-wrap:balance}
+.mh p{margin:0;color:#9DB0B3;font-size:14px;max-width:52em}
+h2{font-family:var(--mono);font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--steel);margin:38px 0 6px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.sub{font-size:13px;color:var(--steel);margin:0 0 16px}
+/* 3-tier stack */
+.stack{display:flex;flex-direction:column;gap:10px;margin:18px 0}
+.tier{border-radius:10px;padding:18px 20px;position:relative;overflow:hidden;color:#EAF2F2}
+.tier.s2{background:linear-gradient(135deg,#20303a,#2a4048);border:1px solid #33505a}
+.tier.s1{background:linear-gradient(135deg,#0d5c58,#0C8C88);border:1px solid #12B3AC}
+.tier.s0{background:linear-gradient(135deg,#7a2f18,#B8431C);border:1px solid var(--heat)}
+.tier .thead{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.tier .tno{font-family:var(--mono);font-size:12px;font-weight:700;padding:2px 9px;border-radius:5px;background:rgba(255,255,255,.15)}
+.tier .tname{font-size:19px;font-weight:800}
+.tier .thz{font-family:var(--mono);font-size:15px;font-weight:700;margin-left:auto;background:rgba(0,0,0,.25);padding:3px 12px;border-radius:6px}
+.tier .trole{margin:9px 0 0;font-size:14px;color:#DCEAEA;line-height:1.6}
+.tier .tmeta{margin:12px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.tier .chip{font-family:var(--mono);font-size:11px;padding:2px 9px;border-radius:4px;background:rgba(255,255,255,.14);color:#EAF2F2}
+.tier .chip b{color:#fff}
+.flow{text-align:center;font-family:var(--mono);font-size:11px;color:var(--mute);letter-spacing:.05em}
+.flow .a{color:var(--teal)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+@media(max-width:640px){.split{grid-template-columns:1fr}.tier .thz{margin-left:0}}
+.splitbox{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:13px 15px}
+.splitbox .h{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;font-weight:600;margin:0 0 6px}
+.splitbox.edge .h{color:var(--teal)} .splitbox.cloud .h{color:var(--blue)}
+.splitbox p{margin:0;font-size:12.5px;color:var(--steel);line-height:1.55}
+/* ladder */
+.ladder{display:flex;flex-direction:column;gap:8px;margin:16px 0}
+.rung{display:grid;grid-template-columns:120px 1fr auto;gap:14px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 16px}
+.rung .cls{font-weight:700;font-size:14px}
+.rung .cls small{display:block;font-weight:400;font-size:11px;color:var(--mute);font-family:var(--mono)}
+.rung .chips{display:flex;flex-wrap:wrap;gap:6px}
+.rung .chip{font-family:var(--mono);font-size:11px;padding:2px 8px;border-radius:4px;border:1px solid var(--line);color:var(--steel)}
+.rung .tops{font-family:var(--mono);font-weight:700;font-size:15px;white-space:nowrap;text-align:right}
+.rung.big .tops{color:var(--teal)}.rung.mid .tops{color:var(--amber)}.rung.small .tops{color:var(--steel)}
+@media(max-width:640px){.rung{grid-template-columns:1fr;gap:6px}}
+/* scorecard */
+.score{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:16px 0}
+.axis{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:14px 16px;border-top:3px solid var(--st)}
+.axis .a{font-weight:700;font-size:14.5px;margin:0 0 4px}
+.axis .st-lab{font-family:var(--mono);font-size:10px;letter-spacing:.05em;text-transform:uppercase;font-weight:600;float:right}
+.axis p{margin:6px 0 0;font-size:12.5px;color:var(--steel);line-height:1.55}
+.solved{--st:var(--verify)} .solved .st-lab{color:var(--verify)}
+.partial{--st:var(--amber)} .partial .st-lab{color:var(--amber)}
+.open{--st:var(--heat)} .open .st-lab{color:var(--heat)}
+/* module read */
+.readbox{background:linear-gradient(180deg,rgba(12,140,136,.05),var(--panel));border:1.5px solid var(--teal);border-radius:10px;padding:20px 22px;margin:20px 0}
+.readbox .h{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);font-weight:600;margin:0 0 10px}
+.readbox p{margin:0 0 8px;font-size:14px;line-height:1.7}
+.readbox b{color:var(--heat)}
+.readbox .cl{margin:12px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:7px}
+.readbox .cl li{padding-left:20px;position:relative;font-size:13px;color:var(--steel)}
+.readbox .cl li::before{content:"";position:absolute;left:2px;top:7px;width:8px;height:8px;background:var(--teal);transform:rotate(45deg)}
+footer{border-top:1px solid var(--line);padding:22px 0 40px;font-size:12.5px;color:var(--steel);line-height:1.7;margin-top:36px}
+footer .m{font-family:var(--mono);font-size:11px;color:var(--mute);margin-top:8px;display:flex;flex-wrap:wrap;gap:6px 18px}
+</style>
+<div class="mh"><div class="wrap">
+  <p class="eb">具身智能 · 端侧大脑 · 参考架构</p>
+  <h1>端侧具身智能大脑:一张图看懂怎么做</h1>
+  <p>跑在机器人机身上的具身智能"大脑"的收敛架构:三层切分(深思 / 反应 / 反射)+ 云边分工 + 算力分档 + 评价标尺 + 模组厂战略读数。数字对准 arXiv/官方规格一手源(完整分析见 GitHub 上的 on-device-brain 页,12 个 section)。</p>
+</div></div>
+<div class="wrap">
+
+  <h2>① 收敛架构 · 三层切分</h2>
+  <p class="sub">单一模型不能既聪明又快 → 拆成三层,各跑各的时钟、各在各的硬件上。上层想"做什么",下层管"怎么动"。</p>
+  <div class="stack">
+    <div class="tier s2">
+      <div class="thead"><span class="tno">S2</span><span class="tname">深思 System 2 · VLM</span><span class="thz">5–10 Hz</span></div>
+      <p class="trole">语义场景/语言理解 + 任务规划。互联网预训练的大 VLM(如 Helix 7B VLM @7–9 Hz;GR00T Eagle-2 VLM @10 Hz)。通用但慢 → 可选云边混合(重推理上云)。</p>
+      <div class="tmeta"><span class="chip">跑在:<b>富 SoC 或云</b></span><span class="chip">Helix 7B VLM</span><span class="chip">GR00T N1.6-3B</span><span class="chip">Gemini Robotics</span></div>
+    </div>
+    <div class="flow">▲ 单个连续潜向量 / 意图  ·  <span class="a">S2 → S1(异步共享内存)</span> ▼</div>
+    <div class="tier s1">
+      <div class="thead"><span class="tno">S1</span><span class="tname">反应 System 1 · 视觉运动策略</span><span class="thz">100–200 Hz</span></div>
+      <p class="trole">把意图变成连续电机指令。小而快的策略(如 Helix 80M @200 Hz 覆盖 35 DoF)。扩散/流匹配动作头比自回归快 ~100x;动作分块(action chunking)开环执行藏延迟。</p>
+      <div class="tmeta"><span class="chip">跑在:<b>端侧 AI SoC</b></span><span class="chip">Jetson Thor/Orin</span><span class="chip">高通 QCS/IQ10</span><span class="chip">D-Robotics X5</span></div>
+    </div>
+    <div class="flow">▲ 关节目标 / 力矩指令  ·  <span class="a">S1 → S0(EtherCAT / CAN-FD)</span> ▼</div>
+    <div class="tier s0">
+      <div class="thead"><span class="tno">S0</span><span class="tname">反射 System 0 · 实时电机环</span><span class="thz">500 Hz – 1 kHz+</span></div>
+      <p class="trole">FOC 电流/力矩闭环 + 安全(急停、力矩限、跌倒保护)。<b>硬实时、确定性、µs 级抖动</b> —— Linux+GPU 栈给不出,必须跑在 MCU/实时核上。安全可停性(safe-stoppability)执行预定回退控制器。</p>
+      <div class="tmeta"><span class="chip">跑在:<b>分布式 MCU</b></span><span class="chip">TI F28(SIL2)</span><span class="chip">Orin FSI(ASIL-D)</span><span class="chip">PREEMPT_RT</span></div>
+    </div>
+  </div>
+  <div class="split">
+    <div class="splitbox edge"><p class="h">必须在端侧(on-device)</p><p>实时反应环(S1/S0)、安全、断网可用、隐私(入户摄像头)。控制/安全环容不下云往返(µs–ms 确定性)。</p></div>
+    <div class="splitbox cloud"><p class="h">可上云 / 云边混合</p><p>重推理、大模型规划、车队学习、OTA。移远 Robrain 式"以端为主、云端为辅",断网维持核心功能。5G/MEC 端到端 ~5-10ms(未证实)。</p></div>
+  </div>
+
+  <h2>② 算力分档 · 按机器人类别选 SoC</h2>
+  <p class="sub">TOPS 是营销数字;真吞吐受<strong>内存带宽</strong>限(VLA 动作专家是 memory-bound)。真指标是延迟、TOPS/W、$/TOPS。</p>
+  <div class="ladder">
+    <div class="rung big"><div class="cls">大脑档<small>全尺寸人形</small></div><div class="chips"><span class="chip">NVIDIA Jetson Thor(事实标准)</span><span class="chip">128GB @273GB/s</span><span class="chip">40–130W</span><span class="chip">$3,499</span><span class="chip">Galbot G1 首发</span></div><div class="tops">2,070<small style="color:var(--mute);font-weight:400"> FP4 TFLOPS(稀疏)</small></div></div>
+    <div class="rung mid"><div class="cls">中档<small>人形 / 高端</small></div><div class="chips"><span class="chip">高通 Dragonwing IQ10</span><span class="chip">Snapdragon 77 TOPS</span><span class="chip">Thundercomm IRB10</span><span class="chip">含 SAIL 安全岛</span></div><div class="tops">700<small style="color:var(--mute);font-weight:400"> TOPS(IQ10)</small></div></div>
+    <div class="rung small"><div class="cls">小脑档<small>四足 / AMR / 服务</small></div><div class="chips"><span class="chip">D-Robotics X5(10 TOPS BPU)</span><span class="chip">移远 SH602HA-AP 模组</span><span class="chip">高通 QCS8550 48 TOPS</span><span class="chip">Hailo-8 26 TOPS@2.5W</span></div><div class="tops">10–48<small style="color:var(--mute);font-weight:400"> TOPS</small></div></div>
+  </div>
+
+  <h2>③ "做好"的判据 · 买家/工程师标尺</h2>
+  <p class="sub">算力已基本解决;真正卡住的是可靠性与泛化。绿=基本解决 / 黄=部分 / 红=未解决。</p>
+  <div class="score">
+    <div class="axis solved"><span class="st-lab">✓ 基本解决</span><p class="a">延迟</p><p>端到端感知→动作;S1 需 100–200 Hz;并行解码/动作分块已达标。VLA-Perf:pi0 在 Thor ~19 Hz。</p></div>
+    <div class="axis solved"><span class="st-lab">✓ 基本解决</span><p class="a">功耗/散热</p><p>TOPS/W 才是指标;Thor 40–130W(占 ~2kWh 包 3–19%);量化 INT4/FP4 + 高能效 SoC(Hailo ~10 TOPS/W)。</p></div>
+    <div class="axis solved"><span class="st-lab">✓ 基本解决</span><p class="a">成本</p><p>算力模组占 BOM ~5–10% 且下降;$/TOPS 竞争;小脑档已白菜价。</p></div>
+    <div class="axis partial"><span class="st-lab">◐ 部分</span><p class="a">可更新性</p><p>OTA + 端侧少样本适配(Gemini On-Device 50–100 示范);但自更新物理机器人的安全性未过关。</p></div>
+    <div class="axis partial"><span class="st-lab">◐ 部分</span><p class="a">安全</p><p>确定性回退 + 安全可停性(CMU/Siemens PRISM);ISO 10218:2025 含延迟/控制频率;分立 MCU vs 片上安全岛未定。</p></div>
+    <div class="axis open"><span class="st-lab">✗ 未解决</span><p class="a">泛化</p><p>OOD 任务/场景/物体成功率仍差(ACT 见新盘子 86%→~12%);跨本体迁移在进步但不稳。</p></div>
+    <div class="axis open"><span class="st-lab">✗ 未解决</span><p class="a">可靠性(9 个 9)</p><p>演示 vs 24/7 的部署鸿沟;MTBF 几无公开数据(Spot 巡检 78h MTBI 是少数);评测危机(自报数字、无标准端侧基准)。</p></div>
+  </div>
+
+  <div class="readbox">
+    <p class="h">④ 对模组厂(移远式)的战略读数</p>
+    <p><b>端侧大脑(算力 + 连接 + 定位模组)是可防御的军火商赛道。</b>不赌哪家整机赢,卖每台机器人都要的三层大脑硬件。</p>
+    <p>两侧夹击要认清:一边是<b>机电 BOM</b>(减速器/丝杠/电机,占整机 ~50-57%)—— 十年精密加工护城河,模组厂进不去(见零部件供应链);另一边是<b>芯片原厂(高通/NVIDIA)越过模组商直供整机</b> —— 这才是真威胁,不是富士康的 PIPE。</p>
+    <p style="margin-top:10px"><strong style="color:var(--ink)">一个"端侧大脑模组"应该暴露什么(规格清单):</strong></p>
+    <ul class="cl">
+      <li>算力分档选项(小脑 10-48 TOPS → 大脑 Thor 级),按机器人类别</li>
+      <li>实时总线(EtherCAT/CAN-FD)+ 确定性协处理 MCU(服务 S0 层)</li>
+      <li>连接层(5G/WiFi)用于云边混合 + GNSS 定位(第三条腿)</li>
+      <li>参考大脑方案(如 Robrain)+ 软件/中间件(ROS2/推理运行时/安全监视/OTA)</li>
+      <li>补齐短板:峰值算力(77 vs 700/2070 TOPS)、VLA/中间件软件深度、抗原厂去中间化的护城河</li>
+    </ul>
+  </div>
+</div>
+<footer><div class="wrap">
+  <div>完整深度分析(12 个 section,逐条一手源核查):<a href="https://github.com/kingwonn/physicalAI/blob/main/wiki/on-device-brain.md">wiki/on-device-brain.md</a> · <a href="https://kingwonn.github.io/physicalAI/">知识库门户</a>。本图为参考架构综合;所有 Hz/TOPS/ms 数字在源页对准 arXiv/NVIDIA/高通/Figure/DeepMind 一手源,单源项标(未证实)。</div>
+  <div class="m"><span>快照 2026-07-05</span><span>6 轮研究循环 · 12 section 全核查</span><span>配套:VLA 模型 · SoC 版图 · 移远 pitch</span></div>
+</div></footer>

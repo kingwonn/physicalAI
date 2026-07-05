@@ -9,6 +9,7 @@
 - [History of Physical AI](wiki/history.md): Unimate/Shakey → deep-RL/sim2real → the 2022-26 robot-foundation-model turn and humanoid mass-production wave
 - [State of the Art (2026-07)](wiki/state-of-the-art.md): hub snapshot — leading VLAs, first commercial humanoid fleets, shipment shares, record capital
 - [Physical AI Tech Tree](wiki/tech-tree.md): layered dependency map with per-branch bottlenecks (data, dexterity, reliability)
+- [On-Device Embodied Brain](wiki/on-device-brain.md): deep report on building a good edge robot brain — dual/tri-system arch (S2/S1/S0), cloud-edge, compute/model-opt, SoC landscape, power, software, edge models, eval rubric, reference architecture + module-maker read (12 verified sections)
 - [Visions & Theses](wiki/visions.md): leaders' framings with dated primary quotes (Huang, Musk, Hassabis, Li, LeCun, Son, Wang) + skeptics; convergence/divergence matrix
 
 ## Technology

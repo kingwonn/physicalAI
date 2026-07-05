@@ -565,7 +565,7 @@ The on-device brain is not free silicon on a shelf — it is a heat source insid
 
 ### 芯片级功耗与能效 (Chip-level power & efficiency)
 
-Jetson AGX Thor is the reference "big-brain" module already cited in [hardware.md](../hardware.md)'s compute table; the numbers below are the design envelope it exposes.
+Jetson AGX Thor is the reference "big-brain" module already cited in [hardware.md](hardware.md)'s compute table; the numbers below are the design envelope it exposes.
 
 | Metric | Jetson AGX Orin | Jetson AGX Thor (T5000) | Source |
 |---|---|---|---|
@@ -576,7 +576,7 @@ Jetson AGX Thor is the reference "big-brain" module already cited in [hardware.m
 | Gen-over-gen claim | baseline | **7.5× AI compute, only 3.5× energy efficiency** vs Orin | NVIDIA blog (primary) |
 
 - The load-bearing observation is the **7.5× vs 3.5× gap** (primary): raw compute scaled roughly **2.1× faster than efficiency** across the Orin→Thor generation. Bigger VLA models want *more than proportionally* more power — unless software (quantization) closes the gap. Silicon alone does not give you a free perf-per-watt win.
-- Practically, this is why the 40–130 W envelope is so wide: the same module is a 40 W part running a small policy or a 130 W part running a multi-billion-parameter [VLA](../vla-models.md) — and, as the thermal section shows, those two operating points need physically different cooling hardware.
+- Practically, this is why the 40–130 W envelope is so wide: the same module is a 40 W part running a small policy or a 130 W part running a multi-billion-parameter [VLA](vla-models.md) — and, as the thermal section shows, those two operating points need physically different cooling hardware.
 
 ### 量化换算功耗:软件才是每瓦性能的杠杆 (Quantization as the perf-per-watt lever)
 
@@ -591,7 +591,7 @@ The usable speedup at a **fixed power envelope** comes mostly from precision red
 | GR00T N1 Compressed Action Tokens + parallel decoding | **up to 2.5×** faster policy inference | **<5 ms** per-step latency | — | NVIDIA Isaac GR00T materials (secondary) |
 
 - **"TOPS/W beats peak TOPS" is measurable at the model level, not just the chip level** (secondary): INT8 keeps ~97% of full-precision task success while cutting energy ~1.7× — the concrete quantitative case that quantization is the real lever. INT4 doubles the win but needs saliency-aware quantization to protect task quality.
-- **Real-time gap** (secondary): a humanoid joint controller wants **~1 kHz** hard-real-time cycles (the "split-brain" MCU/x86 loop in [hardware.md](../hardware.md)), while the VLA "brain" runs far slower. GR00T N1's compressed-action-token + parallel decoding pushes per-step VLA latency **below 5 ms**, closing that gap *on the same power budget* — an architectural trick, not more watts.
+- **Real-time gap** (secondary): a humanoid joint controller wants **~1 kHz** hard-real-time cycles (the "split-brain" MCU/x86 loop in [hardware.md](hardware.md)), while the VLA "brain" runs far slower. GR00T N1's compressed-action-token + parallel decoding pushes per-step VLA latency **below 5 ms**, closing that gap *on the same power budget* — an architectural trick, not more watts.
 - **Distinct axis, other silicon** (primary/secondary): perf-per-watt is a real design axis independent of peak TOPS — EnCharge AI EN100 claims ~**40 TOPS/W** @ 200 TOPS INT8; Hailo-8 delivers **26 TOPS at 2.5–3 W** (~9–10 TOPS/W). These sit in the "small-brain" tier below Thor, where efficiency, not headline TOPS, is the buy criterion.
 
 ### 散热:真正的持续性能天花板 (Thermal — the true sustained ceiling)
@@ -613,7 +613,7 @@ Peak TOPS is a datasheet number; the sustained number is whatever the heat path 
 
 ### 功耗预算与"大脑占比"辨析 (Power budget & the "brain share" question)
 
-A recurring claim (via the Witt / New Yorker piece already cited in [data.md](../data.md)) is that compute takes **~60%** of a robot's electricity vs **~20%** for a human brain of body energy. That framing is **load-state-dependent and mostly wrong for a working robot**:
+A recurring claim (via the Witt / New Yorker piece already cited in [data.md](data.md)) is that compute takes **~60%** of a robot's electricity vs **~20%** for a human brain of body energy. That framing is **load-state-dependent and mostly wrong for a working robot**:
 
 | System state | Whole-system draw | Thor share (@130 W max) | Source |
 |---|---|---|---|
@@ -621,7 +621,7 @@ A recurring claim (via the Witt / New Yorker piece already cited in [data.md](..
 | Normal walking | 700–1,500 W | **~9–19%** | Longsing Tech (secondary) |
 | Peak (lift / stairs / recovery, 5–10 s) | 2,000–4,000 W | **~3–6%** | Longsing Tech (secondary) |
 
-- Reference pack: ~**1.99 kWh** (51.8 V, 38.4 Ah NMC) — consistent with the ~2 kWh class in [hardware.md](../hardware.md). Compute is only a large share of draw when the robot is **nearly stationary**; during locomotion, **locomotion dominates** (>70% by one aggregator estimate that puts compute/"agentic autonomy" at ~**20–25%** during active operation — unverified precise attribution, but consistent with the ~9–19% walking-state figure above). At the peak-load band a 130 W Thor is only **~3–6%** of draw, not <5% flat — at the 2,000 W low end the share is ~6.5%, so "<5%" holds only above ~2,600 W.
+- Reference pack: ~**1.99 kWh** (51.8 V, 38.4 Ah NMC) — consistent with the ~2 kWh class in [hardware.md](hardware.md). Compute is only a large share of draw when the robot is **nearly stationary**; during locomotion, **locomotion dominates** (>70% by one aggregator estimate that puts compute/"agentic autonomy" at ~**20–25%** during active operation — unverified precise attribution, but consistent with the ~9–19% walking-state figure above). At the peak-load band a 130 W Thor is only **~3–6%** of draw, not <5% flat — at the 2,000 W low end the share is ~6.5%, so "<5%" holds only above ~2,600 W.
 - **The human-brain benchmark** (secondary): brain ≈ **20 W continuous**, ~20% of the body's ~100 W basal metabolic rate. The Witt comparison invokes a robot brain drawing a *higher share* than that — but whether it actually exceeds 20% (let alone reaches 60%) depends entirely on activity state.
 - **Verification note (unverified, single-source, could not re-confirm exact wording)**: the specific New Yorker "~60%" figure could **not** be independently re-verified this pass (paywalled; direct + Wayback fetches failed; no secondary source repeats the exact figure). Recommend the wiki state it as a single-source claim and use the load-dependent Longsing numbers + the 20–25% bracket as the honest contextualization, not "~60% of the battery goes to the chip."
 
@@ -925,7 +925,7 @@ The single most load-bearing evaluation fact: **full-size VLAs on real edge sili
 - **Full VLA on edge is far below control rate.** OpenVLA (**7B**) hits only **~3 FPS on Jetson AGX Orin even at INT4** (primary). LiteVLA-Edge: **150.5 ms** mean end-to-end (~**6.6 Hz**) on a Jetson-class ROS2 pipeline; LiteVLA-H: **19.74 Hz** outer-loop action emission with **6.08–6.67 Hz** semantic perception on a single **AGX Orin** — the best-reported *edge* dual-rate result (primary, arXiv 2511.05642 / 2603.03380 / 2605.00884).
 - **Beware GPU-class Hz.** Parallel/async decoding (PD-VLA) cuts VLA latency **~2.5×** (2.52× action-frequency speedup) and pushes toward **100–200 Hz** — but on **desktop-class GPUs**, not edge modules (primary, arXiv 2503.02310; surveyed in 2505.04769). This is why the scorecard rule is *demand the SKU*.
 
-See [E — the real-time control split](E-realtime-split.md) for where these cuts land in silicon, and [I — edge-native models](I-edge-models.md) for the model-shrinking that makes 200 Hz S1 possible.
+See §E (the real-time control split) for where these cuts land in silicon, and §I (edge-native models) for the model-shrinking that makes 200 Hz S1 possible.
 
 ### Anchor 2 — the generalization scorecard (泛化崩塌)
 
@@ -955,14 +955,14 @@ Because self-reported numbers aren't comparable, the methodology itself is a cri
 - **The reproducibility problem is structural.** Most VLA/policy results use lab-specific hardware, task defs, and success metrics; even shared object sets suffer camera/lighting/hardware variance — published rates are **not apples-to-apples** (secondary, arXiv 2510.04354 / 2508.11117).
 - **The leading proposed fix: RoboArena.** Decentralized, **double-blind pairwise** real-robot evaluation across **7 institutions** on a shared **DROID** platform, aggregating **600+ pairwise episodes** over 7 generalist policies (**4,284** total eval episodes in the broader dataset) into an ELO-like ranking — the direct answer to "how do you benchmark generalist policies you can't fix a task list for" (primary, arXiv 2506.18123). A buyer should prefer vendors whose numbers come from **third-party pairwise** evaluation over self-run fixed-task demos.
 
-See [evaluation](../wiki/evaluation.md) and [open-problems](../wiki/open-problems.md) for the field-wide benchmark discussion.
+See [evaluation](evaluation.md) and [open-problems](open-problems.md) for the field-wide benchmark discussion.
 
 ### Anchor 5 — cost, power, updatability & safety (成本 / 功耗 / 更新 / 安全)
 
 - **The brain is not the cost lever.** Compute is **~8% of humanoid BOM (2025) → ~5% by 2035**; ~**$1,400** semi BOM/unit rising to ~$2,000 by 2050 (UBS); total BOM ~**$35k**, **actuators >30%** (>50% in simple configs) (secondary, UBS / BofA Apr 2025). Optimizing $/TOPS matters far less than actuation/mechanics — but power/thermal still gates duty cycle.
-- **Power/thermal: demand sustained, not burst.** Jetson AGX Thor spans **40–130 W** for ≤**2,070 FP4 TFLOPS** / 128 GB, ~**3.5× perf/W** vs Orin — ask *where in that band* the workload sits under **continuous** load (primary, nvidia.com). Contrast Hailo-8 at ~**26 TOPS @2.5–3 W (~10 TOPS/W)** — dedicated ASICs win TOPS/W but can't host large VLA/VLM (secondary, hailo.ai). See [G — power & thermal](G-power-thermal.md).
-- **Updatability = a fleet-learning loop, with a risk flag.** Tesla Optimus is described as pushing "validated model weight updates… to all Optimus units overnight" (Cortex 67k+ H100-equiv, 70k GPU-h/cycle, 10k+ synthetic variations/task) — but sourcing is a **fan/analyst blog**, so treat figures as **vendor-claimed (unverified)**. Demandable: OTA *cadence*, **canary/staged vs fleet-wide-simultaneous** (simultaneous rollout is riskier on regression), and whether any adaptation is on-device vs cloud-trained-then-pushed. See [J — edge learning](J-edge-learning.md).
-- **Safety must be control-capable and latency-aware.** The formal anchor is a **Safe-Stoppable Envelope (SSE)**: a state-set from which a certified fallback controller reaches a dynamically-stable **Minimum Risk Condition (MRC)**, with monitors detecting envelope departure (primary, arXiv 2603.22703). **ISO 10218:2025** now makes functional-safety explicit and requires protective-separation-distance math to include **system latency and control-loop frequency** — directly tying the latency axis to certified safety, so a slow brain is *literally* a less-safe brain (primary/standard). See [safety-regulation](../wiki/safety-regulation.md).
+- **Power/thermal: demand sustained, not burst.** Jetson AGX Thor spans **40–130 W** for ≤**2,070 FP4 TFLOPS** / 128 GB, ~**3.5× perf/W** vs Orin — ask *where in that band* the workload sits under **continuous** load (primary, nvidia.com). Contrast Hailo-8 at ~**26 TOPS @2.5–3 W (~10 TOPS/W)** — dedicated ASICs win TOPS/W but can't host large VLA/VLM (secondary, hailo.ai). See §G (power & thermal).
+- **Updatability = a fleet-learning loop, with a risk flag.** Tesla Optimus is described as pushing "validated model weight updates… to all Optimus units overnight" (Cortex 67k+ H100-equiv, 70k GPU-h/cycle, 10k+ synthetic variations/task) — but sourcing is a **fan/analyst blog**, so treat figures as **vendor-claimed (unverified)**. Demandable: OTA *cadence*, **canary/staged vs fleet-wide-simultaneous** (simultaneous rollout is riskier on regression), and whether any adaptation is on-device vs cloud-trained-then-pushed. See §J (edge learning).
+- **Safety must be control-capable and latency-aware.** The formal anchor is a **Safe-Stoppable Envelope (SSE)**: a state-set from which a certified fallback controller reaches a dynamically-stable **Minimum Risk Condition (MRC)**, with monitors detecting envelope departure (primary, arXiv 2603.22703). **ISO 10218:2025** now makes functional-safety explicit and requires protective-separation-distance math to include **system latency and control-loop frequency** — directly tying the latency axis to certified safety, so a slow brain is *literally* a less-safe brain (primary/standard). See [safety-regulation](safety-regulation.md).
 
 ### Takeaway
 
@@ -992,7 +992,7 @@ A "good" on-device brain is **not** the one with the biggest headline TOPS or Hz
 
 ## 参考架构 & 模组厂视角 (Reference Architecture & the Module-Maker Read)
 
-> Stepping back from the dual-system model (see [Architecture](#)) and the SoC menu (see [SoC landscape](#)), the field has converged on a **3-tier control hierarchy** that any on-device brain must physically instantiate: an **S2 deliberative VLM** (7–10 Hz), an **S1 reactive visuomotor policy** (100–200 Hz), and an **S0 hard-real-time motor/reflex loop** (500 Hz–1 kHz). S2/S1 live on the AI SoC; S0 lives on a deterministic MCU / co-processor / Safety Island, decoupled from the Linux clock domain. For a module-maker (模组厂) the load-bearing insight is that the **hard part is not the TOPS number** — it is stitching this heterogeneous, jitter-partitioned, non-portable stack into one shippable module with connectivity and functional safety built in.
+> Stepping back from the dual-system model (see §A, Architecture) and the SoC menu (see §F, SoC landscape), the field has converged on a **3-tier control hierarchy** that any on-device brain must physically instantiate: an **S2 deliberative VLM** (7–10 Hz), an **S1 reactive visuomotor policy** (100–200 Hz), and an **S0 hard-real-time motor/reflex loop** (500 Hz–1 kHz). S2/S1 live on the AI SoC; S0 lives on a deterministic MCU / co-processor / Safety Island, decoupled from the Linux clock domain. For a module-maker (模组厂) the load-bearing insight is that the **hard part is not the TOPS number** — it is stitching this heterogeneous, jitter-partitioned, non-portable stack into one shippable module with connectivity and functional safety built in.
 
 ### The converged 3-tier reference stack
 
@@ -1004,7 +1004,7 @@ A "good" on-device brain is **not** the one with the biggest headline TOPS or Hz
 
 - **Figure Helix (primary)**: S2 = 7B internet-pretrained VLM @ 7–9 Hz; S1 = 80M cross-attn enc-dec transformer @ 200 Hz; S2 emits a **single continuous latent vector** into S1's token space; both run **entirely onboard on dual low-power embedded GPUs**. [figure.ai/news/helix]
 - **NVIDIA GR00T N1 (primary)**: S2 (Eagle-2 VLM) @ **10 Hz** (paper benchmarks this on an NVIDIA L40); S1 (diffusion-transformer, flow-matching action head) @ **120 Hz**; the two modules are **jointly trained end-to-end**. Public GR00T-N1-2B = 2.2B params total (1.34B in the VLM). Below both sits a whole-body torque loop ~1000 Hz (GR1-class) offloaded to MCU/RTOS. [arXiv 2503.14734]
-- The S0 tier is exactly the layer that **cannot tolerate software/OS jitter** — hence its physical exile to a separate deterministic co-processor. This is the same "split-brain" boundary the China single-die SoCs (D-Robotics RDK S100: 6× A78AE + BPU + **4× Cortex-R52+ lockstep**) try to collapse onto one package while keeping the R52 cores in a **separate hard-RT island** on-die (secondary). [F-soc-landscape.md]
+- The S0 tier is exactly the layer that **cannot tolerate software/OS jitter** — hence its physical exile to a separate deterministic co-processor. This is the same "split-brain" boundary the China single-die SoCs (D-Robotics RDK S100: 6× A78AE + BPU + **4× Cortex-R52+ lockstep**) try to collapse onto one package while keeping the R52 cores in a **separate hard-RT island** on-die (secondary). (see §F, SoC landscape)
 
 ### S0 fieldbus: how the reflex tier talks to actuators
 
@@ -1067,7 +1067,7 @@ A "good" on-device brain is **not** the one with the biggest headline TOPS or Hz
 
 - **The wedge is integration, not compute.** The reference stack is a heterogeneous, jitter-partitioned mess — big-SoC (S2/S1) + deterministic MCU/island (S0) + fieldbus (EtherCAT/CAN-FD) + connectivity (5G/Wi-Fi for the S2 cloud-assist tier) + a non-portable per-vendor runtime + a FuSa watchdog. A module-maker that ships this **pre-integrated, with the porting layer and cellular stack done**, sells the scarce thing.
 - **Connectivity is load-bearing, not peripheral** — because MEC/5G is the enabling substrate for the only cloud-offloadable tier (S2). This is precisely where a cellular-module vendor's core competency slots in.
-- **Concrete shipping instance — Quectel SH602HA-AP (partial; single-source on module SKU details):** a module-maker's on-device-brain module built on **D-Robotics Sunrise5 (X5M)** (up to **10 TOPS BPU**), Ubuntu OS, **4 GB LP4/LP4x RAM + 64 GB storage** default (40.5×40.5×2.9 mm; launched CES 2026), pairs with Quectel's own **LTE Cat1/Cat4/5G/Wi-Fi6/GNSS** modules for connectivity, and supports VSLAM / binocular depth / 3D point cloud / Transformer-BEV-Occupancy models + LiDAR. It sits at the **low end (10 TOPS, S1-lite/perception tier)**, not the Thor/IQ10 flagship — but it is a real, shipping proof that the "arms-dealer" module play (compute die + connectivity + OS pre-integrated) exists today. [F-soc-landscape.md, Quectel product page]
+- **Concrete shipping instance — Quectel SH602HA-AP (partial; single-source on module SKU details):** a module-maker's on-device-brain module built on **D-Robotics Sunrise5 (X5M)** (up to **10 TOPS BPU**), Ubuntu OS, **4 GB LP4/LP4x RAM + 64 GB storage** default (40.5×40.5×2.9 mm; launched CES 2026), pairs with Quectel's own **LTE Cat1/Cat4/5G/Wi-Fi6/GNSS** modules for connectivity, and supports VSLAM / binocular depth / 3D point cloud / Transformer-BEV-Occupancy models + LiDAR. It sits at the **low end (10 TOPS, S1-lite/perception tier)**, not the Thor/IQ10 flagship — but it is a real, shipping proof that the "arms-dealer" module play (compute die + connectivity + OS pre-integrated) exists today. (see §F, SoC landscape; Quectel product page)
 
 来源:
 - https://www.figure.ai/news/helix
