@@ -18,8 +18,8 @@ Audience: technical + strategic (Quectel-style on-device compute-module maker).
 - [x] **F. SoC / 硬件版图** — Jetson Thor (2,070 TFLOPS) vs Qualcomm QCS8550/Snapdragon vs Horizon/D-Robotics vs others; big-brain vs small-brain tiers; NPU/GPU; memory.
 - [x] **G. 功耗 / 散热 / 成本工程** — battery budget, edge-chip power draw (the ~60% claim), thermal on a moving robot, cost-of-compute; the mobile-power constraint.
 - [x] **H. 软件栈 & 运行时** — ROS2, on-device inference engines (TensorRT / Qualcomm AI stack / llama.cpp-class), OS (Ubuntu on edge modules), the VLA runtime & middleware.
-- [ ] **I. 为端侧而生的模型** — Gemini Robotics On-Device, NVIDIA GR00T N1 (Jetson-native), Figure Helix S1/S2, π0/π0.5 on-device, small open VLAs; who ships an edge brain.
-- [ ] **J. 端侧学习/自适应 & 数据飞轮** — on-device adaptation vs cloud training; the deployed-robot data flywheel; test-time compute.
+- [x] **I. 为端侧而生的模型** — Gemini Robotics On-Device, NVIDIA GR00T N1 (Jetson-native), Figure Helix S1/S2, π0/π0.5 on-device, small open VLAs; who ships an edge brain.
+- [x] **J. 端侧学习/自适应 & 数据飞轮** — on-device adaptation vs cloud training; the deployed-robot data flywheel; test-time compute.
 - [ ] **K. "做好"的判据 & 评价** — latency / generalization / reliability (9s) / power / cost / updatability; how to benchmark an on-device brain.
 - [ ] **L. 参考架构 & 模组厂视角** — the emerging best-practice on-device-brain architecture (recipe); what an on-device-brain MODULE should look like (Quectel Robrain-class); strategic read for a module maker.
 
