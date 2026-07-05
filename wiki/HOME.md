@@ -42,6 +42,7 @@ disputes are catalogued in [Open problems](open-problems.md).
 | [Hardware Substrate](hardware.md) | Actuators, dexterous hands, tactile/force sensing, onboard compute, batteries, BOM cost curves, China-dominated supply chain |
 | [The Robot Data Problem](data.md) | Teleop, egocentric human video, sim data, open datasets, commercial data factories, first scaling-law evidence |
 | [Tactile Sensing & Dexterous Hands](tactile-hands.md) | Hand landscape with prices, GelSight-lineage vs taxel arrays, tactile datasets/models, China's hand mass-production economics, why dexterity hardware remains the gap |
+| [Humanoid Component Supply Chain](component-supply-chain.md) | BOM-money-and-chokepoint map + per-sub-chain supplier scoreboards (谐波/RV减速器, 行星滚柱丝杠, 无框电机, 灵巧手, 六维力/触觉传感器); China localization vs imports; roller-screw chokepoint; module-maker (Quectel) read |
 | [Data Foundry Economics](data-foundry.md) | The business of manufacturing robot data: Scale post-Meta, Generalist's wearables foundry, China's state-subsidized data factories, teleop $/hour economics, marketplaces |
 | [Evaluation & Benchmarks](evaluation.md) | Saturated sim suites vs real-robot arenas (RoboArena, RoboChallenge, GM-100), embodied-reasoning exams, industry throughput metrics, the self-reported-benchmark credibility problem |
 

@@ -1,6 +1,6 @@
 # physicalAI wiki
 
-> Git-versioned, LLM-maintained knowledge base on Physical AI worldwide: history, SOTA, tech tree, key people/orgs, regional landscapes, company deep dives, hardware, data, investment, open problems, safety/regulation, evaluation, ODM opportunity + competitor landscape. 38 topic pages, each adversarially fact-checked (`confidence: verified`), last updated 2026-07-05. Maintained by an autonomous research loop (LOOP.md); every change is a git commit.
+> Git-versioned, LLM-maintained knowledge base on Physical AI worldwide: history, SOTA, tech tree, key people/orgs, regional landscapes, company deep dives, hardware, data, investment, open problems, safety/regulation, evaluation, ODM opportunity + competitor landscape. 39 topic pages, adversarially fact-checked (most `confidence: verified`; newest pages may be `draft`), last updated 2026-07-05. Maintained by an autonomous research loop (LOOP.md); every change is a git commit.
 
 ## Start here
 - [HOME](wiki/HOME.md): annotated index, field overview, reading order
@@ -20,6 +20,7 @@
 - [Hardware Substrate](wiki/hardware.md): actuators, hands, sensing, compute, batteries, BOM curves, supply chain
 - [The Robot Data Problem](wiki/data.md): teleop, human video, sim data, open datasets, data factories, scaling-law evidence
 - [Tactile Sensing & Dexterous Hands](wiki/tactile-hands.md): hand landscape with prices, tactile sensing tech, datasets, China hand economics, the dexterity gap
+- [Humanoid Component Supply Chain](wiki/component-supply-chain.md): BOM value-chain map + per-sub-chain supplier scoreboards (harmonic/RV reducers, planetary roller screws, frameless motors, dexterous hands, force/tactile sensors); China localization vs imports; roller-screw chokepoint; module-maker read
 - [Data Foundry Economics](wiki/data-foundry.md): Scale post-Meta, Generalist wearables foundry, China state-subsidized data factories, teleop $/hour economics
 - [Evaluation & Benchmarks](wiki/evaluation.md): sim-suite saturation, real-robot arenas, embodied-reasoning exams, industry metrics, benchmark credibility
 
