@@ -48,6 +48,16 @@ Each iteration is one pass of:
 - If two consecutive iterations produce no meaningful change, lengthen the
   interval; shorten it again when a sweep finds real news.
 
+## Model tiering (user directive, 2026-07-04/05)
+
+Workflow agents run on tiered models to control cost:
+- **Sonnet** (`model: 'sonnet'`, usually `effort: 'low'`): translation + zh QC,
+  routine research (news sweeps, feed scans, IPO/API probes, fact-gathering on
+  well-documented topics), propagation/index maintenance.
+- **Fable** (session default): adversarial verification, precise-quote research
+  (executive statements for the pitch), synthesis/SWOT/judgment pages,
+  orchestration.
+
 ## Unknowns discipline (added 2026-07-04 after a self-review)
 
 Lessons from loops 0-12, framed per "map vs territory":
