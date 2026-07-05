@@ -242,3 +242,19 @@ Lens Tech × AgiBot assembly JV = first real humanoid-EMS test; Foxconn ×
 Agility PIPE + manufacturing. HOME/llms.txt at 36 pages, zh HOME synced.
 Queue: ODM-pitch track added (odm-opportunity page next, then Chinese-first
 boss deck). GitHub push still blocked on deploy key.
+
+## odm-opportunity — 2026-07-05 (directed build; main model now Opus 4.8)
+Built the ODM opportunity map (5 agents: Sonnet fact-gathered 15 ODM/EMS
+moves, high-tier synthesized + verified, Sonnet translated + QC'd). Verify
+caught the key aggregator-pollution items for the pitch: the circulated
+"Luxshare won China Mobile ¥124M humanoid order" is FALSE (won by AgiBot
+¥78M + Unitree ¥46M per guancha primary; only leaderobot syndicated the
+Luxshare version); Wistron ≠ 上纬/Shangwei (AgiBot's STAR vehicle launching
+Qiyuan Q1). 14 corrections total incl. date fixes and the Figure-BMW
+skeptic bullet corrected to match company-figure. Honest core: 2026 global
+humanoid hardware pool ~$2B (Morgan Stanley China ~$2B, IDC 2025 ~$440M) —
+tiny vs Goldman $38B/2035 and Huang's $40-50T wage rhetoric — but 2026-27
+is the design-win window (Jabil-Apptronik, Lens-AgiBot JV, Foxconn-Agility
+PIPE). HOME/llms.txt at 37 pages, zh synced, both readers rebuilt (39 EN /
+38 zh incl. meta). Next: Chinese-first boss pitch deck (needs user's ODM
+profile answers). Loop paused; GitHub push still awaiting deploy key.

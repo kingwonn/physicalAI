@@ -68,3 +68,8 @@ confirmed, CoT numbers added to locomotion. Remaining:
 - [ ] AgiBot data-ops subsidiary 觅蜂 (10M-hours-by-end-2026 target, exec claim) — barely documented in English; Chinese-language sweep.
 - [ ] Visions-page leads: Wang Xingxing's VLA-as-"simpleton-architecture" critique → vla-models/world-models named-dissent; Hassabis 18-month clock (expires ~2027-08) → open-problems timeline table; SoftBank "Roze" US robotics vehicle (~$100B IPO target, aggregator-only) — watch filings.
 - [ ] Company-page watches: BD permanent CEO / 30K-yr factory site / NASDAQ IPO float (single-source); Agility S-4 (H2 2026, real revenue disclosure); 1X end-2026 first verified home delivery; Skild post-Fetch revenue mix; UBTech H1 2026 interims (~2026-08/09) + Walker S3 unveil + Fenglong tender completion.
+
+## ODM opportunity — leads (2026-07-05)
+- [x] ~~ODM opportunity page~~ — done: [odm-opportunity.md](../odm-opportunity.md), verified (14 corrections; killed the circulated "Luxshare won China Mobile ¥124M order" claim — actually AgiBot ¥78M + Unitree ¥46M; fixed Wistron/Shangwei 上纬 conflation).
+- [ ] 友商 ledger churns fast — dated freshness passes: Agility SPAC close (Foxconn PIPE → manufacturing role?); Foxconn Houston GB300 line actual humanoid count once Q1-2026 results reported; Luxshare "Manufacturing 2.0" + mid-2026 robot prototype + who got its 3,000 units; State Grid Q3 2026 procurement winners (best datapoint on CM demand conversion); Techman/Quanta TM Xplore I production start.
+- [ ] Consider a dedicated supply-chain / EMS-tracking page if the 友商 ledger keeps growing.

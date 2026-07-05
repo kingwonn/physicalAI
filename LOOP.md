@@ -54,9 +54,9 @@ Workflow agents run on tiered models to control cost:
 - **Sonnet** (`model: 'sonnet'`, usually `effort: 'low'`): translation + zh QC,
   routine research (news sweeps, feed scans, IPO/API probes, fact-gathering on
   well-documented topics), propagation/index maintenance.
-- **Fable** (session default): adversarial verification, precise-quote research
-  (executive statements for the pitch), synthesis/SWOT/judgment pages,
-  orchestration.
+- **High-tier** (session default — Opus 4.8 as of 2026-07-05): adversarial
+  verification, precise-quote research (executive statements for the pitch),
+  synthesis/SWOT/judgment pages, orchestration. Omit `model` to inherit it.
 
 ## Unknowns discipline (added 2026-07-04 after a self-review)
 

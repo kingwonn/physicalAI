@@ -1,6 +1,6 @@
 # physicalAI wiki
 
-> Git-versioned, LLM-maintained knowledge base on Physical AI worldwide: history, SOTA, tech tree, key people/orgs, regional landscapes, company deep dives, hardware, data, investment, open problems, safety/regulation, evaluation. 36 topic pages, each adversarially fact-checked (`confidence: verified`), last updated 2026-07-05. Maintained by an autonomous research loop (LOOP.md); every change is a git commit.
+> Git-versioned, LLM-maintained knowledge base on Physical AI worldwide: history, SOTA, tech tree, key people/orgs, regional landscapes, company deep dives, hardware, data, investment, open problems, safety/regulation, evaluation, ODM opportunity. 37 topic pages, each adversarially fact-checked (`confidence: verified`), last updated 2026-07-05. Maintained by an autonomous research loop (LOOP.md); every change is a git commit.
 
 ## Start here
 - [HOME](wiki/HOME.md): annotated index, field overview, reading order
@@ -35,6 +35,7 @@
 
 ## Capital & frontier
 - [Investment & Market](wiki/investment.md): as-of-dated mega-round/valuation/IPO ledger with bubble-watch skepticism
+- [ODM Opportunity Map](wiki/odm-opportunity.md): where contract manufacturers fit — market bound, value-chain entry, ODM/EMS competitor scoreboard, strategic options
 - [Open Problems & Debates](wiki/open-problems.md): data scarcity, sim2real, dexterity gap, reliability, safety certification, evaluation crisis, form-factor and timeline debates
 - [Safety & Regulation](wiki/safety-regulation.md): ISO 25785-1 / 10218:2025 / UL 3300, EU Machinery Regulation + AI Act, China HEIS, certification gates, incidents, liability
 
