@@ -353,3 +353,16 @@ maker the on-device brain is the defensible arms-dealer lane. Notable finds:
 Jetson Thor has NO confidential-compute/TDISP (dGPU-only); RoboPAIR 100%
 robot-jailbreak; MPS has no priority preemption. HOME/llms/readers at 42 EN /
 41 zh; portal 专题深度报告 section. Loop paused (news-freshness loop still off).
+
+## on-device-brain §O players critical eval — 2026-07-06
+Added Section O (主要玩家方案与批判性评价): 12 players across 3 camps
+(Western frontier / Chinese humanoid / module-chip suppliers), each graded
+against the §K rubric + §L reference stack. Verdict verified. Key findings:
+inference-local is genuinely shipped by Figure/UBTech Walker S2(i7+Orin)/
+Unitree UnifoLM-VLA-0/Gemini-On-Device/GR00T·pi0-on-Thor; NOT on-device by
+default (self-documented) = PI openpi (policy server over websocket) + Skild
+(cloud SaaS); Tesla Optimus = strongest teleop/vaporware evidence (We-Robot
++ Diner remote-op, Musk "for learning", AI5 volume mid-2027). Open players
+most trustworthy (reproducible). Verify caught the AgiBot GO-1/G2 conflation
+(factory livestream was G2 not GO-1) + Quectel SH602 memory unverified. Page
+now 15 sections A-O bilingual; HTML v3 adds a players-critical table.

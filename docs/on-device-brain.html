@@ -130,8 +130,28 @@ footer .m{font-family:var(--mono);font-size:11px;color:var(--mute);margin-top:8p
     <div class="axis partial"><span class="st-lab">◐ 工程门槛</span><p class="a">内存/并发/标定</p><p>S2(pi0 ~14GB)+S1+感知+VSLAM+安全监视共驻单 SoC(128GB Thor);单 GPU 分时(MPS 无优先级抢占 → 快环可能被慢 VLM 饿死;需 MIG/优先级)。逐台标定 + bring-up 是 OEM 的真痛点 → <b>模组厂"预集成大脑"的价值所在</b>。</p></div>
   </div>
 
+  <h2>⑤ 主要玩家:谁真在端侧(批判读数)</h2>
+  <p class="sub">对市面 12 家玩家的端侧大脑方案做诚实评级。绿=真端侧推理(可验证)/ 灰=平台或感知档 / 黄=默认云依赖 / 红=遥操作或画饼。</p>
+  <div class="tw" style="border:1px solid var(--line);border-radius:8px;overflow-x:auto"><table style="min-width:640px">
+    <thead><tr><th>玩家</th><th>阵营</th><th>真端侧?</th><th>一句话批判</th></tr></thead>
+    <tbody style="font-size:13px">
+    <tr><td class="co">Figure</td><td class="reg">西方前沿</td><td><span class="chip" style="background:#2E8B57;color:#fff">真端侧</span></td><td style="color:var(--steel)">真机身推理(~60W 双 GPU),但 100% 遥操作训练,24/7 自主全是自家直播、未经审计</td></tr>
+    <tr><td class="co">NVIDIA</td><td class="reg">西方前沿</td><td><span class="chip" style="background:#83979B;color:#fff">平台/使能</span></td><td style="color:var(--steel)">GR00T 开源 + Isaac 全栈,但卖铲子——无端到端自主声明可追责("机器人安卓")</td></tr>
+    <tr><td class="co">Physical Intelligence</td><td class="reg">西方前沿</td><td><span class="chip" style="background:#C9A24A;color:#fff">默认云依赖</span></td><td style="color:var(--steel)">openpi 全开最透明,但自家 README 默认起策略服务器走 websocket——"端侧 π0"非默认</td></tr>
+    <tr><td class="co">Google Gemini On-Device</td><td class="reg">西方前沿</td><td><span class="chip" style="background:#0C8C88;color:#fff">设计端侧</span></td><td style="color:var(--steel)">最贴合"小型本地模型"初衷,但锁在预览、未指定芯片、无对自家云档的基准</td></tr>
+    <tr><td class="co">Tesla Optimus</td><td class="reg">西方前沿</td><td><span class="chip" style="background:#E4592A;color:#fff">遥操作/画饼</span></td><td style="color:var(--steel)">本组证据最强:We-Robot & 餐厅演示确认遥控;Musk 称"用于学习非生产";AI5 要 2027 中量产</td></tr>
+    <tr><td class="co">Skild AI</td><td class="reg">西方前沿</td><td><span class="chip" style="background:#C9A24A;color:#fff">默认云依赖</span></td><td style="color:var(--steel)">"全形态大脑"是云推理 SaaS(Skild Cloud),端侧的反面;规模/可靠性是部署前叙事</td></tr>
+    <tr><td class="co">智元 AgiBot</td><td class="reg">中国人形</td><td><span class="chip" style="background:#C9A24A;color:#fff">存疑</span></td><td style="color:var(--steel)">中国最强开源数据+模型,但"30Hz"是采集率非板载性能;工厂 99.99% 直播跑的是 G2 硬件非 GO-1</td></tr>
+    <tr><td class="co">优必选 UBTech</td><td class="reg">中国人形</td><td><span class="chip" style="background:#2E8B57;color:#fff">真端侧</span></td><td style="color:var(--steel)">最落地的双脑(i7 运动 + Jetson Orin 视觉),Co-Agent 本地跑 LLM 无云往返;但自主率/MTBF 未公开</td></tr>
+    <tr><td class="co">宇树 Unitree</td><td class="reg">中国人形</td><td><span class="chip" style="background:#2E8B57;color:#fff">真端侧</span></td><td style="color:var(--steel)">UnifoLM-VLA-0 开源 + 板载 Jetson Orin,真端侧路径;但宇树自称原装 G1 "不自主"做新任务</td></tr>
+    <tr><td class="co">Qualcomm</td><td class="reg">模组/芯片</td><td><span class="chip" style="background:#83979B;color:#fff">平台/使能</span></td><td style="color:var(--steel)">片上安全岛(SAIL)+ 现场总线整合最佳,但 2026-09 才 GA——作为机器人大脑现场未验证</td></tr>
+    <tr><td class="co">移远 Quectel</td><td class="reg">模组/芯片</td><td><span class="chip" style="background:#83979B;color:#fff">感知档模组</span></td><td style="color:var(--steel)">真"军火商"模组(算力+连接+OS 预集成),但 10 TOPS ≠ Thor/IQ10 旗舰——是低端感知楔子非全 VLA 脑</td></tr>
+    </tbody>
+  </table></div>
+  <p class="sub" style="margin-top:10px"><strong style="color:var(--ink)">读数:</strong>真端侧推理已是若干玩家的<strong>真实能力</strong>(Figure/优必选/宇树/GR00T·π0-on-Thor);但真正的<strong>自主</strong>普遍是遥操作训练且未经审计——最会营销的(Tesla、Figure)独立证据最弱,最开源的(NVIDIA、PI、宇树、智元)因可复现最可信。默认<strong>云依赖</strong>的(PI 服务器、Skild SaaS)是端侧的反面。</p>
+
   <div class="readbox">
-    <p class="h">⑤ 对模组厂(移远式)的战略读数</p>
+    <p class="h">⑥ 对模组厂(移远式)的战略读数</p>
     <p><b>端侧大脑(算力 + 连接 + 定位模组)是可防御的军火商赛道。</b>不赌哪家整机赢,卖每台机器人都要的三层大脑硬件。</p>
     <p>两侧夹击要认清:一边是<b>机电 BOM</b>(减速器/丝杠/电机,占整机 ~50-57%)—— 十年精密加工护城河,模组厂进不去(见零部件供应链);另一边是<b>芯片原厂(高通/NVIDIA)越过模组商直供整机</b> —— 这才是真威胁,不是富士康的 PIPE。</p>
     <p style="margin-top:10px"><strong style="color:var(--ink)">一个"端侧大脑模组"应该暴露什么(规格清单):</strong></p>
