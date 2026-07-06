@@ -383,3 +383,26 @@ pretraining scale, teleop wins the last mile; field converged on
 pretrain-cheap+fine-tune-clean hybrids; the rig-hardware business is a
 low-margin volume niche, not a moat. Interactive comparison HTML +
 portal. HOME/llms/readers at 43 EN / 42 zh.
+
+## data-collection-devices +system-designs +china-ecosystem — 2026-07-06 (loop; 2 parallel workflows, 12 agents ~0.8M tokens)
+Two parallel Workflow runs deepened data-collection-devices.md (both verified,
+bilingual). (1) Detailed SYSTEM DESIGNS: a new "系统方案设计详解" section — a
+shared 3-block architecture (sensing rig -> pose/action-recovery -> data format)
++ a design-pattern comparison table + 10 per-system engineering breakdowns
+(UMI/FastUMI/DexUMI/Dobb·E/DexCap/ALOHA 2/GELLO/DROID/Open-TeleVision-VR/
+Aria-egocentric), each with composition/sensors/mechanical/pipeline/software/
+BOM/design-read. Verify fixed UMI tracking label (6.1mm/3.5° per-gripper ATE
+vs 10.1mm/0.8° inter-gripper RPE — NOT inter-frame), AgileX Tracer spelling,
++ (unverified) on the DexUMI Alps encoder part#. (2) CHINA ECOSYSTEM: a new
+"中国数据采集生态" section — a 16-player scoreboard (星海图 Galaxea / 智元 /
+银河通用 / 千寻 / 自变量 / 逐际 / 穹彻 / ByteDance Seed / 松灵 Cobot Magic /
+帕西尼 PaXini / GenRobot / 它石 Morphic / 光轮 LightWheel / 张江+亦庄 训练场 /
+京东 Suqian) + genrobot RESOLVED (= GenRobot 简智新创 Beijing, NOT AgiBot's
+Genie Studio). Verify: PiPER reach 626mm (not 610), removed unverified
+Zhangjiang welding/3C scenario triad, JD gig wage $3/h confirmed but "$5-20/h"
+marked unverified, Galaxea "400k downloads" flagged (HF shows ~13k/mo), PaXini
+DexH13 sourced to mall.paxini.com. Read: China's edge is cost-structure +
+state coordination + buyable hardware (vertically-integrated stack), NOT data
+quality/verifiability. HTML deliverable gains ④ 系统方案设计详解 (10 design
+cards) + ⑤ 中国数据采集生态 (16-player table w/ type badges + genrobot callout
++ China verdict box). Readers rebuilt 43 EN / 42 zh; portal card + counts updated.
