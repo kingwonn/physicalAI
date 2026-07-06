@@ -20,6 +20,7 @@
 - [Simulation & Sim2Real](wiki/simulation.md): GPU-parallel sims, domain randomization, synthetic-data pipelines
 - [Hardware Substrate](wiki/hardware.md): actuators, hands, sensing, compute, batteries, BOM curves, supply chain
 - [The Robot Data Problem](wiki/data.md): teleop, human video, sim data, open datasets, data factories, scaling-law evidence
+- [Data-Collection Devices & Rigs](wiki/data-collection-devices.md): the hardware of data — 60 devices across embodiment-free (UMI/DexUMI/Dobb·E/gloves/egocentric) vs teleop (ALOHA 2/VR/mocap/exo) vs on-robot; 3-family tradeoff matrix with critical verdicts + per-player designs
 - [Tactile Sensing & Dexterous Hands](wiki/tactile-hands.md): hand landscape with prices, tactile sensing tech, datasets, China hand economics, the dexterity gap
 - [Humanoid Component Supply Chain](wiki/component-supply-chain.md): BOM value-chain map + per-sub-chain supplier scoreboards (harmonic/RV reducers, planetary roller screws, frameless motors, dexterous hands, force/tactile sensors); China localization vs imports; roller-screw chokepoint; module-maker read
 - [Data Foundry Economics](wiki/data-foundry.md): Scale post-Meta, Generalist wearables foundry, China state-subsidized data factories, teleop $/hour economics

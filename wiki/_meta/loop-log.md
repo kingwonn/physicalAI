@@ -366,3 +366,20 @@ default (self-documented) = PI openpi (policy server over websocket) + Skild
 most trustworthy (reproducible). Verify caught the AgiBot GO-1/G2 conflation
 (factory livestream was G2 not GO-1) + Quectel SH602 memory unverified. Page
 now 15 sections A-O bilingual; HTML v3 adds a players-critical table.
+
+## data-collection-devices — 2026-07-06 (loop; 8 agents ~0.6M tokens)
+New page data-collection-devices.md (verified, bilingual): 60 data-collection
+devices/rigs across 3 families + a critical comparative evaluation. 5 Sonnet
+collectors (UMI-family / egocentric-video+gloves / teleop-leader-follower /
+teleop-VR-haptic-mocap / player-programs) -> Opus synthesis + verify ->
+Sonnet zh. Core: a 3-family tradeoff MATRIX (cost/throughput/embodiment-gap/
+action-fidelity/force/scalability) with per-axis verdicts — you can't have
+cheap-scalable AND clean-zero-gap from one device. Verify corrections: ALOHA
+2 cost fixed to ~$22k stationary (not $32k, which needs a mobile base),
+FastUMI tracking error -> range (10.5-24mm), AgiBot daily rate + Generalist
+corpus/rate marked unverified, iDP3 quote fixed, DROID 13-institution
+consistency, Dobb-E iPhone-odometry precision. Read: embodiment-free wins
+pretraining scale, teleop wins the last mile; field converged on
+pretrain-cheap+fine-tune-clean hybrids; the rig-hardware business is a
+low-margin volume niche, not a moat. Interactive comparison HTML +
+portal. HOME/llms/readers at 43 EN / 42 zh.
