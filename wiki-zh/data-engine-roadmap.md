@@ -6,7 +6,7 @@ confidence: verified
 lang: zh
 source: ../wiki/data-engine-roadmap.md
 ---
-> **本页是设计提案(design proposal),不是现有产品记录。** 它由本 wiki 已验证事实库(60 台采集设备、10 个系统设计、分层大脑架构)推导而出:三份竞争设计书(A-wearable 可穿戴保真度爬升 / B-convergence 采集即部署传感头 / C-fleet 三终端数据脊柱)经工程、数据科学、战略三镜头评委团评审后,由本页收束为唯一定案。**定案骨架 = C-fleet 的「一条数据脊柱 + W/L/R 三类终端 + 按代迁移的数据混合体」**(三镜头总分最高:C 140 / B 131 / A 125,且是唯一可转向不陪葬的架构),**嫁接 A 的误差预算工程学与原生力通道、B 的「采集=部署」同构传感头与无软件时间戳公理**。所有前瞻规格标注 (设计目标),不确定价格标注 (unverified)。相关事实库见 [数据采集设备](data-collection-devices.md)、[机上大脑](on-device-brain.md)、[数据工厂](data-foundry.md)。
+> **本页是设计提案(design proposal),不是现有产品记录。** 它由本 wiki 已验证事实库(60 台采集设备、10 个系统设计、分层大脑架构)推导而出:三份竞争设计书(A-wearable 可穿戴保真度爬升 / B-convergence 采集即部署传感头 / C-fleet 三终端数据脊柱)经工程、数据科学、战略三镜头评委团评审后,由本页收束为唯一定案。**定案骨架 = C-fleet 的「一条数据脊柱 + W/L/R 三类终端 + 按代迁移的数据混合体」**(三镜头总分最高:C 140 / B 131 / A 125,且是唯一可转向不陪葬的架构),**嫁接 A 的误差预算工程学与原生力通道、B 的「采集=部署」同构传感头与无软件时间戳公理**。所有前瞻规格标注 (设计目标),不确定价格标注 (unverified)。相关事实库见 [数据采集设备](data-collection-devices.md)、[机上大脑](on-device-brain.md)、[数据工厂](data-foundry.md)。**修订 2026-07-07:** 经 LeCun ETH Zürich 世界模型演讲(2026-05-29)对撞检验,骨架成立、权重有修订——被动第一视角视频升格为共同主力产品线、新增 pretrain-vs-label 门禁消融、力数据买家扩至三类;完整再思考见 [LeCun 世界模型论纲 vs 数据引擎方案](lecun-worldmodels-rethink.md)。
 
 ## 1. 各家方案对比 → 设计启示 (survey → design principles)
 

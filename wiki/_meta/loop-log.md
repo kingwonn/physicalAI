@@ -427,3 +427,30 @@ factual errors (Hero9 discontinued -> Hero13 2nd source, Q-8750 80 TOPS,
 ICM-42688 ODR, TAL220 swap, Landot attribution, Aria gaze spec, JD/Shandong
 labor case, teleop price timeline) -> confidence: verified. Readers 44 EN /
 43 zh. HTML deliverable pending (next iteration, post LeCun-rethink).
+
+## lecun-worldmodels-rethink — 2026-07-07 (research workflow; 6 agents ~0.47M tokens)
+NEW page lecun-worldmodels-rethink.md (verified, bilingual): LeCun's ETH
+Zurich 2026-05-29 talk "World Models: Enabling the next AI revolution"
+investigated (talk PRIMARY-confirmed via LeCun's own post + ETH EFCL event
+page + video; no verbatim transcript parsed — in-talk content rests on two
+independent secondaries with podcast quotes firewalled from ETH-stage
+attribution). Content: (1) faithful reconstruction of the argument chain
+(LLM critique / data-efficiency / latent JEPA + MPC / VLA "dead end" [podcast]
+/ AMI Labs $1.03B @ $3.5B pre context); (2) claim-by-claim collision with our
+verified scaling evidence (GEN-0 unsaturated, EgoScale, V-JEPA 2-AC itself
+needs 62h action data; honest "layered both-right" mapping to S2/S1/S0);
+(3) critique (steelman + dated track record + fundraising context + 3 blind
+spots: force-not-in-video, last-mile reliability, his own 62h close-out);
+(4) ROADMAP RETHINK: spine survives; passive ego-video upgraded from
+defensive SKU to co-primary product line (W-active/W-passive/L/R quaternary
+mix), new pretrain-vs-label gate ablation, force data gains 3rd buyer
+(world-model physics calibration), ego-pose ATE certificate = world-model
+action-conditioning fidelity certificate; 8 dated watch items. Verify fixed
+11 items (departure date, RoboChallenge variance, de-quoted paraphrases,
+removed fabricated slide filename, AMI investor roster, Schmidhuber quote
+downgrade). data-engine-roadmap.md got a revision pointer. NEW HTML
+deliverable data-engine-roadmap.html (roadmap 3-gen cards + requirements
+ladder + LeCun collision table + endgame panel + judges/risks). NOTE:
+scratchpad build scripts were wiped by tmp cleanup; recovered from transcript
+Write/Edit replay — consider committing build scripts to repo. Readers 45 EN
+/ 44 zh; portal card + counts updated.
