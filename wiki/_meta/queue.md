@@ -73,3 +73,6 @@ confirmed, CoT numbers added to locomotion. Remaining:
 - [x] ~~ODM opportunity page~~ — done: [odm-opportunity.md](../odm-opportunity.md), verified (14 corrections; killed the circulated "Luxshare won China Mobile ¥124M order" claim — actually AgiBot ¥78M + Unitree ¥46M; fixed Wistron/Shangwei 上纬 conflation).
 - [ ] 友商 ledger churns fast — dated freshness passes: Agility SPAC close (Foxconn PIPE → manufacturing role?); Foxconn Houston GB300 line actual humanoid count once Q1-2026 results reported; Luxshare "Manufacturing 2.0" + mid-2026 robot prototype + who got its 3,000 units; State Grid Q3 2026 procurement winners (best datapoint on CM demand conversion); Techman/Quanta TM Xplore I production start.
 - [ ] Consider a dedicated supply-chain / EMS-tracking page if the 友商 ledger keeps growing.
+
+- [ ] company-agibot.md: add spin-off structure note (觅蜂 Maniformer 75%, 智鼎/擎天租/临界点 AGILINK/智元酷拓 batch; IPO-driven incubation model) — from case-mifeng research 2026-07-07
+- [ ] Watch (case-mifeng): MEgo Gripper shutter type + 1mm claim teardown (2026-Q4); first collector/buyer community posts (2026-08+); 10M-hour delivery via marketplace dataset count (baseline 467 @2026-07-07, /api/data re-queryable)

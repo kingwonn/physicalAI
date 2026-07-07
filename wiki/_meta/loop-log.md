@@ -546,3 +546,38 @@ delta-table strawmen fixed, attribution arithmetic made to sum. Canonical
 adjudication per the delta table; roadmap page gained clean-room pointer.
 HTML gained ⑥.5 clean-room panel (Cicada/Mantis/Anvil cards + attribution
 readbox). Readers 48 EN / 47 zh; portal updated.
+
+## case-mifeng — 2026-07-07 (case-study workflow; 6 agents ~0.43M tokens)
+NEW page case-mifeng.md (verified, bilingual): reality-collision case study.
+IDENTITY RESOLVED: "觅蜂智能" = 上海觅蜂具身智能科技有限公司 (觅蜂科技,
+official English brand Maniformer, maniformer.ai) — AgiBot spin-out (75%
+equity, registered 2026-02-03, ¥5M capital), CEO 姚卯青 (Tsinghua BS + USC
+PhD, Waymo/Google/NIO, AgiBot data-factory head since 2023), Sequoia-led
+seed+angel "数亿元" announced 10 DAYS after founding, 国方创投 angel+ 2026-06.
+PRODUCTS: MEgo View (7-cam passive headset, sub-ms wireless sync claim) +
+MEgo Gripper (480g UMI-class, Day-1 tactile array, 1mm claim, isomorphic
+with 智元精灵 G2 Air) + MEgo Engine pipeline + 467-dataset marketplace
+(LIVE-VERIFIED via maniformer.ai/api/data query, 2026-07-07). Founder thesis
+verbatim-verified (100M-hour GPT-3.5 threshold, 8h->5h wearable vs 8h->2-3h
+real-robot yield, Meituan-rider labor model, closed-source-majority view).
+Zero customer/community evidence (5-month-old company); GitHub orgs
+NONEXISTENT (negative finding); "29k stars" marketing claim REFUTED (real
+AgiBot-World: 3,089 via API). AXIOM COLLISION: 5.5/12 converge (force Day-1,
+diversity-first, byproduct labor, yield numbers interlock with ours,
+isomorphism = textbook validation -> axiom 10 upgraded "market-validated");
+metrology band (axioms 4/9/11) wholesale violated/undisclosed — 1mm claim
+with zero error distribution, no certify-the-certifier, no SDK/format —
+CONFIRMING our metrology/certificate lane is the only vacant differentiation
+lane in the category. FIRST REAL PRICE ANCHOR: real-robot data ¥500-1,000/h
+(证券时报 + Yao verbatim, dual-source) ≈ 5-10x our Anvil cost — written into
+strategy pricing assumptions. 11 revision instructions written back: axiom-6
+threshold gets new G-M mass-matching ablation (their 480g vs our 700-900g),
+COTS discipline contextualized (spin-outs inherit amortized NRE), buyer-side
+fatal #3 partially resolved by anchor-buyer structure, supply-shock sentinel
+added (10M h/yr claim), multi-body replay scoring absorbed as cert-field
+candidate. Verify: identity chain independently re-verified, brand conflict
+resolved (Maniformer confirmed via site+registry match), quote misattribution
+fixed (rider quote is 36kr not 甲子光年), G2 Air attribution corrected.
+China-ecosystem table gained Maniformer row (EN+zh); first-principles page +
+strategy page gained collision notes; queue gained company-agibot spin-off
+item. Readers 49 EN / 48 zh; portal updated.
