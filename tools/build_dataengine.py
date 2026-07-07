@@ -78,8 +78,14 @@ ODM=[
  ["2. 认证采集器械 SKU","W 套件白标(含力通道)+ GELLO 计量仪 + QC 工具链,卖给训练场/foundry/实验室;中国政府是付费方(UBTech ¥566M 先例)","~$2–5M","首 1,000 套毛利为正 + 1 家国地中心/AgiBot 系锚定客户;器械生意不依赖任何 scaling 判断"],
  ["3. 语料层(期权,默认不花)","独立主体持语料与认证云,模组厂做独家 ODM;只做三个稀缺 SKU(力/被动长镜头/失败-修正)","Gen-2 级 ~$25M+","≥3 类买家付费 LOI + 两消融出数;不通过则永久停留步 1+2(依然正 EV)"],
 ]
+# 清洁室产品族: [名, 角色, 通道, 成本/交付$/h]
+CLEAN=[
+ ["蝉 Cicada(被动穿戴)","多样性/体量引擎;预训练+意图+结果","ego RGB + 同晶振 IMU + 头动意图 + 口述语言 + BLE 结果 clicker;无力觉,provenance 硬标「非标签」","套件 ≤$450(典型 ~$250,GoPro HERO 2024 $199/86g)· 交付 $2–4/h"],
+ ["螳 Mantis(手持夹爪)","全通道策略语料主力","AR0234 全局快门立体 + recovered 6-DoF(开源 SLAM+证书)+ 爪内基准板 measured-relative 近距 + AS5600 实测开度 + ≥1kHz 抓握力 + ≥6.4kHz 指部振动 + PTT 语言 + 结果/干预按钮,单晶振全域 ≤50µs","BOM $300–375 / 落地 ≤$500 · 交付 ~$9.5/h(地域带 $7–19)"],
+ ["砧 Anvil(内部计量仪)","certify-the-certifier + <2mm/1kHz 六维力尾部语料","12-bit 编码器 measured + 1kHz 六维 F/T + 跟随腕栓 Mantis 头(同场景 recovered-vs-measured 成对流)","$8–14k/站,个位数台 · $13–23/h(仪器属性)"],
+]
 import json
-D=json.dumps({"prin":PRIN,"req":REQ,"gens":GENS,"lecun":LECUN,"end":END,"rev":REVIEW,"panel":PANEL,"strat":STRAT,"odm":ODM},ensure_ascii=False)
+D=json.dumps({"prin":PRIN,"req":REQ,"gens":GENS,"lecun":LECUN,"end":END,"rev":REVIEW,"panel":PANEL,"strat":STRAT,"odm":ODM,"clean":CLEAN},ensure_ascii=False)
 HTML='''<title>SOTA 数据引擎 · 三代路线图</title>
 <style>
 :root{--paper:#F3F5F5;--panel:#FFF;--ink:#0F171C;--steel:#55666C;--mute:#83979B;--line:#DCE2E2;--line2:#E9EEEE;
@@ -254,6 +260,15 @@ footer .m{font-family:var(--mono);font-size:11px;color:var(--mute);margin-top:8p
     <p>步 1+2 合计 <span class="em">$5–13M</span>,是「无论 scaling 通道开不开都赚钱」的器械 + 模组生意,且买下了步 3 的期权;步 3(语料层,~$25M+)的执行前提(买家 LOI、消融出数、结构拆分)现在一项都不具备——<b>先卖秤,再决定要不要开粮仓。</b></p>
   </div>
 
+  <h2>⑥.5 清洁室对照实验 · 第一性原理重推导</h2>
+  <p class="sub">剥离全部厂商/商业约束(移远模组、SP895BD-AP、90 天出货、融资叙事代际),由 12 条公理 + 两份独立推导重走一遍(<a href="https://github.com/kingwonn/physicalAI/blob/main/wiki/data-engine-first-principles.md">data-engine-first-principles.md</a>,verified)。<strong>物理内核全部独立复现 = 稳健性证据;差异即残留证据。</strong>产品族重划:</p>
+  <div class="egrid" id="clean"></div>
+  <div class="readbox">
+    <p class="h">差异归因(18 行对照)与最大单项差异</p>
+    <p><strong style="color:var(--ink)">归因统计:</strong><span class="em">两案等价/收敛 ~6.5 行</span>(力通道器件级收敛、被动主力、计量角色、经济重建、脊柱工程、门禁纪律)· <span class="em">第一性修正 ~4.5 行</span>(SKU 地位重划、计算降档 −$310/台、精度机制相对化、硅片期权化)· <b>商业残留 ~4.5 行</b>(GoPro 标签路径、啁啾架构、日历代际、配比锁定)· <b>厂商残留 ~1.5 行</b>(SP895BD-AP 指定二源、Landot 点名)。</p>
+    <p><strong style="color:var(--ink)">最大单项差异:</strong>啁啾架构<b>整体消失</b>——它是为保 GoPro 双时钟域发明的补偿债;清洁室用 $8 的 STM32G474+TCXO 单时钟岛 FSIN 硬触发,<span class="em">≤50µs 构造性满足</span>(预算内 10×),标签相机 Day-1 换 AR0234 全局快门立体(代价:bring-up +2–4 月)。<strong style="color:var(--ink)">代际边界改门禁制</strong>(设备量×利用率+通道门禁),月份仅为预测;<strong style="color:var(--ink)">硅片零排期</strong>(FPGA IP 先行,50 万片/双 OEM 门后才谈 die)。<b>收敛核 12 条</b>(单时钟岛/签名证书/应变梁力 Day-1/实测开度/被动主力/部署几何手持/编码器计量仪/边缘 QC 三分类/LeRobot 赏金调度/先证伪后花钱/COTS 默认/多样性优先)= 范式无关、厂商无关、先建不悔。</p>
+  </div>
+
   <h2>⑦ 终局 · PhysicalAI 的面貌(带判据,可证伪)</h2>
   <div class="egrid" id="end"></div>
 
@@ -265,7 +280,7 @@ footer .m{font-family:var(--mono);font-size:11px;color:var(--mute);margin-top:8p
 </div>
 <footer><div class="wrap">
   <div>来源:physicalAI 知识库 <a href="https://github.com/kingwonn/physicalAI/blob/main/wiki/data-engine-roadmap.md">wiki/data-engine-roadmap.md</a> + <a href="https://github.com/kingwonn/physicalAI/blob/main/wiki/lecun-worldmodels-rethink.md">wiki/lecun-worldmodels-rethink.md</a>(均 confidence: verified;设计提案,非现有产品)+ <a href="https://github.com/kingwonn/physicalAI/blob/main/wiki/data-scaling-strategy.md">wiki/data-scaling-strategy.md</a>(v1.1 复审 + 通道概率 + 策略)。Gen-1 具名件经对抗核查 2026-07 可购(Hero9 停产已换 Hero13 二源);Gen-2/3 全部 (设计目标)。评委团裁决与嫁接记录、LeCun 引语防火墙(播客≠ETH 现场)见源页。</div>
-  <div class="m"><span>快照 2026-07-07 · v1.1</span><span>5 平面 · 3 代 · 4 SKU · 6 对撞 · 3 红队 · P(通道@2030)≈0.30 · 7 原则 · 3 步落地 · 工程蓝图</span><span>对抗核查</span></div>
+  <div class="m"><span>快照 2026-07-07 · v1.1</span><span>5 平面 · 3 代 · 6 对撞 · 3 红队 · P(通道@2030)≈0.30 · 7 原则 · 工程蓝图 · 清洁室:蝉/螳/砧 + 12 公理 + 18 行归因</span><span>对抗核查</span></div>
 </div></footer>
 <script>
 const D=__DATA__;
@@ -280,6 +295,7 @@ document.getElementById("rev").innerHTML=D.rev.map(r=>`<tr><td class="dim">${esc
 document.getElementById("panel").innerHTML=D.panel.map((p,i)=>`<tr${i==3?' style="background:rgba(12,140,136,.06);font-weight:700"':''}><td class="dim">${esc(p[0])}</td><td>${esc(p[1])}</td><td>${esc(p[2])}</td><td>${esc(p[3])}</td><td style="font-weight:400;color:var(--steel)">${esc(p[4])}</td></tr>`).join("");
 document.getElementById("strat").innerHTML=D.strat.map(t=>`<div class="pcard" style="border-left-color:var(--heat)"><b>${esc(t[0])}</b><span>${esc(t[1])}</span></div>`).join("");
 document.getElementById("odm").innerHTML=D.odm.map(o=>`<tr><td class="dim">${esc(o[0])}</td><td>${esc(o[1])}</td><td class="reg">${esc(o[2])}</td><td>${esc(o[3])}</td></tr>`).join("");
+document.getElementById("clean").innerHTML=D.clean.map(c=>`<div class="ecard" style="background:var(--panel);color:var(--ink);border:1.5px solid var(--teal)"><div class="yr" style="font-size:17px">${esc(c[0])}</div><b style="color:var(--ink)">${esc(c[1])}</b><p style="color:var(--steel)">${esc(c[2])}</p><p style="color:var(--teal);font-family:var(--mono);font-size:11.5px;margin-top:8px">${esc(c[3])}</p></div>`).join("");
 </script>'''
 DOCTYPE='<!doctype html>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n'
 open(BASE+'data-engine-roadmap.html','w').write(DOCTYPE+HTML.replace('__DATA__',D))

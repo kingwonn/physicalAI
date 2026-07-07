@@ -515,3 +515,34 @@ transformer isolation, S3 storage tier mislabel, ingest cost closure, PGA
 full-scale overstatement, RDK S100 price marked unverified) -> verified.
 Roadmap page gained engineering-layer pointer; HTML gained a ⓪ 5-plane SVG
 architecture diagram section. Readers 47 EN / 46 zh; portal updated.
+
+## data-engine-first-principles — 2026-07-07 (clean-room workflow; 6 agents ~0.53M tokens)
+NEW page data-engine-first-principles.md (verified, bilingual): the CONTROL
+EXPERIMENT — strip all vendor constraints (Quectel modules, SP895BD-AP
+mandated 2nd source, module-maker GTM) and commercial constraints (90-day
+ship, calendar generations, fundraising-narrative milestones), re-derive
+products + 3 generations from 12 axioms via two independent designers
+(info-completeness-first vs scale-physics-first). New axioms of note:
+measurement back-action (a rig that alters the demo poisons data invisibly),
+measured-relative label class (in-jaw ChArUco opens the 2-10mm band without
+global 2mm SLAM), utilization-inversion economics ($500-class devices are
+forgiving at 10% utilization; the $55/h trap belongs to $20k rigs),
+certify-the-certifier (fleet must own a measured-truth instrument). RESULT:
+product family re-cast as Cicada 蝉 (passive worn, GoPro HERO 2024 $199/86g)
+/ Mantis 螳 (handheld, AR0234 GS stereo Day-1, STM32G474+TCXO single-clock
+island <=50us constructive — CHIRP ARCHITECTURE ELIMINATED as commercial
+residue of keeping GoPro on the label path) / Anvil 砧 (metrology instrument,
+single-digit units, paired recovered-vs-measured streams) + Gen-2 CORE shared
+board (Mantis-2 head = robot wrist head CORE-R). Compute downgraded 80 TOPS
+-> $60-80 RK3588-class (-$310/unit); generations gate-defined not
+calendar-defined; silicon zero-scheduled (FPGA IP first, die only behind the
+500k-unit/2-OEM gate). 18-row delta attribution: ~6.5 equivalent (physics
+core independently reproduced — robustness evidence) / ~4.5 first-principles
+fixes / ~4.5 commercial residue / ~1.5 vendor residue (SP895BD-AP, Landot
+naming) / 1 not-judged (GTM). 12-item invariant core = paradigm-proof,
+vendor-proof, build-first list. Verify: 10 parts web-checked (ICM-42688 8kHz
+ODR fix, AR0234 $50-65, PiPER $2,499 pinned), BOM/economics re-summed, 2
+delta-table strawmen fixed, attribution arithmetic made to sum. Canonical
+adjudication per the delta table; roadmap page gained clean-room pointer.
+HTML gained ⑥.5 clean-room panel (Cicada/Mantis/Anvil cards + attribution
+readbox). Readers 48 EN / 47 zh; portal updated.
