@@ -486,3 +486,32 @@ unfunded) — "sell the scale first, then decide on the granary." Verify fixed
 Landot +510% scope, bipedal claim, BMW fleet count). HTML gains ⑤ red-team
 + probability panel, ⑥ 7-principle strategy + ODM 3-step, renumbered ⑦/⑧.
 Readers 46 EN / 45 zh; HOME/llms/portal updated.
+
+## data-engine-blueprint — 2026-07-07 (architect+implement workflow; 7 agents ~0.46M tokens)
+NEW page data-engine-blueprint.md (verified, bilingual): the ENGINEERING layer
+under the roadmap — chief-architect top-down design of the whole thing as ONE
+closed-loop machine. (1) SYSTEM: 5 planes (device / clock / data / QC-cert /
+brain) each with a design invariant (e.g. no stream without a traceable
+timestamp chain; raw shards immutable append-only with hash lineage; only
+sensor-rejects get deleted — task-failure clips are product); 9-boundary
+interface-contract table with rates/volumes/owners; 3 budget tables with
+arithmetic (data GB/h, power->battery-life W1 10.8h / W1e 7.4h, timing chain
+280-300us < 0.5ms chirp budget). (2) IMPLEMENTATION: W1 electrical (part-level
+power tree, buses) / firmware (RTOS task table, ISR timestamp discipline,
+QC-triple math) / mechanical (strain-beam load path, 711g weight budget) +
+W1e delta; L1 metrology kit (XL330 4Mbps Fast-Sync-Read 215us math, URDF->twin
+design rules, audit protocol); R1 white-label box (read-only isolated bus tap
+— CAN capacitive-isolated listen-only + EtherCAT magnetic winding tap, crypto
+boundary so we never hold raw customer data); QC dock honest throughput; spine
+software (LeRobot v2 shard layout, cert JSON schema, 6-stage ingest with
+compute sizing, bounty scheduler, buyer dataloader pseudocode); Gen-2
+dual-source carrier (RDK S100 ∥ Quectel SP895BD-AP one-PCB strategy) with
+month-6-11 bring-up + month-11 gate procedure. Six inline INTEGRATION
+ARBITRATIONS (R1: RK3588 has NO AV1 hw-encode -> site transcode node RTX 4060;
+R2: dock copy honest 1.6h/shift; R4: D405 has no GMSL -> USB-only + active
+optical cable; etc). Verify: 12 fixes (stale XL330/U2D2 prices, 164GB volume
+typo, L1 servo power 1W->3W, W1 weight 694->711g, ISO1042 is capacitive not
+transformer isolation, S3 storage tier mislabel, ingest cost closure, PGA
+full-scale overstatement, RDK S100 price marked unverified) -> verified.
+Roadmap page gained engineering-layer pointer; HTML gained a ⓪ 5-plane SVG
+architecture diagram section. Readers 47 EN / 46 zh; portal updated.

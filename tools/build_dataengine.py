@@ -137,6 +137,69 @@ footer .m{font-family:var(--mono);font-size:11px;color:var(--mute);margin-top:8p
   <p>由具身大脑 scaling 需求(S2/S1/S0)倒推的数据采集系统设计:三份竞争设计书(可穿戴/收敛/车队)经三镜头评委团裁决(C 140 &gt; B 131 &gt; A 125),定案 = C 的数据脊柱 + A 的误差预算工程 + B 的同构传感头。已通过 LeCun 世界模型对撞检验(2026-05-29,一手证实)与 <strong style="color:#12B3AC">v1.1 三镜头红队复审</strong>:骨架存活,4 处 fatal 修订(C1 降格/收入门禁/R 系白标/阶梯重算);scaling 通道综合估计 <strong style="color:#E4592A">P(全通道@2030)≈0.30</strong>——通道是一道经济学不等式。全部前瞻规格为 (设计目标)。</p>
 </div></div>
 <div class="wrap">
+  <h2>⓪ 全系统架构 · 一台闭环机器(蓝图)</h2>
+  <p class="sub">工程层已落地:五平面闭环 + 接口契约 + 三张预算表 + 可开工实现(<a href="https://github.com/kingwonn/physicalAI/blob/main/wiki/data-engine-blueprint.md">data-engine-blueprint.md</a>,verified,12 处工程核查修正 + 6 处整合裁决)。每平面一条设计不变量;修正飞轮每转一圈,下一圈的边际数据更便宜、更值钱。</p>
+  <div style="background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px;overflow-x:auto">
+  <svg viewBox="0 0 960 430" xmlns="http://www.w3.org/2000/svg" style="min-width:760px;width:100%;font-family:var(--sans)">
+    <defs>
+      <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" fill="#55666C"/></marker>
+      <marker id="arrT" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" fill="#0C8C88"/></marker>
+      <marker id="arrH" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" fill="#E4592A"/></marker>
+    </defs>
+    <!-- P1 device plane -->
+    <rect x="14" y="30" width="250" height="230" rx="10" fill="rgba(12,140,136,.06)" stroke="#0C8C88" stroke-width="1.5"/>
+    <text x="30" y="56" font-size="14" font-weight="700" fill="#0F171C">P1 设备平面</text>
+    <text x="30" y="74" font-size="10.5" fill="#83979B">不变量:输出必须是合法 shard+manifest</text>
+    <g font-size="12" fill="#18242B">
+      <rect x="30" y="86" width="218" height="30" rx="5" fill="#FFF" stroke="#DCE2E2"/><text x="40" y="106">W1 手持夹爪 · $520 · 力通道原生</text>
+      <rect x="30" y="122" width="218" height="30" rx="5" fill="#FFF" stroke="#DCE2E2"/><text x="40" y="142">W1e 被动头戴 · $350 · 不剪切长镜头</text>
+      <rect x="30" y="158" width="218" height="30" rx="5" fill="#FFF" stroke="#DCE2E2"/><text x="40" y="178">L1 主从计量 · $2,650 · 野外基准仪</text>
+      <rect x="30" y="194" width="218" height="30" rx="5" fill="#FFF" stroke="#DCE2E2"/><text x="40" y="214">R1 白标改装盒 · 只读总线侦听</text>
+      <text x="40" y="248" font-size="10.5" fill="#83979B">Gen-2:同构传感头(采集=部署,BOM 差&lt;5%)</text>
+    </g>
+    <!-- P3 data plane -->
+    <rect x="340" y="30" width="270" height="230" rx="10" fill="rgba(201,162,74,.07)" stroke="#C9A24A" stroke-width="1.5"/>
+    <text x="356" y="56" font-size="14" font-weight="700" fill="#0F171C">P3 数据平面</text>
+    <text x="356" y="74" font-size="10.5" fill="#83979B">不变量:原始 shard 落盘不可变,派生物哈希引用</text>
+    <g font-size="12" fill="#18242B">
+      <rect x="356" y="86" width="238" height="30" rx="5" fill="#FFF" stroke="#DCE2E2"/><text x="366" y="106">坞站 RK3588 · 1:3 · 入坞 1.6h/班 ⚖R2</text>
+      <rect x="356" y="122" width="238" height="30" rx="5" fill="#FFF" stroke="#DCE2E2"/><text x="366" y="142">站点转码节点 RTX 4060 · AV1 硬编 ⚖R1</text>
+      <rect x="356" y="158" width="238" height="30" rx="5" fill="#FFF" stroke="#DCE2E2"/><text x="366" y="178">云存储 热/低频/冷 · LeRobot v2 + RLDS</text>
+      <rect x="356" y="194" width="238" height="30" rx="5" fill="#FFF" stroke="#DCE2E2"/><text x="366" y="214">证书服务(独立主体)· 签名 JSON ~2KB</text>
+      <text x="366" y="248" font-size="10.5" fill="#83979B">10 台站点 ~0.75 TB/天 · 上行 ~70 Mbps</text>
+    </g>
+    <!-- P5 brain plane -->
+    <rect x="686" y="30" width="260" height="230" rx="10" fill="rgba(228,89,42,.06)" stroke="#E4592A" stroke-width="1.5"/>
+    <text x="702" y="56" font-size="14" font-weight="700" fill="#0F171C">P5 训练/部署平面</text>
+    <text x="702" y="74" font-size="10.5" fill="#83979B">不变量:只吃证书化语料;修正 24h 回流 SLA</text>
+    <g font-size="12" fill="#18242B">
+      <rect x="702" y="86" width="228" height="30" rx="5" fill="#FFF" stroke="#DCE2E2"/><text x="712" y="106">S2 VLM 7–10 Hz · 量×多样性</text>
+      <rect x="702" y="122" width="228" height="30" rx="5" fill="#FFF" stroke="#DCE2E2"/><text x="712" y="142">S1 视觉运动 50–200 Hz · 精度敏感</text>
+      <rect x="702" y="158" width="228" height="30" rx="5" fill="#FFF" stroke="#DCE2E2"/><text x="712" y="178">S0 反射 0.5–1 kHz · 重定向+修正</text>
+      <rect x="702" y="194" width="228" height="30" rx="5" fill="#FFF" stroke="#DCE2E2"/><text x="712" y="214">世界模型买家 · ego-pose 证书</text>
+      <text x="712" y="248" font-size="10.5" fill="#83979B">买家 load_dataset 即训 · 预跑验收测试</text>
+    </g>
+    <!-- flows -->
+    <line x1="264" y1="140" x2="336" y2="140" stroke="#55666C" stroke-width="2" marker-end="url(#arr)"/>
+    <text x="272" y="132" font-size="11" fill="#55666C">shard</text>
+    <line x1="610" y1="140" x2="682" y2="140" stroke="#55666C" stroke-width="2" marker-end="url(#arr)"/>
+    <text x="614" y="132" font-size="11" fill="#55666C">cert+shard</text>
+    <!-- P2 clock band -->
+    <rect x="14" y="284" width="932" height="40" rx="8" fill="rgba(12,140,136,.10)" stroke="#0C8C88" stroke-dasharray="5 3"/>
+    <text x="30" y="309" font-size="12.5" font-weight="700" fill="#0C8C88">P2 时钟平面(贯穿)</text>
+    <text x="204" y="309" font-size="11.5" fill="#18242B">GPMF 单钟 → 啁啾&lt;0.5ms(月1台架实测前按 LED 帧级)→ PTP&lt;100µs(R1)→ gPTP&lt;1µs(Gen-2+)· 不变量:无不可追溯时间戳</text>
+    <!-- P4 QC band -->
+    <rect x="14" y="332" width="932" height="40" rx="8" fill="rgba(201,162,74,.12)" stroke="#C9A24A" stroke-dasharray="5 3"/>
+    <text x="30" y="357" font-size="12.5" font-weight="700" fill="#8A6D2F">P4 QC/认证平面(贯穿)</text>
+    <text x="204" y="357" font-size="11.5" fill="#18242B">端上三件套(漂移/重采/标定健康)→ 坞站门禁 → 云证书 · 废片三分类:只有传感废真删,失败片是产品</text>
+    <!-- flywheel -->
+    <path d="M 816 264 L 816 398 L 139 398 L 139 264" fill="none" stroke="#E4592A" stroke-width="2" marker-end="url(#arrH)"/>
+    <text x="330" y="392" font-size="12" font-weight="700" fill="#E4592A">R 系修正飞轮:干预 flag + 结果标签(白标契约:数据归客户,证书/SaaS 归脊柱)</text>
+  </svg>
+  </div>
+  <p class="sub" style="margin-top:10px">蓝图含:接口契约 9 边界 · 数据/功耗/时序三张预算表(W1 续航 10.8h / W1e 7.4h;时序链 280–300µs&lt;0.5ms 预算)· W1 电气/固件/机械 + 标定/EOL + EVT-DVT-PVT 排期 · shard/manifest JSON schema · Gen-2 双源载板(RDK S100 ∥ 移远 SP895BD-AP)(设计目标)。</p>
+</div>
+<div class="wrap">
   <h2>① 设计原则 · 从 60 设备 + 10 系统蒸馏</h2>
   <div class="pgrid" id="prin"></div>
 
@@ -202,7 +265,7 @@ footer .m{font-family:var(--mono);font-size:11px;color:var(--mute);margin-top:8p
 </div>
 <footer><div class="wrap">
   <div>来源:physicalAI 知识库 <a href="https://github.com/kingwonn/physicalAI/blob/main/wiki/data-engine-roadmap.md">wiki/data-engine-roadmap.md</a> + <a href="https://github.com/kingwonn/physicalAI/blob/main/wiki/lecun-worldmodels-rethink.md">wiki/lecun-worldmodels-rethink.md</a>(均 confidence: verified;设计提案,非现有产品)+ <a href="https://github.com/kingwonn/physicalAI/blob/main/wiki/data-scaling-strategy.md">wiki/data-scaling-strategy.md</a>(v1.1 复审 + 通道概率 + 策略)。Gen-1 具名件经对抗核查 2026-07 可购(Hero9 停产已换 Hero13 二源);Gen-2/3 全部 (设计目标)。评委团裁决与嫁接记录、LeCun 引语防火墙(播客≠ETH 现场)见源页。</div>
-  <div class="m"><span>快照 2026-07-07 · v1.1</span><span>3 代 · 4 SKU · 6 对撞 · 3 红队 · P(通道@2030)≈0.30 · 7 原则 · 3 步落地</span><span>对抗核查</span></div>
+  <div class="m"><span>快照 2026-07-07 · v1.1</span><span>5 平面 · 3 代 · 4 SKU · 6 对撞 · 3 红队 · P(通道@2030)≈0.30 · 7 原则 · 3 步落地 · 工程蓝图</span><span>对抗核查</span></div>
 </div></footer>
 <script>
 const D=__DATA__;
