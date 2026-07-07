@@ -46,6 +46,7 @@ disputes are catalogued in [Open problems](open-problems.md).
 | [Tactile Sensing & Dexterous Hands](tactile-hands.md) | Hand landscape with prices, GelSight-lineage vs taxel arrays, tactile datasets/models, China's hand mass-production economics, why dexterity hardware remains the gap |
 | [Humanoid Component Supply Chain](component-supply-chain.md) | BOM-money-and-chokepoint map + per-sub-chain supplier scoreboards (谐波/RV减速器, 行星滚柱丝杠, 无框电机, 灵巧手, 六维力/触觉传感器); China localization vs imports; roller-screw chokepoint; module-maker (Quectel) read |
 | [Data Foundry Economics](data-foundry.md) | The business of manufacturing robot data: Scale post-Meta, Generalist's wearables foundry, China's state-subsidized data factories, teleop $/hour economics, marketplaces |
+| [SOTA Data-Engine Design & 3-Gen Roadmap](data-engine-roadmap.md) | **Design proposal** (not survey): our own SOTA data-collection system derived from brain-scaling needs — W/L/R three-terminal data spine, Gen-1 COTS ($520 wearable, 0-6mo) → Gen-2 custom sensor-head module (2mm/200Hz, 6-15mo) → Gen-3 custom C1 SoC + future sensors (1µs on-chip sync, 15-24mo); judge-panel synthesis (C 140/B 131/A 125), dated endgame (2028/2030/terminal) with falsifiers |
 | [Evaluation & Benchmarks](evaluation.md) | Saturated sim suites vs real-robot arenas (RoboArena, RoboChallenge, GM-100), embodied-reasoning exams, industry throughput metrics, the self-reported-benchmark credibility problem |
 
 ## People & organizations

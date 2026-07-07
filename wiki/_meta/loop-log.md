@@ -406,3 +406,24 @@ state coordination + buyable hardware (vertically-integrated stack), NOT data
 quality/verifiability. HTML deliverable gains ④ 系统方案设计详解 (10 design
 cards) + ⑤ 中国数据采集生态 (16-player table w/ type badges + genrobot callout
 + China verdict box). Readers rebuilt 43 EN / 42 zh; portal card + counts updated.
+
+## data-engine-roadmap — 2026-07-06 (design workflow; 10 agents ~0.64M tokens)
+NEW page data-engine-roadmap.md (verified, bilingual): our own SOTA
+data-collection-system DESIGN PROPOSAL + 18-24mo 3-gen roadmap, derived from
+brain-scaling needs (S2/S1/S0 ladder). Judge-panel competition: 3 theses
+(A-wearable fidelity-climb / B-convergence collection=deployment sensor head /
+C-fleet W/L/R tiered family) x 3 judge lenses (engineering / data-science /
+strategy) — each lens picked a DIFFERENT winner; totals C 140 > B 131 > A 125.
+Final: C spine (W/L/R mix shifting 80/15/5 -> 60/25/15 -> 30/25/45) + grafts
+(A error-budget engineering + native $21 force channel from day 1 + fidelity
+SLA certificates; B isomorphic sensor head + no-software-timestamps axiom +
+3-layer endgame). Gen-1 COTS ($520 W1 / $726 GELLO L1 / $1,400 R1), Gen-2
+custom sensor-head module (2mm/200Hz gate at month 9 + precision-value
+ablation), Gen-3 C1 SoC (1us on-chip timestamps, 40 TOPS, $15-25M NRE) +
+future sensors (event cam, 1k taxel/fingertip, e-skin). Dated falsifiable
+endgame: 2028 category-merge, 2030 inversion (robots collect for robots),
+terminal = spine survives as module+SoC+certification-cloud. Verify fixed 8
+factual errors (Hero9 discontinued -> Hero13 2nd source, Q-8750 80 TOPS,
+ICM-42688 ODR, TAL220 swap, Landot attribution, Aria gaze spec, JD/Shandong
+labor case, teleop price timeline) -> confidence: verified. Readers 44 EN /
+43 zh. HTML deliverable pending (next iteration, post LeCun-rethink).

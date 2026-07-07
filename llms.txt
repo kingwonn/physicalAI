@@ -24,6 +24,7 @@
 - [Tactile Sensing & Dexterous Hands](wiki/tactile-hands.md): hand landscape with prices, tactile sensing tech, datasets, China hand economics, the dexterity gap
 - [Humanoid Component Supply Chain](wiki/component-supply-chain.md): BOM value-chain map + per-sub-chain supplier scoreboards (harmonic/RV reducers, planetary roller screws, frameless motors, dexterous hands, force/tactile sensors); China localization vs imports; roller-screw chokepoint; module-maker read
 - [Data Foundry Economics](wiki/data-foundry.md): Scale post-Meta, Generalist wearables foundry, China state-subsidized data factories, teleop $/hour economics
+- [SOTA Data-Engine Design & 3-Gen Roadmap](wiki/data-engine-roadmap.md): design proposal — W/L/R three-terminal data spine derived from S2/S1/S0 brain-scaling needs; Gen-1 COTS → Gen-2 custom sensor-head module → Gen-3 custom SoC + future sensors; judge-panel synthesis with dated, falsifiable endgame (2028/2030/terminal)
 - [Evaluation & Benchmarks](wiki/evaluation.md): sim-suite saturation, real-robot arenas, embodied-reasoning exams, industry metrics, benchmark credibility
 
 ## People & organizations
