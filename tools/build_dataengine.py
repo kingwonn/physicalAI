@@ -49,8 +49,37 @@ END=[
  ["2030","倒置之年","机器人为机器人采集:部署舰队回传占新增数据 >70%;人类演示 <10%;数据现货价 <$0.5–1/h(2026 遥操价的 1/100)。人类角色收缩为干预标注与偏好判断;W/L 系转型「分布尾部补采仪器」按稀缺度计价;C1 主要出货形态是机器人身上的 R 系芯片"],
  ["终态","采集行业消失,脊柱活下来","采集功能溶解进消费级 AR 眼镜与工作手套,人类日常生活成为被动语料。穿越终局的三层资产:传感头模组(Quectel 式量价)· C1 SoC 授权(高通式进 OEM BOM)· 时钟/格式/QC 认证云(ARM 式生态税——物理 AI 的数据清算所)。判据:认证格式 2029 前被 ≥3 家非客户机构采用;C1 硅 2030 前进 ≥1 家 top-10 本体厂 BOM"],
 ]
+# 复审 v1.1: [镜头, 判决, 一句话]
+REVIEW=[
+ ["工程","存活,需大手术","骨架能活,时间表与资本叙事活不下来——啁啾 <0.5ms、110 demos/h、C1 九个月流片三处用断言冒充测量 → C1 降格 12/16nm 传感枢纽 die、月 30+ 回片、月 1 啁啾台架实测"],
+ ["数据科学","骨架买得过,定价逻辑买不过","边际价值已从「更多干净小时」迁移到组成/对齐/稀缺模态/失败-修正数据 → 2mm 件改选装、失败数据单列产品线、证书加训练价值化验层"],
+ ["战略","目前是没有收入侧的成本机器","阶梯算术不闭合(全摊 ~$55/h 非 $6/h);买家未命名 → 新增收入门禁(Gen-2 capex 前 ≥3 类买家 LOI)、R 系改白标、结构拆分(硬件 vs 语料主体)"],
+]
+# 通道概率: [评审, P(C1@2028), P(全@2028), P(全@2030), crux]
+PANEL=[
+ ["牛市","0.60","0.30","0.55","四前置条件一阶导全正;空头需要一个无人观测到的弯折"],
+ ["熊市","0.30","0.06","0.17","对数线性收益 × 线性工资 = 指数踏车;AV 基率;力学维度整体缺失"],
+ ["裁判","0.55","0.15","0.35","已上可预报性匝道,远未到自筹飞轮;是 scaling road 还不是 channel"],
+ ["本页综合","0.45–0.55","0.08–0.12","0.25–0.35(点估 0.30)","通道=经济学不等式:$/h 须降 ~10×/OOM,实测 2–3×;缺口只有部署 exhaust 或被动视频替代能补"],
+]
+# 最优策略 7 条: [原则, 内容]
+STRAT=[
+ ["杠铃,不做中间","被动 ego 走量(贴工资地板,VLA+世界模型双供)+ measured 收口(力/触觉/修正/失败);中等精度批发小时正被开源对齐 + 数据效率双向挤死——按获客定价,永不当利润线"],
+ ["每笔大 capex 挂双门禁","消融门(6mm/2mm、pretrain-vs-label、50-vs-200Hz)+ 收入门(≥3 类买家 LOI / ≥50 万片意向);触发即花钱,不触发即按预写路径降级"],
+ ["卖镐,并持有尺子","硬件是获客漏斗;利润在计量/QC/认证工具链;做标准承包商不做所有者——manifest 进 CAICT/LeRobot 当参考实现,信任外包高校年审"],
+ ["力数据第一天上,卖三次","策略训练 + sim 校准 + 世界模型物理校准——全案唯一范式无关、多买家竞价、开源零供给的通道;$21 应变梁是对冲密度最高的一笔钱"],
+ ["失败数据是产品不是废品","废片三分类,失败-恢复 shard 单独定价;AgiBot World 2026 力控+error-recovery 采集转向确认需求;零硬件成本的对冲"],
+ ["R 系做白标基建,不做数据地主","客户持数据,我们收时钟/QC/证书 SaaS + 传感芯片 BOM 位;脊柱活下来的方式是被埋进别人身体,不是拥有血液"],
+ ["不做的清单","不建通用遥操农场;不押单一范式;不先于订单流片;不在消融前给舰队上 2mm 件;不自任中立审计方"],
+]
+# ODM 三步: [步, 动作, capex, 决策门]
+ODM=[
+ ["1. 传感头模组 + 时间戳纪律","Gen-2 公共传感头板卡做成标准模组;VIO 前端/触觉 AFE 做授权 IP——完全在模组厂 DNA 内","~$3–8M","月 11 台架门 + ≥1 家本体厂 design-in;失败退守标准相机/IMU 模组,损失有限"],
+ ["2. 认证采集器械 SKU","W 套件白标(含力通道)+ GELLO 计量仪 + QC 工具链,卖给训练场/foundry/实验室;中国政府是付费方(UBTech ¥566M 先例)","~$2–5M","首 1,000 套毛利为正 + 1 家国地中心/AgiBot 系锚定客户;器械生意不依赖任何 scaling 判断"],
+ ["3. 语料层(期权,默认不花)","独立主体持语料与认证云,模组厂做独家 ODM;只做三个稀缺 SKU(力/被动长镜头/失败-修正)","Gen-2 级 ~$25M+","≥3 类买家付费 LOI + 两消融出数;不通过则永久停留步 1+2(依然正 EV)"],
+]
 import json
-D=json.dumps({"prin":PRIN,"req":REQ,"gens":GENS,"lecun":LECUN,"end":END},ensure_ascii=False)
+D=json.dumps({"prin":PRIN,"req":REQ,"gens":GENS,"lecun":LECUN,"end":END,"rev":REVIEW,"panel":PANEL,"strat":STRAT,"odm":ODM},ensure_ascii=False)
 HTML='''<title>SOTA 数据引擎 · 三代路线图</title>
 <style>
 :root{--paper:#F3F5F5;--panel:#FFF;--ink:#0F171C;--steel:#55666C;--mute:#83979B;--line:#DCE2E2;--line2:#E9EEEE;
@@ -105,7 +134,7 @@ footer .m{font-family:var(--mono);font-size:11px;color:var(--mute);margin-top:8p
 <div class="mh"><div class="wrap">
   <p class="eb">SOTA 数据引擎 · 设计提案 · 三代路线图 · LeCun 对撞检验</p>
   <h1>W/L/R 数据脊柱:从既有芯片到自研 SoC 的 18–24 个月</h1>
-  <p>由具身大脑 scaling 需求(S2/S1/S0)倒推的数据采集系统设计:三份竞争设计书(可穿戴/收敛/车队)经三镜头评委团裁决(C 140 &gt; B 131 &gt; A 125),定案 = C 的数据脊柱 + A 的误差预算工程 + B 的同构传感头。已通过 LeCun ETH Zürich 世界模型演讲(2026-05-29,一手证实)对撞检验:<strong style="color:#12B3AC">骨架成立,被动视频升格为共同主力</strong>。全部前瞻规格为 (设计目标)。</p>
+  <p>由具身大脑 scaling 需求(S2/S1/S0)倒推的数据采集系统设计:三份竞争设计书(可穿戴/收敛/车队)经三镜头评委团裁决(C 140 &gt; B 131 &gt; A 125),定案 = C 的数据脊柱 + A 的误差预算工程 + B 的同构传感头。已通过 LeCun 世界模型对撞检验(2026-05-29,一手证实)与 <strong style="color:#12B3AC">v1.1 三镜头红队复审</strong>:骨架存活,4 处 fatal 修订(C1 降格/收入门禁/R 系白标/阶梯重算);scaling 通道综合估计 <strong style="color:#E4592A">P(全通道@2030)≈0.30</strong>——通道是一道经济学不等式。全部前瞻规格为 (设计目标)。</p>
 </div></div>
 <div class="wrap">
   <h2>① 设计原则 · 从 60 设备 + 10 系统蒸馏</h2>
@@ -134,18 +163,46 @@ footer .m{font-family:var(--mono);font-size:11px;color:var(--mute);margin-top:8p
     <p><strong style="color:var(--ink)">一句话最大改动:</strong>被动第一视角视频从防御性副 SKU(W1e $350)<b>升格为带自有保真度规格的共同主力产品线</b>(度量深度 + ego-pose ATE 证书 = 世界模型动作条件化保真度证书),混合体从 W/L/R 三元扩为 <span class="em">W主/W被/L/R 四元(Gen-2 参考 45/15/25/15)</span>;新增 pretrain-vs-label 门禁消融;力数据买家从两类扩到三类(策略 + sim 校准 + <b>世界模型物理校准</b>)——范式之争打得越凶,中立军火商越贵。</p>
   </div>
 
-  <h2>⑤ 终局 · PhysicalAI 的面貌(带判据,可证伪)</h2>
+  <h2>⑤ 复审 v1.1 · 红队三镜头 + Scaling 通道概率</h2>
+  <p class="sub">三镜头独立红队攻击本方案(2026-07-07):<strong>没有一个镜头判 kill</strong>,15 项修订已应用(fatal:C1 降格 / 收入门禁 / R 系白标 / 阶梯算术重建)。</p>
+  <div class="tw"><table>
+    <thead><tr><th>镜头</th><th>判决</th><th>核心攻击 → 修法</th></tr></thead>
+    <tbody id="rev"></tbody>
+  </table></div>
+  <p class="sub" style="margin-top:18px">「数据 scaling 能否把具身大脑推入 LLM 式通道」——牛/熊/裁判独立打分(通道 = C1 可预测性 ∧ C2 经济飞轮 ∧ C3 可迁移性):</p>
+  <div class="tw"><table>
+    <thead><tr><th>评审</th><th>P(C1@2028)</th><th>P(全通道@2028)</th><th>P(全通道@2030)</th><th>核心 crux</th></tr></thead>
+    <tbody id="panel"></tbody>
+  </table></div>
+  <div class="readbox">
+    <p class="h">关键结构洞见 · 通道是一道经济学不等式</p>
+    <p>观测到的规律全是浅指数(EgoScale 每个等量损失降幅需 <b>10× 小时</b>;GEN-0 同性质幂律,至今无一弯折)。LLM 通道打开不是因为曲线更陡,而是因为<span class="em">下一个 OOM 的 token 几乎免费</span>;robotics 的每个 OOM 要付工资。通道打开的充要条件:<b>$/h 的下降倍数 ≥ 所需小时的上升倍数(~10×/OOM)</b>——实测遥操两年只降 65%(~2–3×/OOM),缺口 3–5× 只有两条路径能补:(a) 部署 exhaust 接管边际小时(需 10³–10⁴ 台机队);(b) 被动视频替代动作标签(V-JEPA 2-AC 路径)。<span class="em">这正是我们两个门禁消融所测的东西——门禁实验同时是对整个行业通道问题的私有测量仪。</span>在兑现前,scaling 通道对采集商是<b>卖水人市场</b>:通道的空头案就是 foundry 的多头案。</p>
+  </div>
+
+  <h2>⑥ 最优策略 · 七条原则(各带触发/终止条件)</h2>
+  <div class="pgrid" id="strat"></div>
+  <p class="sub" style="margin-top:16px"><strong>对模组厂(移远级)的落地翻译 —— 三步,最小后悔优先:</strong></p>
+  <div class="tw"><table>
+    <thead><tr><th>步</th><th>动作</th><th>capex</th><th>决策门</th></tr></thead>
+    <tbody id="odm"></tbody>
+  </table></div>
+  <div class="readbox">
+    <p class="h">给老板的一句话</p>
+    <p>步 1+2 合计 <span class="em">$5–13M</span>,是「无论 scaling 通道开不开都赚钱」的器械 + 模组生意,且买下了步 3 的期权;步 3(语料层,~$25M+)的执行前提(买家 LOI、消融出数、结构拆分)现在一项都不具备——<b>先卖秤,再决定要不要开粮仓。</b></p>
+  </div>
+
+  <h2>⑦ 终局 · PhysicalAI 的面貌(带判据,可证伪)</h2>
   <div class="egrid" id="end"></div>
 
   <div class="readbox">
-    <p class="h">⑥ 评委团与风险(摘要)</p>
+    <p class="h">⑧ 评委团与风险(摘要)</p>
     <p><strong style="color:var(--ink)">三镜头三个赢家:</strong>工程判 A 胜(误差预算工程最硬)· 数据科学判 C 胜(数据混合体是一阶设计变量)· 战略判 B 胜(采集=部署是唯一不需转身的终局论)。总分 <span class="em">C 140 &gt; B 131 &gt; A 125</span> 定骨架,评委钦点嫁接:A 的声学啁啾同步与 $21 力通道、B 的锁步时戳岛与三层终态、GELLO 终身保留为野外计量基准仪。<b>两个门禁实验先于两笔最大 capex:6mm-vs-2mm 精度消融先于 Gen-2 精度投资;同构 co-training 消融先于部署变体投资——先证伪,后流片。</b></p>
     <p><strong style="color:var(--ink)">头号风险:</strong>2mm 野外跳票(→L 系扩产替位)· 同构≠域差距归零(每 5k h 消融)· 仿真/纯视频吃掉 S1(→转部署修正+力触觉,视频永远伪造不了)· 部署飞轮提前(→砍 W3 全转 R/C1——组合可转向,单设备只能陪葬)· 供应链单点(每件带第二源)。</p>
   </div>
 </div>
 <footer><div class="wrap">
-  <div>来源:physicalAI 知识库 <a href="https://github.com/kingwonn/physicalAI/blob/main/wiki/data-engine-roadmap.md">wiki/data-engine-roadmap.md</a> + <a href="https://github.com/kingwonn/physicalAI/blob/main/wiki/lecun-worldmodels-rethink.md">wiki/lecun-worldmodels-rethink.md</a>(均 confidence: verified;设计提案,非现有产品)。Gen-1 具名件经对抗核查 2026-07 可购(Hero9 停产已换 Hero13 二源);Gen-2/3 全部 (设计目标)。评委团裁决与嫁接记录、LeCun 引语防火墙(播客≠ETH 现场)见源页。</div>
-  <div class="m"><span>快照 2026-07-07</span><span>3 代 · 4 SKU · 6 对撞 · 3 终局判据</span><span>对抗核查</span></div>
+  <div>来源:physicalAI 知识库 <a href="https://github.com/kingwonn/physicalAI/blob/main/wiki/data-engine-roadmap.md">wiki/data-engine-roadmap.md</a> + <a href="https://github.com/kingwonn/physicalAI/blob/main/wiki/lecun-worldmodels-rethink.md">wiki/lecun-worldmodels-rethink.md</a>(均 confidence: verified;设计提案,非现有产品)+ <a href="https://github.com/kingwonn/physicalAI/blob/main/wiki/data-scaling-strategy.md">wiki/data-scaling-strategy.md</a>(v1.1 复审 + 通道概率 + 策略)。Gen-1 具名件经对抗核查 2026-07 可购(Hero9 停产已换 Hero13 二源);Gen-2/3 全部 (设计目标)。评委团裁决与嫁接记录、LeCun 引语防火墙(播客≠ETH 现场)见源页。</div>
+  <div class="m"><span>快照 2026-07-07 · v1.1</span><span>3 代 · 4 SKU · 6 对撞 · 3 红队 · P(通道@2030)≈0.30 · 7 原则 · 3 步落地</span><span>对抗核查</span></div>
 </div></footer>
 <script>
 const D=__DATA__;
@@ -156,6 +213,10 @@ const colors=["var(--teal)","var(--amber)","var(--heat)"];
 document.getElementById("gens").innerHTML=D.gens.map((g,i)=>`<div class="gen" style="border-top:3px solid ${colors[i]}"><div class="hd"><h3>${esc(g[0])}</h3><span class="win">${esc(g[1])}</span><span class="mix">${esc(g[2])}</span></div><div class="bd"><p class="row"><span class="k">核心硬件</span>${esc(g[3])}</p><p class="row"><span class="k">精度/吞吐</span>${esc(g[4])}</p><p class="row"><span class="k">BOM/功耗</span>${esc(g[5])}</p><p class="row gate"><span class="k">门禁/规模</span>${esc(g[6])}</p></div></div>`).join("");
 document.getElementById("lecun").innerHTML=D.lecun.map(l=>`<tr><td style="min-width:180px">${esc(l[0])}</td><td>${esc(l[1])}</td><td style="min-width:170px;color:var(--steel)">${esc(l[2])}</td></tr>`).join("");
 document.getElementById("end").innerHTML=D.end.map(e=>`<div class="ecard"><div class="yr">${esc(e[0])}</div><b>${esc(e[1])}</b><p>${esc(e[2])}</p></div>`).join("");
+document.getElementById("rev").innerHTML=D.rev.map(r=>`<tr><td class="dim">${esc(r[0])}</td><td style="min-width:140px;font-weight:700;color:var(--heat)">${esc(r[1])}</td><td>${esc(r[2])}</td></tr>`).join("");
+document.getElementById("panel").innerHTML=D.panel.map((p,i)=>`<tr${i==3?' style="background:rgba(12,140,136,.06);font-weight:700"':''}><td class="dim">${esc(p[0])}</td><td>${esc(p[1])}</td><td>${esc(p[2])}</td><td>${esc(p[3])}</td><td style="font-weight:400;color:var(--steel)">${esc(p[4])}</td></tr>`).join("");
+document.getElementById("strat").innerHTML=D.strat.map(t=>`<div class="pcard" style="border-left-color:var(--heat)"><b>${esc(t[0])}</b><span>${esc(t[1])}</span></div>`).join("");
+document.getElementById("odm").innerHTML=D.odm.map(o=>`<tr><td class="dim">${esc(o[0])}</td><td>${esc(o[1])}</td><td class="reg">${esc(o[2])}</td><td>${esc(o[3])}</td></tr>`).join("");
 </script>'''
 DOCTYPE='<!doctype html>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n'
 open(BASE+'data-engine-roadmap.html','w').write(DOCTYPE+HTML.replace('__DATA__',D))

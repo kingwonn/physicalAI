@@ -454,3 +454,35 @@ ladder + LeCun collision table + endgame panel + judges/risks). NOTE:
 scratchpad build scripts were wiped by tmp cleanup; recovered from transcript
 Write/Edit replay — consider committing build scripts to repo. Readers 45 EN
 / 44 zh; portal card + counts updated.
+
+## data-scaling-strategy — 2026-07-07 (red-team + panel workflow; 10 agents ~0.9M tokens)
+NEW page data-scaling-strategy.md (verified, bilingual) answering the owner's
+three questions. (1) RE-REVIEW: 3-lens red-team of our own data-engine-roadmap
+— no lens voted kill; 4 FATAL fixes applied as v1.1 (C1 downgraded to 12/16nm
+sensor-hub die at month 30+ w/ >=500k-unit hard gate; revenue gate added
+alongside precision gate; R-series restructured as white-label data infra —
+customers own data, we own clock/QC/cert SaaS + BOM slot; ladder arithmetic
+rebuilt — fully-loaded ~$55/h not $6/h, throughput re-based to 60-70 demos/h
+eff.); 15-item change list; roadmap page annotated in place (banner + 2 inline
+fatal notes, EN+zh). (2) SCALING-CHANNEL ASSESSMENT: channel defined as
+C1 predictability ∧ C2 economic flywheel ∧ C3 transferability; 4-precondition
+LLM scorecard (unified substrate PARTIAL, single arch PARTIAL, near-zero
+marginal data cost FAIL — the decisive gap, smooth loss-capability PARTIAL);
+bull/bear/referee panel P(full@2030) = 0.55/0.17/0.35, our synthesis
+0.25-0.35 (point 0.30). KEY INSIGHT: all observed laws are shallow-exponent
+(10x hours per capability step) while $/h only falls 2-3x per OOM — the
+channel is an economics inequality; the 3-5x gap closes only via deployment
+exhaust or passive-video substitution — exactly what our two gate ablations
+measure (the gates double as a private measurement instrument for the
+industry-wide channel question). (3) STRATEGY: 3-world ownership map (channel
+opens ~0.30 / stalls ~0.45-0.50 / paradigm shift ~0.20-0.25 — force/contact
++ correction/failure data + metrology stack valuable in ALL three); 7
+principles (barbell, dual gates, sell-picks-own-the-ruler, force-sells-3x,
+failure-data-is-product, R-as-white-label, the not-do list); ODM translation:
+3 steps smallest-regret first (sensor-head module $3-8M -> certified
+collection-instrument SKU $2-5M -> corpus layer ~$25M+ as OPTION, default
+unfunded) — "sell the scale first, then decide on the granary." Verify fixed
+6 misattributions (LWD-not-RECAP, Figure 8h source, AgiBot theme label,
+Landot +510% scope, bipedal claim, BMW fleet count). HTML gains ⑤ red-team
++ probability panel, ⑥ 7-principle strategy + ODM 3-step, renumbered ⑦/⑧.
+Readers 46 EN / 45 zh; HOME/llms/portal updated.
