@@ -581,3 +581,40 @@ fixed (rider quote is 36kr not 甲子光年), G2 Air attribution corrected.
 China-ecosystem table gained Maniformer row (EN+zh); first-principles page +
 strategy page gained collision notes; queue gained company-agibot spin-off
 item. Readers 49 EN / 48 zh; portal updated.
+
+## case-mifeng full dossier + data-engine-v2 — 2026-07-08 (2-session workflow, resumed after limit; 9+9 agents ~0.92M tokens)
+Run hit the session usage cap mid-flight (3/4 collectors done), resumed next
+morning via resumeFromRunId — cached collectors returned instantly, 6 failed
+stages re-ran. TWO deliverables, both verified:
+(1) case-mifeng.md SUPERSEDED IN PLACE into the definitive Maniformer
+dossier: 资料全录 sections (per-interview digests incl. full 甲子光年/东财
+re-reads; launch event 2026-04-16 张江科学会堂 reconstruction; full site read
+incl. hidden /api/news endpoint (12 items) + marketplace metadata schema +
+the reproducible id=341 NULL defect (re-confirmed live twice); patents/
+hiring/open-source incl. NEGATIVE findings — zero patents, zero HF/GitHub;
+claim-propagation map: one press release echoed ~25 outlets, 29k-stars
+number refuted, single-source claims downgraded) + critical synthesis
+(claims-density vs disclosure-density ratio as the core signal; audience-
+stratified messaging documented) + updated axiom collision + sentinels with
+programmatic monthly API polling. Verify fixed 13 items (mis-sourced quotes
+downgraded, "12-week zero growth" made conditional, 涌现 quote corrected to
+1亿小时 threshold, 灵初 paid-pilot claim downgraded).
+(2) NEW page data-engine-v2.md — direction + Maniformer-aware 3-gen plan:
+honest no-go list (anchor buyer / capital / volume / brand-blitz — forfeit);
+three structural voids GRADED BY DEFENSIBILITY (metrology = mid-term
+defensible via real instrument work; neutrality = structural vs Maniformer
+[75% AgiBot equity makes every rival body-maker our natural customer] but
+not vs third parties; open-auditable = first-mover only, defensible via
+open-format+signed-cert+Merkle coupling); POSITIONING: 不与觅蜂争数据货架,
+做具身数据的度量衡. 10 targeted principles (disclosure-as-weapon spec sheet
+listing exactly the fields they hide; multi-body jaw CARTRIDGES vs their
+G2-Air single-body equity lock; error-distribution report as shipping
+feature; per-claim bench-cert traceability). 3-gen deltas ON the clean-room
+canonical (base untouched): Gen-1 adds cartridge kit (+G-J gate, Mantis cap
+<=$570), open shard spec published BEFORE first hardware ships, legal+crypto
+in-box pack (their site has zero legal text); Gen-2 adds neutrality audit
+service (any-vendor data) + absorbs their multi-body replay scoring as an
+auditable cert field; Gen-3 unchanged options + "Maniformer wins China
+volume" pivot-weight branch. They-close-the-gap scenario: response window
+<=4 weeks (weekly reports + cross-vendor comparative), fallback to neutral-
+auditor position. Readers 50 EN / 49 zh; portal updated.
