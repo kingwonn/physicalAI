@@ -809,3 +809,45 @@ Sourcing-confidence table included per-item (primary-verified vs.
 secondary-convergent) since several sources (MIT Press Direct, Google Books,
 raw Cog-project PDFs) blocked or resisted clean text extraction this pass.
 HOME.md + llms.txt updated with the new page (40 pages total).
+
+## lineage-learning-control — 2026-07-12 (control/RL/imitation/deep-RL/VLA/world-models lineage)
+NEW page lineage-learning-control.md (verified): the parallel engineering
+lineage to lineage-embodied-cognition.md's philosophy strand. 7 threads,
+dense primary-first per house honesty rules: (1) control — Kalman 1960
+(primary), LQR/MPC background, Raibert 1984/1986 dynamic-balance legged
+robots — includes an explicit HONESTY FLAG: "balance as controlled falling"
+searched across the 1984 IJRR paper, MIT Leg Lab pages, and a 2025 Lex
+Fridman transcript with Raibert himself, found NOWHERE in his own words;
+his actual terms are "dynamic stability"/"active dynamic balance" — flagged
+unverified-as-his-quote, not resolved; (2) RL — TD-learning 1988, Sutton &
+Barto textbook, Sutton's "The Bitter Lesson" (2019-03-13, full text fetched
+directly from incompleteideas.net, exact verbatim opening + closing quoted;
+corrected a "A Bitter Lesson" title slip caught in the research pass itself)
+vs. Brooks' dated direct rebuttal "A Better Lesson" (2019-03-19, fetched
+directly, names Sutton's post explicitly) — a clean dated debate pair;
+Alberta Plan 2022 + Silver&Sutton "Era of Experience" 2025 (verbatim quotes
+from the DeepMind-hosted PDF); (3) imitation learning — Schaal 1999 TICS
+paper FULL TEXT extracted via pdftotext (verbatim abstract claim), Atkeson
+locally-weighted-learning, Billard (secondary only, flagged), DAgger 2011
+(Ross/Gordon/Bagnell, compounding-error fix mechanism), Argall et al. 2009
+survey taxonomy; (4) deep-RL-for-robotics — Levine/Finn/Abbeel end-to-end
+visuomotor 2016, Tobin domain randomization 2017, OpenAI Dactyl 2018/2019;
+(5) VLA turn (brief, defers depth to vla-models.md) — RT-2's abstract
+fetched directly, EXACT verbatim coining sentence for "vision-language-
+action models (VLA)" confirmed (RT-1 predates but does not use the term);
+Diffusion Policy/ALOHA-ACT/pi0 one-liners; (6) world models — Sutton's Dyna
+1991, Schmidhuber's 1990 TR "Making the World Differentiable" (exact title
+confirmed via his own bibliography) + his own 2023 public priority-claim
+quote vs. LeCun flagged as a LIVE NAMED DISPUTE (not adjudicated), Ha&
+Schmidhuber 2018 verbatim "hallucinated dream" quote from the abstract,
+LeCun JEPA 2022 (defers verbatim depth to existing lecun-worldmodels-
+rethink.md); (7) embodiment hypothesis modern form — Smith&Gasser 2005
+verbatim "embodiment hypothesis" definition vs. Sutskever's Oct 2022
+ClearerThinking podcast verbatim "physical embodiment is not necessary"
+quote, marked as an opposing-position PAIR not a documented direct exchange
+(no evidence Sutskever was responding to Smith&Gasser specifically).
+Cross-lineage synthesis section: threads 1-4 are embodiment-agnostic
+engineering, threads 5-7 are where practice (RT-2's internet-scale bet)
+collides with the hypothesis debate — ties back to physical-ai-essence.md's
+X2 embodiment-tax pattern. Full sourcing-confidence table, 26 sources.
+HOME.md + llms.txt updated (65 pages total, count corrected from stale 40).
