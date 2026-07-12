@@ -1,0 +1,107 @@
+#!/usr/bin/env python3
+BASE='/tmp/claude-1001/-home-builder-ai-cc-physicalAI/78d7bb40-9179-4141-9e39-ffdea1c9ef2c/scratchpad/'
+GH='https://github.com/kingwonn/physicalAI/blob/main/wiki/'
+# 12 家: [名, slug, 身份一句话, 主力产品, 谁付钱(P3), 资金, 最大未知]
+CO=[
+ ["觅蜂 Maniformer","case-mifeng","智元 75% 控股分拆(2026-02),CEO 姚卯青(Waymo 系),智元数据工厂操盘人出走成军","MEgo View 7 相机头戴 + Gripper 480g 手爪(宣称 1mm)+ Engine 管线;467 数据集货架(API 实查)","母公司智元市场化下单 ¥1,000+/h;外部具名客户:零","红杉种子+天使数亿元(成立 10 天官宣)+ 国方天使+","1mm 宣称机制与快门类型——零误差分布、零 SDK、零 GitHub"],
+ ["简智新创 GenRobot","case-genrobot","独立采集设备厂(北京,2025-05),CEO 陈建兴(RoboMaster→小鹏→Momenta 数据飞轮岗)","DAS 五件套(Ego/Controller/Gripper/Dex/Fingers)+ Gen Matrix 治理平台","市场化销售;蚂蚁系灵波既是股东又是客户","蚂蚁系 Pre-A;几乎无国资","中国队里最开源(真 GitHub/HF)——但注册资本多版本、客户名单薄"],
+ ["鹿明 Lumos","case-luming","深圳(2024-09),创始人喻超(清华,前追觅人形负责人);'鹿明机器人'身份已钉死","机器人 + FastUMI 采集器 + 数据超市三线并卖;LUS2 京东直卖 ¥19.9 万;数据按条卖(¥100/百条)","硬件零售 + 三菱电机(A 轮领投方)买机器人","累计近 ¥10 亿,A1/A2 三菱电机领投(外资产业资本)","'1mm 全球最高'宣称 vs 学术版 FastUMI 实测 10.5–24.1mm"],
+ ["它石智航 TARS","case-morphic","上海(2024/2025),华为 ADS 系四人组(陈亦伦/李震宇/丁文超/陈同庆);'Morphic'是我们旧错名","卖工业机器人为主,SenseHub/TARS 穿戴采集自用;WIYH 开源数据集","卖机器人:苏州 15 台真机在岗(客户匿名)","天使+Pre-A(红杉/高瓴/美团)","'1,000 台订满'成色(《财经》:尚未完全交付)"],
+ ["灵初 PsiBot","case-lingchu","上海(2024 末),CEO 王启斌,首席科学家杨耀东(北大);与 BeingBeyond 是两家","数据手套/外骨骼路线(灵巧优先);服装仓储首站,北京 ~100 套部署中","订单被钛媒体+36氪双源报'展示采购/公关性质'","¥20 亿天使+Pre-A(2026-03,华兴官宣;高瓴领投天使)","付费交付是否真实;95,472 小时自报无第三方"],
+ ["京东具身数据","case-jd-data","集团探索研究院(何晓冬)+ 京东云;非独立法人","JoyEgoCam 头显发给零工;robotdata.jdcloud.com 数据交易平台在线;2 篇 arXiv(JoyAI-RA 62 作者)","集团自营(宿迁政府共建);平台在线但 HF 组织零上架","集团预算(无独立融资)","自用还是外卖——平台在线与零上架的矛盾是品类最大悬案"],
+ ["Generalist(美)","case-generalist","San Mateo,DeepMind 系三人组(Florence/Zeng/Barry)","腕戴 data hands 严格自用;GEN-0→GEN-1(500k+ h 语料,10× 样本效率自报)","不卖数据不卖硬件,卖能力;收入:零(公司自认 pre-revenue)","$400M Radical 领投(2026-06),~$2B 估值,累计 >$500M","foundry 合作方名单(公司拒绝披露);曲线全部自报"],
+ ["松灵 AgileX","case-agilex","东莞(2017),魏基栋(大疆系);底盘老厂转身卖采集铲","Cobot Magic(€15.6–46.2k)+ PiPER $2,499 + Pika ±1.5mm 宣称;92 个开源仓库","全球实验室/训练场买硬件——九年硬件现金流","2021 后不再融资('做事业不是做生意')","官网 ICP 主体与注册实体不一致;Pika 精度无实证"],
+ ["帕西尼 PaXini","case-paxini","深圳(2021),许晋诚(台湾,早稻田菅野研);触觉传感器专家","多维触觉传感器(10 万元→¥199,约 500×)+ DexH13 灵巧手 + TORA 人形(展示用)","商城硬价零售 + 客户股东重叠(BYD/京东/TCL/商汤)","多轮产业资本;港股 IPO 流程中(彭博口径)","招股书=品类第一份强制披露:数据收入占比、客户集中度即将开牌"],
+ ["光轮 LightWheel","case-lightwheel","北京(2023-01),谢晨(Cruise/NVIDIA 仿真系);美国 Santa Clara 实体","合成数据即服务;NVIDIA GR00T/Cosmos/Newton 生态节点;16 开源仓+2053 万帧","客户含 Figure/1X/字节(报道);自报 2025 营收破 ¥1 亿(未审计)","多轮,北京 AI 基金等国资 + 蚂蚁战略轮","中英文订单口径不对账(¥5.5 亿 vs ~$100M);'亚毫米物理求解器'零复测"],
+ ["星海图 Galaxea","case-galaxea","北京(2023-09),CEO 高继扬(Waymo→Momenta),首席科学家赵行/许华哲","R1 系列机器人 + 开源 Open-World 数据集(100k 轨,HF 可查)+ 同构遥操作","卖机器人(R1 Lite ¥19.9 万有售)+ 政府合资(亦庄)持数据平台","多轮(蚂蚁 A 轮独家/美团/高瓴),股份公司改制","'127.3 万小时'与 ISO 编号张冠李戴均系单源;开源数据是收入还是营销"],
+ ["Scale 机器人(美)","case-scale","标注巨头(2016)转身:Physical AI 事业部 2025-09,GM Levin 已被 NVIDIA 挖走无继任","收集即服务 + UR AI Trainer 主从套件(借 UR 现成计量体系,不自建)","唯一具名外部买家生意(PI/Generalist 署名);Meta 年付 ≥$4.5 亿撑半边","Meta $143 亿购 49%(创始人离场);~$29B 隐含估值","机器人收入从不单列;灵魂人物出走后事业部走向"],
+ ["(对照)我们的位置","data-engine-v2","移远系设想:器械商,持有计量期权——不与任何人争数据货架","蝉(被动穿戴 ~$250)/ 螳(手持爪 ≤$500)/ 砧(计量台架 $8–14k,随货误差报告)+ 传感头模组","器械卖给所有采集方(P4 唯一被验证的收入形态);步 3 语料层默认不花","步 1+2 合计 $5–13M(拟议)","计量买家何时出生——三个行权触发器盯着(见 pattern 页)"],
+]
+# P1-P8: [名, 一句话]
+PAT=[
+ ["P1 AV 续集","创始层是自动驾驶数据闭环体系整建制平移(6/12 家),但机器人没有免费产数据的车队——playbook 在'无本体卖数据'格位断裂;商业最实的三家恰恰全非 AV 系"],
+ ["P2 双层收敛","'头戴+手爪+管线'三件套中美独立收敛(形态=接近真理);'千万小时/数据货架/飞轮'是同一批人抄同一份剧本(叙事=模仿)——两层要分开计价"],
+ ["P3 母体与国家买单","付钱的是母公司和政府;全行业具名真外部数据买家 ≈ 只有 Scale 一家——数据市场还不存在"],
+ ["P4 铲子有价、金子无市","唯一被验证的收入形态是器械/传感器零售;器件按深圳曲线暴跌(帕西尼 500×),数据小时价降不动——里面是工资,不服从摩尔定律"],
+ ["P5 柠檬均衡","没有尺子的市场:宣称密度与披露密度完美倒挂;'累计小时数'成融资抵押物,通胀度与融资依赖度正相关"],
+ ["P6 开放 ≠ 计量","开源密度与误差披露零相关:松灵 92 仓库、光轮 2053 万帧,无一家公布误差分布——开源买生态,买不来可审计性"],
+ ["P7 收编终局","数据层不被允许独立:智元 75% 控觅蜂、Meta 买 Scale 49%、NVIDIA 同坐三桌——AV 终局(数据被垂直整合者内化)的前置阵型已就位"],
+ ["P8 脉冲与断裂顺序","成立聚成四波(政策/模型事件后 3–9 个月);断裂顺序可排:仪式签约→展示采购→数据货架→众包零工→纯数据商;2026-12 MIIT 到期是第一个清算点"],
+]
+import json
+D=json.dumps({"co":CO,"pat":PAT},ensure_ascii=False)
+HTML='''<title>数采公司全景 · 12 家档案 + 底层 Pattern</title>
+<style>
+:root{--paper:#F3F5F5;--panel:#FFF;--ink:#0F171C;--steel:#55666C;--mute:#83979B;--line:#DCE2E2;--line2:#E9EEEE;
+--teal:#0C8C88;--tealbr:#12B3AC;--heat:#E4592A;--amber:#C9A24A;
+--sans:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",system-ui,sans-serif;--mono:ui-monospace,"SF Mono",Consolas,Menlo,monospace}
+*{box-sizing:border-box}html{background:var(--paper)}
+body{margin:0;font-family:var(--sans);color:var(--ink);line-height:1.6;font-size:15px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+a{color:var(--teal);text-decoration:none}a:hover{text-decoration:underline}
+.mh{border-top:4px solid var(--teal);background:var(--ink);color:#E8EEEE;padding:30px 0 24px}
+.mh .eb{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--tealbr);margin:0 0 10px}
+.mh h1{font-size:clamp(23px,4vw,34px);font-weight:800;margin:0 0 8px;text-wrap:balance}
+.mh p{margin:0;color:#9DB0B3;font-size:14px;max-width:58em}
+h2{font-family:var(--mono);font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--steel);margin:36px 0 6px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.sub{font-size:13px;color:var(--steel);margin:0 0 14px}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:8px;margin:14px 0}
+table{border-collapse:collapse;width:100%;font-size:12.5px;min-width:1000px}
+th{font-family:var(--mono);font-size:10.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--steel);font-weight:600;text-align:left;padding:9px 11px;border-bottom:1px solid var(--line);background:var(--paper);position:sticky;top:0}
+td{padding:9px 11px;border-bottom:1px solid var(--line2);vertical-align:top;line-height:1.55}
+tr:last-child td{border-bottom:none}
+tr.us td{background:rgba(12,140,136,.06)}
+.co a{font-weight:700;white-space:nowrap}
+.pgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:14px 0}
+@media(max-width:760px){.pgrid{grid-template-columns:1fr}}
+.pcard{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:13px 16px;border-left:3px solid var(--heat)}
+.pcard b{display:block;font-size:14px;margin-bottom:4px}
+.pcard span{font-size:12.5px;color:var(--steel);line-height:1.55}
+.readbox{background:linear-gradient(180deg,rgba(12,140,136,.05),var(--panel));border:1.5px solid var(--teal);border-radius:10px;padding:18px 22px;margin:20px 0}
+.readbox .h{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);font-weight:600;margin:0 0 9px}
+.readbox p{margin:0 0 8px;font-size:14px;line-height:1.7}
+.readbox b{color:var(--heat)}.readbox .em{color:var(--teal);font-weight:700}
+footer{border-top:1px solid var(--line);padding:22px 0 40px;font-size:12.5px;color:var(--steel);margin-top:36px}
+footer .m{font-family:var(--mono);font-size:11px;color:var(--mute);margin-top:8px;display:flex;flex-wrap:wrap;gap:6px 18px}
+</style>
+<div class="mh"><div class="wrap">
+  <p class="eb">数采公司全景 · 12 家找茬式档案 + 8 大底层 Pattern</p>
+  <h1>机器人数据生意:谁在做、谁在付钱、背后是什么规律</h1>
+  <p>12 家公司(觅蜂/GenRobot/鹿明/它石/灵初/京东/Generalist/松灵/帕西尼/光轮/星海图/Scale)逐家做过对抗性核查档案——愿景/创始人/产品/技术栈/GTM 全维,负发现(查过没找到)也如实记录。本页是一张桌上的横评 + 从中挖出的 8 条结构性规律。每格可点进完整档案。</p>
+</div></div>
+<div class="wrap">
+  <h2>① 12 家总表(每行点公司名进完整档案)</h2>
+  <p class="sub">最后一行是我们(移远系设想)的对照位。身份/资金经工商与多源核验;"最大未知"= 我们查过但查不到的关键项。</p>
+  <div class="tw"><table>
+    <thead><tr><th>公司</th><th>身份一句话</th><th>主力产品</th><th>谁在付钱(P3 检验)</th><th>资金</th><th>最大未知</th></tr></thead>
+    <tbody id="co"></tbody>
+  </table></div>
+
+  <h2>② 8 大底层 Pattern(每条带反例与到期证伪条件,详见 pattern 页)</h2>
+  <div class="pgrid" id="pat"></div>
+
+  <div class="readbox">
+    <p class="h">③ 最扎心的裁决 · 度量衡为什么空置</p>
+    <p>12 家、合计融资折数百亿人民币,<b>没有一家做计量</b>(给数据配可核验的误差账本)。四个假说裁决:<b>H2「结构上不赚钱」最强</b>——证书是数据市场的二阶衍生品,而一阶市场(数据买卖)还不存在;没有买家的市场,不需要验货员。最重一锤:年入十亿美元的 Scale 做保真数据时<b>借用</b> UR 的现成计量体系而不自建。</p>
+    <p>对我们的诚实结论:<span class="em">尺子是对的,时候是错的</span>——计量从"收入线"降级为"用器械收入养着的期权";三个行权触发器(首笔具名外部数据交易 / 监管强制披露如帕西尼招股书 / 表演性认证暴雷)任一响起,2–3 个季度的仪器基建就是入场券,所以砧台架照建、月报照发——<b>建是为了行权时在场,不是为了今天收钱</b>。</p>
+  </div>
+
+  <div class="readbox" style="border-color:var(--amber)">
+    <p class="h" style="color:var(--amber)">④ 再往下一层 · X-Pattern(领域本质)</p>
+    <p>P1–P8 描述公司<b>如何</b>行为;更深一层的 X1–X8 回答<b>为什么不得不</b>这样:X1 技能资本化引擎(技能第一次可像软件摊销——全行业股权战争的标的)→ X2 具身税(莫拉维克悖论 1988 的货币化)→ X4 时钟分层律(Brooks 1986 包容架构的平反)→ X6 计量-柠檬统一律……完整推导链与"废黜条款"见 <a href="https://github.com/kingwonn/physicalAI/blob/main/wiki/physical-ai-essence.md">physical-ai-essence</a> 与 <a href="https://github.com/kingwonn/physicalAI/blob/main/wiki/intellectual-history.md">七十年学术思想史</a>。</p>
+  </div>
+</div>
+<footer><div class="wrap">
+  <div>档案与 pattern 全文(均 confidence: verified):<a href="https://github.com/kingwonn/physicalAI/blob/main/wiki/data-companies-compare.md">全景横评</a> · <a href="https://github.com/kingwonn/physicalAI/blob/main/wiki/data-business-patterns.md">底层 Pattern(8 条,带证伪日期)</a> · 12 家档案见总表行内链接。哨点日历与月度 API 轮询在 pattern 页 §7。</div>
+  <div class="m"><span>快照 2026-07-12</span><span>12 家档案 · 8 pattern · 全部对抗核查 · 负发现如实记录</span></div>
+</div></footer>
+<script>
+const D=__DATA__;
+const GH="https://github.com/kingwonn/physicalAI/blob/main/wiki/";
+function esc(s){const d=document.createElement("div");d.textContent=s==null?"":s;return d.innerHTML;}
+document.getElementById("co").innerHTML=D.co.map((c,i)=>`<tr${i===D.co.length-1?' class="us"':''}><td class="co"><a href="${GH}${esc(c[1])}.md">${esc(c[0])}</a></td><td>${esc(c[2])}</td><td>${esc(c[3])}</td><td>${esc(c[4])}</td><td>${esc(c[5])}</td><td style="color:var(--heat)">${esc(c[6])}</td></tr>`).join("");
+document.getElementById("pat").innerHTML=D.pat.map(p=>`<div class="pcard"><b>${esc(p[0])}</b><span>${esc(p[1])}</span></div>`).join("");
+</script>'''
+DOCTYPE='<!doctype html>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n'
+open(BASE+'data-companies.html','w').write(DOCTYPE+HTML.replace('__DATA__',D))
+print('written · companies',len(CO),'· patterns',len(PAT))
