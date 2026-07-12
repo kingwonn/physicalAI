@@ -653,3 +653,48 @@ sections with where-we-searched) + capstone comparison page:
 Readers gained a 数采公司档案 group: 57 EN / 56 zh. China-ecosystem rows got
 dossier cross-links. Portal updated. NOTE: run took ~73 min wall, no session-
 limit incident this time.
+
+## case-galaxea — 2026-07-12 (targeted data-business dossier)
+NEW page case-galaxea.md — 星海图 Galaxea AI, focused on the data-business
+angle per commission brief. Five-dimension sweep: (1) vision/mission verbatim
+("具身智能体服务世界" / "部署100亿台AI机器人,服务100亿全球人口", primary
+site); (2) founders fully verified — CEO 高继扬 (Tsinghua+USC CV PhD,
+Waymo/Momenta), co-founders 赵行 (MIT PhD, ex-Waymo research scientist,
+Tsinghua MARS Lab) + 许华哲 (UC Berkeley PhD, Stanford postdoc, Tsinghua
+embodied-AI lab) + COO 李天威 — no unresolved rumor, all four cross-confirmed
+Forbes+多源zh; (3) full SKU lineup (R1/R1 Lite/R1 Pro $44.5-64k/A1 family/
+新增 Kengo双足人形 2026-06首发) + complete funding chain reconstructed
+(angel 2024-01 → Pre-A → A轮 → A4/A5 2025-08 $100M+/$700M valuation Forbes →
+B轮 2026-02 ¥10亿/百亿估值 → B+轮 2026-04 ¥20亿/估值破200亿) — cumulative-
+total figures explicitly NOT reconciled (Tencent "近10轮近20亿" vs Forbes
+"~$210M" conflict recorded, not forced); (4) tech stack — isomorphic teleop
+(GitHub OpenA1Z-T actually open to hardware-protocol level, strongest in the
+group), Real2Sim2Real engine (赵行, consumer-camera cm-level 3D recon,
+tension with "we don't trust sim data" stance flagged as unresolved not
+contradiction), zero patents found (negative finding, notable gap vs
+technical-sophistication claims), arXiv 2509.00576 independently confirmed
+via 5 cross-indexes; (5) GTM — named international customers (Huawei Cloud/
+VW/Haier/Samsung/ByteDance/Physical Intelligence/Stanford/MIT, Forbes+
+Benzinga cross-confirmed) but data-vs-hardware revenue split undisclosed;
+2024 revenue = zero (Forbes primary). CORE DATA-BUSINESS FINDING: new
+Galaxea Data Hub (launched 2026-06-16 WDC) claims 1.27M hours + token-based
+data-asset settlement — 1.27M figure is SINGLE-SOURCED (aimaoxian.com only,
+not corroborated by stcn/qbitai coverage of the same event) and the cited
+"ISO/IEC 23053:2024 embodied-data compliance certification" is a MISAPPLIED
+STANDARD NUMBER (that ISO number is actually the AI-system-explainability
+framework, unrelated) — same genre of failure as Maniformer's fabricated
+29k-stars, flagged per house discipline. Reconciled the wiki's prior "400k
+downloads unverified" flag: HF steady-state is now 16,610/mo (up from ~13k),
+and press "400k in 2 months" (2025-10) is arithmetically plausible as a
+launch-spike total, not a fabrication — downgraded from "likely inflated" to
+"reconciled, no longer flagged." SPIN-OUT ANGLE (commissioned question):
+Galaxea's data business is organized as 亦数智能, a government JV with
+Beijing Yizhuang (亦庄机器人+亦庄国投, ¥1亿注册资本) — explicitly NOT a
+controlled spin-out like Maniformer's 75%-AgiBot-owned carve-out; company
+itself denies "spin-off" framing. Judged low probability of Maniformer-style
+independent-fundraise spin-out short-term given govt-platform co-ownership.
+9-item explicit-unknowns list (equity split unconfirmed, patents absent,
+Data Hub hour-count uncorroborated, ISO claim status, EDP platform specs
+inaccessible — docs page 503'd, no community/practitioner technical reviews
+found). Cross-linked into data-collection-devices.md (2 passages updated,
+prior "unverified/inflated" download flag corrected), HOME.md, llms.txt.

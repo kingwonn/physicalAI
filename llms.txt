@@ -36,6 +36,7 @@
 - [Dossier: 灵初智能 PsiBot](wiki/case-lingchu.md): data-glove bet; ¥2.0B angel+Pre-A; distinct from BeingBeyond (verified)
 - [Dossier: 京东具身数据业务](wiki/case-jd-data.md): Joy Future Academy + robotdata.jdcloud.com; internalize-vs-sell unresolved (verified)
 - [Dossier: Generalist AI](wiki/case-generalist.md): US benchmark; $400M Radical-led, ~$2B valuation; devices self-used, sells capability (verified)
+- [Dossier: 星海图 Galaxea AI — Data Business](wiki/case-galaxea.md): robot-maker-first reverse pattern vs Maniformer; founders 高继扬/赵行/许华哲/李天威 all verified; Open-World Dataset downloads reconcile (400k press = plausible cumulative vs 16.6k/mo steady-state); new Data Hub's 1.27M-hour claim single-sourced + misapplied ISO standard number; named intl customers (Huawei Cloud/VW/Samsung/Stanford/MIT) but data-vs-hardware revenue split undisclosed; data business = govt JV not controlled spin-out (verified)
 - [Category Scoreboard](wiki/data-companies-compare.md): 7 companies on one table; claims-vs-disclosure ranking; category information voids; metrology lane vacant category-wide (verified)
 - [Data-Scaling Channel & Optimal Strategy](wiki/data-scaling-strategy.md): 3-lens red-team of our roadmap (4 fatal fixes), bull/bear/referee panel on the LLM-style scaling channel (P(full@2030)≈0.30; channel = economics inequality), 3-world ownership map, 7-principle strategy + 3-step ODM translation
 - [Evaluation & Benchmarks](wiki/evaluation.md): sim-suite saturation, real-robot arenas, embodied-reasoning exams, industry metrics, benchmark credibility
