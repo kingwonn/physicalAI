@@ -26,6 +26,10 @@ trail of what the wiki learned and when.
   the Publish step): https://claude.ai/code/artifact/68ac0327-eba9-4992-b59e-f0a842129433
 - **中文版阅读器 (Chinese mirror,`wiki-zh/`,30 页全译):**
   https://claude.ai/code/artifact/4fe05af7-9241-4177-b7b5-296486977015
+- **中文博客 (`blog-zh/`)** — 源材料（播客/长访谈）驱动的归档与分析系列，
+  新事实经 `wiki/_meta/queue.md` 推给 verify 层后才进 wiki 正文；
+  见 [blog-zh/README.md](blog-zh/README.md) 与配套档案站
+  https://claude.ai/code/artifact/903d6ad2-2090-4e2f-845a-68c982c0631a
 - Start at [wiki/HOME.md](wiki/HOME.md) — annotated index and reading order.
 - [llms.txt](llms.txt) — machine-readable index (llms.txt convention).
 - Every page carries frontmatter with `updated:` (last research pass) and a

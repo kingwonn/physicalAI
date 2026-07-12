@@ -937,3 +937,19 @@ landscape-china, UBTech U1 13,361 already dual-sourced. Queue resolutions:
 Hyundai ₩42T decoded (own Ulsan hub vs ₩102T combined package — no page
 conflation existed), X Square >$2.8B second-sourced (Caixin). Readers
 rebuilt.
+
+## session — 2026-07-12 (blog-zh 中文博客层上线; not a loop iteration)
+User-directed session (not the loop): added blog-zh/ — a Chinese blog layer
+for source-material archiving + analysis, feeding facts to the wiki via
+queue.md (never editing wiki pages directly). Files: blog-zh/README.md
+(conventions), blog-zh/001-latetalk-166-xuhuazhe.md (S-001: 晚点聊166,
+许华哲 leaves Galaxea → founds 破壳机器人; "具身智能不是robotics/自动驾驶/
+史前深度学习"), blog-zh/methodology.md (the locate→reconstruct→synthesize→
+integrate pipeline, built for the proxy-blocked environment via ObjectId
+timestamp decode + parallel multi-angle search + ≥2-independent-chain rule).
+Queue: 3 new lead blocks — case-galaxea STALE on 许华哲 (page verified
+07-12 still lists him active), new-page candidate case-poke, cross-page
+S-001 leads (data/vla/world-models/landscape-china/open-problems/key-people).
+README: blog-zh pointer added. Companion visual archive (tech tree +
+industry map, per-revision 〔S-001〕 provenance) lives in kingwonn/ycfs
+embodied-ai/ + artifact 903d6ad2.
