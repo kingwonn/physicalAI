@@ -10,7 +10,7 @@ OUT = '/tmp/claude-1001/-home-builder-ai-cc-physicalAI/78d7bb40-9179-4141-9e39-f
 
 GROUPS = [
     ('总览', [('HOME', 'HOME.md')]),
-    ('核心', [('history', 'history.md'), ('state-of-the-art', 'state-of-the-art.md'), ('tech-tree', 'tech-tree.md'), ('on-device-brain', 'on-device-brain.md'), ('visions', 'visions.md'), ('physical-ai-essence', 'physical-ai-essence.md')]),
+    ('核心', [('history', 'history.md'), ('state-of-the-art', 'state-of-the-art.md'), ('tech-tree', 'tech-tree.md'), ('on-device-brain', 'on-device-brain.md'), ('visions', 'visions.md'), ('physical-ai-essence', 'physical-ai-essence.md'), ('intellectual-history', 'intellectual-history.md')]),
     ('技术', [('vla-models', 'vla-models.md'), ('world-models', 'world-models.md'), ('humanoid-robots', 'humanoid-robots.md'), ('manipulation', 'manipulation.md'),
              ('locomotion', 'locomotion.md'), ('simulation', 'simulation.md'), ('hardware', 'hardware.md'),
              ('data', 'data.md'), ('data-collection-devices', 'data-collection-devices.md'), ('data-foundry', 'data-foundry.md'), ('data-engine-roadmap', 'data-engine-roadmap.md'), ('lecun-worldmodels-rethink', 'lecun-worldmodels-rethink.md'), ('data-scaling-strategy', 'data-scaling-strategy.md'), ('data-engine-blueprint', 'data-engine-blueprint.md'), ('data-engine-first-principles', 'data-engine-first-principles.md'), ('case-mifeng', 'case-mifeng.md'), ('data-engine-v2', 'data-engine-v2.md'), ('tactile-hands', 'tactile-hands.md'), ('component-supply-chain', 'component-supply-chain.md'), ('evaluation', 'evaluation.md')]),

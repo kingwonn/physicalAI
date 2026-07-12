@@ -14,6 +14,7 @@
 - [On-Device Embodied Brain](wiki/on-device-brain.md): deep report on building a good edge robot brain — dual/tri-system arch (S2/S1/S0), cloud-edge, compute/model-opt, SoC landscape, power, software, edge models, eval rubric, reference architecture + module-maker read (12 verified sections)
 - [Visions & Theses](wiki/visions.md): leaders' framings with dated primary quotes (Huang, Musk, Hassabis, Li, LeCun, Son, Wang) + skeptics; convergence/divergence matrix
 - [Physical AI: Portrait & Essential Patterns](wiki/physical-ai-essence.md): field capstone — complete portrait + 8 essential X-patterns with dated falsifiable predictions; X1 skill-capitalization adjudicated deepest with explicit generation chain to the business-layer patterns and a dethrone clause (verified)
+- [Intellectual History of Embodied Intelligence](wiki/intellectual-history.md): the 70-year academic war — three lineages with verified primary quotes, the embodiment pendulum, five debates with receipts, X-pattern ancestor mapping, verdict with dated dethrone clauses; 8 famous misquotations corrected (verified)
 
 ## Technology
 - [Vision-Language-Action Models](wiki/vla-models.md): RT-1/RT-2 → π0.x, GR00T, Gemini Robotics, Helix — architectures, data, benchmarks, open-vs-closed

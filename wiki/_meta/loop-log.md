@@ -851,3 +851,37 @@ engineering, threads 5-7 are where practice (RT-2's internet-scale bet)
 collides with the hypothesis debate — ties back to physical-ai-essence.md's
 X2 embodiment-tax pattern. Full sourcing-confidence table, 26 sources.
 HOME.md + llms.txt updated (65 pages total, count corrected from stale 40).
+
+## intellectual-history — 2026-07-12 (3-lineage collection + synthesis; 6 agents ~0.70M tokens, 248 tool uses)
+NEW page intellectual-history.md (verified, bilingual): the 70-year academic
+war behind Physical AI, answering the owner's "从学术史里了解本质". Three
+lineages with PRIMARY verbatim quotes (cybernetics Wiener 1943/48, Ashby,
+Grey Walter tortoises -> Dartmouth/PSSH Newell-Simon 1976/Shakey-STRIPS ->
+critics Dreyfus/Searle/Harnad/Lighthill + Moravec 1988; embodiment school
+Brooks 1986/1990/1991, Gibson affordances, Varela enactivism, Pfeifer-Bongard,
+McGeer passive walker, Smith-Gasser; learning-control confluence Kalman/
+Raibert->BD, Sutton TD + Bitter Lesson 2019 + Brooks Better Lesson, Schaal
+1999 imitation question, Levine end-to-end, Tobin DR, RT-1/2 VLA coinage,
+world models Schmidhuber 1990/Ha 2018/LeCun JEPA). Embodiment PENDULUM with
+historian footnotes (schools persist, center-of-gravity shifts; statistical
+turn began 1990s not 2012). Five debates with receipts. X-PATTERN ANCESTOR
+TABLE: X2 = Moravec 1988 MONETIZED (paradox -> accounting identity: sensor-
+imotor info exists cheaply in human bodies, must execute expensively in robot
+bodies, the spread is the tax — first time the paradox is bankable/hedgeable/
+falsifiable), X4 = subsumption vindicated WEARING THE HAT IT OPPOSED (layer
+shape won, anti-representation dogma lost — every top layer is a big world
+model), X1 = Schaal 1999's question in economic form, X6 ancestor = PSSH
+empirical-inquiry + Lighthill verifiability crisis. VERDICT: weak embodied
+cognition winning (locomotion solved bodilessly = morphological computation
+vindicated; five VLA stacks all layered-reactive), disembodied camp half-
+winning (RT-2 web-knowledge transfer real; Sutskever unfalsified), strong
+embodied cognition suspended (constitutive claims designed unfalsifiable),
+symbol grounding REBORN AS ECONOMICS (Harnad's "how do symbols ground" ->
+"what wage does grounding cost" = X2). Dated dethrone clauses 2027-12/
+2028-12/2029-12 shared with essence page. Verify: 8 famous misquotations
+corrected against primary texts (PSSH restored "general", Ashby destroy-vs-
+absorb w/ Beer provenance, Searle 1990 axiom not 1980 BBS, Brooks best-model
+quote is 1990 Elephants not 1986, Grey Walter downgraded to paraphrase,
+Schaal/Sutskever exact wording, world-models priority dispute flagged,
+Pinker-not-Moravec flagged) + Shakey open-loop and pendulum historiography
+fixes. Readers 65 EN / 64 zh; portal updated.
