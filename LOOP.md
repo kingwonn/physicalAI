@@ -109,3 +109,7 @@ Lessons from loops 0-12, framed per "map vs territory":
   https://claude.ai/code/artifact/68ac0327-eba9-4992-b59e-f0a842129433
 - **Chinese full-text reader (wiki-zh/):**
   https://claude.ai/code/artifact/4fe05af7-9241-4177-b7b5-296486977015
+
+## 档案固定动作 (2026-07-12,源自 data-business-patterns §6)
+- 任何"客户公告"入档前先查股东表重叠(P3 母体买单)。
+- 任何"小时数"入档时标注融资依赖度(P5 抵押物判据)。

@@ -38,6 +38,12 @@
 - [Dossier: Generalist AI](wiki/case-generalist.md): US benchmark; $400M Radical-led, ~$2B valuation; devices self-used, sells capability (verified)
 - [Dossier: 星海图 Galaxea AI — Data Business](wiki/case-galaxea.md): robot-maker-first reverse pattern vs Maniformer; founders 高继扬/赵行/许华哲/李天威 all verified; Open-World Dataset downloads reconcile (400k press = plausible cumulative vs 16.6k/mo steady-state); new Data Hub's 1.27M-hour claim single-sourced + misapplied ISO standard number; named intl customers (Huawei Cloud/VW/Samsung/Stanford/MIT) but data-vs-hardware revenue split undisclosed; data business = govt JV not controlled spin-out (verified)
 - [Category Scoreboard](wiki/data-companies-compare.md): 7 companies on one table; claims-vs-disclosure ranking; category information voids; metrology lane vacant category-wide (verified)
+- [Dossier: 松灵 AgileX](wiki/case-agilex.md): DJI-lineage rig commodity vendor; nine years hardware cash flow; the sell-shovels archetype (verified)
+- [Dossier: 帕西尼 PaXini](wiki/case-paxini.md): tactile components; 500× price collapse; customer-shareholder overlap; HK-IPO = category forced-disclosure event (verified)
+- [Dossier: 光轮 LightWheel](wiki/case-lightwheel.md): synthetic-data service; NVIDIA ecosystem node; unaudited ¥100M revenue; best AV-playbook transplant (verified)
+- [Dossier: 星海图 Galaxea 数据业务](wiki/case-galaxea.md): robot maker with open-data slices; gov-JV holds data platform; hours+ISO claims flagged single-source (verified)
+- [Dossier: Scale AI 机器人业务](wiki/case-scale.md): labeling giant pivot; UR partnership; only named-external-buyer business; GM poached by NVIDIA (verified)
+- [数据生意的底层 Pattern](wiki/data-business-patterns.md): 8 patterns across 12 companies with dated falsifiable predictions; why-metrology-empty adjudication (H2 strongest) downgrades our lane-1 to instrument-backed option (verified)
 - [Data-Scaling Channel & Optimal Strategy](wiki/data-scaling-strategy.md): 3-lens red-team of our roadmap (4 fatal fixes), bull/bear/referee panel on the LLM-style scaling channel (P(full@2030)≈0.30; channel = economics inequality), 3-world ownership map, 7-principle strategy + 3-step ODM translation
 - [Evaluation & Benchmarks](wiki/evaluation.md): sim-suite saturation, real-robot arenas, embodied-reasoning exams, industry metrics, benchmark credibility
 

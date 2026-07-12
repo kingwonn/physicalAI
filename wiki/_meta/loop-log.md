@@ -698,3 +698,47 @@ Data Hub hour-count uncorroborated, ISO claim status, EDP platform specs
 inaccessible — docs page 503'd, no community/practitioner technical reviews
 found). Cross-linked into data-collection-devices.md (2 passages updated,
 prior "unverified/inflated" download flag corrected), HOME.md, llms.txt.
+
+## batch-2 dossiers x5 + data-business-patterns — 2026-07-12 (pipeline+miners workflow; 26 agents ~2.36M tokens, 613 tool uses)
+FIVE new dossiers (all verified, bilingual, novice-friendly): case-agilex
+(松灵 Dongguan 2017, 魏基栋 ex-DJI; nine years hardware cash flow, no
+funding since 2021 — the sell-shovels archetype; open item: ICP footer names
+a different entity), case-paxini (许晋诚 Waseda/Sugano lab, Taiwan-born
+confirmed via CommonWealth; sensor 10万→¥199 ~500× collapse;
+customer-shareholder overlap BYD/JD/TCL/商汤; HK-IPO pipeline = category
+forced-disclosure event), case-lightwheel (谢晨 ex-Cruise/NVIDIA; Santa
+Clara US entity confirmed; GitHub/HF orgs real+active; CN/EN order books do
+not reconcile), case-galaxea (CEO 高继扬 Waymo→Momenta + 赵行/许华哲;
+gov-JV holds data platform; "127万 h"+wrong-ISO single-source flagged),
+case-scale (Physical AI unit 2025-09, GM Ben Levin since POACHED BY NVIDIA
+no successor; UR/Teradyne AI Trainer; 150k+ delivered hours; the only
+named-external-buyer business; Meta 49%/$14.3B, Droege CEO).
+NEW page data-business-patterns.md (verified): the answer to the owner's
+"find the pattern" question — 8 patterns across 12 companies, each with
+evidence/counterexample/dated falsifiable prediction: P1 AV-sequel (6/12
+founder teams from AV data-closed-loop; playbook breaks at no-free-fleet),
+P2 two-layer convergence (form = truth, independently converged CN/US;
+script = imitation, same AV alumni same lines), P3 parent+state-pays (real
+named external data buyers ≈ one company category-wide: Scale), P4
+shovels-priced-gold-unpriced (only verified unit economics is hardware
+retail; hours floor is wages not BOM), P5 lemon equilibrium
+(claims/disclosure inversely ranked; hours-as-fundraising-collateral;
+inflation correlates with funding dependence), P6 open≠metrology (open-source
+density zero-correlated with error disclosure), P7 annexation endgame
+(AgiBot 75%+suspected Lingchu seed / JD 6 investments+PaXini / Meta-Scale /
+NVIDIA everywhere — AV endgame pre-positioning), P8 pulse+fracture-order
+(4 founding waves 3-9mo after policy/model events; fracture order scripted,
+MIIT 2026-11-30 = first clearing event). CENTERPIECE: why-metrology-empty
+adjudication H2 (no paying buyer exists) > H3 ≈ H4 > H1 — Scale "borrows"
+UR metrology rather than building = heaviest evidence; VERDICT DOWNGRADES
+OUR OWN LANE-1 from revenue line to instrument-backed OPTION with 3
+exogenous exercise triggers (first named external data deal / regulatory
+forcing e.g. PaXini prospectus / performative-certification blowup). 4
+revision verdicts + H4 "performative certification squatting" risk written
+into data-engine-v2; P8 cash discipline into strategy; 2 fixed actions into
+LOOP.md (check shareholder overlap before any customer announcement; tag
+hours-numbers with funding dependence). Verify: ~25 evidence rows re-sourced,
+12 fixed (它石 order misattribution, 星海图 single-sources, quote reuse).
+History-analogy adjudication: AV-sequel main frame, labeling+shanzhai
+sub-layers, gold-rush rhetoric only ("everyone sells shovels = shovel-selling
+is the new gold rush"). Readers 63 EN / 62 zh; portal updated.
