@@ -30,6 +30,7 @@ disputes are catalogued in [Open problems](open-problems.md).
 | [Physical AI Tech Tree](tech-tree.md) | Layered dependency map (hardware → perception → control → learning → foundation models → deployment) with per-branch bottlenecks |
 | [On-Device Embodied Brain](on-device-brain.md) | Deep technical+strategic report on building a good edge robot brain: dual/tri-system arch (S2 5-10Hz / S1 100-200Hz / S0 500Hz-1kHz), cloud-edge split, compute/model-opt, SoC landscape, power, software, edge models, eval rubric, reference architecture + module-maker read |
 | [Visions & Theses](visions.md) | How the leaders frame Physical AI — dated primary quotes from Huang, Musk, Hassabis, Li, LeCun, Son, Wang Xingxing + the skeptic counterweight; convergence/divergence matrix |
+| [Physical AI: Portrait & Essential Patterns](physical-ai-essence.md) | The field-level capstone: the complete portrait (stack pyramid, load-bearing numbers, three running plots) + 8 essential X-patterns beneath the business layer (skill-capitalization engine, embodiment-tax contact gradient, three atomic irreversibilities, clock-layering law, dual-clock phase lag, metrology-lemon unification, factor-endowment mirror, pricing-power topology) — X1 skill-capitalization adjudicated deepest with an explicit generation chain down to P1-P8 and an honest dethrone clause |
 
 ## Technology
 

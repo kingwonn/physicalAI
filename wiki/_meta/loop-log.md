@@ -742,3 +742,44 @@ hours-numbers with funding dependence). Verify: ~25 evidence rows re-sourced,
 History-analogy adjudication: AV-sequel main frame, labeling+shanzhai
 sub-layers, gold-rush rhetoric only ("everyone sells shovels = shovel-selling
 is the new gold rush"). Readers 63 EN / 62 zh; portal updated.
+
+## physical-ai-essence — 2026-07-12 (4-lens essence mining; 7 agents ~0.98M tokens)
+NEW capstone page physical-ai-essence.md (verified, bilingual): the complete
+portrait of the field + the essential patterns BENEATH the business layer.
+Part I portrait: stack pyramid silicon->deployment with per-layer players/
+numbers/chokepoints, load-bearing snapshot (as-of dated), three running plots.
+Part II: 8 X-patterns, each evidence/counterexample/dated-falsifiable:
+X1 skill-capitalization engine (skills become capital: train once, $0 copy,
+fleet amortization — the ONE new economic property vs all prior automation;
+the industry's equity wars are fights over the amortization curve),
+X2 embodiment-tax contact gradient (info cheapest on human bodies, action
+must execute on robot bodies; tax heaviest at contact — locomotion tax-free
+via sim RL, manipulation pays full; the bitter lesson meets its first
+non-Moore cost term: wages), X3 three atomic irreversibilities (serial
+wall-clock floor / irreversible errors / 1kHz safety loop bans cloud —
+graded physical vs engineering), X4 clock-layering law (S2/S1/S0 shape
+emerges everywhere incl. LeCun because three incommensurable clocks are
+physically pinned; route-wars end in layer-annexation not victory),
+X5 dual-clock phase lag (capability on research time, deployment on
+industrial time; 2-4yr lag; compression only upstream; US dark-clearing via
+private marks, China open-clearing via public markets+state absorption —
+AgiBot rental ¥15k->¥4-5k/day = first cleared submarket), X6 metrology-lemon
+unification (bottlenecks become markets only with units+third-party rulers;
+compute standardized->NVIDIA captured, data/reliability lemon; capital
+currently PRICES unverifiability at a premium — $39B undisclosed vs $5.9B
+audited; leader-prediction inflation same law), X7 factor-endowment mirror
+(CN monetizes supply chain+state demand, US monetizes capital+model talent —
+one pattern, two halves; interface vs blockade can't both live), X8
+pricing-power topology pre-dominant-design (physical chokepoints / ecosystem
+lock-in / integrated cost leadership; everything else deflates to Shenzhen
+floor; every money-making entity in corpus is integrated). Part 2.3: X1
+adjudicated deepest by parsimony with EXPLICIT generation chain down to
+X2-X8 and P1-P8, chain strength honestly graded (X2/X5/X6 tight, X3/X4
+"made binding not generated", X8 loosest w/ corpus-外 premise marked), plus
+a dethrone clause: if no cross-embodiment OTA skill push w/ third-party
+verification by 2027-12, X2 takes the throne, TAM collapses to traditional
+automation scale — and that world is BETTER for our instrument business
+(pressure-test, not flattery). Verify: ~40 evidence rows re-sourced, 10
+fixes (π0 span 18mo, BMW claim de-upgraded, GM-100 reattributed, phantom
+labels removed, 绿的 discount 五至七折, Unitree valuation unified). Field-
+level watchlist deduped vs existing pages. Readers 64 EN / 63 zh.
