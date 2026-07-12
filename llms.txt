@@ -30,6 +30,13 @@
 - [First-Principles Data Engine (Clean-Room)](wiki/data-engine-first-principles.md): vendor-free re-derivation from 12 axioms — Cicada/Mantis/Anvil product family, gate-defined generations, chirp architecture eliminated by single-clock island, silicon optioned; 18-row delta attribution vs old roadmap + 12-item invariant core (verified)
 - [Case Study: MiFeng/Maniformer — Full Dossier](wiki/case-mifeng.md): definitive dossier — all interviews/launch/site/marketplace/patents/hiring + claim-propagation map + critical synthesis + axiom collision + programmatic sentinels (verified)
 - [Our Direction & Maniformer-Aware 3-Gen Plan v2](wiki/data-engine-v2.md): the response — no-go list, three structural voids graded by defensibility, "度量衡" positioning, 10 targeted principles (disclosure-as-weapon, multi-body cartridges), 3-gen deltas on the clean-room base + G-J gate, head-to-head + counter-plan (verified)
+- [Dossier: GenRobot 简智新创](wiki/case-genrobot.md): closest pure-play peer, DAS lineup, most open-source of the Chinese pack (verified)
+- [Dossier: 鹿明 Lumos Robotics](wiki/case-luming.md): Shenzhen; ex-Dreame founder; robots+collectors+data-mart; Mitsubishi-led ~¥1B (verified)
+- [Dossier: 它石智航 TARS](wiki/case-morphic.md): brand corrected from our prior "Morphic" error; TARS wearables + WIYH; industrial GTM (verified)
+- [Dossier: 灵初智能 PsiBot](wiki/case-lingchu.md): data-glove bet; ¥2.0B angel+Pre-A; distinct from BeingBeyond (verified)
+- [Dossier: 京东具身数据业务](wiki/case-jd-data.md): Joy Future Academy + robotdata.jdcloud.com; internalize-vs-sell unresolved (verified)
+- [Dossier: Generalist AI](wiki/case-generalist.md): US benchmark; $400M Radical-led, ~$2B valuation; devices self-used, sells capability (verified)
+- [Category Scoreboard](wiki/data-companies-compare.md): 7 companies on one table; claims-vs-disclosure ranking; category information voids; metrology lane vacant category-wide (verified)
 - [Data-Scaling Channel & Optimal Strategy](wiki/data-scaling-strategy.md): 3-lens red-team of our roadmap (4 fatal fixes), bull/bear/referee panel on the LLM-style scaling channel (P(full@2030)≈0.30; channel = economics inequality), 3-world ownership map, 7-principle strategy + 3-step ODM translation
 - [Evaluation & Benchmarks](wiki/evaluation.md): sim-suite saturation, real-robot arenas, embodied-reasoning exams, industry metrics, benchmark credibility
 

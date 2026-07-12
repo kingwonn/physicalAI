@@ -618,3 +618,38 @@ auditable cert field; Gen-3 unchanged options + "Maniformer wins China
 volume" pivot-weight branch. They-close-the-gap scenario: response window
 <=4 weeks (weekly reports + cross-vendor comparative), fallback to neutral-
 auditor position. Readers 50 EN / 49 zh; portal updated.
+
+## company dossiers x6 + category scoreboard — 2026-07-12 (pipeline workflow; 26 agents ~1.95M tokens, 606 tool uses)
+SIX new dossier pages (all verified, bilingual, novice-friendly per owner
+request: 说人话 openers, jargon glossed on first use, explicit unknowns
+sections with where-we-searched) + capstone comparison page:
+- case-genrobot.md: 简智新创(北京) resolved fully — CEO 陈建兴 (矿大/
+  RoboMaster/小鹏→Momenta), reg. 2025-05-29; DAS 5-device lineup; the most
+  open-source of the Chinese pack (real GitHub genrobot-ai + HF genrobot2025).
+- case-luming.md: 鹿明 = Lumos Robotics 深圳 (founder 喻超, Tsinghua +
+  ex-Dreame humanoid lead, reg. 2024-09-06); robots+collectors+data-mart
+  triple line; ~¥1B cumulative, A1/A2 led by Mitsubishi Electric.
+- case-morphic.md: 它石智航 brand = TARS; our prior "Morphic" label was OUR
+  OWN ERROR (zero external sources) — corrected across the wiki (device pages
+  fixed; loop-log history left intact); founders 陈亦伦/李震宇/丁文超/陈同庆;
+  GitHub org tars-robotics real; industrial-robot GTM, collection self-used.
+- case-lingchu.md: 灵初智能 = PsiBot (CEO Viktor Wang 王启斌, chief scientist
+  杨耀东; distinct from BeingBeyond/卢宗青); ¥2.0B angel+Pre-A (2026-03,
+  华兴-confirmed); data-glove/dexterous-first bet.
+- case-jd-data.md: JD = 探索研究院 Joy Future Academy (何晓冬) + LIVE data-
+  trading platform robotdata.jdcloud.com; 2 arXiv papers (JoyAI-RA 62
+  authors, EgoLive); HF org exists with ZERO public datasets;
+  internalize-vs-sell unresolved — recorded as the central unknown.
+- case-generalist.md: Generalist AI, Inc. — Pete Florence/Andy Zeng/Andy
+  Barry; $400M led by Radical Ventures 2026-06-04, >$500M total, ~$2B
+  valuation; devices strictly self-used: sells capability, not data/hardware.
+- data-companies-compare.md (capstone, facts only from the 7 dossiers): one
+  table across vision/products/tech-disclosure grades/GTM/funding/biggest
+  unknown; 2x2 grid placement; claims-density vs disclosure-density ranking;
+  CATEGORY-LEVEL INFORMATION VOIDS (nobody publishes error distributions /
+  shutter types / measured sync / real labor rates) — our metrology lane
+  confirmed vacant across all 7; three-lane threat/customer mapping checked
+  against data-engine-v2 positioning, no contradictions found.
+Readers gained a 数采公司档案 group: 57 EN / 56 zh. China-ecosystem rows got
+dossier cross-links. Portal updated. NOTE: run took ~73 min wall, no session-
+limit incident this time.
