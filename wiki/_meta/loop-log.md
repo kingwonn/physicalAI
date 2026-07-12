@@ -885,3 +885,29 @@ quote is 1990 Elephants not 1986, Grey Walter downgraded to paraphrase,
 Schaal/Sutskever exact wording, world-models priority dispute flagged,
 Pinker-not-Moravec flagged) + Shakey open-loop and pendulum historiography
 fixes. Readers 65 EN / 64 zh; portal updated.
+
+## quectel-pitch v2 — 2026-07-12 (2-agent corpus-only draft+verify; ~0.27M tokens)
+docs/quectel-pitch.html SUPERSEDED IN PLACE (same URL) with v2, folding the
+entire data-engine research arc into the boss pitch. Content drafted corpus-
+only from canonical pages and NUMBER-BY-NUMBER verified (9 fixes: SG885G 48
+TOPS vs SP895BD-AP 77 TOPS misattribution caught, ¥4.11亿 fund-raise scope
+precision, 中国占>80% de-ranged, X1 hook softened to bet-framing per essence
+page, P4 "审计级" de-upgraded to prediction, exact X1 falsifier wording).
+Nine screens: S0 amortization-curve hook + 70-year-war-settlement line + why
+a module maker reads this (every byte of the curve passes through sensors/
+clocks/modules); S1 expansion-not-entry (kept, upgraded: "卖铲人" is now
+verbatim-collided with 觅蜂/灵初 scripts — repositioned as 器械商+计量期权);
+S2 three pools + THE HONEST P≈0.30 and why low probability supports the
+water-seller (channel = economics inequality in one boss line); S3 three
+iron laws from 12 dossiers + the metrology void + Maniformer 75% equity =
+our customer list; S4 one-line positioning + 3 lanes with honest
+defensibility grades and inverted resource allocation; S5 three-step
+minimal-regret table ($3-8M module IP / $2-5M certified instruments
+蝉螳砧 / $25M+ corpus OPTION default-unfunded) + gate discipline in board
+language; S6 honest bear case incl. our own neutrality Achilles heel
+(entity split = precondition); S7 sentinel calendar the boss can audit us
+against (月1台架 through 2027-12 X1 verdict ticket); S8 three-item Ask
+(approve $5-13M, write gates into governance, metrology micro-team + entity-
+split legal pre-study). Every screen has a speaker hook line. Verified
+content source kept at pitch/quectel-pitch-v2-content.md. Portal card
+refreshed. Static HTML (no JS), preview-verified all blocks render.
