@@ -911,3 +911,29 @@ against (月1台架 through 2027-12 X1 verdict ticket); S8 three-item Ask
 split legal pre-study). Every screen has a speaker hook line. Verified
 content source kept at pitch/quectel-pitch-v2-content.md. Portal card
 refreshed. Static HTML (no JS), preview-verified all blocks render.
+
+## news sweep — 2026-07-12 (freshness loop resumed; 4 agents ~0.37M tokens)
+Quiet week, 4 verified signals + sentinel harvest (digest archived at
+_meta/news-2026-07-12.md). NEWS: Agility SPAC detail wave (Churchill XI,
+$2.5B pre-money, AGLT, >$620M gross w/ Foxconn PIPE; CEO Johnson: home
+robots "10-plus years") -> investment.md + state-of-the-art.md rows
+superseded (EN+zh); Mistral Robostral Navigate (8B single-RGB nav, 76.6%
+R2R-CE — first robotics model from a non-US/China frontier lab, primary-
+verified); Unitree IPO registration EFFECTIVE (currStatus 4->5, 2026-07-06
+SSE primary; pricing still pending, window week of 07-13) -> queue updated;
+NVIDIA RoboLab post endorses Clopper-Pearson CIs for policy evals — the
+strongest institutional backing yet for the metrology critique (adjacent to
+our lane-1, sentinel not tripped but warming). SENTINELS: Maniformer
+/api/data THIRD consecutive zero-growth check (467 @07-07/08/12) + id=341
+defect unfixed 5+ days (axiom-9 violation persisting) -> case-mifeng +
+compare pages annotated; CAICT performative-certification sentinel FIRED
+(一机一码 lifecycle platform 28k+ robots coded + YD/T 6770-2026 benchmark
+standard = institutional apparatus WITHOUT safety-performance gating —
+exactly the watched pattern; response plan on file); PaXini IPO not yet
+filed; EgoLive still application-gated (~100 institutions, zero free HF).
+CROSS-CHECK KILLS: phantom "new" Lightwheel round (duplicate of 06-23
+add-on), Generalist $400M already recorded, EngineAI HK filing already in
+landscape-china, UBTech U1 13,361 already dual-sourced. Queue resolutions:
+Hyundai ₩42T decoded (own Ulsan hub vs ₩102T combined package — no page
+conflation existed), X Square >$2.8B second-sourced (Caixin). Readers
+rebuilt.

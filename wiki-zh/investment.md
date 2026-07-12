@@ -44,7 +44,7 @@ source: ../wiki/investment.md
 | Physical Intelligence | (洽谈中) | 约 10 亿美元 | 110 亿美元以上 | 2026-03 | Founders Fund 拟参与,Lightspeed 在洽谈中(Bloomberg + TechCrunch);**截至 2026-07 仍在洽谈中——尚未宣布完成** |
 | Apptronik | A 轮(含延展轮的总额) | 超过 9.35 亿美元 | 约 50–53 亿美元 | 2026-02 | Google、Mercedes-Benz、B Capital、PEAK6、Qatar Investment Authority(2025 年最初 A 轮 4.15 亿美元,2026-02 延展轮 5.2 亿美元) |
 | 1X Technologies | (据报道的融资) | 最高 10 亿美元 | 目标约 100 亿美元 | 2025-09(据报道) | 2025-09 有报道称正在洽谈;**截至 2026-07 尚未宣布完成**(未证实)。此前:2024-01 完成 B 轮 1 亿美元,估值 8.2 亿美元 |
-| Agility Robotics | C 轮 | 约 4 亿美元 | 约 21 亿美元 | 2025 | WP Global Partners;SoftBank、Amazon Industrial Innovation Fund、DCVC、Playground |
+| Agility Robotics | C 轮 → **SPAC(2026-06-24 官宣)** | C 轮约 4 亿美元;SPAC 总额 >6.2 亿美元(4.2 亿信托 + 富士康领投 ~2 亿 PIPE) | 约 21 亿美元(C 轮)→ **25 亿美元 pre-money(与 Churchill Capital XI 合并,代码 AGLT,预计 2026 年内完成)** | 2025 → 2026 | WP Global Partners;SoftBank、Amazon、DCVC、Playground;富士康(PIPE 领投) |
 | Neura Robotics(德国) | C 轮 | 最高 14 亿美元 | 约 70 亿美元(据报道) | 2026-06 | Tether、Nvidia、Amazon、Qualcomm、Bosch、Schaeffler、欧洲投资银行(欧洲最大的机器人轮次;于 2026-06-10 宣布)。**14 亿美元全额需以未披露的业绩里程碑为条件**(CNBC + 公司公告)——这是一个上限,而非已到账的现金 |
 | Wayve(英国) | D 轮(已完成) | 12 亿美元(另加 Uber 里程碑式出资 3 亿美元,合计已锁定 15 亿美元) | 86 亿美元 | 2026-02-25 | Eclipse、Balderton、SoftBank Vision Fund 2 联合领投;Microsoft、Nvidia、Uber;Mercedes-Benz、Nissan、Stellantis;OTPP、Baillie Gifford——自动驾驶/具身智能(embodied AI) |
 | World Labs(美国) | 成长轮(已完成) | 10 亿美元 | 投后约 54 亿美元(据报道;公司未确认——Bloomberg 在洽谈阶段曾报道约 50 亿美元) | 2026-02-18 | Autodesk(2 亿美元领投);AMD、Nvidia、Emerson Collective、Fidelity、Sea。李飞飞创立的空间智能/世界模型实验室;累计融资 12.3 亿美元 |

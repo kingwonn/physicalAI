@@ -334,7 +334,7 @@ hr{border:none;border-top:1px solid var(--line);margin:22px 0}
 <tr><td>Tesla</td><td>Optimus V3</td><td>Production start at Fremont ~late July/Aug 2026 on converted Model S/X line, "very slow" initial volume; first Optimus line delivered to Fremont with installation begun (per Tesla VP Lars Moravy); Musk posted a photo walking the line 2026-07-01; Gen-3 hands: ~25 actuators per forearm/hand side (22 DoF per hand, tendon-driven, 50 actuators across both hands); high volume targeted 2027; consumer sales targeted "end of 2027" (Musk, Davos, 2026-01)</td></tr>
 <tr><td>Boston Dynamics</td><td>Electric Atlas</td><td>Production version unveiled CES 2026-01-05; 56 DoF, 2.3 m reach, 50 kg certified lift; 2026 fleet allocations fully committed (Hyundai RMAC, Google DeepMind partnership); Hyundai building a 30,000-robots/yr US factory; reported 25,000-unit internal commitment (unverified)</td></tr>
 <tr><td>1X</td><td>NEO</td><td>$20,000 (or $499/mo) consumer home humanoid; ~10,000 pre-orders in first 5 days (Oct 2025, company-reported); full-scale production at Hayward, CA since 2026-04-30 (10k/yr capacity claimed); first home deliveries promised before end of 2026</td></tr>
-<tr><td>Agility Robotics</td><td>Digit</td><td>GXO logistics: 100,000+ totes moved at Flowery Branch (as of late 2025); 7-unit RaaS contract for Toyota's RAV4 plant (Woodstock, Ontario; signed 2026-02) with rollout during 2026</td></tr>
+<tr><td>Agility Robotics</td><td>Digit</td><td>GXO logistics: 100,000+ totes moved at Flowery Branch (as of late 2025); 7-unit RaaS contract for Toyota's RAV4 plant (Woodstock, Ontario; signed 2026-02) with rollout during 2026; <strong>going public via SPAC w/ Churchill Capital XI ($2.5B pre-money, AGLT, &gt;$620M gross incl. Foxconn-led PIPE; announced 2026-06-24)</strong> — CEO Johnson on home robots: "10-plus years"</td></tr>
 <tr><td>Unitree</td><td>G1 / R1 / H2</td><td>&gt;5,500 humanoids sold and delivered in 2025 per its IPO prospectus (bipedal only, wheeled models excluded; Omdia/IDC credit it with 4,200 and rank it #2 — see shipment reconciliation below); G1 at ~$16k (listed on Amazon at $17,990); R1 at ~$5,900; Shanghai STAR IPO cleared exchange listing review 2026-06-01 and won CSRC registration approval 2026-07-02 (reported 2026-07-03; ~¥4.2B / ~$618M raise); 2025 revenue ¥1.70B; GAAP net profit ~¥288M, 扣非 (excl. non-recurring) &gt;¥600M (SCMP: "adjusted" ¥591M) — see <a href="#company-unitree">Company: Unitree</a></td></tr>
 <tr><td>AgiBot (Zhiyuan)</td><td>Expedition A3 etc.</td><td>10,000th general-purpose robot rolled out late March 2026; 5,168 humanoids shipped in 2025 per Omdia (5,200 per IDC), which both rank it #1 globally; pursuing backdoor listing</td></tr>
 <tr><td>UBTech</td><td>Walker S2</td><td>Claims 1,000+ industrial humanoids deployed in auto/electronics/logistics plants (company-reported, unverified); launched UWORLD U1 consumer companion line 2026-06-30, from ~RMB 119,800, 13k+ orders claimed (company-reported), deliveries from ~2026-09</td></tr>
@@ -4875,7 +4875,7 @@ hr{border:none;border-top:1px solid var(--line);margin:22px 0}
 </ul></article>
 <article id="case-mifeng" class="page"><div class="pagehead"><h1>案例研究:觅蜂智能 vs 我们的数据引擎设计 (Case Study: MiFeng vs Our Data-Engine Design)</h1><p class="pmeta"><span class="ok">✓ 已核查</span><span>更新 2026-07-08</span><span class="slugtag">case-mifeng</span></p></div><p>&lt;!-- 对抗性核验 2026-07-08:API 全部在线复现(total/id=341 500/news);新引语逐字回源(甲子光年/新浪/东财×2/腾讯/雷科技/钛媒体/中证网/澎湃/官网简历/官网bundle);已纠 5 处实质错误(百亿→一亿、36氪无29k、智东西定价引语无源、灵初付费试点降级、团体标准非国标)并降级 4 处单源宣称,详见各处标注。 --&gt;</p>
 <blockquote>
-<p><strong>身份解析:</strong>"觅蜂智能"确认为<strong>上海觅蜂具身智能科技有限公司</strong>(觅蜂科技,英文官方品牌 <strong>Maniformer</strong>——官网 maniformer.ai + 发布会通稿"觅蜂科技(Maniformer)"多源一致,此前疑似的 "MiFeng Technology" 说法判弃;2026-02-03 注册,智元 AgiBot 持股 75% 的分拆子公司,CEO 姚卯青)。它出货三件套:MEgo View(头戴被动采集)+ MEgo Gripper(480g UMI 类手持爪,Day-1 带三维触觉阵列)+ MEgo Engine(数据治理管线),外加<strong>两个</strong>市场:467 数据集的具身数据交易市场(官网 API 直查确认,2026-07-07;07-08 复测无增长)+ 一个此前未记录的仿真资产市场。2026 目标千万小时年产能。<strong>第一性对撞一行裁决:这是我们<a href="#data-engine-first-principles">清洁室设计</a>"蝉+螳+脊柱"的最近似真实世界实例——12 条公理里约 6 条被其独立收敛验证,但计量公理带(4/9/11)整体违反或未披露——且本轮深挖把公理 9 的违反从推断升级为</strong>实证<strong>(数据市场 API 存在一条可复现的 NULL 记录 500 错误),把 1mm 宣称从"全黑盒"更新为"机制具名(红外主动光+VSLAM,unverified)、零验证、零专利";商业层它把我们"先卖秤再开粮仓"的顺序整个倒过来走,靠母公司锚定买家解掉了我们红队判为 fatal 的买家侧空白。本轮全录还揭示:其 PR 语料≈1 份通稿 + 1 轮访谈扇出 ~25 家媒体;姚对不同受众给出不同置信度的表述;竞争集已从"三家无本体采集对比"扩大到京东同日发布 60 万人计划、灵初智能以几乎逐字相同的"卖铲人"定位且部署在先(付费属性 (unverified))。</strong></p>
+<p><strong>身份解析:</strong>"觅蜂智能"确认为<strong>上海觅蜂具身智能科技有限公司</strong>(觅蜂科技,英文官方品牌 <strong>Maniformer</strong>——官网 maniformer.ai + 发布会通稿"觅蜂科技(Maniformer)"多源一致,此前疑似的 "MiFeng Technology" 说法判弃;2026-02-03 注册,智元 AgiBot 持股 75% 的分拆子公司,CEO 姚卯青)。它出货三件套:MEgo View(头戴被动采集)+ MEgo Gripper(480g UMI 类手持爪,Day-1 带三维触觉阵列)+ MEgo Engine(数据治理管线),外加<strong>两个</strong>市场:467 数据集的具身数据交易市场(官网 API 直查确认,2026-07-07;07-08、07-12 两次复测均零增长(连续第三次))+ 一个此前未记录的仿真资产市场。2026 目标千万小时年产能。<strong>第一性对撞一行裁决:这是我们<a href="#data-engine-first-principles">清洁室设计</a>"蝉+螳+脊柱"的最近似真实世界实例——12 条公理里约 6 条被其独立收敛验证,但计量公理带(4/9/11)整体违反或未披露——且本轮深挖把公理 9 的违反从推断升级为</strong>实证<strong>(数据市场 API 存在一条可复现的 NULL 记录 500 错误),把 1mm 宣称从"全黑盒"更新为"机制具名(红外主动光+VSLAM,unverified)、零验证、零专利";商业层它把我们"先卖秤再开粮仓"的顺序整个倒过来走,靠母公司锚定买家解掉了我们红队判为 fatal 的买家侧空白。本轮全录还揭示:其 PR 语料≈1 份通稿 + 1 轮访谈扇出 ~25 家媒体;姚对不同受众给出不同置信度的表述;竞争集已从"三家无本体采集对比"扩大到京东同日发布 60 万人计划、灵初智能以几乎逐字相同的"卖铲人"定位且部署在先(付费属性 (unverified))。</strong></p>
 </blockquote>
 <h2>1. 公司档案 (company profile)</h2>
 <div class="tw"><table><thead><tr><th>项</th><th>事实</th><th>出处质量</th></tr></thead><tbody>
@@ -5035,6 +5035,7 @@ hr{border:none;border-top:1px solid var(--line);margin:22px 0}
 <tr><td><strong>▲id=341 API 缺陷是否被修复</strong></td><td>修复速度=其数据运营纪律的直接观测值</td><td>随 API 轮询</td></tr>
 <tr><td><strong>▲京东全链数据基建落地度</strong>(JoyEgoCam 出货/交易平台上线)</td><td>供给冲击情景主变量;同时是我们器械层潜在客户</td><td>2026-H2</td></tr>
 </tbody></table></div>
+<p><strong>哨点更新 2026-07-12:</strong> 市场 API 第三次轮询 total=467(07-07/07-08/07-12 三次一致,零增长);id=341 NULL→500 缺陷字节级复现、5 天+未修复(公理 9 违反持续);MEgo 社区拆机/评测仍为零。</p>
 <h2>Sources</h2>
 <p>站内:<a href="#data-engine-first-principles">data-engine-first-principles</a> / <a href="#data-engine-roadmap">data-engine-roadmap</a> / <a href="#data-scaling-strategy">data-scaling-strategy</a> / <a href="#data-collection-devices">data-collection-devices</a> / <a href="#company-agibot">company-agibot</a> / <a href="#data-foundry">data-foundry</a> / <a href="#lecun-worldmodels-rethink">lecun-worldmodels-rethink</a>(失败数据-世界模型线)。</p>
 <p>外部(按质量分档;v1 已核条目维持,▲为本轮新增):</p>
@@ -7146,7 +7147,7 @@ hr{border:none;border-top:1px solid var(--line);margin:22px 0}
 <tr><td><strong>2026-07-31</strong></td><td>鹿明 Project EDGE 100 台 NIX 免费申领截止(<a href="#case-luming">luming</a>)</td><td>观察领取机构名单——学术生态被锁定的速度,校准我们车道 3 的学术打法</td></tr>
 <tr><td><strong>2026-08 前</strong></td><td>灵初的智元股东工商核验;GenRobot das-datakit 5 个 issue 正文精读(<a href="#case-lingchu">lingchu</a>/<a href="#case-genrobot">genrobot</a>)</td><td>前者坐实 → 车道 2 地图重画;后者是最便宜的真实集成痛点信号</td></tr>
 <tr><td><strong>2026-08-19~23</strong></td><td>WRC 北京,潜在新品/数据发布窗(<a href="#case-mifeng">mifeng</a>)</td><td>新闻扫描,同 WAIC 处理</td></tr>
-<tr><td><strong>月度</strong></td><td>觅蜂市场 API 轮询(基线 467,零增长中);HF JoyFutureAcademy 是否上架 EgoLive;灵初 SynData 下载曲线;Generalist 招聘页销售岗(<a href="#case-mifeng">mifeng</a>/<a href="#case-jd-data">jd-data</a>/<a href="#case-lingchu">lingchu</a>/<a href="#case-generalist">generalist</a>)</td><td>觅蜂目录跳增 → 重估 Gen-3 情景分支;EgoLive 免费化 → 预训练档价格锚下修;Generalist 出销售岗 → 美国商业化提速信号</td></tr>
+<tr><td><strong>月度</strong></td><td>觅蜂市场 API 轮询(基线 467;07-12 第三次复测仍 467,零增长);HF JoyFutureAcademy 是否上架 EgoLive;灵初 SynData 下载曲线;Generalist 招聘页销售岗(<a href="#case-mifeng">mifeng</a>/<a href="#case-jd-data">jd-data</a>/<a href="#case-lingchu">lingchu</a>/<a href="#case-generalist">generalist</a>)</td><td>觅蜂目录跳增 → 重估 Gen-3 情景分支;EgoLive 免费化 → 预训练档价格锚下修;Generalist 出销售岗 → 美国商业化提速信号</td></tr>
 <tr><td><strong>每次迭代</strong></td><td><strong>任何一家发布误差分布/第三方评测/校准白皮书</strong>(七页共同的头号哨)</td><td>车道 1 空腔被占的直接信号,v2 §5.1 预案:报告周更化+跨厂商横评抢发,响应窗 ≤4 周</td></tr>
 <tr><td><strong>每次迭代</strong></td><td>具名付费数据客户首次出现(七页共同哨)</td><td>全行业"真付费"问题首次有答案 → 定价锚与收入模型全面重估</td></tr>
 <tr><td><strong>2026-Q3</strong></td><td>它石苏州 15 台续约/扩台(<a href="#case-morphic">morphic</a>)</td><td>扩台=真机内化数据引擎路线坐实,"卖铲给二线"错位定位维持</td></tr>
@@ -8327,7 +8328,7 @@ hr{border:none;border-top:1px solid var(--line);margin:22px 0}
 <tr><td>Physical Intelligence</td><td>(in talks)</td><td>~$1B</td><td>$11B+</td><td>2026-03</td><td>Founders Fund set to participate, Lightspeed in talks (Bloomberg + TechCrunch); <strong>still in talks — no close announced as of 2026-07</strong></td></tr>
 <tr><td>Apptronik</td><td>Series A (total, incl. extensions)</td><td>&gt;$935M</td><td>~$5–5.3B</td><td>2026-02</td><td>Google, Mercedes-Benz, B Capital, PEAK6, Qatar Investment Authority ($415M initial Series A 2025, $520M extension 2026-02)</td></tr>
 <tr><td>1X Technologies</td><td>(reported raise)</td><td>up to $1B</td><td>~$10B target</td><td>2025-09 (reported)</td><td>Talks reported 2025-09; <strong>no close announced as of 2026-07</strong> (unverified). Prior: $100M Series B at $820M, 2024-01</td></tr>
-<tr><td>Agility Robotics</td><td>Series C</td><td>~$400M</td><td>~$2.1B</td><td>2025</td><td>WP Global Partners; SoftBank, Amazon Industrial Innovation Fund, DCVC, Playground</td></tr>
+<tr><td>Agility Robotics</td><td>Series C → <strong>SPAC (announced 2026-06-24)</strong></td><td>Series C ~$400M; SPAC &gt;$620M gross ($420M trust + ~$200M Foxconn-led PIPE)</td><td>~$2.1B (Series C) → <strong>$2.5B pre-money (SPAC w/ Churchill Capital XI, ticker AGLT, close expected 2026)</strong></td><td>2025 → 2026</td><td>WP Global Partners; SoftBank, Amazon Industrial Innovation Fund, DCVC, Playground; Foxconn (PIPE lead)</td></tr>
 <tr><td>Neura Robotics (DE)</td><td>Series C</td><td>up to $1.4B</td><td>~$7B (reported)</td><td>2026-06</td><td>Tether, Nvidia, Amazon, Qualcomm, Bosch, Schaeffler, European Investment Bank (largest European robotics round; announced 2026-06-10). <strong>Full $1.4B is contingent on undisclosed performance milestones</strong> (CNBC + company release) — a ceiling, not cash banked</td></tr>
 <tr><td>Wayve (UK)</td><td>Series D (closed)</td><td>$1.2B (+$300M milestone-based Uber capital = $1.5B total secured)</td><td>$8.6B</td><td>2026-02-25</td><td>Eclipse, Balderton, SoftBank Vision Fund 2 co-leads; Microsoft, Nvidia, Uber; Mercedes-Benz, Nissan, Stellantis; OTPP, Baillie Gifford — autonomous driving / embodied AI</td></tr>
 <tr><td>World Labs (US)</td><td>Growth round (closed)</td><td>$1B</td><td>~$5.4B post (reported; company did not confirm — Bloomberg had reported ~$5B during talks)</td><td>2026-02-18</td><td>Autodesk ($200M lead); AMD, Nvidia, Emerson Collective, Fidelity, Sea. Fei-Fei Li's spatial-intelligence/world-model lab; total raised $1.23B</td></tr>
@@ -11902,7 +11903,65 @@ hr{border:none;border-top:1px solid var(--line);margin:22px 0}
 <p>engineering, threads 5-7 are where practice (RT-2's internet-scale bet)</p>
 <p>collides with the hypothesis debate — ties back to physical-ai-essence.md's</p>
 <p>X2 embodiment-tax pattern. Full sourcing-confidence table, 26 sources.</p>
-<p>HOME.md + llms.txt updated (65 pages total, count corrected from stale 40).</p></article>
+<p>HOME.md + llms.txt updated (65 pages total, count corrected from stale 40).</p>
+<h2>intellectual-history — 2026-07-12 (3-lineage collection + synthesis; 6 agents ~0.70M tokens, 248 tool uses)</h2>
+<p>NEW page intellectual-history.md (verified, bilingual): the 70-year academic</p>
+<p>war behind Physical AI, answering the owner's "从学术史里了解本质". Three</p>
+<p>lineages with PRIMARY verbatim quotes (cybernetics Wiener 1943/48, Ashby,</p>
+<p>Grey Walter tortoises -&gt; Dartmouth/PSSH Newell-Simon 1976/Shakey-STRIPS -&gt;</p>
+<p>critics Dreyfus/Searle/Harnad/Lighthill + Moravec 1988; embodiment school</p>
+<p>Brooks 1986/1990/1991, Gibson affordances, Varela enactivism, Pfeifer-Bongard,</p>
+<p>McGeer passive walker, Smith-Gasser; learning-control confluence Kalman/</p>
+<p>Raibert-&gt;BD, Sutton TD + Bitter Lesson 2019 + Brooks Better Lesson, Schaal</p>
+<p>1999 imitation question, Levine end-to-end, Tobin DR, RT-1/2 VLA coinage,</p>
+<p>world models Schmidhuber 1990/Ha 2018/LeCun JEPA). Embodiment PENDULUM with</p>
+<p>historian footnotes (schools persist, center-of-gravity shifts; statistical</p>
+<p>turn began 1990s not 2012). Five debates with receipts. X-PATTERN ANCESTOR</p>
+<p>TABLE: X2 = Moravec 1988 MONETIZED (paradox -&gt; accounting identity: sensor-</p>
+<p>imotor info exists cheaply in human bodies, must execute expensively in robot</p>
+<p>bodies, the spread is the tax — first time the paradox is bankable/hedgeable/</p>
+<p>falsifiable), X4 = subsumption vindicated WEARING THE HAT IT OPPOSED (layer</p>
+<p>shape won, anti-representation dogma lost — every top layer is a big world</p>
+<p>model), X1 = Schaal 1999's question in economic form, X6 ancestor = PSSH</p>
+<p>empirical-inquiry + Lighthill verifiability crisis. VERDICT: weak embodied</p>
+<p>cognition winning (locomotion solved bodilessly = morphological computation</p>
+<p>vindicated; five VLA stacks all layered-reactive), disembodied camp half-</p>
+<p>winning (RT-2 web-knowledge transfer real; Sutskever unfalsified), strong</p>
+<p>embodied cognition suspended (constitutive claims designed unfalsifiable),</p>
+<p>symbol grounding REBORN AS ECONOMICS (Harnad's "how do symbols ground" -&gt;</p>
+<p>"what wage does grounding cost" = X2). Dated dethrone clauses 2027-12/</p>
+<p>2028-12/2029-12 shared with essence page. Verify: 8 famous misquotations</p>
+<p>corrected against primary texts (PSSH restored "general", Ashby destroy-vs-</p>
+<p>absorb w/ Beer provenance, Searle 1990 axiom not 1980 BBS, Brooks best-model</p>
+<p>quote is 1990 Elephants not 1986, Grey Walter downgraded to paraphrase,</p>
+<p>Schaal/Sutskever exact wording, world-models priority dispute flagged,</p>
+<p>Pinker-not-Moravec flagged) + Shakey open-loop and pendulum historiography</p>
+<p>fixes. Readers 65 EN / 64 zh; portal updated.</p>
+<h2>quectel-pitch v2 — 2026-07-12 (2-agent corpus-only draft+verify; ~0.27M tokens)</h2>
+<p>docs/quectel-pitch.html SUPERSEDED IN PLACE (same URL) with v2, folding the</p>
+<p>entire data-engine research arc into the boss pitch. Content drafted corpus-</p>
+<p>only from canonical pages and NUMBER-BY-NUMBER verified (9 fixes: SG885G 48</p>
+<p>TOPS vs SP895BD-AP 77 TOPS misattribution caught, ¥4.11亿 fund-raise scope</p>
+<p>precision, 中国占&gt;80% de-ranged, X1 hook softened to bet-framing per essence</p>
+<p>page, P4 "审计级" de-upgraded to prediction, exact X1 falsifier wording).</p>
+<p>Nine screens: S0 amortization-curve hook + 70-year-war-settlement line + why</p>
+<p>a module maker reads this (every byte of the curve passes through sensors/</p>
+<p>clocks/modules); S1 expansion-not-entry (kept, upgraded: "卖铲人" is now</p>
+<p>verbatim-collided with 觅蜂/灵初 scripts — repositioned as 器械商+计量期权);</p>
+<p>S2 three pools + THE HONEST P≈0.30 and why low probability supports the</p>
+<p>water-seller (channel = economics inequality in one boss line); S3 three</p>
+<p>iron laws from 12 dossiers + the metrology void + Maniformer 75% equity =</p>
+<p>our customer list; S4 one-line positioning + 3 lanes with honest</p>
+<p>defensibility grades and inverted resource allocation; S5 three-step</p>
+<p>minimal-regret table ($3-8M module IP / $2-5M certified instruments</p>
+<p>蝉螳砧 / $25M+ corpus OPTION default-unfunded) + gate discipline in board</p>
+<p>language; S6 honest bear case incl. our own neutrality Achilles heel</p>
+<p>(entity split = precondition); S7 sentinel calendar the boss can audit us</p>
+<p>against (月1台架 through 2027-12 X1 verdict ticket); S8 three-item Ask</p>
+<p>(approve $5-13M, write gates into governance, metrology micro-team + entity-</p>
+<p>split legal pre-study). Every screen has a speaker hook line. Verified</p>
+<p>content source kept at pitch/quectel-pitch-v2-content.md. Portal card</p>
+<p>refreshed. Static HTML (no JS), preview-verified all blocks render.</p></article>
 <article id="queue" class="page"><div class="pagehead"><h1>queue</h1><p class="pmeta"><span class="slugtag">queue</span></p></div><p># Research queue / backlog</p>
 <p>Items the loop should pick up in future iterations. Add freely; remove when done.</p>
 <p>Distilled from loop(1)'s 54 research leads (2026-07-03) plus the original backlog.</p>
@@ -11933,10 +11992,10 @@ hr{border:none;border-top:1px solid var(--line);margin:22px 0}
 <li>☐ Evaluation watch: RoboChallenge Table30 v2 launch (v1 retired 2026-05-27); whether closed frontier models (Helix, Gemini Robotics, π0.7) appear on any public leaderboard; verify GR00T N2 #1 claims against actual RoboArena/MolmoSpaces boards at GA (late 2026); GM-100 SOTA trajectory (~17% avg = best single indicator of real generalist progress).</li>
 </ul>
 <ul>
-<li>☐ <strong>Unitree IPO pricing imminent (days)</strong>: when offer price / subscription / listing date land (expected late 2026-07), refresh company-unitree.md, humanoid-robots.md, landscape-china.md, investment.md in one pass. Status 2026-07-04 ~19:45 CST (rechecked; Saturday, markets closed): still no 发行安排/初步询价公告; Eastmoney 新股日历 API has no Unitree entry (latest scheduled STAR subscription: 泰诺麦博 688806/申购代码787806 on 07-10); SSE audit record for auditId=2178 unchanged since 06-02 (currStatus 4, CITIC sponsor team listed). Next realistic announcement window: trading week of 2026-07-06. After the 07-02 registration, CITIC files the issuance/underwriting plan with the SSE, which has 5 working days to raise no objection → earliest formal launch week of 2026-07-06. Monitor the SSE disclosure page (sse.com.cn auditId=2178; announcement PDFs under static.sse.com.cn code 002178 — working JSON probe: query.sse.com.cn/statusAction.do?sqlId=SH_XM_LB&amp;keyword=宇树 with Referer kcb.sse.com.cn; the GP_GPZCZ_SHXXPL doc-list sqlId returns empty) and 新股日历 aggregators (Eastmoney JSON: datacenter-web.eastmoney.com/api/data/v1/get?reportName=RPTA_APP_IPOAPPLY) for the 申购代码/申购日.</li>
+<li>☐ <strong>Unitree IPO pricing imminent (days)</strong>: when offer price / subscription / listing date land (expected late 2026-07), refresh company-unitree.md, humanoid-robots.md, landscape-china.md, investment.md in one pass. Status 2026-07-04 ~19:45 CST (rechecked; Saturday, markets closed): still no 发行安排/初步询价公告; Eastmoney 新股日历 API has no Unitree entry (latest scheduled STAR subscription: 泰诺麦博 688806/申购代码787806 on 07-10); SSE audit record auditId=2178: <strong>currStatus 4 → 5 (注册生效) on 2026-07-06</strong> (updateDate 20260706174737, registeResult:1; SSE JSON probe + stcn 4000678, verified 07-12); still no 发行公告/申购安排 as of 07-12 — next window: trading week of 2026-07-13. After the 07-02 registration, CITIC files the issuance/underwriting plan with the SSE, which has 5 working days to raise no objection → earliest formal launch week of 2026-07-06. Monitor the SSE disclosure page (sse.com.cn auditId=2178; announcement PDFs under static.sse.com.cn code 002178 — working JSON probe: query.sse.com.cn/statusAction.do?sqlId=SH_XM_LB&amp;keyword=宇树 with Referer kcb.sse.com.cn; the GP_GPZCZ_SHXXPL doc-list sqlId returns empty) and 新股日历 aggregators (Eastmoney JSON: datacenter-web.eastmoney.com/api/data/v1/get?reportName=RPTA_APP_IPOAPPLY) for the 申购代码/申购日.</li>
 <li>☐ <strong>Unitree 2025 profit-measure reconciliation</strong> — resolved 2026-07-04 (fact-check pass): GAAP series confirmed from two STCN pieces + Hangzhou News: 2022 −2,210.05万 / 2023 −1,114.51万 / 2024 9,450.18万 (stcn.com 3688950, filing-stage) / 2025 ~2.88亿 +204.29% ("净利润近3亿" per stcn.com 3735182; "2.88亿" per hznews.hangzhou.com.cn). The ~¥600M measure is <strong>扣非净利润</strong> (excl. non-recurring items, CSRC-standardized) — stcn 3688950 headline: "扣非净利润暴增674.29%", "超6亿" — NOT a loosely-defined non-GAAP adjusted figure; it exceeds GAAP because 2025 non-recurring items were net losses (~¥3.1亿 implied). Earlier state-of-the-art relabeling away from 扣非 was an over-correction, reverted 2026-07-04. Remaining: (a) exact 2025 decimals + composition of the non-recurring net losses (share-based payment?) from the offering-stage 招股意向书; (b) why SCMP says "adjusted RMB 591M" vs STCN's "超6亿" (measure nuance or rounding).</li>
 <li>☑ <del>New Yorker Witt feature</del> — done loop(9)+(10): full text retrieved, digested into open-problems + evaluation, remaining leads applied across 5 more pages; residual watch: post-publication reactions/rebuttals from 1X or Figure once the 07-06 print issue circulates.</li>
-<li>☐ X Square Robot / AI² Robotics follow-up: WALL model family details, AlphaBot deployments, whether the RMB 20B valuations hold in next rounds.</li>
+<li>☐ X Square Robot / AI² Robotics follow-up: WALL model family details, AlphaBot deployments, whether the RMB 20B valuations hold in next rounds. (07-12: Caixin 07-01 independently confirms &gt;$2.8B — second source landed; next test = following round.)</li>
 <li>☐ Foxconn Houston plant: primary confirmation that GR00T-powered humanoids are actually in production (Q1 2026 target, unconfirmed as of 2026-07).</li>
 <li>☐ Figure-Qualcomm compute collaboration: if Figure 04-gen drops NVIDIA onboard silicon, update company-nvidia + company-figure skeptic sections.</li>
 <li>☐ Dated refresh triggers: GR00T N2 GA (late 2026); first Halos AI Systems Inspection Lab certification outcomes (Agility Digit vs IEC 61508/ISO 13849).</li>
@@ -11944,7 +12003,7 @@ hr{border:none;border-top:1px solid var(--line);margin:22px 0}
 <li>☑ <del>Japan Airlines × GMO AI &amp; Robotics humanoid trial at Haneda</del> — done 2026-07-04: written into <a href="#landscape-row">landscape-row.md</a> Japan section (2026-05→2028 trial, Unitree G1-based, baggage/GSE/cabin-cleaning tasks, "Japan's first" per JAL; cost conflict kept with explicit attribution: ~$13.5K New Atlas vs ~$15.4K CNBC).</li>
 <li>☐ MIIT+SASAC real-scene-training special action follow-through: end-June implementation plans and November progress reports (which provinces/SOEs, which vendors win the "consortium" slots) — added to landscape-china.md 2026-07-04.</li>
 <li>☑ <del>Korea "&gt;$1T triple axis" primary verification</del> — done loop(11): MOTIE 2026-06-29 release fetched directly; chip conflict = scope difference (W800T fabs alone vs W881T incl. packaging; USD conversions are outlets' own); Hyundai "$5.8B" decoded as W9T Saemangeum hub breakdown; K-Humanoid Alliance KRW 1T primary-verified (MOTIE 2025-04-10); fab sites explicitly undecided as of 2026-07; MSIT's separate W50.4B K-AI consortium disambiguated.</li>
-<li>☐ Korea follow-ups: investment.md fold-in of primary-verified program numbers (W881T chips / W550T AI DC / robot axis); Hyundai W42T Yeongnam hub (2026-07-03 briefing, ZDNet — new figure to verify); MSIT 3-year physical-AI export push; which vendors win robot data-factory slots.</li>
+<li>☐ Korea follow-ups: investment.md fold-in of primary-verified program numbers (W881T chips / W550T AI DC / robot axis); Hyundai W42T Yeongnam hub — RESOLVED 07-12: ₩42T = Hyundai own 10-yr Ulsan AV/aerospace hub; ~₩102T = combined Samsung+Hyundai+SK Yeongnam package; ₩9T Saemangeum is a third scope; investment.md has no conflation, no edit needed; MSIT 3-year physical-AI export push; which vendors win robot data-factory slots.</li>
 <li>☐ Weave Robotics "Isaac 1" $7,999 home robot, Fall 2026 deliveries (HN 232pts, 2026-07-01, weaverobotics.com/isaac-1) — assess for home-robot coverage in humanoid-robots.md/landscape-usa.md (wheeled non-humanoid; relevant as 1X NEO price counterpoint).</li>
 <li>☐ Witt/New Yorker leads batch (piece digested into open-problems + evaluation loop(9); remaining material): 1X Neo fresh data (10,000+ deposits at $20K, ~800 staff, 66 lb, 22 dB locomotion, Oakland-area factory) → humanoid-robots.md; "every robot ran on an Nvidia chip" + edge-chips-drain-up-to-60%-battery → company-nvidia.md skeptic/hardware; Neura 1,000+ mocap-suit worker program + Waymo 500K+ teleop-hours framing → data.md/data-foundry.md; Unitree G1 BT botnet (Makris/Finisterre) + home-robot jailbreak/privacy (child coaxing Neo; 1X operators seeing homes) → safety-regulation.md; Stanford cross-country adoption-attitude poll → open-problems culture note.</li>
 <li>☐ ByteDance Seed GR-3 VLA has no entry in vla-models.md (verified from paper arXiv:2507.15493 in loop(8)) — add entry + Fourier GR-3 name-collision note.</li>

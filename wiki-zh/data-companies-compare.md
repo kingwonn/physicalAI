@@ -101,7 +101,7 @@ source: ../wiki/data-companies-compare.md
 | **2026-07-31** | 鹿明 Project EDGE 100 台 NIX 免费申领截止([luming](case-luming.md)) | 观察领取机构名单——学术生态被锁定的速度,校准我们车道 3 的学术打法 |
 | **2026-08 前** | 灵初的智元股东工商核验;GenRobot das-datakit 5 个 issue 正文精读([lingchu](case-lingchu.md)/[genrobot](case-genrobot.md)) | 前者坐实 → 车道 2 地图重画;后者是最便宜的真实集成痛点信号 |
 | **2026-08-19~23** | WRC 北京,潜在新品/数据发布窗([mifeng](case-mifeng.md)) | 新闻扫描,同 WAIC 处理 |
-| **月度** | 觅蜂市场 API 轮询(基线 467,零增长中);HF JoyFutureAcademy 是否上架 EgoLive;灵初 SynData 下载曲线;Generalist 招聘页销售岗([mifeng](case-mifeng.md)/[jd-data](case-jd-data.md)/[lingchu](case-lingchu.md)/[generalist](case-generalist.md)) | 觅蜂目录跳增 → 重估 Gen-3 情景分支;EgoLive 免费化 → 预训练档价格锚下修;Generalist 出销售岗 → 美国商业化提速信号 |
+| **月度** | 觅蜂市场 API 轮询(基线 467;07-12 第三次复测仍 467,零增长);HF JoyFutureAcademy 是否上架 EgoLive;灵初 SynData 下载曲线;Generalist 招聘页销售岗([mifeng](case-mifeng.md)/[jd-data](case-jd-data.md)/[lingchu](case-lingchu.md)/[generalist](case-generalist.md)) | 觅蜂目录跳增 → 重估 Gen-3 情景分支;EgoLive 免费化 → 预训练档价格锚下修;Generalist 出销售岗 → 美国商业化提速信号 |
 | **每次迭代** | **任何一家发布误差分布/第三方评测/校准白皮书**(七页共同的头号哨) | 车道 1 空腔被占的直接信号,v2 §5.1 预案:报告周更化+跨厂商横评抢发,响应窗 ≤4 周 |
 | **每次迭代** | 具名付费数据客户首次出现(七页共同哨) | 全行业"真付费"问题首次有答案 → 定价锚与收入模型全面重估 |
 | **2026-Q3** | 它石苏州 15 台续约/扩台([morphic](case-morphic.md)) | 扩台=真机内化数据引擎路线坐实,"卖铲给二线"错位定位维持 |

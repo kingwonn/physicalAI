@@ -54,7 +54,7 @@ source: ../wiki/state-of-the-art.md
 | Tesla | Optimus V3 | 约 2026 年 7 月底/8 月在 Fremont 改造后的 Model S/X 产线启动生产,初期产量"非常缓慢";首条 Optimus 产线已运抵 Fremont 并开始安装(Tesla 副总裁 Lars Moravy 表示);Musk 于 2026-07-01 发布了走访产线的照片;第三代手部:每侧前臂/手约 25 个执行器(每手 22 个自由度,腱绳驱动,双手共 50 个执行器);高产量目标定在 2027 年;消费者销售目标为"2027 年底"(Musk,达沃斯,2026-01) |
 | Boston Dynamics | 电动 Atlas | 量产版于 CES 2026-01-05 亮相;56 个自由度、2.3 m 臂展、50 kg 认证举重;2026 年机队配额已全部锁定(Hyundai RMAC、Google DeepMind 合作);Hyundai 正在美国建设年产 30,000 台机器人的工厂;据报道有 25,000 台内部承诺订单(未证实) |
 | 1X | NEO | $20,000(或 $499/月)的消费级家用人形机器人;首 5 天约 10,000 台预订(2025 年 10 月,公司口径);自 2026-04-30 起在加州 Hayward 全面量产(宣称年产能 1 万台);承诺 2026 年底前完成首批家庭交付 |
-| Agility Robotics | Digit | GXO 物流:在 Flowery Branch 累计搬运超 100,000 个料箱(截至 2025 年末);与丰田 RAV4 工厂(安大略省 Woodstock;2026-02 签约)签订 7 台 RaaS 合同,2026 年内部署 |
+| Agility Robotics | Digit | GXO 物流:在 Flowery Branch 累计搬运超 100,000 个料箱(截至 2025 年末);与丰田 RAV4 工厂(安大略省 Woodstock;2026-02 签约)签订 7 台 RaaS 合同,2026 年内部署;**经 SPAC 与 Churchill Capital XI 合并上市(25 亿美元 pre-money,代码 AGLT,总额 >6.2 亿美元含富士康领投 PIPE;2026-06-24 官宣)**——CEO Johnson 谈家用机器人:"还要十年以上" |
 | Unitree | G1 / R1 / H2 | 按其 IPO 招股书,2025 年售出并交付人形机器人 >5,500 台(仅双足,不含轮式;Omdia/IDC 记为 4,200 台并列其为第二——见下文出货量核对);G1 约 $16k(Amazon 挂牌价 $17,990);R1 约 $5,900;上海科创板 IPO 于 2026-06-01 通过上市审核,2026-07-02 获 CSRC 注册批准(2026-07-03 据报道;募资约 ¥4.2B / 约 $618M);2025 年营收 ¥1.70B;GAAP 净利润约 ¥288M,扣非(excl. non-recurring)>¥600M(SCMP:"调整后" ¥591M)——见[公司:Unitree](company-unitree.md) |
 | AgiBot(智元) | Expedition A3 等 | 第 10,000 台通用机器人于 2026 年 3 月末下线;按 Omdia 口径 2025 年出货人形机器人 5,168 台(IDC 口径 5,200 台),两家均列其为全球第一;正寻求借壳上市 |
 | UBTech | Walker S2 | 宣称在汽车/电子/物流工厂部署 1,000+ 台工业人形机器人(公司口径,未证实);2026-06-30 推出 UWORLD U1 消费级陪伴产品线,起售价约 RMB 119,800,宣称订单 13k+(公司口径),约 2026-09 起交付 |
