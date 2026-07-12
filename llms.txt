@@ -1,12 +1,13 @@
 # physicalAI wiki
 
-> Git-versioned, LLM-maintained knowledge base on Physical AI worldwide: history, SOTA, tech tree, key people/orgs, regional landscapes, company deep dives, hardware, data, investment, open problems, safety/regulation, evaluation, ODM opportunity + competitor landscape. 39 topic pages, adversarially fact-checked (most `confidence: verified`; newest pages may be `draft`), last updated 2026-07-05. Maintained by an autonomous research loop (LOOP.md); every change is a git commit.
+> Git-versioned, LLM-maintained knowledge base on Physical AI worldwide: history, SOTA, tech tree, key people/orgs, regional landscapes, company deep dives, hardware, data, investment, open problems, safety/regulation, evaluation, ODM opportunity + competitor landscape. 40 topic pages, adversarially fact-checked (most `confidence: verified`; newest pages may be `draft`), last updated 2026-07-12. Maintained by an autonomous research loop (LOOP.md); every change is a git commit.
 
 ## Start here
 - [HOME](wiki/HOME.md): annotated index, field overview, reading order
 
 ## Core
 - [History of Physical AI](wiki/history.md): Unimate/Shakey → deep-RL/sim2real → the 2022-26 robot-foundation-model turn and humanoid mass-production wave
+- [Lineage: Embodied Cognition & Behavior-Based Robotics](wiki/lineage-embodied-cognition.md): pre-2022 philosophical/scientific roots of "embodiment"/"grounding" — Brooks, Gibson, enactivism, morphological computation, Braitenberg, developmental robotics, Friston, Lakoff & Johnson; primary quotes + testable predictions per strand
 - [State of the Art (2026-07)](wiki/state-of-the-art.md): hub snapshot — leading VLAs, first commercial humanoid fleets, shipment shares, record capital
 - [Physical AI Tech Tree](wiki/tech-tree.md): layered dependency map with per-branch bottlenecks (data, dexterity, reliability)
 - [On-Device Embodied Brain](wiki/on-device-brain.md): deep report on building a good edge robot brain — dual/tri-system arch (S2/S1/S0), cloud-edge, compute/model-opt, SoC landscape, power, software, edge models, eval rubric, reference architecture + module-maker read (12 verified sections)

@@ -783,3 +783,29 @@ automation scale — and that world is BETTER for our instrument business
 fixes (π0 span 18mo, BMW claim de-upgraded, GM-100 reattributed, phantom
 labels removed, 绿的 discount 五至七折, Unitree valuation unified). Field-
 level watchlist deduped vs existing pages. Readers 64 EN / 63 zh.
+
+## out-of-band — 2026-07-12
+Added new page [lineage-embodied-cognition.md](../lineage-embodied-cognition.md)
+(loop remains paused per user 2026-07-04; this was a direct research request,
+not a loop iteration). Covers the pre-2022 embodied-cognition / behavior-based
+robotics lineage that today's "embodiment," "grounding," and "affordance"
+vocabulary descends from: Brooks (subsumption 1986, physical grounding
+hypothesis, Cog, 2019 "A Better Lesson" + 2023 "Three Things LLMs Have Made
+Us Rethink"), Gibson (affordances, direct perception), Varela/Thompson/Rosch
+enactivism + Maturana autopoiesis, Pfeifer/Bongard morphological computation +
+McGeer's passive dynamic walkers, Braitenberg Vehicles, Thelen & Smith
+dynamical-systems development, Asada/Cangelosi developmental robotics,
+Friston's free-energy principle (contested — cited critics explicitly),
+Lakoff & Johnson embodied linguistics. Primary-source discipline: Brooks'
+1986/1990/1991 papers full-text-extracted directly (pdftotext) and the
+famous "the world is its own best model" quote verified verbatim + correctly
+attributed to "Elephants Don't Play Chess" (1990) — not "Intelligence
+Without Representation" (1991), a mis-citation found circulating in
+secondary sources during research. Maturana/Varela 1972/1973/1980 publication
+dating left explicitly flagged as unresolved rather than false-precisioned.
+Friston section states the mainstream critique (unfalsifiable / "theory of
+everything and nothing") by name with sources, per house honesty rules.
+Sourcing-confidence table included per-item (primary-verified vs.
+secondary-convergent) since several sources (MIT Press Direct, Google Books,
+raw Cog-project PDFs) blocked or resisted clean text extraction this pass.
+HOME.md + llms.txt updated with the new page (40 pages total).

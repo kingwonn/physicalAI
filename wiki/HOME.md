@@ -26,6 +26,7 @@ disputes are catalogued in [Open problems](open-problems.md).
 | Page | What it covers |
 |---|---|
 | [History of Physical AI](history.md) | Unimate (1961) and Shakey → deep-RL/sim2real era → the 2022-26 robot-foundation-model turn and the humanoid mass-production wave |
+| [Lineage: Embodied Cognition & Behavior-Based Robotics](lineage-embodied-cognition.md) | The pre-2022 philosophical/scientific lineage behind "embodiment," "grounding," "affordance" — Brooks' subsumption architecture + physical grounding hypothesis, Gibson's affordances, Varela/Thompson/Rosch enactivism, Pfeifer/Bongard morphological computation, Braitenberg, Thelen & Smith, Asada/Cangelosi developmental robotics, Friston's contested free-energy principle, Lakoff & Johnson — primary citations, verbatim quotes, and the testable predictions each strand makes about what disembodied AI can't do |
 | [State of the Art (2026-07)](state-of-the-art.md) | Hub snapshot of the frontier: leading VLAs, first commercial humanoid fleets (BMW/GXO/Toyota), shipment shares, record capital |
 | [Physical AI Tech Tree](tech-tree.md) | Layered dependency map (hardware → perception → control → learning → foundation models → deployment) with per-branch bottlenecks |
 | [On-Device Embodied Brain](on-device-brain.md) | Deep technical+strategic report on building a good edge robot brain: dual/tri-system arch (S2 5-10Hz / S1 100-200Hz / S0 500Hz-1kHz), cloud-edge split, compute/model-opt, SoC landscape, power, software, edge models, eval rubric, reference architecture + module-maker read |
