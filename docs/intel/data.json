@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-13T07:43:07",
+  "generated_at": "2026-07-13T09:47:36",
   "stats": {
-    "episodes": 33,
-    "raw_transcripts": 33,
-    "cleaned_transcripts": 33,
+    "episodes": 38,
+    "raw_transcripts": 38,
+    "cleaned_transcripts": 38,
     "wiki_pages": 28,
     "reports": 7,
-    "claims": 338
+    "claims": 345
   },
   "episodes": [
     {
@@ -2391,6 +2391,194 @@
       ]
     },
     {
+      "slug": "ep-120-xpeng-liu-xianming-ai-transform",
+      "title": "120. 小鹏新上任的刘先明首次访谈：Language是毒药、拆掉L、简单即美、换帅、小鹏的AI转型",
+      "path": "processed/transcripts/xiaoyuzhou-cleaned/ep-120-xpeng-liu-xianming-ai-transform-cleaned.md",
+      "source_path": "raw/transcripts/xiaoyuzhou/ep-120-xpeng-liu-xianming-ai-transform.md",
+      "podcast": "张小珺Jùn｜商业访谈录",
+      "published": "2025-11-18",
+      "duration": "01:48:45",
+      "priority": "P0",
+      "reason": "小鹏刘先明：Language是毒药、拆掉L、小鹏AI转型",
+      "source_url": "https://www.xiaoyuzhoufm.com/episode/691c3670cbba038b421f74a4",
+      "chars": 99927,
+      "segments": 3230,
+      "themes": [
+        {
+          "label": "数据 / Data Recipe",
+          "hits": 92
+        },
+        {
+          "label": "世界模型 / World Model",
+          "hits": 25
+        },
+        {
+          "label": "VLA / Vision-Language-Action",
+          "hits": 22
+        },
+        {
+          "label": "Physical AI / 物理AI",
+          "hits": 16
+        },
+        {
+          "label": "部署 / commercial proof",
+          "hits": 16
+        },
+        {
+          "label": "本体 / hardware body",
+          "hits": 13
+        },
+        {
+          "label": "仿真 / synthetic data",
+          "hits": 5
+        },
+        {
+          "label": "机器人大脑 / robot brain",
+          "hits": 5
+        },
+        {
+          "label": "强化学习 / RL",
+          "hits": 2
+        }
+      ],
+      "players": [
+        {
+          "label": "DeepMind / Gemini Robotics",
+          "hits": 5
+        },
+        {
+          "label": "NVIDIA",
+          "hits": 2
+        },
+        {
+          "label": "北京人形 / 天工",
+          "hits": 1
+        }
+      ],
+      "layers": [
+        {
+          "label": "数据层",
+          "hits": 91
+        },
+        {
+          "label": "模型/大脑层",
+          "hits": 55
+        },
+        {
+          "label": "场景部署",
+          "hits": 14
+        },
+        {
+          "label": "仿真/工具链",
+          "hits": 5
+        }
+      ],
+      "quotes": [
+        "[06:08–06:13] 它在地震之前和地震之后，人口分布和建筑分布的这个数据,",
+        "[08:57–08:59] 就是数据迭代来解决一切的问题,",
+        "[09:07–09:10] 或者是Physical AI的企业现在做的事情,",
+        "[09:14–09:17] 另外就是用数据驱动去解决问题。"
+      ]
+    },
+    {
+      "slug": "ep-118-li-xiang-second-interview-vla-moe",
+      "title": "118. 对李想的第二次3小时访谈：CEO大模型、MoE、梁文锋、VLA、能量、记忆、对抗人性、亲密关系、人类的智慧",
+      "path": "processed/transcripts/xiaoyuzhou-cleaned/ep-118-li-xiang-second-interview-vla-moe-cleaned.md",
+      "source_path": "raw/transcripts/xiaoyuzhou/ep-118-li-xiang-second-interview-vla-moe.md",
+      "podcast": "张小珺Jùn｜商业访谈录",
+      "published": "2025-10-30",
+      "duration": "02:46:22",
+      "priority": "P0",
+      "reason": "李想第二次访谈：VLA、MoE、世界模型与车企智能路线",
+      "source_url": "https://www.xiaoyuzhoufm.com/episode/6902c5f7abb5e1cf581296be",
+      "chars": 156619,
+      "segments": 5346,
+      "themes": [
+        {
+          "label": "VLA / Vision-Language-Action",
+          "hits": 84
+        },
+        {
+          "label": "数据 / Data Recipe",
+          "hits": 31
+        },
+        {
+          "label": "部署 / commercial proof",
+          "hits": 30
+        },
+        {
+          "label": "世界模型 / World Model",
+          "hits": 25
+        },
+        {
+          "label": "机器人大脑 / robot brain",
+          "hits": 22
+        },
+        {
+          "label": "本体 / hardware body",
+          "hits": 10
+        },
+        {
+          "label": "仿真 / synthetic data",
+          "hits": 5
+        },
+        {
+          "label": "强化学习 / RL",
+          "hits": 5
+        },
+        {
+          "label": "具身智能",
+          "hits": 2
+        }
+      ],
+      "players": [
+        {
+          "label": "北京人形 / 天工",
+          "hits": 2
+        },
+        {
+          "label": "NVIDIA",
+          "hits": 1
+        },
+        {
+          "label": "小米 / Xiaomi",
+          "hits": 1
+        }
+      ],
+      "layers": [
+        {
+          "label": "模型/大脑层",
+          "hits": 131
+        },
+        {
+          "label": "数据层",
+          "hits": 31
+        },
+        {
+          "label": "场景部署",
+          "hits": 30
+        },
+        {
+          "label": "仿真/工具链",
+          "hits": 5
+        },
+        {
+          "label": "资本/产业信号",
+          "hits": 4
+        },
+        {
+          "label": "本体/硬件",
+          "hits": 3
+        }
+      ],
+      "quotes": [
+        "[03:04–03:06] 这个数据规模已经不是15T了",
+        "[03:18–03:20] 因为大脑也要消耗能量的",
+        "[04:06–04:08] 然后它需要更高质量的数据",
+        "[12:18–12:21] 就更好的大脑和使用更好的工具并不冲突"
+      ]
+    },
+    {
       "slug": "lightstar-ep-50-ropet-ai-pet-robot",
       "title": "50.爆火CES后这半年，和Ropet聊穿越风暴、模仿者与陪伴的真谛",
       "path": "processed/transcripts/xiaoyuzhou-cleaned/lightstar-ep-50-ropet-ai-pet-robot-cleaned.md",
@@ -2741,6 +2929,80 @@
       ]
     },
     {
+      "slug": "ep-108-yu-kai-horizon-30-years",
+      "title": "108. 余凯口述30年史：世界不止刀光剑影，是一部人来人往的江湖故事",
+      "path": "processed/transcripts/xiaoyuzhou-cleaned/ep-108-yu-kai-horizon-30-years-cleaned.md",
+      "source_path": "raw/transcripts/xiaoyuzhou/ep-108-yu-kai-horizon-30-years.md",
+      "podcast": "张小珺Jùn｜商业访谈录",
+      "published": "2025-07-07",
+      "duration": "02:57:07",
+      "priority": "P0",
+      "reason": "余凯口述30年史：地平线、机器人/自动驾驶芯片创业",
+      "source_url": "https://www.xiaoyuzhoufm.com/episode/686b8c0560f8f77d404338cd",
+      "chars": 172663,
+      "segments": 6197,
+      "themes": [
+        {
+          "label": "部署 / commercial proof",
+          "hits": 48
+        },
+        {
+          "label": "本体 / hardware body",
+          "hits": 17
+        },
+        {
+          "label": "机器人大脑 / robot brain",
+          "hits": 9
+        },
+        {
+          "label": "强化学习 / RL",
+          "hits": 7
+        },
+        {
+          "label": "数据 / Data Recipe",
+          "hits": 3
+        }
+      ],
+      "players": [
+        {
+          "label": "NVIDIA",
+          "hits": 16
+        },
+        {
+          "label": "DeepMind / Gemini Robotics",
+          "hits": 4
+        },
+        {
+          "label": "小米 / Xiaomi",
+          "hits": 3
+        }
+      ],
+      "layers": [
+        {
+          "label": "资本/产业信号",
+          "hits": 62
+        },
+        {
+          "label": "场景部署",
+          "hits": 46
+        },
+        {
+          "label": "模型/大脑层",
+          "hits": 9
+        },
+        {
+          "label": "数据层",
+          "hits": 3
+        }
+      ],
+      "quotes": [
+        "[00:10–00:27] 这边的对面坐了一个人特别的沉默，也没人打理他。一个人在来吃闷饭。因为他当时做的学科方向在这群人里面不太受待见。叫Reinforcement learning,强化学习。这个人就叫Richard Sutton。",
+        "[29:37–29:39] 这个强化学习,",
+        "[29:54–29:55] 你看今天强化学习,",
+        "[30:26–30:28] 其实你看强化学习是这样的,"
+      ]
+    },
+    {
       "slug": "lightstar-ep-41-wang-zhongyuan-world-model-physical-world",
       "title": "41.对话智源院长王仲远：关于世界模型，AI与物理世界，与大模型的最前沿",
       "path": "processed/transcripts/xiaoyuzhou-cleaned/lightstar-ep-41-wang-zhongyuan-world-model-physical-world-cleaned.md",
@@ -3019,6 +3281,166 @@
         "[01:32–01:35] 他的研究和创业方向都是人形机器人。",
         "[01:57–02:06] 这期节目，陈老师将带领大家盖览式的阅读机器人基础模型和当下最前沿的架构,VLA架构相关的经典论文。",
         "[02:46–02:53] 我这边的研究方向主要是集中在巨生智能以及人形机器人。"
+      ]
+    },
+    {
+      "slug": "lightstar-ep-29-gtc-2025-huang-renxun-physical-ai",
+      "title": "29.直击 2025 GTC（下）｜王冠之重，黄仁勋如何回应一切质疑？",
+      "path": "processed/transcripts/xiaoyuzhou-cleaned/lightstar-ep-29-gtc-2025-huang-renxun-physical-ai-cleaned.md",
+      "source_path": "raw/transcripts/xiaoyuzhou/lightstar-ep-29-gtc-2025-huang-renxun-physical-ai.md",
+      "podcast": "卫诗婕｜漫谈Light the Star",
+      "published": "2025-03-26",
+      "duration": "48:30",
+      "priority": "P0",
+      "reason": "2025 GTC 下篇：黄仁勋回应质疑，Physical AI/机器人主线",
+      "source_url": "https://www.xiaoyuzhoufm.com/episode/67e39e7451d887b229f3ff4b",
+      "chars": 42990,
+      "segments": 1415,
+      "themes": [
+        {
+          "label": "Physical AI / 物理AI",
+          "hits": 29
+        },
+        {
+          "label": "部署 / commercial proof",
+          "hits": 25
+        },
+        {
+          "label": "数据 / Data Recipe",
+          "hits": 10
+        },
+        {
+          "label": "本体 / hardware body",
+          "hits": 7
+        },
+        {
+          "label": "机器人大脑 / robot brain",
+          "hits": 4
+        },
+        {
+          "label": "强化学习 / RL",
+          "hits": 1
+        }
+      ],
+      "players": [
+        {
+          "label": "NVIDIA",
+          "hits": 98
+        }
+      ],
+      "layers": [
+        {
+          "label": "场景部署",
+          "hits": 25
+        },
+        {
+          "label": "模型/大脑层",
+          "hits": 18
+        },
+        {
+          "label": "数据层",
+          "hits": 10
+        },
+        {
+          "label": "资本/产业信号",
+          "hits": 9
+        }
+      ],
+      "quotes": [
+        "[00:58–01:04] 在走向应用场景专业化，走向到数据优势的时候，中国企业的优势越来越大。",
+        "[04:36–04:41] 其实就是他判断未来哪些场景下需要什么样的计算。",
+        "[06:09–06:10] 叫Physical AI,",
+        "[06:33–06:35] 然后它把Physical AI放在最高点,"
+      ]
+    },
+    {
+      "slug": "ep-092-zhang-yaqin-consciousness-robotics-bio-intelligence",
+      "title": "92. 和张亚勤院士聊，意识、寿命、机器人、生物智能和物种的延伸",
+      "path": "processed/transcripts/xiaoyuzhou-cleaned/ep-092-zhang-yaqin-consciousness-robotics-bio-intelligence-cleaned.md",
+      "source_path": "raw/transcripts/xiaoyuzhou/ep-092-zhang-yaqin-consciousness-robotics-bio-intelligence.md",
+      "podcast": "张小珺Jùn｜商业访谈录",
+      "published": "2025-02-17",
+      "duration": "53:07",
+      "priority": "P0",
+      "reason": "张亚勤院士：意识、机器人、生物智能与物种延伸",
+      "source_url": "https://www.xiaoyuzhoufm.com/episode/67b2b786606e5c5940eeb4ce",
+      "chars": 52111,
+      "segments": 2278,
+      "themes": [
+        {
+          "label": "部署 / commercial proof",
+          "hits": 35
+        },
+        {
+          "label": "机器人大脑 / robot brain",
+          "hits": 14
+        },
+        {
+          "label": "具身智能",
+          "hits": 10
+        },
+        {
+          "label": "数据 / Data Recipe",
+          "hits": 10
+        },
+        {
+          "label": "世界模型 / World Model",
+          "hits": 4
+        },
+        {
+          "label": "本体 / hardware body",
+          "hits": 4
+        },
+        {
+          "label": "强化学习 / RL",
+          "hits": 2
+        },
+        {
+          "label": "仿真 / synthetic data",
+          "hits": 1
+        }
+      ],
+      "players": [
+        {
+          "label": "NVIDIA",
+          "hits": 2
+        },
+        {
+          "label": "北京人形 / 天工",
+          "hits": 1
+        }
+      ],
+      "layers": [
+        {
+          "label": "场景部署",
+          "hits": 35
+        },
+        {
+          "label": "模型/大脑层",
+          "hits": 18
+        },
+        {
+          "label": "数据层",
+          "hits": 10
+        },
+        {
+          "label": "本体/硬件",
+          "hits": 4
+        },
+        {
+          "label": "仿真/工具链",
+          "hits": 1
+        },
+        {
+          "label": "资本/产业信号",
+          "hits": 1
+        }
+      ],
+      "quotes": [
+        "[07:04–07:06] 一个是具身智能",
+        "[07:40–07:42] 而且需要很多具体的场景",
+        "[13:38–13:39] 是我们大脑的智商",
+        "[14:34–14:35] 但是它第一个落地的是"
       ]
     }
   ],
@@ -3811,7 +4233,7 @@
       "slug": "physical-ai-claim-evidence-workbench",
       "title": "Physical AI claim/evidence workbench",
       "path": "queries/physical-ai-claim-evidence-workbench.md",
-      "chars": 19618,
+      "chars": 19619,
       "themes": [
         {
           "label": "仿真 / synthetic data",
@@ -3839,7 +4261,7 @@
         },
         {
           "label": "VLA / Vision-Language-Action",
-          "hits": 23
+          "hits": 22
         },
         {
           "label": "Physical AI / 物理AI",
@@ -4902,8 +5324,8 @@
     {
       "path": "processed/manifests/pipeline-manifest.json",
       "podcast": "统一流水线台账 (pipeline/ingest.py)",
-      "count": 33,
-      "completed": 33
+      "count": 38,
+      "completed": 38
     },
     {
       "path": "processed/manifests/xiaoyuzhou-2026-expanded-manifest.json",
@@ -9029,6 +9451,32 @@
       "score": 16
     },
     {
+      "id": "claim-08882c747d",
+      "status": "candidate",
+      "subject": "世界模型",
+      "claim_text": "我们对于世界模型的看法就是说它其实是本质上是一个对整个世界的生成的。",
+      "dimensions": [
+        "route"
+      ],
+      "themes": [
+        "世界模型"
+      ],
+      "players": [],
+      "evidence_grade": "B",
+      "confidence": "medium",
+      "source_type": "podcast_transcript",
+      "source_title": "120. 小鹏新上任的刘先明首次访谈：Language是毒药、拆掉L、简单即美、换帅、小鹏的AI转型",
+      "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-120-xpeng-liu-xianming-ai-transform-cleaned.md",
+      "raw_source_path": "",
+      "source_url": "https://www.xiaoyuzhoufm.com/episode/691c3670cbba038b421f74a4",
+      "published": "2025-11-18",
+      "podcast": "张小珺Jùn｜商业访谈录",
+      "timestamp_start": "48:15",
+      "timestamp_end": "48:20",
+      "line": 1624,
+      "score": 16
+    },
+    {
       "id": "claim-dee5e3b6f4",
       "status": "candidate",
       "subject": "VLA / 机器人基座模型",
@@ -9183,6 +9631,32 @@
       "timestamp_end": "58:08",
       "line": 1148,
       "score": 16
+    },
+    {
+      "id": "claim-3062d3d997",
+      "status": "candidate",
+      "subject": "NVIDIA",
+      "claim_text": "因为Deep Seek其实并不是真正意义上的绕过了英伟达,",
+      "dimensions": [
+        "general"
+      ],
+      "themes": [],
+      "players": [
+        "NVIDIA"
+      ],
+      "evidence_grade": "B",
+      "confidence": "medium",
+      "source_type": "podcast_transcript",
+      "source_title": "29.直击 2025 GTC（下）｜王冠之重，黄仁勋如何回应一切质疑？",
+      "source_path": "processed/transcripts/xiaoyuzhou-cleaned/lightstar-ep-29-gtc-2025-huang-renxun-physical-ai-cleaned.md",
+      "raw_source_path": "",
+      "source_url": "https://www.xiaoyuzhoufm.com/episode/67e39e7451d887b229f3ff4b",
+      "published": "2025-03-26",
+      "podcast": "卫诗婕｜漫谈Light the Star",
+      "timestamp_start": "43:03",
+      "timestamp_end": "43:07",
+      "line": 1328,
+      "score": 15
     },
     {
       "id": "claim-c41ab782e7",
@@ -9686,6 +10160,32 @@
       "score": 15
     },
     {
+      "id": "claim-bc9316c4a1",
+      "status": "candidate",
+      "subject": "部署 / 商业化",
+      "claim_text": "Long Context实际上对于量产是一个非常不友好的方案。",
+      "dimensions": [
+        "deployment"
+      ],
+      "themes": [
+        "部署 / 商业化"
+      ],
+      "players": [],
+      "evidence_grade": "B",
+      "confidence": "medium",
+      "source_type": "podcast_transcript",
+      "source_title": "120. 小鹏新上任的刘先明首次访谈：Language是毒药、拆掉L、简单即美、换帅、小鹏的AI转型",
+      "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-120-xpeng-liu-xianming-ai-transform-cleaned.md",
+      "raw_source_path": "",
+      "source_url": "https://www.xiaoyuzhoufm.com/episode/691c3670cbba038b421f74a4",
+      "published": "2025-11-18",
+      "podcast": "张小珺Jùn｜商业访谈录",
+      "timestamp_start": "01:18:24",
+      "timestamp_end": "01:18:27",
+      "line": 2493,
+      "score": 15
+    },
+    {
       "id": "claim-1040617e08",
       "status": "candidate",
       "subject": "机器人大脑",
@@ -10159,6 +10659,32 @@
       "timestamp_start": "01:03:07",
       "timestamp_end": "01:03:13",
       "line": 1096,
+      "score": 14
+    },
+    {
+      "id": "claim-fcadc4e8ed",
+      "status": "candidate",
+      "subject": "数据 / Data Recipe",
+      "claim_text": "然后infrastructure建立这个整个数据闭环体系的话,",
+      "dimensions": [
+        "data"
+      ],
+      "themes": [
+        "数据 / Data Recipe"
+      ],
+      "players": [],
+      "evidence_grade": "B",
+      "confidence": "medium",
+      "source_type": "podcast_transcript",
+      "source_title": "120. 小鹏新上任的刘先明首次访谈：Language是毒药、拆掉L、简单即美、换帅、小鹏的AI转型",
+      "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-120-xpeng-liu-xianming-ai-transform-cleaned.md",
+      "raw_source_path": "",
+      "source_url": "https://www.xiaoyuzhoufm.com/episode/691c3670cbba038b421f74a4",
+      "published": "2025-11-18",
+      "podcast": "张小珺Jùn｜商业访谈录",
+      "timestamp_start": "10:04",
+      "timestamp_end": "10:07",
+      "line": 243,
       "score": 14
     },
     {
@@ -11706,6 +12232,32 @@
       "score": 10
     },
     {
+      "id": "claim-f33a32663d",
+      "status": "candidate",
+      "subject": "融资 / 资本信号",
+      "claim_text": "我们第二个阶段其实很重要的一点其实是我们在想我们从一个收到百亿的收入怎么往千亿收入去走",
+      "dimensions": [
+        "financing"
+      ],
+      "themes": [
+        "融资 / 资本信号"
+      ],
+      "players": [],
+      "evidence_grade": "B",
+      "confidence": "medium",
+      "source_type": "podcast_transcript",
+      "source_title": "118. 对李想的第二次3小时访谈：CEO大模型、MoE、梁文锋、VLA、能量、记忆、对抗人性、亲密关系、人类的智慧",
+      "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-118-li-xiang-second-interview-vla-moe-cleaned.md",
+      "raw_source_path": "",
+      "source_url": "https://www.xiaoyuzhoufm.com/episode/6902c5f7abb5e1cf581296be",
+      "published": "2025-10-30",
+      "podcast": "张小珺Jùn｜商业访谈录",
+      "timestamp_start": "01:32:09",
+      "timestamp_end": "01:32:18",
+      "line": 3057,
+      "score": 10
+    },
+    {
       "id": "claim-cd77ed0192",
       "status": "candidate",
       "subject": "Physical AI",
@@ -12434,6 +12986,32 @@
       "score": 10
     },
     {
+      "id": "claim-646df418a1",
+      "status": "candidate",
+      "subject": "NVIDIA",
+      "claim_text": "然后其实那个时候很少有人得到重视，但是老黄就特别欣赏他，所以把他挖进来做英伟达的首席科学家嘛。",
+      "dimensions": [
+        "general"
+      ],
+      "themes": [],
+      "players": [
+        "NVIDIA"
+      ],
+      "evidence_grade": "B",
+      "confidence": "medium",
+      "source_type": "podcast_transcript",
+      "source_title": "29.直击 2025 GTC（下）｜王冠之重，黄仁勋如何回应一切质疑？",
+      "source_path": "processed/transcripts/xiaoyuzhou-cleaned/lightstar-ep-29-gtc-2025-huang-renxun-physical-ai-cleaned.md",
+      "raw_source_path": "",
+      "source_url": "https://www.xiaoyuzhoufm.com/episode/67e39e7451d887b229f3ff4b",
+      "published": "2025-03-26",
+      "podcast": "卫诗婕｜漫谈Light the Star",
+      "timestamp_start": "02:39",
+      "timestamp_end": "02:46",
+      "line": 88,
+      "score": 9
+    },
+    {
       "id": "claim-eb2e495c07",
       "status": "candidate",
       "subject": "北京人形 / 天工",
@@ -13032,6 +13610,58 @@
       "score": 6
     },
     {
+      "id": "claim-833b24ee2b",
+      "status": "candidate",
+      "subject": "强化学习 / 控制",
+      "claim_text": "我们的公众号是语言及世界Language is World",
+      "dimensions": [
+        "general"
+      ],
+      "themes": [
+        "强化学习 / 控制"
+      ],
+      "players": [],
+      "evidence_grade": "B",
+      "confidence": "medium",
+      "source_type": "podcast_transcript",
+      "source_title": "118. 对李想的第二次3小时访谈：CEO大模型、MoE、梁文锋、VLA、能量、记忆、对抗人性、亲密关系、人类的智慧",
+      "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-118-li-xiang-second-interview-vla-moe-cleaned.md",
+      "raw_source_path": "",
+      "source_url": "https://www.xiaoyuzhoufm.com/episode/6902c5f7abb5e1cf581296be",
+      "published": "2025-10-30",
+      "podcast": "张小珺Jùn｜商业访谈录",
+      "timestamp_start": "02:46:07",
+      "timestamp_end": "02:46:12",
+      "line": 5418,
+      "score": 6
+    },
+    {
+      "id": "claim-ddb7daaf18",
+      "status": "candidate",
+      "subject": "强化学习 / 控制",
+      "claim_text": "然后那个事情就是让人觉得我们可以提供给World Bank来去做Svay,",
+      "dimensions": [
+        "general"
+      ],
+      "themes": [
+        "强化学习 / 控制"
+      ],
+      "players": [],
+      "evidence_grade": "B",
+      "confidence": "medium",
+      "source_type": "podcast_transcript",
+      "source_title": "120. 小鹏新上任的刘先明首次访谈：Language是毒药、拆掉L、简单即美、换帅、小鹏的AI转型",
+      "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-120-xpeng-liu-xianming-ai-transform-cleaned.md",
+      "raw_source_path": "",
+      "source_url": "https://www.xiaoyuzhoufm.com/episode/691c3670cbba038b421f74a4",
+      "published": "2025-11-18",
+      "podcast": "张小珺Jùn｜商业访谈录",
+      "timestamp_start": "05:52",
+      "timestamp_end": "05:58",
+      "line": 142,
+      "score": 6
+    },
+    {
       "id": "claim-ef61423e91",
       "status": "candidate",
       "subject": "具身智能",
@@ -13107,32 +13737,6 @@
       "timestamp_start": "01:15:32",
       "timestamp_end": "01:15:37",
       "line": 2428,
-      "score": 6
-    },
-    {
-      "id": "claim-6831487c8b",
-      "status": "candidate",
-      "subject": "强化学习 / 控制",
-      "claim_text": "我们的公众号是语言及世界,Language is World,",
-      "dimensions": [
-        "general"
-      ],
-      "themes": [
-        "强化学习 / 控制"
-      ],
-      "players": [],
-      "evidence_grade": "B",
-      "confidence": "medium",
-      "source_type": "podcast_transcript",
-      "source_title": "121. 对DeepMind谭捷的访谈：机器人、跨本体、世界模型、Gemini Robotics 1.5和Google",
-      "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-121-tan-jie-deepmind-robotics-gemini-robotics-cleaned.md",
-      "raw_source_path": "",
-      "source_url": "",
-      "published": "2025-11-28T09:17:21.811Z",
-      "podcast": "张小珺Jùn｜商业访谈录",
-      "timestamp_start": "02:06:00",
-      "timestamp_end": "02:06:05",
-      "line": 4127,
       "score": 6
     },
     {
@@ -13945,11 +14549,11 @@
   "player_evidence": {
     "部署 / 商业化": {
       "subject": "部署 / 商业化",
-      "claim_count": 55,
+      "claim_count": 56,
       "dimensions": [
         [
           "deployment",
-          43
+          44
         ],
         [
           "product",
@@ -13979,7 +14583,7 @@
       "themes": [
         [
           "部署 / 商业化",
-          55
+          56
         ]
       ],
       "sources": [
@@ -15599,11 +16203,11 @@
     },
     "融资 / 资本信号": {
       "subject": "融资 / 资本信号",
-      "claim_count": 28,
+      "claim_count": 29,
       "dimensions": [
         [
           "financing",
-          28
+          29
         ],
         [
           "gap",
@@ -15625,7 +16229,7 @@
       "themes": [
         [
           "融资 / 资本信号",
-          28
+          29
         ]
       ],
       "sources": [
@@ -15988,11 +16592,11 @@
     },
     "强化学习 / 控制": {
       "subject": "强化学习 / 控制",
-      "claim_count": 26,
+      "claim_count": 27,
       "dimensions": [
         [
           "general",
-          20
+          21
         ],
         [
           "product",
@@ -16014,7 +16618,7 @@
       "themes": [
         [
           "强化学习 / 控制",
-          26
+          27
         ],
         [
           "部署 / 商业化",
@@ -16028,7 +16632,7 @@
         ],
         [
           "121. 对DeepMind谭捷的访谈：机器人、跨本体、世界模型、Gemini Robotics 1.5和Google",
-          5
+          4
         ],
         [
           "E13.许华哲：刚起跑的具身，不等上市的人｜北坡计划",
@@ -17156,6 +17760,405 @@
         }
       ]
     },
+    "NVIDIA": {
+      "subject": "NVIDIA",
+      "claim_count": 14,
+      "dimensions": [
+        [
+          "general",
+          7
+        ],
+        [
+          "deployment",
+          3
+        ],
+        [
+          "route",
+          1
+        ],
+        [
+          "data",
+          1
+        ],
+        [
+          "financing",
+          1
+        ],
+        [
+          "gap",
+          1
+        ],
+        [
+          "product",
+          1
+        ]
+      ],
+      "themes": [
+        [
+          "部署 / 商业化",
+          3
+        ],
+        [
+          "仿真 / 合成数据",
+          2
+        ],
+        [
+          "融资 / 资本信号",
+          1
+        ],
+        [
+          "具身智能",
+          1
+        ]
+      ],
+      "sources": [
+        [
+          "109. 机器人遭遇数据荒？与谢晨聊：仿真与合成数据、Meta天价收购和Alexandr Wang",
+          9
+        ],
+        [
+          "62.年终复盘AI笔记：中美逾30位从业者访谈中，有哪些发现？",
+          2
+        ],
+        [
+          "29.直击 2025 GTC（下）｜王冠之重，黄仁勋如何回应一切质疑？",
+          2
+        ],
+        [
+          "55.揭秘「机器人造脑」幕后：VLM、VLA，不变的是感知能力的提升",
+          1
+        ]
+      ],
+      "top_claims": [
+        {
+          "id": "claim-1b0a42164b",
+          "status": "candidate",
+          "subject": "NVIDIA",
+          "claim_text": "特斯拉他其实后来就用了是自己的这个就是芯片啊，所以他他其实就不是英伟达的客户了。",
+          "dimensions": [
+            "deployment"
+          ],
+          "themes": [
+            "部署 / 商业化"
+          ],
+          "players": [
+            "NVIDIA"
+          ],
+          "evidence_grade": "B",
+          "confidence": "medium",
+          "source_type": "podcast_transcript",
+          "source_title": "109. 机器人遭遇数据荒？与谢晨聊：仿真与合成数据、Meta天价收购和Alexandr Wang",
+          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-109-xie-chen-simulation-synthetic-data-robotics-cleaned.md",
+          "raw_source_path": "",
+          "source_url": "",
+          "published": "2025-07-15T23:00:00.000Z",
+          "podcast": "张小珺Jùn｜商业访谈录",
+          "timestamp_start": "23:10",
+          "timestamp_end": "23:16",
+          "line": 347,
+          "score": 30
+        },
+        {
+          "id": "claim-d34deb1bfd",
+          "status": "candidate",
+          "subject": "NVIDIA",
+          "claim_text": "当时其实在美国的话，要不然就是Waymo、Cruise,要不然就是英伟达，它是服务的是L2的量产的这个客户。",
+          "dimensions": [
+            "deployment"
+          ],
+          "themes": [
+            "部署 / 商业化"
+          ],
+          "players": [
+            "NVIDIA"
+          ],
+          "evidence_grade": "B",
+          "confidence": "medium",
+          "source_type": "podcast_transcript",
+          "source_title": "109. 机器人遭遇数据荒？与谢晨聊：仿真与合成数据、Meta天价收购和Alexandr Wang",
+          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-109-xie-chen-simulation-synthetic-data-robotics-cleaned.md",
+          "raw_source_path": "",
+          "source_url": "",
+          "published": "2025-07-15T23:00:00.000Z",
+          "podcast": "张小珺Jùn｜商业访谈录",
+          "timestamp_start": "21:02",
+          "timestamp_end": "21:08",
+          "line": 319,
+          "score": 26
+        },
+        {
+          "id": "claim-d7e7d4ab7a",
+          "status": "candidate",
+          "subject": "NVIDIA",
+          "claim_text": "第一，我觉得一个很有意思的一个观察，是我去之前，我认为可能英伟达的Aurine,就是他的车载芯片最大的客户会是Waymo和Cruise。",
+          "dimensions": [
+            "deployment"
+          ],
+          "themes": [
+            "部署 / 商业化"
+          ],
+          "players": [
+            "NVIDIA"
+          ],
+          "evidence_grade": "B",
+          "confidence": "medium",
+          "source_type": "podcast_transcript",
+          "source_title": "109. 机器人遭遇数据荒？与谢晨聊：仿真与合成数据、Meta天价收购和Alexandr Wang",
+          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-109-xie-chen-simulation-synthetic-data-robotics-cleaned.md",
+          "raw_source_path": "",
+          "source_url": "",
+          "published": "2025-07-15T23:00:00.000Z",
+          "podcast": "张小珺Jùn｜商业访谈录",
+          "timestamp_start": "21:42",
+          "timestamp_end": "21:51",
+          "line": 329,
+          "score": 26
+        },
+        {
+          "id": "claim-e4d0a1c14a",
+          "status": "candidate",
+          "subject": "NVIDIA",
+          "claim_text": "这个市场其实英伟达已经摸下来了，最大量的这个在数据中心，在超算来服务的大元模型大模型的这个计算机，全都是英伟达的。",
+          "dimensions": [
+            "route",
+            "data"
+          ],
+          "themes": [],
+          "players": [
+            "NVIDIA"
+          ],
+          "evidence_grade": "B",
+          "confidence": "medium",
+          "source_type": "podcast_transcript",
+          "source_title": "109. 机器人遭遇数据荒？与谢晨聊：仿真与合成数据、Meta天价收购和Alexandr Wang",
+          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-109-xie-chen-simulation-synthetic-data-robotics-cleaned.md",
+          "raw_source_path": "",
+          "source_url": "",
+          "published": "2025-07-15T23:00:00.000Z",
+          "podcast": "张小珺Jùn｜商业访谈录",
+          "timestamp_start": "01:16:31",
+          "timestamp_end": "01:16:40",
+          "line": 1242,
+          "score": 22
+        },
+        {
+          "id": "claim-9577f3d02a",
+          "status": "candidate",
+          "subject": "NVIDIA",
+          "claim_text": "我记得大观资本的北美负责人Richard他讲到，他的一个在英伟达工作的白人朋友在查阅Deepseek21的原代码之后感慨说这个工程太漂亮了。",
+          "dimensions": [
+            "financing"
+          ],
+          "themes": [
+            "融资 / 资本信号"
+          ],
+          "players": [
+            "NVIDIA"
+          ],
+          "evidence_grade": "B",
+          "confidence": "medium",
+          "source_type": "podcast_transcript",
+          "source_title": "62.年终复盘AI笔记：中美逾30位从业者访谈中，有哪些发现？",
+          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/lightstar-ep-62-ai-year-review-embodied-signals-cleaned.md",
+          "raw_source_path": "",
+          "source_url": "https://www.xiaoyuzhoufm.com/episode/69785cdd7926069fc863fe1b",
+          "published": "2026-01-28",
+          "podcast": "卫诗婕｜漫谈Light the Star",
+          "timestamp_start": "04:40",
+          "timestamp_end": "04:54",
+          "line": 107,
+          "score": 17
+        },
+        {
+          "id": "claim-110dc66099",
+          "status": "candidate",
+          "subject": "NVIDIA",
+          "claim_text": "好，是不是好几个英伟达的人都加入了新势力？理想那边也有。",
+          "dimensions": [
+            "general"
+          ],
+          "themes": [],
+          "players": [
+            "NVIDIA"
+          ],
+          "evidence_grade": "B",
+          "confidence": "medium",
+          "source_type": "podcast_transcript",
+          "source_title": "109. 机器人遭遇数据荒？与谢晨聊：仿真与合成数据、Meta天价收购和Alexandr Wang",
+          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-109-xie-chen-simulation-synthetic-data-robotics-cleaned.md",
+          "raw_source_path": "",
+          "source_url": "",
+          "published": "2025-07-15T23:00:00.000Z",
+          "podcast": "张小珺Jùn｜商业访谈录",
+          "timestamp_start": "24:10",
+          "timestamp_end": "24:14",
+          "line": 356,
+          "score": 16
+        },
+        {
+          "id": "claim-3062d3d997",
+          "status": "candidate",
+          "subject": "NVIDIA",
+          "claim_text": "因为Deep Seek其实并不是真正意义上的绕过了英伟达,",
+          "dimensions": [
+            "general"
+          ],
+          "themes": [],
+          "players": [
+            "NVIDIA"
+          ],
+          "evidence_grade": "B",
+          "confidence": "medium",
+          "source_type": "podcast_transcript",
+          "source_title": "29.直击 2025 GTC（下）｜王冠之重，黄仁勋如何回应一切质疑？",
+          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/lightstar-ep-29-gtc-2025-huang-renxun-physical-ai-cleaned.md",
+          "raw_source_path": "",
+          "source_url": "https://www.xiaoyuzhoufm.com/episode/67e39e7451d887b229f3ff4b",
+          "published": "2025-03-26",
+          "podcast": "卫诗婕｜漫谈Light the Star",
+          "timestamp_start": "43:03",
+          "timestamp_end": "43:07",
+          "line": 1328,
+          "score": 15
+        },
+        {
+          "id": "claim-b4b45f4694",
+          "status": "candidate",
+          "subject": "NVIDIA",
+          "claim_text": "英伟达的ISACSIM,巨深仿真器是现在整个行业用的最多的仿真器。",
+          "dimensions": [
+            "general"
+          ],
+          "themes": [
+            "仿真 / 合成数据"
+          ],
+          "players": [
+            "NVIDIA"
+          ],
+          "evidence_grade": "B",
+          "confidence": "medium",
+          "source_type": "podcast_transcript",
+          "source_title": "109. 机器人遭遇数据荒？与谢晨聊：仿真与合成数据、Meta天价收购和Alexandr Wang",
+          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-109-xie-chen-simulation-synthetic-data-robotics-cleaned.md",
+          "raw_source_path": "",
+          "source_url": "",
+          "published": "2025-07-15T23:00:00.000Z",
+          "podcast": "张小珺Jùn｜商业访谈录",
+          "timestamp_start": "01:17:06",
+          "timestamp_end": "01:17:12",
+          "line": 1249,
+          "score": 15
+        },
+        {
+          "id": "claim-7d70e97c59",
+          "status": "candidate",
+          "subject": "NVIDIA",
+          "claim_text": "你后来从Cruise去了英伟达是为什么呀？我在Cruise已经把仿真做到了一个极致了，那确实也是因为我做的足够好。",
+          "dimensions": [
+            "general"
+          ],
+          "themes": [
+            "仿真 / 合成数据"
+          ],
+          "players": [
+            "NVIDIA"
+          ],
+          "evidence_grade": "B",
+          "confidence": "medium",
+          "source_type": "podcast_transcript",
+          "source_title": "109. 机器人遭遇数据荒？与谢晨聊：仿真与合成数据、Meta天价收购和Alexandr Wang",
+          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-109-xie-chen-simulation-synthetic-data-robotics-cleaned.md",
+          "raw_source_path": "",
+          "source_url": "",
+          "published": "2025-07-15T23:00:00.000Z",
+          "podcast": "张小珺Jùn｜商业访谈录",
+          "timestamp_start": "20:26",
+          "timestamp_end": "20:33",
+          "line": 314,
+          "score": 15
+        },
+        {
+          "id": "claim-22b9089f08",
+          "status": "candidate",
+          "subject": "NVIDIA",
+          "claim_text": "但是他其实没有有效的自演出来。所以他现在还是大量的去囤这个英伟达的这些计算的卡。",
+          "dimensions": [
+            "gap"
+          ],
+          "themes": [],
+          "players": [
+            "NVIDIA"
+          ],
+          "evidence_grade": "B",
+          "confidence": "medium",
+          "source_type": "podcast_transcript",
+          "source_title": "109. 机器人遭遇数据荒？与谢晨聊：仿真与合成数据、Meta天价收购和Alexandr Wang",
+          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-109-xie-chen-simulation-synthetic-data-robotics-cleaned.md",
+          "raw_source_path": "",
+          "source_url": "",
+          "published": "2025-07-15T23:00:00.000Z",
+          "podcast": "张小珺Jùn｜商业访谈录",
+          "timestamp_start": "23:24",
+          "timestamp_end": "23:30",
+          "line": 349,
+          "score": 15
+        },
+        {
+          "id": "claim-df87674fa8",
+          "status": "candidate",
+          "subject": "NVIDIA",
+          "claim_text": "但这类公司更多是大厂的这个具身部门，比如说像这个英伟达的gear,",
+          "dimensions": [
+            "general"
+          ],
+          "themes": [
+            "具身智能"
+          ],
+          "players": [
+            "NVIDIA"
+          ],
+          "evidence_grade": "B",
+          "confidence": "medium",
+          "source_type": "podcast_transcript",
+          "source_title": "109. 机器人遭遇数据荒？与谢晨聊：仿真与合成数据、Meta天价收购和Alexandr Wang",
+          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-109-xie-chen-simulation-synthetic-data-robotics-cleaned.md",
+          "raw_source_path": "",
+          "source_url": "",
+          "published": "2025-07-15T23:00:00.000Z",
+          "podcast": "张小珺Jùn｜商业访谈录",
+          "timestamp_start": "01:03:03",
+          "timestamp_end": "01:03:07",
+          "line": 1095,
+          "score": 14
+        },
+        {
+          "id": "claim-b3dccb3993",
+          "status": "candidate",
+          "subject": "NVIDIA",
+          "claim_text": "比如说英伟达发布的具有这个衡量物理常识推理和聚生决策能力的那个benchmark,",
+          "dimensions": [
+            "product"
+          ],
+          "themes": [],
+          "players": [
+            "NVIDIA"
+          ],
+          "evidence_grade": "B",
+          "confidence": "medium",
+          "source_type": "podcast_transcript",
+          "source_title": "55.揭秘「机器人造脑」幕后：VLM、VLA，不变的是感知能力的提升",
+          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/lightstar-ep-55-robot-brain-vlm-vla-pelican-cleaned.md",
+          "raw_source_path": "",
+          "source_url": "https://www.xiaoyuzhoufm.com/episode/6923112b6018cc2c98357334",
+          "published": "2025-11-24",
+          "podcast": "卫诗婕｜漫谈Light the Star",
+          "timestamp_start": "39:43",
+          "timestamp_end": "39:50",
+          "line": 931,
+          "score": 13
+        }
+      ]
+    },
     "机器人大脑": {
       "subject": "机器人大脑",
       "claim_count": 14,
@@ -17581,385 +18584,347 @@
         }
       ]
     },
-    "NVIDIA": {
-      "subject": "NVIDIA",
-      "claim_count": 12,
+    "世界模型": {
+      "subject": "世界模型",
+      "claim_count": 11,
       "dimensions": [
+        [
+          "route",
+          6
+        ],
         [
           "general",
           5
         ],
         [
-          "deployment",
-          3
-        ],
-        [
-          "route",
-          1
-        ],
-        [
           "data",
-          1
-        ],
-        [
-          "financing",
-          1
-        ],
-        [
-          "gap",
-          1
-        ],
-        [
-          "product",
           1
         ]
       ],
       "themes": [
         [
-          "部署 / 商业化",
-          3
+          "世界模型",
+          11
         ],
         [
-          "仿真 / 合成数据",
-          2
-        ],
-        [
-          "融资 / 资本信号",
-          1
-        ],
-        [
-          "具身智能",
-          1
+          "强化学习 / 控制",
+          6
         ]
       ],
       "sources": [
         [
-          "109. 机器人遭遇数据荒？与谢晨聊：仿真与合成数据、Meta天价收购和Alexandr Wang",
-          9
-        ],
-        [
-          "62.年终复盘AI笔记：中美逾30位从业者访谈中，有哪些发现？",
+          "Vol.16 清华创业科学家许华哲：从智能“破壳”到家庭具身，在AI大浪里“死磕”原创",
           2
         ],
         [
-          "55.揭秘「机器人造脑」幕后：VLM、VLA，不变的是感知能力的提升",
+          "小米王乃岩：AI时代的变与不变",
+          2
+        ],
+        [
+          "133. 对谢赛宁的7小时马拉松访谈：世界模型、逃出硅谷、AMI Labs、两次拒绝Ilya、杨立昆、李飞飞和42",
+          1
+        ],
+        [
+          "134. 【数据的综述】和谢晨聊，新时代的石油、历史、版图、数据金字塔、定价与Recipe",
+          1
+        ],
+        [
+          "120. 小鹏新上任的刘先明首次访谈：Language是毒药、拆掉L、简单即美、换帅、小鹏的AI转型",
+          1
+        ],
+        [
+          "64.直击史上机器人浓度最高的春晚：与姜哲源、宁慕楠聊具身、Seedance2.0，行业幕后与未来｜春节特别节目（上）",
+          1
+        ],
+        [
+          "98. 逐篇讲解机器人基座模型和VLA经典论文——“人就是最智能的VLA”",
+          1
+        ],
+        [
+          "121. 对DeepMind谭捷的访谈：机器人、跨本体、世界模型、Gemini Robotics 1.5和Google",
           1
         ]
       ],
       "top_claims": [
         {
-          "id": "claim-1b0a42164b",
+          "id": "claim-21274a7faf",
           "status": "candidate",
-          "subject": "NVIDIA",
-          "claim_text": "特斯拉他其实后来就用了是自己的这个就是芯片啊，所以他他其实就不是英伟达的客户了。",
+          "subject": "世界模型",
+          "claim_text": "哦然后这是很难的我觉得我觉得非常非常难因为念头很多时候自己很难控制是的是的是的哎对这个这个这个跟世界模型有关系念头很难控制这个这个这个话说的好啊但凯明其实是一个非常非常有这种决策能力然后能够专注的人嗯对其实我觉得有好几点吧我觉得一个top researcher他们都或多或少需要这样的能力他们需要有足够多的专注力他们需要有足够好的这种research的品",
           "dimensions": [
-            "deployment"
+            "route"
           ],
           "themes": [
-            "部署 / 商业化"
+            "世界模型",
+            "强化学习 / 控制"
           ],
-          "players": [
-            "NVIDIA"
-          ],
+          "players": [],
           "evidence_grade": "B",
           "confidence": "medium",
           "source_type": "podcast_transcript",
-          "source_title": "109. 机器人遭遇数据荒？与谢晨聊：仿真与合成数据、Meta天价收购和Alexandr Wang",
-          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-109-xie-chen-simulation-synthetic-data-robotics-cleaned.md",
+          "source_title": "133. 对谢赛宁的7小时马拉松访谈：世界模型、逃出硅谷、AMI Labs、两次拒绝Ilya、杨立昆、李飞飞和42",
+          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-133-xie-saining-world-model-ami-labs-cleaned.md",
           "raw_source_path": "",
           "source_url": "",
-          "published": "2025-07-15T23:00:00.000Z",
+          "published": "2026-03-16T04:01:08.137Z",
           "podcast": "张小珺Jùn｜商业访谈录",
-          "timestamp_start": "23:10",
-          "timestamp_end": "23:16",
-          "line": 347,
-          "score": 30
-        },
-        {
-          "id": "claim-d34deb1bfd",
-          "status": "candidate",
-          "subject": "NVIDIA",
-          "claim_text": "当时其实在美国的话，要不然就是Waymo、Cruise,要不然就是英伟达，它是服务的是L2的量产的这个客户。",
-          "dimensions": [
-            "deployment"
-          ],
-          "themes": [
-            "部署 / 商业化"
-          ],
-          "players": [
-            "NVIDIA"
-          ],
-          "evidence_grade": "B",
-          "confidence": "medium",
-          "source_type": "podcast_transcript",
-          "source_title": "109. 机器人遭遇数据荒？与谢晨聊：仿真与合成数据、Meta天价收购和Alexandr Wang",
-          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-109-xie-chen-simulation-synthetic-data-robotics-cleaned.md",
-          "raw_source_path": "",
-          "source_url": "",
-          "published": "2025-07-15T23:00:00.000Z",
-          "podcast": "张小珺Jùn｜商业访谈录",
-          "timestamp_start": "21:02",
-          "timestamp_end": "21:08",
-          "line": 319,
+          "timestamp_start": "02:02:09",
+          "timestamp_end": "02:02:39",
+          "line": 1634,
           "score": 26
         },
         {
-          "id": "claim-d7e7d4ab7a",
+          "id": "claim-18804b0133",
           "status": "candidate",
-          "subject": "NVIDIA",
-          "claim_text": "第一，我觉得一个很有意思的一个观察，是我去之前，我认为可能英伟达的Aurine,就是他的车载芯片最大的客户会是Waymo和Cruise。",
-          "dimensions": [
-            "deployment"
-          ],
-          "themes": [
-            "部署 / 商业化"
-          ],
-          "players": [
-            "NVIDIA"
-          ],
-          "evidence_grade": "B",
-          "confidence": "medium",
-          "source_type": "podcast_transcript",
-          "source_title": "109. 机器人遭遇数据荒？与谢晨聊：仿真与合成数据、Meta天价收购和Alexandr Wang",
-          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-109-xie-chen-simulation-synthetic-data-robotics-cleaned.md",
-          "raw_source_path": "",
-          "source_url": "",
-          "published": "2025-07-15T23:00:00.000Z",
-          "podcast": "张小珺Jùn｜商业访谈录",
-          "timestamp_start": "21:42",
-          "timestamp_end": "21:51",
-          "line": 329,
-          "score": 26
-        },
-        {
-          "id": "claim-e4d0a1c14a",
-          "status": "candidate",
-          "subject": "NVIDIA",
-          "claim_text": "这个市场其实英伟达已经摸下来了，最大量的这个在数据中心，在超算来服务的大元模型大模型的这个计算机，全都是英伟达的。",
+          "subject": "世界模型",
+          "claim_text": "比如说可能世界模型团队并不见得一定要需要去有那么强行动的数据,",
           "dimensions": [
             "route",
             "data"
           ],
-          "themes": [],
-          "players": [
-            "NVIDIA"
+          "themes": [
+            "世界模型"
           ],
+          "players": [],
           "evidence_grade": "B",
           "confidence": "medium",
           "source_type": "podcast_transcript",
-          "source_title": "109. 机器人遭遇数据荒？与谢晨聊：仿真与合成数据、Meta天价收购和Alexandr Wang",
-          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-109-xie-chen-simulation-synthetic-data-robotics-cleaned.md",
+          "source_title": "134. 【数据的综述】和谢晨聊，新时代的石油、历史、版图、数据金字塔、定价与Recipe",
+          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-134-xie-chen-data-recipe-data-industry-cleaned.md",
           "raw_source_path": "",
           "source_url": "",
-          "published": "2025-07-15T23:00:00.000Z",
+          "published": "2026-03-30T00:00:00.000Z",
           "podcast": "张小珺Jùn｜商业访谈录",
-          "timestamp_start": "01:16:31",
-          "timestamp_end": "01:16:40",
-          "line": 1242,
-          "score": 22
+          "timestamp_start": "01:22:14",
+          "timestamp_end": "01:22:20",
+          "line": 2263,
+          "score": 18
         },
         {
-          "id": "claim-9577f3d02a",
+          "id": "claim-08882c747d",
           "status": "candidate",
-          "subject": "NVIDIA",
-          "claim_text": "我记得大观资本的北美负责人Richard他讲到，他的一个在英伟达工作的白人朋友在查阅Deepseek21的原代码之后感慨说这个工程太漂亮了。",
+          "subject": "世界模型",
+          "claim_text": "我们对于世界模型的看法就是说它其实是本质上是一个对整个世界的生成的。",
           "dimensions": [
-            "financing"
+            "route"
           ],
           "themes": [
-            "融资 / 资本信号"
+            "世界模型"
           ],
-          "players": [
-            "NVIDIA"
-          ],
+          "players": [],
           "evidence_grade": "B",
           "confidence": "medium",
           "source_type": "podcast_transcript",
-          "source_title": "62.年终复盘AI笔记：中美逾30位从业者访谈中，有哪些发现？",
-          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/lightstar-ep-62-ai-year-review-embodied-signals-cleaned.md",
+          "source_title": "120. 小鹏新上任的刘先明首次访谈：Language是毒药、拆掉L、简单即美、换帅、小鹏的AI转型",
+          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-120-xpeng-liu-xianming-ai-transform-cleaned.md",
           "raw_source_path": "",
-          "source_url": "https://www.xiaoyuzhoufm.com/episode/69785cdd7926069fc863fe1b",
-          "published": "2026-01-28",
-          "podcast": "卫诗婕｜漫谈Light the Star",
-          "timestamp_start": "04:40",
-          "timestamp_end": "04:54",
-          "line": 107,
-          "score": 17
-        },
-        {
-          "id": "claim-110dc66099",
-          "status": "candidate",
-          "subject": "NVIDIA",
-          "claim_text": "好，是不是好几个英伟达的人都加入了新势力？理想那边也有。",
-          "dimensions": [
-            "general"
-          ],
-          "themes": [],
-          "players": [
-            "NVIDIA"
-          ],
-          "evidence_grade": "B",
-          "confidence": "medium",
-          "source_type": "podcast_transcript",
-          "source_title": "109. 机器人遭遇数据荒？与谢晨聊：仿真与合成数据、Meta天价收购和Alexandr Wang",
-          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-109-xie-chen-simulation-synthetic-data-robotics-cleaned.md",
-          "raw_source_path": "",
-          "source_url": "",
-          "published": "2025-07-15T23:00:00.000Z",
+          "source_url": "https://www.xiaoyuzhoufm.com/episode/691c3670cbba038b421f74a4",
+          "published": "2025-11-18",
           "podcast": "张小珺Jùn｜商业访谈录",
-          "timestamp_start": "24:10",
-          "timestamp_end": "24:14",
-          "line": 356,
+          "timestamp_start": "48:15",
+          "timestamp_end": "48:20",
+          "line": 1624,
           "score": 16
         },
         {
-          "id": "claim-b4b45f4694",
+          "id": "claim-fcec6cfb52",
           "status": "candidate",
-          "subject": "NVIDIA",
-          "claim_text": "英伟达的ISACSIM,巨深仿真器是现在整个行业用的最多的仿真器。",
+          "subject": "世界模型",
+          "claim_text": "我最早知道世界模型这个词应该是从很早的一个叫做David Ha,",
           "dimensions": [
-            "general"
+            "route"
           ],
           "themes": [
-            "仿真 / 合成数据"
+            "世界模型"
           ],
-          "players": [
-            "NVIDIA"
-          ],
+          "players": [],
           "evidence_grade": "B",
           "confidence": "medium",
           "source_type": "podcast_transcript",
-          "source_title": "109. 机器人遭遇数据荒？与谢晨聊：仿真与合成数据、Meta天价收购和Alexandr Wang",
-          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-109-xie-chen-simulation-synthetic-data-robotics-cleaned.md",
+          "source_title": "Vol.16 清华创业科学家许华哲：从智能“破壳”到家庭具身，在AI大浪里“死磕”原创",
+          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-16-xu-huazhe-attention-home-embodiment-cleaned.md",
           "raw_source_path": "",
           "source_url": "",
-          "published": "2025-07-15T23:00:00.000Z",
-          "podcast": "张小珺Jùn｜商业访谈录",
-          "timestamp_start": "01:17:06",
-          "timestamp_end": "01:17:12",
-          "line": 1249,
+          "published": "2026-04-27T02:26:21.815Z",
+          "podcast": "Attent!on",
+          "timestamp_start": "24:49",
+          "timestamp_end": "24:54",
+          "line": 624,
           "score": 15
         },
         {
-          "id": "claim-7d70e97c59",
+          "id": "claim-2683badf0d",
           "status": "candidate",
-          "subject": "NVIDIA",
-          "claim_text": "你后来从Cruise去了英伟达是为什么呀？我在Cruise已经把仿真做到了一个极致了，那确实也是因为我做的足够好。",
+          "subject": "世界模型",
+          "claim_text": "其实世界模型某种意义上最直观的体现就是对于未来的预测能力,",
           "dimensions": [
-            "general"
+            "route"
           ],
           "themes": [
-            "仿真 / 合成数据"
+            "世界模型"
           ],
-          "players": [
-            "NVIDIA"
-          ],
+          "players": [],
           "evidence_grade": "B",
           "confidence": "medium",
           "source_type": "podcast_transcript",
-          "source_title": "109. 机器人遭遇数据荒？与谢晨聊：仿真与合成数据、Meta天价收购和Alexandr Wang",
-          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-109-xie-chen-simulation-synthetic-data-robotics-cleaned.md",
+          "source_title": "Vol.16 清华创业科学家许华哲：从智能“破壳”到家庭具身，在AI大浪里“死磕”原创",
+          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-16-xu-huazhe-attention-home-embodiment-cleaned.md",
           "raw_source_path": "",
           "source_url": "",
-          "published": "2025-07-15T23:00:00.000Z",
-          "podcast": "张小珺Jùn｜商业访谈录",
-          "timestamp_start": "20:26",
-          "timestamp_end": "20:33",
-          "line": 314,
+          "published": "2026-04-27T02:26:21.815Z",
+          "podcast": "Attent!on",
+          "timestamp_start": "25:09",
+          "timestamp_end": "25:14",
+          "line": 633,
           "score": 15
         },
         {
-          "id": "claim-22b9089f08",
+          "id": "claim-efd0d7d129",
           "status": "candidate",
-          "subject": "NVIDIA",
-          "claim_text": "但是他其实没有有效的自演出来。所以他现在还是大量的去囤这个英伟达的这些计算的卡。",
+          "subject": "世界模型",
+          "claim_text": "我之前在腾讯有工作过，我的主要研究方向是多摩泰以及AirFans,对世界模型也有一定的研究。",
           "dimensions": [
-            "gap"
-          ],
-          "themes": [],
-          "players": [
-            "NVIDIA"
-          ],
-          "evidence_grade": "B",
-          "confidence": "medium",
-          "source_type": "podcast_transcript",
-          "source_title": "109. 机器人遭遇数据荒？与谢晨聊：仿真与合成数据、Meta天价收购和Alexandr Wang",
-          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-109-xie-chen-simulation-synthetic-data-robotics-cleaned.md",
-          "raw_source_path": "",
-          "source_url": "",
-          "published": "2025-07-15T23:00:00.000Z",
-          "podcast": "张小珺Jùn｜商业访谈录",
-          "timestamp_start": "23:24",
-          "timestamp_end": "23:30",
-          "line": 349,
-          "score": 15
-        },
-        {
-          "id": "claim-df87674fa8",
-          "status": "candidate",
-          "subject": "NVIDIA",
-          "claim_text": "但这类公司更多是大厂的这个具身部门，比如说像这个英伟达的gear,",
-          "dimensions": [
-            "general"
+            "route"
           ],
           "themes": [
-            "具身智能"
+            "世界模型"
           ],
-          "players": [
-            "NVIDIA"
-          ],
+          "players": [],
           "evidence_grade": "B",
           "confidence": "medium",
           "source_type": "podcast_transcript",
-          "source_title": "109. 机器人遭遇数据荒？与谢晨聊：仿真与合成数据、Meta天价收购和Alexandr Wang",
-          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-109-xie-chen-simulation-synthetic-data-robotics-cleaned.md",
+          "source_title": "64.直击史上机器人浓度最高的春晚：与姜哲源、宁慕楠聊具身、Seedance2.0，行业幕后与未来｜春节特别节目（上）",
+          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/lightstar-ep-64-spring-festival-robotics-embodied-cleaned.md",
           "raw_source_path": "",
-          "source_url": "",
-          "published": "2025-07-15T23:00:00.000Z",
-          "podcast": "张小珺Jùn｜商业访谈录",
-          "timestamp_start": "01:03:03",
-          "timestamp_end": "01:03:07",
-          "line": 1095,
+          "source_url": "https://www.xiaoyuzhoufm.com/episode/6992f529de29766da9bdffd1",
+          "published": "2026-02-16",
+          "podcast": "卫诗婕｜漫谈Light the Star",
+          "timestamp_start": "02:38",
+          "timestamp_end": "02:46",
+          "line": 96,
           "score": 14
         },
         {
-          "id": "claim-b3dccb3993",
+          "id": "claim-f4f18679af",
           "status": "candidate",
-          "subject": "NVIDIA",
-          "claim_text": "比如说英伟达发布的具有这个衡量物理常识推理和聚生决策能力的那个benchmark,",
-          "dimensions": [
-            "product"
-          ],
-          "themes": [],
-          "players": [
-            "NVIDIA"
-          ],
-          "evidence_grade": "B",
-          "confidence": "medium",
-          "source_type": "podcast_transcript",
-          "source_title": "55.揭秘「机器人造脑」幕后：VLM、VLA，不变的是感知能力的提升",
-          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/lightstar-ep-55-robot-brain-vlm-vla-pelican-cleaned.md",
-          "raw_source_path": "",
-          "source_url": "https://www.xiaoyuzhoufm.com/episode/6923112b6018cc2c98357334",
-          "published": "2025-11-24",
-          "podcast": "卫诗婕｜漫谈Light the Star",
-          "timestamp_start": "39:43",
-          "timestamp_end": "39:50",
-          "line": 931,
-          "score": 13
-        },
-        {
-          "id": "claim-357b040138",
-          "status": "candidate",
-          "subject": "NVIDIA",
-          "claim_text": "代表人物是英伟达，因为他肯定不希望芯片尽手，希望能够把算力芯片卖到全球。",
+          "subject": "世界模型",
+          "claim_text": "对我觉得这个是就可能就是在更像是这个强行学习里面去讲的那种World Model",
           "dimensions": [
             "general"
           ],
-          "themes": [],
-          "players": [
-            "NVIDIA"
+          "themes": [
+            "世界模型",
+            "强化学习 / 控制"
           ],
+          "players": [],
+          "evidence_grade": "B",
+          "confidence": "medium",
+          "source_type": "podcast_transcript",
+          "source_title": "小米王乃岩：AI时代的变与不变",
+          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-wang-naiyan-ai-era-physical-ai-cleaned.md",
+          "raw_source_path": "",
+          "source_url": "",
+          "published": "2026-05-07T01:48:49.874Z",
+          "podcast": "许华哲的自定义地图",
+          "timestamp_start": "23:30",
+          "timestamp_end": "23:35",
+          "line": 661,
+          "score": 13
+        },
+        {
+          "id": "claim-3fd1db141e",
+          "status": "candidate",
+          "subject": "世界模型",
+          "claim_text": "所以这个也是我称之为这个算是一种World Model,",
+          "dimensions": [
+            "general"
+          ],
+          "themes": [
+            "世界模型",
+            "强化学习 / 控制"
+          ],
+          "players": [],
+          "evidence_grade": "B",
+          "confidence": "medium",
+          "source_type": "podcast_transcript",
+          "source_title": "98. 逐篇讲解机器人基座模型和VLA经典论文——“人就是最智能的VLA”",
+          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-098-chen-jianyu-robot-foundation-models-vla-cleaned.md",
+          "raw_source_path": "",
+          "source_url": "",
+          "published": "2025-04-06T23:00:00.000Z",
+          "podcast": "张小珺Jùn｜商业访谈录",
+          "timestamp_start": "01:55:24",
+          "timestamp_end": "01:55:29",
+          "line": 3450,
+          "score": 12
+        },
+        {
+          "id": "claim-a9fd20aa6c",
+          "status": "candidate",
+          "subject": "世界模型",
+          "claim_text": "因为world model生成的是visual是下一帧对吧,",
+          "dimensions": [
+            "general"
+          ],
+          "themes": [
+            "世界模型",
+            "强化学习 / 控制"
+          ],
+          "players": [],
+          "evidence_grade": "B",
+          "confidence": "medium",
+          "source_type": "podcast_transcript",
+          "source_title": "121. 对DeepMind谭捷的访谈：机器人、跨本体、世界模型、Gemini Robotics 1.5和Google",
+          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-121-tan-jie-deepmind-robotics-gemini-robotics-cleaned.md",
+          "raw_source_path": "",
+          "source_url": "",
+          "published": "2025-11-28T09:17:21.811Z",
+          "podcast": "张小珺Jùn｜商业访谈录",
+          "timestamp_start": "01:06:21",
+          "timestamp_end": "01:06:25",
+          "line": 2180,
+          "score": 12
+        },
+        {
+          "id": "claim-cf9548349b",
+          "status": "candidate",
+          "subject": "世界模型",
+          "claim_text": "就是首先我是比较这个原教旨主义的这个World Model",
+          "dimensions": [
+            "general"
+          ],
+          "themes": [
+            "世界模型",
+            "强化学习 / 控制"
+          ],
+          "players": [],
+          "evidence_grade": "B",
+          "confidence": "medium",
+          "source_type": "podcast_transcript",
+          "source_title": "小米王乃岩：AI时代的变与不变",
+          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-wang-naiyan-ai-era-physical-ai-cleaned.md",
+          "raw_source_path": "",
+          "source_url": "",
+          "published": "2026-05-07T01:48:49.874Z",
+          "podcast": "许华哲的自定义地图",
+          "timestamp_start": "23:17",
+          "timestamp_end": "23:23",
+          "line": 658,
+          "score": 12
+        },
+        {
+          "id": "claim-f0e858e077",
+          "status": "candidate",
+          "subject": "世界模型",
+          "claim_text": "一句话解释就是你可以认为现在的LM的World Model,",
+          "dimensions": [
+            "general"
+          ],
+          "themes": [
+            "世界模型",
+            "强化学习 / 控制"
+          ],
+          "players": [],
           "evidence_grade": "B",
           "confidence": "medium",
           "source_type": "podcast_transcript",
@@ -17969,10 +18934,10 @@
           "source_url": "https://www.xiaoyuzhoufm.com/episode/69785cdd7926069fc863fe1b",
           "published": "2026-01-28",
           "podcast": "卫诗婕｜漫谈Light the Star",
-          "timestamp_start": "06:58",
-          "timestamp_end": "07:06",
-          "line": 122,
-          "score": 10
+          "timestamp_start": "01:28:35",
+          "timestamp_end": "01:28:39",
+          "line": 1578,
+          "score": 11
         }
       ]
     },
@@ -18328,337 +19293,6 @@
           "timestamp_end": "03:44",
           "line": 90,
           "score": 9
-        }
-      ]
-    },
-    "世界模型": {
-      "subject": "世界模型",
-      "claim_count": 10,
-      "dimensions": [
-        [
-          "route",
-          5
-        ],
-        [
-          "general",
-          5
-        ],
-        [
-          "data",
-          1
-        ]
-      ],
-      "themes": [
-        [
-          "世界模型",
-          10
-        ],
-        [
-          "强化学习 / 控制",
-          6
-        ]
-      ],
-      "sources": [
-        [
-          "Vol.16 清华创业科学家许华哲：从智能“破壳”到家庭具身，在AI大浪里“死磕”原创",
-          2
-        ],
-        [
-          "小米王乃岩：AI时代的变与不变",
-          2
-        ],
-        [
-          "133. 对谢赛宁的7小时马拉松访谈：世界模型、逃出硅谷、AMI Labs、两次拒绝Ilya、杨立昆、李飞飞和42",
-          1
-        ],
-        [
-          "134. 【数据的综述】和谢晨聊，新时代的石油、历史、版图、数据金字塔、定价与Recipe",
-          1
-        ],
-        [
-          "64.直击史上机器人浓度最高的春晚：与姜哲源、宁慕楠聊具身、Seedance2.0，行业幕后与未来｜春节特别节目（上）",
-          1
-        ],
-        [
-          "98. 逐篇讲解机器人基座模型和VLA经典论文——“人就是最智能的VLA”",
-          1
-        ],
-        [
-          "121. 对DeepMind谭捷的访谈：机器人、跨本体、世界模型、Gemini Robotics 1.5和Google",
-          1
-        ],
-        [
-          "62.年终复盘AI笔记：中美逾30位从业者访谈中，有哪些发现？",
-          1
-        ]
-      ],
-      "top_claims": [
-        {
-          "id": "claim-21274a7faf",
-          "status": "candidate",
-          "subject": "世界模型",
-          "claim_text": "哦然后这是很难的我觉得我觉得非常非常难因为念头很多时候自己很难控制是的是的是的哎对这个这个这个跟世界模型有关系念头很难控制这个这个这个话说的好啊但凯明其实是一个非常非常有这种决策能力然后能够专注的人嗯对其实我觉得有好几点吧我觉得一个top researcher他们都或多或少需要这样的能力他们需要有足够多的专注力他们需要有足够好的这种research的品",
-          "dimensions": [
-            "route"
-          ],
-          "themes": [
-            "世界模型",
-            "强化学习 / 控制"
-          ],
-          "players": [],
-          "evidence_grade": "B",
-          "confidence": "medium",
-          "source_type": "podcast_transcript",
-          "source_title": "133. 对谢赛宁的7小时马拉松访谈：世界模型、逃出硅谷、AMI Labs、两次拒绝Ilya、杨立昆、李飞飞和42",
-          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-133-xie-saining-world-model-ami-labs-cleaned.md",
-          "raw_source_path": "",
-          "source_url": "",
-          "published": "2026-03-16T04:01:08.137Z",
-          "podcast": "张小珺Jùn｜商业访谈录",
-          "timestamp_start": "02:02:09",
-          "timestamp_end": "02:02:39",
-          "line": 1634,
-          "score": 26
-        },
-        {
-          "id": "claim-18804b0133",
-          "status": "candidate",
-          "subject": "世界模型",
-          "claim_text": "比如说可能世界模型团队并不见得一定要需要去有那么强行动的数据,",
-          "dimensions": [
-            "route",
-            "data"
-          ],
-          "themes": [
-            "世界模型"
-          ],
-          "players": [],
-          "evidence_grade": "B",
-          "confidence": "medium",
-          "source_type": "podcast_transcript",
-          "source_title": "134. 【数据的综述】和谢晨聊，新时代的石油、历史、版图、数据金字塔、定价与Recipe",
-          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-134-xie-chen-data-recipe-data-industry-cleaned.md",
-          "raw_source_path": "",
-          "source_url": "",
-          "published": "2026-03-30T00:00:00.000Z",
-          "podcast": "张小珺Jùn｜商业访谈录",
-          "timestamp_start": "01:22:14",
-          "timestamp_end": "01:22:20",
-          "line": 2263,
-          "score": 18
-        },
-        {
-          "id": "claim-fcec6cfb52",
-          "status": "candidate",
-          "subject": "世界模型",
-          "claim_text": "我最早知道世界模型这个词应该是从很早的一个叫做David Ha,",
-          "dimensions": [
-            "route"
-          ],
-          "themes": [
-            "世界模型"
-          ],
-          "players": [],
-          "evidence_grade": "B",
-          "confidence": "medium",
-          "source_type": "podcast_transcript",
-          "source_title": "Vol.16 清华创业科学家许华哲：从智能“破壳”到家庭具身，在AI大浪里“死磕”原创",
-          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-16-xu-huazhe-attention-home-embodiment-cleaned.md",
-          "raw_source_path": "",
-          "source_url": "",
-          "published": "2026-04-27T02:26:21.815Z",
-          "podcast": "Attent!on",
-          "timestamp_start": "24:49",
-          "timestamp_end": "24:54",
-          "line": 624,
-          "score": 15
-        },
-        {
-          "id": "claim-2683badf0d",
-          "status": "candidate",
-          "subject": "世界模型",
-          "claim_text": "其实世界模型某种意义上最直观的体现就是对于未来的预测能力,",
-          "dimensions": [
-            "route"
-          ],
-          "themes": [
-            "世界模型"
-          ],
-          "players": [],
-          "evidence_grade": "B",
-          "confidence": "medium",
-          "source_type": "podcast_transcript",
-          "source_title": "Vol.16 清华创业科学家许华哲：从智能“破壳”到家庭具身，在AI大浪里“死磕”原创",
-          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-16-xu-huazhe-attention-home-embodiment-cleaned.md",
-          "raw_source_path": "",
-          "source_url": "",
-          "published": "2026-04-27T02:26:21.815Z",
-          "podcast": "Attent!on",
-          "timestamp_start": "25:09",
-          "timestamp_end": "25:14",
-          "line": 633,
-          "score": 15
-        },
-        {
-          "id": "claim-efd0d7d129",
-          "status": "candidate",
-          "subject": "世界模型",
-          "claim_text": "我之前在腾讯有工作过，我的主要研究方向是多摩泰以及AirFans,对世界模型也有一定的研究。",
-          "dimensions": [
-            "route"
-          ],
-          "themes": [
-            "世界模型"
-          ],
-          "players": [],
-          "evidence_grade": "B",
-          "confidence": "medium",
-          "source_type": "podcast_transcript",
-          "source_title": "64.直击史上机器人浓度最高的春晚：与姜哲源、宁慕楠聊具身、Seedance2.0，行业幕后与未来｜春节特别节目（上）",
-          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/lightstar-ep-64-spring-festival-robotics-embodied-cleaned.md",
-          "raw_source_path": "",
-          "source_url": "https://www.xiaoyuzhoufm.com/episode/6992f529de29766da9bdffd1",
-          "published": "2026-02-16",
-          "podcast": "卫诗婕｜漫谈Light the Star",
-          "timestamp_start": "02:38",
-          "timestamp_end": "02:46",
-          "line": 96,
-          "score": 14
-        },
-        {
-          "id": "claim-f4f18679af",
-          "status": "candidate",
-          "subject": "世界模型",
-          "claim_text": "对我觉得这个是就可能就是在更像是这个强行学习里面去讲的那种World Model",
-          "dimensions": [
-            "general"
-          ],
-          "themes": [
-            "世界模型",
-            "强化学习 / 控制"
-          ],
-          "players": [],
-          "evidence_grade": "B",
-          "confidence": "medium",
-          "source_type": "podcast_transcript",
-          "source_title": "小米王乃岩：AI时代的变与不变",
-          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-wang-naiyan-ai-era-physical-ai-cleaned.md",
-          "raw_source_path": "",
-          "source_url": "",
-          "published": "2026-05-07T01:48:49.874Z",
-          "podcast": "许华哲的自定义地图",
-          "timestamp_start": "23:30",
-          "timestamp_end": "23:35",
-          "line": 661,
-          "score": 13
-        },
-        {
-          "id": "claim-3fd1db141e",
-          "status": "candidate",
-          "subject": "世界模型",
-          "claim_text": "所以这个也是我称之为这个算是一种World Model,",
-          "dimensions": [
-            "general"
-          ],
-          "themes": [
-            "世界模型",
-            "强化学习 / 控制"
-          ],
-          "players": [],
-          "evidence_grade": "B",
-          "confidence": "medium",
-          "source_type": "podcast_transcript",
-          "source_title": "98. 逐篇讲解机器人基座模型和VLA经典论文——“人就是最智能的VLA”",
-          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-098-chen-jianyu-robot-foundation-models-vla-cleaned.md",
-          "raw_source_path": "",
-          "source_url": "",
-          "published": "2025-04-06T23:00:00.000Z",
-          "podcast": "张小珺Jùn｜商业访谈录",
-          "timestamp_start": "01:55:24",
-          "timestamp_end": "01:55:29",
-          "line": 3450,
-          "score": 12
-        },
-        {
-          "id": "claim-a9fd20aa6c",
-          "status": "candidate",
-          "subject": "世界模型",
-          "claim_text": "因为world model生成的是visual是下一帧对吧,",
-          "dimensions": [
-            "general"
-          ],
-          "themes": [
-            "世界模型",
-            "强化学习 / 控制"
-          ],
-          "players": [],
-          "evidence_grade": "B",
-          "confidence": "medium",
-          "source_type": "podcast_transcript",
-          "source_title": "121. 对DeepMind谭捷的访谈：机器人、跨本体、世界模型、Gemini Robotics 1.5和Google",
-          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-121-tan-jie-deepmind-robotics-gemini-robotics-cleaned.md",
-          "raw_source_path": "",
-          "source_url": "",
-          "published": "2025-11-28T09:17:21.811Z",
-          "podcast": "张小珺Jùn｜商业访谈录",
-          "timestamp_start": "01:06:21",
-          "timestamp_end": "01:06:25",
-          "line": 2180,
-          "score": 12
-        },
-        {
-          "id": "claim-cf9548349b",
-          "status": "candidate",
-          "subject": "世界模型",
-          "claim_text": "就是首先我是比较这个原教旨主义的这个World Model",
-          "dimensions": [
-            "general"
-          ],
-          "themes": [
-            "世界模型",
-            "强化学习 / 控制"
-          ],
-          "players": [],
-          "evidence_grade": "B",
-          "confidence": "medium",
-          "source_type": "podcast_transcript",
-          "source_title": "小米王乃岩：AI时代的变与不变",
-          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-wang-naiyan-ai-era-physical-ai-cleaned.md",
-          "raw_source_path": "",
-          "source_url": "",
-          "published": "2026-05-07T01:48:49.874Z",
-          "podcast": "许华哲的自定义地图",
-          "timestamp_start": "23:17",
-          "timestamp_end": "23:23",
-          "line": 658,
-          "score": 12
-        },
-        {
-          "id": "claim-f0e858e077",
-          "status": "candidate",
-          "subject": "世界模型",
-          "claim_text": "一句话解释就是你可以认为现在的LM的World Model,",
-          "dimensions": [
-            "general"
-          ],
-          "themes": [
-            "世界模型",
-            "强化学习 / 控制"
-          ],
-          "players": [],
-          "evidence_grade": "B",
-          "confidence": "medium",
-          "source_type": "podcast_transcript",
-          "source_title": "62.年终复盘AI笔记：中美逾30位从业者访谈中，有哪些发现？",
-          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/lightstar-ep-62-ai-year-review-embodied-signals-cleaned.md",
-          "raw_source_path": "",
-          "source_url": "https://www.xiaoyuzhoufm.com/episode/69785cdd7926069fc863fe1b",
-          "published": "2026-01-28",
-          "podcast": "卫诗婕｜漫谈Light the Star",
-          "timestamp_start": "01:28:35",
-          "timestamp_end": "01:28:39",
-          "line": 1578,
-          "score": 11
         }
       ]
     },
@@ -20230,6 +20864,86 @@
         }
       ]
     },
+    "数据 / Data Recipe": {
+      "subject": "数据 / Data Recipe",
+      "claim_count": 2,
+      "dimensions": [
+        [
+          "data",
+          2
+        ]
+      ],
+      "themes": [
+        [
+          "数据 / Data Recipe",
+          2
+        ]
+      ],
+      "sources": [
+        [
+          "E13.许华哲：刚起跑的具身，不等上市的人｜北坡计划",
+          1
+        ],
+        [
+          "120. 小鹏新上任的刘先明首次访谈：Language是毒药、拆掉L、简单即美、换帅、小鹏的AI转型",
+          1
+        ]
+      ],
+      "top_claims": [
+        {
+          "id": "claim-17887955f1",
+          "status": "candidate",
+          "subject": "数据 / Data Recipe",
+          "claim_text": "如果我能很便宜的规模化获取真机数据，那我其实最想要的还是它。",
+          "dimensions": [
+            "data"
+          ],
+          "themes": [
+            "数据 / Data Recipe"
+          ],
+          "players": [],
+          "evidence_grade": "B",
+          "confidence": "medium",
+          "source_type": "podcast_transcript",
+          "source_title": "E13.许华哲：刚起跑的具身，不等上市的人｜北坡计划",
+          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-e13-xu-huazhe-beipo-signal-noise-cleaned.md",
+          "raw_source_path": "",
+          "source_url": "",
+          "published": "2026-05-28T16:00:00.000Z",
+          "podcast": "信号与噪声",
+          "timestamp_start": "11:56",
+          "timestamp_end": "12:02",
+          "line": 246,
+          "score": 15
+        },
+        {
+          "id": "claim-fcadc4e8ed",
+          "status": "candidate",
+          "subject": "数据 / Data Recipe",
+          "claim_text": "然后infrastructure建立这个整个数据闭环体系的话,",
+          "dimensions": [
+            "data"
+          ],
+          "themes": [
+            "数据 / Data Recipe"
+          ],
+          "players": [],
+          "evidence_grade": "B",
+          "confidence": "medium",
+          "source_type": "podcast_transcript",
+          "source_title": "120. 小鹏新上任的刘先明首次访谈：Language是毒药、拆掉L、简单即美、换帅、小鹏的AI转型",
+          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-120-xpeng-liu-xianming-ai-transform-cleaned.md",
+          "raw_source_path": "",
+          "source_url": "https://www.xiaoyuzhoufm.com/episode/691c3670cbba038b421f74a4",
+          "published": "2025-11-18",
+          "podcast": "张小珺Jùn｜商业访谈录",
+          "timestamp_start": "10:04",
+          "timestamp_end": "10:07",
+          "line": 243,
+          "score": 14
+        }
+      ]
+    },
     "光轮 / Lightwheel": {
       "subject": "光轮 / Lightwheel",
       "claim_count": 1,
@@ -20279,56 +20993,6 @@
           "timestamp_end": "04:01",
           "line": 117,
           "score": 22
-        }
-      ]
-    },
-    "数据 / Data Recipe": {
-      "subject": "数据 / Data Recipe",
-      "claim_count": 1,
-      "dimensions": [
-        [
-          "data",
-          1
-        ]
-      ],
-      "themes": [
-        [
-          "数据 / Data Recipe",
-          1
-        ]
-      ],
-      "sources": [
-        [
-          "E13.许华哲：刚起跑的具身，不等上市的人｜北坡计划",
-          1
-        ]
-      ],
-      "top_claims": [
-        {
-          "id": "claim-17887955f1",
-          "status": "candidate",
-          "subject": "数据 / Data Recipe",
-          "claim_text": "如果我能很便宜的规模化获取真机数据，那我其实最想要的还是它。",
-          "dimensions": [
-            "data"
-          ],
-          "themes": [
-            "数据 / Data Recipe"
-          ],
-          "players": [],
-          "evidence_grade": "B",
-          "confidence": "medium",
-          "source_type": "podcast_transcript",
-          "source_title": "E13.许华哲：刚起跑的具身，不等上市的人｜北坡计划",
-          "source_path": "processed/transcripts/xiaoyuzhou-cleaned/ep-e13-xu-huazhe-beipo-signal-noise-cleaned.md",
-          "raw_source_path": "",
-          "source_url": "",
-          "published": "2026-05-28T16:00:00.000Z",
-          "podcast": "信号与噪声",
-          "timestamp_start": "11:56",
-          "timestamp_end": "12:02",
-          "line": 246,
-          "score": 15
         }
       ]
     },
@@ -20440,8 +21104,8 @@
   "theme_index": [
     {
       "label": "数据 / Data Recipe",
-      "episodes": 33,
-      "hits": 3167,
+      "episodes": 38,
+      "hits": 3313,
       "examples": [
         {
           "title": "79.机器人大脑第一股上市，与仙工赵越的4小时访谈：全球第一、机器人金字塔与具身智能的另一条路",
@@ -20467,8 +21131,8 @@
     },
     {
       "label": "强化学习 / RL",
-      "episodes": 33,
-      "hits": 521,
+      "episodes": 38,
+      "hits": 538,
       "examples": [
         {
           "title": "79.机器人大脑第一股上市，与仙工赵越的4小时访谈：全球第一、机器人金字塔与具身智能的另一条路",
@@ -20494,8 +21158,8 @@
     },
     {
       "label": "部署 / commercial proof",
-      "episodes": 31,
-      "hits": 2214,
+      "episodes": 36,
+      "hits": 2368,
       "examples": [
         {
           "title": "79.机器人大脑第一股上市，与仙工赵越的4小时访谈：全球第一、机器人金字塔与具身智能的另一条路",
@@ -20521,8 +21185,8 @@
     },
     {
       "label": "本体 / hardware body",
-      "episodes": 31,
-      "hits": 916,
+      "episodes": 36,
+      "hits": 967,
       "examples": [
         {
           "title": "79.机器人大脑第一股上市，与仙工赵越的4小时访谈：全球第一、机器人金字塔与具身智能的另一条路",
@@ -20548,8 +21212,8 @@
     },
     {
       "label": "机器人大脑 / robot brain",
-      "episodes": 30,
-      "hits": 521,
+      "episodes": 35,
+      "hits": 575,
       "examples": [
         {
           "title": "79.机器人大脑第一股上市，与仙工赵越的4小时访谈：全球第一、机器人金字塔与具身智能的另一条路",
@@ -20575,8 +21239,8 @@
     },
     {
       "label": "具身智能",
-      "episodes": 29,
-      "hits": 998,
+      "episodes": 31,
+      "hits": 1010,
       "examples": [
         {
           "title": "79.机器人大脑第一股上市，与仙工赵越的4小时访谈：全球第一、机器人金字塔与具身智能的另一条路",
@@ -20602,8 +21266,8 @@
     },
     {
       "label": "世界模型 / World Model",
-      "episodes": 25,
-      "hits": 480,
+      "episodes": 28,
+      "hits": 534,
       "examples": [
         {
           "title": "79.机器人大脑第一股上市，与仙工赵越的4小时访谈：全球第一、机器人金字塔与具身智能的另一条路",
@@ -20629,8 +21293,8 @@
     },
     {
       "label": "VLA / Vision-Language-Action",
-      "episodes": 22,
-      "hits": 368,
+      "episodes": 24,
+      "hits": 474,
       "examples": [
         {
           "title": "79.机器人大脑第一股上市，与仙工赵越的4小时访谈：全球第一、机器人金字塔与具身智能的另一条路",
@@ -20656,8 +21320,8 @@
     },
     {
       "label": "仿真 / synthetic data",
-      "episodes": 19,
-      "hits": 738,
+      "episodes": 22,
+      "hits": 749,
       "examples": [
         {
           "title": "79.机器人大脑第一股上市，与仙工赵越的4小时访谈：全球第一、机器人金字塔与具身智能的另一条路",
@@ -20683,8 +21347,8 @@
     },
     {
       "label": "Physical AI / 物理AI",
-      "episodes": 12,
-      "hits": 117,
+      "episodes": 14,
+      "hits": 162,
       "examples": [
         {
           "title": "77.有关智元、觅蜂的愿景与野心，和具身智能的竞速之旅｜与姚卯青的对谈",
@@ -20712,8 +21376,8 @@
   "player_index": [
     {
       "label": "NVIDIA",
-      "episodes": 19,
-      "hits": 172,
+      "episodes": 24,
+      "hits": 291,
       "examples": [
         {
           "title": "79.机器人大脑第一股上市，与仙工赵越的4小时访谈：全球第一、机器人金字塔与具身智能的另一条路",
@@ -20739,8 +21403,8 @@
     },
     {
       "label": "小米 / Xiaomi",
-      "episodes": 10,
-      "hits": 103,
+      "episodes": 12,
+      "hits": 107,
       "examples": [
         {
           "title": "79.机器人大脑第一股上市，与仙工赵越的4小时访谈：全球第一、机器人金字塔与具身智能的另一条路",
@@ -20766,8 +21430,8 @@
     },
     {
       "label": "DeepMind / Gemini Robotics",
-      "episodes": 10,
-      "hits": 51,
+      "episodes": 12,
+      "hits": 60,
       "examples": [
         {
           "title": "77.有关智元、觅蜂的愿景与野心，和具身智能的竞速之旅｜与姚卯青的对谈",
@@ -20873,6 +21537,33 @@
       ]
     },
     {
+      "label": "北京人形 / 天工",
+      "episodes": 9,
+      "hits": 37,
+      "examples": [
+        {
+          "title": "79.机器人大脑第一股上市，与仙工赵越的4小时访谈：全球第一、机器人金字塔与具身智能的另一条路",
+          "path": "processed/transcripts/xiaoyuzhou-cleaned/lightstar-ep-79-seer-zhao-yue-robot-brain-cleaned.md"
+        },
+        {
+          "title": "77.有关智元、觅蜂的愿景与野心，和具身智能的竞速之旅｜与姚卯青的对谈",
+          "path": "processed/transcripts/xiaoyuzhou-cleaned/lightstar-ep-77-zhiyuan-mifeng-yao-maoqing-cleaned.md"
+        },
+        {
+          "title": "第09见·高继扬：当劳动力不再是瓶颈，人类文明将去向何处？",
+          "path": "processed/transcripts/xiaoyuzhou-cleaned/ep-09-gao-jiyang-labor-bottleneck-shanyou-cleaned.md"
+        },
+        {
+          "title": "56.对话五家具身智能：机器人的“大脑”与“肉身”，谁在等谁？",
+          "path": "processed/transcripts/xiaoyuzhou-cleaned/lightstar-ep-56-five-embodied-ai-brain-body-cleaned.md"
+        },
+        {
+          "title": "55.揭秘「机器人造脑」幕后：VLM、VLA，不变的是感知能力的提升",
+          "path": "processed/transcripts/xiaoyuzhou-cleaned/lightstar-ep-55-robot-brain-vlm-vla-pelican-cleaned.md"
+        }
+      ]
+    },
+    {
       "label": "智元 / AgiBot",
       "episodes": 7,
       "hits": 67,
@@ -20954,33 +21645,6 @@
       ]
     },
     {
-      "label": "北京人形 / 天工",
-      "episodes": 6,
-      "hits": 33,
-      "examples": [
-        {
-          "title": "79.机器人大脑第一股上市，与仙工赵越的4小时访谈：全球第一、机器人金字塔与具身智能的另一条路",
-          "path": "processed/transcripts/xiaoyuzhou-cleaned/lightstar-ep-79-seer-zhao-yue-robot-brain-cleaned.md"
-        },
-        {
-          "title": "77.有关智元、觅蜂的愿景与野心，和具身智能的竞速之旅｜与姚卯青的对谈",
-          "path": "processed/transcripts/xiaoyuzhou-cleaned/lightstar-ep-77-zhiyuan-mifeng-yao-maoqing-cleaned.md"
-        },
-        {
-          "title": "第09见·高继扬：当劳动力不再是瓶颈，人类文明将去向何处？",
-          "path": "processed/transcripts/xiaoyuzhou-cleaned/ep-09-gao-jiyang-labor-bottleneck-shanyou-cleaned.md"
-        },
-        {
-          "title": "56.对话五家具身智能：机器人的“大脑”与“肉身”，谁在等谁？",
-          "path": "processed/transcripts/xiaoyuzhou-cleaned/lightstar-ep-56-five-embodied-ai-brain-body-cleaned.md"
-        },
-        {
-          "title": "55.揭秘「机器人造脑」幕后：VLM、VLA，不变的是感知能力的提升",
-          "path": "processed/transcripts/xiaoyuzhou-cleaned/lightstar-ep-55-robot-brain-vlm-vla-pelican-cleaned.md"
-        }
-      ]
-    },
-    {
       "label": "光轮 / Lightwheel",
       "episodes": 3,
       "hits": 25,
@@ -21033,8 +21697,8 @@
   "layer_index": [
     {
       "label": "数据层",
-      "episodes": 33,
-      "hits": 3152,
+      "episodes": 38,
+      "hits": 3297,
       "examples": [
         {
           "title": "79.机器人大脑第一股上市，与仙工赵越的4小时访谈：全球第一、机器人金字塔与具身智能的另一条路",
@@ -21060,8 +21724,8 @@
     },
     {
       "label": "模型/大脑层",
-      "episodes": 33,
-      "hits": 1272,
+      "episodes": 38,
+      "hits": 1503,
       "examples": [
         {
           "title": "79.机器人大脑第一股上市，与仙工赵越的4小时访谈：全球第一、机器人金字塔与具身智能的另一条路",
@@ -21087,8 +21751,8 @@
     },
     {
       "label": "场景部署",
-      "episodes": 32,
-      "hits": 2347,
+      "episodes": 37,
+      "hits": 2497,
       "examples": [
         {
           "title": "79.机器人大脑第一股上市，与仙工赵越的4小时访谈：全球第一、机器人金字塔与具身智能的另一条路",
@@ -21114,8 +21778,8 @@
     },
     {
       "label": "资本/产业信号",
-      "episodes": 31,
-      "hits": 530,
+      "episodes": 35,
+      "hits": 606,
       "examples": [
         {
           "title": "79.机器人大脑第一股上市，与仙工赵越的4小时访谈：全球第一、机器人金字塔与具身智能的另一条路",
@@ -21141,8 +21805,8 @@
     },
     {
       "label": "本体/硬件",
-      "episodes": 28,
-      "hits": 566,
+      "episodes": 30,
+      "hits": 573,
       "examples": [
         {
           "title": "79.机器人大脑第一股上市，与仙工赵越的4小时访谈：全球第一、机器人金字塔与具身智能的另一条路",
@@ -21168,8 +21832,8 @@
     },
     {
       "label": "仿真/工具链",
-      "episodes": 19,
-      "hits": 737,
+      "episodes": 22,
+      "hits": 748,
       "examples": [
         {
           "title": "79.机器人大脑第一股上市，与仙工赵越的4小时访谈：全球第一、机器人金字塔与具身智能的另一条路",
